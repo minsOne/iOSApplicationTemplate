@@ -17,7 +17,7 @@ extension Project {
     
     public static
     func staticFramework(name: String,
-                         platform: Platform,
+                         platform: Platform = .iOS,
                          packages: [Package] = [],
                          dependencies: [TargetDependency] = []) -> Self {
         return project(name: name,
@@ -29,9 +29,8 @@ extension Project {
     
     public static
     func framework(name: String,
-                   platform: Platform,
+                   platform: Platform = .iOS,
                    packages: [Package] = [],
-                   product: Product,
                    dependencies: [TargetDependency] = []) -> Self {
         return project(name: name,
                        packages: packages,
@@ -79,6 +78,14 @@ extension Project {
                              dependencies: [
                               .target(name: "\(name)")
                              ])
+        
+        let schemes: [Scheme] = [
+            .makeScheme(target: .dev, name: name),
+            .makeScheme(target: .test, name: name),
+            .makeScheme(target: .stage, name: name),
+            .makeScheme(target: .prod, name: name),
+        ]
+        
         return Project(name: name,
                        organizationName: "minsone",
                        packages: packages,
@@ -86,7 +93,22 @@ extension Project {
                        targets: [
                         target1,
                         testTarget
-                       ])
+                       ], schemes: schemes)
     }
     
+}
+
+private extension Scheme {
+    static func makeScheme(target: DeployTarget, name: String) -> Self {
+        return Scheme(name: "\(name)-\(target.rawValue)",
+                      shared: true,
+                      buildAction: BuildAction(targets: ["\(name)"]),
+                      testAction: TestAction(targets: ["\(name)Tests"],
+                                             configurationName: target.rawValue,
+                                             coverage: true),
+                      runAction: RunAction(configurationName: target.rawValue),
+                      archiveAction: ArchiveAction(configurationName: target.rawValue),
+                      profileAction: ProfileAction(configurationName: target.rawValue),
+                      analyzeAction: AnalyzeAction(configurationName: target.rawValue))
+    }
 }
