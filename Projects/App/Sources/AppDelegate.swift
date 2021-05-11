@@ -1,5 +1,10 @@
 import UIKit
 
+struct AAA: Codable {
+    var person: String
+    var name: String
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         viewController.view.backgroundColor = .white
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
+        
+        let a = AAA(person: "ahn", name: "jungmin")
+        let data = try? JSONEncoder().encode(a)
+        let b = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String:Any]
         
         return true
     }
