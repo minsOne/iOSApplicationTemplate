@@ -1,9 +1,5 @@
 import UIKit
-
-struct AAA: Codable {
-    var person: String
-    var name: String
-}
+import NetworkAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         
-        let a = AAA(person: "ahn", name: "jungmin")
-        let data = try? JSONEncoder().encode(a)
-        let b = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String:Any]
+        #if DEBUG
+        HTTPBinGet().request(completion: { result in
+            print(result)
+        })
+        #endif
         
         return true
     }

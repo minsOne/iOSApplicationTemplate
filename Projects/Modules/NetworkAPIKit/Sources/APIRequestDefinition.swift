@@ -2,50 +2,59 @@ import Foundation
 import Alamofire
 
 public enum APIRequestError: Error {
+    case baseURLError
     case parameterEncodeError
     case connectionError(Error)
     case responseDecodeError(Error)
     case unknownError(URLResponse?)
+    case failResponse
 }
 
 public protocol APIRequestDefinition {
     associatedtype Parameter: Codable
     associatedtype Response: Codable
     
-    var baseURL: URL { get }
+    var baseURL: String { get }
     var method: HTTPMethod { get }
     var path: String { get }
     
     var parameter: Parameter { get }
-    
-    func request(completion: (Result<Response, APIRequestError>) -> ())
 }
 
 private extension APIRequestDefinition {
-    private var urlRequest: URLRequest {
-        var baseURL = self.baseURL
-        baseURL.appendPathComponent(path)
-        var request = URLRequest(url: baseURL)
+    var urlRequest: Result<URLRequest, APIRequestError> {
+        guard
+            var url = URL(string: baseURL)
+        else {
+            return .failure(.baseURLError)
+        }
+        url.appendPathComponent(path)
+        var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        return request
+        return .success(request)
     }
-    
     var urlRequestGet: Result<URLRequest, APIRequestError> {
         do {
-            let request = try URLEncodedFormParameterEncoder.default.encode(parameter,
-                                                                            into: urlRequest)
-            return .success(request)
+            switch urlRequest {
+            case .failure: return urlRequest
+            case .success(let urlRequest):
+                let request = try URLEncodedFormParameterEncoder.default.encode(parameter,
+                                                                                into: urlRequest)
+                return .success(request)
+            }
         } catch {
             return .failure(.parameterEncodeError)
         }
     }
     var urlRequestPost: Result<URLRequest, APIRequestError> {
-        var urlRequest = self.urlRequest
-        
         do {
-            let body = try JSONEncoder().encode(parameter)
-            urlRequest.httpBody = body
-            return .success(urlRequest)
+            switch urlRequest {
+            case .failure: return urlRequest
+            case .success(var urlRequest):
+                let body = try JSONEncoder().encode(parameter)
+                urlRequest.httpBody = body
+                return .success(urlRequest)
+            }
         } catch {
             return .failure(.parameterEncodeError)
         }
@@ -56,10 +65,8 @@ public extension APIRequestDefinition {
     func request(completion: @escaping (Result<Response, APIRequestError>) -> ()) {
         let urlRequestResult: Result<URLRequest, APIRequestError>
         switch method {
-        case .get:
-            urlRequestResult = urlRequestGet
-        case .post:
-            urlRequestResult = urlRequestPost
+        case .get: urlRequestResult = urlRequestGet
+        case .post: urlRequestResult = urlRequestPost
         }
         
         switch urlRequestResult {
@@ -76,7 +83,11 @@ public extension APIRequestDefinition {
             switch (data, response, error) {
             case (_, _, let error?):
                 completion(.failure(.connectionError(error)))
-            case (let data?, _, _):
+            case (let data?, let urlResponse as HTTPURLResponse, _):
+                if urlResponse.isSuccess == false {
+                    completion(.failure(.failResponse))
+                    return
+                }
                 do {
                     let decodedResponse = try JSONDecoder().decode(Response.self, from: data)
                     completion(.success(decodedResponse))
@@ -91,3 +102,8 @@ public extension APIRequestDefinition {
     }
 }
 
+private extension HTTPURLResponse {
+    var isSuccess: Bool {
+        return statusCode == 200
+    }
+}
