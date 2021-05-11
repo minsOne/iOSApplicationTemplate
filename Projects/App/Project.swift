@@ -5,4 +5,5 @@ let project = Project
     .app(name: "App",
          platform: .iOS,
          dependencies: [
+            .coreKit,
          ])

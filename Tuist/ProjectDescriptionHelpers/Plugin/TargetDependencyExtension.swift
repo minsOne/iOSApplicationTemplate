@@ -9,10 +9,10 @@ import ProjectDescription
 
 // MARK: Project
 public extension TargetDependency {
-    // TargetDependency에서 내부 프로젝트는 다음과 같이 정의함.
-    //    static let staticFrameworkKit: TargetDependency =
-    //        .project(target: "StaticFrameworkKit",
-    //                 path: .relativeToRoot("Projects/StaticFrameworkKit"))
+    static let utilityKit: TargetDependency = .module(name: "UtilityKit")
+    static let networkAPIKit: TargetDependency = .module(name: "NetworkAPIKit")
+    static let networkAPI: TargetDependency = .module(name: "NetworkAPI")
+    static let coreKit: TargetDependency = .module(name: "CoreKit")
 }
 
 // MARK: Package
@@ -26,4 +26,10 @@ public extension Package {
     // Swift Pacakge는 다음과 같이 정의함.
     //    static let alamofire: Package = .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("master"))
     //    static let kingfisher: Package = .package(url: "https://github.com/onevcat/Kingfisher", from: "5.1.0")
+}
+
+public extension TargetDependency {
+    static func module(name: String) -> Self {
+        return .project(target: name, path: .relativeToModule(name))
+    }
 }
