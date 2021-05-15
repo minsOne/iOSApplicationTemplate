@@ -1,5 +1,6 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
+import UtilityPlugin
 
 let project = Project
     .staticFramework(name: "NetworkAPIKit",
@@ -7,5 +8,5 @@ let project = Project
                         .alamofire
                      ],
                      dependencies: [
-                        .alamofire
+                        .SwiftPM.alamofire
                      ])

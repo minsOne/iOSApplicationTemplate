@@ -1,4 +1,5 @@
 import ProjectDescription
+import UtilityPlugin
 
 extension Project {
     public static
