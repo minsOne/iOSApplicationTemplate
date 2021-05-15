@@ -7,8 +7,14 @@ mv XCConfig/$1/Template-STAGE.xcconfig XCConfig/$1/$1-STAGE.xcconfig
 mv XCConfig/$1/Template-PROD.xcconfig XCConfig/$1/$1-PROD.xcconfig
 
 mkdir -p Projects/Modules/$1/Sources
+touch Projects/Modules/$1/Sources/.gitkeep
+touch Projects/Modules/$1/Sources/$1.swift
+
 mkdir -p Projects/Modules/$1/Resources
+touch Projects/Modules/$1/Resources/.gitkeep
+
 mkdir -p Projects/Modules/$1/Tests
+touch Projects/Modules/$1/Tests/.gitkeep
 
 touch Projects/Modules/$1/Project.swift
 
@@ -17,8 +23,8 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .framework(name: "$1",
-               dependencies: [
-               ])
+    .staticFramework(name: "$1",
+               		 dependencies: [
+               		 ])
 EOF
 

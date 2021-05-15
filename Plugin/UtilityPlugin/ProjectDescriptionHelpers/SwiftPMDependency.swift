@@ -13,10 +13,12 @@ public extension TargetDependency {
     struct SwiftPM {
         public static
         let alamofire: TargetDependency = .package(product: "Alamofire")
+        public static
+        let snapKit: TargetDependency = .package(product: "SnapKit")
     }
 }
 
 public extension Package {
     static let alamofire: Package = .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("master"))
-    //    static let kingfisher: Package = .package(url: "https://github.com/onevcat/Kingfisher", from: "5.1.0")
+    static let snapKit: Package = .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
 }

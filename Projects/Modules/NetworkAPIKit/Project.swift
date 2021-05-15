@@ -4,9 +4,6 @@ import UtilityPlugin
 
 let project = Project
     .staticFramework(name: "NetworkAPIKit",
-                     packages: [
-                        .alamofire
-                     ],
                      dependencies: [
-                        .SwiftPM.alamofire
+                        .Project.swiftPackageMerge
                      ])

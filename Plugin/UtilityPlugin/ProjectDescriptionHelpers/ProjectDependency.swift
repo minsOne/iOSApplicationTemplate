@@ -19,6 +19,8 @@ public extension TargetDependency {
         let networkAPI: TargetDependency = .module(name: "NetworkAPI")
         public static
         let coreKit: TargetDependency = .module(name: "CoreKit")
+        public static
+        let swiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
     }
 }
 
