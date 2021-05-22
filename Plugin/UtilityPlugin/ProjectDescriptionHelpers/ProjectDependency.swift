@@ -10,20 +10,20 @@ import ProjectDescription
 
 // MARK: Project
 public extension TargetDependency {
-    struct Project {
-        public static
-        let utilityKit: TargetDependency = .module(name: "UtilityKit")
-        public static
-        let networkAPIKit: TargetDependency = .module(name: "NetworkAPIKit")
-        public static
-        let networkAPI: TargetDependency = .module(name: "NetworkAPI")
-        public static
-        let coreKit: TargetDependency = .module(name: "CoreKit")
-        public static
-        let swiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
-    }
+    struct Project {}
 }
 
+public extension TargetDependency.Project {
+    static let utilityKit: TargetDependency = .module(name: "UtilityKit")
+    static let networkAPIKit: TargetDependency = .module(name: "NetworkAPIKit")
+    static let networkAPI: TargetDependency = .module(name: "NetworkAPI")
+    static let coreKit: TargetDependency = .module(name: "CoreKit")
+    static let swiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
+    static let resourceManager: TargetDependency = .module(name: "ResourceManager")
+}
+
+
+// MARK: Extension
 public extension TargetDependency {
     static func module(name: String) -> Self {
         return .project(target: name, path: .relativeToModule(name))

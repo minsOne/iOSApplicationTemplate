@@ -17,13 +17,13 @@ extension Project {
     }
     
     public static
-    func staticFramework(name: String,
-                         platform: Platform = .iOS,
-                         packages: [Package] = [],
-                         dependencies: [TargetDependency] = []) -> Self {
+    func staticLibrary(name: String,
+                       platform: Platform = .iOS,
+                       packages: [Package] = [],
+                       dependencies: [TargetDependency] = []) -> Self {
         return project(name: name,
                        packages: packages,
-                       product: .staticFramework,
+                       product: .staticLibrary,
                        platform: platform,
                        dependencies: dependencies)
     }

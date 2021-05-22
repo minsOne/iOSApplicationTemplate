@@ -1,12 +1,11 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
-import UtilityPlugin
 
 let project = Project
-    .staticLibrary(name: "SwiftPackageMerge",
+    .staticLibrary(name: "ResourceManager",
                    packages: [
-                    .alamofire
+                    .resourcePackage
                    ],
                    dependencies: [
-                    .SwiftPM.alamofire
+                    .SwiftPM.resourcePackage
                    ])

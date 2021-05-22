@@ -6,4 +6,5 @@ let project = Project
                dependencies: [
                 .Project.networkAPI,
                 .Project.utilityKit,
+                .Project.resourceManager,
                ])
