@@ -29,6 +29,18 @@ extension Project {
     }
     
     public static
+    func staticFramework(name: String,
+                         platform: Platform = .iOS,
+                         packages: [Package] = [],
+                         dependencies: [TargetDependency] = []) -> Self {
+        return project(name: name,
+                       packages: packages,
+                       product: .staticFramework,
+                       platform: platform,
+                       dependencies: dependencies)
+    }
+    
+    public static
     func framework(name: String,
                    platform: Platform = .iOS,
                    packages: [Package] = [],
@@ -70,21 +82,18 @@ extension Project {
                              dependencies: dependencies)
         
         let testTarget = Target(name: "\(name)Tests",
-                             platform: platform,
-                             product: .unitTests,
-                             bundleId: "kr.minsone.\(name)Tests",
-                             deploymentTarget: .iOS(targetVersion: "13.0", devices: .iphone),
-                             infoPlist: .default,
-                             sources: "Tests/**",
-                             dependencies: [
-                              .target(name: "\(name)")
-                             ])
+                                platform: platform,
+                                product: .unitTests,
+                                bundleId: "kr.minsone.\(name)Tests",
+                                deploymentTarget: .iOS(targetVersion: "13.0", devices: .iphone),
+                                infoPlist: .default,
+                                sources: "Tests/**",
+                                dependencies: [
+                                    .target(name: "\(name)")
+                                ])
         
         let schemes: [Scheme] = [
             .makeScheme(target: .dev, name: name),
-            .makeScheme(target: .test, name: name),
-            .makeScheme(target: .stage, name: name),
-            .makeScheme(target: .prod, name: name),
         ]
         
         return Project(name: name,
@@ -94,14 +103,15 @@ extension Project {
                        targets: [
                         target1,
                         testTarget
-                       ], schemes: schemes)
+                       ],
+                       schemes: schemes)
     }
     
 }
 
-private extension Scheme {
-    static func makeScheme(target: DeployTarget, name: String) -> Self {
-        return Scheme(name: "\(name)-\(target.rawValue)",
+public extension Scheme {
+    static func makeScheme(target: ProjectDeployTarget, name: String) -> Self {
+        return Scheme(name: "Default-\(name)",
                       shared: true,
                       buildAction: BuildAction(targets: ["\(name)"]),
                       testAction: TestAction(targets: ["\(name)Tests"],

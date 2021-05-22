@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum DeployTarget: String {
+public enum ProjectDeployTarget: String {
     case dev = "DEV"
     case test = "TEST"
     case stage = "STAGE"

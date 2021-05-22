@@ -9,10 +9,13 @@ import Foundation
 import ProjectDescription
 
 public extension ProjectDescription.Path {
-    static func relativeToXCConfig(type: DeployTarget, name: String) -> Self {
+    static func relativeToXCConfig(type: ProjectDeployTarget, name: String) -> Self {
         return .relativeToRoot("XCConfig/\(name)/\(name)-\(type.rawValue).xcconfig")
     }
     static func relativeToModule(_ pathString: String) -> Self {
         return .relativeToRoot("Projects/Modules/\(pathString)")
+    }
+    static var app: Self {
+        return .relativeToRoot("Projects/App")
     }
 }
