@@ -20,36 +20,42 @@ extension Project {
     func staticLibrary(name: String,
                        platform: Platform = .iOS,
                        packages: [Package] = [],
-                       dependencies: [TargetDependency] = []) -> Self {
+                       dependencies: [TargetDependency] = [],
+                       hasDemoApp: Bool = false) -> Self {
         return project(name: name,
                        packages: packages,
                        product: .staticLibrary,
                        platform: platform,
-                       dependencies: dependencies)
+                       dependencies: dependencies,
+                       hasDemoApp: hasDemoApp)
     }
     
     public static
     func staticFramework(name: String,
                          platform: Platform = .iOS,
                          packages: [Package] = [],
-                         dependencies: [TargetDependency] = []) -> Self {
+                         dependencies: [TargetDependency] = [],
+                         hasDemoApp: Bool = false) -> Self {
         return project(name: name,
                        packages: packages,
                        product: .staticFramework,
                        platform: platform,
-                       dependencies: dependencies)
+                       dependencies: dependencies,
+                       hasDemoApp: hasDemoApp)
     }
     
     public static
     func framework(name: String,
                    platform: Platform = .iOS,
                    packages: [Package] = [],
-                   dependencies: [TargetDependency] = []) -> Self {
+                   dependencies: [TargetDependency] = [],
+                   hasDemoApp: Bool = false) -> Self {
         return project(name: name,
                        packages: packages,
                        product: .framework,
                        platform: platform,
-                       dependencies: dependencies)
+                       dependencies: dependencies,
+                       hasDemoApp: hasDemoApp)
     }
 }
 
@@ -62,15 +68,19 @@ extension Project {
                  platform: Platform = .iOS,
                  deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "13.0", devices: .iphone),
                  dependencies: [TargetDependency] = [],
-                 infoPlist: [String: InfoPlist.Value] = [:]) -> Project {
+                 infoPlist: [String: InfoPlist.Value] = [:],
+                 hasDemoApp: Bool = false) -> Project {
         
-        let settings = Settings(configurations: [
-            .debug(name: "DEV", xcconfig: .relativeToXCConfig(type: .dev, name: name)),
-            .debug(name: "TEST", xcconfig: .relativeToXCConfig(type: .test, name: name)),
-            .debug(name: "STAGE", xcconfig: .relativeToXCConfig(type: .stage, name: name)),
-            .release(name: "PROD", xcconfig: .relativeToXCConfig(type: .prod, name: name)),
-        ])
-        
+        let organizationName = "minsone"
+        let settings = Settings(base: ["CODE_SIGN_IDENTITY": "",
+                                       "CODE_SIGNING_REQUIRED": "NO"],
+                                configurations: [
+                                    .debug(name: "DEV", xcconfig: .relativeToXCConfig(type: .dev, name: name)),
+                                    .debug(name: "TEST", xcconfig: .relativeToXCConfig(type: .test, name: name)),
+                                    .debug(name: "STAGE", xcconfig: .relativeToXCConfig(type: .stage, name: name)),
+                                    .release(name: "PROD", xcconfig: .relativeToXCConfig(type: .prod, name: name)),
+                                ])
+
         let target1 = Target(name: name,
                              platform: platform,
                              product: product,
@@ -81,29 +91,44 @@ extension Project {
                              resources: ["Resources/**"],
                              dependencies: dependencies)
         
+        let sampleAppTarget = Target(name: "\(name)DemoApp",
+                                     platform: platform,
+                                     product: .app,
+                                     bundleId: "kr.minsone.\(name)DemoApp",
+                                     deploymentTarget: deploymentTarget,
+                                     infoPlist: .default,
+                                     sources: ["Demo/**"],
+                                     dependencies: [
+                                        .target(name: "\(name)")
+                                     ])
+        
+        let testTargetDependencies: [TargetDependency] = hasDemoApp
+            ? [.target(name: "\(name)DemoApp")]
+            : [.target(name: "\(name)")]
         let testTarget = Target(name: "\(name)Tests",
                                 platform: platform,
                                 product: .unitTests,
                                 bundleId: "kr.minsone.\(name)Tests",
-                                deploymentTarget: .iOS(targetVersion: "13.0", devices: .iphone),
+                                deploymentTarget: deploymentTarget,
                                 infoPlist: .default,
                                 sources: "Tests/**",
-                                dependencies: [
-                                    .target(name: "\(name)")
-                                ])
+                                dependencies: testTargetDependencies)
+        
+        
+
         
         let schemes: [Scheme] = [
             .makeScheme(target: .dev, name: name),
         ]
+        let targets: [Target] = hasDemoApp
+            ? [target1, sampleAppTarget, testTarget]
+            : [target1, testTarget]
         
         return Project(name: name,
-                       organizationName: "minsone",
+                       organizationName: organizationName,
                        packages: packages,
                        settings: settings,
-                       targets: [
-                        target1,
-                        testTarget
-                       ],
+                       targets: targets,
                        schemes: schemes)
     }
     

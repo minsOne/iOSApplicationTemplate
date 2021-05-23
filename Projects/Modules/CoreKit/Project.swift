@@ -7,4 +7,5 @@ let project = Project
                 .Project.networkAPI,
                 .Project.utilityKit,
                 .Project.resourceManager,
-               ])
+               ],
+               hasDemoApp: true)
