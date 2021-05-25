@@ -3,20 +3,6 @@ import UtilityPlugin
 
 extension Project {
     public static
-    func app(name: String,
-             platform: Platform,
-             dependencies: [TargetDependency] = []) -> Self {
-        return project(name: name,
-                       product: .app,
-                       platform: platform,
-                       dependencies: dependencies,
-                       infoPlist: [
-                        "CFBundleShortVersionString": "1.0",
-                        "CFBundleVersion": "1"
-                       ])
-    }
-    
-    public static
     func staticLibrary(name: String,
                        platform: Platform = .iOS,
                        packages: [Package] = [],
@@ -131,7 +117,6 @@ extension Project {
                        targets: targets,
                        schemes: schemes)
     }
-    
 }
 
 public extension Scheme {
