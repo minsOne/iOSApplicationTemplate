@@ -20,6 +20,7 @@ public extension TargetDependency.Project {
     static let coreKit: TargetDependency = .module(name: "CoreKit")
     static let swiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
     static let resourceManager: TargetDependency = .module(name: "ResourceManager")
+    static let developTool: TargetDependency = .module(name: "DevelopTool")
 }
 
 

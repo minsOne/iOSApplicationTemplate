@@ -42,7 +42,8 @@ let targets: [Target] = [
           sources: ["Sources/**", "Dev_Sources/**"],
           resources: ["Resources/**"],
           dependencies: [
-            .Project.coreKit
+            .Project.coreKit,
+            .Project.developTool,
           ]),
     .init(name: "DevAppTests",
           platform: .iOS,

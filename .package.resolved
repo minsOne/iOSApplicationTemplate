@@ -9,6 +9,15 @@
           "revision": "70b859dec85651c8a7bc0f2a8abbcb579e3144c8",
           "version": null
         }
+      },
+      {
+        "package": "OHHTTPStubs",
+        "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
+        "state": {
+          "branch": "master",
+          "revision": "12f19662426d0434d6c330c6974d53e2eb10ecd9",
+          "version": null
+        }
       }
     ]
   },

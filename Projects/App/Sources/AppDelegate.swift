@@ -1,5 +1,8 @@
 import UIKit
 import NetworkAPI
+#if canImport(DevelopTool)
+import DevelopTool
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,6 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
+        
+        prepareDevelopTool()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = UIViewController()
         viewController.view.backgroundColor = .white
@@ -24,5 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+}
 
+extension AppDelegate {
+    func prepareDevelopTool() {
+        #if canImport(DevelopTool)
+        HTTPStubs.setup()
+        #endif
+    }
 }
