@@ -1,13 +1,12 @@
 import ProjectDescription
 import UtilityPlugin
 
-extension Project {
-    public static
-    func staticLibrary(name: String,
-                       platform: Platform = .iOS,
-                       packages: [Package] = [],
-                       dependencies: [TargetDependency] = [],
-                       hasDemoApp: Bool = false) -> Self {
+public extension Project {
+    static func staticLibrary(name: String,
+                              platform: Platform = .iOS,
+                              packages: [Package] = [],
+                              dependencies: [TargetDependency] = [],
+                              hasDemoApp: Bool = false) -> Self {
         return project(name: name,
                        packages: packages,
                        product: .staticLibrary,
@@ -16,12 +15,11 @@ extension Project {
                        hasDemoApp: hasDemoApp)
     }
     
-    public static
-    func staticFramework(name: String,
-                         platform: Platform = .iOS,
-                         packages: [Package] = [],
-                         dependencies: [TargetDependency] = [],
-                         hasDemoApp: Bool = false) -> Self {
+    static func staticFramework(name: String,
+                                platform: Platform = .iOS,
+                                packages: [Package] = [],
+                                dependencies: [TargetDependency] = [],
+                                hasDemoApp: Bool = false) -> Self {
         return project(name: name,
                        packages: packages,
                        product: .staticFramework,
@@ -30,12 +28,11 @@ extension Project {
                        hasDemoApp: hasDemoApp)
     }
     
-    public static
-    func framework(name: String,
-                   platform: Platform = .iOS,
-                   packages: [Package] = [],
-                   dependencies: [TargetDependency] = [],
-                   hasDemoApp: Bool = false) -> Self {
+    static func framework(name: String,
+                          platform: Platform = .iOS,
+                          packages: [Package] = [],
+                          dependencies: [TargetDependency] = [],
+                          hasDemoApp: Bool = false) -> Self {
         return project(name: name,
                        packages: packages,
                        product: .framework,
@@ -45,28 +42,27 @@ extension Project {
     }
 }
 
-extension Project {
-    public static
-    func project(name: String,
-                 organizationName: String = "minsone",
-                 packages: [Package] = [],
-                 product: Product,
-                 platform: Platform = .iOS,
-                 deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "13.0", devices: .iphone),
-                 dependencies: [TargetDependency] = [],
-                 infoPlist: [String: InfoPlist.Value] = [:],
-                 hasDemoApp: Bool = false) -> Project {
+public extension Project {
+    static func project(name: String,
+                        organizationName: String = "minsone",
+                        packages: [Package] = [],
+                        product: Product,
+                        platform: Platform = .iOS,
+                        deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "13.0", devices: .iphone),
+                        dependencies: [TargetDependency] = [],
+                        infoPlist: [String: InfoPlist.Value] = [:],
+                        hasDemoApp: Bool = false) -> Project {
         
         let organizationName = "minsone"
         let settings = Settings(base: ["CODE_SIGN_IDENTITY": "",
                                        "CODE_SIGNING_REQUIRED": "NO"],
                                 configurations: [
-                                    .debug(name: "DEV", xcconfig: .relativeToXCConfig(type: .dev, name: name)),
-                                    .debug(name: "TEST", xcconfig: .relativeToXCConfig(type: .test, name: name)),
-                                    .debug(name: "STAGE", xcconfig: .relativeToXCConfig(type: .stage, name: name)),
-                                    .release(name: "PROD", xcconfig: .relativeToXCConfig(type: .prod, name: name)),
+                                    .debug(name: .dev, xcconfig: .relativeToXCConfig(type: .dev, name: name)),
+                                    .debug(name: .test, xcconfig: .relativeToXCConfig(type: .test, name: name)),
+                                    .debug(name: .stage, xcconfig: .relativeToXCConfig(type: .stage, name: name)),
+                                    .release(name: .prod, xcconfig: .relativeToXCConfig(type: .prod, name: name)),
                                 ])
-
+        
         let target1 = Target(name: name,
                              platform: platform,
                              product: product,
@@ -77,16 +73,16 @@ extension Project {
                              resources: ["Resources/**"],
                              dependencies: dependencies)
         
-        let sampleAppTarget = Target(name: "\(name)DemoApp",
-                                     platform: platform,
-                                     product: .app,
-                                     bundleId: "kr.minsone.\(name)DemoApp",
-                                     deploymentTarget: deploymentTarget,
-                                     infoPlist: .default,
-                                     sources: ["Demo/**"],
-                                     dependencies: [
-                                        .target(name: "\(name)")
-                                     ])
+        let demoAppTarget = Target(name: "\(name)DemoApp",
+                                   platform: platform,
+                                   product: .app,
+                                   bundleId: "kr.minsone.\(name)DemoApp",
+                                   deploymentTarget: deploymentTarget,
+                                   infoPlist: .default,
+                                   sources: ["Demo/**"],
+                                   dependencies: [
+                                    .target(name: "\(name)")
+                                   ])
         
         let testTargetDependencies: [TargetDependency] = hasDemoApp
             ? [.target(name: "\(name)DemoApp")]
@@ -101,13 +97,11 @@ extension Project {
                                 dependencies: testTargetDependencies)
         
         
-
         
-        let schemes: [Scheme] = [
-            .makeScheme(target: .dev, name: name),
-        ]
+        
+        let schemes: [Scheme] = [.makeScheme(target: .dev, name: name)]
         let targets: [Target] = hasDemoApp
-            ? [target1, sampleAppTarget, testTarget]
+            ? [target1, testTarget, demoAppTarget]
             : [target1, testTarget]
         
         return Project(name: name,

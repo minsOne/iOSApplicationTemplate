@@ -39,7 +39,7 @@ let targets: [Target] = [
           bundleId: "kr.minsone.dev-app",
           deploymentTarget: deploymentTarget,
           infoPlist: .default,
-          sources: ["Sources/**", "Dev_Sources/**"],
+          sources: ["Sources/**", "DevSources/**"],
           resources: ["Resources/**"],
           dependencies: [
             .Project.coreKit,
@@ -56,11 +56,11 @@ let targets: [Target] = [
 ]
 
 let schemes: [Scheme] = [
-    .init(name: "DevApp-Dev",
+    .init(name: "DevApp-Develop",
           shared: true,
           buildAction: BuildAction(targets: ["DevApp"]),
           testAction: TestAction(targets: ["DevAppTests"],
-                                 configurationName: "DEV",
+                                 configurationName: .dev,
                                  coverage: true),
           runAction: RunAction(configurationName: .dev),
           archiveAction: ArchiveAction(configurationName: .dev),
@@ -84,19 +84,3 @@ let project: Project =
           settings: settings,
           targets: targets,
           schemes: schemes)
-
-
-
-
-
-
-
-
-
-// MARK: - Util
-private extension String {
-    static var dev: String    { ProjectDeployTarget.dev.rawValue }
-    static var test: String   { ProjectDeployTarget.test.rawValue }
-    static var stage: String  { ProjectDeployTarget.stage.rawValue }
-    static var prod: String   { ProjectDeployTarget.prod.rawValue }
-}
