@@ -5,8 +5,8 @@ import UtilityPlugin
 let project = Project
     .framework(name: "SwiftPackageMerge",
                packages: [
-                .alamofire
+                .Alamofire
                ],
                dependencies: [
-                .SwiftPM.alamofire
+                .SwiftPM.Alamofire
                ])

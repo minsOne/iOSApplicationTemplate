@@ -4,8 +4,8 @@ import ProjectDescriptionHelpers
 let project = Project
     .staticLibrary(name: "ResourceManager",
                    packages: [
-                    .resourcePackage
+                    .ResourcePackage
                    ],
                    dependencies: [
-                    .SwiftPM.resourcePackage
+                    .SwiftPM.ResourcePackage
                    ])

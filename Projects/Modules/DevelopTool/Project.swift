@@ -5,8 +5,8 @@ import UtilityPlugin
 let project = Project
     .framework(name: "DevelopTool",
                packages: [
-                .ohttpStubs
+                .OHHTTPStubs
                ],
                dependencies: [
-                .SwiftPM.ohttpStubs
+                .SwiftPM.OHHTTPStubs
                ])
