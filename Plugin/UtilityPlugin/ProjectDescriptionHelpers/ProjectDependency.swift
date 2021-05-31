@@ -14,15 +14,14 @@ public extension TargetDependency {
 }
 
 public extension TargetDependency.Project {
-    static let utilityKit: TargetDependency = .module(name: "UtilityKit")
-    static let networkAPIKit: TargetDependency = .module(name: "NetworkAPIKit")
-    static let networkAPI: TargetDependency = .module(name: "NetworkAPI")
-    static let coreKit: TargetDependency = .module(name: "CoreKit")
-    static let swiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
-    static let resourceManager: TargetDependency = .module(name: "ResourceManager")
-    static let developTool: TargetDependency = .module(name: "DevelopTool")
+    static let UtilityKit: TargetDependency = .module(name: "UtilityKit")
+    static let NetworkAPIKit: TargetDependency = .module(name: "NetworkAPIKit")
+    static let NetworkAPI: TargetDependency = .module(name: "NetworkAPI")
+    static let CoreKit: TargetDependency = .module(name: "CoreKit")
+    static let SwiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
+    static let ResourceManager: TargetDependency = .module(name: "ResourceManager")
+    static let DevelopTool: TargetDependency = .module(name: "DevelopTool")
 }
-
 
 // MARK: Extension
 public extension TargetDependency {

@@ -8,5 +8,7 @@ let project = Project
                 .OHHTTPStubs
                ],
                dependencies: [
-                .SwiftPM.OHHTTPStubs
+                .SwiftPM.OHHTTPStubs,
+                .SwiftPM.OHHTTPStubsSwift,
+                .Carthage.FLEX,
                ])

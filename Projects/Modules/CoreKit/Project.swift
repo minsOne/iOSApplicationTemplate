@@ -4,8 +4,8 @@ import ProjectDescriptionHelpers
 let project = Project
     .framework(name: "CoreKit",
                dependencies: [
-                .Project.networkAPI,
-                .Project.utilityKit,
-                .Project.resourceManager,
+                .Project.NetworkAPI,
+                .Project.UtilityKit,
+                .Project.ResourceManager,
                ],
                hasDemoApp: true)

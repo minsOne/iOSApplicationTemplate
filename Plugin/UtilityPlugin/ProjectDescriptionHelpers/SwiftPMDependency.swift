@@ -18,9 +18,8 @@ public extension TargetDependency.SwiftPM {
     static let SnapKit: TargetDependency = .package(product: "SnapKit")
     static let ResourcePackage: TargetDependency = .package(product: "ResourcePackage")
     static let OHHTTPStubs: TargetDependency = .package(product: "OHHTTPStubs")
+    static let OHHTTPStubsSwift: TargetDependency = .package(product: "OHHTTPStubsSwift")
     static let FlexLayout: TargetDependency = .package(product: "FlexLayout")
-    //    static let flex: TargetDependency = .package(product: "FLEX")
-    
 }
 
 public extension Package {
@@ -33,6 +32,4 @@ public extension Package {
                                                .branch("master"))
     static let FlexLayout: Package = .package(url: "https://github.com/layoutBox/FlexLayout.git",
                                               .branch("master"))
-    //    static let flex: Package = .package(url: "https://github.com/minsone-opensource-fork/FLEX.git",
-    //                                        .branch("feature/spm"))
 }
