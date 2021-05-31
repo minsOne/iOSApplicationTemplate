@@ -1,4 +1,4 @@
-# AppTemplate
+# iOSApplicationTemplate
 
 이 프로젝트는 Tuist를 이용하여 각 프로젝트를 모듈로 구성하는 형태입니다.
 
@@ -42,3 +42,5 @@ $ tuist graph -d
 # dot 파일로 출력
 $ tuist graph -t -f dot
 ```
+
+![graph](./graph.png)
