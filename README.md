@@ -24,3 +24,21 @@ Dependencies resolved and fetched successfully.
 ```
 $ tuist generate
 ```
+
+## Dependency Graph
+
+Tuist를 이용하여 Dependency Graph를 출력할 수 있음.
+
+```
+# Graph 생성
+$ tuist graph
+
+# 테스트 타겟 제외
+$ tuist graph -t
+
+# 외부 라이브러리 제외
+$ tuist graph -d
+
+# dot 파일로 출력
+$ tuist graph -t -f dot
+```
