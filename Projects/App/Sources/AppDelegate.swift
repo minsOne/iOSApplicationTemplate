@@ -3,6 +3,9 @@ import NetworkAPI
 #if canImport(DevelopTool)
 import DevelopTool
 #endif
+#if canImport(FLEX)
+import FLEX
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
-        
-        prepareDevelopTool()
-        
+                
         window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = UIViewController()
         viewController.view.backgroundColor = .white
@@ -28,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         #endif
         
+        prepareDevelopTool()
+        
         return true
     }
 }
@@ -36,6 +39,9 @@ extension AppDelegate {
     func prepareDevelopTool() {
         #if canImport(DevelopTool)
         HTTPStubs.setup()
+        #endif
+        #if canImport(FLEX)
+        FLEXManager.shared.showExplorer()
         #endif
     }
 }
