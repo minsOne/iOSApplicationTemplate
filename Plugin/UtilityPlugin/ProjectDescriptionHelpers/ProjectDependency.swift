@@ -21,6 +21,7 @@ public extension TargetDependency.Project {
     static let SwiftPackageMerge: TargetDependency = .module(name: "SwiftPackageMerge")
     static let ResourceManager: TargetDependency = .module(name: "ResourceManager")
     static let DevelopTool: TargetDependency = .module(name: "DevelopTool")
+    static let AnalyticsKit: TargetDependency = .module(name: "AnalyticsKit")
 }
 
 // MARK: Extension

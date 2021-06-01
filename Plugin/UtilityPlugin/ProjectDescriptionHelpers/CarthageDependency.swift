@@ -8,7 +8,7 @@
 import Foundation
 import ProjectDescription
 
-// MARK: Project
+// MARK: Carthage
 public extension TargetDependency {
     struct Carthage {}
 }

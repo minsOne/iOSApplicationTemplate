@@ -6,6 +6,7 @@ import DevelopTool
 #if canImport(FLEX)
 import FLEX
 #endif
+import AnalyticsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         
         prepareDevelopTool()
+        
+        print(Logger.Firebase.register())
         
         return true
     }

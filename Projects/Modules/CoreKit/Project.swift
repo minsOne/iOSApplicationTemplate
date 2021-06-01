@@ -7,5 +7,6 @@ let project = Project
                 .Project.NetworkAPI,
                 .Project.UtilityKit,
                 .Project.ResourceManager,
+                .Project.AnalyticsKit,
                ],
                hasDemoApp: true)
