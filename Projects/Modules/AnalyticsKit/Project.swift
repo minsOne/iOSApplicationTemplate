@@ -3,5 +3,7 @@ import ProjectDescriptionHelpers
 import UtilityPlugin
 
 let project = Project
-    .framework(name: "AnalyticsKit",
-               dependencies: TargetDependency.Framework.Firebase)
+    .staticFramework(name: "AnalyticsKit",
+                     dependencies: [
+                        .Project.ThirdPartyLibraryManager,
+                     ])

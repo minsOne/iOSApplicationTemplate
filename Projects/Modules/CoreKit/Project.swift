@@ -8,5 +8,6 @@ let project = Project
                 .Project.UtilityKit,
                 .Project.ResourceManager,
                 .Project.AnalyticsKit,
+                .Project.ThirdPartyLibraryManager,
                ],
                hasDemoApp: true)

@@ -5,5 +5,5 @@ import UtilityPlugin
 let project = Project
     .staticFramework(name: "NetworkAPIKit",
                      dependencies: [
-                        .Project.SwiftPackageMerge
+                        .Project.ThirdPartyLibraryManager
                      ])
