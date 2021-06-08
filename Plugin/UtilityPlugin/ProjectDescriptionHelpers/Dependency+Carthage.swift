@@ -14,7 +14,7 @@ public extension TargetDependency {
 }
 
 public extension TargetDependency.Carthage {
-    static let FLEX: TargetDependency = .carthage(name: "FLEX")
+    static let FLEX = TargetDependency.carthage(name: "FLEX")
 }
 
 public extension TargetDependency {
