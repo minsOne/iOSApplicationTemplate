@@ -4,11 +4,18 @@ import ProjectDescriptionHelpers
 let project = Project
     .framework(name: "ThirdPartyLibraryManager",
                packages: [
-                .Alamofire
+                .Alamofire,
+                .RxSwift,
+                .SnapKit
                ],
                dependencies: [
-                [.SwiftPM.Alamofire],
+               TargetDependency.Framework.Firebase,
+                [.SwiftPM.Alamofire,
+                 .SwiftPM.RxCocoa,
+                 .SwiftPM.RxRelay,
+                 .SwiftPM.RxSwift,
+                 .SwiftPM.SnapKit,
+                 ],
                 [.sdk(name: "libsqlite3.tbd"),
                  .sdk(name: "StoreKit.framework")],
-                TargetDependency.Framework.Firebase
                ].flatMap { $0 })

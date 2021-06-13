@@ -20,6 +20,9 @@ public extension TargetDependency.SwiftPM {
     static let OHHTTPStubs      = TargetDependency.package(product: "OHHTTPStubs")
     static let OHHTTPStubsSwift = TargetDependency.package(product: "OHHTTPStubsSwift")
     static let FlexLayout       = TargetDependency.package(product: "FlexLayout")
+    static let RxSwift          = TargetDependency.package(product: "RxSwift")
+    static let RxCocoa          = TargetDependency.package(product: "RxCocoa")
+    static let RxRelay          = TargetDependency.package(product: "RxRelay")
 }
 
 public extension Package {
@@ -28,4 +31,5 @@ public extension Package {
     static let SnapKit         = Package.package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
     static let OHHTTPStubs     = Package.package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", .branch("master"))
     static let FlexLayout      = Package.package(url: "https://github.com/layoutBox/FlexLayout.git", .branch("master"))
+    static let RxSwift         = Package.package(url: "https://github.com/ReactiveX/RxSwift.git", .branch("main"))
 }

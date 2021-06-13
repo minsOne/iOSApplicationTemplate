@@ -8,9 +8,9 @@ public extension Logger {
 }
 
 public extension Logger.Firebase {
-    static func register() {
+    static func register(bundle: Bundle, plistName: String) {
         guard
-            let filePath = Bundle(for: Logger.Firebase.self).path(forResource: "GoogleService-Info", ofType: "plist"),
+            let filePath = bundle.path(forResource: plistName, ofType: "plist"),
             let fileopts = FirebaseOptions(contentsOfFile: filePath)
             else { return }
         

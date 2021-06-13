@@ -1,12 +1,8 @@
 import UIKit
 import NetworkAPI
-#if canImport(DevelopTool)
-import DevelopTool
-#endif
-#if canImport(FLEX)
-import FLEX
-#endif
 import AnalyticsKit
+import RxSwift
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
-                
+
+        #if DEBUG
+        PrepareDevelopToolService.load()
+        #endif
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = UIViewController()
         viewController.view.backgroundColor = .white
@@ -29,22 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(result)
         })
         #endif
-        
-        prepareDevelopTool()
-        
-        print(Logger.Firebase.register())
+    
+        print(Logger.Firebase.register(bundle: .main, plistName: "GoogleService-Info"))
         
         return true
-    }
-}
-
-extension AppDelegate {
-    func prepareDevelopTool() {
-        #if canImport(DevelopTool)
-        HTTPStubs.setup()
-        #endif
-        #if canImport(FLEX)
-        FLEXManager.shared.showExplorer()
-        #endif
     }
 }
