@@ -52,7 +52,11 @@ let targets: [Target] = [
           deploymentTarget: deploymentTarget,
           infoPlist: .default,
           sources: "Tests/**",
-          dependencies: [.target(name: "DevApp")]),
+          dependencies: [
+            .target(name: "DevApp"),
+            .Carthage.Quick,
+            .Carthage.Nimble,
+          ]),
 ]
 
 let schemes: [Scheme] = [
