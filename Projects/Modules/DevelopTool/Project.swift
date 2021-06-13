@@ -5,10 +5,12 @@ import UtilityPlugin
 let project = Project
     .framework(name: "DevelopTool",
                packages: [
-                .OHHTTPStubs
+                .DevelopTool.OHHTTPStubs,
+                .DevelopTool.NetworkStub,
                ],
                dependencies: [
-                .SwiftPM.OHHTTPStubs,
-                .SwiftPM.OHHTTPStubsSwift,
+                .SwiftPM.DevelopTool.OHHTTPStubs,
+                .SwiftPM.DevelopTool.OHHTTPStubsSwift,
+                .SwiftPM.DevelopTool.NetworkStub,
                 .Carthage.FLEX,
                ])
