@@ -24,6 +24,7 @@ public extension TargetDependency.SwiftPM {
     static let SnapKit          = TargetDependency.package(product: "SnapKit")
     static let ResourcePackage  = TargetDependency.package(product: "ResourcePackage")
     static let FlexLayout       = TargetDependency.package(product: "FlexLayout")
+    static let RIBs             = TargetDependency.package(product: "RIBs")
     static let RxSwift          = TargetDependency.package(product: "RxSwift")
     static let RxCocoa          = TargetDependency.package(product: "RxCocoa")
     static let RxRelay          = TargetDependency.package(product: "RxRelay")
@@ -40,7 +41,8 @@ public extension Package {
     static let Alamofire       = Package.package(url: "https://github.com/Alamofire/Alamofire.git", .branch("master"))
     static let SnapKit         = Package.package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
     static let FlexLayout      = Package.package(url: "https://github.com/layoutBox/FlexLayout.git", .branch("master"))
-    static let RxSwift         = Package.package(url: "https://github.com/ReactiveX/RxSwift.git", .branch("main"))
+    static let RIBs            = Package.package(url: "https://github.com/uber/RIBs.git", .branch("master"))
+    static let RxSwift         = Package.package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0")
 }
 
 public extension Package.DevelopTool {
