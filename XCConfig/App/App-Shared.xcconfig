@@ -1,0 +1,11 @@
+#include "../Shared.xcconfig"
+
+CLIENT_ID = "609505978758-b6i0iqbv2d17g3kcdhdaccmm582pi9lf.apps.googleusercontent.com"
+REVERSED_CLIENT_ID = "com.googleusercontent.apps.609505978758-b6i0iqbv2d17g3kcdhdaccmm582pi9lf"
+API_KEY = "AIzaSyCAGZ0WugFTtTgHXNAw3FEYs0vEDxg-ryM"
+GCM_SENDER_ID = "609505978758"
+PLIST_VERSION = "1"
+BUNDLE_ID = "kr.minsone.app"
+PROJECT_ID = "iosapplicationtemplate"
+STORAGE_BUCKET = "iosapplicationtemplate.appspot.com"
+GOOGLE_APP_ID = "1:609505978758:ios:893646c5e9c41b33572407"
