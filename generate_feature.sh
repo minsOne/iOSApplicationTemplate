@@ -23,7 +23,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .staticLibrary(name: "$1",
-               	   dependencies: [])
+    .staticFramework(name: "$1",
+                     dependencies: [
+                     ])
 EOF
-
