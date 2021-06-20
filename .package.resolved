@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "ReactorKit",
+        "repositoryURL": "https://github.com/ReactorKit/ReactorKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "cc4fb93cfb8d7229d1990838f89f5401c945756e",
+          "version": null
+        }
+      },
+      {
         "package": "RIBs",
         "repositoryURL": "https://github.com/uber/RIBs.git",
         "state": {
@@ -44,6 +53,15 @@
           "branch": null,
           "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
           "version": "5.0.1"
+        }
+      },
+      {
+        "package": "WeakMapTable",
+        "repositoryURL": "https://github.com/ReactorKit/WeakMapTable.git",
+        "state": {
+          "branch": null,
+          "revision": "9580560169b4b48ba2affe7badba6a7f360495f4",
+          "version": "1.2.0"
         }
       }
     ]

@@ -5,6 +5,7 @@ let project = Project
     .framework(name: "ThirdPartyLibraryManager",
                packages: [
                 .Alamofire,
+                .ReactorKit,
                 .RIBs,
                 .RxSwift,
                 .SnapKit
@@ -12,6 +13,7 @@ let project = Project
                dependencies: [
                TargetDependency.Framework.Firebase,
                 [.SwiftPM.Alamofire,
+                 .SwiftPM.ReactorKit,
                  .SwiftPM.RIBs,
                  .SwiftPM.RxCocoa,
                  .SwiftPM.RxRelay,
