@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>609505978758-02afni61c91160g0l2igu6ph8h01d1nj.apps.googleusercontent.com</string>
+	<string>609505978758-b6i0iqbv2d17g3kcdhdaccmm582pi9lf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.609505978758-02afni61c91160g0l2igu6ph8h01d1nj</string>
+	<string>com.googleusercontent.apps.609505978758-b6i0iqbv2d17g3kcdhdaccmm582pi9lf</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCAGZ0WugFTtTgHXNAw3FEYs0vEDxg-ryM</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>kr.minsone.dev-app</string>
+	<string>kr.minsone.app</string>
 	<key>PROJECT_ID</key>
 	<string>iosapplicationtemplate</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:609505978758:ios:41194c3f12e97835572407</string>
+	<string>1:609505978758:ios:893646c5e9c41b33572407</string>
 </dict>
 </plist>

@@ -32,6 +32,9 @@ let targets: [Target] = [
           ]),
           sources: ["Sources/**"],
           resources: ["Resources/**"],
+          actions: [
+            .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script")
+          ],
           dependencies: [
             .Project.CoreKit
           ]),
@@ -47,6 +50,9 @@ let targets: [Target] = [
           ]),
           sources: ["Sources/**", "DevSources/**"],
           resources: ["Resources/**"],
+          actions: [
+            .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script")
+          ],
           dependencies: [
             .Project.CoreKit,
             .Project.DevelopTool,
