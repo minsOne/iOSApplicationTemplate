@@ -26,7 +26,10 @@ let targets: [Target] = [
           productName: "App",
           bundleId: "kr.minsone.app",
           deploymentTarget: deploymentTarget,
-          infoPlist: .default,
+          infoPlist: .extendingDefault(with: [
+            "UIMainStoryboardFile": "",
+            "UILaunchStoryboardName": "LaunchScreen"
+          ]),
           sources: ["Sources/**"],
           resources: ["Resources/**"],
           dependencies: [
@@ -38,7 +41,10 @@ let targets: [Target] = [
           productName: "dev_app",
           bundleId: "kr.minsone.dev-app",
           deploymentTarget: deploymentTarget,
-          infoPlist: .default,
+          infoPlist: .extendingDefault(with: [
+            "UIMainStoryboardFile": "",
+            "UILaunchStoryboardName": "LaunchScreen"
+          ]),
           sources: ["Sources/**", "DevSources/**"],
           resources: ["Resources/**"],
           dependencies: [
