@@ -1,36 +1,29 @@
 import UIKit
-import NetworkAPI
-import AnalyticsKit
-import RxSwift
-import RxCocoa
+import RIBs
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private var launchRouter: LaunchRouting?
 
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
-
-        #if DEBUG
-        PrepareDevelopToolService.load()
-        #endif
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .white
-        window?.rootViewController = viewController
-        window?.makeKeyAndVisible()
+        PrepareAppDelegateService().load()
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        
+        let launchRouter = RootBuilder(dependency: AppComponent()).build()
+        self.launchRouter = launchRouter
+        launchRouter.launch(from: window)
         
         #if DEBUG
-        HTTPBinGet().request(completion: { result in
-            print(result)
-        })
+        PrepareDevelopToolService().load()
         #endif
-    
-        print(Logger.Firebase.register(bundle: .main, plistName: "GoogleService-Info"))
         
         return true
     }
