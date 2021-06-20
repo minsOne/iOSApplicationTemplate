@@ -11,6 +11,13 @@ import ProjectDescription
 // MARK: Project
 public extension TargetDependency {
     struct Project {}
+    struct Feature {}
+}
+
+public extension TargetDependency.Feature {
+    static let Features        = TargetDependency.feature(name: "Features")
+    static let Main            = TargetDependency.feature(name: "FeatureMain")
+    static let SharedComponent = TargetDependency.feature(name: "FeatureSharedComponent")
 }
 
 public extension TargetDependency.Project {
@@ -28,5 +35,8 @@ public extension TargetDependency.Project {
 public extension TargetDependency {
     static func module(name: String) -> Self {
         return .project(target: name, path: .relativeToModule(name))
+    }
+    static func feature(name: String) -> Self {
+        return .project(target: name, path: .relativeToFeature(name))
     }
 }

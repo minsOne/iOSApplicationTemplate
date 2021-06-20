@@ -15,6 +15,9 @@ public extension ProjectDescription.Path {
     static func relativeToModule(_ pathString: String) -> Self {
         return .relativeToRoot("Projects/Modules/\(pathString)")
     }
+    static func relativeToFeature(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/Features/\(pathString)")
+    }
     static var app: Self {
         return .relativeToRoot("Projects/App")
     }

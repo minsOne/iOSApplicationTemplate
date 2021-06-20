@@ -19,6 +19,10 @@ let settings: Settings =
             .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/App-PROD.xcconfig")),
           ])
 
+let actions: [TargetAction] = [
+    .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script")
+]
+
 let targets: [Target] = [
     .init(name: "App",
           platform: .iOS,
@@ -32,11 +36,9 @@ let targets: [Target] = [
           ]),
           sources: ["Sources/**"],
           resources: ["Resources/**"],
-          actions: [
-            .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script")
-          ],
+          actions: actions,
           dependencies: [
-            .Project.CoreKit
+            .Feature.Features,
           ]),
     .init(name: "DevApp",
           platform: .iOS,
@@ -50,11 +52,9 @@ let targets: [Target] = [
           ]),
           sources: ["Sources/**", "DevSources/**"],
           resources: ["Resources/**"],
-          actions: [
-            .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script")
-          ],
+          actions: actions,
           dependencies: [
-            .Project.CoreKit,
+            .Feature.Features,
             .Project.DevelopTool,
           ]),
     .init(name: "DevAppTests",
