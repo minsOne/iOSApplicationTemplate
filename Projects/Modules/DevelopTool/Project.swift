@@ -6,11 +6,11 @@ let project = Project
     .framework(name: "DevelopTool",
                packages: [
                 .DevelopTool.OHHTTPStubs,
-                .DevelopTool.NetworkStub,
+                .DevelopTool.ProxyNetworkStubPackage,
                ],
                dependencies: [
                 .SwiftPM.DevelopTool.OHHTTPStubs,
                 .SwiftPM.DevelopTool.OHHTTPStubsSwift,
-                .SwiftPM.DevelopTool.NetworkStub,
+                .SwiftPM.DevelopTool.ProxyNetworkStubPackage,
                 .Carthage.FLEX,
                ])

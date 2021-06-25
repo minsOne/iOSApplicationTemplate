@@ -4,13 +4,13 @@ import ProjectDescriptionHelpers
 let project = Project
     .framework(name: "CoreKit",
                packages: [
-                .ResourcePackage
+                .ProxyResourcePackage
                ],
                dependencies: [
                 .Project.NetworkAPI,
                 .Project.UtilityKit,
                 .Project.AnalyticsKit,
                 .Project.ThirdPartyLibraryManager,
-                .SwiftPM.ResourcePackage,
+                .SwiftPM.ProxyResourcePackage,
                ],
                hasDemoApp: true)
