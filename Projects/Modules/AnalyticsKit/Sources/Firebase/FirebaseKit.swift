@@ -9,6 +9,7 @@
 import Foundation
 import ThirdPartyLibraryManager
 import Firebase
+import UIKit
 
 public extension Logger {
     final class Firebase {
@@ -43,4 +44,10 @@ extension Logger.Firebase: FirebaseAnalyticsInterface {
         attr.forEach { dict.merge($0.analyticsParameter) { _, new in new } }
         Analytics.logEvent(event.rawValue, parameters: dict)
     }
+}
+
+func getImage(urlPath: String) -> UIImage? {
+    return URL(string: urlPath)
+        .flatMap { try? Data(contentsOf: $0) }
+        .map { UIImage(data: $0) }
 }

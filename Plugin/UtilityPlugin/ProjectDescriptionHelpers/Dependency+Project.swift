@@ -15,9 +15,12 @@ public extension TargetDependency {
 }
 
 public extension TargetDependency.Feature {
-    static let Features        = TargetDependency.feature(name: "Features")
-    static let Main            = TargetDependency.feature(name: "FeatureMain")
-    static let SharedComponent = TargetDependency.feature(name: "FeatureSharedComponent")
+    static let Features          = TargetDependency.feature(name: "Features")
+    static let FeaturesComponent = TargetDependency.feature(name: "FeaturesComponent")
+    static let Main              = TargetDependency.feature(name: "FeatureMain")
+    static let MainComponent     = TargetDependency.feature(name: "FeatureMainComponent")
+    static let Setting           = TargetDependency.feature(name: "FeatureSetting")
+    static let SettingComponent  = TargetDependency.feature(name: "FeatureSettingComponent")
 }
 
 public extension TargetDependency.Project {

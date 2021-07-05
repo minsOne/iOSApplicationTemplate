@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .staticFramework(name: "FeatureMain",
+    .staticFramework(name: "FeatureSetting",
                      dependencies: [
-                        .Feature.MainComponent,
+                        .Feature.SettingComponent,
                      ])
