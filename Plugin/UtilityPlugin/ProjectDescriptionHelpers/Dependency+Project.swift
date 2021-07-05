@@ -31,6 +31,7 @@ public extension TargetDependency.Project {
     static let DevelopTool              = TargetDependency.module(name: "DevelopTool")
     static let AnalyticsKit             = TargetDependency.module(name: "AnalyticsKit")
     static let ThirdPartyLibraryManager = TargetDependency.module(name: "ThirdPartyLibraryManager")
+    static let ThirdPartyDynamicLibraryPluginManager = TargetDependency.module(name: "ThirdPartyDynamicLibraryPluginManager")
 }
 
 // MARK: Extension

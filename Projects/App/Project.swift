@@ -39,6 +39,7 @@ let targets: [Target] = [
           actions: actions,
           dependencies: [
             .Feature.Features,
+            .Project.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevApp",
           platform: .iOS,
@@ -56,6 +57,7 @@ let targets: [Target] = [
           dependencies: [
             .Feature.Features,
             .Project.DevelopTool,
+            .Project.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevAppTests",
           platform: .iOS,
