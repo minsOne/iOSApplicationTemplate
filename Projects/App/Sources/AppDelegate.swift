@@ -1,5 +1,6 @@
 import UIKit
 import RIBs
+import NetworkAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         #if DEBUG
         PrepareDevelopToolService().load()
+        #endif
+        
+        #if DEBUG
+        API.Common.BinGet().request(completion: {_ in })
+        API.Home.BinGet().request(completion: {_ in })
+        API.Login.BinGet().request(completion: {_ in })
         #endif
         
         return true

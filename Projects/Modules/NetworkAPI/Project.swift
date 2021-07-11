@@ -4,5 +4,7 @@ import ProjectDescriptionHelpers
 let project = Project
     .staticFramework(name: "NetworkAPI",
                      dependencies: [
-                        .Project.NetworkAPIKit
+                        .Project.Network.Common,
+                        .Project.Network.Home,
+                        .Project.Network.Login,
                      ])

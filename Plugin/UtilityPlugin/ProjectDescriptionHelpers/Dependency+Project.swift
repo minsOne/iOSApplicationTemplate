@@ -10,7 +10,9 @@ import ProjectDescription
 
 // MARK: Project
 public extension TargetDependency {
-    struct Project {}
+    struct Project {
+        public struct Network {} 
+    }
     struct Feature {}
 }
 
@@ -32,6 +34,12 @@ public extension TargetDependency.Project {
     static let AnalyticsKit             = TargetDependency.module(name: "AnalyticsKit")
     static let ThirdPartyLibraryManager = TargetDependency.module(name: "ThirdPartyLibraryManager")
     static let ThirdPartyDynamicLibraryPluginManager = TargetDependency.module(name: "ThirdPartyDynamicLibraryPluginManager")
+}
+
+public extension TargetDependency.Project.Network {
+    static let Common = TargetDependency.module(name: "NetworkAPICommon")
+    static let Home   = TargetDependency.module(name: "NetworkAPIHome")
+    static let Login  = TargetDependency.module(name: "NetworkAPILogin")
 }
 
 // MARK: Extension

@@ -12,7 +12,7 @@ public enum APIRequestError: Error {
 
 public protocol APIRequestDefinition {
     associatedtype Parameter: Codable
-    associatedtype Response: Codable
+    associatedtype Response: Decodable
     
     var baseURL: String { get }
     var method: HTTPMethod { get }
@@ -25,9 +25,8 @@ private extension APIRequestDefinition {
     var urlRequest: Result<URLRequest, APIRequestError> {
         guard
             var url = URL(string: baseURL)
-        else {
-            return .failure(.baseURLError)
-        }
+        else { return .failure(.baseURLError) }
+
         url.appendPathComponent(path)
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
@@ -77,19 +76,18 @@ public extension APIRequestDefinition {
         }
     }
     
-    private func dataTask(with request: URLRequest, completion: @escaping (Result<Response, APIRequestError>) -> ()) {
+    private func dataTask<T: Decodable>(with request: URLRequest, completion: @escaping (Result<T, APIRequestError>) -> ()) {
         let session = URLSession(configuration: .default)
+
         session.dataTask(with: request, completionHandler: { (data, response, error) in
             switch (data, response, error) {
             case (_, _, let error?):
                 completion(.failure(.connectionError(error)))
-            case (let data?, let urlResponse as HTTPURLResponse, _):
-                if urlResponse.isSuccess == false {
-                    completion(.failure(.failResponse))
-                    return
-                }
+            case (_, let urlResponse as HTTPURLResponse, _) where urlResponse.isSuccess == false:
+                completion(.failure(.failResponse))
+            case (let data?, _, _):
                 do {
-                    let decodedResponse = try JSONDecoder().decode(Response.self, from: data)
+                    let decodedResponse = try JSONDecoder().decode(T.self, from: data)
                     completion(.success(decodedResponse))
                 } catch {
                     completion(.failure(.responseDecodeError(error)))
