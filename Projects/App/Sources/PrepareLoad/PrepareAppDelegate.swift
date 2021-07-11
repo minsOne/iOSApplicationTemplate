@@ -11,9 +11,7 @@ import AnalyticsKit
 
 struct PrepareAppDelegateService {
     func load() {
-        let firebase = AnalyticsKit.Logger.Firebase()
-        firebase.register(bundle: .main,
-                             plistName: "GoogleService-Info")
-        firebase.logEvent(event: .appStart)
+        Logger.Firebase.register(bundle: .main, plistName: "GoogleService-Info")
+        Logger.Firebase.logEvent(event: .appStart)
     }
 }

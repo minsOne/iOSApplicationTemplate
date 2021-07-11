@@ -1,10 +1,7 @@
 import Foundation
 import NetworkAPIKit
 
-#if DEBUG
 public struct HTTPBinGet: APIRequestDefinition {
-    public let baseURL: String = "https://httpbin.org"
-    
     public let method: HTTPMethod = .get
     
     public let path: String = "get"
@@ -20,4 +17,3 @@ public extension HTTPBinGet {
     
     struct Response: Codable {}
 }
-#endif
