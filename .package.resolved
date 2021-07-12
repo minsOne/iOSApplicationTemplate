@@ -11,6 +11,24 @@
         }
       },
       {
+        "package": "BlueprintUI",
+        "repositoryURL": "https://github.com/square/Blueprint.git",
+        "state": {
+          "branch": null,
+          "revision": "0a62f071a0ca4ee2e8641257c419a3704c27843f",
+          "version": "0.27.0"
+        }
+      },
+      {
+        "package": "FlexLayout",
+        "repositoryURL": "https://github.com/layoutBox/FlexLayout.git",
+        "state": {
+          "branch": "master",
+          "revision": "f6f6023574a60e613300064f7780ea926f6036f0",
+          "version": null
+        }
+      },
+      {
         "package": "OHHTTPStubs",
         "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
         "state": {

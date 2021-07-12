@@ -8,11 +8,16 @@ let project = Project
                 .ReactorKit,
                 .RIBs,
                 .RxSwift,
-                .SnapKit
+                .SnapKit,
+                .Blueprint,
+                .FlexLayout,
                ],
                dependencies: [
                TargetDependency.Framework.Firebase,
                 [.SwiftPM.Alamofire,
+                 .SwiftPM.BlueprintUI,
+                 .SwiftPM.BlueprintUICommonControls,
+                 .SwiftPM.FlexLayout,
                  .SwiftPM.ReactorKit,
                  .SwiftPM.RIBs,
                  .SwiftPM.RxCocoa,

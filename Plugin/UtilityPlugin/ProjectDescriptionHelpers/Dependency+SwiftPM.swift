@@ -20,15 +20,17 @@ extension Package {
 }
 
 public extension TargetDependency.SwiftPM {
-    static let ProxyResourcePackage = TargetDependency.package(product: "ProxyResourcePackage")
-    static let Alamofire            = TargetDependency.package(product: "Alamofire")
-    static let SnapKit              = TargetDependency.package(product: "SnapKit")
-    static let FlexLayout           = TargetDependency.package(product: "FlexLayout")
-    static let ReactorKit           = TargetDependency.package(product: "ReactorKit")
-    static let RIBs                 = TargetDependency.package(product: "RIBs")
-    static let RxSwift              = TargetDependency.package(product: "RxSwift")
-    static let RxCocoa              = TargetDependency.package(product: "RxCocoa")
-    static let RxRelay              = TargetDependency.package(product: "RxRelay")
+    static let ProxyResourcePackage      = TargetDependency.package(product: "ProxyResourcePackage")
+    static let Alamofire                 = TargetDependency.package(product: "Alamofire")
+    static let BlueprintUI               = TargetDependency.package(product: "BlueprintUI")
+    static let BlueprintUICommonControls = TargetDependency.package(product: "BlueprintUICommonControls")
+    static let FlexLayout                = TargetDependency.package(product: "FlexLayout")
+    static let ReactorKit                = TargetDependency.package(product: "ReactorKit")
+    static let RIBs                      = TargetDependency.package(product: "RIBs")
+    static let RxCocoa                   = TargetDependency.package(product: "RxCocoa")
+    static let RxRelay                   = TargetDependency.package(product: "RxRelay")
+    static let RxSwift                   = TargetDependency.package(product: "RxSwift")
+    static let SnapKit                   = TargetDependency.package(product: "SnapKit")
 }
 
 public extension TargetDependency.SwiftPM.DevelopTool {
@@ -40,6 +42,7 @@ public extension TargetDependency.SwiftPM.DevelopTool {
 public extension Package {
     static let ProxyResourcePackage = Package.local(path: .relativeToModule("ProxyResourcePackage"))
     static let Alamofire            = Package.package(url: "https://github.com/Alamofire/Alamofire.git", .branch("master"))
+    static let Blueprint            = Package.package(url: "https://github.com/square/Blueprint.git", from: "0.3.0")
     static let FlexLayout           = Package.package(url: "https://github.com/layoutBox/FlexLayout.git", .branch("master"))
     static let ReactorKit           = Package.package(url: "https://github.com/ReactorKit/ReactorKit.git", .branch("master"))
     static let RIBs                 = Package.package(url: "https://github.com/uber/RIBs.git", .branch("master"))

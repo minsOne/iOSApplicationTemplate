@@ -23,6 +23,8 @@ public extension TargetDependency.Feature {
     static let MainComponent     = TargetDependency.feature(name: "FeatureMainComponent")
     static let Setting           = TargetDependency.feature(name: "FeatureSetting")
     static let SettingComponent  = TargetDependency.feature(name: "FeatureSettingComponent")
+    static let Loan              = TargetDependency.feature(name: "FeatureLoan")
+    static let LoanComponent     = TargetDependency.feature(name: "FeatureLoanComponent")
 }
 
 public extension TargetDependency.Project {
