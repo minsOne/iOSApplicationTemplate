@@ -7,7 +7,7 @@ let project = Project
                 .ProxyResourcePackage
                ],
                dependencies: [
-                .Project.NetworkAPI,
+                .Project.NetworkAPIs,
                 .Project.UtilityKit,
                 .Project.AnalyticsKit,
                 .Project.ThirdPartyLibraryManager,

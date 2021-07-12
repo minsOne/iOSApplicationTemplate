@@ -1,6 +1,6 @@
 import UIKit
 import RIBs
-import NetworkAPI
+import NetworkAPIs
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

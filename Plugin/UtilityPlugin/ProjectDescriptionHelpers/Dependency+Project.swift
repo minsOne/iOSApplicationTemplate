@@ -28,7 +28,7 @@ public extension TargetDependency.Feature {
 public extension TargetDependency.Project {
     static let UtilityKit               = TargetDependency.module(name: "UtilityKit")
     static let NetworkAPIKit            = TargetDependency.module(name: "NetworkAPIKit")
-    static let NetworkAPI               = TargetDependency.module(name: "NetworkAPI")
+    static let NetworkAPIs              = TargetDependency.module(name: "NetworkAPIs")
     static let CoreKit                  = TargetDependency.module(name: "CoreKit")
     static let DevelopTool              = TargetDependency.module(name: "DevelopTool")
     static let AnalyticsKit             = TargetDependency.module(name: "AnalyticsKit")
