@@ -27,10 +27,20 @@ public extension TargetDependency.Framework {
         .firebase(name: "Firebase"),
         .firebase(name: "FIRAnalyticsConnector"),
     ]
+    static let Facebook: [TargetDependency] = [
+        .facebook(name: "FBSDKShareKit"),
+        .facebook(name: "FBSDKLoginKit"),
+        .facebook(name: "FBSDKGamingServicesKit"),
+        .facebook(name: "FBSDKCoreKit"),
+        .facebook(name: "FBSDKCoreKit_Basics"),
+    ]
 }
 
 public extension TargetDependency {
     static func firebase(name: String) -> Self {
         return .framework(path: .relativeToRoot("Vendor/Firebase/\(name).framework"))
+    }
+    static func facebook(name: String) -> Self {
+        return .xcFramework(path: .relativeToRoot("Vendor/Facebook/\(name).xcframework"))
     }
 }
