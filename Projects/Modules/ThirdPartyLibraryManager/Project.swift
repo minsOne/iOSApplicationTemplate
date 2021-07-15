@@ -13,7 +13,7 @@ let project = Project
                 .FlexLayout,
                ],
                dependencies: [
-               TargetDependency.Framework.Firebase,
+                TargetDependency.Framework.Firebase,
                 [.SwiftPM.Alamofire,
                  .SwiftPM.BlueprintUI,
                  .SwiftPM.BlueprintUICommonControls,
@@ -24,7 +24,7 @@ let project = Project
                  .SwiftPM.RxRelay,
                  .SwiftPM.RxSwift,
                  .SwiftPM.SnapKit,
-                 ],
+                ],
                 [.sdk(name: "libsqlite3.tbd"),
                  .sdk(name: "StoreKit.framework")],
                ].flatMap { $0 })

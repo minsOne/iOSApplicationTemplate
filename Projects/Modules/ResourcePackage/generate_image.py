@@ -18,8 +18,6 @@ for filename in os.listdir("Sources/ResourcePackage/Resources/Images.xcassets"):
 imageDict["level1"] = imageLevel1
 print(json.dumps(imageDict, sort_keys=False, indent=4))
 
-
-
 f = open("Sources/ResourcePackage/ImageAsset.swift", 'w')
 f.write("import Foundation\n")
 f.write("import UIKit\n")
