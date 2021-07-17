@@ -18,17 +18,24 @@ for filename in os.listdir("Sources/ResourcePackage/Resources/Images.xcassets"):
 imageDict["level1"] = imageLevel1
 print(json.dumps(imageDict, sort_keys=False, indent=4))
 
-f = open("Sources/ResourcePackage/ImageAsset.swift", 'w')
+
+keylist = list(imageDict)
+old_index = keylist.index("level1")
+keylist.insert(0, keylist.pop(old_index))
+
+
+f = open("Sources/ResourcePackage/Assets/ImageAsset.swift", 'w')
+
 f.write("import Foundation\n")
 f.write("import UIKit\n")
 f.write("\n")
 f.write("public extension R.Image {\n")
-for key in imageDict.keys():
+for key in keylist:
     if key == "level1": continue
     f.write("    struct " + key + " {}\n")
 f.write("}\n")
 
-for key in imageDict.keys():
+for key in keylist:
     if key == "level1": 
         f.write("\npublic extension R.Image {\n")
     else:
@@ -39,7 +46,7 @@ for key in imageDict.keys():
         property_name = asset
         if asset[0].isdigit():
             property_name = "_" + asset
-        f.write("    static var " + property_name + ": UIImage { RImage(\"" + asset + "\").image }\n")
+        f.write("    static var " + property_name + ": UIImage { .R(#imageLiteral (resourceName: \"" + asset + "\")) }\n")
     f.write("}\n")
 f.close()
 
@@ -49,7 +56,7 @@ f.write("@testable import ResourcePackage\n")
 f.write("\n")
 f.write("final class ImageAssetTests: XCTestCase {\n")
 f.write("    func testImage() {\n")
-for key in imageDict.keys():
+for key in keylist:
     list = imageDict[key]
     for asset in list:
         property_name = asset

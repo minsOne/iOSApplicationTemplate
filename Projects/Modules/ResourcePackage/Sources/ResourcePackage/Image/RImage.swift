@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-public struct RImage {
-    public let image: UIImage
+struct RImage: _ExpressibleByImageLiteral {
+    let image: UIImage
     
-    public init(_ name: String) {
-        if let image = UIImage(named: name, in: .module, compatibleWith: nil) {
+    init(imageLiteralResourceName path: String) {
+        if let image = UIImage(named: path, in: .module, compatibleWith: nil) {
             self.image = image
         } else {
             assert(false, "해당 이미지가 없습니다.")
