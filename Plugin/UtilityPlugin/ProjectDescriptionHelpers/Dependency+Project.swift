@@ -32,6 +32,7 @@ public extension TargetDependency.Project {
     static let NetworkAPIKit            = TargetDependency.module(name: "NetworkAPIKit")
     static let NetworkAPIs              = TargetDependency.module(name: "NetworkAPIs")
     static let CoreKit                  = TargetDependency.module(name: "CoreKit")
+    static let DesignSystem             = TargetDependency.module(name: "DesignSystem")
     static let DevelopTool              = TargetDependency.module(name: "DevelopTool")
     static let AnalyticsKit             = TargetDependency.module(name: "AnalyticsKit")
     static let ThirdPartyLibraryManager = TargetDependency.module(name: "ThirdPartyLibraryManager")
