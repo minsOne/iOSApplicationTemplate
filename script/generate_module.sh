@@ -14,7 +14,7 @@ mkdir -p Projects/Modules/$1/Resources
 touch Projects/Modules/$1/Resources/.gitkeep
 
 mkdir -p Projects/Modules/$1/Tests
-touch Projects/Modules/$1/Tests/.gitkeep
+touch Projects/Modules/$1/Tests/Tests.swift
 
 touch Projects/Modules/$1/Project.swift
 

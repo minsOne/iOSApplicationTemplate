@@ -14,7 +14,7 @@ mkdir -p Projects/Features/$1/Resources
 touch Projects/Features/$1/Resources/.gitkeep
 
 mkdir -p Projects/Features/$1/Tests
-touch Projects/Features/$1/Tests/.gitkeep
+touch Projects/Features/$1/Tests/Tests.swift
 
 touch Projects/Features/$1/Project.swift
 
