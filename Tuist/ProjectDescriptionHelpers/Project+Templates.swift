@@ -99,7 +99,10 @@ public extension Project {
         
         
         
-        let schemes: [Scheme] = [.makeScheme(target: .dev, name: name)]
+        let schemes: [Scheme] = hasDemoApp
+            ? [.makeScheme(target: .dev, name: name), .makeDemoScheme(target: .dev, name: name)]
+            : [.makeScheme(target: .dev, name: name)]
+
         let targets: [Target] = hasDemoApp
             ? [target1, testTarget, demoAppTarget]
             : [target1, testTarget]
@@ -113,11 +116,24 @@ public extension Project {
     }
 }
 
-public extension Scheme {
+extension Scheme {
     static func makeScheme(target: ProjectDeployTarget, name: String) -> Self {
-        return Scheme(name: "Default-\(name)",
+        return Scheme(name: "\(name)",
                       shared: true,
                       buildAction: BuildAction(targets: ["\(name)"]),
+                      testAction: TestAction(targets: ["\(name)Tests"],
+                                             configurationName: target.rawValue,
+                                             coverage: true),
+                      runAction: RunAction(configurationName: target.rawValue),
+                      archiveAction: ArchiveAction(configurationName: target.rawValue),
+                      profileAction: ProfileAction(configurationName: target.rawValue),
+                      analyzeAction: AnalyzeAction(configurationName: target.rawValue))
+    }
+
+    static func makeDemoScheme(target: ProjectDeployTarget, name: String) -> Self {
+        return Scheme(name: "\(name)DemoApp",
+                      shared: true,
+                      buildAction: BuildAction(targets: ["\(name)DemoApp"]),
                       testAction: TestAction(targets: ["\(name)Tests"],
                                              configurationName: target.rawValue,
                                              coverage: true),
