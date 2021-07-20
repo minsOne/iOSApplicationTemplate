@@ -23,8 +23,11 @@ public struct BothSideText: View {
     public var body: some View {
         return HStack {
             Text(title)
+                .fontWeight(.bold)
             Spacer()
-            Text(detail).multilineTextAlignment(.trailing)
+            Text(detail)
+                .multilineTextAlignment(.trailing)
+                .lineSpacing(7)
         }
         .accessibility(label: Text("\(title) \(detail)"))
     }
