@@ -80,7 +80,7 @@ f.write("import XCTest\n")
 f.write("@testable import ResourcePackage\n")
 f.write("\n")
 f.write("final class ImageAssetTests: XCTestCase {\n")
-f.write("    func testImage() {\n")
+f.write("    func test_image() {\n")
 
 def print_assetNotNil_image(tree, group):
     keyList = list(tree)

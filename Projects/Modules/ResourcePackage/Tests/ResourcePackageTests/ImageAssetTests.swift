@@ -2,7 +2,7 @@ import XCTest
 @testable import ResourcePackage
 
 final class ImageAssetTests: XCTestCase {
-    func testImage() {
+    func test_image() {
         XCTAssertNotNil(R.Image.Arrow.arrow20LGrey_Normal.cgImage)
         XCTAssertNotNil(R.Image.Arrow.arrow20L_Normal.cgImage)
         XCTAssertNotNil(R.Image.Arrow.arrow20_Normal.cgImage)

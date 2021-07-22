@@ -31,16 +31,24 @@ for root, dirs, files in os.walk(startpath):
 tree = tree['./Sources/ResourcePackage/Resources/Storyboard']
 # print(json.dumps(tree, sort_keys=False, indent=4))
 
-def clear_storyboard_asset_dict(tree):
+
+def clear_xib_dict(tree):
     for key in list(tree.keys()):
         if ".xib" in key: del tree[key]
-    
+        if ".DS_Store" in key: del tree[key]
+        elif ".storyboard" in key: continue
+        else: clear_xib_dict(tree[key])
+
+def clear_empty_directory_dict(tree):
     for key in list(tree.keys()):
         if ".storyboard" in key: continue
         elif tree[key] == {}: del tree[key]
-        else: clear_storyboard_asset_dict(tree[key])
+        else: clear_empty_directory_dict(tree[key])
 
-clear_storyboard_asset_dict(tree)
+clear_xib_dict(tree)
+clear_empty_directory_dict(tree)
+clear_empty_directory_dict(tree)
+clear_empty_directory_dict(tree)
 
 f = open("Sources/ResourcePackage/Assets/StoryboardAsset.swift", 'w')
 
@@ -64,7 +72,6 @@ def print_storyboard_asset(tree, level, group):
                 f.write("    ")
             f.write("public static var " + propertyName + ": R.Storyboard { .init(name: \"" + storyboardName + "\") }\n")
         else:
-            f.write("\n")
             for i in range(level):
                 f.write("    ")
             f.write("public struct " + key + " {\n")
@@ -99,7 +106,6 @@ def print_assert_storyboard_NotNil(tree, group):
                 elif groupName == "R": continue
                 elif groupName == "Storyboard": continue
                 else:
-                    print(groupName, propertyName)
                     propertyName = propertyName.replace(groupName, '')
             f.write("        XCTAssertNotNil(storyboardResourcePath(" + group + "." + propertyName + "))\n")
         else:

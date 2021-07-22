@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public extension R.Image {
+extension R.Image {
     public struct Arrow {
         public static var arrow20LGrey_Normal: UIImage { .R(#imageLiteral (resourceName: "arrow20LGrey_Normal")) }
         public static var arrow20L_Normal: UIImage { .R(#imageLiteral (resourceName: "arrow20L_Normal")) }
