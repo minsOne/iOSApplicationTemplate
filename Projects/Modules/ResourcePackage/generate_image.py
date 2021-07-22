@@ -46,7 +46,7 @@ f = open("Sources/ResourcePackage/Assets/ImageAsset.swift", 'w')
 f.write("import Foundation\n")
 f.write("import UIKit\n")
 f.write("\n")
-f.write("public extension R.Image {\n")
+f.write("extension R.Image {\n")
 
 def print_image_group(tree, level):
     keyList = list(tree)
