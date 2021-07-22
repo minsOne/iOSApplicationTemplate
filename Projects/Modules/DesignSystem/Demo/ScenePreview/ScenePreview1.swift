@@ -71,23 +71,38 @@ struct ScenePreview1_Previews: PreviewProvider {
             Spacer()
             
             Button(action: {
-                
-            }, label: {
-                Text("입출금 알림 설정하기")
+                print("Button action")
+            }) {
+                Text("체크카드 신청하러 가기")
+                    .foregroundColor(.black)
+                    .font(.system(size: 18))
+                    .fontWeight(.bold)
                     .frame(maxWidth: .infinity)
                     .frame(height: 60)
-                    .foregroundColor(.black)
-            })
-            .background(Color(#colorLiteral(red: 0.9932666421, green: 0.8696673512, blue: 0.1387533247, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 1, green: 0.8823529412, blue: 0, alpha: 1)))
+                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+            }
         }
     }
 }
+
+import UIKit
 
 struct BorderButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundColor(configuration.isPressed ? .gray : .black)
             .border(Color.gray, width: 1)
+    }
+}
+
+struct FloatingButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(hasSafeArea
+                        ? EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
+                        : EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
     }
 }
 

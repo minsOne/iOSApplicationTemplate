@@ -10,8 +10,9 @@ import SwiftUI
 
 public struct SeperateLine {
     public struct Gray: View {
+        public init() {}
         public var body: some View {
-            Color.gray.frame(height: 0.5)
+            Color.gray.frame(height: lineHeight)
         }
     }
 }
