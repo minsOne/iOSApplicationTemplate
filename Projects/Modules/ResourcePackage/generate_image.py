@@ -1,54 +1,79 @@
 import os, glob, json
+from pprint import pprint
 
-dirname = "Sources/ResourcePackage/Resources/Images.xcassets"
-imageDict = {}
-imageLevel1 = []
+def set_leaf(tree, branches, leaf):
+    """ Set a terminal element to *leaf* within nested dictionaries.              
+    *branches* defines the path through dictionnaries.                            
 
-for filename in os.listdir("Sources/ResourcePackage/Resources/Images.xcassets"):
-    if ".imageset" in filename:
-        imageLevel1.append(filename.split(".")[0])
-    else:
-        subFolder = os.path.join(dirname, filename)
-        if not os.path.isdir(subFolder):
-            continue
-        for _filename in os.listdir(subFolder):
-            if ".imageset" in _filename:
-                imageDict[filename] = imageDict.get(filename, []) + [_filename.split(".")[0]]
+    Example:                                                                      
+    >>> t = {}                                                                    
+    >>> set_leaf(t, ['b1','b2','b3'], 'new_leaf')                                 
+    >>> print t                                                                   
+    {'b1': {'b2': {'b3': 'new_leaf'}}}                                             
+    """
+    if len(branches) == 1:
+        tree[branches[0]] = leaf
+        return
+    if not branches[0] in tree:
+        tree[branches[0]] = {}
+    set_leaf(tree[branches[0]], branches[1:], leaf)
 
-imageDict["level1"] = imageLevel1
-print(json.dumps(imageDict, sort_keys=False, indent=4))
+startpath = "./Sources/ResourcePackage/Resources/Images.xcassets"
+tree = {}
+for root, dirs, files in os.walk(startpath):
+    branches = [startpath]
+    if root != startpath:
+        branches.extend(os.path.relpath(root, startpath).split('/'))
+    
+    set_leaf(tree, branches, dict([(d,{}) for d in dirs]))
+
+tree = tree['./Sources/ResourcePackage/Resources/Images.xcassets']
 
 
-keylist = list(imageDict)
-old_index = keylist.index("level1")
-keylist.insert(0, keylist.pop(old_index))
+def clear_image_asset_dict(tree):
+    for key in list(tree.keys()):
+        if ".appiconset" in key: del tree[key]
+    for key in list(tree.keys()):
+        if ".imageset" in key: continue
+        elif tree[key] == {}: del tree[key] 
+        else: clear_image_asset_dict(tree[key])
+
+clear_image_asset_dict(tree)
+# print(json.dumps(tree, sort_keys=False, indent=4))
 
 
 f = open("Sources/ResourcePackage/Assets/ImageAsset.swift", 'w')
-
 f.write("import Foundation\n")
 f.write("import UIKit\n")
 f.write("\n")
 f.write("public extension R.Image {\n")
-for key in keylist:
-    if key == "level1": continue
-    f.write("    struct " + key + " {}\n")
-f.write("}\n")
 
-for key in keylist:
-    if key == "level1": 
-        f.write("\npublic extension R.Image {\n")
-    else:
-        f.write("\npublic extension R.Image." + key + " {\n")
-    list = imageDict[key]
-    list.sort()
-    for asset in list:
-        property_name = asset
-        if asset[0].isdigit():
-            property_name = "_" + asset
-        f.write("    static var " + property_name + ": UIImage { .R(#imageLiteral (resourceName: \"" + asset + "\")) }\n")
-    f.write("}\n")
+def print_image_group(tree, level):
+    keyList = list(tree)
+    keyList.sort()
+    for key in keyList:
+        if ".imageset" in key:
+            imageName = key.split(".")[0]
+            assetName = imageName
+            if imageName[0].isdigit():
+                assetName = "_" + imageName
+            for i in range(level):
+                f.write("    ")
+            f.write("public static var " + assetName + ": UIImage { .R(#imageLiteral (resourceName: \"" + imageName + "\")) }\n")
+        else:
+            for i in range(level):
+                f.write("    ")
+            f.write("public struct " + key + " {\n")
+            print_image_group(tree[key], level + 1)
+            for i in range(level):
+                f.write("    ")
+            f.write("}\n")
+
+print_image_group(tree, 1)
+
+f.write("}\n")
 f.close()
+
 
 f = open("Tests/ResourcePackageTests/ImageAssetTests.swift", 'w')
 f.write("import XCTest\n")
@@ -56,16 +81,24 @@ f.write("@testable import ResourcePackage\n")
 f.write("\n")
 f.write("final class ImageAssetTests: XCTestCase {\n")
 f.write("    func testImage() {\n")
-for key in keylist:
-    list = imageDict[key]
-    for asset in list:
-        property_name = asset
-        if asset[0].isdigit():
-            property_name = "_" + asset
-        f.write("        XCTAssertNotNil(R.Image.")
-        if key != "level1": 
-            f.write(key + ".")
-        f.write(property_name + ".cgImage)\n")
+
+def print_assetNotNil_image(tree, group):
+    keyList = list(tree)
+    keyList.sort()
+    for key in keyList:
+        if ".imageset" in key:
+            imageName = key.split(".")[0]
+            assetName = imageName
+            if imageName[0].isdigit():
+                assetName = "_" + imageName
+            f.write("        XCTAssertNotNil(" + group + "." + assetName + ".cgImage)\n")
+        elif ".appiconset" in key:
+            continue
+        else:
+            print_assetNotNil_image(tree[key], group + "." + key)
+
+print_assetNotNil_image(tree, "R.Image")
+
 f.write("    }\n")
 f.write("}\n")
 f.close()
