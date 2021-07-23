@@ -35,7 +35,7 @@ tree = tree['./Sources/ResourcePackage/Resources/Storyboard']
 def clear_xib_dict(tree):
     for key in list(tree.keys()):
         if ".xib" in key: del tree[key]
-        if ".DS_Store" in key: del tree[key]
+        elif ".DS_Store" in key: del tree[key]
         elif ".storyboard" in key: continue
         else: clear_xib_dict(tree[key])
 
