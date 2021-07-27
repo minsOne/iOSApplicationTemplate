@@ -7,12 +7,10 @@
 //
 
 import Foundation
-import NetworkAPICommon
 import NetworkAPIHome
 import NetworkAPILogin
 
 public struct API {
-    public typealias Common = CommonAPI
     public typealias Home = HomeAPI
     public typealias Login = LoginAPI
 }

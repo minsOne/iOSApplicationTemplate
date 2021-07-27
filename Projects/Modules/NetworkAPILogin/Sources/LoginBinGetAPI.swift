@@ -11,20 +11,18 @@ import NetworkAPIKit
 
 public extension LoginAPI {
     struct BinGet: APIRequestDefinition {
+        public typealias BodyParameter = NetworkAPIKit.EmptyBodyParameter
+        
         public let method: HTTPMethod = .get
-        
         public let path: String = "anything/login/bin"
-        
-        public var parameter: Parameter = Parameter()
+        public var queryParameters: [String : String]? {
+            ["aa": "bb"]
+        }
         public init() {}
     }
 }
 
 public extension LoginAPI.BinGet {
-    struct Parameter: Codable {
-        public var aa: String = "bb"
-    }
-    
     struct Response: Codable {
         public init(from decoder: Decoder) throws {}
     }

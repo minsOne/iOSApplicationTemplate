@@ -11,21 +11,21 @@ import NetworkAPIKit
 
 public extension HomeAPI {
     struct BinGet: APIRequestDefinition {
+        public typealias BodyParameter = NetworkAPIKit.EmptyBodyParameter
+
         public let method: HTTPMethod = .get
+        public let path: String = "latest/by-lat-lng"
+        public var queryParameters: [String : String]? {
+            ["lat": "12.9889055",
+             "lng": "77.574044"]
+        }
         
-        public let path: String = "anything/home/bin"
-        
-        public var parameter: Parameter = Parameter()
         public init() {}
     }
 }
 
 public extension HomeAPI.BinGet {
-    struct Parameter: Codable {
-        public var aa: String = "bb"
-    }
-    
-    struct Response: Codable {
+    struct Response: Decodable {
         public init(from decoder: Decoder) throws {}
     }
 }

@@ -27,9 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         
         #if DEBUG
-        API.Common.BinGet().request(completion: {_ in })
-        API.Home.BinGet().request(completion: {_ in })
-        API.Login.BinGet().request(completion: {_ in })
+        API.Home.BinGet().request(completion: { result in print(result) })
+//        API.Login.BinGet().request(completion: { result in print(result) })
         #endif
         
         return true
