@@ -3,6 +3,6 @@ import ProjectDescriptionHelpers
 
 let project = Project
     .staticFramework(name: "NetworkAPILogin",
-               		 dependencies: [
-                        .Project.NetworkAPIKit
-               		 ])
+                     dependencies: [
+                        .Project.Module.NetworkAPIKit
+                     ])

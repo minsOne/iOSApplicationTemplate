@@ -4,5 +4,5 @@ import ProjectDescriptionHelpers
 let project = Project
     .framework(name: "Features",
                dependencies: [
-                .Feature.Main,
+                .Project.Feature.Main,
                ])

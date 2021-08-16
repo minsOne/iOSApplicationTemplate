@@ -38,8 +38,8 @@ let targets: [Target] = [
           resources: ["Resources/**"],
           actions: actions,
           dependencies: [
-            .Feature.Features,
-            .Project.ThirdPartyDynamicLibraryPluginManager,
+            .Project.Feature.Features,
+            .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevApp",
           platform: .iOS,
@@ -55,9 +55,9 @@ let targets: [Target] = [
           resources: ["Resources/**"],
           actions: actions,
           dependencies: [
-            .Feature.Features,
-            .Project.DevelopTool,
-            .Project.ThirdPartyDynamicLibraryPluginManager,
+            .Project.Feature.Features,
+            .Project.Module.DevelopTool,
+            .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevAppTests",
           platform: .iOS,

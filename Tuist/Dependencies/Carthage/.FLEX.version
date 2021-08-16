@@ -1,0 +1,17 @@
+{
+  "commitish" : "2ad3092f4b9e31fc7294e45f3ee241324e17f0b3",
+  "iOS" : [
+    {
+      "hash" : "64279053c82636f9a7355a3b5b17dea91958de073d636a17b8f5e99b4a5d913f",
+      "name" : "FLEX",
+      "container" : "FLEX.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "hash" : "2774965a70e6875648ef5a5ae59aeeb3b750dcf7bcfe294ed3718527420f1fad",
+      "name" : "FLEX",
+      "container" : "FLEX.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

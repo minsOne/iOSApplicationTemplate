@@ -9,12 +9,12 @@ import Foundation
 import ProjectDescription
 
 // MARK: Framework
-public extension TargetDependency {
+public extension Dep {
     struct Framework {}
 }
 
-public extension TargetDependency.Framework {
-    static let Firebase: [TargetDependency] = [
+public extension Dep.Framework {
+    static let Firebase: [Dep] = [
         .firebase(name: "nanopb"),
         .firebase(name: "GoogleUtilities"),
         .firebase(name: "GoogleDataTransportCCTSupport"),
@@ -27,7 +27,7 @@ public extension TargetDependency.Framework {
         .firebase(name: "Firebase"),
         .firebase(name: "FIRAnalyticsConnector"),
     ]
-    static let Facebook: [TargetDependency] = [
+    static let Facebook: [Dep] = [
         .facebook(name: "FBSDKShareKit"),
         .facebook(name: "FBSDKLoginKit"),
         .facebook(name: "FBSDKGamingServicesKit"),
@@ -36,7 +36,7 @@ public extension TargetDependency.Framework {
     ]
 }
 
-public extension TargetDependency {
+public extension Dep {
     static func firebase(name: String) -> Self {
         return .framework(path: .relativeToRoot("Vendor/Firebase/\(name).framework"))
     }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Projects"
+      name = "Projects">
+      <FileRef
+         location = "group:App/App.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Features"
+         name = "Features">
+         <FileRef
+            location = "group:FeatureLoan/FeatureLoan.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureLoanComponent/FeatureLoanComponent.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureMain/FeatureMain.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureMainComponent/FeatureMainComponent.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureSetting/FeatureSetting.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureSettingComponent/FeatureSettingComponent.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Features/Features.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeaturesComponent/FeaturesComponent.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Modules"
+         name = "Modules">
+         <FileRef
+            location = "group:AnalyticsKit/AnalyticsKit.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:CoreKit/CoreKit.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:DevelopTool/DevelopTool.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkAPICommon/NetworkAPICommon.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkAPIHome/NetworkAPIHome.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkAPIKit/NetworkAPIKit.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkAPILogin/NetworkAPILogin.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkAPIs/NetworkAPIs.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:RxPackage/RxPackage.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:ThirdPartyDynamicLibraryPluginManager/ThirdPartyDynamicLibraryPluginManager.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:ThirdPartyLibraryManager/ThirdPartyLibraryManager.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:UtilityKit/UtilityKit.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UserInterface"
+         name = "UserInterface">
+         <FileRef
+            location = "group:DesignSystem/DesignSystem.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureLoanUserInterface/FeatureLoanUserInterface.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureMainUserInterface/FeatureMainUserInterface.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureSettingsUserInterface/FeatureSettingsUserInterface.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureUserInterfaceComponent/FeatureUserInterfaceComponent.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>

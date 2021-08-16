@@ -4,5 +4,5 @@ import ProjectDescriptionHelpers
 let project = Project
     .staticFramework(name: "FeatureMain",
                      dependencies: [
-                        .Feature.MainComponent,
+                        .Project.Feature.MainComponent,
                      ])

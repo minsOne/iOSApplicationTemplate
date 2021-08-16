@@ -1,5 +1,8 @@
 import UIKit
+import RxPackage
 import RIBs
+import ThirdPartyLibraryManager
+import ThirdPartyDynamicLibraryPluginManager
 import NetworkAPIs
 
 @UIApplicationMain

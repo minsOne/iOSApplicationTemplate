@@ -1,0 +1,5 @@
+github "Quick/Nimble" "0fd4ba405699eb8ca939aefa34babf988f4ff9ff"
+github "Quick/Quick" "470dae38bbc06b1a3b9435352d72fb45c6e852e5"
+github "ReactiveX/RxSwift" "a9e79d9bb8bc4d022191c68a23f8585928ec8f39"
+github "RxSwiftCommunity/RxNimble" "fc8bf3474a447bc5d12408c5b963613c85cbad46"
+github "minsone-opensource-fork/FLEX" "2ad3092f4b9e31fc7294e45f3ee241324e17f0b3"

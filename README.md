@@ -56,3 +56,4 @@ $ tuist graph -t -f dot
 - [Square/Blueprint](https://github.com/square/Blueprint)
 - [layoutBox/FlexLayout](https://github.com/layoutBox/FlexLayout)
 - SwiftUI
+- [Doric](https://github.com/jayeshk/Doric)

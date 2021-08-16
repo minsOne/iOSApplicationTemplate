@@ -7,7 +7,6 @@ mv XCConfig/$1/Template-STAGE.xcconfig XCConfig/$1/$1-STAGE.xcconfig
 mv XCConfig/$1/Template-PROD.xcconfig XCConfig/$1/$1-PROD.xcconfig
 
 mkdir -p Projects/Features/$1/Sources
-touch Projects/Features/$1/Sources/.gitkeep
 touch Projects/Features/$1/Sources/$1.swift
 
 mkdir -p Projects/Features/$1/Resources

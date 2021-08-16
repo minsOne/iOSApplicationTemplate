@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "70b859dec85651c8a7bc0f2a8abbcb579e3144c8",
+          "version": null
+        }
+      },
+      {
+        "package": "BlueprintUI",
+        "repositoryURL": "https://github.com/square/Blueprint.git",
+        "state": {
+          "branch": null,
+          "revision": "0a62f071a0ca4ee2e8641257c419a3704c27843f",
+          "version": "0.27.0"
+        }
+      },
+      {
+        "package": "FlexLayout",
+        "repositoryURL": "https://github.com/layoutBox/FlexLayout.git",
+        "state": {
+          "branch": "master",
+          "revision": "f6f6023574a60e613300064f7780ea926f6036f0",
+          "version": null
+        }
+      },
+      {
+        "package": "ReactorKit",
+        "repositoryURL": "https://github.com/ReactorKit/ReactorKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "cc4fb93cfb8d7229d1990838f89f5401c945756e",
+          "version": null
+        }
+      },
+      {
+        "package": "RIBs",
+        "repositoryURL": "https://github.com/uber/RIBs.git",
+        "state": {
+          "branch": "master",
+          "revision": "6f6c29a4ae95e2e6a27aa71e9198094b399c97aa",
+          "version": null
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
+          "version": "6.2.0"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "WeakMapTable",
+        "repositoryURL": "https://github.com/ReactorKit/WeakMapTable.git",
+        "state": {
+          "branch": null,
+          "revision": "9580560169b4b48ba2affe7badba6a7f360495f4",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

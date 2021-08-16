@@ -81,7 +81,7 @@ public extension APIRequestDefinition {
     func request(completion: @escaping (Result<Response, APIRequestError>) -> ()) {
         let urlRequestResult: Result<URLRequest, APIRequestError>
         switch method {
-        case .get: urlRequestResult = urlRequestGet
+        case .get: urlRequestResult = urlRequest
         case .post: urlRequestResult = urlRequestPost
         }
         

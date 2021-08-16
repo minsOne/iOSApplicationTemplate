@@ -9,48 +9,68 @@ import Foundation
 import ProjectDescription
 
 // MARK: Project
-public extension TargetDependency {
-    struct Project {
+extension Dep {
+    public struct Project {
         public struct Network {} 
+        public struct Feature {}
+        public struct UserInterface {}
+        public struct Module {}
     }
-    struct Feature {}
 }
 
-public extension TargetDependency.Feature {
-    static let Features          = TargetDependency.feature(name: "Features")
-    static let FeaturesComponent = TargetDependency.feature(name: "FeaturesComponent")
-    static let Main              = TargetDependency.feature(name: "FeatureMain")
-    static let MainComponent     = TargetDependency.feature(name: "FeatureMainComponent")
-    static let Setting           = TargetDependency.feature(name: "FeatureSetting")
-    static let SettingComponent  = TargetDependency.feature(name: "FeatureSettingComponent")
-    static let Loan              = TargetDependency.feature(name: "FeatureLoan")
-    static let LoanComponent     = TargetDependency.feature(name: "FeatureLoanComponent")
+
+public extension Dep.Project.Feature {
+    static let Features          = Dep.feature(name: "Features")
+    static let FeaturesComponent = Dep.feature(name: "FeaturesComponent")
+    static let Main              = Dep.feature(name: "FeatureMain")
+    static let MainComponent     = Dep.feature(name: "FeatureMainComponent")
+    static let Setting           = Dep.feature(name: "FeatureSetting")
+    static let SettingComponent  = Dep.feature(name: "FeatureSettingComponent")
+    static let Loan              = Dep.feature(name: "FeatureLoan")
+    static let LoanComponent     = Dep.feature(name: "FeatureLoanComponent")
 }
 
-public extension TargetDependency.Project {
-    static let UtilityKit               = TargetDependency.module(name: "UtilityKit")
-    static let NetworkAPIKit            = TargetDependency.module(name: "NetworkAPIKit")
-    static let NetworkAPIs              = TargetDependency.module(name: "NetworkAPIs")
-    static let CoreKit                  = TargetDependency.module(name: "CoreKit")
-    static let DesignSystem             = TargetDependency.module(name: "DesignSystem")
-    static let DevelopTool              = TargetDependency.module(name: "DevelopTool")
-    static let AnalyticsKit             = TargetDependency.module(name: "AnalyticsKit")
-    static let ThirdPartyLibraryManager = TargetDependency.module(name: "ThirdPartyLibraryManager")
-    static let ThirdPartyDynamicLibraryPluginManager = TargetDependency.module(name: "ThirdPartyDynamicLibraryPluginManager")
+
+public extension Dep.Project.Module {
+    static let UtilityKit               = Dep.module(name: "UtilityKit")
+    static let NetworkAPIKit            = Dep.module(name: "NetworkAPIKit")
+    static let NetworkAPIs              = Dep.module(name: "NetworkAPIs")
+    static let CoreKit                  = Dep.module(name: "CoreKit")
+    static let DevelopTool              = Dep.module(name: "DevelopTool")
+    static let AnalyticsKit             = Dep.module(name: "AnalyticsKit")
+    static let RxPackage                = Dep.module(name: "RxPackage")
+    static let ThirdPartyLibraryManager = Dep.module(name: "ThirdPartyLibraryManager")
+    static let ThirdPartyDynamicLibraryPluginManager = Dep.module(name: "ThirdPartyDynamicLibraryPluginManager")
 }
 
-public extension TargetDependency.Project.Network {
-    static let Common = TargetDependency.module(name: "NetworkAPICommon")
-    static let Home   = TargetDependency.module(name: "NetworkAPIHome")
-    static let Login  = TargetDependency.module(name: "NetworkAPILogin")
+
+public extension Dep.Project.UserInterface {
+    static let DesignSystem = Dep.userInterface(name: "DesignSystem")
+    static let FeatureUserInterfaceComponent = Dep.userInterface(name: "FeatureUserInterfaceComponent")
+    static let FeatureLoanUserInterface = Dep.userInterface(name: "FeatureLoanUserInterface")
+    static let FeatureMainUserInterface = Dep.userInterface(name: "FeatureMainUserInterface")
+    static let FeatureSettingsUserInterface = Dep.userInterface(name: "FeatureSettingsUserInterface")
 }
+
+
+public extension Dep.Project.Network {
+    static let Common = Dep.module(name: "NetworkAPICommon")
+    static let Home   = Dep.module(name: "NetworkAPIHome")
+    static let Login  = Dep.module(name: "NetworkAPILogin")
+}
+
+
+
 
 // MARK: Extension
-public extension TargetDependency {
+extension Dep {
     static func module(name: String) -> Self {
         return .project(target: name, path: .relativeToModule(name))
     }
     static func feature(name: String) -> Self {
         return .project(target: name, path: .relativeToFeature(name))
+    }
+    static func userInterface(name: String) -> Self {
+        return .project(target: name, path: .relativeToUserInterface(name))
     }
 }
