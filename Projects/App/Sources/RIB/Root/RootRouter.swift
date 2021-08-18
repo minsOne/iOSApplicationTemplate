@@ -7,8 +7,11 @@
 //
 
 import RIBs
+import FeatureSettingsDomain
 
-protocol RootInteractable: Interactable {
+protocol RootInteractable:
+    Interactable,
+    FeatureSettingsListener {
     var router: RootRouting? { get set }
     var listener: RootListener? { get set }
 }
@@ -17,9 +20,27 @@ protocol RootViewControllable: ViewControllable {}
 
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
 
-    override init(interactor: RootInteractable,
-                  viewController: RootViewControllable) {
-        super.init(interactor: interactor, viewController: viewController)
+    private let settingsBuilder: FeatureSettingsBuildable
+    private var settingsRouter: ViewableRouting?
+
+    init(interactor: RootInteractable,
+         viewController: RootViewControllable,
+         settingsBuilder: FeatureSettingsBuildable) {
+        self.settingsBuilder = settingsBuilder
+        
+        super.init(interactor: interactor,
+                   viewController: viewController)
         interactor.router = self
+    }
+    
+    func routeToSettings() {
+        guard settingsRouter == nil else { return }
+        let router = settingsBuilder.build(withListener: interactor)
+        settingsRouter = router
+        attachChild(router)
+        
+        viewController.uiviewController
+            .present(router.viewControllable.uiviewController,
+                     animated: true, completion: nil)
     }
 }

@@ -39,6 +39,7 @@ let targets: [Target] = [
           actions: actions,
           dependencies: [
             .Project.Feature.Features,
+            .Project.Module.InjectionManager,
             .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevApp",
@@ -56,6 +57,7 @@ let targets: [Target] = [
           actions: actions,
           dependencies: [
             .Project.Feature.Features,
+            .Project.Module.InjectionManager,
             .Project.Module.DevelopTool,
             .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),

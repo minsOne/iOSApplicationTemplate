@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "InjectPropertyWrapper",
+        "repositoryURL": "https://github.com/egeniq/InjectPropertyWrapper.git",
+        "state": {
+          "branch": "master",
+          "revision": "59b7beb5d3f67e58d034639c2da33d9802d27770",
+          "version": null
+        }
+      },
+      {
         "package": "OHHTTPStubs",
         "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
         "state": {
@@ -71,6 +80,15 @@
           "branch": null,
           "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
           "version": "5.0.1"
+        }
+      },
+      {
+        "package": "Swinject",
+        "repositoryURL": "https://github.com/Swinject/Swinject.git",
+        "state": {
+          "branch": "master",
+          "revision": "a20f5fb7c2e3ee0084109a7aad48e51a4cd3657c",
+          "version": null
         }
       },
       {

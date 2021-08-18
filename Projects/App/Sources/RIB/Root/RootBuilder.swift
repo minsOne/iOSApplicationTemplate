@@ -7,10 +7,13 @@
 //
 
 import RIBs
+import FeatureSettingsDomain
 
 protocol RootDependency: Dependency {}
 
-final class RootComponent: Component<RootDependency> {}
+final class RootComponent:
+    Component<RootDependency>,
+    FeatureSettingsDependency {}
 
 // MARK: - Builder
 
@@ -21,11 +24,19 @@ protocol RootBuildable: Buildable {
 final class RootBuilder: Builder<RootDependency>, RootBuildable {
 
     func build() -> LaunchRouting {
-        let _ = RootComponent(dependency: dependency)
-        let viewController = RootViewController()
-        let interactor = RootInteractor(presenter: viewController)
+        typealias Component = RootComponent
+        typealias ViewController = RootViewController
+        typealias Interactor = RootInteractor
+        typealias Router = RootRouter
 
-        return RootRouter(interactor: interactor,
-                          viewController: viewController)
+        let component = Component(dependency: dependency)
+        let viewController = ViewController()
+        let interactor = Interactor(presenter: viewController)
+
+        let settingsBuilder = FeatureSettingsBuilder(dependency: component)
+
+        return Router(interactor: interactor,
+                      viewController: viewController,
+                      settingsBuilder: settingsBuilder)
     }
 }

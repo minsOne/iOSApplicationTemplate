@@ -10,6 +10,7 @@ import Foundation
 import AnalyticsKit
 import ThirdPartyLibraryManager
 import ThirdPartyDynamicLibraryPluginManager
+import InjectionManager
 
 struct PrepareAppDelegateService {
     func load() {
@@ -17,5 +18,6 @@ struct PrepareAppDelegateService {
         Logger.Firebase.logEvent(event: .appStart)
 
         ThirdPartyLibraryManager.FBDIContainer.fbshareDialog = ThirdPartyDynamicLibraryPluginManager.FBShareDialogAdapter.self
+        InjectContainerManager().register()
     }
 }

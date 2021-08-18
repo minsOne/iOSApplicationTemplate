@@ -12,11 +12,13 @@
 		0236BCF7040EE21F456D5159 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB941EBFAAE4D0464C5D0C /* ThirdPartyLibraryManager.framework */; };
 		0F3EBD548A92D7401B1FC633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057A3CD8D734F9C1B4948C18 /* LaunchScreen.storyboard */; };
 		152B55045902755CBE60E6E5 /* ThirdPartyDynamicLibraryPluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BA6A95288010844596B479 /* ThirdPartyDynamicLibraryPluginManager.framework */; };
+		172707C7EDED4FB97AFD8C06 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261B21C72012FB801F6A700D /* CoreKit.framework */; };
 		1741DB41A3C95662A9E10D5E /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA699F2D74A7A3F138010A /* RootRouter.swift */; };
 		29DAD5D0126C0F7B2CC748E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E554DAA4AB515DAF86082D9E /* GoogleService-Info.plist */; };
 		2A6670CB9B824C5512E65291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7210F22777D23AD1713BCADE /* AppDelegate.swift */; };
 		2B07457DB0B690A6436D668B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08557106088F975F2F4C854 /* RootViewController.swift */; };
 		2BA0F367B6ACC948B34FFB4C /* ThirdPartyDynamicLibraryPluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BA6A95288010844596B479 /* ThirdPartyDynamicLibraryPluginManager.framework */; };
+		2F1B283146EEB17E174143F6 /* InjectionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07820FC2CFA4EEE58815E644 /* InjectionManager.framework */; };
 		2FAF1D76E3BE5DF5B3BE834A /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F5139470256A6731C07B3F /* FBSDKCoreKit_Basics.xcframework */; };
 		300DA14C054C1CB20F0F4A8B /* FBSDKCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEB219799D2A588CFC2318EE /* FBSDKCoreKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36377B2FF973F223B9AE3EEA /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261B21C72012FB801F6A700D /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -35,6 +37,7 @@
 		6C4FA1BC9D58EC459FD0E0D0 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D444480454C2AD47FB5FF548 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E10DED5B366B73D222CD823 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275CD28106DC5672507A4C11 /* FBSDKShareKit.xcframework */; };
 		7139F5C78499FC5D743B2B9C /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354AE94B3382B8A2D53E6033 /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		751D34CE89597B455D260BEA /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261B21C72012FB801F6A700D /* CoreKit.framework */; };
 		795235A6B75279459784CFE0 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB219799D2A588CFC2318EE /* FBSDKCoreKit.xcframework */; };
 		798411B8FC22ABEE9D049C82 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A666AFAEA6CFC0DFB4DB6D /* RootBuilder.swift */; };
 		814544CB3EA73B4E6DC17DD7 /* PrepareAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427B540374823E1ED5E73A9 /* PrepareAppDelegate.swift */; };
@@ -54,6 +57,7 @@
 		BB5EC1CE157E69C075DA6ADD /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261B21C72012FB801F6A700D /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1B4BA512A5C1E2F3CBA1876 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB941EBFAAE4D0464C5D0C /* ThirdPartyLibraryManager.framework */; };
 		C35D7B61C1B2D028EDAB1290 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 578A9920570918C45E330667 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4CD830500796C10C5C2D3BC /* InjectionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07820FC2CFA4EEE58815E644 /* InjectionManager.framework */; };
 		C8F300F3FCA7A602AA52E9D2 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB219799D2A588CFC2318EE /* FBSDKCoreKit.xcframework */; };
 		CA14A105172C5A3A5F4B4EFB /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354AE94B3382B8A2D53E6033 /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAC2827C8541FB9EA0A85A99 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275CD28106DC5672507A4C11 /* FBSDKShareKit.xcframework */; };
@@ -143,6 +147,7 @@
 		03A0B7E5D17F46274D7462C7 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
 		0427B540374823E1ED5E73A9 /* PrepareAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareAppDelegate.swift; sourceTree = "<group>"; };
 		057A3CD8D734F9C1B4948C18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07820FC2CFA4EEE58815E644 /* InjectionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InjectionManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5139470256A6731C07B3F /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		261B21C72012FB801F6A700D /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275CD28106DC5672507A4C11 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
@@ -194,8 +199,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172707C7EDED4FB97AFD8C06 /* CoreKit.framework in Frameworks */,
 				949DB38BB7600A916DB7DB82 /* DevelopTool.framework in Frameworks */,
 				3A4040EFF2E0844C1A2A941E /* Features.framework in Frameworks */,
+				C4CD830500796C10C5C2D3BC /* InjectionManager.framework in Frameworks */,
 				2BA0F367B6ACC948B34FFB4C /* ThirdPartyDynamicLibraryPluginManager.framework in Frameworks */,
 				C1B4BA512A5C1E2F3CBA1876 /* ThirdPartyLibraryManager.framework in Frameworks */,
 				C8F300F3FCA7A602AA52E9D2 /* FBSDKCoreKit.xcframework in Frameworks */,
@@ -210,7 +217,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751D34CE89597B455D260BEA /* CoreKit.framework in Frameworks */,
 				F4CDD13BFBC8114ED4516AFF /* Features.framework in Frameworks */,
+				2F1B283146EEB17E174143F6 /* InjectionManager.framework in Frameworks */,
 				152B55045902755CBE60E6E5 /* ThirdPartyDynamicLibraryPluginManager.framework in Frameworks */,
 				0236BCF7040EE21F456D5159 /* ThirdPartyLibraryManager.framework in Frameworks */,
 				795235A6B75279459784CFE0 /* FBSDKCoreKit.xcframework in Frameworks */,
@@ -412,6 +421,7 @@
 				30FAB99634C86BFDCEA57A95 /* DevAppTests.xctest */,
 				363F5E7C3B8B29FD923BFBDE /* DevelopTool.framework */,
 				516073678328E31E4A9AC49E /* Features.framework */,
+				07820FC2CFA4EEE58815E644 /* InjectionManager.framework */,
 				354AE94B3382B8A2D53E6033 /* RxPackage.framework */,
 				D3BA6A95288010844596B479 /* ThirdPartyDynamicLibraryPluginManager.framework */,
 				65AB941EBFAAE4D0464C5D0C /* ThirdPartyLibraryManager.framework */,

@@ -8,31 +8,42 @@
          location = "group:App/App.xcodeproj">
       </FileRef>
       <Group
+         location = "group:DataRepository"
+         name = "DataRepository">
+         <FileRef
+            location = "group:FeatureDataRepositoryComponent/FeatureDataRepositoryComponent.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureLoanDataRepository/FeatureLoanDataRepository.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureMainDataRepository/FeatureMainDataRepository.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureSettingsDataRepository/FeatureSettingsDataRepository.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Domain"
+         name = "Domain">
+         <FileRef
+            location = "group:FeatureDomainComponent/FeatureDomainComponent.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureLoanDomain/FeatureLoanDomain.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureMainDomain/FeatureMainDomain.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:FeatureSettingsDomain/FeatureSettingsDomain.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
          location = "group:Features"
          name = "Features">
          <FileRef
-            location = "group:FeatureLoan/FeatureLoan.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureLoanComponent/FeatureLoanComponent.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureMain/FeatureMain.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureMainComponent/FeatureMainComponent.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureSetting/FeatureSetting.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureSettingComponent/FeatureSettingComponent.xcodeproj">
-         </FileRef>
-         <FileRef
             location = "group:Features/Features.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeaturesComponent/FeaturesComponent.xcodeproj">
          </FileRef>
       </Group>
       <Group
@@ -46,6 +57,9 @@
          </FileRef>
          <FileRef
             location = "group:DevelopTool/DevelopTool.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:InjectionManager/InjectionManager.xcodeproj">
          </FileRef>
          <FileRef
             location = "group:NetworkAPICommon/NetworkAPICommon.xcodeproj">

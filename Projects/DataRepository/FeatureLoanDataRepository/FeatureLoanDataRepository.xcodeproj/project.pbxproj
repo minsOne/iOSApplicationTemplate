@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035C087E2A0F922D1EE2B423 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */; };
+		09C2B62F05F2417EEF5C74FB /* FeatureLoanUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */; };
+		2A079ACD7998BF6125676658 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BDE3845451C41E2E4061B /* Tests.swift */; };
+		36DAF0847F7C210E24B2E0E6 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB98269E786BA60A06E5955B /* CoreKit.framework */; };
+		4D15A783D7050D9C92D961D9 /* FeatureLoanDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; };
+		778BD163C12106CD079A11EF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */; };
+		7EA00D97B512C327C66FCD48 /* FeatureDataRepositoryComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */; };
+		C2A1894CD97117EE6BEA66ED /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4343E8E7D58226AA476FBA /* DesignSystem.framework */; };
+		D21DFE74DE0F68D3EB05DACC /* FeatureLoanDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C335967265EEC19216C987 /* FeatureLoanDataRepository.swift */; };
+		D8F869E92C4FD526E5F28A6B /* FeatureLoanDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; };
+		DB4DF6BFE13D767778162FC3 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A083AE2736BD4BA6FDD11 /* FeatureUserInterfaceComponent.framework */; };
+		F5E5284109FF86D8921C33ED /* FeatureLoanDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */; };
+		FC77135D4A37D07E7C150C30 /* FeatureDomainComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8565E1F68545EDB63E833D48 /* FeatureDomainComponent.framework */; };
+		FE3412C8BC59AC111D9E2EDC /* FeatureDataRepositoryComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29F8CFE8479324A1B57D0AEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3FCC843F3435563F1017B5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2497E6EF1818A60C5B77CDA2;
+			remoteInfo = FeatureLoanDataRepository;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		643842F21721DE369938D082 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6021CA95602F46034F6DA62 /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				FE3412C8BC59AC111D9E2EDC /* FeatureDataRepositoryComponent.framework in Dependencies */,
+				D8F869E92C4FD526E5F28A6B /* FeatureLoanDomain.framework in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F9033194919B95E24F3C6086 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		206BDE3845451C41E2E4061B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8B46C0D733F91CC89A03CE /* FeatureLoanDataRepository-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-DEV.xcconfig"; sourceTree = "<group>"; };
+		5C1D8E9EC418B0A8D6F69D8A /* FeatureLoanDataRepository-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-PROD.xcconfig"; sourceTree = "<group>"; };
+		6942C73FC6598A679CD8A65E /* FeatureLoanDataRepository-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-TEST.xcconfig"; sourceTree = "<group>"; };
+		70BA3884C5BFFC92D9ED6739 /* FeatureLoanDataRepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureLoanDataRepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A29ED29625439AE8AFC9BB /* FeatureLoanDataRepository-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-STAGE.xcconfig"; sourceTree = "<group>"; };
+		7E4343E8E7D58226AA476FBA /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8565E1F68545EDB63E833D48 /* FeatureDomainComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDomainComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDataRepositoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C335967265EEC19216C987 /* FeatureLoanDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureLoanDataRepository.swift; sourceTree = "<group>"; };
+		CCBB28EBB78F47B6EF7BAF11 /* FeatureLoanDataRepositoryTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanDataRepositoryTests.plist; sourceTree = "<group>"; };
+		EB2A083AE2736BD4BA6FDD11 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB98269E786BA60A06E5955B /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8377854E92DCA0D5034CF6D /* FeatureLoanDataRepository.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanDataRepository.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B46B892B40E2AAF1355527BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DAF0847F7C210E24B2E0E6 /* CoreKit.framework in Frameworks */,
+				C2A1894CD97117EE6BEA66ED /* DesignSystem.framework in Frameworks */,
+				7EA00D97B512C327C66FCD48 /* FeatureDataRepositoryComponent.framework in Frameworks */,
+				FC77135D4A37D07E7C150C30 /* FeatureDomainComponent.framework in Frameworks */,
+				F5E5284109FF86D8921C33ED /* FeatureLoanDataRepository.framework in Frameworks */,
+				4D15A783D7050D9C92D961D9 /* FeatureLoanDomain.framework in Frameworks */,
+				09C2B62F05F2417EEF5C74FB /* FeatureLoanUserInterface.framework in Frameworks */,
+				DB4DF6BFE13D767778162FC3 /* FeatureUserInterfaceComponent.framework in Frameworks */,
+				035C087E2A0F922D1EE2B423 /* RxPackage.framework in Frameworks */,
+				778BD163C12106CD079A11EF /* ThirdPartyLibraryManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BCE6C2B12F344635FA73C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2B86A779AFE4B1C3B09752 /* FeatureLoanDataRepository */ = {
+			isa = PBXGroup;
+			children = (
+				4E8B46C0D733F91CC89A03CE /* FeatureLoanDataRepository-DEV.xcconfig */,
+				5C1D8E9EC418B0A8D6F69D8A /* FeatureLoanDataRepository-PROD.xcconfig */,
+				79A29ED29625439AE8AFC9BB /* FeatureLoanDataRepository-STAGE.xcconfig */,
+				6942C73FC6598A679CD8A65E /* FeatureLoanDataRepository-TEST.xcconfig */,
+			);
+			path = FeatureLoanDataRepository;
+			sourceTree = "<group>";
+		};
+		10C2B7C80F276FCC59CEE57C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A0C335967265EEC19216C987 /* FeatureLoanDataRepository.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		229FF3EDEFA571637C5ED30B /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				2451E6BE2300D1C20BC690F7 /* Derived */,
+				10C2B7C80F276FCC59CEE57C /* Sources */,
+				B886CB223217055ED409C552 /* Tests */,
+				49691A81D52B0259D72BA3D3 /* XCConfig */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		2451E6BE2300D1C20BC690F7 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				493B0E774E122E680BD7C54F /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		493B0E774E122E680BD7C54F /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				F8377854E92DCA0D5034CF6D /* FeatureLoanDataRepository.plist */,
+				CCBB28EBB78F47B6EF7BAF11 /* FeatureLoanDataRepositoryTests.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		49691A81D52B0259D72BA3D3 /* XCConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B86A779AFE4B1C3B09752 /* FeatureLoanDataRepository */,
+			);
+			name = XCConfig;
+			path = ../../../XCConfig;
+			sourceTree = "<group>";
+		};
+		52F03EE162DDFA139CA2F4F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB98269E786BA60A06E5955B /* CoreKit.framework */,
+				7E4343E8E7D58226AA476FBA /* DesignSystem.framework */,
+				85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */,
+				8565E1F68545EDB63E833D48 /* FeatureDomainComponent.framework */,
+				9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */,
+				70BA3884C5BFFC92D9ED6739 /* FeatureLoanDataRepositoryTests.xctest */,
+				2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */,
+				22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */,
+				EB2A083AE2736BD4BA6FDD11 /* FeatureUserInterfaceComponent.framework */,
+				494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */,
+				99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DD08897F19917AB069A49A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E26B6A0DC18806F4015928 = {
+			isa = PBXGroup;
+			children = (
+				229FF3EDEFA571637C5ED30B /* Project */,
+				6DD08897F19917AB069A49A8 /* Frameworks */,
+				52F03EE162DDFA139CA2F4F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B886CB223217055ED409C552 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				206BDE3845451C41E2E4061B /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		245658A3F7EA61FFBC05BF8D /* FeatureLoanDataRepositoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA83FC9A5D636EAB9AD1B87A /* Build configuration list for PBXNativeTarget "FeatureLoanDataRepositoryTests" */;
+			buildPhases = (
+				C8B6B57A6E6BA45861094F47 /* Sources */,
+				F27B192B8A0BACB1470F401D /* Resources */,
+				4B24D5BE75868B71E4CF487F /* Embed Precompiled Frameworks */,
+				643842F21721DE369938D082 /* Embed Frameworks */,
+				B46B892B40E2AAF1355527BB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D3B311043B37C5F7406D465 /* PBXTargetDependency */,
+			);
+			name = FeatureLoanDataRepositoryTests;
+			productName = FeatureLoanDataRepositoryTests;
+			productReference = 70BA3884C5BFFC92D9ED6739 /* FeatureLoanDataRepositoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2497E6EF1818A60C5B77CDA2 /* FeatureLoanDataRepository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B898602EA16A7F0003E55C12 /* Build configuration list for PBXNativeTarget "FeatureLoanDataRepository" */;
+			buildPhases = (
+				9F77D722C4534C9688991DE7 /* Sources */,
+				3E19CC04D04B88859E8E49CF /* Resources */,
+				BBA9D3289C018FCB6934A4F6 /* Embed Precompiled Frameworks */,
+				F9033194919B95E24F3C6086 /* Embed Frameworks */,
+				F3BCE6C2B12F344635FA73C7 /* Frameworks */,
+				E6021CA95602F46034F6DA62 /* Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeatureLoanDataRepository;
+			productName = FeatureLoanDataRepository;
+			productReference = 9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3FCC843F3435563F1017B5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = minsone;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 6B611B72CEEB9D474FC0DABE /* Build configuration list for PBXProject "FeatureLoanDataRepository" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B6E26B6A0DC18806F4015928;
+			productRefGroup = 52F03EE162DDFA139CA2F4F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2497E6EF1818A60C5B77CDA2 /* FeatureLoanDataRepository */,
+				245658A3F7EA61FFBC05BF8D /* FeatureLoanDataRepositoryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E19CC04D04B88859E8E49CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27B192B8A0BACB1470F401D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B24D5BE75868B71E4CF487F /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		BBA9D3289C018FCB6934A4F6 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F77D722C4534C9688991DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21DFE74DE0F68D3EB05DACC /* FeatureLoanDataRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8B6B57A6E6BA45861094F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A079ACD7998BF6125676658 /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D3B311043B37C5F7406D465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureLoanDataRepository;
+			target = 2497E6EF1818A60C5B77CDA2 /* FeatureLoanDataRepository */;
+			targetProxy = 29F8CFE8479324A1B57D0AEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02B42B82D97D2EDB1B9E4DCA /* STAGE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepositoryTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepositoryTests;
+				PRODUCT_NAME = FeatureLoanDataRepositoryTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = STAGE;
+		};
+		3295E2026633F4EF946ABF9E /* PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1D8E9EC418B0A8D6F69D8A /* FeatureLoanDataRepository-PROD.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = PROD;
+		};
+		5787B030AB0A0324C9F15189 /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8B46C0D733F91CC89A03CE /* FeatureLoanDataRepository-DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = DEV;
+		};
+		634BF274C03FA8DF59A99F4C /* TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6942C73FC6598A679CD8A65E /* FeatureLoanDataRepository-TEST.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = TEST;
+		};
+		81893FE4F8EDAB41AB73479F /* STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A29ED29625439AE8AFC9BB /* FeatureLoanDataRepository-STAGE.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = STAGE;
+		};
+		8890438CC150C2D805E87136 /* TEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepositoryTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepositoryTests;
+				PRODUCT_NAME = FeatureLoanDataRepositoryTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = TEST;
+		};
+		8E571ABC158CA58E33E18C4C /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepositoryTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepositoryTests;
+				PRODUCT_NAME = FeatureLoanDataRepositoryTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DEV;
+		};
+		AE44A401D552B7E96F2515F0 /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepository.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepository;
+				PRODUCT_NAME = FeatureLoanDataRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = DEV;
+		};
+		AE68C6104AA2576BCD3F72DB /* TEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepository.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepository;
+				PRODUCT_NAME = FeatureLoanDataRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = TEST;
+		};
+		AF960C62D1DBE57DF19280F6 /* PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepository.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepository;
+				PRODUCT_NAME = FeatureLoanDataRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = PROD;
+		};
+		EF9000BA373D3F3102981DF2 /* STAGE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepository.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepository;
+				PRODUCT_NAME = FeatureLoanDataRepository;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = STAGE;
+		};
+		FA6D14B88559D3AF96A03F83 /* PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanDataRepositoryTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanDataRepositoryTests;
+				PRODUCT_NAME = FeatureLoanDataRepositoryTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PROD;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B611B72CEEB9D474FC0DABE /* Build configuration list for PBXProject "FeatureLoanDataRepository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5787B030AB0A0324C9F15189 /* DEV */,
+				3295E2026633F4EF946ABF9E /* PROD */,
+				81893FE4F8EDAB41AB73479F /* STAGE */,
+				634BF274C03FA8DF59A99F4C /* TEST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = PROD;
+		};
+		B898602EA16A7F0003E55C12 /* Build configuration list for PBXNativeTarget "FeatureLoanDataRepository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE44A401D552B7E96F2515F0 /* DEV */,
+				AF960C62D1DBE57DF19280F6 /* PROD */,
+				EF9000BA373D3F3102981DF2 /* STAGE */,
+				AE68C6104AA2576BCD3F72DB /* TEST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = PROD;
+		};
+		EA83FC9A5D636EAB9AD1B87A /* Build configuration list for PBXNativeTarget "FeatureLoanDataRepositoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E571ABC158CA58E33E18C4C /* DEV */,
+				FA6D14B88559D3AF96A03F83 /* PROD */,
+				02B42B82D97D2EDB1B9E4DCA /* STAGE */,
+				8890438CC150C2D805E87136 /* TEST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = PROD;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3FCC843F3435563F1017B5C /* Project object */;
+}

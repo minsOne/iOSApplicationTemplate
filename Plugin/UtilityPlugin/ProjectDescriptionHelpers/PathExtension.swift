@@ -21,6 +21,12 @@ public extension ProjectDescription.Path {
     static func relativeToUserInterface(_ pathString: String) -> Self {
         return .relativeToRoot("Projects/UserInterface/\(pathString)")
     }
+    static func relativeToDomain(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/Domain/\(pathString)")
+    }
+    static func relativeToDataRepository(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/DataRepository/\(pathString)")
+    }
     static var app: Self {
         return .relativeToRoot("Projects/App")
     }

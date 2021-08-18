@@ -57,3 +57,15 @@ $ tuist graph -t -f dot
 - [layoutBox/FlexLayout](https://github.com/layoutBox/FlexLayout)
 - SwiftUI
 - [Doric](https://github.com/jayeshk/Doric)
+
+2. 디자인시스템 Ref
+- https://medium.com/sketch-app-sources/setting-up-a-design-system-8729510def93
+- https://ux.mailchimp.com/patterns/color
+
+## 사용한, 사용할 오픈소스
+* [RxViewBinder](https://github.com/magi82/RxViewBinder)
+
+* 클린아키텍처 일부 설계 참고
+* https://app.diagrams.net/#G11kR-DSn8p-vpA-btOnlT2qm6Lq9Ph-ss
+* https://github.com/kudoleh/iOS-Clean-Architecture-MVVM.git
+* https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png

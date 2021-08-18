@@ -9,7 +9,9 @@
 import RIBs
 import RxSwift
 
-protocol RootRouting: ViewableRouting {}
+protocol RootRouting: ViewableRouting {
+    func routeToSettings()
+}
 
 protocol RootPresentable: Presentable {
     var listener: RootPresentableListener? { get set }
@@ -29,5 +31,9 @@ final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteract
 
     override func didBecomeActive() {
         super.didBecomeActive()
+    }
+    
+    func requestSettings() {
+        router?.routeToSettings()
     }
 }

@@ -14,11 +14,13 @@
 		220E767A31DF430AF813E31B /* FBSharingBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7661ED3DE00D44046BD383 /* FBSharingBridge.swift */; };
 		36FDD782F20798DAF2282674 /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2967C1871F0DD4C57AE4F16 /* GoogleDataTransportCCTSupport.framework */; };
 		39C2967B439AE961D9F8C5B6 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B86DADCFA6E1E0C84D8470 /* GoogleAppMeasurement.framework */; };
+		3F860A331E6957C7DDEAE6FD /* InjectPropertyWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = BC188F53FA32F97E1E3E453F /* InjectPropertyWrapper */; };
 		56A589156110AE87B7323A89 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D32313F02A19F646E6AA1F /* FirebaseCore.framework */; };
 		71845F026C740E27D7FFF694 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDC0D539C38CBF43593F46D /* GoogleUtilities.framework */; };
 		74B37F1C0FA92DA9E6242274 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15FBE1150840ADD5E324F46 /* FirebaseAnalytics.framework */; };
 		7F0E01F7ABD3E234CB93A70C /* FBDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD955D36D05C34B8F3A85E3F /* FBDIContainer.swift */; };
 		7F49FDA8BCE4C5C046E5A470 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00BE8C265C3C7355DA73FEE /* nanopb.framework */; };
+		8B579D5E4A306BB4E8F1F2BF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = BD60E0967016780A890EE1CD /* Swinject */; };
 		C414540403C3680D91B94007 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 810D67348D5CD35FBBF8CD22 /* Alamofire */; };
 		D5595E08F5B2D72731A51C06 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06E5D1A612A8BAD2A9F6EB /* libsqlite3.tbd */; };
 		ED3E82BCA6DA3E42A438EB5D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB87B893B781B83FC09FA8 /* FirebaseInstanceID.framework */; };
@@ -114,6 +116,8 @@
 				71845F026C740E27D7FFF694 /* GoogleUtilities.framework in Frameworks */,
 				7F49FDA8BCE4C5C046E5A470 /* nanopb.framework in Frameworks */,
 				C414540403C3680D91B94007 /* Alamofire in Frameworks */,
+				8B579D5E4A306BB4E8F1F2BF /* Swinject in Frameworks */,
+				3F860A331E6957C7DDEAE6FD /* InjectPropertyWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +300,8 @@
 			name = ThirdPartyLibraryManager;
 			packageProductDependencies = (
 				810D67348D5CD35FBBF8CD22 /* Alamofire */,
+				BD60E0967016780A890EE1CD /* Swinject */,
+				BC188F53FA32F97E1E3E453F /* InjectPropertyWrapper */,
 			);
 			productName = ThirdPartyLibraryManager;
 			productReference = DEFD7B92B0D441B954BD7B30 /* ThirdPartyLibraryManager.framework */;
@@ -322,6 +328,8 @@
 			mainGroup = 7900A0E5C79AB6555CB7A258;
 			packageReferences = (
 				559665D4D45EB7510F19C47D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C637E4D207A4390E81607E28 /* XCRemoteSwiftPackageReference "Swinject" */,
+				9D1D7886F34DF25D64219677 /* XCRemoteSwiftPackageReference "InjectPropertyWrapper" */,
 			);
 			productRefGroup = 99107F2A6E7D96889F234181 /* Products */;
 			projectDirPath = "";
@@ -926,12 +934,36 @@
 				kind = branch;
 			};
 		};
+		9D1D7886F34DF25D64219677 /* XCRemoteSwiftPackageReference "InjectPropertyWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/egeniq/InjectPropertyWrapper.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C637E4D207A4390E81607E28 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		810D67348D5CD35FBBF8CD22 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Alamofire;
+		};
+		BC188F53FA32F97E1E3E453F /* InjectPropertyWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = InjectPropertyWrapper;
+		};
+		BD60E0967016780A890EE1CD /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
