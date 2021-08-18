@@ -54,7 +54,7 @@ public extension Dep.SwiftPM.DevelopTool {
 
 public extension Package.DevelopTool {
     static let OHHTTPStubs             = Package.package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", .branch("master"))
-    static let ProxyNetworkStubPackage = Package.local(path: .relativeToModule("ProxyNetworkStubPackage"))
+    static let ProxyNetworkStubPackage = Package.local(path: .relativeToNetwork("ProxyNetworkStubPackage"))
 }
 
 

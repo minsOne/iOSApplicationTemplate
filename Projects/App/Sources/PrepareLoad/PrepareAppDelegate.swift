@@ -10,7 +10,7 @@ import Foundation
 import AnalyticsKit
 import ThirdPartyLibraryManager
 import ThirdPartyDynamicLibraryPluginManager
-import InjectionManager
+import RepositoryInjectManager
 
 struct PrepareAppDelegateService {
     func load() {

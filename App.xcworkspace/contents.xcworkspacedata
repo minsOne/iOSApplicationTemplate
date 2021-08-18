@@ -22,6 +22,9 @@
          <FileRef
             location = "group:FeatureSettingsDataRepository/FeatureSettingsDataRepository.xcodeproj">
          </FileRef>
+         <FileRef
+            location = "group:RepositoryInjectManager/RepositoryInjectManager.xcodeproj">
+         </FileRef>
       </Group>
       <Group
          location = "group:Domain"
@@ -59,8 +62,21 @@
             location = "group:DevelopTool/DevelopTool.xcodeproj">
          </FileRef>
          <FileRef
-            location = "group:InjectionManager/InjectionManager.xcodeproj">
+            location = "group:RxPackage/RxPackage.xcodeproj">
          </FileRef>
+         <FileRef
+            location = "group:ThirdPartyDynamicLibraryPluginManager/ThirdPartyDynamicLibraryPluginManager.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:ThirdPartyLibraryManager/ThirdPartyLibraryManager.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:UtilityKit/UtilityKit.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Network"
+         name = "Network">
          <FileRef
             location = "group:NetworkAPICommon/NetworkAPICommon.xcodeproj">
          </FileRef>
@@ -75,18 +91,6 @@
          </FileRef>
          <FileRef
             location = "group:NetworkAPIs/NetworkAPIs.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:RxPackage/RxPackage.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:ThirdPartyDynamicLibraryPluginManager/ThirdPartyDynamicLibraryPluginManager.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:ThirdPartyLibraryManager/ThirdPartyLibraryManager.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:UtilityKit/UtilityKit.xcodeproj">
          </FileRef>
       </Group>
       <Group

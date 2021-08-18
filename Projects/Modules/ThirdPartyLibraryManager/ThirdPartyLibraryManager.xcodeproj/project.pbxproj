@@ -23,6 +23,7 @@
 		8B579D5E4A306BB4E8F1F2BF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = BD60E0967016780A890EE1CD /* Swinject */; };
 		C414540403C3680D91B94007 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 810D67348D5CD35FBBF8CD22 /* Alamofire */; };
 		D5595E08F5B2D72731A51C06 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06E5D1A612A8BAD2A9F6EB /* libsqlite3.tbd */; };
+		E062F5CD80F9033C4BB063A6 /* InjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E233730463AD5E39B7B6C8 /* InjectContainer.swift */; };
 		ED3E82BCA6DA3E42A438EB5D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB87B893B781B83FC09FA8 /* FirebaseInstanceID.framework */; };
 		F3F3403B4C77AC2347F3BBF2 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA30934EC9B1ED152AC2657 /* Tests.swift */; };
 		F620E33995F2D470A7280054 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BAAA682B5EF37FE36DF5E0 /* Firebase.framework */; };
@@ -68,6 +69,7 @@
 		704237C93DCD3C1D7D82C2FE /* ThirdPartyLibraryManager-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-STAGE.xcconfig"; sourceTree = "<group>"; };
 		81D6D46C68A872FB917224EC /* ThirdPartyLibraryManager-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-DEV.xcconfig"; sourceTree = "<group>"; };
 		83BAAA682B5EF37FE36DF5E0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		86E233730463AD5E39B7B6C8 /* InjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectContainer.swift; sourceTree = "<group>"; };
 		8DC18CA00F88B493C8FC5335 /* ThirdPartyLibraryManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartyLibraryManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D32313F02A19F646E6AA1F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		9EAD44F5AEB1CCFDA98844A7 /* ThirdPartyLibraryManager-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-TEST.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				0EC5871E042BC136FA3314D2 /* LibraryBridge */,
+				86E233730463AD5E39B7B6C8 /* InjectContainer.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E062F5CD80F9033C4BB063A6 /* InjectContainer.swift in Sources */,
 				7F0E01F7ABD3E234CB93A70C /* FBDIContainer.swift in Sources */,
 				220E767A31DF430AF813E31B /* FBSharingBridge.swift in Sources */,
 			);

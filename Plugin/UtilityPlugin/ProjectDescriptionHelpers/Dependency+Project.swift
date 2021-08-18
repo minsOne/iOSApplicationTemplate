@@ -39,13 +39,14 @@ public extension Dep.Project.DataRepository {
     static let Main     = Dep.dataRepository(name: "FeatureMainDataRepository")
     static let Settings = Dep.dataRepository(name: "FeatureSettingsDataRepository")
     static let DependencyComponent = Dep.dataRepository(name: "FeatureDataRepositoryComponent")
+    static let InjectManager = Dep.dataRepository(name: "RepositoryInjectManager")
 }
 
 
 public extension Dep.Project.UserInterface {
-    static let Loan = Dep.userInterface(name: "FeatureLoanUserInterface")
-    static let Main = Dep.userInterface(name: "FeatureMainUserInterface")
-    static let Settings = Dep.userInterface(name: "FeatureSettingsUserInterface")
+    static let Loan         = Dep.userInterface(name: "FeatureLoanUserInterface")
+    static let Main         = Dep.userInterface(name: "FeatureMainUserInterface")
+    static let Settings     = Dep.userInterface(name: "FeatureSettingsUserInterface")
     static let DesignSystem = Dep.userInterface(name: "DesignSystem")
     static let DependencyComponent = Dep.userInterface(name: "FeatureUserInterfaceComponent")
 }
@@ -55,9 +56,6 @@ public extension Dep.Project.Module {
     static let AnalyticsKit                          = Dep.module(name: "AnalyticsKit")
     static let CoreKit                               = Dep.module(name: "CoreKit")
     static let DevelopTool                           = Dep.module(name: "DevelopTool")
-    static let InjectionManager                      = Dep.module(name: "InjectionManager")
-    static let NetworkAPIKit                         = Dep.module(name: "NetworkAPIKit")
-    static let NetworkAPIs                           = Dep.module(name: "NetworkAPIs")
     static let RxPackage                             = Dep.module(name: "RxPackage")
     static let ThirdPartyDynamicLibraryPluginManager = Dep.module(name: "ThirdPartyDynamicLibraryPluginManager")
     static let ThirdPartyLibraryManager              = Dep.module(name: "ThirdPartyLibraryManager")
@@ -65,9 +63,11 @@ public extension Dep.Project.Module {
 }
 
 public extension Dep.Project.Network {
-    static let Common = Dep.module(name: "NetworkAPICommon")
-    static let Home   = Dep.module(name: "NetworkAPIHome")
-    static let Login  = Dep.module(name: "NetworkAPILogin")
+    static let APIs   = Dep.network(name: "NetworkAPIs")
+    static let APIKit = Dep.network(name: "NetworkAPIKit")
+    static let Common = Dep.network(name: "NetworkAPICommon")
+    static let Home   = Dep.network(name: "NetworkAPIHome")
+    static let Login  = Dep.network(name: "NetworkAPILogin")
 }
 
 
@@ -90,4 +90,7 @@ extension Dep {
     static func dataRepository(name: String) -> Self {
         return .project(target: name, path: .relativeToDataRepository(name))
     }
+    static func network(name: String) -> Self {
+        return .project(target: name, path: .relativeToNetwork(name))
+    }   
 }
