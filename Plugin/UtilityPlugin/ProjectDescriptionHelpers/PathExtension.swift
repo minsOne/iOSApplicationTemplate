@@ -34,3 +34,25 @@ public extension ProjectDescription.Path {
         return .relativeToRoot("Projects/App")
     }
 }
+
+// MARK: Extension
+extension Dep {
+    static func module(name: String) -> Self {
+        return .project(target: name, path: .relativeToModule(name))
+    }
+    static func feature(name: String) -> Self {
+        return .project(target: name, path: .relativeToFeature(name))
+    }
+    static func userInterface(name: String) -> Self {
+        return .project(target: name, path: .relativeToUserInterface(name))
+    }
+    static func domain(name: String) -> Self {
+        return .project(target: name, path: .relativeToDomain(name))
+    }
+    static func dataRepository(name: String) -> Self {
+        return .project(target: name, path: .relativeToDataRepository(name))
+    }
+    static func network(name: String) -> Self {
+        return .project(target: name, path: .relativeToNetwork(name))
+    }
+}
