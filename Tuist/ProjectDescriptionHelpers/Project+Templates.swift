@@ -78,8 +78,12 @@ public extension Project {
                                    product: .app,
                                    bundleId: "kr.minsone.\(name)DemoApp",
                                    deploymentTarget: deploymentTarget,
-                                   infoPlist: .default,
+                                   infoPlist: .extendingDefault(with: [
+                                     "UIMainStoryboardFile": "",
+                                     "UILaunchStoryboardName": "LaunchScreen"
+                                   ]),
                                    sources: ["Demo/**"],
+                                   resources: ["Demo/Resources/**"],
                                    dependencies: [
                                     .target(name: "\(name)")
                                    ])

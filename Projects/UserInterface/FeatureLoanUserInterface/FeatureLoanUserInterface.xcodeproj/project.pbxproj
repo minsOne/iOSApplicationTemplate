@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27756ED1D82FDEBC67E43C59 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B18D2EB835B681678450A /* DesignSystem.framework */; };
-		57C0DBBBE9E7403F9631DAFB /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE6668266115F532C454CB /* RxPackage.framework */; };
+		17EAB6C08D4EDDB1B732E966 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B18D2EB835B681678450A /* DesignSystem.framework */; };
+		5EE800A6813DBF843DEF0AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57559271A1C67BBDA54C62B /* LaunchScreen.storyboard */; };
 		7767623ECE104493B1AFFD7A /* FeatureLoanUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A435DD7F3CC262369A9F9E9C /* FeatureLoanUserInterface.swift */; };
+		867D6F659A84BF587CF1B5AD /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE6668266115F532C454CB /* RxPackage.framework */; };
+		91D40D4658926E055BBD610F /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */; };
+		943C9F8D047B3B1E9DDD5DF5 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE6668266115F532C454CB /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9ED14680F8FBB1EB25F3B0CF /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E40A402B9A7EE3F0EFCC1 /* Tests.swift */; };
-		A0821348C84BE34235381C47 /* FeatureLoanUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */; };
+		B7988F93855FBB1AFFFBB4AA /* FeatureLoanUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */; };
 		B831FC0BC18C59E7FBB2305C /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */; };
-		BDBAEF0A5EE5446FDD16D945 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */; };
+		DEEE5BCF5D7F5AAB6116A4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47E0FE9E787A8AA0AD8AFB6 /* AppDelegate.swift */; };
+		E638A13C241E8D9BC9CF4F52 /* Bundle+FeatureLoanUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218874E8BD9D590D4775EEC /* Bundle+FeatureLoanUserInterfaceDemoApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E9436CE65FAF2E8B205797EB /* PBXContainerItemProxy */ = {
+		2B4F5C59E66CED0EF8FEA31C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51E4B648C6089DBF81441D42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847FA0CA2DF53762492164D0;
+			remoteInfo = FeatureLoanUserInterfaceDemoApp;
+		};
+		597FF7838B22825071332DB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51E4B648C6089DBF81441D42 /* Project object */;
 			proxyType = 1;
@@ -36,6 +47,17 @@
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A7C5FB0C908E93F4834DAE8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				943C9F8D047B3B1E9DDD5DF5 /* RxPackage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B79CDC08A3ABC418DF656878 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -63,19 +85,35 @@
 		0E7E40A402B9A7EE3F0EFCC1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		197B18D2EB835B681678450A /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6526C7D627CE8AFBB8D2ED /* FeatureLoanUserInterfaceDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureLoanUserInterfaceDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4218874E8BD9D590D4775EEC /* Bundle+FeatureLoanUserInterfaceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FeatureLoanUserInterfaceDemoApp.swift"; sourceTree = "<group>"; };
 		4877BCDC2544DB52DB1DE3B3 /* FeatureLoanUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
 		681720F40BEA222AF0769A61 /* FeatureLoanUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
 		6C9C42642D24DBF2EC8D5178 /* FeatureLoanUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
+		7A94AA676895A6F981731199 /* FeatureLoanUserInterfaceDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanUserInterfaceDemoApp.plist; sourceTree = "<group>"; };
 		7F1DFD698FE83B68A3520039 /* FeatureLoanUserInterface.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanUserInterface.plist; sourceTree = "<group>"; };
 		9CBE6668266115F532C454CB /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A435DD7F3CC262369A9F9E9C /* FeatureLoanUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureLoanUserInterface.swift; sourceTree = "<group>"; };
 		B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A040AEEBD2CBE3BA042376 /* FeatureLoanUserInterface-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-STAGE.xcconfig"; sourceTree = "<group>"; };
 		E26F3F38DDC928399E407ED2 /* FeatureLoanUserInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureLoanUserInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47E0FE9E787A8AA0AD8AFB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED946EAE028BDCBF0FAB5D35 /* FeatureLoanUserInterfaceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanUserInterfaceTests.plist; sourceTree = "<group>"; };
+		F57559271A1C67BBDA54C62B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A8E3AB53EC6EAF28A80E75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EAB6C08D4EDDB1B732E966 /* DesignSystem.framework in Frameworks */,
+				B7988F93855FBB1AFFFBB4AA /* FeatureLoanUserInterface.framework in Frameworks */,
+				91D40D4658926E055BBD610F /* FeatureUserInterfaceComponent.framework in Frameworks */,
+				867D6F659A84BF587CF1B5AD /* RxPackage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B14108C7D08B9812AFFB9B85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,10 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27756ED1D82FDEBC67E43C59 /* DesignSystem.framework in Frameworks */,
-				A0821348C84BE34235381C47 /* FeatureLoanUserInterface.framework in Frameworks */,
-				BDBAEF0A5EE5446FDD16D945 /* FeatureUserInterfaceComponent.framework in Frameworks */,
-				57C0DBBBE9E7403F9631DAFB /* RxPackage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,9 +139,18 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		1FFC683956A47D6083239512 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E47E0FE9E787A8AA0AD8AFB6 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		2FB604A7DD6DBEF186121CDD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				A532C9D037A769A592A120EA /* Demo */,
 				BFAFF740E0D152DECA13EB18 /* Derived */,
 				ADAC9332A36BEECF5DE9B5DA /* Sources */,
 				1A86F89597202A4686BF88D3 /* Tests */,
@@ -120,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				7F1DFD698FE83B68A3520039 /* FeatureLoanUserInterface.plist */,
+				7A94AA676895A6F981731199 /* FeatureLoanUserInterfaceDemoApp.plist */,
 				ED946EAE028BDCBF0FAB5D35 /* FeatureLoanUserInterfaceTests.plist */,
 			);
 			path = InfoPlists;
@@ -146,6 +190,7 @@
 			children = (
 				197B18D2EB835B681678450A /* DesignSystem.framework */,
 				0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */,
+				2E6526C7D627CE8AFBB8D2ED /* FeatureLoanUserInterfaceDemoApp.app */,
 				E26F3F38DDC928399E407ED2 /* FeatureLoanUserInterfaceTests.xctest */,
 				B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */,
 				9CBE6668266115F532C454CB /* RxPackage.framework */,
@@ -162,6 +207,15 @@
 			path = ../../../XCConfig;
 			sourceTree = "<group>";
 		};
+		A532C9D037A769A592A120EA /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D9CA005E9392EB587DE7F8B7 /* Resources */,
+				1FFC683956A47D6083239512 /* Sources */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		ADAC9332A36BEECF5DE9B5DA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,10 +224,19 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		BA9B227DAA2BF6D550A66CC8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4218874E8BD9D590D4775EEC /* Bundle+FeatureLoanUserInterfaceDemoApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		BFAFF740E0D152DECA13EB18 /* Derived */ = {
 			isa = PBXGroup;
 			children = (
 				37DD3CF345C622C6B6F99EBF /* InfoPlists */,
+				BA9B227DAA2BF6D550A66CC8 /* Sources */,
 			);
 			path = Derived;
 			sourceTree = "<group>";
@@ -187,6 +250,14 @@
 				6C9C42642D24DBF2EC8D5178 /* FeatureLoanUserInterface-TEST.xcconfig */,
 			);
 			path = FeatureLoanUserInterface;
+			sourceTree = "<group>";
+		};
+		D9CA005E9392EB587DE7F8B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F57559271A1C67BBDA54C62B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +283,26 @@
 			productReference = 0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		847FA0CA2DF53762492164D0 /* FeatureLoanUserInterfaceDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2AA7F3603598F18753F938 /* Build configuration list for PBXNativeTarget "FeatureLoanUserInterfaceDemoApp" */;
+			buildPhases = (
+				CFA9444DDD9108E4A1A5F306 /* Sources */,
+				C5ADA9A11A546C0B30327690 /* Resources */,
+				4AF34AB0773C3D0C53AEE456 /* Embed Precompiled Frameworks */,
+				A7C5FB0C908E93F4834DAE8B /* Embed Frameworks */,
+				9A8E3AB53EC6EAF28A80E75C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DAB092DE25B8FDD6536524B /* PBXTargetDependency */,
+			);
+			name = FeatureLoanUserInterfaceDemoApp;
+			productName = FeatureLoanUserInterfaceDemoApp;
+			productReference = 2E6526C7D627CE8AFBB8D2ED /* FeatureLoanUserInterfaceDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AA4D2726C232DC3E04306275 /* FeatureLoanUserInterfaceTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C2220060B9CAD3744B0AA43 /* Build configuration list for PBXNativeTarget "FeatureLoanUserInterfaceTests" */;
@@ -225,7 +316,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D42DA1D13E92EF0BB6AC607C /* PBXTargetDependency */,
+				16B816B8D3438DA60212586B /* PBXTargetDependency */,
 			);
 			name = FeatureLoanUserInterfaceTests;
 			productName = FeatureLoanUserInterfaceTests;
@@ -240,6 +331,9 @@
 			attributes = {
 				ORGANIZATIONNAME = minsone;
 				TargetAttributes = {
+					AA4D2726C232DC3E04306275 = {
+						TestTargetID = 847FA0CA2DF53762492164D0;
+					};
 				};
 			};
 			buildConfigurationList = 199F6147D37B06330C379159 /* Build configuration list for PBXProject "FeatureLoanUserInterface" */;
@@ -257,6 +351,7 @@
 			targets = (
 				44AFCFABA29F4ADEA1B2DCB4 /* FeatureLoanUserInterface */,
 				AA4D2726C232DC3E04306275 /* FeatureLoanUserInterfaceTests */,
+				847FA0CA2DF53762492164D0 /* FeatureLoanUserInterfaceDemoApp */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +361,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADA9A11A546C0B30327690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE800A6813DBF843DEF0AAD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +383,20 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		11898630686880177C9ABC33 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		4AF34AB0773C3D0C53AEE456 /* Embed Precompiled Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,14 +443,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFA9444DDD9108E4A1A5F306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEE5BCF5D7F5AAB6116A4B0 /* AppDelegate.swift in Sources */,
+				E638A13C241E8D9BC9CF4F52 /* Bundle+FeatureLoanUserInterfaceDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D42DA1D13E92EF0BB6AC607C /* PBXTargetDependency */ = {
+		16B816B8D3438DA60212586B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureLoanUserInterfaceDemoApp;
+			target = 847FA0CA2DF53762492164D0 /* FeatureLoanUserInterfaceDemoApp */;
+			targetProxy = 2B4F5C59E66CED0EF8FEA31C /* PBXContainerItemProxy */;
+		};
+		4DAB092DE25B8FDD6536524B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FeatureLoanUserInterface;
 			target = 44AFCFABA29F4ADEA1B2DCB4 /* FeatureLoanUserInterface */;
-			targetProxy = E9436CE65FAF2E8B205797EB /* PBXContainerItemProxy */;
+			targetProxy = 597FF7838B22825071332DB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -371,9 +503,33 @@
 			};
 			name = TEST;
 		};
+		0CAC59CEFF90C0DFE04EDA96 /* PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceDemoApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanUserInterfaceDemoApp;
+				PRODUCT_NAME = FeatureLoanUserInterfaceDemoApp;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PROD;
+		};
 		2C2DF9644A3EA0785BADD73F /* STAGE */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -384,6 +540,32 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanUserInterfaceTests;
 				PRODUCT_NAME = FeatureLoanUserInterfaceTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeatureLoanUserInterfaceDemoApp.app/FeatureLoanUserInterfaceDemoApp";
+				TEST_TARGET_NAME = FeatureLoanUserInterfaceDemoApp;
+			};
+			name = STAGE;
+		};
+		3186B686C3472DBD51B52650 /* STAGE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceDemoApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanUserInterfaceDemoApp;
+				PRODUCT_NAME = FeatureLoanUserInterfaceDemoApp;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -457,6 +639,7 @@
 		347C5592862DD0EA921D4959 /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -474,8 +657,58 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeatureLoanUserInterfaceDemoApp.app/FeatureLoanUserInterfaceDemoApp";
+				TEST_TARGET_NAME = FeatureLoanUserInterfaceDemoApp;
 			};
 			name = DEV;
+		};
+		3C4FDAD78D26D96670CD0366 /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceDemoApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanUserInterfaceDemoApp;
+				PRODUCT_NAME = FeatureLoanUserInterfaceDemoApp;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DEV;
+		};
+		4BDFBBF0136CC5EF3945D4D8 /* TEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceDemoApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.FeatureLoanUserInterfaceDemoApp;
+				PRODUCT_NAME = FeatureLoanUserInterfaceDemoApp;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = TEST;
 		};
 		51AC05515E9FA328AD6DEB31 /* DEV */ = {
 			isa = XCBuildConfiguration;
@@ -752,6 +985,7 @@
 		B1E4691A241535F7561BF079 /* TEST */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -769,12 +1003,15 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeatureLoanUserInterfaceDemoApp.app/FeatureLoanUserInterfaceDemoApp";
+				TEST_TARGET_NAME = FeatureLoanUserInterfaceDemoApp;
 			};
 			name = TEST;
 		};
 		C23ECAA1C3377545F01C198E /* PROD */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Derived/InfoPlists/FeatureLoanUserInterfaceTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -791,6 +1028,8 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeatureLoanUserInterfaceDemoApp.app/FeatureLoanUserInterfaceDemoApp";
+				TEST_TARGET_NAME = FeatureLoanUserInterfaceDemoApp;
 			};
 			name = PROD;
 		};
@@ -826,6 +1065,17 @@
 				C23ECAA1C3377545F01C198E /* PROD */,
 				2C2DF9644A3EA0785BADD73F /* STAGE */,
 				B1E4691A241535F7561BF079 /* TEST */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = PROD;
+		};
+		8C2AA7F3603598F18753F938 /* Build configuration list for PBXNativeTarget "FeatureLoanUserInterfaceDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4FDAD78D26D96670CD0366 /* DEV */,
+				0CAC59CEFF90C0DFE04EDA96 /* PROD */,
+				3186B686C3472DBD51B52650 /* STAGE */,
+				4BDFBBF0136CC5EF3945D4D8 /* TEST */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = PROD;

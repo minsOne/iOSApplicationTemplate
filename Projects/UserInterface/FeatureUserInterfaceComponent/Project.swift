@@ -6,4 +6,5 @@ let project = Project
                		 dependencies: [
 						.Project.UserInterface.DesignSystem,
 						.Project.Module.RxPackage,
-               		 ])
+               		 ],
+					 hasDemoApp: true)

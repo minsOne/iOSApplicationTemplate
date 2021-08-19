@@ -20,6 +20,8 @@
 		977D45E190FE56624CEC4B24 /* BlueprintUI in Frameworks */ = {isa = PBXBuildFile; productRef = B13D841006E477D2C9C8F79D /* BlueprintUI */; };
 		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
 		A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703656026E8CF282104CCF97 /* ScenePreview1.swift */; };
+		CBA84BBA22AAA81B86C64D70 /* Bundle+DesignSystemDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */; };
+		F9E40820863763A405FADC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */; };
 		FDAE33B4C65DFD3B4B185621 /* BothSideTextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A436714383CA4AB4DED8A34 /* BothSideTextPreview.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		92FA30DB289096215F72CF82 /* DesignSystem-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-TEST.xcconfig"; sourceTree = "<group>"; };
 		B9F96042A1DE7785CB726321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA735E388C519076EBDE04C5 /* ProxyResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyResourcePackage; path = ../ProxyResourcePackage; sourceTree = "<group>"; };
+		C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DesignSystemDemoApp.swift"; sourceTree = "<group>"; };
+		C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D81E48225B36E49CFF1F0705 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		DBDB1DF719169911A375EC86 /* DesignSystemDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemDemoApp.plist; sourceTree = "<group>"; };
 		EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-PROD.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +181,14 @@
 			name = Project;
 			sourceTree = "<group>";
 		};
+		62C43922BC81F9CE25FE3A14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7D6BBD2B92079B70AB979221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,8 +210,17 @@
 			isa = PBXGroup;
 			children = (
 				F2F0D6EECE384EBEC3AFDEB4 /* InfoPlists */,
+				D5FD3537E28AE857DC09D214 /* Sources */,
 			);
 			path = Derived;
+			sourceTree = "<group>";
+		};
+		D5FD3537E28AE857DC09D214 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		E059B844BC99120893910CAA /* ScenePreview */ = {
@@ -250,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				E381A0F4C06995D48E2AA1D6 /* DesignSystemPreview */,
+				62C43922BC81F9CE25FE3A14 /* Resources */,
 				E059B844BC99120893910CAA /* ScenePreview */,
 				F6D13D2802A85DEC548F2E50 /* Sources */,
 			);
@@ -382,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E40820863763A405FADC24 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +474,7 @@
 				FDAE33B4C65DFD3B4B185621 /* BothSideTextPreview.swift in Sources */,
 				A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */,
 				429D6E5954343C7B5F35C754 /* AppDelegate.swift in Sources */,
+				CBA84BBA22AAA81B86C64D70 /* Bundle+DesignSystemDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

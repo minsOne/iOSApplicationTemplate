@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DB94364A6188C050C6BBE6C /* NetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC41123E82CB3092B2124C97 /* NetworkAPIHome.framework */; };
 		1729BC4F06F05477FDCA9223 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 051B7698EDBB3E3CCD471F4A /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		206312CB9BED0629E85F8A97 /* Bundle+CoreKitDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AA12EEBF2F41039DE453F /* Bundle+CoreKitDemoApp.swift */; };
 		23461B02E7223B3DD5A91E38 /* NetworkAPICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4963F1C2A5C15EFA7E0AB84C /* NetworkAPICommon.framework */; };
 		258F961037C0E8AC4B947A99 /* NetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7455FBBF42C899F1610068B /* NetworkAPIs.framework */; };
 		2D828BCD3C25211C999E0857 /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1AC8D03B8C8961347014F /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -20,6 +21,7 @@
 		AE2C221BA5A1FD56A9F45B1E /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4BA9B97E87C396ED42FD7B /* ThirdPartyLibraryManager.framework */; };
 		B970B39FB8092F3B938BAFFF /* AnalyticsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45B92B6765AAA322F4D9B2 /* AnalyticsKit.framework */; };
 		C57DBC5276B0C8373064B09D /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051B7698EDBB3E3CCD471F4A /* RxPackage.framework */; };
+		D159DF69FC24B03B34C25E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139FD8844028019C727E94C6 /* LaunchScreen.storyboard */; };
 		D3D9F0D0989FA6D12CED0B0A /* CoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC974E5DCB78384B9D719D5 /* CoreKit.swift */; };
 		E064280BDD28543DCEA88F36 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CC4B55606BECED7C17F69 /* Tests.swift */; };
 		F25EA6630A84410D4CA02E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE97305D21D4C99779875A /* AppDelegate.swift */; };
@@ -82,6 +84,7 @@
 		051B7698EDBB3E3CCD471F4A /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF1AC8D03B8C8961347014F /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1240B327DC5CAE6B5CFAA9FA /* CoreKit-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CoreKit-PROD.xcconfig"; sourceTree = "<group>"; };
+		139FD8844028019C727E94C6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FC974E5DCB78384B9D719D5 /* CoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreKit.swift; sourceTree = "<group>"; };
 		24BFD7769586DDF5E798F75B /* CoreKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		295A7B69D7E6B6A36F7CF783 /* NetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +99,7 @@
 		9BE6A2BE92A05E8512BBD00D /* UtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1560AA8BEC1314BC65B05E8 /* NetworkAPILogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPILogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7455FBBF42C899F1610068B /* NetworkAPIs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04AA12EEBF2F41039DE453F /* Bundle+CoreKitDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+CoreKitDemoApp.swift"; sourceTree = "<group>"; };
 		D5E6ED599A1C16BA0DFD9220 /* CoreKit-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CoreKit-TEST.xcconfig"; sourceTree = "<group>"; };
 		DC41123E82CB3092B2124C97 /* NetworkAPIHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB45B92B6765AAA322F4D9B2 /* AnalyticsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,10 +165,19 @@
 			name = Project;
 			sourceTree = "<group>";
 		};
+		68DB6FFC744BB125101A08AA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D04AA12EEBF2F41039DE453F /* Bundle+CoreKitDemoApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		6A35745B88D25A32CFBB851A /* Derived */ = {
 			isa = PBXGroup;
 			children = (
 				AF737AE82EAD4732759F28A0 /* InfoPlists */,
+				68DB6FFC744BB125101A08AA /* Sources */,
 			);
 			path = Derived;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 		9F565BC07D46FAAF42502775 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D5BE00E6AC97C6A9FD2BF720 /* Resources */,
 				FDADBB7AE9F7D76AE0A438C2 /* Sources */,
 			);
 			path = Demo;
@@ -217,6 +231,14 @@
 				1FC974E5DCB78384B9D719D5 /* CoreKit.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		D5BE00E6AC97C6A9FD2BF720 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				139FD8844028019C727E94C6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F5E393D1EAB175AE0FAA04A1 /* XCConfig */ = {
@@ -362,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D159DF69FC24B03B34C25E74 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25EA6630A84410D4CA02E99 /* AppDelegate.swift in Sources */,
+				206312CB9BED0629E85F8A97 /* Bundle+CoreKitDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,4 +5,5 @@ let project = Project
     .staticFramework(name: "FeatureMainUserInterface",
                		 dependencies: [
 						.Project.UserInterface.DependencyComponent,
-               		 ])
+               		 ],
+					 hasDemoApp: true)
