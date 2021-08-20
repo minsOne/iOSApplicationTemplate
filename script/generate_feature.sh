@@ -17,6 +17,8 @@ touch Projects/Features/$1/Tests/Tests.swift
 
 touch Projects/Features/$1/Project.swift
 
+cp -R script/GenerateModuleDemoSource/Demo Projects/Features/$1/
+
 cat  << EOF > Projects/Features/$1/Project.swift
 import ProjectDescription
 import ProjectDescriptionHelpers

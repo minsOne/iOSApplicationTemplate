@@ -28,7 +28,7 @@ let dependencies = Dependencies(
             .package(url: "https://github.com/ReactorKit/ReactorKit.git", .branch("master")),
             .package(url: "https://github.com/uber/RIBs.git", .branch("master")),
             .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
-            .local(path: .relativeToRoot("Projects/Modules/ResourcePackage")),
+            .local(path: .relativeToRoot("Projects/UserInterface/ResourcePackage")),
         ]
     ),
     platforms: [.iOS]

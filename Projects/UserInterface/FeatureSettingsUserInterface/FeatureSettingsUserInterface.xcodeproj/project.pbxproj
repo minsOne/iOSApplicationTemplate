@@ -11,10 +11,12 @@
 		2DF711DB46A79BF80029F616 /* FeatureSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5BD7D9E8275BCCCBF89D7A /* FeatureSettingsViewController.swift */; };
 		4403E2A63E9FB8528ED17C9B /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD6CEB019ADCBBB4C5E4D /* FeatureSettingsUserInterface.framework */; };
 		456B613DC48633C7E5513B96 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */; };
+		526A5EF201706303C09E2C39 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; };
 		5ADBC9F46240BE2D6085E468 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */; };
 		711FB8D98E458C11097F4C51 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; };
 		AEDEB2F566EE5C06DE67BFCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */; };
 		CB24971C9167B37F41D1ECE7 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; };
+		D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D23AD19A23941191E565846E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD77CCE6CDA91B8AA331BE3 /* Tests.swift */; };
 		ED71BCAA38E6AC0DE8211C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D80C906FDAFCF8B1503C8B /* LaunchScreen.storyboard */; };
 		F0F3C63177958B9017CFB393 /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD070BCDA94502D7A423AC0A /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift */; };
@@ -44,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */,
 				29870E7631E5CF80F2487FC7 /* RxPackage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -114,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526A5EF201706303C09E2C39 /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

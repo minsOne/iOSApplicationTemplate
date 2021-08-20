@@ -12,7 +12,7 @@ import RIBs
 import FeatureSettingsUserInterface
 
 public final class FeatureSettingsPresentation: FeatureSettingsPresentable, FeatureSettingsViewControllable {
-    public var listener: FeatureSettingsPresentableListener? {
+    public var listener: SettingsPresentableListener? {
         get {
             viewController.listener
         }
@@ -25,5 +25,5 @@ public final class FeatureSettingsPresentation: FeatureSettingsPresentable, Feat
         viewController
     }
     
-    private let viewController = FeatureSetttingsViewController()
+    private let viewController = SetttingsViewController()
 }

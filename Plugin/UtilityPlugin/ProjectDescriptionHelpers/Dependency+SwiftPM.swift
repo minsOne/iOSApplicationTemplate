@@ -64,13 +64,15 @@ public extension Dep.SwiftPM.UserInterface {
     static let BlueprintUI               = Dep.package(product: "BlueprintUI")
     static let BlueprintUICommonControls = Dep.package(product: "BlueprintUICommonControls")
     static let FlexLayout                = Dep.package(product: "FlexLayout")
+    static let PinLayout                 = Dep.package(product: "PinLayout")
     static let ProxyResourcePackage      = Dep.package(product: "ProxyResourcePackage")
     static let SnapKit                   = Dep.package(product: "SnapKit")
 }
 
 public extension Package.UserInterface {
     static let Blueprint            = Package.package(url: "https://github.com/square/Blueprint.git", from: "0.3.0")
-    static let FlexLayout           = Package.package(url: "https://github.com/layoutBox/FlexLayout.git", .branch("master"))
+    static let FlexLayout           = Package.package(url: "https://github.com/layoutBox/FlexLayout.git", from: "1.3.18")
+    static let PinLayout            = Package.package(url: "https://github.com/layoutBox/PinLayout.git", .branch("master"))
     static let ProxyResourcePackage = Package.local(path: .relativeToUserInterface("ProxyResourcePackage"))
     static let SnapKit              = Package.package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
 }

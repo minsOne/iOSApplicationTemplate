@@ -35,11 +35,13 @@
 		6A527E6F73ADC858D04068C3 /* FBSDKLoginKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84778171B4F0CFAA7DCC96AB /* FBSDKLoginKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C4FA1BC9D58EC459FD0E0D0 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D444480454C2AD47FB5FF548 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E10DED5B366B73D222CD823 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275CD28106DC5672507A4C11 /* FBSDKShareKit.xcframework */; };
+		70F3CF0BB9F240B2A59853E0 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9369BFA2C65412102538303 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7139F5C78499FC5D743B2B9C /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354AE94B3382B8A2D53E6033 /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		751D34CE89597B455D260BEA /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261B21C72012FB801F6A700D /* CoreKit.framework */; };
 		795235A6B75279459784CFE0 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB219799D2A588CFC2318EE /* FBSDKCoreKit.xcframework */; };
 		798411B8FC22ABEE9D049C82 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A666AFAEA6CFC0DFB4DB6D /* RootBuilder.swift */; };
 		7CCF59EA37831A0637D1E8FC /* RepositoryInjectManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC47B354CFA31A4F5EF6389 /* RepositoryInjectManager.framework */; };
+		80389444F70DE0D461475DAE /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9369BFA2C65412102538303 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		814544CB3EA73B4E6DC17DD7 /* PrepareAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427B540374823E1ED5E73A9 /* PrepareAppDelegate.swift */; };
 		87AA9C1ED5E8D0962586E3A4 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C7CD4FEADE77552BA789F /* AppComponent.swift */; };
 		91636D4B45B7016474F069EB /* Bundle+DevApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097CCCF19788B12074BDA22 /* Bundle+DevApp.swift */; };
@@ -96,6 +98,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				36377B2FF973F223B9AE3EEA /* CoreKit.framework in Embed Frameworks */,
+				80389444F70DE0D461475DAE /* DesignSystem.framework in Embed Frameworks */,
 				58CBCC9026FFD58BBB6D66C8 /* DevelopTool.framework in Embed Frameworks */,
 				ABA45F7746153CD3096D9625 /* Features.framework in Embed Frameworks */,
 				7139F5C78499FC5D743B2B9C /* RxPackage.framework in Embed Frameworks */,
@@ -117,6 +120,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BB5EC1CE157E69C075DA6ADD /* CoreKit.framework in Embed Frameworks */,
+				70F3CF0BB9F240B2A59853E0 /* DesignSystem.framework in Embed Frameworks */,
 				DBE6F07743D621B989C9DA2C /* Features.framework in Embed Frameworks */,
 				CA14A105172C5A3A5F4B4EFB /* RxPackage.framework in Embed Frameworks */,
 				5E96EF6A228AFE9D9C6490E9 /* ThirdPartyLibraryManager.framework in Embed Frameworks */,
@@ -183,6 +187,7 @@
 		D7538BFEB29828A5348C4925 /* dev_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dev_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB219799D2A588CFC2318EE /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
 		E554DAA4AB515DAF86082D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9369BFA2C65412102538303 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +422,7 @@
 			children = (
 				571E08A9083FD4334E4B7D06 /* App.app */,
 				261B21C72012FB801F6A700D /* CoreKit.framework */,
+				E9369BFA2C65412102538303 /* DesignSystem.framework */,
 				D7538BFEB29828A5348C4925 /* dev_app.app */,
 				30FAB99634C86BFDCEA57A95 /* DevAppTests.xctest */,
 				363F5E7C3B8B29FD923BFBDE /* DevelopTool.framework */,

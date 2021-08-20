@@ -47,6 +47,15 @@
         }
       },
       {
+        "package": "PinLayout",
+        "repositoryURL": "https://github.com/layoutBox/PinLayout.git",
+        "state": {
+          "branch": "master",
+          "revision": "f1de5a0e006e5bb8476bc2d3b3eac60e73c3f1c1",
+          "version": null
+        }
+      },
+      {
         "package": "ReactorKit",
         "repositoryURL": "https://github.com/ReactorKit/ReactorKit.git",
         "state": {

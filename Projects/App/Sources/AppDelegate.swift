@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         
         #if DEBUG
-        API.Home.BinGet().request(completion: { result in print(result) })
+//        API.Home.BinGet().request(completion: { result in print(result) })
 //        API.Login.BinGet().request(completion: { result in print(result) })
         #endif
         

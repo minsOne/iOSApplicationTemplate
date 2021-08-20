@@ -18,6 +18,8 @@ touch Projects/UserInterface/$1/Tests/Tests.swift
 
 touch Projects/UserInterface/$1/Project.swift
 
+cp -R script/GenerateModuleDemoSource/Demo Projects/UserInterface/$1/
+
 cat  << EOF > Projects/UserInterface/$1/Project.swift
 import ProjectDescription
 import ProjectDescriptionHelpers

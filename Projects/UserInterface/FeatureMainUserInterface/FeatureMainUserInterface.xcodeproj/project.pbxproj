@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08969828F0411CA0BD7057D0 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF1828441691445FC5DEB91 /* FeatureMainUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A93CFFAE4D42CF2CA2098E /* FeatureMainUserInterface.swift */; };
 		38A66B89E0AD4568AFCB84EA /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
 		4BF45D80D33014006B1DB540 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
@@ -14,6 +15,7 @@
 		6F3A11DB1555BA517AABFB9D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C653DF9989938FCF12A06 /* Tests.swift */; };
 		70861E6E9C61BC1DA48AE8A6 /* FeatureMainUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4667065D10F39EE34D5AD0 /* FeatureMainUserInterface.framework */; };
 		76C1997A8DA02EC1EF43A366 /* Bundle+FeatureMainUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058BD42747C459BDCB61306 /* Bundle+FeatureMainUserInterfaceDemoApp.swift */; };
+		83A6838F3AFAF57B5D9B16EE /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
 		D03D389DA641DC004336D73C /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
 		DE199FC27AD479545F45EFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F872BBC55009371A70458F /* LaunchScreen.storyboard */; };
 		E839E88F2609A64558AA68E7 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08101C7091378B1C70DBE1C3 /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -54,6 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				08969828F0411CA0BD7057D0 /* DesignSystem.framework in Embed Frameworks */,
 				E839E88F2609A64558AA68E7 /* RxPackage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -125,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A6838F3AFAF57B5D9B16EE /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

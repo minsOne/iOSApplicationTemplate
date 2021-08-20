@@ -13,7 +13,7 @@ import FeatureSettingsUserInterface
 public protocol FeatureSettingsRouting: ViewableRouting {}
 
 public protocol FeatureSettingsPresentable: Presentable {
-    var listener: FeatureSettingsUserInterface.FeatureSettingsPresentableListener? { get set }
+    var listener: FeatureSettingsUserInterface.SettingsPresentableListener? { get set }
 }
 
 public protocol FeatureSettingsListener: AnyObject {}
@@ -21,10 +21,10 @@ public protocol FeatureSettingsListener: AnyObject {}
 final class FeatureSettingsInteractor:
     PresentableInteractor<FeatureSettingsPresentable>,
     FeatureSettingsInteractable,
-    FeatureSettingsUserInterface.FeatureSettingsPresentableListener {
-    var action: PublishSubject<FeatureSettingsAction> = .init()
+    FeatureSettingsUserInterface.SettingsPresentableListener {
+    var action: PublishSubject<SettingsAction> = .init()
     
-    var state: Observable<FeatureSettingsState> = .just(.init())
+    var state: Observable<SettingsState> = .just(.init())
 
     weak var router: FeatureSettingsRouting?
     weak var listener: FeatureSettingsListener?

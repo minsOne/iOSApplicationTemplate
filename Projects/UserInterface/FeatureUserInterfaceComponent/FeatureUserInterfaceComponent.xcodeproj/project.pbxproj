@@ -11,12 +11,13 @@
 		5532B212F0937BA6AC8032D5 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D552DD100B5436C7B12D8A0B /* RxPackage.framework */; };
 		574F4AC746EED2F88A2CE535 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A828C902DE368DC475652342 /* FeatureUserInterfaceComponent.framework */; };
 		60755C075CAFDE69C6C4DB6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C07291219D94757247CAB /* AppDelegate.swift */; };
+		6820FFAFFD88F796BFC1F4AA /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C438755D97A8ABC22190FE0F /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		738662896F2DC1A63412EC94 /* FeatureUserInterfaceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04048123EF97A8F9145404E1 /* FeatureUserInterfaceComponent.swift */; };
 		83F2CA1F5120DA6E85D921F8 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C438755D97A8ABC22190FE0F /* DesignSystem.framework */; };
 		88E4CEF58389882F76A599BC /* Bundle+FeatureUserInterfaceComponentDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD81542EE488168C9733B8 /* Bundle+FeatureUserInterfaceComponentDemoApp.swift */; };
 		AACB6FA242CA6154A3526443 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D552DD100B5436C7B12D8A0B /* RxPackage.framework */; };
-		B7237C5C6C50B03A5A39D444 /* DesignSystem.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = C438755D97A8ABC22190FE0F /* DesignSystem.framework */; };
 		E140314EC3FF9644A2FD9998 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D552DD100B5436C7B12D8A0B /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E33678FA4D85A73349E4B682 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C438755D97A8ABC22190FE0F /* DesignSystem.framework */; };
 		ED9D18010E7534A38D01E9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50344D2A2756BDBAB4671D9A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,22 +59,13 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C72BC54B668CEAAE02ABB568 /* Dependencies */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstSubfolderSpec = 16;
-			files = (
-				B7237C5C6C50B03A5A39D444 /* DesignSystem.framework in Dependencies */,
-			);
-			name = Dependencies;
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		F45C77AEBB1D561E9B634B2F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6820FFAFFD88F796BFC1F4AA /* DesignSystem.framework in Embed Frameworks */,
 				E140314EC3FF9644A2FD9998 /* RxPackage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -123,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33678FA4D85A73349E4B682 /* DesignSystem.framework in Frameworks */,
 				5532B212F0937BA6AC8032D5 /* RxPackage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +263,6 @@
 				D90E80D6BB59E5A3E06C9EA2 /* Embed Precompiled Frameworks */,
 				4D16B74F196CA7C91B552952 /* Embed Frameworks */,
 				FBFA37AF7511807FB94A727A /* Frameworks */,
-				C72BC54B668CEAAE02ABB568 /* Dependencies */,
 			);
 			buildRules = (
 			);

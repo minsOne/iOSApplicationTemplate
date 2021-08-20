@@ -7,7 +7,6 @@ mv XCConfig/$1/Template-STAGE.xcconfig XCConfig/$1/$1-STAGE.xcconfig
 mv XCConfig/$1/Template-PROD.xcconfig XCConfig/$1/$1-PROD.xcconfig
 
 mkdir -p Projects/DataRepository/$1/Sources
-touch Projects/DataRepository/$1/Sources/.gitkeep
 touch Projects/DataRepository/$1/Sources/$1.swift
 
 mkdir -p Projects/DataRepository/$1/Resources
@@ -17,6 +16,8 @@ mkdir -p Projects/DataRepository/$1/Tests
 touch Projects/DataRepository/$1/Tests/Tests.swift
 
 touch Projects/DataRepository/$1/Project.swift
+
+cp -R script/GenerateModuleDemoSource/Demo Projects/DataRepository/$1/
 
 cat  << EOF > Projects/DataRepository/$1/Project.swift
 import ProjectDescription

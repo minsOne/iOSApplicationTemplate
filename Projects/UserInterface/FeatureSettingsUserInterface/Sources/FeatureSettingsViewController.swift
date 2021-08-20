@@ -10,29 +10,137 @@ import Foundation
 import RIBs
 import RxSwift
 import UIKit
+import DesignSystem
+import FlexLayout
+import FlexLayoutYoga
+import FlexLayoutYogaKit
+import PinLayout
 
-public enum FeatureSettingsAction {
+@_exported import FlexLayout
+@_exported import FlexLayoutYoga
+@_exported import FlexLayoutYogaKit
+
+public enum SettingsAction {
     case viewDidLoad
 }
 
-public struct FeatureSettingsState {
+public struct SettingsState {
     public init() {}
 }
 
-public protocol FeatureSettingsPresentableListener: AnyObject {
-    var action: PublishSubject<FeatureSettingsAction> { get }
-    var state: Observable<FeatureSettingsState> { get }
+public protocol SettingsPresentableListener: AnyObject {
+    var action: PublishSubject<SettingsAction> { get }
+    var state: Observable<SettingsState> { get }
 }
 
-public final class FeatureSetttingsViewController: UIViewController {
-    public weak var listener: FeatureSettingsPresentableListener?
-    
+class SettingsView: UIView {
+    fileprivate let rootFlexContainer = UIView()
+
+    init() {
+        super.init(frame: .zero)
+        backgroundColor = .white
+
+        // Yoga's C Example
+        rootFlexContainer.flex.direction(.row).padding(20).define { (flex) in
+            flex.addItem().width(80).marginEnd(20).backgroundColor(.systemRed)
+            flex.addItem().height(25).alignSelf(.center).grow(1).backgroundColor(.black)
+        }
+        addSubview(rootFlexContainer)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        // Layout the flexbox container using PinLayout
+        // NOTE: Could be also layouted by setting directly rootFlexContainer.frame
+        rootFlexContainer.pin.top(pin.safeArea).horizontally(pin.safeArea).height(120)
+
+        // Then let the flexbox container layout itself
+        rootFlexContainer.flex.layout()
+    }
+}
+
+
+
+public final class SetttingsViewController: UIViewController {
+    public weak var listener: SettingsPresentableListener?
+
+    fileprivate var mainView: SettingsView? {
+        return self.view as? SettingsView
+    }
+
+
+    public override func loadView() {
+        view = SettingsView()
+    }
+
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+//        view.backgroundColor = .systemRed
         
         listener?.action.onNext(.viewDidLoad)
     }
     
 }
+
+/*
+ class YogaExampleAViewController: BaseViewController {
+ fileprivate var mainView: YogaExampleAView {
+ return self.view as! YogaExampleAView
+ }
+
+ init(pageType: PageType) {
+ super.init()
+ title = pageType.text
+ }
+
+ required init?(coder aDecoder: NSCoder) {
+ super.init(coder: aDecoder)
+ }
+
+ override func loadView() {
+ view = YogaExampleAView()
+ }
+ }
+
+ import UIKit
+ import FlexLayout
+ import PinLayout
+
+ class YogaExampleAView: UIView {
+ fileprivate let rootFlexContainer = UIView()
+
+ init() {
+ super.init(frame: .zero)
+ backgroundColor = .white
+
+ // Yoga's C Example
+ rootFlexContainer.flex.direction(.row).padding(20).define { (flex) in
+ flex.addItem().width(80).marginEnd(20).backgroundColor(.flexLayoutColor)
+ flex.addItem().height(25).alignSelf(.center).grow(1).backgroundColor(.black)
+ }
+ addSubview(rootFlexContainer)
+ }
+
+ required init?(coder aDecoder: NSCoder) {
+ super.init(coder: aDecoder)
+ }
+
+ override func layoutSubviews() {
+ super.layoutSubviews()
+
+ // Layout the flexbox container using PinLayout
+ // NOTE: Could be also layouted by setting directly rootFlexContainer.frame
+ rootFlexContainer.pin.top(pin.safeArea).horizontally(pin.safeArea).height(120)
+
+ // Then let the flexbox container layout itself
+ rootFlexContainer.flex.layout()
+ }
+ }
+
+ */

@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2D135117501337ADEF0AC878 /* BlueprintUICommonControls in Frameworks */ = {isa = PBXBuildFile; productRef = 824AD737487BF80659C38CE9 /* BlueprintUICommonControls */; };
+		2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */; };
-		3DAA0E34A7E7E05CDA6EA9F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC40ABD3ED3C2A8682DE96A2 /* SnapKit */; };
+		3DAA0E34A7E7E05CDA6EA9F3 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B00B917563E7B156BBCC56FD /* PinLayout */; };
 		429D6E5954343C7B5F35C754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F96042A1DE7785CB726321 /* AppDelegate.swift */; };
+		44D48D8F94FF380DF1506789 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B06F8E341EC255697DCEF5 /* Import.swift */; };
 		4C17891952879FB880650A02 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B36824189AAC114E55C7F6CA /* FlexLayout */; };
 		4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */; };
+		71AF96970C1BCAE0BA5C5871 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC40ABD3ED3C2A8682DE96A2 /* SnapKit */; };
 		76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692B9BA721BD07C93D2720E /* SeperateLine.swift */; };
 		7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099F39367A5B6C869BBB2CEF /* BothSideText.swift */; };
 		85D34FD37B46CE224B959A47 /* ProxyResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */; };
@@ -69,6 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +88,7 @@
 		408A47139F010D995564D9D7 /* DesignSystemDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4688D1B5D91F95C22509ACD1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		4692B9BA721BD07C93D2720E /* SeperateLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperateLine.swift; sourceTree = "<group>"; };
+		58B06F8E341EC255697DCEF5 /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
 		66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 		69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703656026E8CF282104CCF97 /* ScenePreview1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePreview1.swift; sourceTree = "<group>"; };
@@ -108,7 +113,8 @@
 				977D45E190FE56624CEC4B24 /* BlueprintUI in Frameworks */,
 				2D135117501337ADEF0AC878 /* BlueprintUICommonControls in Frameworks */,
 				4C17891952879FB880650A02 /* FlexLayout in Frameworks */,
-				3DAA0E34A7E7E05CDA6EA9F3 /* SnapKit in Frameworks */,
+				3DAA0E34A7E7E05CDA6EA9F3 /* PinLayout in Frameworks */,
+				71AF96970C1BCAE0BA5C5871 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				099F39367A5B6C869BBB2CEF /* BothSideText.swift */,
+				58B06F8E341EC255697DCEF5 /* Import.swift */,
 				F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */,
 				66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */,
 				4692B9BA721BD07C93D2720E /* SeperateLine.swift */,
@@ -321,6 +328,7 @@
 				B13D841006E477D2C9C8F79D /* BlueprintUI */,
 				824AD737487BF80659C38CE9 /* BlueprintUICommonControls */,
 				B36824189AAC114E55C7F6CA /* FlexLayout */,
+				B00B917563E7B156BBCC56FD /* PinLayout */,
 				BC40ABD3ED3C2A8682DE96A2 /* SnapKit */,
 			);
 			productName = DesignSystem;
@@ -372,6 +380,7 @@
 			packageReferences = (
 				8AB11F2F4F05D690A7A73396 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				D3E9A65F971870C95F6066EB /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				1E8C35D23FC3246A730EECCE /* XCRemoteSwiftPackageReference "PinLayout" */,
 				13E89B73CEE148F2938284C6 /* XCRemoteSwiftPackageReference "Blueprint" */,
 			);
 			productRefGroup = 82664F67710540CBDEBE5B11 /* Products */;
@@ -461,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */,
+				44D48D8F94FF380DF1506789 /* Import.swift in Sources */,
 				4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */,
 				36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */,
 				76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */,
@@ -656,7 +666,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.DesignSystem;
 				PRODUCT_NAME = DesignSystem;
 				SDKROOT = iphoneos;
@@ -749,7 +758,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.DesignSystem;
 				PRODUCT_NAME = DesignSystem;
 				SDKROOT = iphoneos;
@@ -866,7 +874,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.DesignSystem;
 				PRODUCT_NAME = DesignSystem;
 				SDKROOT = iphoneos;
@@ -950,7 +957,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.DesignSystem;
 				PRODUCT_NAME = DesignSystem;
 				SDKROOT = iphoneos;
@@ -1125,6 +1131,14 @@
 				minimumVersion = 0.3.0;
 			};
 		};
+		1E8C35D23FC3246A730EECCE /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		8AB11F2F4F05D690A7A73396 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1137,8 +1151,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/layoutBox/FlexLayout.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.18;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1147,6 +1161,10 @@
 		824AD737487BF80659C38CE9 /* BlueprintUICommonControls */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BlueprintUICommonControls;
+		};
+		B00B917563E7B156BBCC56FD /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PinLayout;
 		};
 		B13D841006E477D2C9C8F79D /* BlueprintUI */ = {
 			isa = XCSwiftPackageProductDependency;
