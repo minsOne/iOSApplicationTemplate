@@ -69,3 +69,7 @@ $ tuist graph -t -f dot
 * https://app.diagrams.net/#G11kR-DSn8p-vpA-btOnlT2qm6Lq9Ph-ss
 * https://github.com/kudoleh/iOS-Clean-Architecture-MVVM.git
 * https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png
+
+## 주의
+
+* FlexLayout은 FlexLayoutYoga, FlexLayoutYogaKit을 의존성으로 가지는데, 모듈맵에서 제대로 작성되지 않아, FlexLayout 프레임워크의 모듈맵에 FlexLayoutYoga, FlexLayoutYogaKit를 추가하였음. 따라서 수정요소가 있기 때문에 Vendor 경로에 추가함. (모듈맵 코드를 다시 복구 했는데, 또 잘 동작해서 왜 그런지는 모르겠음.)

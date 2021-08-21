@@ -64,6 +64,8 @@ public extension Dep.SwiftPM.UserInterface {
     static let BlueprintUI               = Dep.package(product: "BlueprintUI")
     static let BlueprintUICommonControls = Dep.package(product: "BlueprintUICommonControls")
     static let FlexLayout                = Dep.package(product: "FlexLayout")
+    static let FlexLayoutYoga            = Dep.package(product: "FlexLayoutYoga")
+    static let FlexLayoutYogaKit         = Dep.package(product: "FlexLayoutYogaKit")
     static let PinLayout                 = Dep.package(product: "PinLayout")
     static let ProxyResourcePackage      = Dep.package(product: "ProxyResourcePackage")
     static let SnapKit                   = Dep.package(product: "SnapKit")

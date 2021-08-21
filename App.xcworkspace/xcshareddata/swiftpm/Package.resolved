@@ -20,15 +20,6 @@
         }
       },
       {
-        "package": "FlexLayout",
-        "repositoryURL": "https://github.com/layoutBox/FlexLayout.git",
-        "state": {
-          "branch": "master",
-          "revision": "f6f6023574a60e613300064f7780ea926f6036f0",
-          "version": null
-        }
-      },
-      {
         "package": "InjectPropertyWrapper",
         "repositoryURL": "https://github.com/egeniq/InjectPropertyWrapper.git",
         "state": {

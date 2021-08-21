@@ -1,0 +1,13 @@
+module FlexLayoutYogaKit {
+  header "UIView+Yoga.h"
+  header "YGLayout.h"
+  header "YGLayout+Private.h"
+  export *
+}
+
+module FlexLayoutYoga {
+  header "YGEnums.h"
+  header "YGMacros.h"
+  header "Yoga.h"
+  export *
+}

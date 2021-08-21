@@ -21,10 +21,11 @@ public extension Dep.Carthage {
     static let RxTest             = Dep.carthage(name: "RxTest")
     static let RxNimbleRxBlocking = Dep.carthage(name: "RxNimbleRxBlocking")
     static let RxNimbleRxTest     = Dep.carthage(name: "RxNimbleRxTest")
+    static let FlexLayout         = Dep.carthage(name: "FlexLayout")
 }
 
 public extension Dep {
     static func carthage(name: String) -> Self {
-        return .xcFramework(path: .relativeToRoot("Tuist/Dependencies/Carthage/\(name).xcframework"))
+        return .xcFramework(path: .relativeToCarthage("\(name).xcframework"))
     }
 }

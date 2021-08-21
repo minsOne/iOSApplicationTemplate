@@ -1,4 +1,5 @@
 import UIKit
+import FeatureSettingsUserInterface
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = UIViewController()
+        let viewController = SetttingsViewController()
         viewController.view.backgroundColor = .systemRed
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()

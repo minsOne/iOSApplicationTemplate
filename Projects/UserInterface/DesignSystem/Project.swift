@@ -6,7 +6,6 @@ let project = Project
                packages: [
                 .UserInterface.ProxyResourcePackage,
                 .UserInterface.Blueprint,
-                .UserInterface.FlexLayout,
                 .UserInterface.PinLayout,
                 .UserInterface.SnapKit,
                ],
@@ -14,8 +13,8 @@ let project = Project
                 .SwiftPM.UserInterface.ProxyResourcePackage,
                 .SwiftPM.UserInterface.BlueprintUI,
                 .SwiftPM.UserInterface.BlueprintUICommonControls,
-                .SwiftPM.UserInterface.FlexLayout,
                 .SwiftPM.UserInterface.PinLayout,
                 .SwiftPM.UserInterface.SnapKit,
+                .Framework.FlexLayout,
                ],
                hasDemoApp: true)

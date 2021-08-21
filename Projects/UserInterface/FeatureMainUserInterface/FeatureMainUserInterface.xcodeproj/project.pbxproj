@@ -13,6 +13,7 @@
 		4BF45D80D33014006B1DB540 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
 		6ADF51CE51E5124C80357437 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08101C7091378B1C70DBE1C3 /* RxPackage.framework */; };
 		6F3A11DB1555BA517AABFB9D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C653DF9989938FCF12A06 /* Tests.swift */; };
+		6F90F8C1EC5273D9F72CE2A9 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9ADEBE67C53776123BD4BC /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70861E6E9C61BC1DA48AE8A6 /* FeatureMainUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4667065D10F39EE34D5AD0 /* FeatureMainUserInterface.framework */; };
 		76C1997A8DA02EC1EF43A366 /* Bundle+FeatureMainUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058BD42747C459BDCB61306 /* Bundle+FeatureMainUserInterfaceDemoApp.swift */; };
 		83A6838F3AFAF57B5D9B16EE /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
@@ -58,6 +59,7 @@
 			files = (
 				08969828F0411CA0BD7057D0 /* DesignSystem.framework in Embed Frameworks */,
 				E839E88F2609A64558AA68E7 /* RxPackage.framework in Embed Frameworks */,
+				6F90F8C1EC5273D9F72CE2A9 /* FlexLayout.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +96,7 @@
 		51D71DA8E96227509E883074 /* FeatureMainUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
 		59A8B73310380E4645E78092 /* FeatureMainUserInterface.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureMainUserInterface.plist; sourceTree = "<group>"; };
 		656A04DFF61D04486B5FA4D3 /* FeatureMainUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
+		6C9ADEBE67C53776123BD4BC /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		7321BAA608BD25BD81716E2E /* FeatureMainUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
 		89A93CFFAE4D42CF2CA2098E /* FeatureMainUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureMainUserInterface.swift; sourceTree = "<group>"; };
 		8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +193,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		6C4A3C20C7339FBA70229D54 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6C9ADEBE67C53776123BD4BC /* FlexLayout.xcframework */,
+			);
+			name = Vendor;
+			path = ../../../Vendor;
+			sourceTree = "<group>";
+		};
 		73FD1A1B77455DF1256FC0F0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +224,7 @@
 				9155CA43B4DA8E16709A7E58 /* Derived */,
 				73FD1A1B77455DF1256FC0F0 /* Sources */,
 				5F9D2C04C64D485E1440686F /* Tests */,
+				6C4A3C20C7339FBA70229D54 /* Vendor */,
 				4537E1DE257E568ED76C72D6 /* XCConfig */,
 			);
 			name = Project;

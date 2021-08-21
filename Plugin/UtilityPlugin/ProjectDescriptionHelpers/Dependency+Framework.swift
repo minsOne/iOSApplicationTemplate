@@ -34,6 +34,7 @@ public extension Dep.Framework {
         .facebook(name: "FBSDKCoreKit"),
         .facebook(name: "FBSDKCoreKit_Basics"),
     ]
+    static let FlexLayout = Dep.vendor(name: "FlexLayout")
 }
 
 public extension Dep {
@@ -42,5 +43,8 @@ public extension Dep {
     }
     static func facebook(name: String) -> Self {
         return .xcFramework(path: .relativeToRoot("Vendor/Facebook/\(name).xcframework"))
+    }
+    static func vendor(name: String) -> Self {
+        return .xcFramework(path: .relativeToRoot("Vendor/\(name).xcframework"))
     }
 }

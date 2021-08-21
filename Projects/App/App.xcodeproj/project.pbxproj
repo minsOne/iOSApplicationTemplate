@@ -31,6 +31,7 @@
 		5A6344349E14945952B83231 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A0B7E5D17F46274D7462C7 /* Quick.xcframework */; };
 		5E96EF6A228AFE9D9C6490E9 /* ThirdPartyLibraryManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB941EBFAAE4D0464C5D0C /* ThirdPartyLibraryManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		645914F4549B12ADE6510921 /* FBSDKGamingServicesKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFD592B2F71214F1F6A7E8D /* FBSDKGamingServicesKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67BEA296B588467F0C502D22 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0193A36EF2E54E0024198F /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6971FF8A449F594341599156 /* FBSDKCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEB219799D2A588CFC2318EE /* FBSDKCoreKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6A527E6F73ADC858D04068C3 /* FBSDKLoginKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84778171B4F0CFAA7DCC96AB /* FBSDKLoginKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C4FA1BC9D58EC459FD0E0D0 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D444480454C2AD47FB5FF548 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -49,6 +50,7 @@
 		9521590436B6014FF0839349 /* DevSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAEF040F6CFC33E87EC60F /* DevSource.swift */; };
 		97639454D5E33450A0D8185C /* Bundle+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AF9D0780E6CC42D791F41 /* Bundle+App.swift */; };
 		9B27325241BC997D81989787 /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFD592B2F71214F1F6A7E8D /* FBSDKGamingServicesKit.xcframework */; };
+		9D446D4D52C0DE244535C110 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0193A36EF2E54E0024198F /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A03A11DDD63D14F4E6867F6E /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03A0B7E5D17F46274D7462C7 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A27BB6A0D6E12EA4CCA28B3F /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A666AFAEA6CFC0DFB4DB6D /* RootBuilder.swift */; };
 		A855488EB00C8ED7A431D253 /* FBSDKShareKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 275CD28106DC5672507A4C11 /* FBSDKShareKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -109,6 +111,7 @@
 				F7539FDF89DDA6679EFE3D3E /* FBSDKGamingServicesKit.xcframework in Embed Frameworks */,
 				6A527E6F73ADC858D04068C3 /* FBSDKLoginKit.xcframework in Embed Frameworks */,
 				4ADAE02088B5B16354847222 /* FBSDKShareKit.xcframework in Embed Frameworks */,
+				9D446D4D52C0DE244535C110 /* FlexLayout.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +132,7 @@
 				645914F4549B12ADE6510921 /* FBSDKGamingServicesKit.xcframework in Embed Frameworks */,
 				01E5BABFD23971AC1EDC6BE4 /* FBSDKLoginKit.xcframework in Embed Frameworks */,
 				A855488EB00C8ED7A431D253 /* FBSDKShareKit.xcframework in Embed Frameworks */,
+				67BEA296B588467F0C502D22 /* FlexLayout.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +155,7 @@
 		03A0B7E5D17F46274D7462C7 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
 		0427B540374823E1ED5E73A9 /* PrepareAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareAppDelegate.swift; sourceTree = "<group>"; };
 		057A3CD8D734F9C1B4948C18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F0193A36EF2E54E0024198F /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		19F5139470256A6731C07B3F /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		261B21C72012FB801F6A700D /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275CD28106DC5672507A4C11 /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
@@ -301,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCDF5CA65B542571AA9FA86 /* Facebook */,
+				0F0193A36EF2E54E0024198F /* FlexLayout.xcframework */,
 			);
 			name = Vendor;
 			path = ../../Vendor;

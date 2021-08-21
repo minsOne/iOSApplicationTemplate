@@ -11,14 +11,8 @@ import RIBs
 import RxSwift
 import UIKit
 import DesignSystem
-import FlexLayout
-import FlexLayoutYoga
-import FlexLayoutYogaKit
 import PinLayout
-
-@_exported import FlexLayout
-@_exported import FlexLayoutYoga
-@_exported import FlexLayoutYogaKit
+import FlexLayout
 
 public enum SettingsAction {
     case viewDidLoad
@@ -42,9 +36,9 @@ class SettingsView: UIView {
 
         // Yoga's C Example
         rootFlexContainer.flex.direction(.row).padding(20).define { (flex) in
-            flex.addItem().width(80).marginEnd(20).backgroundColor(.systemRed)
+            flex.addItem().width(80).marginEnd(20).backgroundColor(.systemBlue)
             flex.addItem().height(25).alignSelf(.center).grow(1).backgroundColor(.black)
-        }
+        }.backgroundColor(.systemGreen)
         addSubview(rootFlexContainer)
     }
 
