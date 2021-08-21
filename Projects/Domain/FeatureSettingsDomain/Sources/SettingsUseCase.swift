@@ -1,5 +1,5 @@
 //
-//  FeatureSettingsUseCase.swift
+//  SettingsUseCase.swift
 //  FeatureSettingsDomain
 //
 //  Created by minsone on 2021/08/18.
@@ -19,16 +19,16 @@ public struct SettingsUseCaseModel {
     }
 }
 
-protocol FeatureSettingsUseCase {
+protocol SettingsUseCase {
     func requestSettings() -> Single<SettingsUseCaseModel>
 }
 
-public protocol FeatureSettingsRepository {
+public protocol SettingsRepository {
     func requestSettings() -> Single<SettingsUseCaseModel>
 }
 
-struct FeatureSettingsUseCaseImpl: FeatureSettingsUseCase {
-    @Inject private var repository: FeatureSettingsRepository
+struct SettingsUseCaseImpl: SettingsUseCase {
+    @Inject private var repository: SettingsRepository
 
     func requestSettings() -> Single<SettingsUseCaseModel> {
         return repository.requestSettings()

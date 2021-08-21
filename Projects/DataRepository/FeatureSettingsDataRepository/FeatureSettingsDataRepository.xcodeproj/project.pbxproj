@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0F5ECCCA7DE79FE50B55E6B5 /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D181F55D6FAB63E919DC771 /* FeatureSettingsUserInterface.framework */; };
 		2D6F622DD602BE7D0141A262 /* FeatureDomainComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE82C0C6E0102C4DC25D51CF /* FeatureDomainComponent.framework */; };
-		7172E6CB4C9592D988148E0F /* FeatureSettingsDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B34758D59777DBB22C709 /* FeatureSettingsDataRepository.swift */; };
+		7172E6CB4C9592D988148E0F /* SettingsDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B34758D59777DBB22C709 /* SettingsDataRepository.swift */; };
 		773A834FADB69D0DE5078327 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A710218BC9F364D86B62B0 /* ThirdPartyLibraryManager.framework */; };
 		875A77FC0048088B047BEF75 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFF4A0784157AFFCD1DF305 /* DesignSystem.framework */; };
 		8F44A15BD71F4BB53CA80510 /* FeatureDataRepositoryComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 1DDBFBD9E0642D60A22E0580 /* FeatureDataRepositoryComponent.framework */; };
@@ -72,7 +72,7 @@
 		07BB7079A93D9A66BC3D246D /* FeatureSettingsDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF4E5B5D6F749731D1A1F70 /* FeatureSettingsDataRepository-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDataRepository-DEV.xcconfig"; sourceTree = "<group>"; };
 		0D181F55D6FAB63E919DC771 /* FeatureSettingsUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		197B34758D59777DBB22C709 /* FeatureSettingsDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsDataRepository.swift; sourceTree = "<group>"; };
+		197B34758D59777DBB22C709 /* SettingsDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataRepository.swift; sourceTree = "<group>"; };
 		1C58366F599CF8FF89817CB8 /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDBFBD9E0642D60A22E0580 /* FeatureDataRepositoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDataRepositoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A710218BC9F364D86B62B0 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +147,7 @@
 		5332F11CEEBC1B8A576610C9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				197B34758D59777DBB22C709 /* FeatureSettingsDataRepository.swift */,
+				197B34758D59777DBB22C709 /* SettingsDataRepository.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -265,8 +265,6 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = minsone;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 03059431DADF6C00151119B0 /* Build configuration list for PBXProject "FeatureSettingsDataRepository" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -348,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7172E6CB4C9592D988148E0F /* FeatureSettingsDataRepository.swift in Sources */,
+				7172E6CB4C9592D988148E0F /* SettingsDataRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

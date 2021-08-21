@@ -13,7 +13,7 @@ protocol RootDependency: Dependency {}
 
 final class RootComponent:
     Component<RootDependency>,
-    FeatureSettingsDependency {}
+    FeatureSettingsDomain.SettingsDependency {}
 
 // MARK: - Builder
 
@@ -33,7 +33,7 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
         let viewController = ViewController()
         let interactor = Interactor(presenter: viewController)
 
-        let settingsBuilder = FeatureSettingsBuilder(dependency: component)
+        let settingsBuilder = FeatureSettingsDomain.SettingsBuilder(dependency: component)
 
         return Router(interactor: interactor,
                       viewController: viewController,

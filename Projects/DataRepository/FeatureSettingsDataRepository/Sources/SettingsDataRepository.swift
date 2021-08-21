@@ -1,5 +1,5 @@
 //
-//  FeatureSettingsDataRepository.swift
+//  SettingsDataRepository.swift
 //  FeatureSettingsDataRepository
 //
 //  Created by minsone on 2021/08/18.
@@ -11,7 +11,7 @@ import FeatureSettingsDomain
 import RxSwift
 import NetworkAPIs
 
-public struct FeatureSettingsRepositoryImpl: FeatureSettingsRepository {
+public struct SettingsRepositoryImpl: FeatureSettingsDomain.SettingsRepository {
     public init() {}
 
     public func requestSettings() -> Single<SettingsUseCaseModel> {

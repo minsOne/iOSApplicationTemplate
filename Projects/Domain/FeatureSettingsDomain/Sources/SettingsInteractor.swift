@@ -1,5 +1,5 @@
 //
-//  FeatureSettingsInteractor.swift
+//  SettingsInteractor.swift
 //  FeatureSettingsDomain
 //
 //  Created by minsone on 2021/08/18.
@@ -10,29 +10,29 @@ import RIBs
 import RxSwift
 import FeatureSettingsUserInterface
 
-public protocol FeatureSettingsRouting: ViewableRouting {}
+public protocol SettingsRouting: ViewableRouting {}
 
-public protocol FeatureSettingsPresentable: Presentable {
+public protocol SettingsPresentable: Presentable {
     var listener: FeatureSettingsUserInterface.SettingsPresentableListener? { get set }
 }
 
-public protocol FeatureSettingsListener: AnyObject {}
+public protocol SettingsListener: AnyObject {}
 
-final class FeatureSettingsInteractor:
-    PresentableInteractor<FeatureSettingsPresentable>,
-    FeatureSettingsInteractable,
+final class SettingsInteractor:
+    PresentableInteractor<SettingsPresentable>,
+    SettingsInteractable,
     FeatureSettingsUserInterface.SettingsPresentableListener {
     var action: PublishSubject<SettingsAction> = .init()
     
     var state: Observable<SettingsState> = .just(.init())
 
-    weak var router: FeatureSettingsRouting?
-    weak var listener: FeatureSettingsListener?
+    weak var router: SettingsRouting?
+    weak var listener: SettingsListener?
     
-    private let useCase: FeatureSettingsUseCase
+    private let useCase: SettingsUseCase
 
-    init(presenter: FeatureSettingsPresentable,
-         useCase: FeatureSettingsUseCase) {
+    init(presenter: SettingsPresentable,
+         useCase: SettingsUseCase) {
         self.useCase = useCase
 
         super.init(presenter: presenter)

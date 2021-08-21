@@ -11,7 +11,7 @@ import FeatureSettingsDomain
 
 protocol RootInteractable:
     Interactable,
-    FeatureSettingsListener {
+    FeatureSettingsDomain.SettingsListener {
     var router: RootRouting? { get set }
     var listener: RootListener? { get set }
 }
@@ -20,12 +20,12 @@ protocol RootViewControllable: ViewControllable {}
 
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
 
-    private let settingsBuilder: FeatureSettingsBuildable
+    private let settingsBuilder: FeatureSettingsDomain.SettingsBuildable
     private var settingsRouter: ViewableRouting?
 
     init(interactor: RootInteractable,
          viewController: RootViewControllable,
-         settingsBuilder: FeatureSettingsBuildable) {
+         settingsBuilder: FeatureSettingsDomain.SettingsBuildable) {
         self.settingsBuilder = settingsBuilder
         
         super.init(interactor: interactor,

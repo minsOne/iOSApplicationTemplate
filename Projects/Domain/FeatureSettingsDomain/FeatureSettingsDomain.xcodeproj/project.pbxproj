@@ -3,22 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		10CC8A67D14C4367FFC1F171 /* FeatureDomainComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = EC68F5BC69AE84DDF24190E8 /* FeatureDomainComponent.framework */; };
-		15E4281449C04E689B060555 /* FeatureSettingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BC891C89D5D09A6314578 /* FeatureSettingsPresentation.swift */; };
-		1F32022C1A11CDDEF1080536 /* FeatureSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A87561D09A98E7D3C06D7D /* FeatureSettingsInteractor.swift */; };
+		15E4281449C04E689B060555 /* SettingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BC891C89D5D09A6314578 /* SettingsPresentation.swift */; };
+		1F32022C1A11CDDEF1080536 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A87561D09A98E7D3C06D7D /* SettingsInteractor.swift */; };
 		2175FC3A300F9CD3DBD9B5A8 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469389580BDF52F0FDCE4BFF /* FeatureUserInterfaceComponent.framework */; };
-		4932BB7C197B8DB45B451C47 /* FeatureSettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1ED302DE9561762CBA7414 /* FeatureSettingsUseCase.swift */; };
+		4932BB7C197B8DB45B451C47 /* SettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1ED302DE9561762CBA7414 /* SettingsUseCase.swift */; };
 		75C82E090D27D14DF4F57289 /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */; };
 		92CCE4C9B2719821E052BE38 /* FeatureDomainComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC68F5BC69AE84DDF24190E8 /* FeatureDomainComponent.framework */; };
 		94E97F75731EF9AFD2B3A38A /* FeatureSettingsDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD0091D38DC4974675B10C9 /* FeatureSettingsDomain.framework */; };
 		C48387ED60EEEBBE1FAD4435 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D6FDAD05A5AEC7B07BF641 /* RxPackage.framework */; };
 		C98BFD05E3F66039F248C989 /* FeatureSettingsUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */; };
-		CD3A38CDF07B49473D63EC12 /* FeatureSettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E24FE8D0FEC6EFA3BE0090C /* FeatureSettingsBuilder.swift */; };
-		CD51AA4FE53F9DBF4915FE77 /* FeatureSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B0E1B74605156354D5E87 /* FeatureSettingsRouter.swift */; };
+		CD3A38CDF07B49473D63EC12 /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E24FE8D0FEC6EFA3BE0090C /* SettingsBuilder.swift */; };
+		CD51AA4FE53F9DBF4915FE77 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B0E1B74605156354D5E87 /* SettingsRouter.swift */; };
 		DF956541ECB888FA45F6F2AC /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1F46E7749549EF18DA534 /* DesignSystem.framework */; };
 		E17069C6AE925735020B1AB7 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29913189476144AD24CD556 /* Tests.swift */; };
 		EAF79C36CB0ED23EC2D781AF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A3D08B6350984BFE8203D8 /* ThirdPartyLibraryManager.framework */; };
@@ -70,14 +70,14 @@
 
 /* Begin PBXFileReference section */
 		01A3D08B6350984BFE8203D8 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A87561D09A98E7D3C06D7D /* FeatureSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsInteractor.swift; sourceTree = "<group>"; };
+		22A87561D09A98E7D3C06D7D /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		27AC31D0F575A4D95582DE03 /* FeatureSettingsDomainTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsDomainTests.plist; sourceTree = "<group>"; };
-		2F6B0E1B74605156354D5E87 /* FeatureSettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsRouter.swift; sourceTree = "<group>"; };
+		2F6B0E1B74605156354D5E87 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		34B2521BE0C0EDE6A964A046 /* FeatureSettingsDomain-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDomain-PROD.xcconfig"; sourceTree = "<group>"; };
 		469389580BDF52F0FDCE4BFF /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D60F8540D2F5CF64C184A4E /* FeatureSettingsDomain-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDomain-DEV.xcconfig"; sourceTree = "<group>"; };
 		6A9D0D9D3D83470509FCFA02 /* FeatureSettingsDomain-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDomain-TEST.xcconfig"; sourceTree = "<group>"; };
-		7E24FE8D0FEC6EFA3BE0090C /* FeatureSettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsBuilder.swift; sourceTree = "<group>"; };
+		7E24FE8D0FEC6EFA3BE0090C /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
 		815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D6FDAD05A5AEC7B07BF641 /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A071E7CA8EAD0B45BCCA568E /* FeatureSettingsDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureSettingsDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,10 +85,10 @@
 		ABD0091D38DC4974675B10C9 /* FeatureSettingsDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29913189476144AD24CD556 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		BDB9A4004B529D8C66249CB6 /* FeatureSettingsDomain-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDomain-STAGE.xcconfig"; sourceTree = "<group>"; };
-		D30BC891C89D5D09A6314578 /* FeatureSettingsPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsPresentation.swift; sourceTree = "<group>"; };
+		D30BC891C89D5D09A6314578 /* SettingsPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresentation.swift; sourceTree = "<group>"; };
 		E7A1F46E7749549EF18DA534 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC68F5BC69AE84DDF24190E8 /* FeatureDomainComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDomainComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB1ED302DE9561762CBA7414 /* FeatureSettingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsUseCase.swift; sourceTree = "<group>"; };
+		FB1ED302DE9561762CBA7414 /* SettingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,11 +195,11 @@
 		DA9F0535E74598FDAD83E57B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7E24FE8D0FEC6EFA3BE0090C /* FeatureSettingsBuilder.swift */,
-				22A87561D09A98E7D3C06D7D /* FeatureSettingsInteractor.swift */,
-				D30BC891C89D5D09A6314578 /* FeatureSettingsPresentation.swift */,
-				2F6B0E1B74605156354D5E87 /* FeatureSettingsRouter.swift */,
-				FB1ED302DE9561762CBA7414 /* FeatureSettingsUseCase.swift */,
+				7E24FE8D0FEC6EFA3BE0090C /* SettingsBuilder.swift */,
+				22A87561D09A98E7D3C06D7D /* SettingsInteractor.swift */,
+				D30BC891C89D5D09A6314578 /* SettingsPresentation.swift */,
+				2F6B0E1B74605156354D5E87 /* SettingsRouter.swift */,
+				FB1ED302DE9561762CBA7414 /* SettingsUseCase.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -265,8 +265,6 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = minsone;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = DD0164BD7EAA7153ABE6D9E6 /* Build configuration list for PBXProject "FeatureSettingsDomain" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -340,11 +338,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3A38CDF07B49473D63EC12 /* FeatureSettingsBuilder.swift in Sources */,
-				1F32022C1A11CDDEF1080536 /* FeatureSettingsInteractor.swift in Sources */,
-				15E4281449C04E689B060555 /* FeatureSettingsPresentation.swift in Sources */,
-				CD51AA4FE53F9DBF4915FE77 /* FeatureSettingsRouter.swift in Sources */,
-				4932BB7C197B8DB45B451C47 /* FeatureSettingsUseCase.swift in Sources */,
+				CD3A38CDF07B49473D63EC12 /* SettingsBuilder.swift in Sources */,
+				1F32022C1A11CDDEF1080536 /* SettingsInteractor.swift in Sources */,
+				15E4281449C04E689B060555 /* SettingsPresentation.swift in Sources */,
+				CD51AA4FE53F9DBF4915FE77 /* SettingsRouter.swift in Sources */,
+				4932BB7C197B8DB45B451C47 /* SettingsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

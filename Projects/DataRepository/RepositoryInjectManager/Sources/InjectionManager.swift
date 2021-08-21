@@ -10,6 +10,6 @@ public struct InjectContainerManager {
     public func register() {
         let container = InjectContainer.container
 
-        container.register(FeatureSettingsRepository.self) { _ in FeatureSettingsRepositoryImpl() }
+        container.register(FeatureSettingsDomain.SettingsRepository.self) { _ in FeatureSettingsDataRepository.SettingsRepositoryImpl() }
     }
 }

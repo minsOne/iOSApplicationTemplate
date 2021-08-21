@@ -1,5 +1,5 @@
 //
-//  FeatureSettingsPresentation.swift
+//  SettingsPresentation.swift
 //  FeatureSettingsDomain
 //
 //  Created by minsone on 2021/08/18.
@@ -11,7 +11,7 @@ import UIKit
 import RIBs
 import FeatureSettingsUserInterface
 
-public final class FeatureSettingsPresentation: FeatureSettingsPresentable, FeatureSettingsViewControllable {
+public final class SettingsPresentation: SettingsPresentable, SettingsViewControllable {
     public var listener: SettingsPresentableListener? {
         get {
             viewController.listener
