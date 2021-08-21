@@ -66,9 +66,12 @@ $ tuist graph -t -f dot
 * [RxViewBinder](https://github.com/magi82/RxViewBinder)
 
 * 클린아키텍처 일부 설계 참고
-* https://app.diagrams.net/#G11kR-DSn8p-vpA-btOnlT2qm6Lq9Ph-ss
-* https://github.com/kudoleh/iOS-Clean-Architecture-MVVM.git
-* https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png
+  * https://app.diagrams.net/#G11kR-DSn8p-vpA-btOnlT2qm6Lq9Ph-ss
+  * https://github.com/kudoleh/iOS-Clean-Architecture-MVVM.git
+  * https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png
+
+* FlexLayout 사용법 참고
+  * https://medium.com/swlh/a-swift-yogakit-guide-to-flexbox-fec74e1bffaf
 
 ## 주의
 

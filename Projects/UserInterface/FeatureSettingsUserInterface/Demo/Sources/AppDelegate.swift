@@ -19,3 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+import DesignSystem
+
+struct SetttingsViewController_Preview: PreviewProvider {
+    static var previews: some View {
+        UIViewControllerPreview {
+            SetttingsViewController()
+        }
+    }
+}
+#endif

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29870E7631E5CF80F2487FC7 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2DF711DB46A79BF80029F616 /* FeatureSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5BD7D9E8275BCCCBF89D7A /* FeatureSettingsViewController.swift */; };
+		2DF711DB46A79BF80029F616 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5BD7D9E8275BCCCBF89D7A /* SettingsViewController.swift */; };
 		4403E2A63E9FB8528ED17C9B /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD6CEB019ADCBBB4C5E4D /* FeatureSettingsUserInterface.framework */; };
 		456B613DC48633C7E5513B96 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */; };
 		5ADBC9F46240BE2D6085E468 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */; };
@@ -16,6 +16,7 @@
 		711FB8D98E458C11097F4C51 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; };
 		AEDEB2F566EE5C06DE67BFCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */; };
 		CB24971C9167B37F41D1ECE7 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; };
+		CB90712C26D156AE00C62D83 /* FlexLayoutDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90712B26D156AE00C62D83 /* FlexLayoutDesignSystem.swift */; };
 		D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D23AD19A23941191E565846E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD77CCE6CDA91B8AA331BE3 /* Tests.swift */; };
 		ED71BCAA38E6AC0DE8211C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D80C906FDAFCF8B1503C8B /* LaunchScreen.storyboard */; };
@@ -93,7 +94,7 @@
 		2F9CB162AC18E3A52C4C2D36 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDC295A537F9677C3BF1E20 /* FeatureSettingsUserInterfaceDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsUserInterfaceDemoApp.plist; sourceTree = "<group>"; };
-		3C5BD7D9E8275BCCCBF89D7A /* FeatureSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSettingsViewController.swift; sourceTree = "<group>"; };
+		3C5BD7D9E8275BCCCBF89D7A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3F4504005BA459DDEA172A2F /* FeatureSettingsUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
 		3FDCAA08ABA036E9158935CD /* FeatureSettingsUserInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureSettingsUserInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4E33AF8903F97EF98A410 /* FeatureSettingsUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		8370A5C18306F38520CE6BB2 /* FeatureSettingsUserInterfaceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsUserInterfaceTests.plist; sourceTree = "<group>"; };
 		8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB90712B26D156AE00C62D83 /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
 		DD070BCDA94502D7A423AC0A /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FeatureSettingsUserInterfaceDemoApp.swift"; sourceTree = "<group>"; };
 		F9AA5F273F3D8946138CF0F5 /* FeatureSettingsUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
 		FBD77CCE6CDA91B8AA331BE3 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -246,7 +248,8 @@
 		CCE207AC346D437A019942A6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3C5BD7D9E8275BCCCBF89D7A /* FeatureSettingsViewController.swift */,
+				3C5BD7D9E8275BCCCBF89D7A /* SettingsViewController.swift */,
+				CB90712B26D156AE00C62D83 /* FlexLayoutDesignSystem.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -454,7 +457,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF711DB46A79BF80029F616 /* FeatureSettingsViewController.swift in Sources */,
+				2DF711DB46A79BF80029F616 /* SettingsViewController.swift in Sources */,
+				CB90712C26D156AE00C62D83 /* FlexLayoutDesignSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

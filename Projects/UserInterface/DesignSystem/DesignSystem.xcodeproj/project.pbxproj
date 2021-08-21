@@ -23,6 +23,7 @@
 		977D45E190FE56624CEC4B24 /* BlueprintUI in Frameworks */ = {isa = PBXBuildFile; productRef = B13D841006E477D2C9C8F79D /* BlueprintUI */; };
 		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
 		A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703656026E8CF282104CCF97 /* ScenePreview1.swift */; };
+		CB90712E26D164BE00C62D83 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90712D26D164BE00C62D83 /* UIViewControllerPreview.swift */; };
 		CBA84BBA22AAA81B86C64D70 /* Bundle+DesignSystemDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */; };
 		F9E40820863763A405FADC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */; };
 		FDAE33B4C65DFD3B4B185621 /* BothSideTextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A436714383CA4AB4DED8A34 /* BothSideTextPreview.swift */; };
@@ -98,6 +99,7 @@
 		BA735E388C519076EBDE04C5 /* ProxyResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyResourcePackage; path = ../ProxyResourcePackage; sourceTree = "<group>"; };
 		C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DesignSystemDemoApp.swift"; sourceTree = "<group>"; };
 		C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB90712D26D164BE00C62D83 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		D81E48225B36E49CFF1F0705 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		DBDB1DF719169911A375EC86 /* DesignSystemDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemDemoApp.plist; sourceTree = "<group>"; };
 		EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-PROD.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */,
 				66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */,
 				4692B9BA721BD07C93D2720E /* SeperateLine.swift */,
+				CB90712D26D164BE00C62D83 /* UIViewControllerPreview.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			files = (
 				7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */,
 				4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */,
+				CB90712E26D164BE00C62D83 /* UIViewControllerPreview.swift in Sources */,
 				36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */,
 				76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */,
 			);
