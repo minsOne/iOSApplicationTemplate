@@ -29,6 +29,8 @@ public protocol SettingsPresentableListener: AnyObject {
 
 class SettingsView: UIView {
     fileprivate let rootFlexContainer = UIView()
+    fileprivate let footerFlexButtonContainer = UIView()
+    fileprivate let button = UIButton()
 
     init() {
         super.init(frame: .zero)
@@ -36,7 +38,22 @@ class SettingsView: UIView {
 
         rootFlexContainer.flex.direction(.column)
 
+        button.setTitle("체크카드 신청하러 가기", for: .normal)
+        footerFlexButtonContainer.clipsToBounds = true
+
+        if hasSafeArea {
+            footerFlexButtonContainer.flex.margin(0, 16, 0, 16)
+                .view?.layer.cornerRadius = 10
+        }
+        footerFlexButtonContainer.flex.define { flex in
+            flex.addItem(button)
+                .width(100%)
+                .height(100%)
+                .backgroundColor(.systemBlue)
+        }
+
         addSubview(rootFlexContainer)
+        addSubview(footerFlexButtonContainer)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -50,8 +67,11 @@ class SettingsView: UIView {
         // NOTE: Could be also layouted by setting directly rootFlexContainer.frame
         rootFlexContainer.pin.top(pin.safeArea).horizontally(pin.safeArea).height(120)
 
+        footerFlexButtonContainer.pin.bottom(pin.safeArea).horizontally(pin.safeArea).height(60)
+
         // Then let the flexbox container layout itself
         rootFlexContainer.flex.layout()
+        footerFlexButtonContainer.flex.layout()
     }
 
     func update(title: String,
@@ -75,24 +95,37 @@ class SettingsView: UIView {
         let 일회이체한도View = FlexLayoutDesignSystem.bothSideLabel(title: "1회 이체한도", info: 일회_이체한도)
         let btn = UIButton()
         btn.setTitle("입출금 알림 설정하기", for: .normal)
+
         rootFlexContainer.flex.define { flex in
-            flex.addItem(titleLabel)
-            flex.addItem().height(16)
-            flex.addItem(msgLabel)
-            flex.addItem().height(30)
-            flex.addItem(FlexLayoutDesignSystem.line())
-            flex.addItem(계좌종류View).margin(8, 0, 8, 0)
-            flex.addItem(FlexLayoutDesignSystem.line())
-            flex.addItem(일일이체한도View).margin(8, 0, 8, 0)
-            flex.addItem(FlexLayoutDesignSystem.line())
-            flex.addItem(일회이체한도View).margin(8, 0, 8, 0)
-            flex.addItem(FlexLayoutDesignSystem.line())
+            flex.addItem().define { flex in
+                flex.addItem(titleLabel)
+                flex.addItem().height(16)
+                flex.addItem(msgLabel)
+                flex.addItem().height(30)
+            }
+
+            flex.addItem().define { flex in
+                flex.addItem(FlexLayoutDesignSystem.line())
+                flex.addItem(계좌종류View)
+                    .margin(8, 0, 8, 0)
+                flex.addItem(FlexLayoutDesignSystem.line())
+                flex.addItem(일일이체한도View)
+                    .margin(8, 0, 8, 0)
+                flex.addItem(FlexLayoutDesignSystem.line())
+                flex.addItem(일회이체한도View)
+                    .margin(8, 0, 8, 0)
+                flex.addItem(FlexLayoutDesignSystem.line())
+            }.margin(0, 24, 0, 24)
+
             flex.addItem().height(24)
-            flex.addItem(btn).backgroundColor(.systemGray)
+
+            flex.addItem(btn)
+                .height(60)
+                .margin(0, 24, 0, 24)
+                .backgroundColor(.systemGray)
         }
     }
 }
-
 
 public final class SetttingsViewController: UIViewController {
     public weak var listener: SettingsPresentableListener?
@@ -116,8 +149,14 @@ public final class SetttingsViewController: UIViewController {
                          일회_이체한도: "1회 최대 200만원")
 
         mainView?.rootFlexContainer.flex.layout()
-        
+        mainView?.footerFlexButtonContainer.flex.layout()
+
+        mainView?.button.addTarget(self, action: #selector(tappedButton(_:)), for: .touchUpInside)
+
         listener?.action.onNext(.viewDidLoad)
     }
-    
+
+    @objc func tappedButton(_ sender: UIButton) {
+        print("Hello world")
+    }
 }

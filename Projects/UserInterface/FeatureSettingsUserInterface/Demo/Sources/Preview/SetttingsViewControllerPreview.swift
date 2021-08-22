@@ -6,12 +6,11 @@
 //  Copyright © 2021 minsone. All rights reserved.
 //
 
-import UIKit
-import FeatureSettingsUserInterface
-
 #if canImport(SwiftUI) && DEBUG
+import UIKit
 import SwiftUI
 import DesignSystem
+import FeatureSettingsUserInterface
 
 struct SetttingsViewController_Preview: PreviewProvider {
     static var previews: some View {

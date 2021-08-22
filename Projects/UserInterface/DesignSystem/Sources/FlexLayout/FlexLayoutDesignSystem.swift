@@ -1,6 +1,6 @@
 //
 //  FlexLayoutDesignSystem.swift
-//  FeatureSettingsUserInterface
+//  DesignSystem
 //
 //  Created by minsone on 2021/08/22.
 //  Copyright © 2021 minsone. All rights reserved.
@@ -9,8 +9,8 @@
 import Foundation
 import FlexLayout
 
-struct FlexLayoutDesignSystem {
-    static func line() -> UIView {
+public struct FlexLayoutDesignSystem {
+    public static func line() -> UIView {
         let view = UIView()
         view.flex.addItem()
             .height(1)
@@ -18,7 +18,7 @@ struct FlexLayoutDesignSystem {
         return view
     }
 
-    static func bothSideLabel(title: String, info: String) -> UIView {
+    public static func bothSideLabel(title: String, info: String) -> UIView {
         let container = UIView()
         let label1 = UILabel()
         let label2 = UILabel()
