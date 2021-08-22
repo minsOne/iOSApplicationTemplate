@@ -48,7 +48,17 @@ $ tuist graph -d
 $ tuist graph -t -f dot
 ```
 
-![graph](./graph.png)
+![graph](./Asset/graph.png)
+
+## Clean Architecture With Swinject, RIBs
+
+![clean_architecture_ribs](./Asset/clean_architecture_ribs.png)
+
+* 클린아키텍처 일부 설계 참고
+  * https://github.com/kudoleh/iOS-Clean-Architecture-MVVM.git
+  * https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png
+  * https://youngest-programming.tistory.com/484
+  * https://develogs.tistory.com/7
 
 ## Design System
 
@@ -61,18 +71,16 @@ $ tuist graph -t -f dot
 2. 디자인시스템 Ref
 - https://medium.com/sketch-app-sources/setting-up-a-design-system-8729510def93
 - https://ux.mailchimp.com/patterns/color
+- https://brennobemoura.medium.com/implementing-a-design-system-compatible-with-uikit-and-swiftui-1c6da34814f0
 
 ## 사용한, 사용할 오픈소스
 * [RxViewBinder](https://github.com/magi82/RxViewBinder)
 
-* 클린아키텍처 일부 설계 참고
-  * https://app.diagrams.net/#G11kR-DSn8p-vpA-btOnlT2qm6Lq9Ph-ss
-  * https://github.com/kudoleh/iOS-Clean-Architecture-MVVM.git
-  * https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png
 
 * FlexLayout 사용법 참고
   * https://medium.com/swlh/a-swift-yogakit-guide-to-flexbox-fec74e1bffaf
   * https://www.raywenderlich.com/530-yoga-tutorial-using-a-cross-platform-layout-engine
+  * https://yogalayout.com/
 
 ## 주의
 

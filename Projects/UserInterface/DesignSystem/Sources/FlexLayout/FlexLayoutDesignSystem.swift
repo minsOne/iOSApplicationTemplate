@@ -9,8 +9,12 @@
 import Foundation
 import FlexLayout
 
-public struct FlexLayoutDesignSystem {
-    public static func line() -> UIView {
+extension UIView {
+    public struct FlexLayoutDesignSystem {}
+}
+
+public extension UIView.FlexLayoutDesignSystem {
+    static var line: UIView {
         let view = UIView()
         view.flex.addItem()
             .height(1)
@@ -18,7 +22,7 @@ public struct FlexLayoutDesignSystem {
         return view
     }
 
-    public static func bothSideLabel(title: String, info: String) -> UIView {
+    static func bothSideLabel(title: String, info: String) -> UIView {
         let container = UIView()
         let label1 = UILabel()
         let label2 = UILabel()

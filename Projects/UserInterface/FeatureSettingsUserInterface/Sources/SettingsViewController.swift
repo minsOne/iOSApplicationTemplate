@@ -93,37 +93,50 @@ class SettingsView: UIView {
         let 계좌종류View = FlexLayoutDesignSystem.bothSideLabel(title: "계좌종류", info: 계좌종류)
         let 일일이체한도View = FlexLayoutDesignSystem.bothSideLabel(title: "1일 이체한도", info: 일일_이체한도)
         let 일회이체한도View = FlexLayoutDesignSystem.bothSideLabel(title: "1회 이체한도", info: 일회_이체한도)
-        let btn = UIButton()
-        btn.setTitle("입출금 알림 설정하기", for: .normal)
+        let btn1 = UIButton()
+        btn1.setTitle("입출금 알림 설정하기1", for: .normal)
+
+        let btn2 = UIButton()
+        btn2.setTitle("입출금 알림 설정하기2", for: .normal)
 
         rootFlexContainer.flex.define { flex in
             flex.addItem().define { flex in
                 flex.addItem(titleLabel)
-                flex.addItem().height(16)
+                flex.addItem()
+                    .height(16)
                 flex.addItem(msgLabel)
-                flex.addItem().height(30)
+                flex.addItem()
+                    .height(30)
             }
 
             flex.addItem().define { flex in
-                flex.addItem(FlexLayoutDesignSystem.line())
+                flex.addItem(FlexLayoutDesignSystem.line)
                 flex.addItem(계좌종류View)
                     .margin(8, 0, 8, 0)
-                flex.addItem(FlexLayoutDesignSystem.line())
+                flex.addItem(FlexLayoutDesignSystem.line)
                 flex.addItem(일일이체한도View)
                     .margin(8, 0, 8, 0)
-                flex.addItem(FlexLayoutDesignSystem.line())
+                flex.addItem(FlexLayoutDesignSystem.line)
                 flex.addItem(일회이체한도View)
                     .margin(8, 0, 8, 0)
-                flex.addItem(FlexLayoutDesignSystem.line())
-            }.margin(0, 24, 0, 24)
+                flex.addItem(FlexLayoutDesignSystem.line)
+            }
 
             flex.addItem().height(24)
 
-            flex.addItem(btn)
-                .height(60)
-                .margin(0, 24, 0, 24)
-                .backgroundColor(.systemGray)
-        }
+            flex.addItem().define { flex in
+                flex.direction(.row)
+                flex.addItem(btn1)
+                    .grow(1)
+                    .backgroundColor(.systemGray)
+                flex.addItem()
+                    .width(16)
+                flex.addItem(btn2)
+                    .grow(1)
+                    .backgroundColor(.systemGreen)
+            }
+            .height(60)
+        }.margin(0, 24, 0, 24)
     }
 }
 

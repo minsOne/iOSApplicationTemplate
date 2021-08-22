@@ -16,6 +16,5 @@ public var hasSafeArea: Bool {
     } else {
         window = UIApplication.shared.keyWindow
     }
-    print(window?.safeAreaInsets.bottom)
     return Int(window?.safeAreaInsets.bottom ?? 0) != 0
 }
