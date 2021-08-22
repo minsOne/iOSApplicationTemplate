@@ -14,7 +14,11 @@ let dependencies = Dependencies(
             .github(path: "RxSwiftCommunity/RxNimble",
                     requirement: .branch("master")),
             .github(path: "layoutBox/FlexLayout",
-                    requirement: .branch("master"))
+                    requirement: .branch("master")),
+            .github(path: "layoutBox/PinLayout",
+                    requirement: .branch("master")),
+            .github(path: "SnapKit/SnapKit",
+                    requirement: .branch("main")),
         ],
         options: [
             .useXCFrameworks,

@@ -491,7 +491,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -547,7 +547,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -604,7 +604,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -627,7 +627,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);

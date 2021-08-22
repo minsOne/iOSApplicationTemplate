@@ -72,6 +72,7 @@ $ tuist graph -t -f dot
 
 * FlexLayout 사용법 참고
   * https://medium.com/swlh/a-swift-yogakit-guide-to-flexbox-fec74e1bffaf
+  * https://www.raywenderlich.com/530-yoga-tutorial-using-a-cross-platform-layout-engine
 
 ## 주의
 

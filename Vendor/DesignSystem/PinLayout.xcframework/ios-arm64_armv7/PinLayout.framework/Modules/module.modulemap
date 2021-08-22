@@ -1,0 +1,11 @@
+framework module PinLayout {
+  umbrella header "PinLayout.h"
+
+  export *
+  module * { export * }
+}
+
+module PinLayout.Swift {
+    header "PinLayout-Swift.h"
+    requires objc
+}

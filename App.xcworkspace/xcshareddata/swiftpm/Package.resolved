@@ -11,15 +11,6 @@
         }
       },
       {
-        "package": "BlueprintUI",
-        "repositoryURL": "https://github.com/square/Blueprint.git",
-        "state": {
-          "branch": null,
-          "revision": "0a62f071a0ca4ee2e8641257c419a3704c27843f",
-          "version": "0.27.0"
-        }
-      },
-      {
         "package": "InjectPropertyWrapper",
         "repositoryURL": "https://github.com/egeniq/InjectPropertyWrapper.git",
         "state": {
@@ -34,15 +25,6 @@
         "state": {
           "branch": "master",
           "revision": "12f19662426d0434d6c330c6974d53e2eb10ecd9",
-          "version": null
-        }
-      },
-      {
-        "package": "PinLayout",
-        "repositoryURL": "https://github.com/layoutBox/PinLayout.git",
-        "state": {
-          "branch": "master",
-          "revision": "f1de5a0e006e5bb8476bc2d3b3eac60e73c3f1c1",
           "version": null
         }
       },
@@ -71,15 +53,6 @@
           "branch": null,
           "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
           "version": "6.2.0"
-        }
-      },
-      {
-        "package": "SnapKit",
-        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
-        "state": {
-          "branch": null,
-          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
-          "version": "5.0.1"
         }
       },
       {

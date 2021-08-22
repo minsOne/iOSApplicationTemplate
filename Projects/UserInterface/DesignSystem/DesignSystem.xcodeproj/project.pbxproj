@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D135117501337ADEF0AC878 /* BlueprintUICommonControls in Frameworks */ = {isa = PBXBuildFile; productRef = 824AD737487BF80659C38CE9 /* BlueprintUICommonControls */; };
+		1562904E6590014D6517829C /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D75211458EA41C21314B5C16 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C4998FF9804A67A2D088B2E /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106CB85696261220EA5496A /* UIViewControllerPreview.swift */; };
+		2973226F6DDB4FEBE9030C0F /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		301D985D478200457F847A48 /* FlexLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A070E2A1AA06308D4C236887 /* FlexLayout.xcframework */; };
 		36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */; };
-		3DAA0E34A7E7E05CDA6EA9F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC40ABD3ED3C2A8682DE96A2 /* SnapKit */; };
 		429D6E5954343C7B5F35C754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F96042A1DE7785CB726321 /* AppDelegate.swift */; };
-		4C17891952879FB880650A02 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B00B917563E7B156BBCC56FD /* PinLayout */; };
 		4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */; };
-		5A572CA11CD12F448533770E /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A070E2A1AA06308D4C236887 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53B984B09AE3B0B39226B111 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */; };
 		76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692B9BA721BD07C93D2720E /* SeperateLine.swift */; };
+		7989E3116CC74680ED51DFF3 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099F39367A5B6C869BBB2CEF /* BothSideText.swift */; };
 		85D34FD37B46CE224B959A47 /* ProxyResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */; };
 		85DFC2E53460A6893D0A806A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688D1B5D91F95C22509ACD1 /* Tests.swift */; };
-		977D45E190FE56624CEC4B24 /* BlueprintUI in Frameworks */ = {isa = PBXBuildFile; productRef = B13D841006E477D2C9C8F79D /* BlueprintUI */; };
 		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
 		A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703656026E8CF282104CCF97 /* ScenePreview1.swift */; };
-		CB90712E26D164BE00C62D83 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90712D26D164BE00C62D83 /* UIViewControllerPreview.swift */; };
+		B81345489D2C547F838D172F /* PinLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75211458EA41C21314B5C16 /* PinLayout.xcframework */; };
 		CBA84BBA22AAA81B86C64D70 /* Bundle+DesignSystemDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */; };
+		EDCB083EBF28B34F4025CCD5 /* FlexLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */; };
 		F9E40820863763A405FADC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */; };
 		FDAE33B4C65DFD3B4B185621 /* BothSideTextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A436714383CA4AB4DED8A34 /* BothSideTextPreview.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +74,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */,
-				5A572CA11CD12F448533770E /* FlexLayout.xcframework in Embed Frameworks */,
+				7989E3116CC74680ED51DFF3 /* FlexLayout.xcframework in Embed Frameworks */,
+				1562904E6590014D6517829C /* PinLayout.xcframework in Embed Frameworks */,
+				2973226F6DDB4FEBE9030C0F /* SnapKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,23 +85,25 @@
 
 /* Begin PBXFileReference section */
 		099F39367A5B6C869BBB2CEF /* BothSideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothSideText.swift; sourceTree = "<group>"; };
+		261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		2871A947D02AE62008CF0591 /* DesignSystem-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-STAGE.xcconfig"; sourceTree = "<group>"; };
 		332CD519BD17311AED55F570 /* DesignSystem-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-DEV.xcconfig"; sourceTree = "<group>"; };
 		3A436714383CA4AB4DED8A34 /* BothSideTextPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothSideTextPreview.swift; sourceTree = "<group>"; };
+		3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SnapKit.xcframework; sourceTree = "<group>"; };
 		3E65C91E233F8781A109825D /* DesignSystem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystem.plist; sourceTree = "<group>"; };
 		408A47139F010D995564D9D7 /* DesignSystemDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4106CB85696261220EA5496A /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		4688D1B5D91F95C22509ACD1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		4692B9BA721BD07C93D2720E /* SeperateLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperateLine.swift; sourceTree = "<group>"; };
 		66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 		69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703656026E8CF282104CCF97 /* ScenePreview1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePreview1.swift; sourceTree = "<group>"; };
 		92FA30DB289096215F72CF82 /* DesignSystem-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-TEST.xcconfig"; sourceTree = "<group>"; };
-		A070E2A1AA06308D4C236887 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		B9F96042A1DE7785CB726321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA735E388C519076EBDE04C5 /* ProxyResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyResourcePackage; path = ../ProxyResourcePackage; sourceTree = "<group>"; };
 		C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DesignSystemDemoApp.swift"; sourceTree = "<group>"; };
 		C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB90712D26D164BE00C62D83 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		D75211458EA41C21314B5C16 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PinLayout.xcframework; sourceTree = "<group>"; };
 		D81E48225B36E49CFF1F0705 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		DBDB1DF719169911A375EC86 /* DesignSystemDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemDemoApp.plist; sourceTree = "<group>"; };
 		EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-PROD.xcconfig"; sourceTree = "<group>"; };
@@ -112,12 +116,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301D985D478200457F847A48 /* FlexLayout.xcframework in Frameworks */,
+				EDCB083EBF28B34F4025CCD5 /* FlexLayout.xcframework in Frameworks */,
+				B81345489D2C547F838D172F /* PinLayout.xcframework in Frameworks */,
+				53B984B09AE3B0B39226B111 /* SnapKit.xcframework in Frameworks */,
 				85D34FD37B46CE224B959A47 /* ProxyResourcePackage in Frameworks */,
-				977D45E190FE56624CEC4B24 /* BlueprintUI in Frameworks */,
-				2D135117501337ADEF0AC878 /* BlueprintUICommonControls in Frameworks */,
-				4C17891952879FB880650A02 /* PinLayout in Frameworks */,
-				3DAA0E34A7E7E05CDA6EA9F3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +159,7 @@
 				F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */,
 				66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */,
 				4692B9BA721BD07C93D2720E /* SeperateLine.swift */,
-				CB90712D26D164BE00C62D83 /* UIViewControllerPreview.swift */,
+				4106CB85696261220EA5496A /* UIViewControllerPreview.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -195,7 +197,7 @@
 		4E96959FDB8061671D065D55 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A070E2A1AA06308D4C236887 /* FlexLayout.xcframework */,
+				827A5DCC0EBDFBDBA3091264 /* DesignSystem */,
 			);
 			name = Vendor;
 			path = ../../../Vendor;
@@ -224,6 +226,16 @@
 				ECAFBD3892447294C1342932 /* DesignSystemTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		827A5DCC0EBDFBDBA3091264 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */,
+				D75211458EA41C21314B5C16 /* PinLayout.xcframework */,
+				3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		8753C5EB21B15584438290E8 /* Derived */ = {
@@ -338,10 +350,6 @@
 			name = DesignSystem;
 			packageProductDependencies = (
 				E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */,
-				B13D841006E477D2C9C8F79D /* BlueprintUI */,
-				824AD737487BF80659C38CE9 /* BlueprintUICommonControls */,
-				B00B917563E7B156BBCC56FD /* PinLayout */,
-				BC40ABD3ED3C2A8682DE96A2 /* SnapKit */,
 			);
 			productName = DesignSystem;
 			productReference = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */;
@@ -389,11 +397,6 @@
 				en,
 			);
 			mainGroup = EC9821EEC8CC800276475F6C;
-			packageReferences = (
-				8AB11F2F4F05D690A7A73396 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				1E8C35D23FC3246A730EECCE /* XCRemoteSwiftPackageReference "PinLayout" */,
-				13E89B73CEE148F2938284C6 /* XCRemoteSwiftPackageReference "Blueprint" */,
-			);
 			productRefGroup = 82664F67710540CBDEBE5B11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -482,9 +485,9 @@
 			files = (
 				7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */,
 				4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */,
-				CB90712E26D164BE00C62D83 /* UIViewControllerPreview.swift in Sources */,
 				36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */,
 				76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */,
+				1C4998FF9804A67A2D088B2E /* UIViewControllerPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +674,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/DesignSystem.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -767,7 +770,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/DesignSystem.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -887,7 +890,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/DesignSystem.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -974,7 +977,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/DesignSystem.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1149,50 +1152,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		13E89B73CEE148F2938284C6 /* XCRemoteSwiftPackageReference "Blueprint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/square/Blueprint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
-		1E8C35D23FC3246A730EECCE /* XCRemoteSwiftPackageReference "PinLayout" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		8AB11F2F4F05D690A7A73396 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		824AD737487BF80659C38CE9 /* BlueprintUICommonControls */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BlueprintUICommonControls;
-		};
-		B00B917563E7B156BBCC56FD /* PinLayout */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PinLayout;
-		};
-		B13D841006E477D2C9C8F79D /* BlueprintUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BlueprintUI;
-		};
-		BC40ABD3ED3C2A8682DE96A2 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SnapKit;
-		};
 		E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProxyResourcePackage;

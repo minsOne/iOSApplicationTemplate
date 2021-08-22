@@ -22,6 +22,8 @@ public extension Dep.Carthage {
     static let RxNimbleRxBlocking = Dep.carthage(name: "RxNimbleRxBlocking")
     static let RxNimbleRxTest     = Dep.carthage(name: "RxNimbleRxTest")
     static let FlexLayout         = Dep.carthage(name: "FlexLayout")
+    static let PinLayout          = Dep.carthage(name: "PinLayout")
+    static let SnapKit            = Dep.carthage(name: "SnapKit")
 }
 
 public extension Dep {

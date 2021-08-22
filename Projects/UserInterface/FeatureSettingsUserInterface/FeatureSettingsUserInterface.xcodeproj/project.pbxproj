@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AB8ED733C31E4E308296B9 /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0094A55734138B712B9C3621 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29870E7631E5CF80F2487FC7 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2DF711DB46A79BF80029F616 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5BD7D9E8275BCCCBF89D7A /* SettingsViewController.swift */; };
 		4403E2A63E9FB8528ED17C9B /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD6CEB019ADCBBB4C5E4D /* FeatureSettingsUserInterface.framework */; };
 		456B613DC48633C7E5513B96 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */; };
 		5ADBC9F46240BE2D6085E468 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */; };
-		5DF082C246CFB28EDB6A0204 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9CB162AC18E3A52C4C2D36 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		711FB8D98E458C11097F4C51 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; };
+		7C521966B0EDAC337014D23B /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 433EC8EBF4476BF8D2E464E6 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA556ACFC2D26A00ECDBE51A /* SetttingsViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50182759BCB42EDA722E463 /* SetttingsViewControllerPreview.swift */; };
+		AC2EB537E11E22811D9C05E6 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B35849B89EF2C84A2D6CB6E5 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEDEB2F566EE5C06DE67BFCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */; };
+		B843DAEF8B54DD1D511B0641 /* FlexLayoutDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC1563006AA228A5FC57ED /* FlexLayoutDesignSystem.swift */; };
+		C6C1B836700F92FC5D3FB42E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96F8F694D8CE17B018BF89 /* SettingsViewController.swift */; };
 		CB24971C9167B37F41D1ECE7 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; };
-		CB90712C26D156AE00C62D83 /* FlexLayoutDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90712B26D156AE00C62D83 /* FlexLayoutDesignSystem.swift */; };
 		D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D23AD19A23941191E565846E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD77CCE6CDA91B8AA331BE3 /* Tests.swift */; };
 		ED71BCAA38E6AC0DE8211C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D80C906FDAFCF8B1503C8B /* LaunchScreen.storyboard */; };
@@ -49,7 +52,9 @@
 			files = (
 				D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */,
 				29870E7631E5CF80F2487FC7 /* RxPackage.framework in Embed Frameworks */,
-				5DF082C246CFB28EDB6A0204 /* FlexLayout.xcframework in Embed Frameworks */,
+				AC2EB537E11E22811D9C05E6 /* FlexLayout.xcframework in Embed Frameworks */,
+				27AB8ED733C31E4E308296B9 /* PinLayout.xcframework in Embed Frameworks */,
+				7C521966B0EDAC337014D23B /* SnapKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,23 +92,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0094A55734138B712B9C3621 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PinLayout.xcframework; sourceTree = "<group>"; };
 		10F50E72E6B7DC93D2643A11 /* FeatureSettingsUserInterface-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-STAGE.xcconfig"; sourceTree = "<group>"; };
 		13D80C906FDAFCF8B1503C8B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2135606D7898781BA0CBDCB6 /* FeatureSettingsUserInterfaceDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureSettingsUserInterfaceDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E35CACB269EF2C7C67FB /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9CB162AC18E3A52C4C2D36 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDC295A537F9677C3BF1E20 /* FeatureSettingsUserInterfaceDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsUserInterfaceDemoApp.plist; sourceTree = "<group>"; };
-		3C5BD7D9E8275BCCCBF89D7A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3F4504005BA459DDEA172A2F /* FeatureSettingsUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
 		3FDCAA08ABA036E9158935CD /* FeatureSettingsUserInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureSettingsUserInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4E33AF8903F97EF98A410 /* FeatureSettingsUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
+		433EC8EBF4476BF8D2E464E6 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SnapKit.xcframework; sourceTree = "<group>"; };
+		58FC1563006AA228A5FC57ED /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
 		5DC085765B805308843BF23D /* FeatureSettingsUserInterface.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsUserInterface.plist; sourceTree = "<group>"; };
 		729CD6CEB019ADCBBB4C5E4D /* FeatureSettingsUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8370A5C18306F38520CE6BB2 /* FeatureSettingsUserInterfaceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsUserInterfaceTests.plist; sourceTree = "<group>"; };
 		8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE01D0959308DD9A223ED34 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB90712B26D156AE00C62D83 /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
+		B35849B89EF2C84A2D6CB6E5 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
+		C50182759BCB42EDA722E463 /* SetttingsViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingsViewControllerPreview.swift; sourceTree = "<group>"; };
+		CF96F8F694D8CE17B018BF89 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DD070BCDA94502D7A423AC0A /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FeatureSettingsUserInterfaceDemoApp.swift"; sourceTree = "<group>"; };
 		F9AA5F273F3D8946138CF0F5 /* FeatureSettingsUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
 		FBD77CCE6CDA91B8AA331BE3 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 		1445B76DCB99A3DB0E844C6C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				74EE45BD62DAA7668ECE9F86 /* Preview */,
 				8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */,
 			);
 			path = Sources;
@@ -149,7 +158,7 @@
 		2F5A6A647B3F5FDAAA22BFFE /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				2F9CB162AC18E3A52C4C2D36 /* FlexLayout.xcframework */,
+				6546063163307A7E6245ED2B /* DesignSystem */,
 			);
 			name = Vendor;
 			path = ../../../Vendor;
@@ -175,6 +184,16 @@
 			path = FeatureSettingsUserInterface;
 			sourceTree = "<group>";
 		};
+		6546063163307A7E6245ED2B /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B35849B89EF2C84A2D6CB6E5 /* FlexLayout.xcframework */,
+				0094A55734138B712B9C3621 /* PinLayout.xcframework */,
+				433EC8EBF4476BF8D2E464E6 /* SnapKit.xcframework */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
 		71360956464AFB64C1D02A8A /* XCConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +201,14 @@
 			);
 			name = XCConfig;
 			path = ../../../XCConfig;
+			sourceTree = "<group>";
+		};
+		74EE45BD62DAA7668ECE9F86 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				C50182759BCB42EDA722E463 /* SetttingsViewControllerPreview.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		7CDD9EA24E1393EC7891172B /* Derived */ = {
@@ -248,8 +275,8 @@
 		CCE207AC346D437A019942A6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3C5BD7D9E8275BCCCBF89D7A /* SettingsViewController.swift */,
-				CB90712B26D156AE00C62D83 /* FlexLayoutDesignSystem.swift */,
+				58FC1563006AA228A5FC57ED /* FlexLayoutDesignSystem.swift */,
+				CF96F8F694D8CE17B018BF89 /* SettingsViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -457,8 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF711DB46A79BF80029F616 /* SettingsViewController.swift in Sources */,
-				CB90712C26D156AE00C62D83 /* FlexLayoutDesignSystem.swift in Sources */,
+				B843DAEF8B54DD1D511B0641 /* FlexLayoutDesignSystem.swift in Sources */,
+				C6C1B836700F92FC5D3FB42E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDEB2F566EE5C06DE67BFCF /* AppDelegate.swift in Sources */,
+				AA556ACFC2D26A00ECDBE51A /* SetttingsViewControllerPreview.swift in Sources */,
 				F0F3C63177958B9017CFB393 /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

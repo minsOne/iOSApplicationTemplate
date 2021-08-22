@@ -34,7 +34,9 @@ public extension Dep.Framework {
         .facebook(name: "FBSDKCoreKit"),
         .facebook(name: "FBSDKCoreKit_Basics"),
     ]
-    static let FlexLayout = Dep.vendor(name: "FlexLayout")
+    static let FlexLayout = Dep.designSystem(name: "FlexLayout")
+    static let PinLayout = Dep.designSystem(name: "PinLayout")
+    static let SnapKit = Dep.designSystem(name: "SnapKit")
 }
 
 public extension Dep {
@@ -44,7 +46,7 @@ public extension Dep {
     static func facebook(name: String) -> Self {
         return .xcFramework(path: .relativeToRoot("Vendor/Facebook/\(name).xcframework"))
     }
-    static func vendor(name: String) -> Self {
-        return .xcFramework(path: .relativeToRoot("Vendor/\(name).xcframework"))
+    static func designSystem(name: String) -> Self {
+        return .xcFramework(path: .relativeToRoot("Vendor/DesignSystem/\(name).xcframework"))
     }
 }

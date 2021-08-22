@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0F5ECCCA7DE79FE50B55E6B5 /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D181F55D6FAB63E919DC771 /* FeatureSettingsUserInterface.framework */; };
 		2D6F622DD602BE7D0141A262 /* FeatureDomainComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE82C0C6E0102C4DC25D51CF /* FeatureDomainComponent.framework */; };
-		7172E6CB4C9592D988148E0F /* SettingsDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B34758D59777DBB22C709 /* SettingsDataRepository.swift */; };
 		773A834FADB69D0DE5078327 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A710218BC9F364D86B62B0 /* ThirdPartyLibraryManager.framework */; };
 		875A77FC0048088B047BEF75 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFF4A0784157AFFCD1DF305 /* DesignSystem.framework */; };
 		8F44A15BD71F4BB53CA80510 /* FeatureDataRepositoryComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 1DDBFBD9E0642D60A22E0580 /* FeatureDataRepositoryComponent.framework */; };
@@ -21,6 +20,7 @@
 		DD54C0DD1A5993B9760B83BE /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570D447B296F9D2BA150C1DB /* FeatureUserInterfaceComponent.framework */; };
 		E4549410CB5C59C4C236966F /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C58366F599CF8FF89817CB8 /* CoreKit.framework */; };
 		FC2B31EBD1E7505EE886EBD7 /* FeatureSettingsDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BB7079A93D9A66BC3D246D /* FeatureSettingsDataRepository.framework */; };
+		FDCE7C7C5DDAF81E706917ED /* SettingsDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ED7595A2F60E64670BA6EC /* SettingsDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,6 @@
 		07BB7079A93D9A66BC3D246D /* FeatureSettingsDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF4E5B5D6F749731D1A1F70 /* FeatureSettingsDataRepository-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDataRepository-DEV.xcconfig"; sourceTree = "<group>"; };
 		0D181F55D6FAB63E919DC771 /* FeatureSettingsUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		197B34758D59777DBB22C709 /* SettingsDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataRepository.swift; sourceTree = "<group>"; };
 		1C58366F599CF8FF89817CB8 /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDBFBD9E0642D60A22E0580 /* FeatureDataRepositoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDataRepositoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A710218BC9F364D86B62B0 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +81,7 @@
 		570D447B296F9D2BA150C1DB /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB12B32A7C91D78BD781782 /* FeatureSettingsDataRepository-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureSettingsDataRepository-TEST.xcconfig"; sourceTree = "<group>"; };
 		5EFF4A0784157AFFCD1DF305 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74ED7595A2F60E64670BA6EC /* SettingsDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataRepository.swift; sourceTree = "<group>"; };
 		9B5DED23D54EB7E3624724D8 /* FeatureSettingsDataRepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureSettingsDataRepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A752D34691C6F52E139113D2 /* FeatureSettingsDataRepositoryTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsDataRepositoryTests.plist; sourceTree = "<group>"; };
 		C4F7C0296AC1FEB274ADA675 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		5332F11CEEBC1B8A576610C9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				197B34758D59777DBB22C709 /* SettingsDataRepository.swift */,
+				74ED7595A2F60E64670BA6EC /* SettingsDataRepository.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -265,6 +265,8 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = minsone;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 03059431DADF6C00151119B0 /* Build configuration list for PBXProject "FeatureSettingsDataRepository" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -346,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7172E6CB4C9592D988148E0F /* SettingsDataRepository.swift in Sources */,
+				FDCE7C7C5DDAF81E706917ED /* SettingsDataRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -448,7 +450,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -630,7 +632,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -654,7 +656,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../Vendor",
+					"$(SRCROOT)/../../../Vendor/DesignSystem",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);

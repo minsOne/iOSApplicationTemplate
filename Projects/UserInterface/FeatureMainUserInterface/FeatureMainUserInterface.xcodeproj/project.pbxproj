@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		08969828F0411CA0BD7057D0 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AF1828441691445FC5DEB91 /* FeatureMainUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A93CFFAE4D42CF2CA2098E /* FeatureMainUserInterface.swift */; };
+		0E18D9611225256075C1E8E5 /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55053911FF0D7DBE7B78F7D3 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38A66B89E0AD4568AFCB84EA /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
+		4B6EEAA3344825746BBE76BB /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CA803793CEFAF4F670E934 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BF45D80D33014006B1DB540 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
 		6ADF51CE51E5124C80357437 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08101C7091378B1C70DBE1C3 /* RxPackage.framework */; };
 		6F3A11DB1555BA517AABFB9D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C653DF9989938FCF12A06 /* Tests.swift */; };
-		6F90F8C1EC5273D9F72CE2A9 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9ADEBE67C53776123BD4BC /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70861E6E9C61BC1DA48AE8A6 /* FeatureMainUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4667065D10F39EE34D5AD0 /* FeatureMainUserInterface.framework */; };
 		76C1997A8DA02EC1EF43A366 /* Bundle+FeatureMainUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058BD42747C459BDCB61306 /* Bundle+FeatureMainUserInterfaceDemoApp.swift */; };
+		780E59C62BFD7A3C9970C900 /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52144A55EA1BBE7B4DFE1AD0 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83A6838F3AFAF57B5D9B16EE /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
 		D03D389DA641DC004336D73C /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
 		DE199FC27AD479545F45EFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F872BBC55009371A70458F /* LaunchScreen.storyboard */; };
@@ -59,7 +61,9 @@
 			files = (
 				08969828F0411CA0BD7057D0 /* DesignSystem.framework in Embed Frameworks */,
 				E839E88F2609A64558AA68E7 /* RxPackage.framework in Embed Frameworks */,
-				6F90F8C1EC5273D9F72CE2A9 /* FlexLayout.xcframework in Embed Frameworks */,
+				4B6EEAA3344825746BBE76BB /* FlexLayout.xcframework in Embed Frameworks */,
+				0E18D9611225256075C1E8E5 /* PinLayout.xcframework in Embed Frameworks */,
+				780E59C62BFD7A3C9970C900 /* SnapKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,9 +98,11 @@
 		2C2BD52C534F030DD8EB47F9 /* FeatureMainUserInterfaceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureMainUserInterfaceTests.plist; sourceTree = "<group>"; };
 		3D6EEC315877AD9AC5FE8BEB /* FeatureMainUserInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureMainUserInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D71DA8E96227509E883074 /* FeatureMainUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
+		52144A55EA1BBE7B4DFE1AD0 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SnapKit.xcframework; sourceTree = "<group>"; };
+		55053911FF0D7DBE7B78F7D3 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PinLayout.xcframework; sourceTree = "<group>"; };
 		59A8B73310380E4645E78092 /* FeatureMainUserInterface.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureMainUserInterface.plist; sourceTree = "<group>"; };
+		60CA803793CEFAF4F670E934 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		656A04DFF61D04486B5FA4D3 /* FeatureMainUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
-		6C9ADEBE67C53776123BD4BC /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		7321BAA608BD25BD81716E2E /* FeatureMainUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
 		89A93CFFAE4D42CF2CA2098E /* FeatureMainUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureMainUserInterface.swift; sourceTree = "<group>"; };
 		8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,16 @@
 			path = ../../../XCConfig;
 			sourceTree = "<group>";
 		};
+		4807262957D98203207ABA3D /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				60CA803793CEFAF4F670E934 /* FlexLayout.xcframework */,
+				55053911FF0D7DBE7B78F7D3 /* PinLayout.xcframework */,
+				52144A55EA1BBE7B4DFE1AD0 /* SnapKit.xcframework */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
 		5AF36DE1B1853DEB04D6446C /* FeatureMainUserInterface */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +212,7 @@
 		6C4A3C20C7339FBA70229D54 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				6C9ADEBE67C53776123BD4BC /* FlexLayout.xcframework */,
+				4807262957D98203207ABA3D /* DesignSystem */,
 			);
 			name = Vendor;
 			path = ../../../Vendor;
