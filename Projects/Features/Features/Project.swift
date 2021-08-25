@@ -4,10 +4,7 @@ import ProjectDescriptionHelpers
 let project = Project
     .framework(name: "Features",
                dependencies: [
-                .Project.Domain.Main,
-                .Project.Domain.Loan,
-                .Project.Domain.Settings,
-                .Project.DataRepository.Main,
-                .Project.DataRepository.Loan,
-                .Project.DataRepository.Settings,
+                .Project.Feature.Loan.Pacakge,
+                .Project.Feature.Main.Pacakge,
+                .Project.Feature.Settings.Pacakge,
                ])

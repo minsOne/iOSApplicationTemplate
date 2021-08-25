@@ -46,6 +46,9 @@ extension Dep {
     static func feature(name: String) -> Self {
         return .project(target: name, path: .relativeToFeature(name))
     }
+    static func feature(name: String, path: String) -> Self {
+        return .project(target: name, path: .relativeToFeature(path))
+    }
     static func userInterface(name: String) -> Self {
         return .project(target: name, path: .relativeToUserInterface(name))
     }

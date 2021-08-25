@@ -11,12 +11,16 @@ import ProjectDescription
 // MARK: Project
 extension Dep {
     public struct Project {
-        public struct DataRepository {}
-        public struct Domain {}
-        public struct Feature {}
+        public struct Feature {
+            public struct Settings {}
+            public struct Main {}
+            public struct Loan {}
+        }
         public struct Module {}
         public struct Network {} 
         public struct UserInterface {}
+        public struct DataRepository {}
+        public struct Domain {}
     }
 }
 
@@ -25,28 +29,39 @@ public extension Dep.Project.Feature {
     static let Features = Dep.feature(name: "Features")
 }
 
-
-public extension Dep.Project.Domain {
-    static let Loan     = Dep.domain(name: "FeatureLoanDomain")
-    static let Main     = Dep.domain(name: "FeatureMainDomain")
-    static let Settings = Dep.domain(name: "FeatureSettingsDomain")
-    static let DependencyComponent = Dep.domain(name: "FeatureDomainComponent")
+public extension Dep.Project.Feature.Settings {
+    static let Pacakge        = Dep.feature(name: "FeatureSettingsPackage", path: "FeatureSettings/Package")
+    static let UserInterface  = Dep.feature(name: "FeatureSettingsUserInterface", path: "FeatureSettings/UserInterface")
+    static let Domain         = Dep.feature(name: "FeatureSettingsDomain", path: "FeatureSettings/Domain")
+    static let DataRepository = Dep.feature(name: "FeatureSettingsDataRepository", path: "FeatureSettings/DataRepository")
 }
+
+public extension Dep.Project.Feature.Main {
+    static let Pacakge        = Dep.feature(name: "FeatureMainPackage", path: "FeatureMain/Package")
+    static let UserInterface  = Dep.feature(name: "FeatureMainUserInterface", path: "FeatureMain/UserInterface")
+    static let Domain         = Dep.feature(name: "FeatureMainDomain", path: "FeatureMain/Domain")
+    static let DataRepository = Dep.feature(name: "FeatureMainDataRepository", path: "FeatureMain/DataRepository")
+}
+
+public extension Dep.Project.Feature.Loan {
+    static let Pacakge        = Dep.feature(name: "FeatureLoanPackage", path: "FeatureLoan/Package")
+    static let UserInterface  = Dep.feature(name: "FeatureLoanUserInterface", path: "FeatureLoan/UserInterface")
+    static let Domain         = Dep.feature(name: "FeatureLoanDomain", path: "FeatureLoan/Domain")
+    static let DataRepository = Dep.feature(name: "FeatureLoanDataRepository", path: "FeatureLoan/DataRepository")
+}
+
 
 
 public extension Dep.Project.DataRepository {
-    static let Loan     = Dep.dataRepository(name: "FeatureLoanDataRepository")
-    static let Main     = Dep.dataRepository(name: "FeatureMainDataRepository")
-    static let Settings = Dep.dataRepository(name: "FeatureSettingsDataRepository")
-    static let DependencyComponent = Dep.dataRepository(name: "FeatureDataRepositoryComponent")
     static let InjectManager = Dep.dataRepository(name: "RepositoryInjectManager")
+    static let DependencyComponent = Dep.dataRepository(name: "FeatureDataRepositoryComponent")
 }
 
+public extension Dep.Project.Domain {
+    static let DependencyComponent = Dep.domain(name: "FeatureDomainComponent")
+}
 
 public extension Dep.Project.UserInterface {
-    static let Loan         = Dep.userInterface(name: "FeatureLoanUserInterface")
-    static let Main         = Dep.userInterface(name: "FeatureMainUserInterface")
-    static let Settings     = Dep.userInterface(name: "FeatureSettingsUserInterface")
     static let DesignSystem = Dep.userInterface(name: "DesignSystem")
     static let DependencyComponent = Dep.userInterface(name: "FeatureUserInterfaceComponent")
 }

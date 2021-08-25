@@ -11,20 +11,20 @@
 		1C4998FF9804A67A2D088B2E /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106CB85696261220EA5496A /* UIViewControllerPreview.swift */; };
 		2973226F6DDB4FEBE9030C0F /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */; };
+		3A827CEA5D2DC1F837174936 /* FlexLayoutDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2DC5EDDCC412C97B1E2AE0 /* FlexLayoutDesignSystem.swift */; };
 		429D6E5954343C7B5F35C754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F96042A1DE7785CB726321 /* AppDelegate.swift */; };
-		4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */; };
+		4FDAEB3E8DFB40DD8EF528ED /* LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442197F1941BB7EE04786DC /* LineHeight.swift */; };
 		53B984B09AE3B0B39226B111 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */; };
-		76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692B9BA721BD07C93D2720E /* SeperateLine.swift */; };
 		7989E3116CC74680ED51DFF3 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099F39367A5B6C869BBB2CEF /* BothSideText.swift */; };
 		85D34FD37B46CE224B959A47 /* ProxyResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */; };
 		85DFC2E53460A6893D0A806A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688D1B5D91F95C22509ACD1 /* Tests.swift */; };
 		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
 		A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703656026E8CF282104CCF97 /* ScenePreview1.swift */; };
+		AE69581DD2DD7F66FADBCFF8 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AB4DF3C160EA7D90B47E5 /* SafeArea.swift */; };
+		B7A812085A359E21A2E8B9D4 /* BothSideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395BE53DE391E0EBB0AB167 /* BothSideText.swift */; };
 		B81345489D2C547F838D172F /* PinLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75211458EA41C21314B5C16 /* PinLayout.xcframework */; };
-		CB90716626D2541300C62D83 /* FlexLayoutDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB90716526D2541300C62D83 /* FlexLayoutDesignSystem.swift */; };
 		CBA84BBA22AAA81B86C64D70 /* Bundle+DesignSystemDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */; };
+		D34991B9BA3D3E89DF6301F9 /* SeperateLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D3F987C8C6ED407A83FA6 /* SeperateLine.swift */; };
 		EDCB083EBF28B34F4025CCD5 /* FlexLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */; };
 		F9E40820863763A405FADC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */; };
 		FDAE33B4C65DFD3B4B185621 /* BothSideTextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A436714383CA4AB4DED8A34 /* BothSideTextPreview.swift */; };
@@ -85,7 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		099F39367A5B6C869BBB2CEF /* BothSideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothSideText.swift; sourceTree = "<group>"; };
+		1442197F1941BB7EE04786DC /* LineHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineHeight.swift; sourceTree = "<group>"; };
+		2395BE53DE391E0EBB0AB167 /* BothSideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothSideText.swift; sourceTree = "<group>"; };
 		261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
 		2871A947D02AE62008CF0591 /* DesignSystem-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-STAGE.xcconfig"; sourceTree = "<group>"; };
 		332CD519BD17311AED55F570 /* DesignSystem-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-DEV.xcconfig"; sourceTree = "<group>"; };
@@ -95,22 +96,21 @@
 		408A47139F010D995564D9D7 /* DesignSystemDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4106CB85696261220EA5496A /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		4688D1B5D91F95C22509ACD1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		4692B9BA721BD07C93D2720E /* SeperateLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperateLine.swift; sourceTree = "<group>"; };
-		66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 		69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2DC5EDDCC412C97B1E2AE0 /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
 		703656026E8CF282104CCF97 /* ScenePreview1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePreview1.swift; sourceTree = "<group>"; };
 		92FA30DB289096215F72CF82 /* DesignSystem-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-TEST.xcconfig"; sourceTree = "<group>"; };
 		B9F96042A1DE7785CB726321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA735E388C519076EBDE04C5 /* ProxyResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyResourcePackage; path = ../ProxyResourcePackage; sourceTree = "<group>"; };
 		C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DesignSystemDemoApp.swift"; sourceTree = "<group>"; };
+		C47AB4DF3C160EA7D90B47E5 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 		C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB90716526D2541300C62D83 /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
 		D75211458EA41C21314B5C16 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PinLayout.xcframework; sourceTree = "<group>"; };
 		D81E48225B36E49CFF1F0705 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		DBDB1DF719169911A375EC86 /* DesignSystemDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemDemoApp.plist; sourceTree = "<group>"; };
+		E16D3F987C8C6ED407A83FA6 /* SeperateLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperateLine.swift; sourceTree = "<group>"; };
 		EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-PROD.xcconfig"; sourceTree = "<group>"; };
 		ECAFBD3892447294C1342932 /* DesignSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineHeight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,11 +157,19 @@
 		0E1288659896D0CFF98DA5AA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CB90716426D253E300C62D83 /* SwiftUI */,
-				CB90716326D253DD00C62D83 /* FlexLayout */,
+				13095A3B06C8345B2645C627 /* FlexLayout */,
+				33DE397B516552ED3DCACC7B /* SwiftUI */,
 				4106CB85696261220EA5496A /* UIViewControllerPreview.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		13095A3B06C8345B2645C627 /* FlexLayout */ = {
+			isa = PBXGroup;
+			children = (
+				6F2DC5EDDCC412C97B1E2AE0 /* FlexLayoutDesignSystem.swift */,
+			);
+			path = FlexLayout;
 			sourceTree = "<group>";
 		};
 		191A630E1AD9933D6084DE5E /* XCConfig */ = {
@@ -192,6 +200,17 @@
 				191A630E1AD9933D6084DE5E /* XCConfig */,
 			);
 			name = Project;
+			sourceTree = "<group>";
+		};
+		33DE397B516552ED3DCACC7B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2395BE53DE391E0EBB0AB167 /* BothSideText.swift */,
+				1442197F1941BB7EE04786DC /* LineHeight.swift */,
+				C47AB4DF3C160EA7D90B47E5 /* SafeArea.swift */,
+				E16D3F987C8C6ED407A83FA6 /* SeperateLine.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		4E96959FDB8061671D065D55 /* Vendor */ = {
@@ -245,25 +264,6 @@
 				D5FD3537E28AE857DC09D214 /* Sources */,
 			);
 			path = Derived;
-			sourceTree = "<group>";
-		};
-		CB90716326D253DD00C62D83 /* FlexLayout */ = {
-			isa = PBXGroup;
-			children = (
-				CB90716526D2541300C62D83 /* FlexLayoutDesignSystem.swift */,
-			);
-			path = FlexLayout;
-			sourceTree = "<group>";
-		};
-		CB90716426D253E300C62D83 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				099F39367A5B6C869BBB2CEF /* BothSideText.swift */,
-				F0D0BF0B90B0A1C0FD4BB35C /* LineHeight.swift */,
-				66F0EA3D4B3783F5FEE1ADD8 /* SafeArea.swift */,
-				4692B9BA721BD07C93D2720E /* SeperateLine.swift */,
-			);
-			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		D5FD3537E28AE857DC09D214 /* Sources */ = {
@@ -502,11 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD1772255A5D5739A71068D /* BothSideText.swift in Sources */,
-				4D0D12310FFF14520FFBBD8C /* LineHeight.swift in Sources */,
-				36594C71D4EEA3F6B2275F0B /* SafeArea.swift in Sources */,
-				CB90716626D2541300C62D83 /* FlexLayoutDesignSystem.swift in Sources */,
-				76BF9FAD1F7AE2C637740EE6 /* SeperateLine.swift in Sources */,
+				3A827CEA5D2DC1F837174936 /* FlexLayoutDesignSystem.swift in Sources */,
+				B7A812085A359E21A2E8B9D4 /* BothSideText.swift in Sources */,
+				4FDAEB3E8DFB40DD8EF528ED /* LineHeight.swift in Sources */,
+				AE69581DD2DD7F66FADBCFF8 /* SafeArea.swift in Sources */,
+				D34991B9BA3D3E89DF6301F9 /* SeperateLine.swift in Sources */,
 				1C4998FF9804A67A2D088B2E /* UIViewControllerPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

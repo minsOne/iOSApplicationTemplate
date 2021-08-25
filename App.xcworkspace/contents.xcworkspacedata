@@ -14,15 +14,6 @@
             location = "group:FeatureDataRepositoryComponent/FeatureDataRepositoryComponent.xcodeproj">
          </FileRef>
          <FileRef
-            location = "group:FeatureLoanDataRepository/FeatureLoanDataRepository.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureMainDataRepository/FeatureMainDataRepository.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureSettingsDataRepository/FeatureSettingsDataRepository.xcodeproj">
-         </FileRef>
-         <FileRef
             location = "group:RepositoryInjectManager/RepositoryInjectManager.xcodeproj">
          </FileRef>
       </Group>
@@ -32,15 +23,6 @@
          <FileRef
             location = "group:FeatureDomainComponent/FeatureDomainComponent.xcodeproj">
          </FileRef>
-         <FileRef
-            location = "group:FeatureLoanDomain/FeatureLoanDomain.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureMainDomain/FeatureMainDomain.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureSettingsDomain/FeatureSettingsDomain.xcodeproj">
-         </FileRef>
       </Group>
       <Group
          location = "group:Features"
@@ -48,6 +30,54 @@
          <FileRef
             location = "group:Features/Features.xcodeproj">
          </FileRef>
+         <Group
+            location = "group:FeatureLoan"
+            name = "FeatureLoan">
+            <FileRef
+               location = "group:DataRepository/FeatureLoanDataRepository.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Domain/FeatureLoanDomain.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Package/FeatureLoanPackage.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:UserInterface/FeatureLoanUserInterface.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:FeatureMain"
+            name = "FeatureMain">
+            <FileRef
+               location = "group:DataRepository/FeatureMainDataRepository.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Domain/FeatureMainDomain.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Package/FeatureMainPackage.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:UserInterface/FeatureMainUserInterface.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:FeatureSettings"
+            name = "FeatureSettings">
+            <FileRef
+               location = "group:DataRepository/FeatureSettingsDataRepository.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Domain/FeatureSettingsDomain.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Package/FeatureSettingsPackage.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:UserInterface/FeatureSettingsUserInterface.xcodeproj">
+            </FileRef>
+         </Group>
       </Group>
       <Group
          location = "group:Modules"
@@ -98,15 +128,6 @@
          name = "UserInterface">
          <FileRef
             location = "group:DesignSystem/DesignSystem.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureLoanUserInterface/FeatureLoanUserInterface.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureMainUserInterface/FeatureMainUserInterface.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureSettingsUserInterface/FeatureSettingsUserInterface.xcodeproj">
          </FileRef>
          <FileRef
             location = "group:FeatureUserInterfaceComponent/FeatureUserInterfaceComponent.xcodeproj">
