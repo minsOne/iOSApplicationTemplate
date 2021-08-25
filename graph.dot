@@ -1,0 +1,169 @@
+digraph {
+  Alamofire [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  AnalyticsKit [fillcolor=coral1 shape=cylinder style=filled]
+  App [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  CoreKit [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  CoreKitDemoApp [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  DesignSystem [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  DesignSystemDemoApp [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  DevApp [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  DevelopTool [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  FBSDKCoreKit [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  FBSDKCoreKit_Basics [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  FBSDKGamingServicesKit [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  FBSDKLoginKit [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  FBSDKShareKit [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  FIRAnalyticsConnector [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  FLEX [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  FeatureBaseDependencyDataRepository [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureBaseDependencyDomain [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureBaseDependencyUserInterface [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureBaseDependencyUserInterfaceDemoApp [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  FeatureLoanDataRepository [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureLoanDomain [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureLoanPackage [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureLoanUserInterface [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureMainDataRepository [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureMainDomain [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureMainPackage [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureMainUserInterface [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureMainUserInterfaceDemoApp [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  FeatureSettingsDataRepository [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureSettingsDomain [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureSettingsPackage [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureSettingsUserInterface [fillcolor=coral1 shape=cylinder style=filled]
+  FeatureSettingsUserInterfaceDemoApp [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  Features [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  Firebase [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  FirebaseAnalytics [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  FirebaseCore [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  FirebaseCoreDiagnostics [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  FirebaseInstanceID [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  FlexLayout [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  GoogleAppMeasurement [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  GoogleDataTransport [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  GoogleDataTransportCCTSupport [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  GoogleUtilities [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  InjectPropertyWrapper [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  NetworkAPICommon [fillcolor=coral1 shape=cylinder style=filled]
+  NetworkAPIHome [fillcolor=coral1 shape=cylinder style=filled]
+  NetworkAPIKit [fillcolor=coral1 shape=cylinder style=filled]
+  NetworkAPILogin [fillcolor=coral1 shape=cylinder style=filled]
+  NetworkAPIs [fillcolor=coral1 shape=cylinder style=filled]
+  OHHTTPStubs [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  OHHTTPStubsSwift [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  PinLayout [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  ProxyNetworkStubPackage [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  RIBs [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  ReactorKit [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  RepositoryInjectManager [fillcolor=coral1 shape=cylinder style=filled]
+  ResourcePackage [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  RxCocoa [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  RxPackage [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  RxRelay [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  RxSwift [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  SnapKit [fillcolor=lightskyblue1 shape=trapezium style=filled]
+  StoreKit [fillcolor=violet shape=rectangle style=filled]
+  Swinject [fillcolor=tan4 fontcolor=white shape=tab style=filled]
+  ThirdPartyDynamicLibraryPluginManager [fillcolor=coral1 shape=cylinder style=filled]
+  ThirdPartyLibraryManager [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  UtilityKit [fillcolor=coral1 shape=cylinder style=filled]
+  libsqlite3 [fillcolor=violet shape=rectangle style=filled]
+  nanopb [fillcolor=darkgoldenrod3 shape=trapezium style=filled]
+  AnalyticsKit -> ThirdPartyLibraryManager
+  App -> RepositoryInjectManager
+  App -> Features
+  App -> ThirdPartyDynamicLibraryPluginManager
+  CoreKit -> RxPackage
+  CoreKit -> NetworkAPIs
+  CoreKit -> AnalyticsKit
+  CoreKit -> UtilityKit
+  CoreKit -> ThirdPartyLibraryManager
+  CoreKitDemoApp -> CoreKit
+  DesignSystem -> ResourcePackage
+  DesignSystem -> FlexLayout
+  DesignSystem -> PinLayout
+  DesignSystem -> SnapKit
+  DesignSystemDemoApp -> DesignSystem
+  DevApp -> DevelopTool
+  DevApp -> Features
+  DevApp -> ThirdPartyDynamicLibraryPluginManager
+  DevApp -> RepositoryInjectManager
+  DevelopTool -> ProxyNetworkStubPackage
+  DevelopTool -> OHHTTPStubsSwift
+  DevelopTool -> OHHTTPStubs
+  DevelopTool -> FLEX
+  FeatureBaseDependencyDataRepository -> RxPackage
+  FeatureBaseDependencyDataRepository -> CoreKit
+  FeatureBaseDependencyDomain -> ThirdPartyLibraryManager
+  FeatureBaseDependencyDomain -> RxPackage
+  FeatureBaseDependencyUserInterface -> DesignSystem
+  FeatureBaseDependencyUserInterface -> RxPackage
+  FeatureBaseDependencyUserInterfaceDemoApp -> FeatureBaseDependencyUserInterface
+  FeatureLoanDataRepository -> FeatureBaseDependencyDataRepository
+  FeatureLoanDataRepository -> FeatureLoanDomain
+  FeatureLoanDomain -> FeatureBaseDependencyDomain
+  FeatureLoanDomain -> FeatureLoanUserInterface
+  FeatureLoanPackage -> FeatureLoanDataRepository
+  FeatureLoanPackage -> FeatureLoanDomain
+  FeatureLoanPackage -> FeatureLoanUserInterface
+  FeatureLoanUserInterface -> FeatureBaseDependencyUserInterface
+  FeatureMainDataRepository -> FeatureMainDomain
+  FeatureMainDataRepository -> FeatureBaseDependencyDataRepository
+  FeatureMainDomain -> FeatureMainUserInterface
+  FeatureMainDomain -> FeatureBaseDependencyDomain
+  FeatureMainPackage -> FeatureMainDataRepository
+  FeatureMainPackage -> FeatureMainUserInterface
+  FeatureMainPackage -> FeatureMainDomain
+  FeatureMainUserInterface -> FeatureBaseDependencyUserInterface
+  FeatureMainUserInterface -> DesignSystem
+  FeatureMainUserInterfaceDemoApp -> FeatureMainUserInterface
+  FeatureSettingsDataRepository -> FeatureSettingsDomain
+  FeatureSettingsDataRepository -> FeatureBaseDependencyDataRepository
+  FeatureSettingsDomain -> FeatureBaseDependencyDomain
+  FeatureSettingsDomain -> FeatureSettingsUserInterface
+  FeatureSettingsPackage -> FeatureSettingsUserInterface
+  FeatureSettingsPackage -> FeatureSettingsDomain
+  FeatureSettingsPackage -> FeatureSettingsDataRepository
+  FeatureSettingsUserInterface -> FeatureBaseDependencyUserInterface
+  FeatureSettingsUserInterfaceDemoApp -> FeatureSettingsUserInterface
+  Features -> FeatureLoanPackage
+  Features -> FeatureMainPackage
+  Features -> FeatureSettingsPackage
+  NetworkAPICommon -> NetworkAPIKit
+  NetworkAPIHome -> NetworkAPIKit
+  NetworkAPIKit -> ThirdPartyLibraryManager
+  NetworkAPILogin -> NetworkAPIKit
+  NetworkAPIs -> NetworkAPICommon
+  NetworkAPIs -> NetworkAPILogin
+  NetworkAPIs -> NetworkAPIHome
+  RepositoryInjectManager -> Features
+  RepositoryInjectManager -> CoreKit
+  RxPackage -> RxCocoa
+  RxPackage -> RxSwift
+  RxPackage -> RxRelay
+  RxPackage -> RIBs
+  RxPackage -> ReactorKit
+  ThirdPartyDynamicLibraryPluginManager -> FBSDKGamingServicesKit
+  ThirdPartyDynamicLibraryPluginManager -> FBSDKShareKit
+  ThirdPartyDynamicLibraryPluginManager -> FBSDKLoginKit
+  ThirdPartyDynamicLibraryPluginManager -> FBSDKCoreKit
+  ThirdPartyDynamicLibraryPluginManager -> ThirdPartyLibraryManager
+  ThirdPartyDynamicLibraryPluginManager -> FBSDKCoreKit_Basics
+  ThirdPartyLibraryManager -> InjectPropertyWrapper
+  ThirdPartyLibraryManager -> Alamofire
+  ThirdPartyLibraryManager -> GoogleDataTransportCCTSupport
+  ThirdPartyLibraryManager -> Firebase
+  ThirdPartyLibraryManager -> FirebaseCore
+  ThirdPartyLibraryManager -> FIRAnalyticsConnector
+  ThirdPartyLibraryManager -> GoogleDataTransport
+  ThirdPartyLibraryManager -> FirebaseCoreDiagnostics
+  ThirdPartyLibraryManager -> GoogleAppMeasurement
+  ThirdPartyLibraryManager -> nanopb
+  ThirdPartyLibraryManager -> libsqlite3
+  ThirdPartyLibraryManager -> GoogleUtilities
+  ThirdPartyLibraryManager -> FirebaseInstanceID
+  ThirdPartyLibraryManager -> Swinject
+  ThirdPartyLibraryManager -> StoreKit
+  ThirdPartyLibraryManager -> FirebaseAnalytics
+}

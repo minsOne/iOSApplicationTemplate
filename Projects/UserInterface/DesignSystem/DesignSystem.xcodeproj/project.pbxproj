@@ -16,7 +16,7 @@
 		4FDAEB3E8DFB40DD8EF528ED /* LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442197F1941BB7EE04786DC /* LineHeight.swift */; };
 		53B984B09AE3B0B39226B111 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */; };
 		7989E3116CC74680ED51DFF3 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		85D34FD37B46CE224B959A47 /* ProxyResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */; };
+		85D34FD37B46CE224B959A47 /* ResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = C31923F97DA9E79BC5406BA0 /* ResourcePackage */; };
 		85DFC2E53460A6893D0A806A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688D1B5D91F95C22509ACD1 /* Tests.swift */; };
 		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
 		A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703656026E8CF282104CCF97 /* ScenePreview1.swift */; };
@@ -96,13 +96,13 @@
 		408A47139F010D995564D9D7 /* DesignSystemDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4106CB85696261220EA5496A /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		4688D1B5D91F95C22509ACD1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		63A3D7F4CDCA2C3812C1CB42 /* ResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ResourcePackage; path = ../ResourcePackage; sourceTree = "<group>"; };
 		662C9D98FF67E20EFC95A1E9 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2DC5EDDCC412C97B1E2AE0 /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
 		703656026E8CF282104CCF97 /* ScenePreview1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePreview1.swift; sourceTree = "<group>"; };
 		A8631F72BB16A3A9A9FDB973 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		B9F96042A1DE7785CB726321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA735E388C519076EBDE04C5 /* ProxyResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyResourcePackage; path = ../ProxyResourcePackage; sourceTree = "<group>"; };
 		C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DesignSystemDemoApp.swift"; sourceTree = "<group>"; };
 		C47AB4DF3C160EA7D90B47E5 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 		C6850D3C2D0211A8161346A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				EDCB083EBF28B34F4025CCD5 /* FlexLayout.xcframework in Frameworks */,
 				B81345489D2C547F838D172F /* PinLayout.xcframework in Frameworks */,
 				53B984B09AE3B0B39226B111 /* SnapKit.xcframework in Frameworks */,
-				85D34FD37B46CE224B959A47 /* ProxyResourcePackage in Frameworks */,
+				85D34FD37B46CE224B959A47 /* ResourcePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +296,7 @@
 				2BB59E843B58BD9FFF395FEA /* Project */,
 				7D6BBD2B92079B70AB979221 /* Frameworks */,
 				82664F67710540CBDEBE5B11 /* Products */,
-				BA735E388C519076EBDE04C5 /* ProxyResourcePackage */,
+				63A3D7F4CDCA2C3812C1CB42 /* ResourcePackage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -368,7 +368,7 @@
 			);
 			name = DesignSystem;
 			packageProductDependencies = (
-				E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */,
+				C31923F97DA9E79BC5406BA0 /* ResourcePackage */,
 			);
 			productName = DesignSystem;
 			productReference = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */;
@@ -1173,9 +1173,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E2E52FF7E6D0E63A2DDD92F3 /* ProxyResourcePackage */ = {
+		C31923F97DA9E79BC5406BA0 /* ResourcePackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ProxyResourcePackage;
+			productName = ResourcePackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

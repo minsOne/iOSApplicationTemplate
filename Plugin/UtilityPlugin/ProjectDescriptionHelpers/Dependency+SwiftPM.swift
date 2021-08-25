@@ -61,9 +61,9 @@ public extension Package.DevelopTool {
 // MARK: - Swift Package User Interface
 
 public extension Dep.SwiftPM.UserInterface {
-    static let ProxyResourcePackage      = Dep.package(product: "ProxyResourcePackage")
+    static let ResourcePackage = Dep.package(product: "ResourcePackage")
 }
 
 public extension Package.UserInterface {
-    static let ProxyResourcePackage = Package.local(path: .relativeToUserInterface("ProxyResourcePackage"))
+    static let ResourcePackage = Package.local(path: .relativeToUserInterface("ResourcePackage"))
 }
