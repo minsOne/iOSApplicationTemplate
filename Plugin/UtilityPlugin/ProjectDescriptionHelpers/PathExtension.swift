@@ -10,7 +10,7 @@ import ProjectDescription
 
 public extension ProjectDescription.Path {
     static func relativeToXCConfig(type: ProjectDeployTarget, name: String) -> Self {
-        return .relativeToRoot("XCConfig/\(name)/\(name)-\(type.rawValue).xcconfig")
+        return .relativeToRoot("XCConfig/\(name)/\(type.rawValue).xcconfig")
     }
     static func relativeToModule(_ pathString: String) -> Self {
         return .relativeToRoot("Projects/Modules/\(pathString)")

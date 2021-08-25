@@ -55,14 +55,14 @@
 /* Begin PBXFileReference section */
 		143D2F95606A51C3C19A090F /* RxPackageTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RxPackageTests.plist; sourceTree = "<group>"; };
 		283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		340550810291B30CEFB614ED /* RxPackage-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "RxPackage-TEST.xcconfig"; sourceTree = "<group>"; };
-		58D88EF60516D37C121183F8 /* RxPackage-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "RxPackage-STAGE.xcconfig"; sourceTree = "<group>"; };
+		2DE7989C962EB2573EF6B26B /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		69199DF005D4715F9E666355 /* NavigationControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllable.swift; sourceTree = "<group>"; };
 		81D269615DE7A37A325C9C00 /* NavigationViewableRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewableRouting.swift; sourceTree = "<group>"; };
-		AEFA123530341A83C92470BC /* RxPackage-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "RxPackage-DEV.xcconfig"; sourceTree = "<group>"; };
+		82489B6588E6DC582AA08C68 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
+		99996C734840B47C50F38210 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		B1E79E3017B431528A732130 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		C64B02317DB6863CFA05FE50 /* RxPackage-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "RxPackage-PROD.xcconfig"; sourceTree = "<group>"; };
 		CF5436ADD114D1264E25516B /* RxPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPackage.swift; sourceTree = "<group>"; };
+		D58A359D3613E06B2CF28649 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		F46BB8EC47E5A7131A2ABA21 /* RxPackageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxPackageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88CC58F91BE16EB6B09983C /* RxPackage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RxPackage.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,10 +94,10 @@
 		290B54DA05E6DB18E5CC9C9F /* RxPackage */ = {
 			isa = PBXGroup;
 			children = (
-				AEFA123530341A83C92470BC /* RxPackage-DEV.xcconfig */,
-				C64B02317DB6863CFA05FE50 /* RxPackage-PROD.xcconfig */,
-				58D88EF60516D37C121183F8 /* RxPackage-STAGE.xcconfig */,
-				340550810291B30CEFB614ED /* RxPackage-TEST.xcconfig */,
+				99996C734840B47C50F38210 /* DEV.xcconfig */,
+				2DE7989C962EB2573EF6B26B /* PROD.xcconfig */,
+				D58A359D3613E06B2CF28649 /* STAGE.xcconfig */,
+				82489B6588E6DC582AA08C68 /* TEST.xcconfig */,
 			);
 			path = RxPackage;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 /* Begin XCBuildConfiguration section */
 		36F4BCBFF200133ED690ACB0 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C64B02317DB6863CFA05FE50 /* RxPackage-PROD.xcconfig */;
+			baseConfigurationReference = 2DE7989C962EB2573EF6B26B /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -408,7 +408,7 @@
 		};
 		41FE144E51FCA90912D3843A /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEFA123530341A83C92470BC /* RxPackage-DEV.xcconfig */;
+			baseConfigurationReference = 99996C734840B47C50F38210 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -468,7 +468,7 @@
 		};
 		4A439132FA60A026E4AEA323 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58D88EF60516D37C121183F8 /* RxPackage-STAGE.xcconfig */;
+			baseConfigurationReference = D58A359D3613E06B2CF28649 /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -691,7 +691,7 @@
 		};
 		DD35CA36C0019D568EEC0DC9 /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 340550810291B30CEFB614ED /* RxPackage-TEST.xcconfig */;
+			baseConfigurationReference = 82489B6588E6DC582AA08C68 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

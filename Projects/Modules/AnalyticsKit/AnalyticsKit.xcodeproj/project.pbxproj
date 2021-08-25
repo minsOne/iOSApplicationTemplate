@@ -56,17 +56,17 @@
 		15C9878357E03B84FD180D2A /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		271AE0EEFB7BCEEAA629022A /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		4775FF9F41D2B4CEC1428FB4 /* CrashlyticsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsKit.swift; sourceTree = "<group>"; };
-		74239D902FF819F382ED1C04 /* AnalyticsKit-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AnalyticsKit-DEV.xcconfig"; sourceTree = "<group>"; };
-		79D6075655EAD7E24E3816D0 /* AnalyticsKit-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AnalyticsKit-STAGE.xcconfig"; sourceTree = "<group>"; };
 		7C56956B025CB30B5998882B /* FirebaseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseKit.swift; sourceTree = "<group>"; };
 		7F973C73FDE2B2507500224F /* AnalyticsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8630428A336B62AA6AD712DA /* AnalyticsKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AnalyticsKitTests.plist; sourceTree = "<group>"; };
+		9B56E0B44D35B9C147924137 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
+		9BDD5339A7369B128A7528CF /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		9BEBA881462DDDAB0A185BCC /* AnalyticsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsKit.swift; sourceTree = "<group>"; };
-		9DBFBF6330C8207320971907 /* AnalyticsKit-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AnalyticsKit-TEST.xcconfig"; sourceTree = "<group>"; };
 		BD9AED927D47A2864A5B9F0F /* AnalyticsKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AnalyticsKit.plist; sourceTree = "<group>"; };
 		E2674638130BB352999450F4 /* AnalyticsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CF5D195FB17E453E6EC2D6 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		EA66AC9036537A88EA98E82D /* AppLogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogEvent.swift; sourceTree = "<group>"; };
-		FA5934EC845003607690B104 /* AnalyticsKit-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "AnalyticsKit-PROD.xcconfig"; sourceTree = "<group>"; };
+		ED9AC0740BDA7F3F5DCE8245 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +182,10 @@
 		ECFC5EA608FC5C732087FDE0 /* AnalyticsKit */ = {
 			isa = PBXGroup;
 			children = (
-				74239D902FF819F382ED1C04 /* AnalyticsKit-DEV.xcconfig */,
-				FA5934EC845003607690B104 /* AnalyticsKit-PROD.xcconfig */,
-				79D6075655EAD7E24E3816D0 /* AnalyticsKit-STAGE.xcconfig */,
-				9DBFBF6330C8207320971907 /* AnalyticsKit-TEST.xcconfig */,
+				9BDD5339A7369B128A7528CF /* DEV.xcconfig */,
+				9B56E0B44D35B9C147924137 /* PROD.xcconfig */,
+				ED9AC0740BDA7F3F5DCE8245 /* STAGE.xcconfig */,
+				E5CF5D195FB17E453E6EC2D6 /* TEST.xcconfig */,
 			);
 			path = AnalyticsKit;
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 		};
 		514DB9FD8DE2F567D0467C94 /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DBFBF6330C8207320971907 /* AnalyticsKit-TEST.xcconfig */;
+			baseConfigurationReference = E5CF5D195FB17E453E6EC2D6 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -436,7 +436,7 @@
 		};
 		520F7F5C74CD5DDAC4C6DED0 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74239D902FF819F382ED1C04 /* AnalyticsKit-DEV.xcconfig */;
+			baseConfigurationReference = 9BDD5339A7369B128A7528CF /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -696,7 +696,7 @@
 		};
 		F55C85E4DE797E4F068D0720 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D6075655EAD7E24E3816D0 /* AnalyticsKit-STAGE.xcconfig */;
+			baseConfigurationReference = ED9AC0740BDA7F3F5DCE8245 /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -756,7 +756,7 @@
 		};
 		FD30E8F703C6AE38B29F5E29 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA5934EC845003607690B104 /* AnalyticsKit-PROD.xcconfig */;
+			baseConfigurationReference = 9B56E0B44D35B9C147924137 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

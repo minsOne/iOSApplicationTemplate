@@ -86,20 +86,21 @@
 
 /* Begin PBXFileReference section */
 		1442197F1941BB7EE04786DC /* LineHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineHeight.swift; sourceTree = "<group>"; };
+		1CA11073843FE4E5B67AAAE0 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		2395BE53DE391E0EBB0AB167 /* BothSideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothSideText.swift; sourceTree = "<group>"; };
 		261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
-		2871A947D02AE62008CF0591 /* DesignSystem-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-STAGE.xcconfig"; sourceTree = "<group>"; };
-		332CD519BD17311AED55F570 /* DesignSystem-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-DEV.xcconfig"; sourceTree = "<group>"; };
+		30A5F048ECAD46EDD632C6D8 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		3A436714383CA4AB4DED8A34 /* BothSideTextPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothSideTextPreview.swift; sourceTree = "<group>"; };
 		3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SnapKit.xcframework; sourceTree = "<group>"; };
 		3E65C91E233F8781A109825D /* DesignSystem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystem.plist; sourceTree = "<group>"; };
 		408A47139F010D995564D9D7 /* DesignSystemDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4106CB85696261220EA5496A /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		4688D1B5D91F95C22509ACD1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		662C9D98FF67E20EFC95A1E9 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2DC5EDDCC412C97B1E2AE0 /* FlexLayoutDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutDesignSystem.swift; sourceTree = "<group>"; };
 		703656026E8CF282104CCF97 /* ScenePreview1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePreview1.swift; sourceTree = "<group>"; };
-		92FA30DB289096215F72CF82 /* DesignSystem-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-TEST.xcconfig"; sourceTree = "<group>"; };
+		A8631F72BB16A3A9A9FDB973 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		B9F96042A1DE7785CB726321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA735E388C519076EBDE04C5 /* ProxyResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyResourcePackage; path = ../ProxyResourcePackage; sourceTree = "<group>"; };
 		C09A992F1E2430E254F9C29B /* Bundle+DesignSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DesignSystemDemoApp.swift"; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		D81E48225B36E49CFF1F0705 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		DBDB1DF719169911A375EC86 /* DesignSystemDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DesignSystemDemoApp.plist; sourceTree = "<group>"; };
 		E16D3F987C8C6ED407A83FA6 /* SeperateLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperateLine.swift; sourceTree = "<group>"; };
-		EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DesignSystem-PROD.xcconfig"; sourceTree = "<group>"; };
 		ECAFBD3892447294C1342932 /* DesignSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,10 +146,10 @@
 		0CC0A03EA9AB12FB8D831C00 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				332CD519BD17311AED55F570 /* DesignSystem-DEV.xcconfig */,
-				EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */,
-				2871A947D02AE62008CF0591 /* DesignSystem-STAGE.xcconfig */,
-				92FA30DB289096215F72CF82 /* DesignSystem-TEST.xcconfig */,
+				662C9D98FF67E20EFC95A1E9 /* DEV.xcconfig */,
+				A8631F72BB16A3A9A9FDB973 /* PROD.xcconfig */,
+				1CA11073843FE4E5B67AAAE0 /* STAGE.xcconfig */,
+				30A5F048ECAD46EDD632C6D8 /* TEST.xcconfig */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -576,7 +576,7 @@
 		};
 		0B177376D9C4B1A1A30ED6CE /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92FA30DB289096215F72CF82 /* DesignSystem-TEST.xcconfig */;
+			baseConfigurationReference = 30A5F048ECAD46EDD632C6D8 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -721,7 +721,7 @@
 		};
 		706D09F5B26F57FFC60DE343 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2871A947D02AE62008CF0591 /* DesignSystem-STAGE.xcconfig */;
+			baseConfigurationReference = 1CA11073843FE4E5B67AAAE0 /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -841,7 +841,7 @@
 		};
 		88DD2B88976271C0FFA96FA0 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 332CD519BD17311AED55F570 /* DesignSystem-DEV.xcconfig */;
+			baseConfigurationReference = 662C9D98FF67E20EFC95A1E9 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1024,7 +1024,7 @@
 		};
 		DC48D2D462B002B692B8A674 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA5F63EC220B5EB717EAD77A /* DesignSystem-PROD.xcconfig */;
+			baseConfigurationReference = A8631F72BB16A3A9A9FDB973 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

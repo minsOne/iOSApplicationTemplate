@@ -52,15 +52,15 @@
 /* Begin PBXFileReference section */
 		089DC26D54F445060EEF36CE /* DevelopTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopTool.swift; sourceTree = "<group>"; };
 		2A71AE0CC6214FB38AAA566D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		31DDF11E0D97712EA9F6B6AB /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		3A79057B3C392727D88C482D /* ProxyNetworkStubPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProxyNetworkStubPackage; path = ../../Network/ProxyNetworkStubPackage; sourceTree = "<group>"; };
 		4F3FFC9B47CFBA08A77224D1 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
 		5E215AE3981A30F88FE109A5 /* DevelopTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DevelopTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3888483B102A76C251A86A /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		8667B65AD7A5AB4DFA3C74BD /* DevelopTool.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DevelopTool.plist; sourceTree = "<group>"; };
-		8E52C6CD4E157A63A473BD64 /* DevelopTool-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DevelopTool-DEV.xcconfig"; sourceTree = "<group>"; };
-		8EB44D22544DB8D0007B9261 /* DevelopTool-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DevelopTool-STAGE.xcconfig"; sourceTree = "<group>"; };
-		A4A45CBA8DD381236044DFA0 /* DevelopTool-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DevelopTool-PROD.xcconfig"; sourceTree = "<group>"; };
 		B158DECC0A5557CB07F9DE6A /* DevelopToolTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = DevelopToolTests.plist; sourceTree = "<group>"; };
-		E874EC1B939B4109EAEF9904 /* DevelopTool-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "DevelopTool-TEST.xcconfig"; sourceTree = "<group>"; };
+		C2F3A6314066AD4D503C55DB /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
+		D815A60E5D5BA2013C1E9558 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		EB79D9A610818397CC3BD467 /* DevelopToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevelopToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,10 +195,10 @@
 		FCE8A8E7163BF5444A1F83C0 /* DevelopTool */ = {
 			isa = PBXGroup;
 			children = (
-				8E52C6CD4E157A63A473BD64 /* DevelopTool-DEV.xcconfig */,
-				A4A45CBA8DD381236044DFA0 /* DevelopTool-PROD.xcconfig */,
-				8EB44D22544DB8D0007B9261 /* DevelopTool-STAGE.xcconfig */,
-				E874EC1B939B4109EAEF9904 /* DevelopTool-TEST.xcconfig */,
+				D815A60E5D5BA2013C1E9558 /* DEV.xcconfig */,
+				31DDF11E0D97712EA9F6B6AB /* PROD.xcconfig */,
+				C2F3A6314066AD4D503C55DB /* STAGE.xcconfig */,
+				6A3888483B102A76C251A86A /* TEST.xcconfig */,
 			);
 			path = DevelopTool;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 		};
 		20208A0A7D9C46AF6592D15F /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB44D22544DB8D0007B9261 /* DevelopTool-STAGE.xcconfig */;
+			baseConfigurationReference = C2F3A6314066AD4D503C55DB /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -457,7 +457,7 @@
 		};
 		213526ADE82F05B8C3731907 /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E874EC1B939B4109EAEF9904 /* DevelopTool-TEST.xcconfig */;
+			baseConfigurationReference = 6A3888483B102A76C251A86A /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -684,7 +684,7 @@
 		};
 		BCB5717B81F7AEFA0B0B3FDA /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A45CBA8DD381236044DFA0 /* DevelopTool-PROD.xcconfig */;
+			baseConfigurationReference = 31DDF11E0D97712EA9F6B6AB /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -773,7 +773,7 @@
 		};
 		DE6847424FCE613BC7E2B583 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E52C6CD4E157A63A473BD64 /* DevelopTool-DEV.xcconfig */;
+			baseConfigurationReference = D815A60E5D5BA2013C1E9558 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

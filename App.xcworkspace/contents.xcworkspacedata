@@ -8,28 +8,24 @@
          location = "group:App/App.xcodeproj">
       </FileRef>
       <Group
-         location = "group:DataRepository"
-         name = "DataRepository">
-         <FileRef
-            location = "group:FeatureDataRepositoryComponent/FeatureDataRepositoryComponent.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:RepositoryInjectManager/RepositoryInjectManager.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:Domain"
-         name = "Domain">
-         <FileRef
-            location = "group:FeatureDomainComponent/FeatureDomainComponent.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
          location = "group:Features"
          name = "Features">
          <FileRef
             location = "group:Features/Features.xcodeproj">
          </FileRef>
+         <Group
+            location = "group:BaseDependency"
+            name = "BaseDependency">
+            <FileRef
+               location = "group:DataRepository/FeatureBaseDependencyDataRepository.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Domain/FeatureBaseDependencyDomain.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:UserInterface/FeatureBaseDependencyUserInterface.xcodeproj">
+            </FileRef>
+         </Group>
          <Group
             location = "group:FeatureLoan"
             name = "FeatureLoan">
@@ -92,6 +88,9 @@
             location = "group:DevelopTool/DevelopTool.xcodeproj">
          </FileRef>
          <FileRef
+            location = "group:RepositoryInjectManager/RepositoryInjectManager.xcodeproj">
+         </FileRef>
+         <FileRef
             location = "group:RxPackage/RxPackage.xcodeproj">
          </FileRef>
          <FileRef
@@ -128,9 +127,6 @@
          name = "UserInterface">
          <FileRef
             location = "group:DesignSystem/DesignSystem.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:FeatureUserInterfaceComponent/FeatureUserInterfaceComponent.xcodeproj">
          </FileRef>
       </Group>
    </Group>

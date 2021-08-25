@@ -54,19 +54,19 @@
 /* Begin PBXFileReference section */
 		10362C934A9FD786F946FE99 /* URLEncodedSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedSerialization.swift; sourceTree = "<group>"; };
 		12BA943450F696298039CFF5 /* Exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
-		1A073329B4DED5C22512B86F /* NetworkAPIKit-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPIKit-DEV.xcconfig"; sourceTree = "<group>"; };
 		287D66A66E4A963C8AE51EBD /* NetworkAPIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkAPIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8EE9297D11465922C52862 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		431B442EED51CEE3E357C38F /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		4837A77E4C6726F182352093 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		594E9617ACC5E60DF81F8520 /* NetworkAPIKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = NetworkAPIKitTests.plist; sourceTree = "<group>"; };
-		602326B9A7F449B4ED2D61C6 /* NetworkAPIKit-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPIKit-PROD.xcconfig"; sourceTree = "<group>"; };
 		67ED1F0AE898AD510EC3E3EC /* EmptyBodyParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBodyParameter.swift; sourceTree = "<group>"; };
 		6F74EA7840955FCBFCE46EEC /* NetworkAPIKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = NetworkAPIKit.plist; sourceTree = "<group>"; };
 		7CD3B3D4994ECB44CEB8DA5C /* NetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E58CBF15A1E97EC17F83640 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		85134B449460AB3609F58D24 /* APIRequestDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestDefinition.swift; sourceTree = "<group>"; };
 		8B464183F16FCB050A18C850 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93FC43F4CC1FD7EFDF1112A4 /* NetworkAPIKit-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPIKit-STAGE.xcconfig"; sourceTree = "<group>"; };
-		A8D61A93A7626FD0E15A18D3 /* NetworkAPIKit-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPIKit-TEST.xcconfig"; sourceTree = "<group>"; };
 		AF22D31C7CCE7A9A9085822B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B7B0046B1F4DCCB3522A3257 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 		3B2E7C7BA75DA8D17CED8E85 /* NetworkAPIKit */ = {
 			isa = PBXGroup;
 			children = (
-				1A073329B4DED5C22512B86F /* NetworkAPIKit-DEV.xcconfig */,
-				602326B9A7F449B4ED2D61C6 /* NetworkAPIKit-PROD.xcconfig */,
-				93FC43F4CC1FD7EFDF1112A4 /* NetworkAPIKit-STAGE.xcconfig */,
-				A8D61A93A7626FD0E15A18D3 /* NetworkAPIKit-TEST.xcconfig */,
+				4837A77E4C6726F182352093 /* DEV.xcconfig */,
+				3A8EE9297D11465922C52862 /* PROD.xcconfig */,
+				7E58CBF15A1E97EC17F83640 /* STAGE.xcconfig */,
+				B7B0046B1F4DCCB3522A3257 /* TEST.xcconfig */,
 			);
 			path = NetworkAPIKit;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 /* Begin XCBuildConfiguration section */
 		2E8587E9761CDD08C92DDF1F /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8D61A93A7626FD0E15A18D3 /* NetworkAPIKit-TEST.xcconfig */;
+			baseConfigurationReference = B7B0046B1F4DCCB3522A3257 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -532,7 +532,7 @@
 		};
 		A5655444DE97244E4EF0982B /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 602326B9A7F449B4ED2D61C6 /* NetworkAPIKit-PROD.xcconfig */;
+			baseConfigurationReference = 3A8EE9297D11465922C52862 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -641,7 +641,7 @@
 		};
 		DBBEC4E0B54B9FA42B74EDD5 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93FC43F4CC1FD7EFDF1112A4 /* NetworkAPIKit-STAGE.xcconfig */;
+			baseConfigurationReference = 7E58CBF15A1E97EC17F83640 /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -701,7 +701,7 @@
 		};
 		F1A00E507768063DD7F7AEB9 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A073329B4DED5C22512B86F /* NetworkAPIKit-DEV.xcconfig */;
+			baseConfigurationReference = 4837A77E4C6726F182352093 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

@@ -64,19 +64,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		028E9F5D9500DF48CAFA4D2E /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		35CC02810CFF392A548B7742 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		3B06E5D1A612A8BAD2A9F6EB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
-		704237C93DCD3C1D7D82C2FE /* ThirdPartyLibraryManager-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-STAGE.xcconfig"; sourceTree = "<group>"; };
-		81D6D46C68A872FB917224EC /* ThirdPartyLibraryManager-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-DEV.xcconfig"; sourceTree = "<group>"; };
+		56C198A9E668DF5D55DC3A9E /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
+		56C3AF5A0125062C392F09C2 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		7CB0DD3F0FF9A390A5B86181 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		83BAAA682B5EF37FE36DF5E0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		86E233730463AD5E39B7B6C8 /* InjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectContainer.swift; sourceTree = "<group>"; };
 		8DC18CA00F88B493C8FC5335 /* ThirdPartyLibraryManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartyLibraryManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D32313F02A19F646E6AA1F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
-		9EAD44F5AEB1CCFDA98844A7 /* ThirdPartyLibraryManager-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-TEST.xcconfig"; sourceTree = "<group>"; };
 		9FDBDFBB4D7837289A35FAF5 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = "<group>"; };
 		A2AB87B893B781B83FC09FA8 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		A4C6807382FD91D556078F6C /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
-		AA2FE4EA79449C9B07BEF7C3 /* ThirdPartyLibraryManager-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyLibraryManager-PROD.xcconfig"; sourceTree = "<group>"; };
 		C00BE8C265C3C7355DA73FEE /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		C2517F86A83E662DAC2E1C0C /* ThirdPartyLibraryManager.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ThirdPartyLibraryManager.plist; sourceTree = "<group>"; };
 		C2967C1871F0DD4C57AE4F16 /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
@@ -255,10 +255,10 @@
 		FD002AA7BC8DCF08658076C2 /* ThirdPartyLibraryManager */ = {
 			isa = PBXGroup;
 			children = (
-				81D6D46C68A872FB917224EC /* ThirdPartyLibraryManager-DEV.xcconfig */,
-				AA2FE4EA79449C9B07BEF7C3 /* ThirdPartyLibraryManager-PROD.xcconfig */,
-				704237C93DCD3C1D7D82C2FE /* ThirdPartyLibraryManager-STAGE.xcconfig */,
-				9EAD44F5AEB1CCFDA98844A7 /* ThirdPartyLibraryManager-TEST.xcconfig */,
+				56C3AF5A0125062C392F09C2 /* DEV.xcconfig */,
+				7CB0DD3F0FF9A390A5B86181 /* PROD.xcconfig */,
+				56C198A9E668DF5D55DC3A9E /* STAGE.xcconfig */,
+				028E9F5D9500DF48CAFA4D2E /* TEST.xcconfig */,
 			);
 			path = ThirdPartyLibraryManager;
 			sourceTree = "<group>";
@@ -519,7 +519,7 @@
 		};
 		5688B75FC679861FB298B37C /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA2FE4EA79449C9B07BEF7C3 /* ThirdPartyLibraryManager-PROD.xcconfig */;
+			baseConfigurationReference = 7CB0DD3F0FF9A390A5B86181 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -631,7 +631,7 @@
 		};
 		9B1F85630B69EBE009ED7F01 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D6D46C68A872FB917224EC /* ThirdPartyLibraryManager-DEV.xcconfig */;
+			baseConfigurationReference = 56C3AF5A0125062C392F09C2 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -750,7 +750,7 @@
 		};
 		C9CBA53C5DFCBAF95B7A033F /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EAD44F5AEB1CCFDA98844A7 /* ThirdPartyLibraryManager-TEST.xcconfig */;
+			baseConfigurationReference = 028E9F5D9500DF48CAFA4D2E /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -810,7 +810,7 @@
 		};
 		CFD66E2098225737ABE3CB5D /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 704237C93DCD3C1D7D82C2FE /* ThirdPartyLibraryManager-STAGE.xcconfig */;
+			baseConfigurationReference = 56C198A9E668DF5D55DC3A9E /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

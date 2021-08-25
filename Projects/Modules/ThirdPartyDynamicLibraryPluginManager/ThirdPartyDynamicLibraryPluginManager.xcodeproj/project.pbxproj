@@ -61,17 +61,17 @@
 		01C6C41FBC964EFBE05C22C6 /* ThirdPartyDynamicLibraryPluginManager.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ThirdPartyDynamicLibraryPluginManager.plist; sourceTree = "<group>"; };
 		01F897215E7105E8BCC0C5FC /* ThirdPartyDynamicLibraryPluginManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyDynamicLibraryPluginManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A525F81D1407C296B9E754F /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		1A308DAAD2D3A7B7441A87FD /* ThirdPartyDynamicLibraryPluginManager-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyDynamicLibraryPluginManager-TEST.xcconfig"; sourceTree = "<group>"; };
+		14F17B53A40AB051C96B95DC /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		325A249B6116CA5A51296C19 /* ThirdPartyDynamicLibraryPluginManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartyDynamicLibraryPluginManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39868601ED320AA6F57AAACA /* FBSDKGamingServicesKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKGamingServicesKit.xcframework; sourceTree = "<group>"; };
-		56DEA70AC8A7C0796908EACB /* ThirdPartyDynamicLibraryPluginManager-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyDynamicLibraryPluginManager-DEV.xcconfig"; sourceTree = "<group>"; };
 		6142B0B4D5F2CAAEDD18F20B /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
 		7809372146C0C2AB2CF986FA /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		84E35F4C0A8687C2D1378D3D /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		8675BBE61E1C705FE43E41B7 /* FBShareDialogAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBShareDialogAdapter.swift; sourceTree = "<group>"; };
-		B0E00423E992577DDB4FA430 /* ThirdPartyDynamicLibraryPluginManager-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyDynamicLibraryPluginManager-STAGE.xcconfig"; sourceTree = "<group>"; };
 		C3A97FEE3F6599686F175D3E /* ThirdPartyDynamicLibraryPluginManagerTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ThirdPartyDynamicLibraryPluginManagerTests.plist; sourceTree = "<group>"; };
 		CE696E5EEB1C7B82AB9904E8 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
-		CF96ED4F84494FEC79909826 /* ThirdPartyDynamicLibraryPluginManager-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ThirdPartyDynamicLibraryPluginManager-PROD.xcconfig"; sourceTree = "<group>"; };
+		DD19E476C477DC677EC17D47 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		E52D911223D162AE4D511301 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		E5EF9391A1C92B05C994894A /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		ECCF861A4771FFD2463762E8 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -219,10 +219,10 @@
 		F5F548920F92D670132A09F3 /* ThirdPartyDynamicLibraryPluginManager */ = {
 			isa = PBXGroup;
 			children = (
-				56DEA70AC8A7C0796908EACB /* ThirdPartyDynamicLibraryPluginManager-DEV.xcconfig */,
-				CF96ED4F84494FEC79909826 /* ThirdPartyDynamicLibraryPluginManager-PROD.xcconfig */,
-				B0E00423E992577DDB4FA430 /* ThirdPartyDynamicLibraryPluginManager-STAGE.xcconfig */,
-				1A308DAAD2D3A7B7441A87FD /* ThirdPartyDynamicLibraryPluginManager-TEST.xcconfig */,
+				DD19E476C477DC677EC17D47 /* DEV.xcconfig */,
+				E52D911223D162AE4D511301 /* PROD.xcconfig */,
+				14F17B53A40AB051C96B95DC /* STAGE.xcconfig */,
+				84E35F4C0A8687C2D1378D3D /* TEST.xcconfig */,
 			);
 			path = ThirdPartyDynamicLibraryPluginManager;
 			sourceTree = "<group>";
@@ -377,7 +377,7 @@
 /* Begin XCBuildConfiguration section */
 		07ADC5FA4C4A0F542D97B166 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF96ED4F84494FEC79909826 /* ThirdPartyDynamicLibraryPluginManager-PROD.xcconfig */;
+			baseConfigurationReference = E52D911223D162AE4D511301 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -505,7 +505,7 @@
 		};
 		2C2E7EA43C80034A84BC99F0 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56DEA70AC8A7C0796908EACB /* ThirdPartyDynamicLibraryPluginManager-DEV.xcconfig */;
+			baseConfigurationReference = DD19E476C477DC677EC17D47 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -565,7 +565,7 @@
 		};
 		2ED09A14E954359FD3832C8E /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0E00423E992577DDB4FA430 /* ThirdPartyDynamicLibraryPluginManager-STAGE.xcconfig */;
+			baseConfigurationReference = 14F17B53A40AB051C96B95DC /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -754,7 +754,7 @@
 		};
 		B5EE8924257839C968BAD56E /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A308DAAD2D3A7B7441A87FD /* ThirdPartyDynamicLibraryPluginManager-TEST.xcconfig */;
+			baseConfigurationReference = 84E35F4C0A8687C2D1378D3D /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

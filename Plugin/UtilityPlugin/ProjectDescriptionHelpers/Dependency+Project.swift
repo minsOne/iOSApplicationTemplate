@@ -19,14 +19,18 @@ extension Dep {
         public struct Module {}
         public struct Network {} 
         public struct UserInterface {}
-        public struct DataRepository {}
-        public struct Domain {}
     }
 }
 
 
 public extension Dep.Project.Feature {
     static let Features = Dep.feature(name: "Features")
+
+    struct BaseDependency {
+        public static let UserInterface  = Dep.feature(name: "FeatureBaseDependencyUserInterface", path: "BaseDependency/UserInterface")
+        public static let Domain         = Dep.feature(name: "FeatureBaseDependencyDomain", path: "BaseDependency/Domain")
+        public static let DataRepository = Dep.feature(name: "FeatureBaseDependencyDataRepository", path: "BaseDependency/DataRepository")
+    }
 }
 
 public extension Dep.Project.Feature.Settings {
@@ -50,22 +54,9 @@ public extension Dep.Project.Feature.Loan {
     static let DataRepository = Dep.feature(name: "FeatureLoanDataRepository", path: "FeatureLoan/DataRepository")
 }
 
-
-
-public extension Dep.Project.DataRepository {
-    static let InjectManager = Dep.dataRepository(name: "RepositoryInjectManager")
-    static let DependencyComponent = Dep.dataRepository(name: "FeatureDataRepositoryComponent")
-}
-
-public extension Dep.Project.Domain {
-    static let DependencyComponent = Dep.domain(name: "FeatureDomainComponent")
-}
-
 public extension Dep.Project.UserInterface {
     static let DesignSystem = Dep.userInterface(name: "DesignSystem")
-    static let DependencyComponent = Dep.userInterface(name: "FeatureUserInterfaceComponent")
 }
-
 
 public extension Dep.Project.Module {
     static let AnalyticsKit                          = Dep.module(name: "AnalyticsKit")
@@ -75,6 +66,7 @@ public extension Dep.Project.Module {
     static let ThirdPartyDynamicLibraryPluginManager = Dep.module(name: "ThirdPartyDynamicLibraryPluginManager")
     static let ThirdPartyLibraryManager              = Dep.module(name: "ThirdPartyLibraryManager")
     static let UtilityKit                            = Dep.module(name: "UtilityKit")
+    static let RepositoryInjectManager               = Dep.module(name: "RepositoryInjectManager")
 }
 
 public extension Dep.Project.Network {

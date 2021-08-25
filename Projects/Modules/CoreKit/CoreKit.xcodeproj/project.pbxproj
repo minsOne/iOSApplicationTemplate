@@ -82,25 +82,25 @@
 
 /* Begin PBXFileReference section */
 		051B7698EDBB3E3CCD471F4A /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9C30219A163C9E551B432E /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		0AF1AC8D03B8C8961347014F /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1240B327DC5CAE6B5CFAA9FA /* CoreKit-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CoreKit-PROD.xcconfig"; sourceTree = "<group>"; };
 		139FD8844028019C727E94C6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FC974E5DCB78384B9D719D5 /* CoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreKit.swift; sourceTree = "<group>"; };
 		24BFD7769586DDF5E798F75B /* CoreKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		295A7B69D7E6B6A36F7CF783 /* NetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3D89474A66159D5EB93F0F /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		3E4CC4B55606BECED7C17F69 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		4963F1C2A5C15EFA7E0AB84C /* NetworkAPICommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPICommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4BA9B97E87C396ED42FD7B /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB94BD873A60A4B789D1E1E /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		734A6AFA8920AFF3DA6C2B54 /* CoreKitDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CoreKitDemoApp.plist; sourceTree = "<group>"; };
-		7B08483BEA8E4222DDBE7029 /* CoreKit-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CoreKit-DEV.xcconfig"; sourceTree = "<group>"; };
 		7ED76C0E88D844720CE7C6B9 /* CoreKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CoreKitTests.plist; sourceTree = "<group>"; };
-		9756BD8E77EAE68AB813408E /* CoreKit-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CoreKit-STAGE.xcconfig"; sourceTree = "<group>"; };
+		870E88D2D037AC1BD5665671 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		99EE26DBB56A9D4FE43757D7 /* CoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE6A2BE92A05E8512BBD00D /* UtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1560AA8BEC1314BC65B05E8 /* NetworkAPILogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPILogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7455FBBF42C899F1610068B /* NetworkAPIs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04AA12EEBF2F41039DE453F /* Bundle+CoreKitDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+CoreKitDemoApp.swift"; sourceTree = "<group>"; };
-		D5E6ED599A1C16BA0DFD9220 /* CoreKit-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CoreKit-TEST.xcconfig"; sourceTree = "<group>"; };
 		DC41123E82CB3092B2124C97 /* NetworkAPIHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB45B92B6765AAA322F4D9B2 /* AnalyticsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE97305D21D4C99779875A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,10 +145,10 @@
 		2878E60D816B64411DACCD67 /* CoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				7B08483BEA8E4222DDBE7029 /* CoreKit-DEV.xcconfig */,
-				1240B327DC5CAE6B5CFAA9FA /* CoreKit-PROD.xcconfig */,
-				9756BD8E77EAE68AB813408E /* CoreKit-STAGE.xcconfig */,
-				D5E6ED599A1C16BA0DFD9220 /* CoreKit-TEST.xcconfig */,
+				0A9C30219A163C9E551B432E /* DEV.xcconfig */,
+				870E88D2D037AC1BD5665671 /* PROD.xcconfig */,
+				6EB94BD873A60A4B789D1E1E /* STAGE.xcconfig */,
+				2D3D89474A66159D5EB93F0F /* TEST.xcconfig */,
 			);
 			path = CoreKit;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 /* Begin XCBuildConfiguration section */
 		10C43E43AD3ECCD96C3CAD43 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9756BD8E77EAE68AB813408E /* CoreKit-STAGE.xcconfig */;
+			baseConfigurationReference = 6EB94BD873A60A4B789D1E1E /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -572,7 +572,7 @@
 		};
 		4476188FE86776AD25E45FC6 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B08483BEA8E4222DDBE7029 /* CoreKit-DEV.xcconfig */;
+			baseConfigurationReference = 0A9C30219A163C9E551B432E /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -803,7 +803,7 @@
 		};
 		AF1B7EDD6A292F5959D8387F /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5E6ED599A1C16BA0DFD9220 /* CoreKit-TEST.xcconfig */;
+			baseConfigurationReference = 2D3D89474A66159D5EB93F0F /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -863,7 +863,7 @@
 		};
 		B05440CC55EBBD9AF02D3101 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1240B327DC5CAE6B5CFAA9FA /* CoreKit-PROD.xcconfig */;
+			baseConfigurationReference = 870E88D2D037AC1BD5665671 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

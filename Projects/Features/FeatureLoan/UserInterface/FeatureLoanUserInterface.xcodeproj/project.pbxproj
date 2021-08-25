@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		27756ED1D82FDEBC67E43C59 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B18D2EB835B681678450A /* DesignSystem.framework */; };
+		3DAC51925A34804D460C0529 /* FeatureBaseDependencyUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B57A4DB912BC87458A5463D5 /* FeatureBaseDependencyUserInterface.framework */; };
 		57C0DBBBE9E7403F9631DAFB /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE6668266115F532C454CB /* RxPackage.framework */; };
 		7767623ECE104493B1AFFD7A /* FeatureLoanUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A435DD7F3CC262369A9F9E9C /* FeatureLoanUserInterface.swift */; };
 		9ED14680F8FBB1EB25F3B0CF /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E40A402B9A7EE3F0EFCC1 /* Tests.swift */; };
 		A0821348C84BE34235381C47 /* FeatureLoanUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */; };
-		B831FC0BC18C59E7FBB2305C /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */; };
-		BDBAEF0A5EE5446FDD16D945 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */; };
+		F984C7612BF850411C7F819E /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A4DB912BC87458A5463D5 /* FeatureBaseDependencyUserInterface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 			buildActionMask = 8;
 			dstSubfolderSpec = 16;
 			files = (
-				B831FC0BC18C59E7FBB2305C /* FeatureUserInterfaceComponent.framework in Dependencies */,
+				3DAC51925A34804D460C0529 /* FeatureBaseDependencyUserInterface.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -63,14 +63,14 @@
 		0E7E40A402B9A7EE3F0EFCC1 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		197B18D2EB835B681678450A /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4877BCDC2544DB52DB1DE3B3 /* FeatureLoanUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
-		681720F40BEA222AF0769A61 /* FeatureLoanUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
-		6C9C42642D24DBF2EC8D5178 /* FeatureLoanUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
+		702181DB4279AC44BB2EE4B3 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		7F1DFD698FE83B68A3520039 /* FeatureLoanUserInterface.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanUserInterface.plist; sourceTree = "<group>"; };
+		8F5DC82E40C10B5F0E052497 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		9CBE6668266115F532C454CB /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A435DD7F3CC262369A9F9E9C /* FeatureLoanUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureLoanUserInterface.swift; sourceTree = "<group>"; };
-		B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A040AEEBD2CBE3BA042376 /* FeatureLoanUserInterface-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanUserInterface-STAGE.xcconfig"; sourceTree = "<group>"; };
+		B57A4DB912BC87458A5463D5 /* FeatureBaseDependencyUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C2ACD9D66E464832279AF2 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
+		DC474E99D9F155BD6E30A171 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		E26F3F38DDC928399E407ED2 /* FeatureLoanUserInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureLoanUserInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED946EAE028BDCBF0FAB5D35 /* FeatureLoanUserInterfaceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanUserInterfaceTests.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +88,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27756ED1D82FDEBC67E43C59 /* DesignSystem.framework in Frameworks */,
+				F984C7612BF850411C7F819E /* FeatureBaseDependencyUserInterface.framework in Frameworks */,
 				A0821348C84BE34235381C47 /* FeatureLoanUserInterface.framework in Frameworks */,
-				BDBAEF0A5EE5446FDD16D945 /* FeatureUserInterfaceComponent.framework in Frameworks */,
 				57C0DBBBE9E7403F9631DAFB /* RxPackage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,9 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				197B18D2EB835B681678450A /* DesignSystem.framework */,
+				B57A4DB912BC87458A5463D5 /* FeatureBaseDependencyUserInterface.framework */,
 				0FCFE3033735079C1CB9B7F8 /* FeatureLoanUserInterface.framework */,
 				E26F3F38DDC928399E407ED2 /* FeatureLoanUserInterfaceTests.xctest */,
-				B0FBC7806B50B01694FCA176 /* FeatureUserInterfaceComponent.framework */,
 				9CBE6668266115F532C454CB /* RxPackage.framework */,
 			);
 			name = Products;
@@ -181,10 +181,10 @@
 		D76239D9BB5CD0AF685F5B87 /* FeatureLoanUserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				4877BCDC2544DB52DB1DE3B3 /* FeatureLoanUserInterface-DEV.xcconfig */,
-				681720F40BEA222AF0769A61 /* FeatureLoanUserInterface-PROD.xcconfig */,
-				D0A040AEEBD2CBE3BA042376 /* FeatureLoanUserInterface-STAGE.xcconfig */,
-				6C9C42642D24DBF2EC8D5178 /* FeatureLoanUserInterface-TEST.xcconfig */,
+				702181DB4279AC44BB2EE4B3 /* DEV.xcconfig */,
+				8F5DC82E40C10B5F0E052497 /* PROD.xcconfig */,
+				D2C2ACD9D66E464832279AF2 /* STAGE.xcconfig */,
+				DC474E99D9F155BD6E30A171 /* TEST.xcconfig */,
 			);
 			path = FeatureLoanUserInterface;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 		};
 		324AA1D06DAE463472CAB7DE /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0A040AEEBD2CBE3BA042376 /* FeatureLoanUserInterface-STAGE.xcconfig */;
+			baseConfigurationReference = D2C2ACD9D66E464832279AF2 /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -514,7 +514,7 @@
 		};
 		5559FF03FC10393C7BA7F354 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 681720F40BEA222AF0769A61 /* FeatureLoanUserInterface-PROD.xcconfig */;
+			baseConfigurationReference = 8F5DC82E40C10B5F0E052497 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -568,7 +568,7 @@
 		};
 		765D22BB44177029A6DDD595 /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C9C42642D24DBF2EC8D5178 /* FeatureLoanUserInterface-TEST.xcconfig */;
+			baseConfigurationReference = DC474E99D9F155BD6E30A171 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -660,7 +660,7 @@
 		};
 		9870FEE8937A5070206376CE /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4877BCDC2544DB52DB1DE3B3 /* FeatureLoanUserInterface-DEV.xcconfig */;
+			baseConfigurationReference = 702181DB4279AC44BB2EE4B3 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

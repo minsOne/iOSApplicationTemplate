@@ -3,6 +3,6 @@ import ProjectDescriptionHelpers
 
 let project = Project
     .staticFramework(name: "FeatureLoanUserInterface",
-               		 dependencies: [
-						.Project.UserInterface.DependencyComponent,
-               		 ])
+                     dependencies: [
+                        .Project.Feature.BaseDependency.UserInterface,
+                     ])

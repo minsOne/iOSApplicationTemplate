@@ -12,15 +12,15 @@
 		2A079ACD7998BF6125676658 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BDE3845451C41E2E4061B /* Tests.swift */; };
 		36DAF0847F7C210E24B2E0E6 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB98269E786BA60A06E5955B /* CoreKit.framework */; };
 		4D15A783D7050D9C92D961D9 /* FeatureLoanDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; };
+		5648B9C37EC91DBBD9ABCCCE /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74F859A5EF9EE435063AC4E /* FeatureBaseDependencyDomain.framework */; };
+		5E966936E2AFF1C0475DABCC /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */; };
+		674C940D74ACE590CDA49361 /* FeatureBaseDependencyDataRepository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */; };
 		778BD163C12106CD079A11EF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */; };
-		7EA00D97B512C327C66FCD48 /* FeatureDataRepositoryComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */; };
+		8E15836A450EF846C2D01C3D /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883FDC2EF7603796291B90E6 /* FeatureBaseDependencyUserInterface.framework */; };
 		C2A1894CD97117EE6BEA66ED /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4343E8E7D58226AA476FBA /* DesignSystem.framework */; };
 		D21DFE74DE0F68D3EB05DACC /* FeatureLoanDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C335967265EEC19216C987 /* FeatureLoanDataRepository.swift */; };
 		D8F869E92C4FD526E5F28A6B /* FeatureLoanDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; };
-		DB4DF6BFE13D767778162FC3 /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2A083AE2736BD4BA6FDD11 /* FeatureUserInterfaceComponent.framework */; };
 		F5E5284109FF86D8921C33ED /* FeatureLoanDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */; };
-		FC77135D4A37D07E7C150C30 /* FeatureDomainComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8565E1F68545EDB63E833D48 /* FeatureDomainComponent.framework */; };
-		FE3412C8BC59AC111D9E2EDC /* FeatureDataRepositoryComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 			buildActionMask = 8;
 			dstSubfolderSpec = 16;
 			files = (
-				FE3412C8BC59AC111D9E2EDC /* FeatureDataRepositoryComponent.framework in Dependencies */,
+				674C940D74ACE590CDA49361 /* FeatureBaseDependencyDataRepository.framework in Dependencies */,
 				D8F869E92C4FD526E5F28A6B /* FeatureLoanDomain.framework in Dependencies */,
 			);
 			name = Dependencies;
@@ -71,20 +71,20 @@
 		206BDE3845451C41E2E4061B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F54A3F6F9A476BCD657E2D /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E8B46C0D733F91CC89A03CE /* FeatureLoanDataRepository-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-DEV.xcconfig"; sourceTree = "<group>"; };
-		5C1D8E9EC418B0A8D6F69D8A /* FeatureLoanDataRepository-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-PROD.xcconfig"; sourceTree = "<group>"; };
-		6942C73FC6598A679CD8A65E /* FeatureLoanDataRepository-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-TEST.xcconfig"; sourceTree = "<group>"; };
+		4D8AD9D0CB392F9DC2D55137 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
+		5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BA3884C5BFFC92D9ED6739 /* FeatureLoanDataRepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureLoanDataRepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79A29ED29625439AE8AFC9BB /* FeatureLoanDataRepository-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureLoanDataRepository-STAGE.xcconfig"; sourceTree = "<group>"; };
 		7E4343E8E7D58226AA476FBA /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8565E1F68545EDB63E833D48 /* FeatureDomainComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDomainComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureDataRepositoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883FDC2EF7603796291B90E6 /* FeatureBaseDependencyUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLoanDataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C335967265EEC19216C987 /* FeatureLoanDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureLoanDataRepository.swift; sourceTree = "<group>"; };
+		A2EB0FAC3AC04B5842EF06EA /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		CCBB28EBB78F47B6EF7BAF11 /* FeatureLoanDataRepositoryTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanDataRepositoryTests.plist; sourceTree = "<group>"; };
-		EB2A083AE2736BD4BA6FDD11 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74F859A5EF9EE435063AC4E /* FeatureBaseDependencyDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E086EE3416245B1BE9A0680B /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		EB98269E786BA60A06E5955B /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8377854E92DCA0D5034CF6D /* FeatureLoanDataRepository.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureLoanDataRepository.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,12 +96,12 @@
 			files = (
 				36DAF0847F7C210E24B2E0E6 /* CoreKit.framework in Frameworks */,
 				C2A1894CD97117EE6BEA66ED /* DesignSystem.framework in Frameworks */,
-				7EA00D97B512C327C66FCD48 /* FeatureDataRepositoryComponent.framework in Frameworks */,
-				FC77135D4A37D07E7C150C30 /* FeatureDomainComponent.framework in Frameworks */,
+				5E966936E2AFF1C0475DABCC /* FeatureBaseDependencyDataRepository.framework in Frameworks */,
+				5648B9C37EC91DBBD9ABCCCE /* FeatureBaseDependencyDomain.framework in Frameworks */,
+				8E15836A450EF846C2D01C3D /* FeatureBaseDependencyUserInterface.framework in Frameworks */,
 				F5E5284109FF86D8921C33ED /* FeatureLoanDataRepository.framework in Frameworks */,
 				4D15A783D7050D9C92D961D9 /* FeatureLoanDomain.framework in Frameworks */,
 				09C2B62F05F2417EEF5C74FB /* FeatureLoanUserInterface.framework in Frameworks */,
-				DB4DF6BFE13D767778162FC3 /* FeatureUserInterfaceComponent.framework in Frameworks */,
 				035C087E2A0F922D1EE2B423 /* RxPackage.framework in Frameworks */,
 				778BD163C12106CD079A11EF /* ThirdPartyLibraryManager.framework in Frameworks */,
 			);
@@ -120,10 +120,10 @@
 		0F2B86A779AFE4B1C3B09752 /* FeatureLoanDataRepository */ = {
 			isa = PBXGroup;
 			children = (
-				4E8B46C0D733F91CC89A03CE /* FeatureLoanDataRepository-DEV.xcconfig */,
-				5C1D8E9EC418B0A8D6F69D8A /* FeatureLoanDataRepository-PROD.xcconfig */,
-				79A29ED29625439AE8AFC9BB /* FeatureLoanDataRepository-STAGE.xcconfig */,
-				6942C73FC6598A679CD8A65E /* FeatureLoanDataRepository-TEST.xcconfig */,
+				A2EB0FAC3AC04B5842EF06EA /* DEV.xcconfig */,
+				E086EE3416245B1BE9A0680B /* PROD.xcconfig */,
+				36F54A3F6F9A476BCD657E2D /* STAGE.xcconfig */,
+				4D8AD9D0CB392F9DC2D55137 /* TEST.xcconfig */,
 			);
 			path = FeatureLoanDataRepository;
 			sourceTree = "<group>";
@@ -178,13 +178,13 @@
 			children = (
 				EB98269E786BA60A06E5955B /* CoreKit.framework */,
 				7E4343E8E7D58226AA476FBA /* DesignSystem.framework */,
-				85FAE1ABE6DF83B4238D3CA5 /* FeatureDataRepositoryComponent.framework */,
-				8565E1F68545EDB63E833D48 /* FeatureDomainComponent.framework */,
+				5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */,
+				D74F859A5EF9EE435063AC4E /* FeatureBaseDependencyDomain.framework */,
+				883FDC2EF7603796291B90E6 /* FeatureBaseDependencyUserInterface.framework */,
 				9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */,
 				70BA3884C5BFFC92D9ED6739 /* FeatureLoanDataRepositoryTests.xctest */,
 				2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */,
 				22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */,
-				EB2A083AE2736BD4BA6FDD11 /* FeatureUserInterfaceComponent.framework */,
 				494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */,
 				99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */,
 			);
@@ -390,7 +390,7 @@
 		};
 		3295E2026633F4EF946ABF9E /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C1D8E9EC418B0A8D6F69D8A /* FeatureLoanDataRepository-PROD.xcconfig */;
+			baseConfigurationReference = E086EE3416245B1BE9A0680B /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -444,7 +444,7 @@
 		};
 		5787B030AB0A0324C9F15189 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E8B46C0D733F91CC89A03CE /* FeatureLoanDataRepository-DEV.xcconfig */;
+			baseConfigurationReference = A2EB0FAC3AC04B5842EF06EA /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -504,7 +504,7 @@
 		};
 		634BF274C03FA8DF59A99F4C /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6942C73FC6598A679CD8A65E /* FeatureLoanDataRepository-TEST.xcconfig */;
+			baseConfigurationReference = 4D8AD9D0CB392F9DC2D55137 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -564,7 +564,7 @@
 		};
 		81893FE4F8EDAB41AB73479F /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79A29ED29625439AE8AFC9BB /* FeatureLoanDataRepository-STAGE.xcconfig */;
+			baseConfigurationReference = 36F54A3F6F9A476BCD657E2D /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

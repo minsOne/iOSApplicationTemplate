@@ -12,15 +12,15 @@
 		0E18D9611225256075C1E8E5 /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55053911FF0D7DBE7B78F7D3 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38A66B89E0AD4568AFCB84EA /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
 		4B6EEAA3344825746BBE76BB /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CA803793CEFAF4F670E934 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF45D80D33014006B1DB540 /* FeatureUserInterfaceComponent.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
 		6ADF51CE51E5124C80357437 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08101C7091378B1C70DBE1C3 /* RxPackage.framework */; };
 		6F3A11DB1555BA517AABFB9D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C653DF9989938FCF12A06 /* Tests.swift */; };
 		70861E6E9C61BC1DA48AE8A6 /* FeatureMainUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4667065D10F39EE34D5AD0 /* FeatureMainUserInterface.framework */; };
 		76C1997A8DA02EC1EF43A366 /* Bundle+FeatureMainUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058BD42747C459BDCB61306 /* Bundle+FeatureMainUserInterfaceDemoApp.swift */; };
 		780E59C62BFD7A3C9970C900 /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52144A55EA1BBE7B4DFE1AD0 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83A6838F3AFAF57B5D9B16EE /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFFF120110867BC4406FCE6 /* DesignSystem.framework */; };
-		D03D389DA641DC004336D73C /* FeatureUserInterfaceComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */; };
+		C2DC995744D76ACDCAB707C6 /* FeatureBaseDependencyUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 27CC9E6C30120C85DC83DAE6 /* FeatureBaseDependencyUserInterface.framework */; };
 		DE199FC27AD479545F45EFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F872BBC55009371A70458F /* LaunchScreen.storyboard */; };
+		E82FE7C00FE0BBDEB2EAB5FE /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CC9E6C30120C85DC83DAE6 /* FeatureBaseDependencyUserInterface.framework */; };
 		E839E88F2609A64558AA68E7 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08101C7091378B1C70DBE1C3 /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB53AAE6A52180A6D64CFAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4ACCE639F0D92C45F0EE8 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +83,7 @@
 			buildActionMask = 8;
 			dstSubfolderSpec = 16;
 			files = (
-				4BF45D80D33014006B1DB540 /* FeatureUserInterfaceComponent.framework in Dependencies */,
+				C2DC995744D76ACDCAB707C6 /* FeatureBaseDependencyUserInterface.framework in Dependencies */,
 			);
 			name = Dependencies;
 			runOnlyForDeploymentPostprocessing = 1;
@@ -95,18 +95,18 @@
 		0CF4ACCE639F0D92C45F0EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F872BBC55009371A70458F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A371CD5EBF88EC4674DDC12 /* FeatureMainUserInterfaceDemoApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureMainUserInterfaceDemoApp.plist; sourceTree = "<group>"; };
+		21662136470F1646FD227242 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		27CC9E6C30120C85DC83DAE6 /* FeatureBaseDependencyUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2BD52C534F030DD8EB47F9 /* FeatureMainUserInterfaceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureMainUserInterfaceTests.plist; sourceTree = "<group>"; };
 		3D6EEC315877AD9AC5FE8BEB /* FeatureMainUserInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureMainUserInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		51D71DA8E96227509E883074 /* FeatureMainUserInterface-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-DEV.xcconfig"; sourceTree = "<group>"; };
 		52144A55EA1BBE7B4DFE1AD0 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SnapKit.xcframework; sourceTree = "<group>"; };
 		55053911FF0D7DBE7B78F7D3 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PinLayout.xcframework; sourceTree = "<group>"; };
+		5681A58E07ACC884FA0D615F /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		59A8B73310380E4645E78092 /* FeatureMainUserInterface.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureMainUserInterface.plist; sourceTree = "<group>"; };
 		60CA803793CEFAF4F670E934 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlexLayout.xcframework; sourceTree = "<group>"; };
-		656A04DFF61D04486B5FA4D3 /* FeatureMainUserInterface-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-PROD.xcconfig"; sourceTree = "<group>"; };
-		7321BAA608BD25BD81716E2E /* FeatureMainUserInterface-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-TEST.xcconfig"; sourceTree = "<group>"; };
 		89A93CFFAE4D42CF2CA2098E /* FeatureMainUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureMainUserInterface.swift; sourceTree = "<group>"; };
-		8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureUserInterfaceComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D382615C1B6AE9F72A6080C4 /* FeatureMainUserInterface-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FeatureMainUserInterface-STAGE.xcconfig"; sourceTree = "<group>"; };
+		942365D97671E488FBA91118 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
+		CCDE689FF09DAD4B3D24CDAC /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		DAFFF120110867BC4406FCE6 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4667065D10F39EE34D5AD0 /* FeatureMainUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureMainUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F058BD42747C459BDCB61306 /* Bundle+FeatureMainUserInterfaceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FeatureMainUserInterfaceDemoApp.swift"; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A66B89E0AD4568AFCB84EA /* DesignSystem.framework in Frameworks */,
+				E82FE7C00FE0BBDEB2EAB5FE /* FeatureBaseDependencyUserInterface.framework in Frameworks */,
 				70861E6E9C61BC1DA48AE8A6 /* FeatureMainUserInterface.framework in Frameworks */,
-				D03D389DA641DC004336D73C /* FeatureUserInterfaceComponent.framework in Frameworks */,
 				6ADF51CE51E5124C80357437 /* RxPackage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,10 +193,10 @@
 		5AF36DE1B1853DEB04D6446C /* FeatureMainUserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				51D71DA8E96227509E883074 /* FeatureMainUserInterface-DEV.xcconfig */,
-				656A04DFF61D04486B5FA4D3 /* FeatureMainUserInterface-PROD.xcconfig */,
-				D382615C1B6AE9F72A6080C4 /* FeatureMainUserInterface-STAGE.xcconfig */,
-				7321BAA608BD25BD81716E2E /* FeatureMainUserInterface-TEST.xcconfig */,
+				21662136470F1646FD227242 /* DEV.xcconfig */,
+				CCDE689FF09DAD4B3D24CDAC /* PROD.xcconfig */,
+				5681A58E07ACC884FA0D615F /* STAGE.xcconfig */,
+				942365D97671E488FBA91118 /* TEST.xcconfig */,
 			);
 			path = FeatureMainUserInterface;
 			sourceTree = "<group>";
@@ -284,10 +284,10 @@
 			isa = PBXGroup;
 			children = (
 				DAFFF120110867BC4406FCE6 /* DesignSystem.framework */,
+				27CC9E6C30120C85DC83DAE6 /* FeatureBaseDependencyUserInterface.framework */,
 				ED4667065D10F39EE34D5AD0 /* FeatureMainUserInterface.framework */,
 				FD774B5B35CC93B1D8488139 /* FeatureMainUserInterfaceDemoApp.app */,
 				3D6EEC315877AD9AC5FE8BEB /* FeatureMainUserInterfaceTests.xctest */,
-				8AEADBF294FFFF2AE6B53A52 /* FeatureUserInterfaceComponent.framework */,
 				08101C7091378B1C70DBE1C3 /* RxPackage.framework */,
 			);
 			name = Products;
@@ -505,7 +505,7 @@
 /* Begin XCBuildConfiguration section */
 		0A2A05F28637EB581F6113B1 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51D71DA8E96227509E883074 /* FeatureMainUserInterface-DEV.xcconfig */;
+			baseConfigurationReference = 21662136470F1646FD227242 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -720,7 +720,7 @@
 		};
 		486365920D9C217EAB6DA046 /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 656A04DFF61D04486B5FA4D3 /* FeatureMainUserInterface-PROD.xcconfig */;
+			baseConfigurationReference = CCDE689FF09DAD4B3D24CDAC /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -800,7 +800,7 @@
 		};
 		5A61F62A697222E138566295 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D382615C1B6AE9F72A6080C4 /* FeatureMainUserInterface-STAGE.xcconfig */;
+			baseConfigurationReference = 5681A58E07ACC884FA0D615F /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -884,7 +884,7 @@
 		};
 		9DB1BCB33E4817DC905F4FB6 /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7321BAA608BD25BD81716E2E /* FeatureMainUserInterface-TEST.xcconfig */;
+			baseConfigurationReference = 942365D97671E488FBA91118 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

@@ -60,19 +60,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27148FC649C308F5A5B2CA84 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		29D09E0B118994FCC8D9D50F /* NetworkAPILoginTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = NetworkAPILoginTests.plist; sourceTree = "<group>"; };
 		36903473D2D58A8BC85DAAE1 /* NetworkAPILoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkAPILoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4452F5BD17C483EAFFB4A8DA /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		4473E8C9DC35FAF761C72E22 /* NetworkAPILogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPILogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		520D89D8583BB2E519EEC15D /* NetworkAPILogin-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPILogin-DEV.xcconfig"; sourceTree = "<group>"; };
+		4A95F03552A8CAFC9A2C6D05 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		52AD90C011222658B140B663 /* NetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55635B909E86CE9453E33713 /* NetworkAPILogin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = NetworkAPILogin.plist; sourceTree = "<group>"; };
-		74A95C43FA81F85B9548671A /* NetworkAPILogin-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPILogin-TEST.xcconfig"; sourceTree = "<group>"; };
 		85EAEFB0980E207A508BA181 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
-		9BB6B595C9305B5B0ECA63F4 /* NetworkAPILogin-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPILogin-STAGE.xcconfig"; sourceTree = "<group>"; };
+		85EFAB3725C1C3A05A8D54B9 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		BD83F6D1682B2B24A9989230 /* ThirdPartyLibraryManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibraryManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D249B970D66865976C6055 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		E7B5650F19817B8A3983CFB2 /* LoginBinGetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBinGetAPI.swift; sourceTree = "<group>"; };
-		FAAEF2A785FCF5FC54BEDFCC /* NetworkAPILogin-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "NetworkAPILogin-PROD.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +136,10 @@
 		3DADB2046CD935C8A54951DC /* NetworkAPILogin */ = {
 			isa = PBXGroup;
 			children = (
-				520D89D8583BB2E519EEC15D /* NetworkAPILogin-DEV.xcconfig */,
-				FAAEF2A785FCF5FC54BEDFCC /* NetworkAPILogin-PROD.xcconfig */,
-				9BB6B595C9305B5B0ECA63F4 /* NetworkAPILogin-STAGE.xcconfig */,
-				74A95C43FA81F85B9548671A /* NetworkAPILogin-TEST.xcconfig */,
+				4A95F03552A8CAFC9A2C6D05 /* DEV.xcconfig */,
+				85EFAB3725C1C3A05A8D54B9 /* PROD.xcconfig */,
+				4452F5BD17C483EAFFB4A8DA /* STAGE.xcconfig */,
+				27148FC649C308F5A5B2CA84 /* TEST.xcconfig */,
 			);
 			path = NetworkAPILogin;
 			sourceTree = "<group>";
@@ -340,7 +340,7 @@
 /* Begin XCBuildConfiguration section */
 		00EE6931098811BC88441FFD /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BB6B595C9305B5B0ECA63F4 /* NetworkAPILogin-STAGE.xcconfig */;
+			baseConfigurationReference = 4452F5BD17C483EAFFB4A8DA /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -511,7 +511,7 @@
 		};
 		57A38EEFFCD2F68C38DEC71E /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAAEF2A785FCF5FC54BEDFCC /* NetworkAPILogin-PROD.xcconfig */;
+			baseConfigurationReference = 85EFAB3725C1C3A05A8D54B9 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -565,7 +565,7 @@
 		};
 		A4247F25758E1F764E221000 /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74A95C43FA81F85B9548671A /* NetworkAPILogin-TEST.xcconfig */;
+			baseConfigurationReference = 27148FC649C308F5A5B2CA84 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -648,7 +648,7 @@
 		};
 		B480A27728BD8FBDB8AC0641 /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 520D89D8583BB2E519EEC15D /* NetworkAPILogin-DEV.xcconfig */;
+			baseConfigurationReference = 4A95F03552A8CAFC9A2C6D05 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

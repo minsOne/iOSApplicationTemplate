@@ -47,17 +47,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		064E800B0406C1CB674E4A20 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
 		1465AEF585100DDBE37DF57A /* UtilityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F69D5041844B6644191B29D /* UtilityKit-DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UtilityKit-DEV.xcconfig"; sourceTree = "<group>"; };
+		64554BDA0E7C7A0D8404E730 /* TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TEST.xcconfig; sourceTree = "<group>"; };
 		8CE74CFD5F14CEB66E599A6D /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		95E478C1D9CA292E44ECE9DF /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
-		B212100EAE8F29C29B65A1A4 /* UtilityKit-TEST.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UtilityKit-TEST.xcconfig"; sourceTree = "<group>"; };
+		BC6C6342D6EC949A74D32545 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		BEFC68393646630025C22BCC /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		CDF20A16BE7613AB00D5CEBB /* UtilityKit-STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UtilityKit-STAGE.xcconfig"; sourceTree = "<group>"; };
 		D489A8D7E95CCA8C623D743D /* UtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E234B6DEC3F97D2E57706576 /* UtilityKit-PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UtilityKit-PROD.xcconfig"; sourceTree = "<group>"; };
 		E3FDDBF65A582DC7DDEDC0E4 /* UtilityKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = UtilityKit.plist; sourceTree = "<group>"; };
 		E67BC90CB4190D809EF252E6 /* UtilityKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = UtilityKitTests.plist; sourceTree = "<group>"; };
+		EA69D9684C966253D61CF398 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 		4B44DB696B351E17550EED57 /* UtilityKit */ = {
 			isa = PBXGroup;
 			children = (
-				3F69D5041844B6644191B29D /* UtilityKit-DEV.xcconfig */,
-				E234B6DEC3F97D2E57706576 /* UtilityKit-PROD.xcconfig */,
-				CDF20A16BE7613AB00D5CEBB /* UtilityKit-STAGE.xcconfig */,
-				B212100EAE8F29C29B65A1A4 /* UtilityKit-TEST.xcconfig */,
+				BC6C6342D6EC949A74D32545 /* DEV.xcconfig */,
+				EA69D9684C966253D61CF398 /* PROD.xcconfig */,
+				064E800B0406C1CB674E4A20 /* STAGE.xcconfig */,
+				64554BDA0E7C7A0D8404E730 /* TEST.xcconfig */,
 			);
 			path = UtilityKit;
 			sourceTree = "<group>";
@@ -365,7 +365,7 @@
 		};
 		586A42238E355E3AD1A0511D /* DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F69D5041844B6644191B29D /* UtilityKit-DEV.xcconfig */;
+			baseConfigurationReference = BC6C6342D6EC949A74D32545 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -425,7 +425,7 @@
 		};
 		63D040ADD1A8B8CE4F9B959D /* PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E234B6DEC3F97D2E57706576 /* UtilityKit-PROD.xcconfig */;
+			baseConfigurationReference = EA69D9684C966253D61CF398 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -590,7 +590,7 @@
 		};
 		A110F647A2C2BE26A9445151 /* STAGE */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDF20A16BE7613AB00D5CEBB /* UtilityKit-STAGE.xcconfig */;
+			baseConfigurationReference = 064E800B0406C1CB674E4A20 /* STAGE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -683,7 +683,7 @@
 		};
 		E5D06047BCDC413D4DF1AE8E /* TEST */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B212100EAE8F29C29B65A1A4 /* UtilityKit-TEST.xcconfig */;
+			baseConfigurationReference = 64554BDA0E7C7A0D8404E730 /* TEST.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
