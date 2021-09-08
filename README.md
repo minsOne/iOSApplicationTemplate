@@ -19,13 +19,13 @@ Carthage dependencies resolved and fetched successfully.
 Dependencies resolved and fetched successfully.
 ```
 
-3.1. RxBlocking, RxTest를 Test 타겟에서 사용하기 위해 `install_name_tool`을 이용하여 `@rpath/RxSwift.framework/RxSwift`를 `@rpath/ThirdPartyLibraryManager.framework/ThirdPartyLibraryManager`로 교체함.
+**4.**  RxBlocking, RxTest를 Test 타겟에서 사용하기 위해 `install_name_tool`을 이용하여 `@rpath/RxSwift.framework/RxSwift`를 `@rpath/ThirdPartyLibraryManager.framework/ThirdPartyLibraryManager`로 교체함.
 
 ```
 $ sh script/change-rpath-library.sh
 ```
 
-4.`tuist generate`를 실행하여 프로젝트 파일 생성
+**5.**  `tuist generate`를 실행하여 프로젝트 파일 생성
 ```
 $ tuist generate
 ```
