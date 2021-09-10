@@ -10,10 +10,10 @@
 		08C7CFD751877E81FB45ADF5 /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B403F46707FE7893323C2D /* HomeAPI.swift */; };
 		1AACBABB290C906E3535260D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9772769266A861DC0895344 /* Tests.swift */; };
 		210DFAFAA70370F1E12E380C /* HomeBinGetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C964ADCDD41A0199F7C5197 /* HomeBinGetAPI.swift */; };
-		611AB8969D6ECE7C76A77CF9 /* NetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A68252807063473539F3B1A /* NetworkAPIHome.framework */; };
-		763959EAE11DA027C9B4532C /* NetworkAPIKit.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = EBF87FC2B9E72287C56263FF /* NetworkAPIKit.framework */; };
-		982A689DAB94AFE64D6ACDB4 /* NetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF87FC2B9E72287C56263FF /* NetworkAPIKit.framework */; };
-		BCB024943443EA75619AFEF5 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8AA5D625F39952A6BB891E /* ThirdPartyLibraryManager.framework */; };
+		611AB8969D6ECE7C76A77CF9 /* NetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A68252807063473539F3B1A /* NetworkAPIHome.framework */; platformFilter = ios; };
+		763959EAE11DA027C9B4532C /* NetworkAPIKit.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = EBF87FC2B9E72287C56263FF /* NetworkAPIKit.framework */; platformFilter = ios; };
+		982A689DAB94AFE64D6ACDB4 /* NetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF87FC2B9E72287C56263FF /* NetworkAPIKit.framework */; platformFilter = ios; };
+		BCB024943443EA75619AFEF5 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8AA5D625F39952A6BB891E /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

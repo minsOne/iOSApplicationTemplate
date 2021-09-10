@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02DB2944D334D7C26CFF3678 /* SettingsUserInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB97A7C628B76EADB705DDC7 /* SettingsUserInterfaceMapper.swift */; };
 		08698BA56953E1B8CD44D22E /* SettingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C496592F9FCB37AFCBA4A /* SettingsPresentation.swift */; };
-		75C82E090D27D14DF4F57289 /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */; };
-		90B02F8CF978BCD6BFE1E579 /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDFDFBB44AEF60CCF151ACB /* FeatureBaseDependencyDomain.framework */; };
-		94E97F75731EF9AFD2B3A38A /* FeatureSettingsDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD0091D38DC4974675B10C9 /* FeatureSettingsDomain.framework */; };
-		B397B132FE7AB139718D4D76 /* FeatureBaseDependencyDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = AEDFDFBB44AEF60CCF151ACB /* FeatureBaseDependencyDomain.framework */; };
-		C48387ED60EEEBBE1FAD4435 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D6FDAD05A5AEC7B07BF641 /* RxPackage.framework */; };
-		C4A1E33A2E5135B3747077C2 /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D163BF541CD1221311940AB /* FeatureBaseDependencyUserInterface.framework */; };
-		C98BFD05E3F66039F248C989 /* FeatureSettingsUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */; };
-		DF956541ECB888FA45F6F2AC /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1F46E7749549EF18DA534 /* DesignSystem.framework */; };
+		75C82E090D27D14DF4F57289 /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */; platformFilter = ios; };
+		90B02F8CF978BCD6BFE1E579 /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDFDFBB44AEF60CCF151ACB /* FeatureBaseDependencyDomain.framework */; platformFilter = ios; };
+		94E97F75731EF9AFD2B3A38A /* FeatureSettingsDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD0091D38DC4974675B10C9 /* FeatureSettingsDomain.framework */; platformFilter = ios; };
+		B397B132FE7AB139718D4D76 /* FeatureBaseDependencyDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = AEDFDFBB44AEF60CCF151ACB /* FeatureBaseDependencyDomain.framework */; platformFilter = ios; };
+		C48387ED60EEEBBE1FAD4435 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D6FDAD05A5AEC7B07BF641 /* RxPackage.framework */; platformFilter = ios; };
+		C4A1E33A2E5135B3747077C2 /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D163BF541CD1221311940AB /* FeatureBaseDependencyUserInterface.framework */; platformFilter = ios; };
+		C98BFD05E3F66039F248C989 /* FeatureSettingsUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 815D233E582F71E81D4C7018 /* FeatureSettingsUserInterface.framework */; platformFilter = ios; };
+		DF956541ECB888FA45F6F2AC /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1F46E7749549EF18DA534 /* DesignSystem.framework */; platformFilter = ios; };
 		E061EF889203D3BE47F061F5 /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34109611FD51A54CA55A4928 /* SettingsBuilder.swift */; };
 		E17069C6AE925735020B1AB7 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29913189476144AD24CD556 /* Tests.swift */; };
-		E431D78226E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431D78126E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift */; };
 		E6709978623DD513898D6EFC /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B010524A800BC7F3CEBE69 /* SettingsInteractor.swift */; };
 		E911E93B6E924CA283D71277 /* SettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EB7A0DEFD6D460A513726 /* SettingsUseCase.swift */; };
-		EAF79C36CB0ED23EC2D781AF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A3D08B6350984BFE8203D8 /* ThirdPartyLibraryManager.framework */; };
+		EAF79C36CB0ED23EC2D781AF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A3D08B6350984BFE8203D8 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		F467490F869960E171B62869 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F0361C9391CD2AE6A1B01 /* SettingsRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,11 +85,11 @@
 		92D6FDAD05A5AEC7B07BF641 /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A071E7CA8EAD0B45BCCA568E /* FeatureSettingsDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureSettingsDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AB7362E2D57748301B592A /* FeatureSettingsDomain.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = FeatureSettingsDomain.plist; sourceTree = "<group>"; };
+		AB97A7C628B76EADB705DDC7 /* SettingsUserInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserInterfaceMapper.swift; sourceTree = "<group>"; };
 		ABD0091D38DC4974675B10C9 /* FeatureSettingsDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureSettingsDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDFDFBB44AEF60CCF151ACB /* FeatureBaseDependencyDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29913189476144AD24CD556 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D5B010524A800BC7F3CEBE69 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
-		E431D78126E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserInterfaceMapper.swift; sourceTree = "<group>"; };
 		E7A1F46E7749549EF18DA534 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -202,7 +202,7 @@
 				859C496592F9FCB37AFCBA4A /* SettingsPresentation.swift */,
 				4F5F0361C9391CD2AE6A1B01 /* SettingsRouter.swift */,
 				411EB7A0DEFD6D460A513726 /* SettingsUseCase.swift */,
-				E431D78126E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift */,
+				AB97A7C628B76EADB705DDC7 /* SettingsUserInterfaceMapper.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -347,8 +347,8 @@
 				E6709978623DD513898D6EFC /* SettingsInteractor.swift in Sources */,
 				08698BA56953E1B8CD44D22E /* SettingsPresentation.swift in Sources */,
 				F467490F869960E171B62869 /* SettingsRouter.swift in Sources */,
-				E431D78226E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift in Sources */,
 				E911E93B6E924CA283D71277 /* SettingsUseCase.swift in Sources */,
+				02DB2944D334D7C26CFF3678 /* SettingsUserInterfaceMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

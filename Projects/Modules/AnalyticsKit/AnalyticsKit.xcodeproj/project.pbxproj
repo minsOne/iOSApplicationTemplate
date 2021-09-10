@@ -10,12 +10,12 @@
 		0E3F0A9A989CD5D78869DBE0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271AE0EEFB7BCEEAA629022A /* Tests.swift */; };
 		11F818F200D335FD2EFF786D /* CrashlyticsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4775FF9F41D2B4CEC1428FB4 /* CrashlyticsKit.swift */; };
 		24A12946AFD633E0CDAE1BE2 /* AppLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66AC9036537A88EA98E82D /* AppLogEvent.swift */; };
-		2A154DE21FAC4ED10F26DD92 /* AnalyticsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F973C73FDE2B2507500224F /* AnalyticsKit.framework */; };
-		4D119B23A2DD4940174CD1DF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C9878357E03B84FD180D2A /* ThirdPartyLibraryManager.framework */; };
+		2A154DE21FAC4ED10F26DD92 /* AnalyticsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F973C73FDE2B2507500224F /* AnalyticsKit.framework */; platformFilter = ios; };
+		4D119B23A2DD4940174CD1DF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C9878357E03B84FD180D2A /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		522CE99E6CADC77851316E3D /* AnalyticsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBA881462DDDAB0A185BCC /* AnalyticsKit.swift */; };
 		54345DFF06B8FA6CE6EDDCD0 /* FirebaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56956B025CB30B5998882B /* FirebaseKit.swift */; };
 		9E05EA176347B0E404D5CE8C /* FirebaseKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008244F64D31E111198F2DCA /* FirebaseKitExtension.swift */; };
-		B09CF4B301D1C5F5D8D81570 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C9878357E03B84FD180D2A /* ThirdPartyLibraryManager.framework */; };
+		B09CF4B301D1C5F5D8D81570 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C9878357E03B84FD180D2A /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

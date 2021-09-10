@@ -36,9 +36,6 @@
                location = "group:Domain/FeatureLoanDomain.xcodeproj">
             </FileRef>
             <FileRef
-               location = "group:Package/FeatureLoanPackage.xcodeproj">
-            </FileRef>
-            <FileRef
                location = "group:UserInterface/FeatureLoanUserInterface.xcodeproj">
             </FileRef>
          </Group>
@@ -52,9 +49,6 @@
                location = "group:Domain/FeatureMainDomain.xcodeproj">
             </FileRef>
             <FileRef
-               location = "group:Package/FeatureMainPackage.xcodeproj">
-            </FileRef>
-            <FileRef
                location = "group:UserInterface/FeatureMainUserInterface.xcodeproj">
             </FileRef>
          </Group>
@@ -66,9 +60,6 @@
             </FileRef>
             <FileRef
                location = "group:Domain/FeatureSettingsDomain.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:Package/FeatureSettingsPackage.xcodeproj">
             </FileRef>
             <FileRef
                location = "group:UserInterface/FeatureSettingsUserInterface.xcodeproj">

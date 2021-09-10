@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		127D111BC83A7E00BFFF6078 /* NetworkAPICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178192115FDD14E7A2A65A02 /* NetworkAPICommon.framework */; };
-		4B952DB2439247141E5D8EDA /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538E48FEB2BAC5E51C3E8AF2 /* ThirdPartyLibraryManager.framework */; };
+		127D111BC83A7E00BFFF6078 /* NetworkAPICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178192115FDD14E7A2A65A02 /* NetworkAPICommon.framework */; platformFilter = ios; };
+		4B952DB2439247141E5D8EDA /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538E48FEB2BAC5E51C3E8AF2 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		50D46AC6F474C04333C78A90 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235794DBC7F2472DD82B420A /* APIs.swift */; };
 		825604955D378228646DD570 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E461CC5EAF4746F4377DE /* Tests.swift */; };
-		82B847491D974603D13D8BC0 /* NetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D90DF0F8CF12A6CA3EF8F3 /* NetworkAPIKit.framework */; };
-		875DAB3F1C43FC7D605CD93B /* NetworkAPICommon.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 178192115FDD14E7A2A65A02 /* NetworkAPICommon.framework */; };
-		8B235960BDB5EA89BC229A1A /* NetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA20666792B87D06AC29865 /* NetworkAPIs.framework */; };
-		AFACBBBFA89087C93EA72B9E /* NetworkAPIHome.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = C62C43F5F29851759510FC2C /* NetworkAPIHome.framework */; };
-		DFE6AC6A53D67167318526F5 /* NetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C43F5F29851759510FC2C /* NetworkAPIHome.framework */; };
-		EC1E5134BB039F09BF5FAF1A /* NetworkAPILogin.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 73D887F66A6D986D69B8C60C /* NetworkAPILogin.framework */; };
-		FB2B44DE0F7D9D768C8E2671 /* NetworkAPILogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D887F66A6D986D69B8C60C /* NetworkAPILogin.framework */; };
+		82B847491D974603D13D8BC0 /* NetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D90DF0F8CF12A6CA3EF8F3 /* NetworkAPIKit.framework */; platformFilter = ios; };
+		875DAB3F1C43FC7D605CD93B /* NetworkAPICommon.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 178192115FDD14E7A2A65A02 /* NetworkAPICommon.framework */; platformFilter = ios; };
+		8B235960BDB5EA89BC229A1A /* NetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA20666792B87D06AC29865 /* NetworkAPIs.framework */; platformFilter = ios; };
+		AFACBBBFA89087C93EA72B9E /* NetworkAPIHome.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = C62C43F5F29851759510FC2C /* NetworkAPIHome.framework */; platformFilter = ios; };
+		DFE6AC6A53D67167318526F5 /* NetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62C43F5F29851759510FC2C /* NetworkAPIHome.framework */; platformFilter = ios; };
+		EC1E5134BB039F09BF5FAF1A /* NetworkAPILogin.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 73D887F66A6D986D69B8C60C /* NetworkAPILogin.framework */; platformFilter = ios; };
+		FB2B44DE0F7D9D768C8E2671 /* NetworkAPILogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D887F66A6D986D69B8C60C /* NetworkAPILogin.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

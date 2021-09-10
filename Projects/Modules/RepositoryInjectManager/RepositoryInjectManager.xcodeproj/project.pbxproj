@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1C5155DB97579A1E6957DDE3 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B7B0E83B8C45ECB6DC3242 /* Tests.swift */; };
-		3C50F782B80A4C363208AB1A /* Features.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0430CE3B860F8EEB3DBC31 /* Features.framework */; };
+		3C50F782B80A4C363208AB1A /* Features.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0430CE3B860F8EEB3DBC31 /* Features.framework */; platformFilter = ios; };
 		638A8BDBBBFFC473CC9A9968 /* InjectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07247380C97216606FE67E13 /* InjectionManager.swift */; };
-		80B8D2D3679AA42C70910E61 /* Features.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0430CE3B860F8EEB3DBC31 /* Features.framework */; };
-		80C13F38D70DC722A70B4C9F /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7334DE1B611BB89153A5821E /* CoreKit.framework */; };
-		A0C724E595A7A8CDAB3C6212 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7334DE1B611BB89153A5821E /* CoreKit.framework */; };
+		80B8D2D3679AA42C70910E61 /* Features.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0430CE3B860F8EEB3DBC31 /* Features.framework */; platformFilter = ios; };
+		80C13F38D70DC722A70B4C9F /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7334DE1B611BB89153A5821E /* CoreKit.framework */; platformFilter = ios; };
+		A0C724E595A7A8CDAB3C6212 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7334DE1B611BB89153A5821E /* CoreKit.framework */; platformFilter = ios; };
 		CE5932206705837D7774EC17 /* RepositoryInjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E46AE4AA1E096B57EF979 /* RepositoryInjectManager.swift */; };
-		D38B23144BEBB0CFB29F046A /* RepositoryInjectManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7579CBD5731F59899F023CF3 /* RepositoryInjectManager.framework */; };
+		D38B23144BEBB0CFB29F046A /* RepositoryInjectManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7579CBD5731F59899F023CF3 /* RepositoryInjectManager.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

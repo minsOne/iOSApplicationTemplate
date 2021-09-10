@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		035C087E2A0F922D1EE2B423 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */; };
-		09C2B62F05F2417EEF5C74FB /* FeatureLoanUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */; };
+		035C087E2A0F922D1EE2B423 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494C8A58B1BFA7868C67DFD1 /* RxPackage.framework */; platformFilter = ios; };
+		09C2B62F05F2417EEF5C74FB /* FeatureLoanUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AEF6BD7333D19E30969562 /* FeatureLoanUserInterface.framework */; platformFilter = ios; };
 		2A079ACD7998BF6125676658 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BDE3845451C41E2E4061B /* Tests.swift */; };
-		36DAF0847F7C210E24B2E0E6 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB98269E786BA60A06E5955B /* CoreKit.framework */; };
-		4D15A783D7050D9C92D961D9 /* FeatureLoanDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; };
-		5648B9C37EC91DBBD9ABCCCE /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74F859A5EF9EE435063AC4E /* FeatureBaseDependencyDomain.framework */; };
-		5E966936E2AFF1C0475DABCC /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */; };
-		674C940D74ACE590CDA49361 /* FeatureBaseDependencyDataRepository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */; };
-		778BD163C12106CD079A11EF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */; };
-		8E15836A450EF846C2D01C3D /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883FDC2EF7603796291B90E6 /* FeatureBaseDependencyUserInterface.framework */; };
-		C2A1894CD97117EE6BEA66ED /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4343E8E7D58226AA476FBA /* DesignSystem.framework */; };
+		36DAF0847F7C210E24B2E0E6 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB98269E786BA60A06E5955B /* CoreKit.framework */; platformFilter = ios; };
+		4D15A783D7050D9C92D961D9 /* FeatureLoanDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; platformFilter = ios; };
+		5648B9C37EC91DBBD9ABCCCE /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74F859A5EF9EE435063AC4E /* FeatureBaseDependencyDomain.framework */; platformFilter = ios; };
+		5E966936E2AFF1C0475DABCC /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */; platformFilter = ios; };
+		674C940D74ACE590CDA49361 /* FeatureBaseDependencyDataRepository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 5A33DB4C2B4DC4584FE69571 /* FeatureBaseDependencyDataRepository.framework */; platformFilter = ios; };
+		778BD163C12106CD079A11EF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C56C4F017C4DA5D66302B5 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
+		8E15836A450EF846C2D01C3D /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883FDC2EF7603796291B90E6 /* FeatureBaseDependencyUserInterface.framework */; platformFilter = ios; };
+		C2A1894CD97117EE6BEA66ED /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4343E8E7D58226AA476FBA /* DesignSystem.framework */; platformFilter = ios; };
 		D21DFE74DE0F68D3EB05DACC /* FeatureLoanDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C335967265EEC19216C987 /* FeatureLoanDataRepository.swift */; };
-		D8F869E92C4FD526E5F28A6B /* FeatureLoanDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; };
-		F5E5284109FF86D8921C33ED /* FeatureLoanDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */; };
+		D8F869E92C4FD526E5F28A6B /* FeatureLoanDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 2A1F6B228859FA8F2D4F922E /* FeatureLoanDomain.framework */; platformFilter = ios; };
+		F5E5284109FF86D8921C33ED /* FeatureLoanDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606E6A9EC4CF6B3D9DDFC9A /* FeatureLoanDataRepository.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

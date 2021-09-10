@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A604EDADF3985033C1A68EE /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8F7F927C93F58C01F8E96E /* ThirdPartyLibraryManager.framework */; };
-		9F7844B12C77613E379DEC6A /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8F7F927C93F58C01F8E96E /* ThirdPartyLibraryManager.framework */; };
+		6A604EDADF3985033C1A68EE /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8F7F927C93F58C01F8E96E /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
+		9F7844B12C77613E379DEC6A /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8F7F927C93F58C01F8E96E /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		AAD0D98A75C378B63BCDCA36 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C0FCE1E79521BC32CC144 /* Tests.swift */; };
-		D312042E1D001FECD8F4CD35 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C565F5CA4BF8BF576A4A8451 /* RxPackage.framework */; };
-		F60122E75889BD943CD8DB01 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C565F5CA4BF8BF576A4A8451 /* RxPackage.framework */; };
-		FF22FBF18B190C99BB1FC9F2 /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEA9278595DF648F292318 /* FeatureBaseDependencyDomain.framework */; };
+		D312042E1D001FECD8F4CD35 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C565F5CA4BF8BF576A4A8451 /* RxPackage.framework */; platformFilter = ios; };
+		F60122E75889BD943CD8DB01 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C565F5CA4BF8BF576A4A8451 /* RxPackage.framework */; platformFilter = ios; };
+		FF22FBF18B190C99BB1FC9F2 /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEA9278595DF648F292318 /* FeatureBaseDependencyDomain.framework */; platformFilter = ios; };
 		FFA39BE1F09EB0D49C219A75 /* FeatureDomainComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF139C1CC0576386A5F7D3DE /* FeatureDomainComponent.swift */; };
 /* End PBXBuildFile section */
 

@@ -1,5 +1,6 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
+import UtilityPlugin
 
 let project = Project
     .framework(name: "ThirdPartyLibraryManager",
@@ -9,7 +10,7 @@ let project = Project
                 .InjectPropertyWrapper
                ],
                dependencies: [
-                TargetDependency.Framework.Firebase,
+                Dep.Framework.Firebase,
                 [.SwiftPM.Alamofire, 
                  .SwiftPM.Swinject,
                  .SwiftPM.InjectPropertyWrapper],

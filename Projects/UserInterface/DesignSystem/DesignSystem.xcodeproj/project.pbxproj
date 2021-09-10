@@ -10,7 +10,7 @@
 		1562904E6590014D6517829C /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D75211458EA41C21314B5C16 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C4998FF9804A67A2D088B2E /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106CB85696261220EA5496A /* UIViewControllerPreview.swift */; };
 		2973226F6DDB4FEBE9030C0F /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6E90502FF45860CA1A15C /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FB0792F5F8CA00C2A0477F7 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A827CEA5D2DC1F837174936 /* FlexLayoutDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2DC5EDDCC412C97B1E2AE0 /* FlexLayoutDesignSystem.swift */; };
 		429D6E5954343C7B5F35C754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F96042A1DE7785CB726321 /* AppDelegate.swift */; };
 		4FDAEB3E8DFB40DD8EF528ED /* LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442197F1941BB7EE04786DC /* LineHeight.swift */; };
@@ -18,7 +18,7 @@
 		7989E3116CC74680ED51DFF3 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 261206F17E5AE797A21EEE7B /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85D34FD37B46CE224B959A47 /* ResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = C31923F97DA9E79BC5406BA0 /* ResourcePackage */; };
 		85DFC2E53460A6893D0A806A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688D1B5D91F95C22509ACD1 /* Tests.swift */; };
-		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
+		9947E09E43F3C18E72E57A48 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; platformFilter = ios; };
 		A7A1AA7509C685001939FBBC /* ScenePreview1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703656026E8CF282104CCF97 /* ScenePreview1.swift */; };
 		AE69581DD2DD7F66FADBCFF8 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AB4DF3C160EA7D90B47E5 /* SafeArea.swift */; };
 		B7A812085A359E21A2E8B9D4 /* BothSideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395BE53DE391E0EBB0AB167 /* BothSideText.swift */; };

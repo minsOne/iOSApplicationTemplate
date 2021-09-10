@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C35B6AC45814F6CECE16B0 /* DevelopTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E215AE3981A30F88FE109A5 /* DevelopTool.framework */; };
+		01C35B6AC45814F6CECE16B0 /* DevelopTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E215AE3981A30F88FE109A5 /* DevelopTool.framework */; platformFilter = ios; };
 		4FE5D5A599013DAE2C3E9CA8 /* ProxyNetworkStubPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB2B99AB386E8349B9DB0FD /* ProxyNetworkStubPackage */; };
 		A2B68E9E777CF4BC72B00B71 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71AE0CC6214FB38AAA566D /* Tests.swift */; };
 		A73B44F36439B2095C1A722A /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3FFC9B47CFBA08A77224D1 /* FLEX.xcframework */; };

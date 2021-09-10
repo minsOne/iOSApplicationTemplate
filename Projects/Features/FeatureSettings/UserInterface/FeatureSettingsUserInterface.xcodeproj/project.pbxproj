@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		27AB8ED733C31E4E308296B9 /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0094A55734138B712B9C3621 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		29870E7631E5CF80F2487FC7 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4403E2A63E9FB8528ED17C9B /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD6CEB019ADCBBB4C5E4D /* FeatureSettingsUserInterface.framework */; };
-		6271623389B67F450BD0AABC /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA347B0E5FDB3079F0605BB /* FeatureBaseDependencyUserInterface.framework */; };
-		711FB8D98E458C11097F4C51 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; };
+		29870E7631E5CF80F2487FC7 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4403E2A63E9FB8528ED17C9B /* FeatureSettingsUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729CD6CEB019ADCBBB4C5E4D /* FeatureSettingsUserInterface.framework */; platformFilter = ios; };
+		6271623389B67F450BD0AABC /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA347B0E5FDB3079F0605BB /* FeatureBaseDependencyUserInterface.framework */; platformFilter = ios; };
+		711FB8D98E458C11097F4C51 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E35CACB269EF2C7C67FB /* RxPackage.framework */; platformFilter = ios; };
 		7C521966B0EDAC337014D23B /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 433EC8EBF4476BF8D2E464E6 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA556ACFC2D26A00ECDBE51A /* SetttingsViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50182759BCB42EDA722E463 /* SetttingsViewControllerPreview.swift */; };
 		AC2EB537E11E22811D9C05E6 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B35849B89EF2C84A2D6CB6E5 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEDEB2F566EE5C06DE67BFCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975A5DA307B0E7C884AAE53 /* AppDelegate.swift */; };
 		C6C1B836700F92FC5D3FB42E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96F8F694D8CE17B018BF89 /* SettingsViewController.swift */; };
-		CB24971C9167B37F41D1ECE7 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; };
-		CBFE5A66DE72D7FFB303DE03 /* FeatureBaseDependencyUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 2DA347B0E5FDB3079F0605BB /* FeatureBaseDependencyUserInterface.framework */; };
-		D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB24971C9167B37F41D1ECE7 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; platformFilter = ios; };
+		CBFE5A66DE72D7FFB303DE03 /* FeatureBaseDependencyUserInterface.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 2DA347B0E5FDB3079F0605BB /* FeatureBaseDependencyUserInterface.framework */; platformFilter = ios; };
+		D1B16284ABE6FA0598E2E9D8 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3AAAF3B640D8E0103CA45 /* DesignSystem.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D23AD19A23941191E565846E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD77CCE6CDA91B8AA331BE3 /* Tests.swift */; };
 		ED71BCAA38E6AC0DE8211C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D80C906FDAFCF8B1503C8B /* LaunchScreen.storyboard */; };
 		F0F3C63177958B9017CFB393 /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD070BCDA94502D7A423AC0A /* Bundle+FeatureSettingsUserInterfaceDemoApp.swift */; };

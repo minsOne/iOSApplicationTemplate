@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B691CA07E9B995C58657A3 /* FeatureMainDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFBCECFEAF0EBCBC1D01E02 /* FeatureMainDataRepository.framework */; };
+		00B691CA07E9B995C58657A3 /* FeatureMainDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFBCECFEAF0EBCBC1D01E02 /* FeatureMainDataRepository.framework */; platformFilter = ios; };
 		135889B7AD7461C7EB8BDAD1 /* FeatureMainDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD065A5D29DEB6217467695 /* FeatureMainDataRepository.swift */; };
-		158CE00A7C427EC6B1B271AA /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA83DC39E5D6BAF6D5B82DB /* FeatureBaseDependencyDataRepository.framework */; };
-		376E8C5EA122AF1100C4C560 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168BE5362A768E22320D9BB0 /* RxPackage.framework */; };
+		158CE00A7C427EC6B1B271AA /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA83DC39E5D6BAF6D5B82DB /* FeatureBaseDependencyDataRepository.framework */; platformFilter = ios; };
+		376E8C5EA122AF1100C4C560 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168BE5362A768E22320D9BB0 /* RxPackage.framework */; platformFilter = ios; };
 		39A2FE762321FDB06F8D48FE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73C3AD540C4A06CC0E6059 /* Tests.swift */; };
-		6018295D75C0CF046E0FE042 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE34B98288EBC7BC11B6B20 /* ThirdPartyLibraryManager.framework */; };
-		6C9E11946589396C86CB70BE /* FeatureBaseDependencyDataRepository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 1DA83DC39E5D6BAF6D5B82DB /* FeatureBaseDependencyDataRepository.framework */; };
-		7AB5197BD3AA5146D4CCEE38 /* FeatureMainDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0267C31C62058CCE8C9F36 /* FeatureMainDomain.framework */; };
-		8E5AA7623BF345B108F7D614 /* FeatureMainDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3F0267C31C62058CCE8C9F36 /* FeatureMainDomain.framework */; };
-		A0DFE60C4143C5263072D9B2 /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041ED3E44FD3E848E219530 /* FeatureBaseDependencyDomain.framework */; };
-		A33EE206F963AA5E14F6F4A2 /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0D1602F6E7EE29D417986 /* FeatureBaseDependencyUserInterface.framework */; };
-		A77CCD529F2F16C72C559732 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD80F9F6F8814E2A4D547E3 /* CoreKit.framework */; };
-		C2BDDD273A9B917404966A70 /* FeatureMainUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F9A6F1ED905A6663287021 /* FeatureMainUserInterface.framework */; };
-		FC9AF620880DDFD391CB9819 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADB7A6AE3A31CD8403374E3 /* DesignSystem.framework */; };
+		6018295D75C0CF046E0FE042 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE34B98288EBC7BC11B6B20 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
+		6C9E11946589396C86CB70BE /* FeatureBaseDependencyDataRepository.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 1DA83DC39E5D6BAF6D5B82DB /* FeatureBaseDependencyDataRepository.framework */; platformFilter = ios; };
+		7AB5197BD3AA5146D4CCEE38 /* FeatureMainDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0267C31C62058CCE8C9F36 /* FeatureMainDomain.framework */; platformFilter = ios; };
+		8E5AA7623BF345B108F7D614 /* FeatureMainDomain.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 3F0267C31C62058CCE8C9F36 /* FeatureMainDomain.framework */; platformFilter = ios; };
+		A0DFE60C4143C5263072D9B2 /* FeatureBaseDependencyDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041ED3E44FD3E848E219530 /* FeatureBaseDependencyDomain.framework */; platformFilter = ios; };
+		A33EE206F963AA5E14F6F4A2 /* FeatureBaseDependencyUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0D1602F6E7EE29D417986 /* FeatureBaseDependencyUserInterface.framework */; platformFilter = ios; };
+		A77CCD529F2F16C72C559732 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD80F9F6F8814E2A4D547E3 /* CoreKit.framework */; platformFilter = ios; };
+		C2BDDD273A9B917404966A70 /* FeatureMainUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F9A6F1ED905A6663287021 /* FeatureMainUserInterface.framework */; platformFilter = ios; };
+		FC9AF620880DDFD391CB9819 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADB7A6AE3A31CD8403374E3 /* DesignSystem.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

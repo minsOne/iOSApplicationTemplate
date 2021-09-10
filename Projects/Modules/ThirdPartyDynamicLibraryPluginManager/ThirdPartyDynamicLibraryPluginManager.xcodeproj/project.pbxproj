@@ -11,13 +11,13 @@
 		3BB5AF665CAA1FA799FE827B /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6142B0B4D5F2CAAEDD18F20B /* FBSDKLoginKit.xcframework */; };
 		4D96F5E30282507E514C8436 /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39868601ED320AA6F57AAACA /* FBSDKGamingServicesKit.xcframework */; };
 		51477B83DEF14F8856385F3F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A525F81D1407C296B9E754F /* Tests.swift */; };
-		5860F328158F0A3C2ECA0312 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCF861A4771FFD2463762E8 /* ThirdPartyLibraryManager.framework */; };
+		5860F328158F0A3C2ECA0312 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCF861A4771FFD2463762E8 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		62579F597B428F6DDB042617 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7809372146C0C2AB2CF986FA /* FBSDKCoreKit.xcframework */; };
 		66F00048200555FE994F98D9 /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF9391A1C92B05C994894A /* FBSDKShareKit.xcframework */; };
 		6D87D74DB05F8C727845AFC2 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE696E5EEB1C7B82AB9904E8 /* FBSDKCoreKit_Basics.xcframework */; };
-		6FA7945AC9B89B30605E9B38 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCF861A4771FFD2463762E8 /* ThirdPartyLibraryManager.framework */; };
+		6FA7945AC9B89B30605E9B38 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCF861A4771FFD2463762E8 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		7C8CC24D27F9286FB581EA77 /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6142B0B4D5F2CAAEDD18F20B /* FBSDKLoginKit.xcframework */; };
-		80D6977708F019703B34FF48 /* ThirdPartyDynamicLibraryPluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F897215E7105E8BCC0C5FC /* ThirdPartyDynamicLibraryPluginManager.framework */; };
+		80D6977708F019703B34FF48 /* ThirdPartyDynamicLibraryPluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F897215E7105E8BCC0C5FC /* ThirdPartyDynamicLibraryPluginManager.framework */; platformFilter = ios; };
 		8626DA0CBE569BC6B7A541CA /* FBSDKShareKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF9391A1C92B05C994894A /* FBSDKShareKit.xcframework */; };
 		9BDA93EE39D44FFB84EEB789 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7809372146C0C2AB2CF986FA /* FBSDKCoreKit.xcframework */; };
 		CEB3A455417365E5DFFED18E /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39868601ED320AA6F57AAACA /* FBSDKGamingServicesKit.xcframework */; };

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20A02D5958092CD80381A191 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA73857E03064A9A1AA6DD /* RxPackage.framework */; };
-		2A1FC2D70A3689EEAECC3FD4 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BDB3287447B1BA3283F992 /* CoreKit.framework */; };
-		B2184F961FC3EA83C7AB8261 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BDB3287447B1BA3283F992 /* CoreKit.framework */; };
+		20A02D5958092CD80381A191 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA73857E03064A9A1AA6DD /* RxPackage.framework */; platformFilter = ios; };
+		2A1FC2D70A3689EEAECC3FD4 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BDB3287447B1BA3283F992 /* CoreKit.framework */; platformFilter = ios; };
+		B2184F961FC3EA83C7AB8261 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BDB3287447B1BA3283F992 /* CoreKit.framework */; platformFilter = ios; };
 		BCF23D262892EE3BD5A7532E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4CE565EBDA3B321E72CC2 /* Tests.swift */; };
-		D2E7AD148B6A9305AAED68B9 /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FC7A1B3CEEBF94B5A38A1B /* FeatureBaseDependencyDataRepository.framework */; };
+		D2E7AD148B6A9305AAED68B9 /* FeatureBaseDependencyDataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FC7A1B3CEEBF94B5A38A1B /* FeatureBaseDependencyDataRepository.framework */; platformFilter = ios; };
 		D4C66461951447854FC46206 /* FeatureDataRepositoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D99EE248AC7CA73A4B77F /* FeatureDataRepositoryComponent.swift */; };
-		EEC68336C8E8D41E1B3F99C6 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA73857E03064A9A1AA6DD /* RxPackage.framework */; };
+		EEC68336C8E8D41E1B3F99C6 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA73857E03064A9A1AA6DD /* RxPackage.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

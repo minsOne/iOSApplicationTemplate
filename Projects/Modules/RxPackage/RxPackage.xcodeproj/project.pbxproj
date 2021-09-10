@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07415B8479AA7F9D046A5B4A /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2F6785770FF6E2EDF28A6E2 /* ReactorKit */; };
-		1D2915397A7BFD0D8137B1C3 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */; };
+		1D2915397A7BFD0D8137B1C3 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */; platformFilter = ios; };
 		35978D7708C7C6AD18E192A9 /* NavigationControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69199DF005D4715F9E666355 /* NavigationControllable.swift */; };
 		4660779AE8C53284FCE63E52 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = EC3DD39FE881505BC86D7820 /* RIBs */; };
 		495598CF2E94A67BA35986CD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7955A077219E03067897EAEB /* RxSwift */; };

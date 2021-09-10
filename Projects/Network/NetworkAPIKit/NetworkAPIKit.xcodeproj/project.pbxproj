@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2163D055B4688D93F44A2786 /* NetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD3B3D4994ECB44CEB8DA5C /* NetworkAPIKit.framework */; };
-		27E23CC5D827C5AD142EF62E /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B464183F16FCB050A18C850 /* ThirdPartyLibraryManager.framework */; };
+		2163D055B4688D93F44A2786 /* NetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD3B3D4994ECB44CEB8DA5C /* NetworkAPIKit.framework */; platformFilter = ios; };
+		27E23CC5D827C5AD142EF62E /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B464183F16FCB050A18C850 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		42C426D9754DE249393B3EAA /* EmptyBodyParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ED1F0AE898AD510EC3E3EC /* EmptyBodyParameter.swift */; };
 		5CACDDA22901B54EBCED2399 /* URLEncodedSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10362C934A9FD786F946FE99 /* URLEncodedSerialization.swift */; };
 		983720B7C994FD08E9803DF5 /* APIRequestDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85134B449460AB3609F58D24 /* APIRequestDefinition.swift */; };
-		9AF354ED6E4A577E2D789B87 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B464183F16FCB050A18C850 /* ThirdPartyLibraryManager.framework */; };
+		9AF354ED6E4A577E2D789B87 /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B464183F16FCB050A18C850 /* ThirdPartyLibraryManager.framework */; platformFilter = ios; };
 		A57E55DAD39651BF16D56EC6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22D31C7CCE7A9A9085822B /* HTTPMethod.swift */; };
 		E2BF807195A7356F4ED9A759 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B442EED51CEE3E357C38F /* Tests.swift */; };
 		F37F85C2626D1C490C23B7E7 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA943450F696298039CFF5 /* Exported.swift */; };
