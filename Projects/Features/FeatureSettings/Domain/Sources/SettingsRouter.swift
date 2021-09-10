@@ -18,6 +18,10 @@ public protocol SettingsViewControllable: ViewControllable {}
 final class SettingsRouter:
     ViewableRouter<SettingsInteractable, SettingsViewControllable>,
     SettingsRouting {
+    func routeToApplyCard() {
+        
+    }
+
     override init(interactor: SettingsInteractable,
                   viewController: SettingsViewControllable) {
         super.init(interactor: interactor, viewController: viewController)

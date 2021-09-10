@@ -26,12 +26,23 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         
         view.backgroundColor = .white
         
-        let button = UIButton()
-        button.backgroundColor = .red
-        button.frame = .init(x: 50, y: 100, width: 200, height: 200)
-        view.addSubview(button)
+        let button1 = UIButton()
+        button1.frame = .init(x: 50, y: 100, width: 200, height: 100)
+        button1.backgroundColor = .systemGray
+        button1.layer.borderWidth = 1.0
+        button1.layer.borderColor = UIColor.red.cgColor
+        button1.setTitle("완료화면1 띄우기", for: .normal)
+        view.addSubview(button1)
 
-        button.rx.tap
+        let button2 = UIButton()
+        button2.frame = .init(x: 50, y: 250, width: 200, height: 100)
+        button2.backgroundColor = .systemGray
+        button2.layer.borderWidth = 1.0
+        button2.layer.borderColor = UIColor.green.cgColor
+        button2.setTitle("완료화면2 띄우기", for: .normal)
+        view.addSubview(button2)
+
+        button1.rx.tap
             .bind(onNext: { [weak self] in
                 self?.listener?.requestSettings()
             })

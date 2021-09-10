@@ -22,16 +22,27 @@ public extension UIView.FlexLayoutDesignSystem {
         return view
     }
 
-    static func bothSideLabel(title: String, info: String) -> UIView {
-        let container = UIView()
-        let label1 = UILabel()
-        let label2 = UILabel()
-        label1.text = title
-        label2.text = info
-        label2.textAlignment = .right
+    static func bothSideLabel(title: String, info: String) -> BothSideLabelView {
+        return BothSideLabelView(title: title, info: info)
+    }
+}
+
+public class BothSideLabelView {
+    private let leftLabel = UILabel()
+    private let rightLabel = UILabel()
+
+    public var container = UIView()
+
+    init(title: String, info: String) {
+        leftLabel.text = title
+        rightLabel.text = info
+        rightLabel.textAlignment = .right
         container.flex.direction(.row).alignContent(.spaceBetween)
-        container.flex.addItem(label1)
-        container.flex.addItem(label2).grow(1)
-        return container
+        container.flex.addItem(leftLabel)
+        container.flex.addItem(rightLabel).grow(1)
+    }
+
+    public func update(info: String) {
+        rightLabel.text = info
     }
 }

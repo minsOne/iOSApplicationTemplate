@@ -18,6 +18,7 @@
 		DF956541ECB888FA45F6F2AC /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1F46E7749549EF18DA534 /* DesignSystem.framework */; };
 		E061EF889203D3BE47F061F5 /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34109611FD51A54CA55A4928 /* SettingsBuilder.swift */; };
 		E17069C6AE925735020B1AB7 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29913189476144AD24CD556 /* Tests.swift */; };
+		E431D78226E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431D78126E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift */; };
 		E6709978623DD513898D6EFC /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B010524A800BC7F3CEBE69 /* SettingsInteractor.swift */; };
 		E911E93B6E924CA283D71277 /* SettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EB7A0DEFD6D460A513726 /* SettingsUseCase.swift */; };
 		EAF79C36CB0ED23EC2D781AF /* ThirdPartyLibraryManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A3D08B6350984BFE8203D8 /* ThirdPartyLibraryManager.framework */; };
@@ -88,6 +89,7 @@
 		AEDFDFBB44AEF60CCF151ACB /* FeatureBaseDependencyDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureBaseDependencyDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29913189476144AD24CD556 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D5B010524A800BC7F3CEBE69 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		E431D78126E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUserInterfaceMapper.swift; sourceTree = "<group>"; };
 		E7A1F46E7749549EF18DA534 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,6 +202,7 @@
 				859C496592F9FCB37AFCBA4A /* SettingsPresentation.swift */,
 				4F5F0361C9391CD2AE6A1B01 /* SettingsRouter.swift */,
 				411EB7A0DEFD6D460A513726 /* SettingsUseCase.swift */,
+				E431D78126E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				E6709978623DD513898D6EFC /* SettingsInteractor.swift in Sources */,
 				08698BA56953E1B8CD44D22E /* SettingsPresentation.swift in Sources */,
 				F467490F869960E171B62869 /* SettingsRouter.swift in Sources */,
+				E431D78226E9DD0F006995C1 /* SettingsUserInterfaceMapper.swift in Sources */,
 				E911E93B6E924CA283D71277 /* SettingsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

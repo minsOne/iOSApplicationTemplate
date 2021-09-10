@@ -35,12 +35,24 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     
     func routeToSettings() {
         guard settingsRouter == nil else { return }
+
         let router = settingsBuilder.build(withListener: interactor)
         settingsRouter = router
         attachChild(router)
-        
+        let vc = router.viewControllable.uiviewController
+        vc.modalPresentationStyle = .fullScreen
+
         viewController.uiviewController
-            .present(router.viewControllable.uiviewController,
-                     animated: true, completion: nil)
+            .present(vc, animated: true, completion: nil)
+    }
+
+    func detachSettings() {
+        guard let router = settingsRouter else { return }
+        router.viewControllable
+            .uiviewController
+            .dismiss(animated: true, completion: { [weak self] in
+                self?.settingsRouter = nil
+                self?.detachChild(router)
+        })
     }
 }

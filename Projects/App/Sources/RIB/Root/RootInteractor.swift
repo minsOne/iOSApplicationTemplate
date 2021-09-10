@@ -11,6 +11,7 @@ import RxSwift
 
 protocol RootRouting: ViewableRouting {
     func routeToSettings()
+    func detachSettings()
 }
 
 protocol RootPresentable: Presentable {
@@ -35,5 +36,13 @@ final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteract
     
     func requestSettings() {
         router?.routeToSettings()
+    }
+
+    func finish() {
+        router?.detachSettings()
+    }
+
+    func moveToMain() {
+        router?.detachSettings()
     }
 }
