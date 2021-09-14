@@ -28,6 +28,6 @@ public extension Dep.Carthage {
 
 public extension Dep {
     static func carthage(name: String) -> Self {
-        return .xcframework(path: .relativeToCarthage("\(name).xcframework"))
+        return .xcFramework(path: .relativeToCarthage("\(name).xcframework"))
     }
 }
