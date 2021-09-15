@@ -4,7 +4,7 @@
 
 ## 사용법
 
-**1.**  [Tuist 설치](https://github.com/tuist/tuist) - 버전 1.48.1 이상
+**1.**  [Tuist 설치](https://github.com/tuist/tuist) - 버전 1.50.0 이상
 
 **2.**  [Carthage 설치](https://github.com/Carthage/Carthage) - 버전 0.38.0 이상  
 
