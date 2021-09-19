@@ -44,9 +44,9 @@ public extension Dep {
         return .framework(path: .relativeToRoot("Vendor/Firebase/\(name).framework"))
     }
     static func facebook(name: String) -> Self {
-        return .xcframework(path: .relativeToRoot("Vendor/Facebook/\(name).xcframework"))
+        return .xcFramework(path: .relativeToRoot("Vendor/Facebook/\(name).xcframework"))
     }
     static func designSystem(name: String) -> Self {
-        return .xcframework(path: .relativeToRoot("Vendor/DesignSystem/\(name).xcframework"))
+        return .xcFramework(path: .relativeToRoot("Vendor/DesignSystem/\(name).xcframework"))
     }
 }

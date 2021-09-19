@@ -4,7 +4,7 @@
 
 ## 사용법
 
-**1.**  [Tuist 설치](https://github.com/tuist/tuist) - 버전 1.48.1 이상
+**1.**  [Tuist 설치](https://github.com/tuist/tuist) - 버전 1.50.0 이상
 
 **2.**  [Carthage 설치](https://github.com/Carthage/Carthage) - 버전 0.38.0 이상  
 
@@ -78,3 +78,4 @@ $ tuist graph -t -f dot # dot 파일로 출력
 ## 주의
 
 * FlexLayout은 FlexLayoutYoga, FlexLayoutYogaKit을 의존성으로 가지는데, 모듈맵에서 제대로 작성되지 않아, FlexLayout 프레임워크의 모듈맵에 FlexLayoutYoga, FlexLayoutYogaKit를 추가하였음. 따라서 수정요소가 있기 때문에 Vendor 경로에 추가함. (모듈맵 코드를 다시 복구 했는데, 또 잘 동작해서 왜 그런지는 모르겠음.)
+* PinLayout은 Carthage로 빌드시 TestProjects/swift-package-manager의 프로젝트 파일을 빌드할때 에러나므로, TestProjects를 다 제거하고 Carthage를 실행하면 됨.
