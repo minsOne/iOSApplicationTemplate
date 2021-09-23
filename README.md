@@ -43,6 +43,17 @@ $ tuist graph -t -f dot # dot 파일로 출력
 
 ![graph](./Asset/graph.png)
 
+## Tuist
+
+### Reference
+
+* **[tuist/awesome-tuist](https://github.com/tuist/awesome-tuist)**
+* **[HedvigInsurance/ugglan](https://github.com/HedvigInsurance/ugglan)**
+* https://sarunw.com/tags/tuist/
+* [BendingSpoons/tempura-swift](https://github.com/BendingSpoons/tempura-swift)
+* [fortmarek/ComposableTuistArchitecture](https://github.com/fortmarek/ComposableTuistArchitecture)
+* [ronanociosoig/tuist-pokedex](https://github.com/ronanociosoig/tuist-pokedex)
+
 ## Clean Architecture With Swinject, RIBs
 
 ![clean_architecture_ribs](./Asset/clean_architecture_ribs.png)
@@ -55,35 +66,26 @@ $ tuist graph -t -f dot # dot 파일로 출력
 
 ## Design System
 
-**1.**  시험 라이브러리 목록
-- [Square/Blueprint](https://github.com/square/Blueprint)
+### 시험할 라이브러리 목록
 - [layoutBox/FlexLayout](https://github.com/layoutBox/FlexLayout)
 - SwiftUI
 - [Doric](https://github.com/jayeshk/Doric)
 
-**2.**  디자인시스템 Ref
+### 디자인시스템 Ref
 - https://medium.com/sketch-app-sources/setting-up-a-design-system-8729510def93
 - https://ux.mailchimp.com/patterns/color
 - https://brennobemoura.medium.com/implementing-a-design-system-compatible-with-uikit-and-swiftui-1c6da34814f0
 - [W3.org 디자인 패턴 및 위젯](https://www.w3.org/TR/wai-aria-practices-1.1/)
 
-## 사용한, 사용할 오픈소스
-* [RxViewBinder](https://github.com/magi82/RxViewBinder)
-* [PureSwiftUI](https://github.com/CodeSlicing/pure-swift-ui)
-
-* FlexLayout 사용법 참고
+### FlexLayout 사용법 참고
   * https://medium.com/swlh/a-swift-yogakit-guide-to-flexbox-fec74e1bffaf
   * https://www.raywenderlich.com/530-yoga-tutorial-using-a-cross-platform-layout-engine
   * https://yogalayout.com/
 
-## Tuist 레퍼런스
 
-* **[tuist/awesome-tuist](https://github.com/tuist/awesome-tuist)**
-* **[HedvigInsurance/ugglan](https://github.com/HedvigInsurance/ugglan)**
-* https://sarunw.com/tags/tuist/
-* [BendingSpoons/tempura-swift](https://github.com/BendingSpoons/tempura-swift)
-* [fortmarek/ComposableTuistArchitecture](https://github.com/fortmarek/ComposableTuistArchitecture)
-* [ronanociosoig/tuist-pokedex](https://github.com/ronanociosoig/tuist-pokedex)
+## 사용한, 사용할 기타 오픈소스
+* [RxViewBinder](https://github.com/magi82/RxViewBinder)
+* [PureSwiftUI](https://github.com/CodeSlicing/pure-swift-ui)
 
 ## 주의
 
