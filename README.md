@@ -86,6 +86,7 @@ $ tuist graph -t -f dot # dot 파일로 출력
 ## 사용한, 사용할 기타 오픈소스
 * [RxViewBinder](https://github.com/magi82/RxViewBinder)
 * [PureSwiftUI](https://github.com/CodeSlicing/pure-swift-ui)
+* [TouchVisualizer](https://github.com/morizotter/TouchVisualizer)
 
 ## 주의
 
