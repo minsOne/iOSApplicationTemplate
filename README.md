@@ -49,6 +49,7 @@ $ tuist graph -t -f dot # dot 파일로 출력
 
 * **[tuist/awesome-tuist](https://github.com/tuist/awesome-tuist)**
 * **[HedvigInsurance/ugglan](https://github.com/HedvigInsurance/ugglan)**
+* [JulianAlonso/MarvelApp](https://github.com/JulianAlonso/MarvelApp)
 * https://sarunw.com/tags/tuist/
 * [BendingSpoons/tempura-swift](https://github.com/BendingSpoons/tempura-swift)
 * [fortmarek/ComposableTuistArchitecture](https://github.com/fortmarek/ComposableTuistArchitecture)
