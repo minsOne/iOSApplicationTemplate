@@ -2,23 +2,6 @@ import Foundation
 import ProjectDescription
 import UtilityPlugin
 
-public enum FeatureTarget: Hashable {
-    case staticframework
-    case dynamicframework
-    case tests
-    case testing
-    case example
-
-    public var hasFramework: Bool {
-        switch self {
-        case .dynamicframework, .staticframework: return true
-        default: return false
-        }
-    }
-    public var hasDynamicFramework: Bool { return self == .dynamicframework }
-
-}
-
 public extension Project {
     static func framework(name: String,
                           organizationName: String = "minsone",
@@ -41,7 +24,10 @@ public extension Project {
                 sources: ["Sources/**/*.swift"],
                 resources: hasDynamicFramework ? ["Resources/**"] : [],
                 actions: [],
-                dependencies: dependencies)
+                dependencies: dependencies,
+                settings: Settings(base: [:], configurations: XCConfig.framework)
+            )
+
 
             projectTargets.append(target)
         }
@@ -60,7 +46,9 @@ public extension Project {
                 dependencies: [
                     .target(name: "\(name)"),
                     // TODO: Testing에 필요한 라이브러리 추가
-                ])
+                ],
+                settings: Settings(base: [:], configurations: XCConfig.framework)
+            )
 
             projectTargets.append(target)
         }
@@ -100,7 +88,9 @@ public extension Project {
                         // TODO: Tests에 필요한 라이브러리 추가
                     ],
                     deps
-                ].flatMap { $0 })
+                ].flatMap { $0 },
+                settings: Settings(base: [:], configurations: XCConfig.tests)
+            )
 
             projectTargets.append(target)
         }
@@ -133,7 +123,9 @@ public extension Project {
                         // TODO: Example에 필요한 라이브러리 추가
                     ],
                     deps
-                ].flatMap { $0 })
+                ].flatMap { $0 },
+                settings: Settings(base: [:], configurations: XCConfig.application)
+            )
 
             projectTargets.append(target)
         }
@@ -170,149 +162,54 @@ public extension Project {
     }
 }
 
-public extension Project {
-    static func staticLibrary(name: String,
-                              platform: Platform = .iOS,
-                              packages: [Package] = [],
-                              dependencies: [TargetDependency] = [],
-                              hasDemoApp: Bool = false) -> Self {
-        return project(name: name,
-                       packages: packages,
-                       product: .staticLibrary,
-                       platform: platform,
-                       dependencies: dependencies,
-                       hasDemoApp: hasDemoApp)
-    }
-    
-    static func staticFramework(name: String,
-                                platform: Platform = .iOS,
-                                packages: [Package] = [],
-                                dependencies: [TargetDependency] = [],
-                                hasDemoApp: Bool = false) -> Self {
-        return project(name: name,
-                       packages: packages,
-                       product: .staticFramework,
-                       platform: platform,
-                       dependencies: dependencies,
-                       hasDemoApp: hasDemoApp)
-    }
-    
-    static func framework(name: String,
-                          platform: Platform = .iOS,
-                          packages: [Package] = [],
-                          dependencies: [TargetDependency] = [],
-                          hasDemoApp: Bool = false) -> Self {
-        return project(name: name,
-                       packages: packages,
-                       product: .framework,
-                       platform: platform,
-                       dependencies: dependencies,
-                       hasDemoApp: hasDemoApp)
-    }
-}
+private struct XCConfig {
+    static let framework: [CustomConfiguration] = [
+        .debug(
+            name: "Debug",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
+        ),
+        .release(
+            name: "Release",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
+        ),
+    ]
 
-public extension Project {
-    static func project(name: String,
-                        organizationName: String = "minsone",
-                        packages: [Package] = [],
-                        product: Product,
-                        platform: Platform = .iOS,
-                        deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "13.0", devices: .iphone),
-                        dependencies: [TargetDependency] = [],
-                        infoPlist: [String: InfoPlist.Value] = [:],
-                        hasDemoApp: Bool = false) -> Project {
-        
-        let organizationName = "minsone"
-        let settings = Settings(base: ["CODE_SIGN_IDENTITY": "",
-                                       "CODE_SIGNING_REQUIRED": "NO"],
-                                configurations: [
-                                    .debug(name: .dev, xcconfig: .relativeToXCConfig(type: .dev, name: name)),
-                                    .debug(name: .test, xcconfig: .relativeToXCConfig(type: .test, name: name)),
-                                    .debug(name: .stage, xcconfig: .relativeToXCConfig(type: .stage, name: name)),
-                                    .release(name: .prod, xcconfig: .relativeToXCConfig(type: .prod, name: name)),
-                                ])
-        
-        let target1 = Target(name: name,
-                             platform: platform,
-                             product: product,
-                             bundleId: "kr.minsone.\(name)",
-                             deploymentTarget: deploymentTarget,
-                             infoPlist: .extendingDefault(with: infoPlist),
-                             sources: ["Sources/**"],
-                             resources: ["Resources/**"],
-                             dependencies: dependencies)
-        
-        let demoAppTarget = Target(name: "\(name)DemoApp",
-                                   platform: platform,
-                                   product: .app,
-                                   bundleId: "kr.minsone.\(name)DemoApp",
-                                   deploymentTarget: deploymentTarget,
-                                   infoPlist: .extendingDefault(with: [
-                                     "UIMainStoryboardFile": "",
-                                     "UILaunchStoryboardName": "LaunchScreen"
-                                   ]),
-                                   sources: ["Demo/**"],
-                                   resources: ["Demo/Resources/**"],
-                                   dependencies: [
-                                    .target(name: "\(name)")
-                                   ])
-        
-        let testTargetDependencies: [TargetDependency] = hasDemoApp
-            ? [.target(name: "\(name)DemoApp")]
-            : [.target(name: "\(name)")]
-        let testTarget = Target(name: "\(name)Tests",
-                                platform: platform,
-                                product: .unitTests,
-                                bundleId: "kr.minsone.\(name)Tests",
-                                deploymentTarget: deploymentTarget,
-                                infoPlist: .default,
-                                sources: "Tests/**",
-                                dependencies: testTargetDependencies)
-        
-        
-        
-        
-        let schemes: [Scheme] = hasDemoApp
-            ? [.makeScheme(target: .dev, name: name), .makeDemoScheme(target: .dev, name: name)]
-            : [.makeScheme(target: .dev, name: name)]
-
-        let targets: [Target] = hasDemoApp
-            ? [target1, testTarget, demoAppTarget]
-            : [target1, testTarget]
-        
-        return Project(name: name,
-                       organizationName: organizationName,
-                       packages: packages,
-                       settings: settings,
-                       targets: targets,
-                       schemes: schemes)
-    }
-}
-
-extension Scheme {
-    static func makeScheme(target: ProjectDeployTarget, name: String) -> Self {
-        return Scheme(name: "\(name)",
-                      shared: true,
-                      buildAction: BuildAction(targets: ["\(name)"]),
-                      testAction: TestAction(targets: ["\(name)Tests"],
-                                             configurationName: target.rawValue,
-                                             coverage: true),
-                      runAction: RunAction(configurationName: target.rawValue),
-                      archiveAction: ArchiveAction(configurationName: target.rawValue),
-                      profileAction: ProfileAction(configurationName: target.rawValue),
-                      analyzeAction: AnalyzeAction(configurationName: target.rawValue))
-    }
-
-    static func makeDemoScheme(target: ProjectDeployTarget, name: String) -> Self {
-        return Scheme(name: "\(name)DemoApp",
-                      shared: true,
-                      buildAction: BuildAction(targets: ["\(name)DemoApp"]),
-                      testAction: TestAction(targets: ["\(name)Tests"],
-                                             configurationName: target.rawValue,
-                                             coverage: true),
-                      runAction: RunAction(configurationName: target.rawValue),
-                      archiveAction: ArchiveAction(configurationName: target.rawValue),
-                      profileAction: ProfileAction(configurationName: target.rawValue),
-                      analyzeAction: AnalyzeAction(configurationName: target.rawValue))
-    }
+    static let tests: [CustomConfiguration] = [
+        .debug(
+            name: "Debug",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
+        ),
+        .release(
+            name: "Release",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
+        ),
+    ]
+    static let application: [CustomConfiguration] = [
+        .debug(
+            name: "Debug",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
+        ),
+        .release(
+            name: "Release",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
+        ),
+    ]
+    static let projectConfigurations: [CustomConfiguration] = [
+        .debug(
+            name: "Debug",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/Base/Configurations/Debug.xcconfig")
+        ),
+        .release(
+            name: "Release",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/Base/Configurations/Release.xcconfig")
+        ),
+    ]
 }
