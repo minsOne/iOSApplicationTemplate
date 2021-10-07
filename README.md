@@ -30,6 +30,12 @@ $ sh script/change-rpath-library.sh
 $ tuist generate
 ```
 
+**6.** `tuist scaffold`를 실행하여 모듈 생성
+
+```
+$ tuist scaffold framework --name UtilityKit -p Projects/Modules/Foundation
+```
+
 ## Dependency Graph
 
 Tuist를 이용하여 Dependency Graph를 출력할 수 있음.
