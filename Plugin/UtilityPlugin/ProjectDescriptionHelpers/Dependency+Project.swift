@@ -22,23 +22,27 @@ extension Dep {
     }
 }
 
+// MARK: - Module / Core
 public extension Dep.Project.Module.Core {
     static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Modules/Core/\(name)")) }
 
-    static let CoreKit = project(name: "MOCoreKit")
+    static let AppLogger            = project(name: "MOAppLogger")
+    static let CoreKit              = project(name: "MOCoreKit")
     static let ThirdPartyLibManager = project(name: "MOThirdPartyLibManager")
 }
 
+// MARK: - Module / Core / Network
 public extension Dep.Project.Module.Core.Network {
     static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Modules/Core/Network/\(name)")) }
     
     static let NetworkAPIKit = project(name: "MONetworkAPIKit")
-    static let NetworkAPIs = project(name: "MONetworkAPIs")
+    static let NetworkAPIs   = project(name: "MONetworkAPIs")
 }
 
+// MARK: - Module / Foundation
 public extension Dep.Project.Module.Foundation {
     static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Modules/Foundation/\(name)")) }
 
     static let FoundationKit = project(name: "MOFoundationKit")
-    static let UtilityKit = project(name: "MOUtilityKit")
+    static let UtilityKit    = project(name: "MOUtilityKit")
 }

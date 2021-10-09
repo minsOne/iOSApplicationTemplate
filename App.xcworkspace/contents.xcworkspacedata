@@ -11,6 +11,9 @@
             location = "group:Core"
             name = "Core">
             <FileRef
+               location = "group:MOAppLogger/MOAppLogger.xcodeproj">
+            </FileRef>
+            <FileRef
                location = "group:MOCoreKit/MOCoreKit.xcodeproj">
             </FileRef>
             <FileRef
