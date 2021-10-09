@@ -44,8 +44,11 @@ public extension Dep.Project.Module.Core {
 public extension Dep.Project.Module.Core.Network {
     static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Modules/Core/Network/\(name)")) }
     
-    static let NetworkAPIKit = project(name: "MONetworkAPIKit")
-    static let NetworkAPIs   = project(name: "MONetworkAPIs")
+    static let NetworkAPICommon = project(name: "MONetworkAPICommon")
+    static let NetworkAPIHome   = project(name: "MONetworkAPIHome")
+    static let NetworkAPIKit    = project(name: "MONetworkAPIKit")
+    static let NetworkAPILogin  = project(name: "MONetworkAPILogin")
+    static let NetworkAPIs      = project(name: "MONetworkAPIs")
 }
 
 // MARK: - Module / Foundation

@@ -37,7 +37,16 @@
                location = "group:Network"
                name = "Network">
                <FileRef
+                  location = "group:MONetworkAPICommon/MONetworkAPICommon.xcodeproj">
+               </FileRef>
+               <FileRef
+                  location = "group:MONetworkAPIHome/MONetworkAPIHome.xcodeproj">
+               </FileRef>
+               <FileRef
                   location = "group:MONetworkAPIKit/MONetworkAPIKit.xcodeproj">
+               </FileRef>
+               <FileRef
+                  location = "group:MONetworkAPILogin/MONetworkAPILogin.xcodeproj">
                </FileRef>
                <FileRef
                   location = "group:MONetworkAPIs/MONetworkAPIs.xcodeproj">

@@ -3,7 +3,7 @@ import ProjectDescriptionHelpers
 import UtilityPlugin
 
 let project = Project.framework(
-    name: "MONetworkAPIs",
+    name: "MONetworkAPIHome",
     targets: Set([
        .staticframework,
        .tests,
@@ -11,8 +11,6 @@ let project = Project.framework(
        .testing
     ]),
     dependencies: [
-        Dep.Project.Module.Core.Network.NetworkAPICommon,
-        Dep.Project.Module.Core.Network.NetworkAPIHome,
-        Dep.Project.Module.Core.Network.NetworkAPILogin,
+        Dep.Project.Module.Core.Network.NetworkAPIKit,
     ]
 )
