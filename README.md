@@ -70,6 +70,7 @@ $ tuist graph -t -f dot # dot 파일로 출력
   * https://medium.com/@kimtaesoo188/android-clean-architecture-2e789d6cefc6, https://miro.medium.com/max/22442/1*FRgFgSG2mu4nRPyhwsPn3Q.png
   * https://youngest-programming.tistory.com/484
   * https://develogs.tistory.com/7
+  * [Clean Architecture is not Domain-Data-Presentation.](https://markonovakovic.medium.com/clean-architecture-is-not-domain-data-presentation-e368d7ff8579)
 
 ## Design System
 
