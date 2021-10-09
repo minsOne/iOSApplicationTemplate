@@ -134,29 +134,43 @@ public extension Project {
             name: name,
             organizationName: "minsone",
             packages: packages,
+            settings: Settings(base: [:], configurations: XCConfig.project),
             targets: projectTargets,
             schemes: [
                 Scheme(
                     name: name,
                     shared: true,
                     buildAction: BuildAction(targets: ["\(name)"]),
-                    testAction: TestAction(targets: [
-                        TestableTarget(
-                            target: TargetReference(stringLiteral: "\(name)Tests"),
-                            parallelizable: true)
-                    ], coverage: true),
-                    runAction: nil),
+                    testAction: TestAction(
+                        targets: [
+                            TestableTarget(
+                                target: TargetReference(stringLiteral: "\(name)Tests"),
+                                parallelizable: true)
+                        ],
+                        configurationName: "Test",
+                        coverage: true),
+                    runAction: .init(configurationName: "Test"),
+                    archiveAction: .init(configurationName: "Test"),
+                    profileAction: .init(configurationName: "Test"),
+                    analyzeAction: .init(configurationName: "Test")
+                ),
                 targets.contains(.example)
                 ? Scheme(
                     name: "\(name)Example",
                     shared: true,
                     buildAction: BuildAction(targets: ["\(name)Example"]),
-                    testAction: TestAction(targets: [
-                        TestableTarget(
-                            target: TargetReference(stringLiteral: "\(name)Tests"),
-                            parallelizable: true)
-                    ], coverage: true)
-                    )
+                    testAction: TestAction(
+                        targets: [
+                            TestableTarget(
+                                target: TargetReference(stringLiteral: "\(name)Tests"),
+                                parallelizable: true)
+                        ],
+                        configurationName: "Test",
+                        coverage: true),
+                    runAction: .init(configurationName: "Test"),
+                    archiveAction: .init(configurationName: "Test"),
+                    profileAction: .init(configurationName: "Test"),
+                    analyzeAction: .init(configurationName: "Test"))
                 : nil
             ].compactMap { $0 })
     }
@@ -165,12 +179,27 @@ public extension Project {
 private struct XCConfig {
     static let framework: [CustomConfiguration] = [
         .debug(
-            name: "Debug",
+            name: "Development",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
+        ),
+        .debug(
+            name: "Test",
             settings: [String: SettingValue](),
             xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
         ),
         .release(
-            name: "Release",
+            name: "QA",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
+        ),
+        .release(
+            name: "Beta",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
+        ),
+        .release(
+            name: "Production",
             settings: [String: SettingValue](),
             xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
         ),
@@ -178,38 +207,83 @@ private struct XCConfig {
 
     static let tests: [CustomConfiguration] = [
         .debug(
-            name: "Debug",
+            name: "Development",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
+        ),
+        .debug(
+            name: "Test",
             settings: [String: SettingValue](),
             xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
         ),
         .release(
-            name: "Release",
+            name: "QA",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
+        ),
+        .release(
+            name: "Beta",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
+        ),
+        .release(
+            name: "Production",
             settings: [String: SettingValue](),
             xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
         ),
     ]
     static let application: [CustomConfiguration] = [
         .debug(
-            name: "Debug",
+            name: "Development",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
+        ),
+        .debug(
+            name: "Test",
             settings: [String: SettingValue](),
             xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
         ),
         .release(
-            name: "Release",
+            name: "QA",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
+        ),
+        .release(
+            name: "Beta",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
+        ),
+        .release(
+            name: "Production",
             settings: [String: SettingValue](),
             xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
         ),
     ]
-    static let projectConfigurations: [CustomConfiguration] = [
+    static let project: [CustomConfiguration] = [
         .debug(
-            name: "Debug",
+            name: "Development",
             settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Configurations/Debug.xcconfig")
+            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Development.xcconfig")
+        ),
+        .debug(
+            name: "Test",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Test.xcconfig")
         ),
         .release(
-            name: "Release",
+            name: "QA",
             settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Configurations/Release.xcconfig")
+            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-QA.xcconfig")
+        ),
+        .release(
+            name: "Beta",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Beta.xcconfig")
+        ),
+        .release(
+            name: "Production",
+            settings: [String: SettingValue](),
+            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Production.xcconfig")
         ),
     ]
 }

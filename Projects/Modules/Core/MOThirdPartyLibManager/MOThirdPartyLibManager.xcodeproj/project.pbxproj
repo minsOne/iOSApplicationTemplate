@@ -141,6 +141,7 @@
 		14A7FAAF1C43FCC7720E1B6B /* Bundle+MOThirdPartyLibManagerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOThirdPartyLibManagerExample.swift"; sourceTree = "<group>"; };
 		1CFAC3D801DAED844DE0DEFD /* Bundle+MOThirdPartyLibManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOThirdPartyLibManager.swift"; sourceTree = "<group>"; };
 		25079716FA191B6D326C120D /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		266DC2BEF5AE89EAB04E5CD3 /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		2CAD05A0BE3D9EDEB93AA931 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320389F5943AB42398E55B65 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = "<group>"; };
 		390408A4584FB4923CE195C6 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
@@ -160,14 +161,18 @@
 		8A473CE14CF05199A501A7CD /* MOThirdPartyLibManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOThirdPartyLibManager.swift; sourceTree = "<group>"; };
 		928D755AF1C3107FF2394C16 /* MOThirdPartyLibManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOThirdPartyLibManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CB77668DBCC43A34762C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD7C6AC0EEFDDDF09A28EE55 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		B029D2E0C710BE0F35866A1F /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		B309C8147D1C08A4C29A55B4 /* MOThirdPartyLibManagerExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOThirdPartyLibManagerExample.plist; sourceTree = "<group>"; };
+		B3D3E9AE0394A1B4DF14B4B6 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
 		BB48822E1752F578AC8996D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDB1D492766CDE44287E145 /* Bundle+MOThirdPartyLibManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOThirdPartyLibManagerTests.swift"; sourceTree = "<group>"; };
 		C08941CE32DB1FFA4B0B69BB /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		CC38B2EA5634B4D09B1B837B /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		D4C5681698371496FBFC56C6 /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
 		D8446ABCCE0B3BE64E002B07 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		D8EE6BA7F236F2C354C27B7D /* MOThirdPartyLibManagerTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOThirdPartyLibManagerTests.plist; sourceTree = "<group>"; };
+		DB911A90128238DFEF967F12 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		DFB320476875585BF5B7526D /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
 		E064787FC5FBB78BEA429DF8 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
 		E6163A102DFD46FE66B2408F /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
@@ -336,6 +341,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		A3D2FA364CBA4C7092D5B5E9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B6487517572C9996B0F3987B /* Projects */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A8E0D6A5121F3FF8FD67A55B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +383,18 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		B6487517572C9996B0F3987B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				B3D3E9AE0394A1B4DF14B4B6 /* Project-Beta.xcconfig */,
+				266DC2BEF5AE89EAB04E5CD3 /* Project-Development.xcconfig */,
+				DB911A90128238DFEF967F12 /* Project-Production.xcconfig */,
+				D4C5681698371496FBFC56C6 /* Project-QA.xcconfig */,
+				AD7C6AC0EEFDDDF09A28EE55 /* Project-Test.xcconfig */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
 		BAA4DAC09E373AA357860983 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +417,7 @@
 		CB5E39237D02450322468BA6 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				A3D2FA364CBA4C7092D5B5E9 /* Base */,
 				32E3A0AF18B1A4332A6E7834 /* iOS */,
 			);
 			name = Configurations;
@@ -744,43 +770,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		090BBA904D8ACCEA6F88EFE5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../../Vendor/Firebase",
-				);
-				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
-				PRODUCT_NAME = MOThirdPartyLibManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.5;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		134B9BBE45D9070060255C68 /* Debug */ = {
+		0515089DAC05BB3ACE565239 /* Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F018B1B1962DC00384091F4C /* iOS-Base.xcconfig */;
 			buildSettings = {
@@ -805,46 +795,35 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOThirdPartyLibManagerExample.app/MOThirdPartyLibManagerExample";
 				TEST_TARGET_NAME = MOThirdPartyLibManagerExample;
 			};
-			name = Debug;
+			name = Development;
 		};
-		13EA012B0AA65E84FDE6DF8D /* Debug */ = {
+		0F40D94EDD69C7D06E6A90F8 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			baseConfigurationReference = F018B1B1962DC00384091F4C /* iOS-Base.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../../Vendor/Firebase",
-				);
-				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
-				PRODUCT_NAME = MOThirdPartyLibManager;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTests;
+				PRODUCT_NAME = MOThirdPartyLibManagerTests;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOThirdPartyLibManagerExample.app/MOThirdPartyLibManagerExample";
+				TEST_TARGET_NAME = MOThirdPartyLibManagerExample;
 			};
-			name = Debug;
+			name = Beta;
 		};
-		1EDF4F4627D6BA313798F4EF /* Release */ = {
+		12AA8B70DD4777241FEDA846 /* Test */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
 			buildSettings = {
@@ -867,17 +846,52 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Test;
 		};
-		3694498C303A1FA866F6C005 /* Release */ = {
+		17A4871757A918075D7BDBB6 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTesting;
+				PRODUCT_NAME = MOThirdPartyLibManagerTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		17A99C78AF67D41891AB19F6 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D3E9AE0394A1B4DF14B4B6 /* Project-Beta.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -926,9 +940,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Beta;
 		};
-		55038786D8696ED17B17669F /* Release */ = {
+		1FA0F2D1ED43E00156520926 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6ED6BA980A1800067E8A2336 /* iOS-Application.xcconfig */;
 			buildSettings = {
@@ -950,68 +964,11 @@
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = Beta;
 		};
-		B9CAF8545B6C42AFA08FA99E /* Debug */ = {
+		21F13AADC695F67BCCC10D4D /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ED6BA980A1800067E8A2336 /* iOS-Application.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOThirdPartyLibManagerExample;
-				PRODUCT_NAME = MOThirdPartyLibManagerExample;
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.5;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		CC643AFBD583EBC5A56B3D4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTesting.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTesting;
-				PRODUCT_NAME = MOThirdPartyLibManagerTesting;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.5;
-				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F0E60A47C5AEA4235DD301B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266DC2BEF5AE89EAB04E5CD3 /* Project-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1066,9 +1023,190 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
-			name = Debug;
+			name = Development;
 		};
-		FD4B1C6FE537637FB61EF584 /* Release */ = {
+		24F7B4219EBBBE35C61C5859 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Vendor/Firebase",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
+				PRODUCT_NAME = MOThirdPartyLibManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		286D3C59BE0420FC78C83C60 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB911A90128238DFEF967F12 /* Project-Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		2C631CC9D500AA392569DC8A /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD7C6AC0EEFDDDF09A28EE55 /* Project-Test.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		34723F7E3DFE8CF7E72105F7 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTesting;
+				PRODUCT_NAME = MOThirdPartyLibManagerTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		5DA9826D75E838FD9B3D11FC /* QA */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F018B1B1962DC00384091F4C /* iOS-Base.xcconfig */;
 			buildSettings = {
@@ -1092,7 +1230,420 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOThirdPartyLibManagerExample.app/MOThirdPartyLibManagerExample";
 				TEST_TARGET_NAME = MOThirdPartyLibManagerExample;
 			};
-			name = Release;
+			name = QA;
+		};
+		61AFA2636604F8440F759D9D /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED6BA980A1800067E8A2336 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOThirdPartyLibManagerExample;
+				PRODUCT_NAME = MOThirdPartyLibManagerExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = QA;
+		};
+		8E43D6E6508D48AB1F96DFED /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Vendor/Firebase",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
+				PRODUCT_NAME = MOThirdPartyLibManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Beta;
+		};
+		909BB37BE2E7B94742CFC375 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C5681698371496FBFC56C6 /* Project-QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		94EFBC63FDD0D93651D8A458 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED6BA980A1800067E8A2336 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOThirdPartyLibManagerExample;
+				PRODUCT_NAME = MOThirdPartyLibManagerExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Development;
+		};
+		ADFFFC6AC59F57CCC0F2C53A /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTesting;
+				PRODUCT_NAME = MOThirdPartyLibManagerTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		AED0BFA47CE33D77121D1C50 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F018B1B1962DC00384091F4C /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTests;
+				PRODUCT_NAME = MOThirdPartyLibManagerTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOThirdPartyLibManagerExample.app/MOThirdPartyLibManagerExample";
+				TEST_TARGET_NAME = MOThirdPartyLibManagerExample;
+			};
+			name = Production;
+		};
+		B43D5111541064AF9F84D845 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Vendor/Firebase",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
+				PRODUCT_NAME = MOThirdPartyLibManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		B794E1418AE09EB825251E1A /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED6BA980A1800067E8A2336 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOThirdPartyLibManagerExample;
+				PRODUCT_NAME = MOThirdPartyLibManagerExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Test;
+		};
+		B7FBE25855F4AF4A021C38AA /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTesting;
+				PRODUCT_NAME = MOThirdPartyLibManagerTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Beta;
+		};
+		C3BD96441DFD8C028FA03E77 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Vendor/Firebase",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
+				PRODUCT_NAME = MOThirdPartyLibManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		C85B621E29DBF6B5F3CB0671 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED6BA980A1800067E8A2336 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOThirdPartyLibManagerExample;
+				PRODUCT_NAME = MOThirdPartyLibManagerExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Production;
+		};
+		D3E2A6A9943B7B4B10A54834 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F018B1B1962DC00384091F4C /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManagerTests;
+				PRODUCT_NAME = MOThirdPartyLibManagerTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOThirdPartyLibManagerExample.app/MOThirdPartyLibManagerExample";
+				TEST_TARGET_NAME = MOThirdPartyLibManagerExample;
+			};
+			name = Test;
+		};
+		FBE2D292D39E9DF9946A195F /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25079716FA191B6D326C120D /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Vendor/Firebase",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManager.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
+				PRODUCT_NAME = MOThirdPartyLibManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1100,47 +1651,62 @@
 		898F840092B6309B3601E012 /* Build configuration list for PBXNativeTarget "MOThirdPartyLibManagerTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC643AFBD583EBC5A56B3D4C /* Debug */,
-				1EDF4F4627D6BA313798F4EF /* Release */,
+				B7FBE25855F4AF4A021C38AA /* Beta */,
+				17A4871757A918075D7BDBB6 /* Development */,
+				ADFFFC6AC59F57CCC0F2C53A /* Production */,
+				34723F7E3DFE8CF7E72105F7 /* QA */,
+				12AA8B70DD4777241FEDA846 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		9D3F7F1A3E2626D0BDE17EAB /* Build configuration list for PBXProject "MOThirdPartyLibManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0E60A47C5AEA4235DD301B3 /* Debug */,
-				3694498C303A1FA866F6C005 /* Release */,
+				17A99C78AF67D41891AB19F6 /* Beta */,
+				21F13AADC695F67BCCC10D4D /* Development */,
+				286D3C59BE0420FC78C83C60 /* Production */,
+				909BB37BE2E7B94742CFC375 /* QA */,
+				2C631CC9D500AA392569DC8A /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		AFCF5B9DCA5562D47CB3AAD8 /* Build configuration list for PBXNativeTarget "MOThirdPartyLibManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13EA012B0AA65E84FDE6DF8D /* Debug */,
-				090BBA904D8ACCEA6F88EFE5 /* Release */,
+				8E43D6E6508D48AB1F96DFED /* Beta */,
+				FBE2D292D39E9DF9946A195F /* Development */,
+				C3BD96441DFD8C028FA03E77 /* Production */,
+				B43D5111541064AF9F84D845 /* QA */,
+				24F7B4219EBBBE35C61C5859 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		BE852876BE96D6E0965FD697 /* Build configuration list for PBXNativeTarget "MOThirdPartyLibManagerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				134B9BBE45D9070060255C68 /* Debug */,
-				FD4B1C6FE537637FB61EF584 /* Release */,
+				0F40D94EDD69C7D06E6A90F8 /* Beta */,
+				0515089DAC05BB3ACE565239 /* Development */,
+				AED0BFA47CE33D77121D1C50 /* Production */,
+				5DA9826D75E838FD9B3D11FC /* QA */,
+				D3E2A6A9943B7B4B10A54834 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		DC5D5858F518AD40F588034E /* Build configuration list for PBXNativeTarget "MOThirdPartyLibManagerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9CAF8545B6C42AFA08FA99E /* Debug */,
-				55038786D8696ED17B17669F /* Release */,
+				1FA0F2D1ED43E00156520926 /* Beta */,
+				94EFBC63FDD0D93651D8A458 /* Development */,
+				C85B621E29DBF6B5F3CB0671 /* Production */,
+				61AFA2636604F8440F759D9D /* QA */,
+				B794E1418AE09EB825251E1A /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 /* End XCConfigurationList section */
 

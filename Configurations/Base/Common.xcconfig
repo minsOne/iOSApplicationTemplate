@@ -243,5 +243,3 @@ CLANG_WARN_INFINITE_RECURSION = YES
 
 // This warning detects suspicious uses of std::move.
 CLANG_WARN_SUSPICIOUS_MOVE = YES
-
-DEVELOPMENT_TEAM = AW656G5PFM

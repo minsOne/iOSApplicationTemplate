@@ -103,12 +103,15 @@
 		02A28231A6BBE7425695F7FD /* MOUtilityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKit.swift; sourceTree = "<group>"; };
 		07C0EE45165AB0DAAF74FBE4 /* MOUtilityKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitExample.plist; sourceTree = "<group>"; };
 		09E37FBA933A1DF92FF71FE5 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
+		0ADC148236D07A265D1BE135 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D1EDB824C88D5CE5F423F2 /* MOUtilityKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKit.plist; sourceTree = "<group>"; };
 		1E06291FC12344B0F823ED31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		215C065AF2160B6B14475B00 /* MOUtilityKitTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTesting.plist; sourceTree = "<group>"; };
+		24EB640012ECC7409F9EADF6 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
 		2BFA6D6CDC200E3C8846D369 /* Bundle+MOUtilityKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitExample.swift"; sourceTree = "<group>"; };
 		3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		497CA50810AD05015DD5673D /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
 		49C928ABB00BE02994A88320 /* MOUtilityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKit.swift; sourceTree = "<group>"; };
 		4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5866C24CC5EB9C112099CDFE /* MOUtilityKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTests.plist; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 		824E1EA42CF5DE0B454927EF /* Bundle+MOUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitTests.swift"; sourceTree = "<group>"; };
 		844D674BD13B93985BD67120 /* MOUtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
+		CD892C4C53841062EA556FDB /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		D9713C126D7177E8049C21F2 /* Bundle+MOUtilityKitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitTesting.swift"; sourceTree = "<group>"; };
 		FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +167,7 @@
 		03682B5BEB85E322FCABDD74 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				C697621BF01B15F12417EA9A /* Base */,
 				6774EE979CCF3AC741C6643F /* iOS */,
 			);
 			name = Configurations;
@@ -261,6 +267,18 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		6EDA7435937BC0759A857F9B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				24EB640012ECC7409F9EADF6 /* Project-Beta.xcconfig */,
+				B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */,
+				0ADC148236D07A265D1BE135 /* Project-Production.xcconfig */,
+				497CA50810AD05015DD5673D /* Project-QA.xcconfig */,
+				CD892C4C53841062EA556FDB /* Project-Test.xcconfig */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
 		74EAC949967EA56BABC85229 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +331,14 @@
 				DA74340E4550E54035878920 /* Tests */,
 			);
 			name = Project;
+			sourceTree = "<group>";
+		};
+		C697621BF01B15F12417EA9A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA7435937BC0759A857F9B /* Projects */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D36759299174B3AA9A788413 /* Sources */ = {
@@ -609,7 +635,262 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DB1A89E967EC2B31FF3136B /* Debug */ = {
+		04F464734CA3E1E02A72CE79 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTests;
+				PRODUCT_NAME = MOUtilityKitTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOUtilityKitExample.app/MOUtilityKitExample";
+				TEST_TARGET_NAME = MOUtilityKitExample;
+			};
+			name = Development;
+		};
+		0DC0DFA94FD8F30277C9800E /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOUtilityKitExample;
+				PRODUCT_NAME = MOUtilityKitExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Production;
+		};
+		16E8D9FC16C633E795CB01D6 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTests;
+				PRODUCT_NAME = MOUtilityKitTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOUtilityKitExample.app/MOUtilityKitExample";
+				TEST_TARGET_NAME = MOUtilityKitExample;
+			};
+			name = Test;
+		};
+		2D09F8F297AACDAF539A66B8 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
+				PRODUCT_NAME = MOUtilityKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		34E9098BC3BB8C7C5389B175 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EB640012ECC7409F9EADF6 /* Project-Beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		3A9368ADADE8F26A2A6A865E /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOUtilityKitExample;
+				PRODUCT_NAME = MOUtilityKitExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Development;
+		};
+		516DDB5B31463D416A80DF70 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTesting;
+				PRODUCT_NAME = MOUtilityKitTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		631866320B6387C7AC95C914 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTesting;
+				PRODUCT_NAME = MOUtilityKitTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		700853AE4E96B4E9E7CA6D4E /* Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
@@ -641,9 +922,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Development;
 		};
-		3945FD803A571F008A1E20DB /* Release */ = {
+		77688565297A8C355C029321 /* QA */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
@@ -653,7 +934,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTesting.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -661,9 +942,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
-				PRODUCT_NAME = MOUtilityKit;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTesting;
+				PRODUCT_NAME = MOUtilityKitTesting;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -674,9 +954,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = QA;
 		};
-		42A27B108248E49F2CCD12FB /* Release */ = {
+		7D45E39B07330EC59AAF2318 /* Production */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
 			buildSettings = {
@@ -700,9 +980,9 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOUtilityKitExample.app/MOUtilityKitExample";
 				TEST_TARGET_NAME = MOUtilityKitExample;
 			};
-			name = Release;
+			name = Production;
 		};
-		444DF821E8F4B9C8A66AA863 /* Debug */ = {
+		7D8DF8ED782DA89498EE4455 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
 			buildSettings = {
@@ -719,18 +999,18 @@
 				PRODUCT_NAME = MOUtilityKitTests;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOUtilityKitExample.app/MOUtilityKitExample";
 				TEST_TARGET_NAME = MOUtilityKitExample;
 			};
-			name = Debug;
+			name = Beta;
 		};
-		4986E1BFC69C4B1BA9CD4303 /* Debug */ = {
+		80B9679FD87AD207529F5C27 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -785,9 +1065,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
-			name = Debug;
+			name = Development;
 		};
-		73D3F9E2D0BC542161E72E78 /* Debug */ = {
+		80F58552515CC8D97DD0F1CD /* Test */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
@@ -797,7 +1077,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTesting.plist;
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -805,8 +1085,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTesting;
-				PRODUCT_NAME = MOUtilityKitTesting;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
+				PRODUCT_NAME = MOUtilityKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -818,9 +1099,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Test;
 		};
-		94F4F52D6C52AF07015DA6F2 /* Release */ = {
+		85B51287946F9213FAE73B06 /* QA */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
 			buildSettings = {
@@ -842,35 +1123,11 @@
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = QA;
 		};
-		AC5C8FCB587C0675CF1B3AC5 /* Debug */ = {
+		8E0EED3723116748E3745A31 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOUtilityKitExample;
-				PRODUCT_NAME = MOUtilityKitExample;
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.5;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		B871588FBC69A4C631C69437 /* Release */ = {
-			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADC148236D07A265D1BE135 /* Project-Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -919,9 +1176,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		CCB514BEC62BCD0948A516F0 /* Release */ = {
+		8FEA17D8C7ADD4E508CB3256 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTests;
+				PRODUCT_NAME = MOUtilityKitTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOUtilityKitExample.app/MOUtilityKitExample";
+				TEST_TARGET_NAME = MOUtilityKitExample;
+			};
+			name = QA;
+		};
+		9468BD38C6941A53CD0B8B71 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOUtilityKitExample;
+				PRODUCT_NAME = MOUtilityKitExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Test;
+		};
+		951CB29BE59716CC63254A46 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
@@ -951,7 +1259,241 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Beta;
+		};
+		9D90499A43164953FDDE3F89 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKitTesting;
+				PRODUCT_NAME = MOUtilityKitTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		C7C26C160E0F31D9B5F698B9 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MOUtilityKitExample;
+				PRODUCT_NAME = MOUtilityKitExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Beta;
+		};
+		E82F437EDC8E9A7A9F45F18A /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD892C4C53841062EA556FDB /* Project-Test.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		EA2C34D343C95A5CBE08CEFA /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497CA50810AD05015DD5673D /* Project-QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		EEEB2D52DB484D37B3E8A094 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
+				PRODUCT_NAME = MOUtilityKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Beta;
+		};
+		F4E59D884DF63CCFC8544E06 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
+				PRODUCT_NAME = MOUtilityKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -959,47 +1501,62 @@
 		20102EFCA1EB14EB66AE7122 /* Build configuration list for PBXProject "MOUtilityKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4986E1BFC69C4B1BA9CD4303 /* Debug */,
-				B871588FBC69A4C631C69437 /* Release */,
+				34E9098BC3BB8C7C5389B175 /* Beta */,
+				80B9679FD87AD207529F5C27 /* Development */,
+				8E0EED3723116748E3745A31 /* Production */,
+				EA2C34D343C95A5CBE08CEFA /* QA */,
+				E82F437EDC8E9A7A9F45F18A /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		7033D136D8D0C22931A1C885 /* Build configuration list for PBXNativeTarget "MOUtilityKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				444DF821E8F4B9C8A66AA863 /* Debug */,
-				42A27B108248E49F2CCD12FB /* Release */,
+				7D8DF8ED782DA89498EE4455 /* Beta */,
+				04F464734CA3E1E02A72CE79 /* Development */,
+				7D45E39B07330EC59AAF2318 /* Production */,
+				8FEA17D8C7ADD4E508CB3256 /* QA */,
+				16E8D9FC16C633E795CB01D6 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		E7780B53E5974BD642F7D5E4 /* Build configuration list for PBXNativeTarget "MOUtilityKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DB1A89E967EC2B31FF3136B /* Debug */,
-				3945FD803A571F008A1E20DB /* Release */,
+				EEEB2D52DB484D37B3E8A094 /* Beta */,
+				700853AE4E96B4E9E7CA6D4E /* Development */,
+				F4E59D884DF63CCFC8544E06 /* Production */,
+				2D09F8F297AACDAF539A66B8 /* QA */,
+				80F58552515CC8D97DD0F1CD /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		EC8DD5888DAD5A2CBCD81BD7 /* Build configuration list for PBXNativeTarget "MOUtilityKitTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73D3F9E2D0BC542161E72E78 /* Debug */,
-				CCB514BEC62BCD0948A516F0 /* Release */,
+				951CB29BE59716CC63254A46 /* Beta */,
+				631866320B6387C7AC95C914 /* Development */,
+				9D90499A43164953FDDE3F89 /* Production */,
+				77688565297A8C355C029321 /* QA */,
+				516DDB5B31463D416A80DF70 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 		FFF0EC99EE9B7D20BCF2ADD4 /* Build configuration list for PBXNativeTarget "MOUtilityKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC5C8FCB587C0675CF1B3AC5 /* Debug */,
-				94F4F52D6C52AF07015DA6F2 /* Release */,
+				C7C26C160E0F31D9B5F698B9 /* Beta */,
+				3A9368ADADE8F26A2A6A865E /* Development */,
+				0DC0DFA94FD8F30277C9800E /* Production */,
+				85B51287946F9213FAE73B06 /* QA */,
+				9468BD38C6941A53CD0B8B71 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Beta;
 		};
 /* End XCConfigurationList section */
 	};
