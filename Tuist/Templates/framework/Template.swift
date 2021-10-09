@@ -17,16 +17,20 @@ let template = Template(
         [
             .file(path: "\(nameAttribute)/Sources/\(nameAttribute).swift",
                   templatePath: "contents_example.stencil"),
-            .string(path: "\(nameAttribute)/Resources/dummy.txt", contents: "_"),
+            .string(path: "\(nameAttribute)/Resources/dummy.txt",
+                    contents: "_"),
         ],
         [
-            .file(path: "\(nameAttribute)/Tests/\(nameAttribute)Tests.swift",
+            .file(path: "\(nameAttribute)/Tests/Sources/\(nameAttribute)Tests.swift",
                   templatePath: "contents_test.stencil"),
+            .string(path: "\(nameAttribute)/Tests/Resources/dummy.txt",
+                    contents: "_"),
         ],
         [
             .file(path: "\(nameAttribute)/Testing/Sources/\(nameAttribute).swift",
                   templatePath: "contents_testing.stencil"),
-            .string(path: "\(nameAttribute)/Testing/Resources/dummy.txt", contents: "_"),
+            .string(path: "\(nameAttribute)/Testing/Resources/dummy.txt",
+                    contents: "_"),
         ],
         [
             .file(path: "\(nameAttribute)/Project.swift",

@@ -4,121 +4,26 @@
    <Group
       location = "group:Projects"
       name = "Projects">
-      <FileRef
-         location = "group:App/App.xcodeproj">
-      </FileRef>
-      <Group
-         location = "group:Features"
-         name = "Features">
-         <FileRef
-            location = "group:Features/Features.xcodeproj">
-         </FileRef>
-         <Group
-            location = "group:BaseDependency"
-            name = "BaseDependency">
-            <FileRef
-               location = "group:DataRepository/FeatureBaseDependencyDataRepository.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:Domain/FeatureBaseDependencyDomain.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:UserInterface/FeatureBaseDependencyUserInterface.xcodeproj">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:FeatureLoan"
-            name = "FeatureLoan">
-            <FileRef
-               location = "group:DataRepository/FeatureLoanDataRepository.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:Domain/FeatureLoanDomain.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:UserInterface/FeatureLoanUserInterface.xcodeproj">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:FeatureMain"
-            name = "FeatureMain">
-            <FileRef
-               location = "group:DataRepository/FeatureMainDataRepository.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:Domain/FeatureMainDomain.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:UserInterface/FeatureMainUserInterface.xcodeproj">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:FeatureSettings"
-            name = "FeatureSettings">
-            <FileRef
-               location = "group:DataRepository/FeatureSettingsDataRepository.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:Domain/FeatureSettingsDomain.xcodeproj">
-            </FileRef>
-            <FileRef
-               location = "group:UserInterface/FeatureSettingsUserInterface.xcodeproj">
-            </FileRef>
-         </Group>
-      </Group>
       <Group
          location = "group:Modules"
          name = "Modules">
-         <FileRef
-            location = "group:AnalyticsKit/AnalyticsKit.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:CoreKit/CoreKit.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:DevelopTool/DevelopTool.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:RepositoryInjectManager/RepositoryInjectManager.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:RxPackage/RxPackage.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:ThirdPartyDynamicLibraryPluginManager/ThirdPartyDynamicLibraryPluginManager.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:ThirdPartyLibraryManager/ThirdPartyLibraryManager.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:UtilityKit/UtilityKit.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:Network"
-         name = "Network">
-         <FileRef
-            location = "group:NetworkAPICommon/NetworkAPICommon.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:NetworkAPIHome/NetworkAPIHome.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:NetworkAPIKit/NetworkAPIKit.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:NetworkAPILogin/NetworkAPILogin.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:NetworkAPIs/NetworkAPIs.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:UserInterface"
-         name = "UserInterface">
-         <FileRef
-            location = "group:DesignSystem/DesignSystem.xcodeproj">
-         </FileRef>
+         <Group
+            location = "group:Core"
+            name = "Core">
+            <FileRef
+               location = "group:MOCoreKit/MOCoreKit.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Foundation"
+            name = "Foundation">
+            <FileRef
+               location = "group:MOFoundationKit/MOFoundationKit.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:MOUtilityKit/MOUtilityKit.xcodeproj">
+            </FileRef>
+         </Group>
       </Group>
    </Group>
 </Workspace>
