@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.title = "MOUtilityKit"
         vc.view.backgroundColor = .systemYellow
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = UINavigationController(root: vc)
+        self.window?.rootViewController = UINavigationController(rootViewController: vc)
         self.window?.makeKeyAndVisible()
         return true
     }

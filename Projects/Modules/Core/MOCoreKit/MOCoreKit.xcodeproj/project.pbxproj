@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103F647F1221B933E0726153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18362025A5C38C89ABAD8F2B /* LaunchScreen.storyboard */; };
 		13CEC3F7450873FEAEA6A98C /* MOCoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC092FA145670A3343F4438C /* MOCoreKitTests.swift */; };
 		140538A7D78D63748ECDC6AE /* Bundle+MOCoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3DD731F29FD64C673BA83 /* Bundle+MOCoreKitTests.swift */; };
 		160479190BD9AA826D0657AD /* Bundle+MOCoreKitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415A8737732CCFEE828FF4E5 /* Bundle+MOCoreKitTesting.swift */; };
@@ -128,6 +129,7 @@
 
 /* Begin PBXFileReference section */
 		07090631D9DE32EDDD1139D4 /* MOCoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOCoreKit.swift; sourceTree = "<group>"; };
+		18362025A5C38C89ABAD8F2B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD49C3FE3BB5E1E3CB91C0A /* MONetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C71055E878253914BADD9E /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				633E56885A96CE5B218536B3 /* Assets.xcassets */,
+				18362025A5C38C89ABAD8F2B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A35D68FDE908A17C19E444D /* Assets.xcassets in Resources */,
+				103F647F1221B933E0726153 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

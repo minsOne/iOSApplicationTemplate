@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		A7EB062E584CBF151C4D2C82 /* MOUtilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D674BD13B93985BD67120 /* MOUtilityKit.framework */; platformFilter = ios; };
 		B0C2401590BB6AE3FAB5F401 /* MOUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */; };
 		CB9ED0EB9A91695FA179414D /* Bundle+MOUtilityKitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713C126D7177E8049C21F2 /* Bundle+MOUtilityKitTesting.swift */; };
+		CBFF31895E18A0E644003A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */; };
 		E0CD22E3C3244C95D629759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD42F94BE12E3337872D84 /* Assets.xcassets */; };
 		E214BF16CA19F202D99AE05D /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09E37FBA933A1DF92FF71FE5 /* dummy.txt */; };
 		E301A3676FDF623A988E2FE0 /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
@@ -109,6 +110,7 @@
 		2BFA6D6CDC200E3C8846D369 /* Bundle+MOUtilityKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitExample.swift"; sourceTree = "<group>"; };
 		3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		49C928ABB00BE02994A88320 /* MOUtilityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKit.swift; sourceTree = "<group>"; };
+		4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5866C24CC5EB9C112099CDFE /* MOUtilityKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTests.plist; sourceTree = "<group>"; };
 		5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		6F3E06B906562FDDDEA79882 /* MOUtilityKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOUtilityKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				77CD42F94BE12E3337872D84 /* Assets.xcassets */,
+				4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0CD22E3C3244C95D629759D /* Assets.xcassets in Resources */,
+				CBFF31895E18A0E644003A62 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

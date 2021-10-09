@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		18470E947CF47B1DD5C1BC4E /* MOFoundationKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4833ED65193849FFA8AB20 /* MOFoundationKitTesting.framework */; platformFilter = ios; };
 		24CB015C29C84879785A1029 /* Bundle+MOFoundationKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE41C13487290CA252BA3FF /* Bundle+MOFoundationKitExample.swift */; };
 		293A3585C563763AC42941F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6EA80402B653180369EEBD /* Assets.xcassets */; };
+		2D33287A4174ECEB8E769CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B27487FBA28D6EC2EA30B3 /* LaunchScreen.storyboard */; };
 		3C2B0BF1B142CED3735BEC34 /* MOFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF650B7F297E62B480EFA083 /* MOFoundationKit.framework */; platformFilter = ios; };
 		4900C5967FC5D7CA8BCF164A /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7516895E54EE4B0F4A79454 /* dummy.txt */; };
 		59AA8DA611EEF070608D2698 /* MOFoundationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5C032A37F1DD9EAF89D7F /* MOFoundationKit.swift */; };
@@ -142,6 +143,7 @@
 		B20854F04BA4C45DB1A8B76F /* Bundle+MOFoundationKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOFoundationKitTests.swift"; sourceTree = "<group>"; };
 		BE01C9D2F029B83387D987A4 /* MOFoundationKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOFoundationKit.swift; sourceTree = "<group>"; };
 		C1A5779F90DC1422BAAAE772 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		C5B27487FBA28D6EC2EA30B3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7516895E54EE4B0F4A79454 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		FF650B7F297E62B480EFA083 /* MOFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				7B6EA80402B653180369EEBD /* Assets.xcassets */,
+				C5B27487FBA28D6EC2EA30B3 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				293A3585C563763AC42941F4 /* Assets.xcassets in Resources */,
+				2D33287A4174ECEB8E769CEC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

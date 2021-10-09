@@ -10,5 +10,17 @@ let project = Project.framework(
        .example,
        .testing
     ]),
-    dependencies: []
+    packages: [
+        .Alamofire,
+        .Swinject,
+        .InjectPropertyWrapper
+    ],
+    dependencies: [
+        Dep.Framework.Firebase,
+        [.SwiftPM.Alamofire,
+            .SwiftPM.Swinject,
+         .SwiftPM.InjectPropertyWrapper],
+        [.sdk(name: "libsqlite3.tbd"),
+         .sdk(name: "StoreKit.framework")],
+    ].flatMap { $0 }
 )

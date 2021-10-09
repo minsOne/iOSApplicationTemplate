@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D19FCBC84702DB906EDF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD6E3B33777F588E155696 /* LaunchScreen.storyboard */; };
 		1DCB08A2B705ACDF3F37821D /* Bundle+MONetworkAPIKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7DA8DD75FFA98A6E277C11 /* Bundle+MONetworkAPIKitExample.swift */; };
 		5023B251B41C57C98EAA6319 /* MONetworkAPIKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79127E20C78FE65DDFDF380E /* MONetworkAPIKitTesting.framework */; platformFilter = ios; };
 		611A6EEF508B8E5E9499450F /* MONetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA93FA46A47EFC88135AC47 /* MONetworkAPIKit.framework */; platformFilter = ios; };
@@ -107,6 +108,7 @@
 		1677E75B93824C51721E4FC6 /* MONetworkAPIKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONetworkAPIKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC886ACB8F75D98ED74699A /* MONetworkAPIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MONetworkAPIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E741B8753C4372EC288A8BD /* MONetworkAPIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONetworkAPIKitTests.swift; sourceTree = "<group>"; };
+		3BFD6E3B33777F588E155696 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49863952E4068718778E1DC2 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		4A88805097D6845B06D84E01 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		6F12E1612FE3E01FF6EABA6B /* Bundle+MONetworkAPIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MONetworkAPIKitTests.swift"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A39D9F65B29D348DB780CCC0 /* Assets.xcassets */,
+				3BFD6E3B33777F588E155696 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D11FF6520ADA12A8965D4E /* Assets.xcassets in Resources */,
+				06D19FCBC84702DB906EDF40 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

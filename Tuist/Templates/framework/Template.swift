@@ -13,6 +13,8 @@ let template = Template(
                   templatePath: "contents_xcassets.stencil"),
             .file(path: "\(nameAttribute)/Example/Resources/Assets.xcassets/AppIcon.appiconset/contents.json",
                   templatePath: "contents_xcassetsAppIcon.stencil"),
+            .file(path: "\(nameAttribute)/Example/Resources/LaunchScreen.storyboard",
+                  templatePath: "LaunchScreen.stencil"),
         ],
         [
             .file(path: "\(nameAttribute)/Sources/\(nameAttribute).swift",
