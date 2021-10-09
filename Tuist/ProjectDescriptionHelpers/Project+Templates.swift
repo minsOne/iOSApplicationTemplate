@@ -22,7 +22,7 @@ public extension Project {
                 deploymentTarget: deploymentTarget,
                 infoPlist: .default,
                 sources: ["Sources/**/*.swift"],
-                resources: hasDynamicFramework ? ["Resources/**"] : [],
+                resources:  hasDynamicFramework ? [.glob(pattern: "Resources/**", excluding: ["Resources/dummy.txt"])] : [],
                 actions: [],
                 dependencies: dependencies,
                 settings: Settings(base: [:], configurations: XCConfig.framework)
@@ -41,7 +41,7 @@ public extension Project {
                 deploymentTarget: deploymentTarget,
                 infoPlist: .default,
                 sources: ["Testing/Sources/**/*.swift"],
-                resources: ["Testing/Resources/**"],
+                resources: [.glob(pattern: "Testing/Resources/**", excluding: ["Testing/Resources/dummy.txt"])],
                 actions: [],
                 dependencies: [
                     .target(name: "\(name)"),
@@ -81,7 +81,7 @@ public extension Project {
                 deploymentTarget: deploymentTarget,
                 infoPlist: .default,
                 sources: ["Tests/Sources/**/*.swift"],
-                resources: ["Tests/Resources/**"],
+                resources: [.glob(pattern: "Tests/Resources/**", excluding: ["Tests/Resources/dummy.txt"])],
                 actions: [],
                 dependencies: [
                     [
@@ -116,7 +116,7 @@ public extension Project {
                     "UILaunchStoryboardName": "LaunchScreen",
                 ]),
                 sources: ["Example/Sources/**/*.swift"],
-                resources: ["Example/Resources/**"],
+                resources: [.glob(pattern: "Example/Resources/**", excluding: ["Example/Resources/dummy.txt"])],
                 actions: [],
                 dependencies: [
                     [

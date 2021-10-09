@@ -7,21 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1966327F2EC937F1D51C99C2 /* Bundle+MODesignSystemKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16B0534FB172394063EFC7B /* Bundle+MODesignSystemKitTests.swift */; };
-		1B0E630C512872B735152B11 /* Bundle+MODesignSystemKitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E4CF25FB04423470152E1 /* Bundle+MODesignSystemKitTesting.swift */; };
 		259B917F92037F894DFB58C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890E673470298116F6895727 /* Assets.xcassets */; };
-		36D7D18A962674A319F5BD17 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4864A0E1BA5B68EFC9F78B80 /* dummy.txt */; };
-		6A3FCC9CB21208154EFEBDE8 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = E10304F33052AC9315691105 /* dummy.txt */; };
 		6BC389F8BE970874584F3113 /* MODesignSystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */; platformFilter = ios; };
 		6CD262FA1A9CCE3302DC0163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32451B8223BFDBC910F932 /* AppDelegate.swift */; };
-		6E5CDAFEB4BAEA6B1ED80D69 /* Bundle+MODesignSystemKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958CAECD78990779994C6C /* Bundle+MODesignSystemKit.swift */; };
 		88B68C37359FA9A8C75911F3 /* MODesignSystemKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788D64A222EECD08F7BF45B /* MODesignSystemKit.swift */; };
 		891E9896E009B6278372B1AB /* MODesignSystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */; platformFilter = ios; };
 		8F68D8CDFD7F1231D6333A8E /* MODesignSystemKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */; platformFilter = ios; };
 		99E73A29DFCADC78CDA4D9FB /* MODesignSystemKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A6203862B64700E921462E8C /* MODesignSystemKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */; platformFilter = ios; };
 		BE983B025276AC00C981E2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05566A0A91078D266F77F66 /* LaunchScreen.storyboard */; };
-		CEF6C5E710EDBEFE294F9A98 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 612855E594B2ACACE049B9D4 /* dummy.txt */; };
 		D62003C10D25135364FEA2C3 /* Bundle+MODesignSystemKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973320338A41ECFE5416E2D /* Bundle+MODesignSystemKitExample.swift */; };
 		E14FDFCA7A3E898A490AB6C5 /* MODesignSystemKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2FFA0639A72233A26BD1E94 /* MODesignSystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */; platformFilter = ios; };
@@ -130,9 +124,7 @@
 		2AFB2BA185062A189378916A /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		3B4B4F9C0AF3A8D1DEF5EFFF /* MODesignSystemKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODesignSystemKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF345E84CB9D180D1BF360A /* MODesignSystemKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODesignSystemKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4864A0E1BA5B68EFC9F78B80 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		4DF1895034F610677C8AA5DD /* MODesignSystemKitTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MODesignSystemKitTesting.plist; sourceTree = "<group>"; };
-		612855E594B2ACACE049B9D4 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		6973320338A41ECFE5416E2D /* Bundle+MODesignSystemKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MODesignSystemKitExample.swift"; sourceTree = "<group>"; };
 		6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MODesignSystemKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A763B8A45F08D0F6828E4A /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
@@ -142,10 +134,6 @@
 		A05566A0A91078D266F77F66 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A22525ABCFBB5F57150C2820 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		A788D64A222EECD08F7BF45B /* MODesignSystemKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODesignSystemKit.swift; sourceTree = "<group>"; };
-		AA958CAECD78990779994C6C /* Bundle+MODesignSystemKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MODesignSystemKit.swift"; sourceTree = "<group>"; };
-		B02E4CF25FB04423470152E1 /* Bundle+MODesignSystemKitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MODesignSystemKitTesting.swift"; sourceTree = "<group>"; };
-		B16B0534FB172394063EFC7B /* Bundle+MODesignSystemKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MODesignSystemKitTests.swift"; sourceTree = "<group>"; };
-		E10304F33052AC9315691105 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		E1740E6038AD537DB60337A6 /* MODesignSystemKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODesignSystemKit.swift; sourceTree = "<group>"; };
 		F5A947E4C6BFCB3244E1A11D /* MODesignSystemKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODesignSystemKitTests.swift; sourceTree = "<group>"; };
 		FC0FAF9883D8C301A2502F02 /* MODesignSystemKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MODesignSystemKitExample.plist; sourceTree = "<group>"; };
@@ -191,10 +179,7 @@
 		013FCE144FB77EB929BF910E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AA958CAECD78990779994C6C /* Bundle+MODesignSystemKit.swift */,
 				6973320338A41ECFE5416E2D /* Bundle+MODesignSystemKitExample.swift */,
-				B02E4CF25FB04423470152E1 /* Bundle+MODesignSystemKitTesting.swift */,
-				B16B0534FB172394063EFC7B /* Bundle+MODesignSystemKitTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -234,7 +219,6 @@
 				6F5CF47943FC0CD301C71832 /* Configurations */,
 				FA4FEE92EC3A199085F2D1C5 /* Derived */,
 				81689E5AFA410156D87CDC83 /* Example */,
-				FFE82C7DD91714A14EBD940B /* Resources */,
 				E7A8EE9E5E6A71C2E9509BED /* Sources */,
 				A7ABE7F9E21069DC52F9E730 /* Testing */,
 				BF854D0BFF37D8297FF4098D /* Tests */,
@@ -297,22 +281,6 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		8D86AB4F190AE7E3D0E08F8D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E10304F33052AC9315691105 /* dummy.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		97DDE04F9B5D3CD26B90994A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				612855E594B2ACACE049B9D4 /* dummy.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		A15EEC4407647442B2E03F6B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,7 +294,6 @@
 		A7ABE7F9E21069DC52F9E730 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				8D86AB4F190AE7E3D0E08F8D /* Resources */,
 				6DFDF4CB6979FE3CDFC19A9D /* Sources */,
 			);
 			path = Testing;
@@ -350,7 +317,6 @@
 		BF854D0BFF37D8297FF4098D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				97DDE04F9B5D3CD26B90994A /* Resources */,
 				A931A996F1CF3A11BDCEA163 /* Sources */,
 			);
 			path = Tests;
@@ -382,14 +348,6 @@
 				3B4B4F9C0AF3A8D1DEF5EFFF /* MODesignSystemKitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FFE82C7DD91714A14EBD940B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4864A0E1BA5B68EFC9F78B80 /* dummy.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,7 +483,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A3FCC9CB21208154EFEBDE8 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +490,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF6C5E710EDBEFE294F9A98 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +497,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D7D18A962674A319F5BD17 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +575,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E5CDAFEB4BAEA6B1ED80D69 /* Bundle+MODesignSystemKit.swift in Sources */,
 				88B68C37359FA9A8C75911F3 /* MODesignSystemKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,7 +583,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1966327F2EC937F1D51C99C2 /* Bundle+MODesignSystemKitTests.swift in Sources */,
 				F84D64A5D30B108775874C2A /* MODesignSystemKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,7 +591,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0E630C512872B735152B11 /* Bundle+MODesignSystemKitTesting.swift in Sources */,
 				FB34EE03EBD74ABBC177005E /* MODesignSystemKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

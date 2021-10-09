@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		103F647F1221B933E0726153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18362025A5C38C89ABAD8F2B /* LaunchScreen.storyboard */; };
 		13CEC3F7450873FEAEA6A98C /* MOCoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC092FA145670A3343F4438C /* MOCoreKitTests.swift */; };
-		140538A7D78D63748ECDC6AE /* Bundle+MOCoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3DD731F29FD64C673BA83 /* Bundle+MOCoreKitTests.swift */; };
-		160479190BD9AA826D0657AD /* Bundle+MOCoreKitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415A8737732CCFEE828FF4E5 /* Bundle+MOCoreKitTesting.swift */; };
-		1942B576CAA2B6855D1A95E1 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = C673985767DE182F843D8DC4 /* dummy.txt */; };
 		1C06FDBAF9433E99D6A0750E /* MOCoreKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25765EE686C1B4EF486AF169 /* MOAppLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A4BE500753CF8BCE12FAF3 /* MOAppLogger.framework */; platformFilter = ios; };
 		29D4E8F19E1CF408BB5B467F /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -20,10 +17,7 @@
 		34A4713FD494AC8BEE3EA669 /* MONetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356AFA27881EF00DF100B12A /* MONetworkAPIs.framework */; platformFilter = ios; };
 		3FD50E0398BFD0A77DF34028 /* Bundle+MOCoreKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46163CEDA5581AE02548A1F /* Bundle+MOCoreKitExample.swift */; };
 		4706A83B72511039A0FFD103 /* MOCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */; platformFilter = ios; };
-		554451983CF7D346E003E078 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C71055E878253914BADD9E /* dummy.txt */; };
-		694363143F6F0A71C7554FFD /* Bundle+MOCoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD55CA49EA421CFC1B0789A9 /* Bundle+MOCoreKit.swift */; };
 		6A35D68FDE908A17C19E444D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633E56885A96CE5B218536B3 /* Assets.xcassets */; };
-		81DF94585D8E6308D9C750F7 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD9B38882405222CCD8BF987 /* dummy.txt */; };
 		8827A790A0D1ED398E195950 /* MONetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6A1685127BEE376AED6058 /* MONetworkAPIHome.framework */; platformFilter = ios; };
 		97890F3DC6E441BCA01103B2 /* MOCoreKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */; platformFilter = ios; };
 		9DDB32188CD1AA2D8207A837 /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
@@ -137,13 +131,10 @@
 		18362025A5C38C89ABAD8F2B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD49C3FE3BB5E1E3CB91C0A /* MONetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C71055E878253914BADD9E /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		28251B7CC428E81491C5FF31 /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
-		28E3DD731F29FD64C673BA83 /* Bundle+MOCoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOCoreKitTests.swift"; sourceTree = "<group>"; };
 		32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOCoreKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		356AFA27881EF00DF100B12A /* MONetworkAPIs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6A1685127BEE376AED6058 /* MONetworkAPIHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		415A8737732CCFEE828FF4E5 /* Bundle+MOCoreKitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOCoreKitTesting.swift"; sourceTree = "<group>"; };
 		44D8FCA94297909C18FA93EA /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		54A4BE500753CF8BCE12FAF3 /* MOAppLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOAppLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6207036F21B7C7A7EF320B6C /* MOCoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOCoreKit.swift; sourceTree = "<group>"; };
@@ -162,10 +153,7 @@
 		A94EEBE4807E89089135787C /* MOCoreKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOCoreKit.plist; sourceTree = "<group>"; };
 		B4BF7EBE19EBBC9FA839DB0E /* MOCoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOCoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9CD79D448173EE7D346BD /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
-		C673985767DE182F843D8DC4 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		D1586940FBBF48EC6EBB91B7 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		DD55CA49EA421CFC1B0789A9 /* Bundle+MOCoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOCoreKit.swift"; sourceTree = "<group>"; };
-		DD9B38882405222CCD8BF987 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		EC092FA145670A3343F4438C /* MOCoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOCoreKitTests.swift; sourceTree = "<group>"; };
 		EDE4398BED6A549114BA5BEA /* MONetworkAPICommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPICommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65A0A3AC0B018BD822FF4DE /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
@@ -259,14 +247,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		2E61F7A7119452808242D8DB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C673985767DE182F843D8DC4 /* dummy.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		2FE15A5099905D8483B75DA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,7 +305,6 @@
 		7560DD4442DFF6E917C863A4 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				E0886FB047F9117A11277B4F /* Resources */,
 				16D3B92C761B2E41EC46226C /* Sources */,
 			);
 			path = Testing;
@@ -343,10 +322,7 @@
 		B7301E45FE91289DCFFDB47D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DD55CA49EA421CFC1B0789A9 /* Bundle+MOCoreKit.swift */,
 				A46163CEDA5581AE02548A1F /* Bundle+MOCoreKitExample.swift */,
-				415A8737732CCFEE828FF4E5 /* Bundle+MOCoreKitTesting.swift */,
-				28E3DD731F29FD64C673BA83 /* Bundle+MOCoreKitTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -354,7 +330,6 @@
 		C76743D3790C63E548929DA4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2E61F7A7119452808242D8DB /* Resources */,
 				1A85D4FC6B5B26E0299DFF8D /* Sources */,
 			);
 			path = Tests;
@@ -377,7 +352,6 @@
 				3680AA335DE14BBCC89CC4BF /* Configurations */,
 				047D3DDCC64B38E9F38E01D4 /* Derived */,
 				A498787DBB28FDFCC2E6AAB2 /* Example */,
-				D5AF52DEC84BAD018BE87570 /* Resources */,
 				FEA162F9AD6B589CF9BE960A /* Sources */,
 				7560DD4442DFF6E917C863A4 /* Testing */,
 				C76743D3790C63E548929DA4 /* Tests */,
@@ -402,22 +376,6 @@
 				84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D5AF52DEC84BAD018BE87570 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DD9B38882405222CCD8BF987 /* dummy.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		E0886FB047F9117A11277B4F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				27C71055E878253914BADD9E /* dummy.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		FEA162F9AD6B589CF9BE960A /* Sources */ = {
@@ -561,7 +519,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554451983CF7D346E003E078 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +526,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1942B576CAA2B6855D1A95E1 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +533,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81DF94585D8E6308D9C750F7 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,7 +602,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140538A7D78D63748ECDC6AE /* Bundle+MOCoreKitTests.swift in Sources */,
 				13CEC3F7450873FEAEA6A98C /* MOCoreKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,7 +610,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160479190BD9AA826D0657AD /* Bundle+MOCoreKitTesting.swift in Sources */,
 				EEEC452E80111945F6C85A5D /* MOCoreKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +618,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694363143F6F0A71C7554FFD /* Bundle+MOCoreKit.swift in Sources */,
 				2E11A02463607325595E96AA /* MOCoreKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

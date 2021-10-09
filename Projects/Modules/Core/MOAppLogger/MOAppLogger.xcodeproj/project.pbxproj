@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		118383E570CAB9F49169EF8B /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2F008D440A716EEE02BDB1F0 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3F7718199743C680FCCCC3C /* dummy.txt */; };
 		3480D4A118A6101507A58C2A /* AppLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE7AE086E63EFC46074155 /* AppLogEvent.swift */; };
 		4AB65E18C2E8F447A4C17AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1245963DCB5C908603F6CC4 /* Assets.xcassets */; };
 		4B05AC67F83E3E7C4C162CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21638A9836646F817BDC7764 /* LaunchScreen.storyboard */; };
@@ -18,16 +17,13 @@
 		7701FCB8E095EA9EDF9B523A /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
 		7FD84C07FDEC0BB2BF734AB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E49631DD714F89CFCC9803 /* GoogleService-Info.plist */; };
 		7FDCB003CAA3AFF266E8B377 /* CrashlyticsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25208A29DDA3ADD1ED1FD04A /* CrashlyticsKit.swift */; };
-		8B7BEFB4A274B3917A42C769 /* Bundle+MOAppLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA960A7F21CA2465C62490 /* Bundle+MOAppLoggerTests.swift */; };
 		8CE3AD6D77BF4B428E419FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B5EC2571242638318CD29 /* AppDelegate.swift */; };
 		8FC0147FE2CD0D7DBAC3B8E7 /* FirebaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC0BEC61ED9F8E3BC3AE54 /* FirebaseKit.swift */; };
-		9D7FC598EE4E46CD0890AD77 /* Bundle+MOAppLoggerTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3253B5CBB94FFB217FDA41 /* Bundle+MOAppLoggerTesting.swift */; };
 		A5BDA2C37741CC8F7EBB728A /* AnalyticsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DDC2AE8420FE8DC93E639 /* AnalyticsKit.swift */; };
 		A9C31AA5EF9EAD41705431A0 /* Bundle+MOAppLoggerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605B9FB65A0BA17104BB4BF /* Bundle+MOAppLoggerExample.swift */; };
 		B776321CA34916ABCD63835B /* MOAppLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */; platformFilter = ios; };
 		BA1C82D8A41F96D7EC1E5EFE /* MOAppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0703AB3F5B5E7347E4BFC6 /* MOAppLogger.swift */; };
 		CEEDAC24FE7DDD256318371E /* MOAppLoggerTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */; platformFilter = ios; };
-		D0BB8DA27DBD63A3C2D2C5F2 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70291A094E27FC9DB88D4BF7 /* dummy.txt */; };
 		D9DA14425DE8B295840005BB /* LoggerFirebaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E7B2BFA8E9E7C8FDD798 /* LoggerFirebaseMock.swift */; };
 		DC3F4D5A31C7EE03609774B2 /* MOAppLoggerTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE3822FE81880552643755A3 /* LoggerFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCE17567D513EEA0B0C8B5 /* LoggerFirebaseTests.swift */; };
@@ -125,9 +121,7 @@
 		53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		61F9606258B5E3DBA82B0B45 /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
 		632DDC2AE8420FE8DC93E639 /* AnalyticsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsKit.swift; sourceTree = "<group>"; };
-		70291A094E27FC9DB88D4BF7 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		7605B9FB65A0BA17104BB4BF /* Bundle+MOAppLoggerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOAppLoggerExample.swift"; sourceTree = "<group>"; };
-		79CA960A7F21CA2465C62490 /* Bundle+MOAppLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOAppLoggerTests.swift"; sourceTree = "<group>"; };
 		8AF6E7B2BFA8E9E7C8FDD798 /* LoggerFirebaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFirebaseMock.swift; sourceTree = "<group>"; };
 		8BCE7AE086E63EFC46074155 /* AppLogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogEvent.swift; sourceTree = "<group>"; };
 		98A275363EA544C6A0621B00 /* FirebaseAnalyticsServicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsServicable.swift; sourceTree = "<group>"; };
@@ -135,7 +129,6 @@
 		A3E49631DD714F89CFCC9803 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5FE9EB829035D71081190C9 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		B7CCE17567D513EEA0B0C8B5 /* LoggerFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFirebaseTests.swift; sourceTree = "<group>"; };
-		BE3253B5CBB94FFB217FDA41 /* Bundle+MOAppLoggerTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOAppLoggerTesting.swift"; sourceTree = "<group>"; };
 		CA13D10E8473191B2CE3DD75 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		D1245963DCB5C908603F6CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2484264DFCF4FE1DEFA4339 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +136,6 @@
 		DAEC0BEC61ED9F8E3BC3AE54 /* FirebaseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseKit.swift; sourceTree = "<group>"; };
 		EEC2A385F9AAD148B398E4F6 /* MOAppLoggerTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTests.plist; sourceTree = "<group>"; };
 		F2C27BD73C16688254AFF986 /* MOAppLogger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLogger.plist; sourceTree = "<group>"; };
-		F3F7718199743C680FCCCC3C /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2806E9044F47CB43E302FC /* MOAppLoggerTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTesting.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,14 +177,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BD866536271770204350D21 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				70291A094E27FC9DB88D4BF7 /* dummy.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		1DA117E4D50F9691308BE978 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +288,6 @@
 		61C33C01F9F4F3B35422AD24 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A81F42F439F1437219C00EF3 /* Resources */,
 				38612CEEAAB01F19CB7C9C38 /* Sources */,
 			);
 			path = Tests;
@@ -313,18 +296,9 @@
 		8853752373E8F264956F031A /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				1BD866536271770204350D21 /* Resources */,
 				205541CC4B04C1AE52C734DC /* Sources */,
 			);
 			path = Testing;
-			sourceTree = "<group>";
-		};
-		A81F42F439F1437219C00EF3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F3F7718199743C680FCCCC3C /* dummy.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		BD116727BBD0AC8BEEF310D3 /* Project */ = {
@@ -359,8 +333,6 @@
 			isa = PBXGroup;
 			children = (
 				7605B9FB65A0BA17104BB4BF /* Bundle+MOAppLoggerExample.swift */,
-				BE3253B5CBB94FFB217FDA41 /* Bundle+MOAppLoggerTesting.swift */,
-				79CA960A7F21CA2465C62490 /* Bundle+MOAppLoggerTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -535,7 +507,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F008D440A716EEE02BDB1F0 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +514,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BB8DA27DBD63A3C2D2C5F2 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +599,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7FC598EE4E46CD0890AD77 /* Bundle+MOAppLoggerTesting.swift in Sources */,
 				BA1C82D8A41F96D7EC1E5EFE /* MOAppLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,7 +620,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B7BEFB4A274B3917A42C769 /* Bundle+MOAppLoggerTests.swift in Sources */,
 				D9DA14425DE8B295840005BB /* LoggerFirebaseMock.swift in Sources */,
 				DE3822FE81880552643755A3 /* LoggerFirebaseTests.swift in Sources */,
 			);

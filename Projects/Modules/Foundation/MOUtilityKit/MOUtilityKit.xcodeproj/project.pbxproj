@@ -11,15 +11,11 @@
 		363BEF3248D02262FA5C410A /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
 		4DF16FF4E74F40D6A4B7B7C1 /* MOUtilityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C928ABB00BE02994A88320 /* MOUtilityKit.swift */; };
 		5F3A6320016F0E97D59D7E16 /* Bundle+MOUtilityKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA6D6CDC200E3C8846D369 /* Bundle+MOUtilityKitExample.swift */; };
-		6CD9F45AA78C92E6AE9405FE /* Bundle+MOUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E1EA42CF5DE0B454927EF /* Bundle+MOUtilityKitTests.swift */; };
-		70FBB0EBEFCC43A5E4D67766 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72793AB5CA88B1882197B6E2 /* dummy.txt */; };
 		921A2F8AD6C9A53ACA959D29 /* MOUtilityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A28231A6BBE7425695F7FD /* MOUtilityKit.swift */; };
 		A7EB062E584CBF151C4D2C82 /* MOUtilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D674BD13B93985BD67120 /* MOUtilityKit.framework */; platformFilter = ios; };
 		B0C2401590BB6AE3FAB5F401 /* MOUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */; };
-		CB9ED0EB9A91695FA179414D /* Bundle+MOUtilityKitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713C126D7177E8049C21F2 /* Bundle+MOUtilityKitTesting.swift */; };
 		CBFF31895E18A0E644003A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */; };
 		E0CD22E3C3244C95D629759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD42F94BE12E3337872D84 /* Assets.xcassets */; };
-		E214BF16CA19F202D99AE05D /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09E37FBA933A1DF92FF71FE5 /* dummy.txt */; };
 		E301A3676FDF623A988E2FE0 /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
 		FD7DA5DF9E37CFFF11E82655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06291FC12344B0F823ED31 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -102,7 +98,6 @@
 /* Begin PBXFileReference section */
 		02A28231A6BBE7425695F7FD /* MOUtilityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKit.swift; sourceTree = "<group>"; };
 		07C0EE45165AB0DAAF74FBE4 /* MOUtilityKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitExample.plist; sourceTree = "<group>"; };
-		09E37FBA933A1DF92FF71FE5 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		0ADC148236D07A265D1BE135 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D1EDB824C88D5CE5F423F2 /* MOUtilityKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKit.plist; sourceTree = "<group>"; };
@@ -118,14 +113,11 @@
 		5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		6F3E06B906562FDDDEA79882 /* MOUtilityKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOUtilityKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F81F7D746F97E9A4115AD19 /* MOUtilityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOUtilityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72793AB5CA88B1882197B6E2 /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		77CD42F94BE12E3337872D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		824E1EA42CF5DE0B454927EF /* Bundle+MOUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitTests.swift"; sourceTree = "<group>"; };
 		844D674BD13B93985BD67120 /* MOUtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		CD892C4C53841062EA556FDB /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
-		D9713C126D7177E8049C21F2 /* Bundle+MOUtilityKitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitTesting.swift"; sourceTree = "<group>"; };
 		FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,14 +201,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		34EE5BA8A0FE761F29975300 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				09E37FBA933A1DF92FF71FE5 /* dummy.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		4269733A9D5B528FF2E70DF2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				2BFA6D6CDC200E3C8846D369 /* Bundle+MOUtilityKitExample.swift */,
-				D9713C126D7177E8049C21F2 /* Bundle+MOUtilityKitTesting.swift */,
-				824E1EA42CF5DE0B454927EF /* Bundle+MOUtilityKitTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -282,7 +264,6 @@
 		74EAC949967EA56BABC85229 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				34EE5BA8A0FE761F29975300 /* Resources */,
 				D36759299174B3AA9A788413 /* Sources */,
 			);
 			path = Testing;
@@ -301,14 +282,6 @@
 				FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		9C16E05817EEB841012DF4F8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				72793AB5CA88B1882197B6E2 /* dummy.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		A0079555A810C4EDF362E6B4 /* Resources */ = {
@@ -352,7 +325,6 @@
 		DA74340E4550E54035878920 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9C16E05817EEB841012DF4F8 /* Resources */,
 				82866995CC0F095452A7C9F1 /* Sources */,
 			);
 			path = Tests;
@@ -489,7 +461,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70FBB0EBEFCC43A5E4D67766 /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +475,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E214BF16CA19F202D99AE05D /* dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +544,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9ED0EB9A91695FA179414D /* Bundle+MOUtilityKitTesting.swift in Sources */,
 				4DF16FF4E74F40D6A4B7B7C1 /* MOUtilityKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,7 +552,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CD9F45AA78C92E6AE9405FE /* Bundle+MOUtilityKitTests.swift in Sources */,
 				B0C2401590BB6AE3FAB5F401 /* MOUtilityKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
