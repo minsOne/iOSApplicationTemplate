@@ -4,37 +4,32 @@
 
 ## 사용법
 
-**1.**  [Tuist 설치](https://github.com/tuist/tuist) - 버전 1.50.0 이상
+1. Install tuist
 
-**2.**  [Carthage 설치](https://github.com/Carthage/Carthage) - 버전 0.38.0 이상  
+   `bash <(curl -Ls https://install.tuist.io)`
 
-**3.**  `tuist dependencies`를 실행하여 XCFramework 생성
+2. Run Tuist dependencies 
 
-```
-$ tuist dependencies fetch
-Resolving and fetching dependencies.
-Resolving and fetching Carthage dependencies.
-...
-Carthage dependencies resolved and fetched successfully.
-Dependencies resolved and fetched successfully.
-```
+    ```
+    $ tuist dependencies fetch
+    Resolving and fetching dependencies.
+    Resolving and fetching Carthage dependencies.
+    ...
+    Carthage dependencies resolved and fetched successfully.
+    Dependencies resolved and fetched successfully.
+    ```
 
-**4.**  RxBlocking, RxTest를 Test 타겟에서 사용하기 위해 `install_name_tool`을 이용하여 `@rpath/RxSwift.framework/RxSwift`를 `@rpath/ThirdPartyLibraryManager.framework/ThirdPartyLibraryManager`로 교체함.
+3. Run tuist generate
 
-```
-$ sh script/change-rpath-library.sh
-```
+   `tuist generate`
 
-**5.**  `tuist generate`를 실행하여 프로젝트 파일 생성
-```
-$ tuist generate
-```
+4. Open workspace
 
-**6.** `tuist scaffold`를 실행하여 모듈 생성
+   `open App.xcworkspace`
 
-```
-$ tuist scaffold framework --name UtilityKit -p Projects/Modules/Foundation
-```
+5. Run tuist scaffold
+
+   `tuist scaffold framework --name UtilityKit -p Projects/Modules/Foundation`
 
 ## Dependency Graph
 
@@ -45,6 +40,9 @@ $ tuist graph # Graph 생성
 $ tuist graph -t # 테스트 타겟 제외
 $ tuist graph -d # 외부 라이브러리 제외
 $ tuist graph -t -f dot # dot 파일로 출력
+
+# Tests, Testing, Example 타겟을 제외한 그래프 생성
+$ ./script/tuist_graph_without_testing_example_tests.sh
 ```
 
 ![graph](./Asset/graph.png)
