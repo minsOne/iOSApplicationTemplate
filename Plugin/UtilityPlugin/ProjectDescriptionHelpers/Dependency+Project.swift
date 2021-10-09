@@ -18,8 +18,17 @@ extension Dep {
             }
             public struct Foundation {}
         }
-        public struct UserInterface {}
+        public struct UserInterface {
+            public struct DesignSystem {}
+        }
     }
+}
+
+// MAKR : Feature
+public extension Dep.Project.Feature {
+    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Feature/\(name)")) }
+
+    static let FeatureKit = project(name: "MOFeatureKit")
 }
 
 // MARK: - Module / Core
@@ -45,4 +54,11 @@ public extension Dep.Project.Module.Foundation {
 
     static let FoundationKit = project(name: "MOFoundationKit")
     static let UtilityKit    = project(name: "MOUtilityKit")
+}
+
+// MARK: - Module / UserInterface / DesignSystem
+public extension Dep.Project.UserInterface.DesignSystem {
+    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/DesignSystem/\(name)")) }
+
+    static let DesignSystemKit = project(name: "MODesignSystemKit")
 }

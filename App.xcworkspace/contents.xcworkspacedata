@@ -5,6 +5,20 @@
       location = "group:Projects"
       name = "Projects">
       <Group
+         location = "group:DesignSystem"
+         name = "DesignSystem">
+         <FileRef
+            location = "group:MODesignSystemKit/MODesignSystemKit.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Features"
+         name = "Features">
+         <FileRef
+            location = "group:MOFeatureKit/MOFeatureKit.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
          location = "group:Modules"
          name = "Modules">
          <Group
