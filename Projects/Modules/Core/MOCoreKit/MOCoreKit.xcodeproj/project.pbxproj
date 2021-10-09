@@ -12,8 +12,10 @@
 		160479190BD9AA826D0657AD /* Bundle+MOCoreKitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415A8737732CCFEE828FF4E5 /* Bundle+MOCoreKitTesting.swift */; };
 		1942B576CAA2B6855D1A95E1 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = C673985767DE182F843D8DC4 /* dummy.txt */; };
 		1C06FDBAF9433E99D6A0750E /* MOCoreKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29D4E8F19E1CF408BB5B467F /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E11A02463607325595E96AA /* MOCoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6207036F21B7C7A7EF320B6C /* MOCoreKit.swift */; };
 		338C57E43A3095AB3A1DAF83 /* MOCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */; platformFilter = ios; };
+		34A4713FD494AC8BEE3EA669 /* MONetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356AFA27881EF00DF100B12A /* MONetworkAPIs.framework */; platformFilter = ios; };
 		3FD50E0398BFD0A77DF34028 /* Bundle+MOCoreKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46163CEDA5581AE02548A1F /* Bundle+MOCoreKitExample.swift */; };
 		4706A83B72511039A0FFD103 /* MOCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */; platformFilter = ios; };
 		554451983CF7D346E003E078 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C71055E878253914BADD9E /* dummy.txt */; };
@@ -21,8 +23,10 @@
 		6A35D68FDE908A17C19E444D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633E56885A96CE5B218536B3 /* Assets.xcassets */; };
 		81DF94585D8E6308D9C750F7 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD9B38882405222CCD8BF987 /* dummy.txt */; };
 		97890F3DC6E441BCA01103B2 /* MOCoreKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */; platformFilter = ios; };
+		9DDB32188CD1AA2D8207A837 /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
 		A11C7A62DA1CFB4F5677E45E /* MOFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D3DC93EF191C7A63E0AE5E /* MOFoundationKit.framework */; platformFilter = ios; };
 		AB7ADCCD7A2101F52BC63C2F /* MOCoreKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */; platformFilter = ios; };
+		D630E1027B210BDCD729FEB9 /* MONetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD49C3FE3BB5E1E3CB91C0A /* MONetworkAPIKit.framework */; platformFilter = ios; };
 		E40876FBF142F0206D7DD03D /* MOCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E903441D78D1E4F95E3B48DD /* MOCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */; platformFilter = ios; };
 		EDD643ADFA0C3CA25AB9DDAF /* MOFoundationKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88D3DC93EF191C7A63E0AE5E /* MOFoundationKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -85,6 +89,7 @@
 				E40876FBF142F0206D7DD03D /* MOCoreKit.framework in Embed Frameworks */,
 				1C06FDBAF9433E99D6A0750E /* MOCoreKitTesting.framework in Embed Frameworks */,
 				EDD643ADFA0C3CA25AB9DDAF /* MOFoundationKit.framework in Embed Frameworks */,
+				29D4E8F19E1CF408BB5B467F /* MOThirdPartyLibManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,16 +128,19 @@
 
 /* Begin PBXFileReference section */
 		07090631D9DE32EDDD1139D4 /* MOCoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOCoreKit.swift; sourceTree = "<group>"; };
+		1AD49C3FE3BB5E1E3CB91C0A /* MONetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC2DD1537BAEF07BF2894F1 /* MOCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C71055E878253914BADD9E /* dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
 		28E3DD731F29FD64C673BA83 /* Bundle+MOCoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOCoreKitTests.swift"; sourceTree = "<group>"; };
 		32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOCoreKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		356AFA27881EF00DF100B12A /* MONetworkAPIs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		415A8737732CCFEE828FF4E5 /* Bundle+MOCoreKitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOCoreKitTesting.swift"; sourceTree = "<group>"; };
 		6207036F21B7C7A7EF320B6C /* MOCoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOCoreKit.swift; sourceTree = "<group>"; };
 		633E56885A96CE5B218536B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6AD6A8FC07F001E06E9D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD46ED4512030423ACAE255 /* MOCoreKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOCoreKitTests.plist; sourceTree = "<group>"; };
 		809CAE25C82586AC97146A1D /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F90FA0F0F9AC0DBFA98354 /* MOCoreKitTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOCoreKitTesting.plist; sourceTree = "<group>"; };
 		88D3DC93EF191C7A63E0AE5E /* MOFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C57EA3A485A22C0B6FCCEB9 /* MOCoreKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOCoreKitExample.plist; sourceTree = "<group>"; };
@@ -171,6 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11C7A62DA1CFB4F5677E45E /* MOFoundationKit.framework in Frameworks */,
+				D630E1027B210BDCD729FEB9 /* MONetworkAPIKit.framework in Frameworks */,
+				34A4713FD494AC8BEE3EA669 /* MONetworkAPIs.framework in Frameworks */,
+				9DDB32188CD1AA2D8207A837 /* MOThirdPartyLibManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +352,9 @@
 				32C01C80286BC5FF0B660C5B /* MOCoreKitTesting.framework */,
 				B4BF7EBE19EBBC9FA839DB0E /* MOCoreKitTests.xctest */,
 				88D3DC93EF191C7A63E0AE5E /* MOFoundationKit.framework */,
+				1AD49C3FE3BB5E1E3CB91C0A /* MONetworkAPIKit.framework */,
+				356AFA27881EF00DF100B12A /* MONetworkAPIs.framework */,
+				84E2366169C0A0379492445D /* MOThirdPartyLibManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";

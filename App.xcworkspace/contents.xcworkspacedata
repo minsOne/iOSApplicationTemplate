@@ -13,6 +13,19 @@
             <FileRef
                location = "group:MOCoreKit/MOCoreKit.xcodeproj">
             </FileRef>
+            <FileRef
+               location = "group:MOThirdPartyLibManager/MOThirdPartyLibManager.xcodeproj">
+            </FileRef>
+            <Group
+               location = "group:Network"
+               name = "Network">
+               <FileRef
+                  location = "group:MONetworkAPIKit/MONetworkAPIKit.xcodeproj">
+               </FileRef>
+               <FileRef
+                  location = "group:MONetworkAPIs/MONetworkAPIs.xcodeproj">
+               </FileRef>
+            </Group>
          </Group>
          <Group
             location = "group:Foundation"

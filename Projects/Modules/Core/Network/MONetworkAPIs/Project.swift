@@ -3,16 +3,14 @@ import ProjectDescriptionHelpers
 import UtilityPlugin
 
 let project = Project.framework(
-    name: "MOCoreKit",
+    name: "MONetworkAPIs",
     targets: Set([
-       .dynamicframework,
+       .staticframework,
        .tests,
        .example,
        .testing
     ]),
     dependencies: [
-        Dep.Project.Module.Core.ThirdPartyLibManager,
-        Dep.Project.Module.Core.Network.NetworkAPIs,
-        Dep.Project.Module.Foundation.FoundationKit,
+        Dep.Project.Module.Core.Network.NetworkAPIKit,
     ]
 )
