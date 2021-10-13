@@ -31,6 +31,13 @@ public extension Dep.Project.Feature {
     static let FeatureKit = project(name: "MOFeatureKit")
 }
 
+// MARK: - Module
+public extension Dep.Project.Module {
+    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Modules/\(name)")) }
+
+    static let RxPackage = project(name: "RxPackage")
+}
+
 // MARK: - Module / Core
 public extension Dep.Project.Module.Core {
     static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Modules/Core/\(name)")) }
