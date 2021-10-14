@@ -33,5 +33,9 @@ struct MyColors {
    static var myViewBackground: UIColor {
       return UIColor.dynamicColor(light: MyColors.xFEFEFE, dark: MyColors.x202020)
    }
+   
+   static var Color1: UIColor { 
+      return UIColor(named: "Color1", in: .module, compatibleWith: nil)! 
+   }
 }
 ```

@@ -1,5 +1,5 @@
 import XCTest
-@testable import ResourcePackage
+@testable import MOResourcePackage
 
 final class StoryboardAssetTests: XCTestCase {
     func test_storyboard() {

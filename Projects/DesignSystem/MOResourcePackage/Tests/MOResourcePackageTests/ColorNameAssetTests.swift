@@ -1,5 +1,5 @@
 import XCTest
-@testable import ResourcePackage
+@testable import MOResourcePackage
 
 final class ColorAssetTests: XCTestCase {
     func testColor() {

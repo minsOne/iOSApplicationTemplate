@@ -1,5 +1,5 @@
 import XCTest
-@testable import ResourcePackage
+@testable import MOResourcePackage
 
 final class ImageAssetTests: XCTestCase {
     func test_image() {

@@ -17,17 +17,18 @@ for filename in os.listdir(dirname):
                 colorDict[filename] = colorDict.get(filename, []) + [_filename.split(".")[0]]
 
 colorDict["level1"] = colorLevel1
-print(json.dumps(colorDict, sort_keys=False, indent=4))
 
-f = open("Sources/MOResourcePackage/ColorAsset.swift", 'w')
+f = open("Sources/MOResourcePackage/Assets/ColorNameAsset.swift", 'w')
 f.write("import Foundation\n")
-f.write("import UIKit\n\n")
+f.write("import UIKit\n")
 
-f.write("public extension R.Color {\n")
-for key in colorDict.keys():
-    if key == "level1": continue
-    f.write("    struct " + key + " {}\n")
-f.write("}\n")
+if len(colorDict.keys()) > 1:
+    f.write("public extension R.Color {\n")
+    for key in colorDict.keys():
+        if key == "level1": continue
+        f.write("    struct " + key + " {}\n")
+    f.write("}\n")
+
 
 for key in colorDict.keys():
     if key == "level1":
@@ -41,7 +42,7 @@ for key in colorDict.keys():
     f.write("}\n")
 f.close()
 
-f = open("Tests/MOResourcePackageTests/ColorAssetTests.swift", 'w')
+f = open("Tests/MOResourcePackageTests/ColorNameAssetTests.swift", 'w')
 f.write("import XCTest\n")
 f.write("@testable import MOResourcePackage\n")
 f.write("\n")
