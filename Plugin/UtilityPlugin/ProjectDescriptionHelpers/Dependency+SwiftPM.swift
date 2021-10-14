@@ -54,16 +54,16 @@ public extension Dep.SwiftPM.DevelopTool {
 
 public extension Package.DevelopTool {
     static let OHHTTPStubs             = Package.package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", .branch("master"))
-    static let ProxyNetworkStubPackage = Package.local(path: .relativeToNetwork("ProxyNetworkStubPackage"))
+//    static let ProxyNetworkStubPackage = Package.local(path: .relativeToNetwork("ProxyNetworkStubPackage"))
 }
 
 
 // MARK: - Swift Package User Interface
 
 public extension Dep.SwiftPM.UserInterface {
-    static let ResourcePackage = Dep.package(product: "ResourcePackage")
+    static let ResourcePackage = Dep.package(product: "MOResourcePackage")
 }
 
 public extension Package.UserInterface {
-    static let ResourcePackage = Package.local(path: .relativeToUserInterface("ResourcePackage"))
+    static let ResourcePackage = Package.local(path: .relativeToRoot("Projects/DesignSystem/MOResourcePackage"))
 }

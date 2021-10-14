@@ -10,5 +10,10 @@ let project = Project.framework(
        .example,
        .testing
     ]),
-    dependencies: []
+    packages: [
+        .UserInterface.ResourcePackage
+    ],
+    dependencies: [
+        Dep.SwiftPM.UserInterface.ResourcePackage,
+    ]
 )

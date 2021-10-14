@@ -16,6 +16,7 @@
 		99E73A29DFCADC78CDA4D9FB /* MODesignSystemKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A6203862B64700E921462E8C /* MODesignSystemKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */; platformFilter = ios; };
 		BE983B025276AC00C981E2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05566A0A91078D266F77F66 /* LaunchScreen.storyboard */; };
+		C4F17D55D4DD70C6A4027938 /* MOResourcePackage in Frameworks */ = {isa = PBXBuildFile; productRef = AA66D48807E39FD3E7C01948 /* MOResourcePackage */; };
 		D62003C10D25135364FEA2C3 /* Bundle+MODesignSystemKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973320338A41ECFE5416E2D /* Bundle+MODesignSystemKitExample.swift */; };
 		E14FDFCA7A3E898A490AB6C5 /* MODesignSystemKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2FFA0639A72233A26BD1E94 /* MODesignSystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */; platformFilter = ios; };
@@ -127,6 +128,7 @@
 		4DF1895034F610677C8AA5DD /* MODesignSystemKitTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MODesignSystemKitTesting.plist; sourceTree = "<group>"; };
 		6973320338A41ECFE5416E2D /* Bundle+MODesignSystemKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MODesignSystemKitExample.swift"; sourceTree = "<group>"; };
 		6DBCB6766EBDB5C2AA089DC1 /* MODesignSystemKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MODesignSystemKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A86ED5CD1779DDD2C605373 /* MOResourcePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MOResourcePackage; path = ../MOResourcePackage; sourceTree = "<group>"; };
 		83A763B8A45F08D0F6828E4A /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		890E673470298116F6895727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BB0D635D573479499FB9CBB /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F17D55D4DD70C6A4027938 /* MOResourcePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +193,7 @@
 				4429EFB4B2226E7C2197D8FA /* Project */,
 				AC871BE0F208745CC291C0C6 /* Frameworks */,
 				FD63A53C45C432225B1D9A33 /* Products */,
+				7A86ED5CD1779DDD2C605373 /* MOResourcePackage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -368,6 +372,9 @@
 			dependencies = (
 			);
 			name = MODesignSystemKit;
+			packageProductDependencies = (
+				AA66D48807E39FD3E7C01948 /* MOResourcePackage */,
+			);
 			productName = MODesignSystemKit;
 			productReference = 0A95D9587046FF285E693CCE /* MODesignSystemKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1556,6 +1563,13 @@
 			defaultConfigurationName = Beta;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA66D48807E39FD3E7C01948 /* MOResourcePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MOResourcePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CA1992AAF7C4FDA3408F500 /* Project object */;
 }
