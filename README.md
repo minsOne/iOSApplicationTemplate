@@ -12,11 +12,23 @@
 
     ```
     $ tuist dependencies fetch
-    Resolving and fetching dependencies.
-    Resolving and fetching Carthage dependencies.
-    ...
-    Carthage dependencies resolved and fetched successfully.
-    Dependencies resolved and fetched successfully.
+
+    # PinLayout에서 해당 폴더를 빌드하기 때문에 에러 발생하여, TestProjects를 삭제하고 Carthage를 이용하여 PinLayout를 빌드함.
+    $ rm -rf Tuist/Dependencies/Carthage/Checkouts/PinLayout/TestProjects
+    $ carthage build PinLayout --project-directory Tuist/Dependencies --platform iOS --use-xcframeworks --no-use-binaries --use-netrc --cache-builds --verbose
+
+    # ReactorKit 프로젝트는 carthage를 지원이 잘 안되므로 다음과 같이 수행.
+    $ rm Tuist/Dependencies/Carthage/Build/.ReactorKit.version # 생성 기록 삭제
+    $ (cd Tuist/Dependencies/Carthage/Checkouts/ReactorKit && swift package generate-xcodeproj) # ReactorKit 프로젝트 생성
+    $ tuist dependencies fetch # Carthage 빌드
+
+    # RIBs 프로젝트의 RxSwift, RxRelay 의존성이 framework로 되어 있으므로, xcframework로 교체함.
+    $ open Tuist/Dependencies/Carthage/Checkouts/RIBs/ios/RIBs.xcodeproj
+    $ carthage build RIBs --project-directory Tuist/Dependencies --platform iOS --use-xcframeworks --no-use-binaries --use-netrc --cache-builds --verbose
+
+
+    # 계속 서드파티 라이브러리를 빌드함.
+    $ tuist dependencies fetch
     ```
 
 3. Run tuist generate
@@ -96,5 +108,8 @@ $ ./script/tuist_graph_without_testing_example_tests.sh
 
 ## 주의
 
-* FlexLayout은 FlexLayoutYoga, FlexLayoutYogaKit을 의존성으로 가지는데, 모듈맵에서 제대로 작성되지 않아, FlexLayout 프레임워크의 모듈맵에 FlexLayoutYoga, FlexLayoutYogaKit를 추가하였음. 따라서 수정요소가 있기 때문에 Vendor 경로에 추가함. (모듈맵 코드를 다시 복구 했는데, 또 잘 동작해서 왜 그런지는 모르겠음.)
 * PinLayout은 Carthage로 빌드시 TestProjects/swift-package-manager의 프로젝트 파일을 빌드할때 에러나므로, TestProjects를 다 제거하고 Carthage를 실행하면 됨.
+    ```
+    $ rm -rf Tuist/Dependencies/Carthage/Checkouts/PinLayout/TestProjects
+    $ carthage build --project-directory Tuist/Dependencies --platform iOS --use-xcframeworks --no-use-binaries --use-netrc --cache-builds --verbose
+    ```
