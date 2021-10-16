@@ -12,6 +12,7 @@ public extension Project {
                           testingDependencies: [TargetDependency] = []) -> Project {
 
         let hasDynamicFramework = targets.contains(.dynamicframework)
+        let configurationName = "Test"
 
         var projectTargets: [Target] = []
         if targets.contains(where: { $0.hasFramework }) {
@@ -51,6 +52,45 @@ public extension Project {
                     ]
                 ].flatMap { $0 },
                 settings: Settings(base: [:], configurations: XCConfig.framework)
+            )
+
+            projectTargets.append(target)
+        }
+
+        if targets.contains(.example) {
+
+            /// Framework의 Mach-O가 Static 또는 Dynamic인지에 따라 코드 복사 또는 링킹이 발생하여 상황에 맞게 의존관계를 추가해야함.
+            let deps: [TargetDependency]
+            switch (hasDynamicFramework, targets.contains(.testing)) {
+            case (true, true): deps = [.target(name: name), .target(name: "\(name)Testing")]
+            case (false, true): deps = [.target(name: "\(name)Testing")]
+            case (_, false): deps = [.target(name: name)]
+            }
+
+            let target = Target(
+                name: "\(name)Example",
+                platform: .iOS,
+                product: .app,
+                bundleId: "kr.minsone.example.\(name)Example",
+                deploymentTarget: deploymentTarget,
+                infoPlist: .extendingDefault(with: [
+                    "UIMainStoryboardFile": "",
+                    "UILaunchStoryboardName": "LaunchScreen",
+                ]),
+                sources: ["Example/Sources/**/*.swift"],
+                resources: [.glob(pattern: "Example/Resources/**", excluding: ["Example/Resources/dummy.txt"])],
+                actions: [],
+                dependencies: [
+                    [
+                        // TODO: Example에 필요한 라이브러리 추가
+                        .Framework.Common.RxSwift,
+                        .Framework.Common.RxCocoa,
+                        .Framework.Common.RxRelay,
+                        .Framework.DevelopTool.FLEX,
+                    ],
+                    deps
+                ].flatMap { $0 },
+                settings: Settings(base: [:], configurations: XCConfig.application)
             )
 
             projectTargets.append(target)
@@ -107,45 +147,6 @@ public extension Project {
             projectTargets.append(target)
         }
 
-        if targets.contains(.example) {
-
-            /// Framework의 Mach-O가 Static 또는 Dynamic인지에 따라 코드 복사 또는 링킹이 발생하여 상황에 맞게 의존관계를 추가해야함.
-            let deps: [TargetDependency]
-            switch (hasDynamicFramework, targets.contains(.testing)) {
-            case (true, true): deps = [.target(name: name), .target(name: "\(name)Testing")]
-            case (false, true): deps = [.target(name: "\(name)Testing")]
-            case (_, false): deps = [.target(name: name)]
-            }
-
-            let target = Target(
-                name: "\(name)Example",
-                platform: .iOS,
-                product: .app,
-                bundleId: "kr.minsone.example.\(name)Example",
-                deploymentTarget: deploymentTarget,
-                infoPlist: .extendingDefault(with: [
-                    "UIMainStoryboardFile": "",
-                    "UILaunchStoryboardName": "LaunchScreen",
-                ]),
-                sources: ["Example/Sources/**/*.swift"],
-                resources: [.glob(pattern: "Example/Resources/**", excluding: ["Example/Resources/dummy.txt"])],
-                actions: [],
-                dependencies: [
-                    [
-                        // TODO: Example에 필요한 라이브러리 추가
-                        .Framework.Common.RxSwift,
-                        .Framework.Common.RxCocoa,
-                        .Framework.Common.RxRelay,
-                        .Framework.DevelopTool.FLEX,
-                    ],
-                    deps
-                ].flatMap { $0 },
-                settings: Settings(base: [:], configurations: XCConfig.application)
-            )
-
-            projectTargets.append(target)
-        }
-
         return Project(
             name: name,
             organizationName: "minsone",
@@ -163,12 +164,12 @@ public extension Project {
                                 target: TargetReference(stringLiteral: "\(name)Tests"),
                                 parallelizable: true)
                         ],
-                        configurationName: "Test",
+                        configurationName,
                         coverage: true),
-                    runAction: .init(configurationName: "Test"),
-                    archiveAction: .init(configurationName: "Test"),
-                    profileAction: .init(configurationName: "Test"),
-                    analyzeAction: .init(configurationName: "Test")
+                    runAction: .init(configurationName),
+                    archiveAction: .init(configurationName),
+                    profileAction: .init(configurationName),
+                    analyzeAction: .init(configurationName)
                 ),
                 targets.contains(.example)
                 ? Scheme(
@@ -181,12 +182,12 @@ public extension Project {
                                 target: TargetReference(stringLiteral: "\(name)Tests"),
                                 parallelizable: true)
                         ],
-                        configurationName: "Test",
+                        configurationName,
                         coverage: true),
-                    runAction: .init(configurationName: "Test"),
-                    archiveAction: .init(configurationName: "Test"),
-                    profileAction: .init(configurationName: "Test"),
-                    analyzeAction: .init(configurationName: "Test"))
+                    runAction: .init(configurationName),
+                    archiveAction: .init(configurationName),
+                    profileAction: .init(configurationName),
+                    analyzeAction: .init(configurationName))
                 : nil
             ].compactMap { $0 })
     }
