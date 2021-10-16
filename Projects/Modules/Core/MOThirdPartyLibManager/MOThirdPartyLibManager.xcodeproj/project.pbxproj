@@ -640,8 +640,8 @@
 			targets = (
 				9AF89E21980B479113A91413 /* MOThirdPartyLibManager */,
 				56FB40F6C3335E2D9014EA4E /* MOThirdPartyLibManagerTesting */,
-				D19F19997CC077788730F6E5 /* MOThirdPartyLibManagerTests */,
 				63F0A00DDF03D6CFA837E53A /* MOThirdPartyLibManagerExample */,
+				D19F19997CC077788730F6E5 /* MOThirdPartyLibManagerTests */,
 			);
 		};
 /* End PBXProject section */

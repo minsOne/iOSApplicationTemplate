@@ -592,8 +592,8 @@
 			targets = (
 				BC1C7DFD07DCE990BC1927A9 /* RxPackage */,
 				D4AFACCB4625BAB6300D6A30 /* RxPackageTesting */,
-				B0A44AAB4439F0F1C15249C3 /* RxPackageTests */,
 				05E3229B342EF4C671574AB6 /* RxPackageExample */,
+				B0A44AAB4439F0F1C15249C3 /* RxPackageTests */,
 			);
 		};
 /* End PBXProject section */

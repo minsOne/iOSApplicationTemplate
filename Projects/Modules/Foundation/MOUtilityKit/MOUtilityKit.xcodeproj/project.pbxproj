@@ -534,8 +534,8 @@
 			targets = (
 				49E7C83A175961B8272B7D6C /* MOUtilityKit */,
 				7A7F6BD5C39387E720F7FC59 /* MOUtilityKitTesting */,
-				77A44C7EFED381B92EA78122 /* MOUtilityKitTests */,
 				79A164C40FCF5FC38BAA17C6 /* MOUtilityKitExample */,
+				77A44C7EFED381B92EA78122 /* MOUtilityKitTests */,
 			);
 		};
 /* End PBXProject section */

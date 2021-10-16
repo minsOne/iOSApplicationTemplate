@@ -24,7 +24,9 @@ let template = Template(
         ],
         [
             .file(path: "\(nameAttribute)/Tests/Sources/\(nameAttribute)Tests.swift",
-                  templatePath: "contents_test.stencil"),
+                  templatePath: "contents_tests_xctest.stencil"),
+            .file(path: "\(nameAttribute)/Tests/Sources/\(nameAttribute)TestSpec.swift",
+                  templatePath: "contents_tests_quick_nimble.stencil"),
             .string(path: "\(nameAttribute)/Tests/Resources/dummy.txt",
                     contents: "_"),
         ],

@@ -12,7 +12,7 @@ public extension Project {
                           testingDependencies: [TargetDependency] = []) -> Project {
 
         let hasDynamicFramework = targets.contains(.dynamicframework)
-        let configurationName = "Test"
+        let configurationName: String = "Test"
 
         var projectTargets: [Target] = []
         if targets.contains(where: { $0.hasFramework }) {
@@ -29,7 +29,6 @@ public extension Project {
                 dependencies: dependencies,
                 settings: Settings(base: [:], configurations: XCConfig.framework)
             )
-
 
             projectTargets.append(target)
         }
@@ -58,7 +57,6 @@ public extension Project {
         }
 
         if targets.contains(.example) {
-
             /// Framework의 Mach-O가 Static 또는 Dynamic인지에 따라 코드 복사 또는 링킹이 발생하여 상황에 맞게 의존관계를 추가해야함.
             let deps: [TargetDependency]
             switch (hasDynamicFramework, targets.contains(.testing)) {
@@ -82,7 +80,6 @@ public extension Project {
                 actions: [],
                 dependencies: [
                     [
-                        // TODO: Example에 필요한 라이브러리 추가
                         .Framework.Common.RxSwift,
                         .Framework.Common.RxCocoa,
                         .Framework.Common.RxRelay,
@@ -128,7 +125,6 @@ public extension Project {
                 actions: [],
                 dependencies: [
                     [
-                        // TODO: Tests에 필요한 라이브러리 추가
                         .xctest,
                         .Framework.Common.RxSwift,
                         .Framework.Common.RxRelay,
@@ -149,7 +145,7 @@ public extension Project {
 
         return Project(
             name: name,
-            organizationName: "minsone",
+            organizationName: organizationName,
             packages: packages,
             settings: Settings(base: [:], configurations: XCConfig.project),
             targets: projectTargets,
@@ -164,12 +160,12 @@ public extension Project {
                                 target: TargetReference(stringLiteral: "\(name)Tests"),
                                 parallelizable: true)
                         ],
-                        configurationName,
+                        configurationName: configurationName,
                         coverage: true),
-                    runAction: .init(configurationName),
-                    archiveAction: .init(configurationName),
-                    profileAction: .init(configurationName),
-                    analyzeAction: .init(configurationName)
+                    runAction: .init(configurationName: configurationName),
+                    archiveAction: .init(configurationName: configurationName),
+                    profileAction: .init(configurationName: configurationName),
+                    analyzeAction: .init(configurationName: configurationName)
                 ),
                 targets.contains(.example)
                 ? Scheme(
@@ -182,12 +178,12 @@ public extension Project {
                                 target: TargetReference(stringLiteral: "\(name)Tests"),
                                 parallelizable: true)
                         ],
-                        configurationName,
+                        configurationName: configurationName,
                         coverage: true),
-                    runAction: .init(configurationName),
-                    archiveAction: .init(configurationName),
-                    profileAction: .init(configurationName),
-                    analyzeAction: .init(configurationName))
+                    runAction: .init(configurationName: configurationName),
+                    archiveAction: .init(configurationName: configurationName),
+                    profileAction: .init(configurationName: configurationName),
+                    analyzeAction: .init(configurationName: configurationName))
                 : nil
             ].compactMap { $0 })
     }

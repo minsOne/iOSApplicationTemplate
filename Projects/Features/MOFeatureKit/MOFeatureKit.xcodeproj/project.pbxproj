@@ -576,8 +576,8 @@
 			targets = (
 				648303A5FAA0EC655C512A88 /* MOFeatureKit */,
 				6474D6C36E67BEA5038BFB88 /* MOFeatureKitTesting */,
-				7B041166FBEDD5154B302281 /* MOFeatureKitTests */,
 				587F75CCDA50F7A64BFF5763 /* MOFeatureKitExample */,
+				7B041166FBEDD5154B302281 /* MOFeatureKitTests */,
 			);
 		};
 /* End PBXProject section */

@@ -1,10 +1,16 @@
 import Foundation
 import XCTest
+import RxSwift
+import RxRelay
+import RxBlocking
+import RxTest
 import Quick
 import Nimble
-@testable import MODesignSystemKit
+import RxNimbleRxTest
+import RxNimbleRxBlocking
+@testable import {{ name }}
 
-class MODesignSystemSpec: QuickSpec {
+final class {{ name }}TestSpec: QuickSpec {
     override func spec() {
         describe("Given") {
             context("When") {

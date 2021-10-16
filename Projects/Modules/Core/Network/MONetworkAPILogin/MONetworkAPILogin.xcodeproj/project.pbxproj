@@ -556,8 +556,8 @@
 			targets = (
 				C5333EA8B9D46BCBBAC3E95D /* MONetworkAPILogin */,
 				2BE2288C9DEC4C19CC4C7C76 /* MONetworkAPILoginTesting */,
-				1EA9E557B8B3F72E774B44CD /* MONetworkAPILoginTests */,
 				2CF6B5A1210425BF9741ED63 /* MONetworkAPILoginExample */,
+				1EA9E557B8B3F72E774B44CD /* MONetworkAPILoginTests */,
 			);
 		};
 /* End PBXProject section */

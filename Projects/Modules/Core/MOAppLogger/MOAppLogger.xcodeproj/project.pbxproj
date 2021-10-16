@@ -579,8 +579,8 @@
 			targets = (
 				423DA8B26DDE49384F2BE70B /* MOAppLogger */,
 				056240ED435A7346B1F879A0 /* MOAppLoggerTesting */,
-				FEA4DBB8C68B00913859E57B /* MOAppLoggerTests */,
 				E3AA2D0DB183699C6DDA1846 /* MOAppLoggerExample */,
+				FEA4DBB8C68B00913859E57B /* MOAppLoggerTests */,
 			);
 		};
 /* End PBXProject section */

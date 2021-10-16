@@ -560,8 +560,8 @@
 			targets = (
 				0A4C836B703CF796381808B8 /* MOFoundationKit */,
 				55E7A608DB2395C6C258E5B7 /* MOFoundationKitTesting */,
-				9916965C50697DF880744F52 /* MOFoundationKitTests */,
 				D33151F4B26133A85158C996 /* MOFoundationKitExample */,
+				9916965C50697DF880744F52 /* MOFoundationKitTests */,
 			);
 		};
 /* End PBXProject section */

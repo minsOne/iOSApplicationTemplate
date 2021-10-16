@@ -563,8 +563,8 @@
 			targets = (
 				2117DF4FF6D827F73E82B0E7 /* MODesignSystemKit */,
 				CC2A8F547F5BD9FF9E9F87A2 /* MODesignSystemKitTesting */,
-				24BE3A474FBFF06E64D2160B /* MODesignSystemKitTests */,
 				CCF2D27EA728538AE9A37480 /* MODesignSystemKitExample */,
+				24BE3A474FBFF06E64D2160B /* MODesignSystemKitTests */,
 			);
 		};
 /* End PBXProject section */
