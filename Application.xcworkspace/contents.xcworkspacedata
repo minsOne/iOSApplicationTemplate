@@ -12,6 +12,13 @@
          </FileRef>
       </Group>
       <Group
+         location = "group:DevelopTool"
+         name = "DevelopTool">
+         <FileRef
+            location = "group:MOExampleDevToolPackage/MOExampleDevToolPackage.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
          location = "group:Features"
          name = "Features">
          <FileRef

@@ -21,6 +21,7 @@ extension Dep {
         public struct UserInterface {
             public struct DesignSystem {}
         }
+        public struct DevelopTool {}
     }
 }
 
@@ -74,4 +75,9 @@ public extension Dep.Project.UserInterface.DesignSystem {
     static let DesignSystemKit = project(name: "MODesignSystemKit")
 }
 
-// MARK: -
+// MARK: - Module / DevelopTool
+public extension Dep.Project.DevelopTool {
+    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/DevelopTool/\(name)")) }
+
+    static let ExampleDevToolPackage = project(name: "MOExampleDevToolPackage")
+}

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04E595D65D3522816EBEA91B /* MOFoundationKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4833ED65193849FFA8AB20 /* MOFoundationKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C90A2F116979804CCFDCC8D /* MOFoundationKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4833ED65193849FFA8AB20 /* MOFoundationKitTesting.framework */; platformFilter = ios; };
+		174C24A15A4B6CC2E5CC556F /* MOExampleDevToolPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2E24BE8BFB7465577A6010 /* MOExampleDevToolPackage.framework */; platformFilter = ios; };
 		17664B10A6245A9DCA022652 /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70017D3D64326ACDFCE91C5A /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18470E947CF47B1DD5C1BC4E /* MOFoundationKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4833ED65193849FFA8AB20 /* MOFoundationKitTesting.framework */; platformFilter = ios; };
 		1E8ED7A04E5D5037ED1EE97E /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39EAA9F38698AE3410E7A16 /* RxCocoa.xcframework */; };
@@ -183,6 +184,7 @@
 		E05203B423FB12BA23914D74 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
 		E5452DA0A75F24C29CE60387 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
 		E5A1DE1AA17C601B2EA0C4C3 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
+		EA2E24BE8BFB7465577A6010 /* MOExampleDevToolPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOExampleDevToolPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC351E719B47B7B62F120F34 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		EDA098A090EC612AFE743283 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
 		EF01ACAB64F3BD17177D13E7 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174C24A15A4B6CC2E5CC556F /* MOExampleDevToolPackage.framework in Frameworks */,
 				3C2B0BF1B142CED3735BEC34 /* MOFoundationKit.framework in Frameworks */,
 				18470E947CF47B1DD5C1BC4E /* MOFoundationKitTesting.framework in Frameworks */,
 				1E8ED7A04E5D5037ED1EE97E /* RxCocoa.xcframework in Frameworks */,
@@ -305,6 +308,7 @@
 		725C870BFA442EA2C6DD1A63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				EA2E24BE8BFB7465577A6010 /* MOExampleDevToolPackage.framework */,
 				FF650B7F297E62B480EFA083 /* MOFoundationKit.framework */,
 				55ACF3CBE9E2E5FCFB090BC3 /* MOFoundationKitExample.app */,
 				1D4833ED65193849FFA8AB20 /* MOFoundationKitTesting.framework */,

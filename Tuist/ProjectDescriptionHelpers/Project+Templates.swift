@@ -80,13 +80,15 @@ public extension Project {
                 actions: [],
                 dependencies: [
                     [
-                        .Framework.Common.RxSwift,
-                        .Framework.Common.RxCocoa,
-                        .Framework.Common.RxRelay,
-                        .Framework.DevelopTool.FLEX,
-                        .Framework.DevelopTool.TouchVisualizer,
+                        Dep.Framework.Common.RxSwift,
+                        Dep.Framework.Common.RxCocoa,
+                        Dep.Framework.Common.RxRelay,
                     ],
-                    deps
+                    deps,
+                    [
+                        // DevTool
+                        Dep.Project.DevelopTool.ExampleDevToolPackage
+                    ],
                 ].flatMap { $0 },
                 settings: Settings(base: [:], configurations: XCConfig.application)
             )

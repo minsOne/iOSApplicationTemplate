@@ -42,6 +42,7 @@
 		C5B6EF7F152D827372627073 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */; };
 		C91D34E22BC40C7885605BC8 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07B3D43A30CC1EB0061100 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD2BFE388E1BF7F9CEEA06D3 /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9CAB5ACA0D35DF3BCA83C7 /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD87FDCD019955B19304E0A9 /* MOExampleDevToolPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49CBC4212CC3841A5A2A35C /* MOExampleDevToolPackage.framework */; platformFilter = ios; };
 		CEEDAC24FE7DDD256318371E /* MOAppLoggerTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */; platformFilter = ios; };
 		D8D8E8796DBC5580F4A7C923 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */; };
 		D9DA14425DE8B295840005BB /* LoggerFirebaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E7B2BFA8E9E7C8FDD798 /* LoggerFirebaseMock.swift */; };
@@ -183,6 +184,7 @@
 		DAEC0BEC61ED9F8E3BC3AE54 /* FirebaseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseKit.swift; sourceTree = "<group>"; };
 		EEC2A385F9AAD148B398E4F6 /* MOAppLoggerTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTests.plist; sourceTree = "<group>"; };
 		F2C27BD73C16688254AFF986 /* MOAppLogger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLogger.plist; sourceTree = "<group>"; };
+		F49CBC4212CC3841A5A2A35C /* MOExampleDevToolPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOExampleDevToolPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2806E9044F47CB43E302FC /* MOAppLoggerTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTesting.plist; sourceTree = "<group>"; };
 		FFC83155EA2DA9E87A7E3A89 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E2A067689FDB7ABAB6BE9A /* MOAppLoggerTesting.framework in Frameworks */,
+				CD87FDCD019955B19304E0A9 /* MOExampleDevToolPackage.framework in Frameworks */,
 				7871C820B6BD011936854833 /* RxCocoa.xcframework in Frameworks */,
 				6182C904791DABE8A9317B99 /* RxRelay.xcframework in Frameworks */,
 				9717A9E4CC8C247CF4FD5BF5 /* RxSwift.xcframework in Frameworks */,
@@ -285,6 +288,7 @@
 				4A6E561A12C10303D1137684 /* MOAppLoggerExample.app */,
 				05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */,
 				1D5179E61579AC1CFFD0EA18 /* MOAppLoggerTests.xctest */,
+				F49CBC4212CC3841A5A2A35C /* MOExampleDevToolPackage.framework */,
 				F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */,
 			);
 			name = Products;
