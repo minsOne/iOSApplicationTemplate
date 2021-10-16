@@ -7,9 +7,10 @@
 //
 
 import Foundation
-import Firebase
 import UIKit
 import MOThirdPartyLibManager
+import FirebaseAnalytics
+import FirebaseCore
 
 public protocol FirebaseAnalyticsServicable {
     func register(bundle: Bundle, plistName: String)

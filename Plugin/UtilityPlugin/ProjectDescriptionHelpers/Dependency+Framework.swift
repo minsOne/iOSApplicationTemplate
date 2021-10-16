@@ -60,21 +60,20 @@ public extension Dep.Framework.DevelopTool {
 
 // MARK: - Vendor
 public extension Dep.Framework.Vendor {
-    private static func firebase(name: String) -> Dep { .framework(path: .relativeToRoot("Libraries/Vendor/Firebase/\(name).framework")) }
+    private static func firebase(name: String) -> Dep { .xcframework(path: .relativeToRoot("Libraries/Vendor/Firebase/\(name).xcframework")) }
     private static func facebook(name: String) -> Dep { .framework(path: .relativeToRoot("Libraries/Vendor/Facebook/\(name).framework")) }
 
     static let Firebase: [Dep] = [
-        firebase(name: "nanopb"),
-        firebase(name: "GoogleUtilities"),
-        firebase(name: "GoogleDataTransportCCTSupport"),
-        firebase(name: "GoogleDataTransport"),
-        firebase(name: "GoogleAppMeasurement"),
-        firebase(name: "FirebaseCoreDiagnostics"),
-        firebase(name: "FirebaseInstanceID"),
-        firebase(name: "FirebaseCore"),
         firebase(name: "FirebaseAnalytics"),
-        firebase(name: "Firebase"),
-        firebase(name: "FIRAnalyticsConnector"),
+        firebase(name: "FirebaseCore"),
+        firebase(name: "FirebaseCoreDiagnostics"),
+        firebase(name: "FirebaseCrashlytics"),
+        firebase(name: "FirebaseInstallations"),
+        firebase(name: "GoogleAppMeasurement"),
+        firebase(name: "GoogleDataTransport"),
+        firebase(name: "GoogleUtilities"),
+        firebase(name: "nanopb"),
+        firebase(name: "PromisesObjC"),
     ]
     static let Facebook: [Dep] = [
         facebook(name: "FBSDKShareKit"),

@@ -107,10 +107,6 @@ $ ./script/tuist_graph_without_testing_example_tests.sh
 * [PureSwiftUI](https://github.com/CodeSlicing/pure-swift-ui)
 * [TouchVisualizer](https://github.com/morizotter/TouchVisualizer)
 
-## 주의
+## Firebase
 
-* PinLayout은 Carthage로 빌드시 TestProjects/swift-package-manager의 프로젝트 파일을 빌드할때 에러나므로, TestProjects를 다 제거하고 Carthage를 실행하면 됨.
-    ```
-    $ rm -rf Tuist/Dependencies/Carthage/Checkouts/PinLayout/TestProjects
-    $ carthage build --project-directory Tuist/Dependencies --platform iOS --use-xcframeworks --no-use-binaries --use-netrc --cache-builds --verbose
-    ```
+* [firebase/quickstart-ios](https://github.com/firebase/quickstart-ios)

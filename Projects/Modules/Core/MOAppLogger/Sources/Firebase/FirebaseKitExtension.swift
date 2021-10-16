@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAnalytics
 
 extension AppLogEventAttribute {
     var analyticsParameter: [String: Any] {

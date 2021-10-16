@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "FDA6C677-16EA-49B8-B39E-DF06E76FB34D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
