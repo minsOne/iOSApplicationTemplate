@@ -1,0 +1,11 @@
+framework module RIBs {
+  umbrella header "RIBs.h"
+
+  export *
+  module * { export * }
+}
+
+module RIBs.Swift {
+    header "RIBs-Swift.h"
+    requires objc
+}

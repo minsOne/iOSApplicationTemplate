@@ -13,20 +13,43 @@
 		0B84989711AAA12296E70C46 /* MONetworkAPIsTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C864994F29B56FD5CC34897F /* MONetworkAPIsTesting.framework */; platformFilter = ios; };
 		2A3AB8F219767247687AE13B /* MONetworkAPIHome.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = F20A61A99929227555C212FD /* MONetworkAPIHome.framework */; platformFilter = ios; };
 		2AC1D8F8E3DB7BB988FF035C /* MONetworkAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6759B95DDF31BF20B7DD96 /* MONetworkAPIs.swift */; };
+		2F01CE38A89FA5BF93642694 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B08D69FD4F0C2FB67FB510E /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30D0D1E1503FAC8771DF3BBC /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0364C9DD61428A133CB260 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		314D354E3BFE2D9674E6409C /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3750FF2B34B18F908A325855 /* RxTest.xcframework */; };
+		374FEFAACF04BAC704E3470C /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF2ECA9510D1F5F757D9291 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		440FFA8D6451807EF9BF66A4 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BE6EC130DAD715E14C2F7C /* Nimble.xcframework */; };
+		4AC888CE6C05CC6F2B963307 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1506CA55A09C86D9B7CEE39D /* RxSwift.xcframework */; };
 		4C1782A0692BB834F2EF5449 /* MONetworkAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80450652F2146BB017944488 /* MONetworkAPIs.swift */; };
 		5D020B8B6C18F5460074E46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C5A702261DF6BDD62F595 /* AppDelegate.swift */; };
+		68BADB72339E94A6A7F8736D /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44EE4ED6D4E7E0DA25C4EAF5 /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		693C1687E40AC1C5D413F3D4 /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1A37E3B0C0D4C4CC6B609D /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
+		6CAA46C0E028BC4C65DAC0A4 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02BE6EC130DAD715E14C2F7C /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FF7A82D597B23FA31B17DF6 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0364C9DD61428A133CB260 /* RxRelay.xcframework */; };
+		730D816AA2DF4DD40093A5D2 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAD7BCDE76821716BC9B7217 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77DD7FAB4F1BA0696061012F /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1A37E3B0C0D4C4CC6B609D /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B74E8524712E99C298ED0FC /* MONetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE1C33AF06B803F45C85B35 /* MONetworkAPIs.framework */; platformFilter = ios; };
 		81C2AFE6E7B361860068D1B1 /* MONetworkAPICommon.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 58F3248BEE29C1D50A13177F /* MONetworkAPICommon.framework */; platformFilter = ios; };
 		89C7F2AA939BF80A722D9538 /* MONetworkAPILogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4838057F6CF9D57476117227 /* MONetworkAPILogin.framework */; platformFilter = ios; };
+		8FE231A06B389E93F81CEF56 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC28D2FD149C3755B9A287C /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90FE18587F3636C1F2367A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F248A625059630890F09707 /* LaunchScreen.storyboard */; };
 		99BC636DD0C60EF5395B1248 /* MONetworkAPILogin.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 4838057F6CF9D57476117227 /* MONetworkAPILogin.framework */; platformFilter = ios; };
+		9A54D87BA98FE5ADE27CB52D /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97583EEF572B608E9AA9DCC7 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA3A565E89FC3D06FDD344E /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97583EEF572B608E9AA9DCC7 /* FLEX.xcframework */; };
 		A0FB51A707A0703E57D3B180 /* MONetworkAPIsTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C864994F29B56FD5CC34897F /* MONetworkAPIsTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A681F7F41562C268AA9A328C /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3750FF2B34B18F908A325855 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACD575DE8CE4F7040C34D3F8 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD7BCDE76821716BC9B7217 /* RxBlocking.xcframework */; };
 		B8A14AA26E8B2E244AC20A39 /* MONetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A61A99929227555C212FD /* MONetworkAPIHome.framework */; platformFilter = ios; };
 		BF035CD904CAA6F21E47893E /* MONetworkAPIsTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C864994F29B56FD5CC34897F /* MONetworkAPIsTesting.framework */; platformFilter = ios; };
+		CDFA15C460EF5109344E1092 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B08D69FD4F0C2FB67FB510E /* RxCocoa.xcframework */; };
+		D0427CF78E0E162562E8DBE9 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1506CA55A09C86D9B7CEE39D /* RxSwift.xcframework */; };
 		D9FCF7CC63711DE8AC8E1583 /* Bundle+MONetworkAPIsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704123933A110C1F83452686 /* Bundle+MONetworkAPIsExample.swift */; };
+		DFC5BD9413677CD39C905695 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0364C9DD61428A133CB260 /* RxRelay.xcframework */; };
+		E0697268FD87558C4AF117BA /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC28D2FD149C3755B9A287C /* Quick.xcframework */; };
+		E6FE32BB7E5AEF760C89FEBE /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EE4ED6D4E7E0DA25C4EAF5 /* RxNimbleRxBlocking.xcframework */; };
 		ECE2213F2D551C16FD85DAED /* MONetworkAPIsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D257B2E1AAFC52A6292EEA /* MONetworkAPIsTests.swift */; };
+		F4C13978F199BBA64D56CF3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88500787D0D85A08E0265A1C /* XCTest.framework */; };
+		F945A8064B13779D2E9D4393 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1506CA55A09C86D9B7CEE39D /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDD162FF287A7B9BAD72F4DF /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF2ECA9510D1F5F757D9291 /* RxNimbleRxTest.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +90,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6CAA46C0E028BC4C65DAC0A4 /* Nimble.xcframework in Embed Frameworks */,
+				8FE231A06B389E93F81CEF56 /* Quick.xcframework in Embed Frameworks */,
+				730D816AA2DF4DD40093A5D2 /* RxBlocking.xcframework in Embed Frameworks */,
+				68BADB72339E94A6A7F8736D /* RxNimbleRxBlocking.xcframework in Embed Frameworks */,
+				374FEFAACF04BAC704E3470C /* RxNimbleRxTest.xcframework in Embed Frameworks */,
+				A681F7F41562C268AA9A328C /* RxTest.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +140,10 @@
 			files = (
 				A0FB51A707A0703E57D3B180 /* MONetworkAPIsTesting.framework in Embed Frameworks */,
 				77DD7FAB4F1BA0696061012F /* MOThirdPartyLibManager.framework in Embed Frameworks */,
+				2F01CE38A89FA5BF93642694 /* RxCocoa.xcframework in Embed Frameworks */,
+				30D0D1E1503FAC8771DF3BBC /* RxRelay.xcframework in Embed Frameworks */,
+				F945A8064B13779D2E9D4393 /* RxSwift.xcframework in Embed Frameworks */,
+				9A54D87BA98FE5ADE27CB52D /* FLEX.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,15 +151,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02BE6EC130DAD715E14C2F7C /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
+		1506CA55A09C86D9B7CEE39D /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
 		1B1A37E3B0C0D4C4CC6B609D /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF2ECA9510D1F5F757D9291 /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
+		1C0364C9DD61428A133CB260 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
 		1F6759B95DDF31BF20B7DD96 /* MONetworkAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONetworkAPIs.swift; sourceTree = "<group>"; };
 		20A71B67E36A3A4A61FE8D8B /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
 		28E7266E619F52604D8FC7AF /* MONetworkAPIsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MONetworkAPIsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE1C33AF06B803F45C85B35 /* MONetworkAPIs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		336AD7C21C8AAB7774F7A424 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		3750FF2B34B18F908A325855 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
 		3B4C5A702261DF6BDD62F595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD7F9A296B30FB8AC3CE998 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		42D3B5B153C4FA64305FD971 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
+		44EE4ED6D4E7E0DA25C4EAF5 /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
 		4838057F6CF9D57476117227 /* MONetworkAPILogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPILogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D257B2E1AAFC52A6292EEA /* MONetworkAPIsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONetworkAPIsTests.swift; sourceTree = "<group>"; };
 		58F3248BEE29C1D50A13177F /* MONetworkAPICommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPICommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,14 +173,19 @@
 		6F248A625059630890F09707 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704123933A110C1F83452686 /* Bundle+MONetworkAPIsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MONetworkAPIsExample.swift"; sourceTree = "<group>"; };
 		76B9CE944F915FFA09F67B94 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
+		7B08D69FD4F0C2FB67FB510E /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
 		80450652F2146BB017944488 /* MONetworkAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONetworkAPIs.swift; sourceTree = "<group>"; };
+		88500787D0D85A08E0265A1C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		88A2BF10F309676179C97F06 /* MONetworkAPIsTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MONetworkAPIsTests.plist; sourceTree = "<group>"; };
+		97583EEF572B608E9AA9DCC7 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
 		9A4962E1EA83A4DEFE551B3C /* MONetworkAPIsExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MONetworkAPIsExample.plist; sourceTree = "<group>"; };
 		A527F59550D75DA97F7C3418 /* MONetworkAPIsTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MONetworkAPIsTesting.plist; sourceTree = "<group>"; };
+		BAD7BCDE76821716BC9B7217 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
 		C6C520D0BAAEA9C94B6FD62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C864994F29B56FD5CC34897F /* MONetworkAPIsTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIsTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA35D30353B4A2C310600C2B /* MONetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD685BD51D5A7BD649144E5B /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
+		DDC28D2FD149C3755B9A287C /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
 		E8E79F04F1C8C55178650BAE /* MONetworkAPIsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONetworkAPIsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F134B7B3AEBB8599355971E4 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		F20A61A99929227555C212FD /* MONetworkAPIHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF035CD904CAA6F21E47893E /* MONetworkAPIsTesting.framework in Frameworks */,
+				CDFA15C460EF5109344E1092 /* RxCocoa.xcframework in Frameworks */,
+				DFC5BD9413677CD39C905695 /* RxRelay.xcframework in Frameworks */,
+				4AC888CE6C05CC6F2B963307 /* RxSwift.xcframework in Frameworks */,
+				9DA3A565E89FC3D06FDD344E /* FLEX.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +216,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C13978F199BBA64D56CF3E /* XCTest.framework in Frameworks */,
 				0B84989711AAA12296E70C46 /* MONetworkAPIsTesting.framework in Frameworks */,
+				6FF7A82D597B23FA31B17DF6 /* RxRelay.xcframework in Frameworks */,
+				D0427CF78E0E162562E8DBE9 /* RxSwift.xcframework in Frameworks */,
+				440FFA8D6451807EF9BF66A4 /* Nimble.xcframework in Frameworks */,
+				E0697268FD87558C4AF117BA /* Quick.xcframework in Frameworks */,
+				ACD575DE8CE4F7040C34D3F8 /* RxBlocking.xcframework in Frameworks */,
+				E6FE32BB7E5AEF760C89FEBE /* RxNimbleRxBlocking.xcframework in Frameworks */,
+				FDD162FF287A7B9BAD72F4DF /* RxNimbleRxTest.xcframework in Frameworks */,
+				314D354E3BFE2D9674E6409C /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +277,16 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		36C7535754C15E5A527CF4DC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				ABBFE3DA1297D80A3ADA4FFC /* Common */,
+				4750BA28F13118C845A56225 /* DevelopTool */,
+			);
+			name = Libraries;
+			path = ../../../../../Libraries;
+			sourceTree = "<group>";
+		};
 		38B2D4CBB8DA4509EB4F5BCE /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +314,20 @@
 				DE4889CF6C14ADDB65511DAA /* Sources */,
 			);
 			path = Derived;
+			sourceTree = "<group>";
+		};
+		4750BA28F13118C845A56225 /* DevelopTool */ = {
+			isa = PBXGroup;
+			children = (
+				97583EEF572B608E9AA9DCC7 /* FLEX.xcframework */,
+				02BE6EC130DAD715E14C2F7C /* Nimble.xcframework */,
+				DDC28D2FD149C3755B9A287C /* Quick.xcframework */,
+				BAD7BCDE76821716BC9B7217 /* RxBlocking.xcframework */,
+				44EE4ED6D4E7E0DA25C4EAF5 /* RxNimbleRxBlocking.xcframework */,
+				1BF2ECA9510D1F5F757D9291 /* RxNimbleRxTest.xcframework */,
+				3750FF2B34B18F908A325855 /* RxTest.xcframework */,
+			);
+			path = DevelopTool;
 			sourceTree = "<group>";
 		};
 		4D76BE105124567261BC9242 /* Example */ = {
@@ -286,6 +367,16 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		ABBFE3DA1297D80A3ADA4FFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7B08D69FD4F0C2FB67FB510E /* RxCocoa.xcframework */,
+				1C0364C9DD61428A133CB260 /* RxRelay.xcframework */,
+				1506CA55A09C86D9B7CEE39D /* RxSwift.xcframework */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		BBD3744367EB9E89C2550403 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +391,7 @@
 				38B2D4CBB8DA4509EB4F5BCE /* Configurations */,
 				41B7D315A0E00552DF8FB930 /* Derived */,
 				4D76BE105124567261BC9242 /* Example */,
+				36C7535754C15E5A527CF4DC /* Libraries */,
 				0712ACC9598265DCBE5FA9FE /* Sources */,
 				00AE95027EE245722F995F31 /* Testing */,
 				BBD3744367EB9E89C2550403 /* Tests */,
@@ -338,6 +430,7 @@
 		EC51019153DCB63C3D5161C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88500787D0D85A08E0265A1C /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -647,6 +740,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -727,6 +826,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -871,6 +976,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1055,6 +1166,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1169,6 +1285,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1196,6 +1318,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1221,6 +1348,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1245,6 +1377,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1303,6 +1440,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1331,6 +1474,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIsExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

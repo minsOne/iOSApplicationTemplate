@@ -1,0 +1,6 @@
+framework module ReactorKitRuntime {
+  umbrella header "ReactorKitRuntime.h"
+
+  export *
+  module * { export * }
+}

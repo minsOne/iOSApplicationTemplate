@@ -72,3 +72,5 @@ public extension Dep.Project.UserInterface.DesignSystem {
 
     static let DesignSystemKit = project(name: "MODesignSystemKit")
 }
+
+// MARK: -

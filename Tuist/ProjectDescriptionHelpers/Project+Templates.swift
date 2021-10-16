@@ -8,7 +8,8 @@ public extension Project {
                           deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "13.0", devices: .iphone),
                           targets: Set<FeatureTarget> = Set([.staticframework, .tests, .example, .testing]),
                           packages: [Package] = [],
-                          dependencies: [TargetDependency] = []) -> Project {
+                          dependencies: [TargetDependency] = [],
+                          testingDependencies: [TargetDependency] = []) -> Project {
 
         let hasDynamicFramework = targets.contains(.dynamicframework)
 
@@ -44,9 +45,11 @@ public extension Project {
                 resources: [.glob(pattern: "Testing/Resources/**", excluding: ["Testing/Resources/dummy.txt"])],
                 actions: [],
                 dependencies: [
-                    .target(name: "\(name)"),
-                    // TODO: Testing에 필요한 라이브러리 추가
-                ],
+                    testingDependencies,
+                    [
+                        .target(name: "\(name)"),
+                    ]
+                ].flatMap { $0 },
                 settings: Settings(base: [:], configurations: XCConfig.framework)
             )
 
@@ -86,6 +89,15 @@ public extension Project {
                 dependencies: [
                     [
                         // TODO: Tests에 필요한 라이브러리 추가
+                        .xctest,
+                        .Framework.Common.RxSwift,
+                        .Framework.Common.RxRelay,
+                        .Framework.DevelopTool.RxBlocking,
+                        .Framework.DevelopTool.RxTest,
+                        .Framework.DevelopTool.Nimble,
+                        .Framework.DevelopTool.Quick,
+                        .Framework.DevelopTool.RxNimbleRxTest,
+                        .Framework.DevelopTool.RxNimbleRxBlocking,
                     ],
                     deps
                 ].flatMap { $0 },
@@ -121,6 +133,10 @@ public extension Project {
                 dependencies: [
                     [
                         // TODO: Example에 필요한 라이브러리 추가
+                        .Framework.Common.RxSwift,
+                        .Framework.Common.RxCocoa,
+                        .Framework.Common.RxRelay,
+                        .Framework.DevelopTool.FLEX,
                     ],
                     deps
                 ].flatMap { $0 },

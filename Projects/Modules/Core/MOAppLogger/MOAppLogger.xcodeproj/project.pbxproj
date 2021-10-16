@@ -8,26 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		118383E570CAB9F49169EF8B /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		214F68F7F122E49F4816A65C /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5E066746B59BB5246C778F /* FLEX.xcframework */; };
 		3480D4A118A6101507A58C2A /* AppLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE7AE086E63EFC46074155 /* AppLogEvent.swift */; };
+		4454A73C3DF7411281CB67BE /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48DF90D222EE34585A723184 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0FE430EE64284087B670C7 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AB65E18C2E8F447A4C17AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1245963DCB5C908603F6CC4 /* Assets.xcassets */; };
 		4B05AC67F83E3E7C4C162CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21638A9836646F817BDC7764 /* LaunchScreen.storyboard */; };
 		4B5779171E419E4DBEA0CDBE /* FirebaseKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D634ED88F7E4BCFB1DBB3F3C /* FirebaseKitExtension.swift */; };
+		4F66FC28558E617378BF00C7 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597DEB18122C8D28A059AA69 /* Quick.xcframework */; };
+		6182C904791DABE8A9317B99 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07B3D43A30CC1EB0061100 /* RxRelay.xcframework */; };
 		64E2A067689FDB7ABAB6BE9A /* MOAppLoggerTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */; platformFilter = ios; };
 		69087F0C3F0115C1C628E60C /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
+		694C18067685921D0F3D8E2A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71882234153879F4208E3C0 /* XCTest.framework */; };
 		7701FCB8E095EA9EDF9B523A /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
+		7871C820B6BD011936854833 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A292AEA236D70E49FBAEFE /* RxCocoa.xcframework */; };
+		7E788048FAD28A8ED184DB47 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC83155EA2DA9E87A7E3A89 /* RxBlocking.xcframework */; };
 		7FD84C07FDEC0BB2BF734AB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E49631DD714F89CFCC9803 /* GoogleService-Info.plist */; };
 		7FDCB003CAA3AFF266E8B377 /* CrashlyticsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25208A29DDA3ADD1ED1FD04A /* CrashlyticsKit.swift */; };
 		8CE3AD6D77BF4B428E419FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B5EC2571242638318CD29 /* AppDelegate.swift */; };
+		8EEFEF39A2A10135F1510BE8 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5E066746B59BB5246C778F /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FC0147FE2CD0D7DBAC3B8E7 /* FirebaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC0BEC61ED9F8E3BC3AE54 /* FirebaseKit.swift */; };
+		9441FAE122144A71B3A268EA /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9717A9E4CC8C247CF4FD5BF5 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */; };
+		9CEB025A78702AD6F3D49346 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07B3D43A30CC1EB0061100 /* RxRelay.xcframework */; };
 		A5BDA2C37741CC8F7EBB728A /* AnalyticsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DDC2AE8420FE8DC93E639 /* AnalyticsKit.swift */; };
 		A9C31AA5EF9EAD41705431A0 /* Bundle+MOAppLoggerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605B9FB65A0BA17104BB4BF /* Bundle+MOAppLoggerExample.swift */; };
+		AB866EDA56F7150ED9F7D5C5 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 597DEB18122C8D28A059AA69 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACBBEB6FD89397CF664E8242 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C98A7E2B7A70B2A13CB97DF /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B776321CA34916ABCD63835B /* MOAppLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */; platformFilter = ios; };
 		BA1C82D8A41F96D7EC1E5EFE /* MOAppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0703AB3F5B5E7347E4BFC6 /* MOAppLogger.swift */; };
+		BDB0DF42F9A65F9F858D6AA6 /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 420CEFE446D9310D322A1BF9 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5B6EF7F152D827372627073 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */; };
+		C91D34E22BC40C7885605BC8 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A07B3D43A30CC1EB0061100 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEEDAC24FE7DDD256318371E /* MOAppLoggerTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */; platformFilter = ios; };
+		D8D8E8796DBC5580F4A7C923 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */; };
 		D9DA14425DE8B295840005BB /* LoggerFirebaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E7B2BFA8E9E7C8FDD798 /* LoggerFirebaseMock.swift */; };
 		DC3F4D5A31C7EE03609774B2 /* MOAppLoggerTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE3822FE81880552643755A3 /* LoggerFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCE17567D513EEA0B0C8B5 /* LoggerFirebaseTests.swift */; };
+		DE6FB2CEEF5546B129A50293 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A292AEA236D70E49FBAEFE /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF6AAAA89F3E9E1283E6A8A2 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0FE430EE64284087B670C7 /* RxTest.xcframework */; };
+		E27CFB0957964FDF96E20085 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFC83155EA2DA9E87A7E3A89 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6EF26BB4B0D763F4D4B0AD1 /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420CEFE446D9310D322A1BF9 /* RxNimbleRxTest.xcframework */; };
 		ECFC25585103B669B909D597 /* FirebaseAnalyticsServicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A275363EA544C6A0621B00 /* FirebaseAnalyticsServicable.swift */; };
+		F8C7876DBC80664C15946B34 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C98A7E2B7A70B2A13CB97DF /* Nimble.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +103,10 @@
 			files = (
 				DC3F4D5A31C7EE03609774B2 /* MOAppLoggerTesting.framework in Embed Frameworks */,
 				118383E570CAB9F49169EF8B /* MOThirdPartyLibManager.framework in Embed Frameworks */,
+				DE6FB2CEEF5546B129A50293 /* RxCocoa.xcframework in Embed Frameworks */,
+				C91D34E22BC40C7885605BC8 /* RxRelay.xcframework in Embed Frameworks */,
+				4454A73C3DF7411281CB67BE /* RxSwift.xcframework in Embed Frameworks */,
+				8EEFEF39A2A10135F1510BE8 /* FLEX.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +117,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				ACBBEB6FD89397CF664E8242 /* Nimble.xcframework in Embed Frameworks */,
+				AB866EDA56F7150ED9F7D5C5 /* Quick.xcframework in Embed Frameworks */,
+				E27CFB0957964FDF96E20085 /* RxBlocking.xcframework in Embed Frameworks */,
+				9441FAE122144A71B3A268EA /* RxNimbleRxBlocking.xcframework in Embed Frameworks */,
+				BDB0DF42F9A65F9F858D6AA6 /* RxNimbleRxTest.xcframework in Embed Frameworks */,
+				48DF90D222EE34585A723184 /* RxTest.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,24 +143,34 @@
 		05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOAppLoggerTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0913F1EB05367E9347AF19B3 /* MOAppLoggerExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerExample.plist; sourceTree = "<group>"; };
 		0FFA8639D7121940370EB7F9 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		11A292AEA236D70E49FBAEFE /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
 		1B0703AB3F5B5E7347E4BFC6 /* MOAppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAppLogger.swift; sourceTree = "<group>"; };
 		1D5179E61579AC1CFFD0EA18 /* MOAppLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOAppLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21638A9836646F817BDC7764 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		240B5EC2571242638318CD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25208A29DDA3ADD1ED1FD04A /* CrashlyticsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsKit.swift; sourceTree = "<group>"; };
 		2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOAppLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		420CEFE446D9310D322A1BF9 /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
 		4A6E561A12C10303D1137684 /* MOAppLoggerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOAppLoggerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
 		525EB734911488FF88D4084E /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
 		53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		597DEB18122C8D28A059AA69 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
+		5C98A7E2B7A70B2A13CB97DF /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
 		61F9606258B5E3DBA82B0B45 /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
+		6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
 		632DDC2AE8420FE8DC93E639 /* AnalyticsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsKit.swift; sourceTree = "<group>"; };
+		6A07B3D43A30CC1EB0061100 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
+		6E0FE430EE64284087B670C7 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
 		7605B9FB65A0BA17104BB4BF /* Bundle+MOAppLoggerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOAppLoggerExample.swift"; sourceTree = "<group>"; };
+		8A5E066746B59BB5246C778F /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
 		8AF6E7B2BFA8E9E7C8FDD798 /* LoggerFirebaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFirebaseMock.swift; sourceTree = "<group>"; };
 		8BCE7AE086E63EFC46074155 /* AppLogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogEvent.swift; sourceTree = "<group>"; };
 		98A275363EA544C6A0621B00 /* FirebaseAnalyticsServicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsServicable.swift; sourceTree = "<group>"; };
 		999BFC97BE043ECDCFF185CE /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		A3E49631DD714F89CFCC9803 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5FE9EB829035D71081190C9 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		B71882234153879F4208E3C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B7CCE17567D513EEA0B0C8B5 /* LoggerFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFirebaseTests.swift; sourceTree = "<group>"; };
 		CA13D10E8473191B2CE3DD75 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
 		D1245963DCB5C908603F6CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +181,7 @@
 		F2C27BD73C16688254AFF986 /* MOAppLogger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLogger.plist; sourceTree = "<group>"; };
 		F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2806E9044F47CB43E302FC /* MOAppLoggerTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTesting.plist; sourceTree = "<group>"; };
+		FFC83155EA2DA9E87A7E3A89 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +189,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694C18067685921D0F3D8E2A /* XCTest.framework in Frameworks */,
 				CEEDAC24FE7DDD256318371E /* MOAppLoggerTesting.framework in Frameworks */,
+				9CEB025A78702AD6F3D49346 /* RxRelay.xcframework in Frameworks */,
+				D8D8E8796DBC5580F4A7C923 /* RxSwift.xcframework in Frameworks */,
+				F8C7876DBC80664C15946B34 /* Nimble.xcframework in Frameworks */,
+				4F66FC28558E617378BF00C7 /* Quick.xcframework in Frameworks */,
+				7E788048FAD28A8ED184DB47 /* RxBlocking.xcframework in Frameworks */,
+				C5B6EF7F152D827372627073 /* RxNimbleRxBlocking.xcframework in Frameworks */,
+				E6EF26BB4B0D763F4D4B0AD1 /* RxNimbleRxTest.xcframework in Frameworks */,
+				DF6AAAA89F3E9E1283E6A8A2 /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E2A067689FDB7ABAB6BE9A /* MOAppLoggerTesting.framework in Frameworks */,
+				7871C820B6BD011936854833 /* RxCocoa.xcframework in Frameworks */,
+				6182C904791DABE8A9317B99 /* RxRelay.xcframework in Frameworks */,
+				9717A9E4CC8C247CF4FD5BF5 /* RxSwift.xcframework in Frameworks */,
+				214F68F7F122E49F4816A65C /* FLEX.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +234,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037CBEF6DC3605361D9FC0AC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0FF9AFD360C957F43F022FA1 /* Common */,
+				F2A8E1004538CB1DA044690C /* DevelopTool */,
+			);
+			name = Libraries;
+			path = ../../../../Libraries;
+			sourceTree = "<group>";
+		};
+		0FF9AFD360C957F43F022FA1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				11A292AEA236D70E49FBAEFE /* RxCocoa.xcframework */,
+				6A07B3D43A30CC1EB0061100 /* RxRelay.xcframework */,
+				6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		1DA117E4D50F9691308BE978 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +384,7 @@
 				ED7290BD3B4627F2566CC113 /* Configurations */,
 				FAB235AC3E492CE819426AAF /* Derived */,
 				47151CDAF81BA052097D8BA3 /* Example */,
+				037CBEF6DC3605361D9FC0AC /* Libraries */,
 				1DA117E4D50F9691308BE978 /* Sources */,
 				8853752373E8F264956F031A /* Testing */,
 				61C33C01F9F4F3B35422AD24 /* Tests */,
@@ -317,6 +395,7 @@
 		BF53D8BCE8B0A9A83CB4FAE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B71882234153879F4208E3C0 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,6 +433,20 @@
 				BF53D8BCE8B0A9A83CB4FAE7 /* Frameworks */,
 				28A21DFFFF2D89E99653D197 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		F2A8E1004538CB1DA044690C /* DevelopTool */ = {
+			isa = PBXGroup;
+			children = (
+				8A5E066746B59BB5246C778F /* FLEX.xcframework */,
+				5C98A7E2B7A70B2A13CB97DF /* Nimble.xcframework */,
+				597DEB18122C8D28A059AA69 /* Quick.xcframework */,
+				FFC83155EA2DA9E87A7E3A89 /* RxBlocking.xcframework */,
+				4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */,
+				420CEFE446D9310D322A1BF9 /* RxNimbleRxTest.xcframework */,
+				6E0FE430EE64284087B670C7 /* RxTest.xcframework */,
+			);
+			path = DevelopTool;
 			sourceTree = "<group>";
 		};
 		F4E09DEAA71D814EF17C35D4 /* Firebase */ = {
@@ -715,6 +808,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1027,6 +1125,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1050,6 +1153,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1076,6 +1185,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1283,6 +1398,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1308,6 +1428,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1331,6 +1456,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1411,6 +1542,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1434,6 +1570,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1461,6 +1603,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

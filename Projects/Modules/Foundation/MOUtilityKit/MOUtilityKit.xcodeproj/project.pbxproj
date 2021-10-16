@@ -8,14 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		0DF6BD96C49E79D6565511D4 /* MOUtilityKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E23C67FA9CA870B8AC17F2C /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */; };
+		1A054F62FDDA4C9D3D309804 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A798B6BCCFF39765EF5C2F2 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B5C90A88CC453ABD3E99D4E /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		363BEF3248D02262FA5C410A /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
+		40A404E6530931EEB1C38BA7 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		428DB60A738D350C2C550514 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */; };
 		4DF16FF4E74F40D6A4B7B7C1 /* MOUtilityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C928ABB00BE02994A88320 /* MOUtilityKit.swift */; };
+		50398F3E62F4162604CF9355 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; };
+		5D69B88B6B9807D03A81FFD9 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F44ED9B3F911B575219305C /* RxBlocking.xcframework */; };
 		5F3A6320016F0E97D59D7E16 /* Bundle+MOUtilityKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA6D6CDC200E3C8846D369 /* Bundle+MOUtilityKitExample.swift */; };
+		605AF12347226CDC057A18C9 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */; };
+		6C8ABC4BDF3BE9302217B3A4 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4295C2F40E07358DB311CCDE /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6CB23AD5BDD51C875F264AA4 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB2CC199B773DBAD08D4694C /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72A669E13906C909ABE1A425 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */; };
+		79FE86E1FA6E44E16A1C636E /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BC9D2D0121B8290274896ED /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4295C2F40E07358DB311CCDE /* Quick.xcframework */; };
+		82C8E7E9679AEAF0B688234C /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2CC199B773DBAD08D4694C /* RxCocoa.xcframework */; };
+		84D068EA96BD83C5950EC85D /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2943DBA1CCEAFD8D0F975107 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90FCB4E3B678F473A825B228 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6466EC6702DEEBC26FE95EAE /* XCTest.framework */; };
 		921A2F8AD6C9A53ACA959D29 /* MOUtilityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A28231A6BBE7425695F7FD /* MOUtilityKit.swift */; };
+		96126EFAF4A883A3257E5A84 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5554BAEEEAACB0A48246276 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */; };
 		A7EB062E584CBF151C4D2C82 /* MOUtilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D674BD13B93985BD67120 /* MOUtilityKit.framework */; platformFilter = ios; };
+		AC35327E7CE5EEE1A15640B5 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2943DBA1CCEAFD8D0F975107 /* Nimble.xcframework */; };
 		B0C2401590BB6AE3FAB5F401 /* MOUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */; };
+		BF31AC7C81527A9D83A6CF82 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; };
+		C6C71D9CB99FE623567AB187 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */; };
 		CBFF31895E18A0E644003A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */; };
 		E0CD22E3C3244C95D629759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD42F94BE12E3337872D84 /* Assets.xcassets */; };
+		E18F580F257FCA5EE183277E /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F44ED9B3F911B575219305C /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E301A3676FDF623A988E2FE0 /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
 		FD7DA5DF9E37CFFF11E82655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06291FC12344B0F823ED31 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +81,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				84D068EA96BD83C5950EC85D /* Nimble.xcframework in Embed Frameworks */,
+				6C8ABC4BDF3BE9302217B3A4 /* Quick.xcframework in Embed Frameworks */,
+				E18F580F257FCA5EE183277E /* RxBlocking.xcframework in Embed Frameworks */,
+				79FE86E1FA6E44E16A1C636E /* RxNimbleRxBlocking.xcframework in Embed Frameworks */,
+				2B5C90A88CC453ABD3E99D4E /* RxNimbleRxTest.xcframework in Embed Frameworks */,
+				96126EFAF4A883A3257E5A84 /* RxTest.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +118,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0DF6BD96C49E79D6565511D4 /* MOUtilityKitTesting.framework in Embed Frameworks */,
+				6CB23AD5BDD51C875F264AA4 /* RxCocoa.xcframework in Embed Frameworks */,
+				1A054F62FDDA4C9D3D309804 /* RxRelay.xcframework in Embed Frameworks */,
+				1A798B6BCCFF39765EF5C2F2 /* RxSwift.xcframework in Embed Frameworks */,
+				40A404E6530931EEB1C38BA7 /* FLEX.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,24 +133,35 @@
 		07C0EE45165AB0DAAF74FBE4 /* MOUtilityKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitExample.plist; sourceTree = "<group>"; };
 		0ADC148236D07A265D1BE135 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
 		14D1EDB824C88D5CE5F423F2 /* MOUtilityKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKit.plist; sourceTree = "<group>"; };
+		1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
 		1E06291FC12344B0F823ED31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		215C065AF2160B6B14475B00 /* MOUtilityKitTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTesting.plist; sourceTree = "<group>"; };
 		24EB640012ECC7409F9EADF6 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
+		2943DBA1CCEAFD8D0F975107 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
 		2BFA6D6CDC200E3C8846D369 /* Bundle+MOUtilityKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MOUtilityKitExample.swift"; sourceTree = "<group>"; };
+		3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
 		3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		4295C2F40E07358DB311CCDE /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
 		497CA50810AD05015DD5673D /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
 		49C928ABB00BE02994A88320 /* MOUtilityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKit.swift; sourceTree = "<group>"; };
 		4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5866C24CC5EB9C112099CDFE /* MOUtilityKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTests.plist; sourceTree = "<group>"; };
 		5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		6466EC6702DEEBC26FE95EAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6F3E06B906562FDDDEA79882 /* MOUtilityKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOUtilityKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F81F7D746F97E9A4115AD19 /* MOUtilityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOUtilityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CD42F94BE12E3337872D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
+		7F44ED9B3F911B575219305C /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
 		844D674BD13B93985BD67120 /* MOUtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
+		C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
 		CD892C4C53841062EA556FDB /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
+		CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
+		EB2CC199B773DBAD08D4694C /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
 		FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				363BEF3248D02262FA5C410A /* MOUtilityKitTesting.framework in Frameworks */,
+				82C8E7E9679AEAF0B688234C /* RxCocoa.xcframework in Frameworks */,
+				605AF12347226CDC057A18C9 /* RxRelay.xcframework in Frameworks */,
+				BF31AC7C81527A9D83A6CF82 /* RxSwift.xcframework in Frameworks */,
+				428DB60A738D350C2C550514 /* FLEX.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +182,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FCB4E3B678F473A825B228 /* XCTest.framework in Frameworks */,
 				E301A3676FDF623A988E2FE0 /* MOUtilityKitTesting.framework in Frameworks */,
+				72A669E13906C909ABE1A425 /* RxRelay.xcframework in Frameworks */,
+				50398F3E62F4162604CF9355 /* RxSwift.xcframework in Frameworks */,
+				AC35327E7CE5EEE1A15640B5 /* Nimble.xcframework in Frameworks */,
+				7BC9D2D0121B8290274896ED /* Quick.xcframework in Frameworks */,
+				5D69B88B6B9807D03A81FFD9 /* RxBlocking.xcframework in Frameworks */,
+				A5554BAEEEAACB0A48246276 /* RxNimbleRxBlocking.xcframework in Frameworks */,
+				0E23C67FA9CA870B8AC17F2C /* RxNimbleRxTest.xcframework in Frameworks */,
+				C6C71D9CB99FE623567AB187 /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +239,20 @@
 				5BCE3F10462ABB15755117BC /* Sources */,
 			);
 			path = Derived;
+			sourceTree = "<group>";
+		};
+		11FB7970B5128F08682268AB /* DevelopTool */ = {
+			isa = PBXGroup;
+			children = (
+				1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */,
+				2943DBA1CCEAFD8D0F975107 /* Nimble.xcframework */,
+				4295C2F40E07358DB311CCDE /* Quick.xcframework */,
+				7F44ED9B3F911B575219305C /* RxBlocking.xcframework */,
+				C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */,
+				3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */,
+				7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */,
+			);
+			path = DevelopTool;
 			sourceTree = "<group>";
 		};
 		204D63C2B66B4786AD175F36 /* Sources */ = {
@@ -249,6 +320,16 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		6BE45D2D1859D98FAB641589 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F16CFEC509147FE824C3585B /* Common */,
+				11FB7970B5128F08682268AB /* DevelopTool */,
+			);
+			name = Libraries;
+			path = ../../../../Libraries;
+			sourceTree = "<group>";
+		};
 		6EDA7435937BC0759A857F9B /* Projects */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +353,7 @@
 		7E410BC6C792726A6601CD5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6466EC6702DEEBC26FE95EAE /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,6 +381,7 @@
 				03682B5BEB85E322FCABDD74 /* Configurations */,
 				11AC8435A0CF2EE80C93110A /* Derived */,
 				0FB8E9408CEE678E5CD180EC /* Example */,
+				6BE45D2D1859D98FAB641589 /* Libraries */,
 				4269733A9D5B528FF2E70DF2 /* Sources */,
 				74EAC949967EA56BABC85229 /* Testing */,
 				DA74340E4550E54035878920 /* Tests */,
@@ -328,6 +411,16 @@
 				82866995CC0F095452A7C9F1 /* Sources */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F16CFEC509147FE824C3585B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CC199B773DBAD08D4694C /* RxCocoa.xcframework */,
+				13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */,
+				CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,6 +702,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -637,6 +736,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -660,6 +764,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -774,6 +884,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -930,6 +1045,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -956,6 +1077,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1076,6 +1203,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1152,6 +1284,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1179,6 +1317,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1268,6 +1411,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -66,3 +66,6 @@ Derived/
 ### Tuist managed dependencies ###
 Tuist/Dependencies/SwiftPackageManager
 Tuist/Dependencies/Carthage
+
+### Custom
+_deprecated_Projects/

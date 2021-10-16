@@ -1,0 +1,11 @@
+framework module RxNimbleRxTest {
+  umbrella header "RxNimbleRxTest.h"
+
+  export *
+  module * { export * }
+}
+
+module RxNimbleRxTest.Swift {
+    header "RxNimbleRxTest-Swift.h"
+    requires objc
+}

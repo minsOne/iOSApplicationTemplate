@@ -8,25 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		07415B8479AA7F9D046A5B4A /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2F6785770FF6E2EDF28A6E2 /* ReactorKit */; };
+		09D437C7A0DB369A69B6A486 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAA06A4C5329041A0826221 /* Quick.xcframework */; };
 		0EF2655346031FD1E3A2A0F1 /* RxPackageTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84AC31A36DBD7E39B62DC45 /* RxPackageTesting.framework */; platformFilter = ios; };
+		18E594A50717FC07623A7050 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8DE16389C922DF3500A162 /* RxCocoa.xcframework */; };
 		1D2915397A7BFD0D8137B1C3 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */; platformFilter = ios; };
+		229D9E9989BBE8629AD96A3B /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF5E3FC0860BB25CA2A8EA /* RxTest.xcframework */; };
+		2489CC8804039D24EED8128D /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 148B71D1313A5999BCDDD55D /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EFF09E8E3D3F4DD4973A363 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F3B111A7549F968B4E71B6 /* XCTest.framework */; };
 		321FDDDEB7398F72984963E9 /* RxPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		334B22352DA423D32FDFA68C /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354C9300B0D44C11BD14D9CB /* FLEX.xcframework */; };
 		35978D7708C7C6AD18E192A9 /* NavigationControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69199DF005D4715F9E666355 /* NavigationControllable.swift */; };
 		44BB52FC210DADA29F5F43C9 /* RxPackageTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84AC31A36DBD7E39B62DC45 /* RxPackageTesting.framework */; platformFilter = ios; };
+		452D454B5CE5DE7DC32D7ABD /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8240DD13963FD7138A6E10 /* Nimble.xcframework */; };
 		4660779AE8C53284FCE63E52 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = EC3DD39FE881505BC86D7820 /* RIBs */; };
 		495598CF2E94A67BA35986CD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7955A077219E03067897EAEB /* RxSwift */; };
+		4C21D3C5A10E826C8D8F56DF /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFFC0243110E37483B8959D /* RxNimbleRxTest.xcframework */; };
+		55A380FF7791F4078927760C /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8DE16389C922DF3500A162 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56FF1579178CC53931E3EBC8 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B71D1313A5999BCDDD55D /* RxRelay.xcframework */; };
 		6A90D82FEAADB8BAE14D3125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF707D3C445084A3D9F2FF4 /* Assets.xcassets */; };
+		70367FF58AD19AF2515C9F00 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B71D1313A5999BCDDD55D /* RxRelay.xcframework */; };
+		7ED03BD5838C65B235E73B20 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3334BF11C6251549A52C09C7 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C93B37912624668731F2B2E /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8240DD13963FD7138A6E10 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90001D7171DEFD5309169E6F /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F31A66ACBE911E7468C /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9348959D3B63E77AA6224722 /* RxPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5436ADD114D1264E25516B /* RxPackage.swift */; };
 		9B26B2985E350A5D7B1B492A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F466DEF54009154D298E61A7 /* RxCocoa */; };
+		9FE865EFFA70493E78F374B7 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA449D4690C683D20D20351 /* RxSwift.xcframework */; };
 		A2BA4A4A04C862C30D69DFAE /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED11833E6BD3F43EDB0061E /* RxRelay */; };
+		A60C693B998BAF135A7AEB1B /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDAA06A4C5329041A0826221 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B187E3ECE3970FF423EEFA3B /* RxPackageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5659DFFE5F7D3A3941B0F0A7 /* RxPackageTests.swift */; };
 		B7A83EAA872F18ED66232BF6 /* RxPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006CDF73ACADE959623AB2C /* RxPackage.swift */; };
 		B856D2BA11A7A6B5A2A0EB69 /* RxPackageTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C84AC31A36DBD7E39B62DC45 /* RxPackageTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD1AA4FD9D9E73BA0EC580DA /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB7F31A66ACBE911E7468C /* RxNimbleRxBlocking.xcframework */; };
 		BD9300C39986BE29983B1B03 /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */; platformFilter = ios; };
 		C28FA0490C27BC5190FBD8EC /* RxPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */; platformFilter = ios; };
 		CD2E20E122F2DE213304C273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096A21FE68B2C783F1FC280B /* LaunchScreen.storyboard */; };
+		CE52FA6D4F2E4FF354AB6C21 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354C9300B0D44C11BD14D9CB /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D07B9BB4EB6A2A6F78CDF253 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3334BF11C6251549A52C09C7 /* RxBlocking.xcframework */; };
+		D4C5DC134D313BCD56058CE8 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEA449D4690C683D20D20351 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D75B3178D2B578DD33B98399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D407DD6944E9C45C507FD /* AppDelegate.swift */; };
+		E294FA913D8D4EAC1FB28A83 /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFFC0243110E37483B8959D /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2E61DFA5A3CA735CD9091DD /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF5E3FC0860BB25CA2A8EA /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F059E0A8290A261A23AF1487 /* NavigationViewableRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D269615DE7A37A325C9C00 /* NavigationViewableRouting.swift */; };
+		F6C7BD9C6B375EEFB1D71C26 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA449D4690C683D20D20351 /* RxSwift.xcframework */; };
 		FFAA02C3C9379DB2DB59C19C /* Bundle+RxPackageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73255A4B6466728B1F192E16 /* Bundle+RxPackageExample.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +107,10 @@
 			files = (
 				321FDDDEB7398F72984963E9 /* RxPackage.framework in Embed Frameworks */,
 				B856D2BA11A7A6B5A2A0EB69 /* RxPackageTesting.framework in Embed Frameworks */,
+				55A380FF7791F4078927760C /* RxCocoa.xcframework in Embed Frameworks */,
+				2489CC8804039D24EED8128D /* RxRelay.xcframework in Embed Frameworks */,
+				D4C5DC134D313BCD56058CE8 /* RxSwift.xcframework in Embed Frameworks */,
+				CE52FA6D4F2E4FF354AB6C21 /* FLEX.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +141,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8C93B37912624668731F2B2E /* Nimble.xcframework in Embed Frameworks */,
+				A60C693B998BAF135A7AEB1B /* Quick.xcframework in Embed Frameworks */,
+				7ED03BD5838C65B235E73B20 /* RxBlocking.xcframework in Embed Frameworks */,
+				90001D7171DEFD5309169E6F /* RxNimbleRxBlocking.xcframework in Embed Frameworks */,
+				E294FA913D8D4EAC1FB28A83 /* RxNimbleRxTest.xcframework in Embed Frameworks */,
+				E2E61DFA5A3CA735CD9091DD /* RxTest.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,26 +157,37 @@
 		096A21FE68B2C783F1FC280B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1418B4A6F5CF0854A96DFCF0 /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		143D2F95606A51C3C19A090F /* RxPackageTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RxPackageTests.plist; sourceTree = "<group>"; };
+		148B71D1313A5999BCDDD55D /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
 		214D407DD6944E9C45C507FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283DDAAADFFAC5F642B8C5FE /* RxPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3334BF11C6251549A52C09C7 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
+		354C9300B0D44C11BD14D9CB /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
+		3D8DE16389C922DF3500A162 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
 		3DF707D3C445084A3D9F2FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49940744BDB5C512B7F01F74 /* RxPackageExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RxPackageExample.plist; sourceTree = "<group>"; };
 		55FE92B1C8BA599ED71F68D9 /* RxPackageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPackageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5659DFFE5F7D3A3941B0F0A7 /* RxPackageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPackageTests.swift; sourceTree = "<group>"; };
 		6006CDF73ACADE959623AB2C /* RxPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPackage.swift; sourceTree = "<group>"; };
+		60FF5E3FC0860BB25CA2A8EA /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
 		634844C0B7D0D0224BCC10F1 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		69199DF005D4715F9E666355 /* NavigationControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllable.swift; sourceTree = "<group>"; };
 		6AE2796081A8E0B0EFEF033A /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
 		73255A4B6466728B1F192E16 /* Bundle+RxPackageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+RxPackageExample.swift"; sourceTree = "<group>"; };
 		739FF3104DF02B1DD50B77F6 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
+		7BFFC0243110E37483B8959D /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
+		7F8240DD13963FD7138A6E10 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
 		81D269615DE7A37A325C9C00 /* NavigationViewableRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewableRouting.swift; sourceTree = "<group>"; };
 		83FB3BD235371FF71A73B2C0 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
+		A4DB7F31A66ACBE911E7468C /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
+		AEA449D4690C683D20D20351 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
 		B1C9769737C583DF8A129B46 /* RxPackageTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RxPackageTesting.plist; sourceTree = "<group>"; };
+		BDAA06A4C5329041A0826221 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
 		C84AC31A36DBD7E39B62DC45 /* RxPackageTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPackageTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5436ADD114D1264E25516B /* RxPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPackage.swift; sourceTree = "<group>"; };
 		D5A499A52805162166CE56A0 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		F46BB8EC47E5A7131A2ABA21 /* RxPackageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxPackageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61BDE920DE4C4E4F1059817 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		F6F3B111A7549F968B4E71B6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F88CC58F91BE16EB6B09983C /* RxPackage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RxPackage.plist; sourceTree = "<group>"; };
 		FE7E307A297C5B033C583086 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,8 +209,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFF09E8E3D3F4DD4973A363 /* XCTest.framework in Frameworks */,
 				1D2915397A7BFD0D8137B1C3 /* RxPackage.framework in Frameworks */,
 				44BB52FC210DADA29F5F43C9 /* RxPackageTesting.framework in Frameworks */,
+				56FF1579178CC53931E3EBC8 /* RxRelay.xcframework in Frameworks */,
+				9FE865EFFA70493E78F374B7 /* RxSwift.xcframework in Frameworks */,
+				452D454B5CE5DE7DC32D7ABD /* Nimble.xcframework in Frameworks */,
+				09D437C7A0DB369A69B6A486 /* Quick.xcframework in Frameworks */,
+				D07B9BB4EB6A2A6F78CDF253 /* RxBlocking.xcframework in Frameworks */,
+				BD1AA4FD9D9E73BA0EC580DA /* RxNimbleRxBlocking.xcframework in Frameworks */,
+				4C21D3C5A10E826C8D8F56DF /* RxNimbleRxTest.xcframework in Frameworks */,
+				229D9E9989BBE8629AD96A3B /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +237,10 @@
 			files = (
 				C28FA0490C27BC5190FBD8EC /* RxPackage.framework in Frameworks */,
 				0EF2655346031FD1E3A2A0F1 /* RxPackageTesting.framework in Frameworks */,
+				18E594A50717FC07623A7050 /* RxCocoa.xcframework in Frameworks */,
+				70367FF58AD19AF2515C9F00 /* RxRelay.xcframework in Frameworks */,
+				F6C7BD9C6B375EEFB1D71C26 /* RxSwift.xcframework in Frameworks */,
+				334B22352DA423D32FDFA68C /* FLEX.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +250,7 @@
 		44F1AA54E321C016D6EDEE7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6F3B111A7549F968B4E71B6 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +272,20 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		56C2BBFEE53F0016C539E2AC /* DevelopTool */ = {
+			isa = PBXGroup;
+			children = (
+				354C9300B0D44C11BD14D9CB /* FLEX.xcframework */,
+				7F8240DD13963FD7138A6E10 /* Nimble.xcframework */,
+				BDAA06A4C5329041A0826221 /* Quick.xcframework */,
+				3334BF11C6251549A52C09C7 /* RxBlocking.xcframework */,
+				A4DB7F31A66ACBE911E7468C /* RxNimbleRxBlocking.xcframework */,
+				7BFFC0243110E37483B8959D /* RxNimbleRxTest.xcframework */,
+				60FF5E3FC0860BB25CA2A8EA /* RxTest.xcframework */,
+			);
+			path = DevelopTool;
+			sourceTree = "<group>";
+		};
 		5C7384D149C5BC646F9C14B7 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +302,16 @@
 				72282E5A790C9A5EB5C04105 /* Sources */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		65F10F31406A7BE411F7287C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D8DE16389C922DF3500A162 /* RxCocoa.xcframework */,
+				148B71D1313A5999BCDDD55D /* RxRelay.xcframework */,
+				AEA449D4690C683D20D20351 /* RxSwift.xcframework */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		72282E5A790C9A5EB5C04105 /* Sources */ = {
@@ -276,6 +358,16 @@
 				73255A4B6466728B1F192E16 /* Bundle+RxPackageExample.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		9E84BF26BDE957B7F132E7D7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				65F10F31406A7BE411F7287C /* Common */,
+				56C2BBFEE53F0016C539E2AC /* DevelopTool */,
+			);
+			name = Libraries;
+			path = ../../../Libraries;
 			sourceTree = "<group>";
 		};
 		A3000EDF7FCFC6E67335396C /* Sources */ = {
@@ -367,6 +459,7 @@
 				A4790075BF1734898A857AD5 /* Configurations */,
 				C9365C8DDDC3930F2F198357 /* Derived */,
 				645FA51649B24EC5D5D85A87 /* Example */,
+				9E84BF26BDE957B7F132E7D7 /* Libraries */,
 				85CE285695EA50BF19227506 /* Sources */,
 				ECC438C488D87E8DE9E80C3D /* Testing */,
 				4D225278DAF9AE91E987C321 /* Tests */,
@@ -735,6 +828,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -793,6 +891,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -871,6 +974,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -895,6 +1003,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1041,6 +1154,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1067,6 +1186,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1160,6 +1285,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1333,6 +1463,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1392,6 +1528,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1450,6 +1592,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../Libraries/Common",
+					"$(SRCROOT)/../../../Libraries/DevelopTool",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/RxPackageTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

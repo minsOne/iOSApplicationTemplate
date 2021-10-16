@@ -16,9 +16,9 @@ let project = Project.framework(
         .InjectPropertyWrapper
     ],
     dependencies: [
-        Dep.Framework.Firebase,
+        Dep.Framework.Vendor.Firebase,
         [.SwiftPM.Alamofire,
-            .SwiftPM.Swinject,
+         .SwiftPM.Swinject,
          .SwiftPM.InjectPropertyWrapper],
         [.sdk(name: "libsqlite3.tbd"),
          .sdk(name: "StoreKit.framework")],
