@@ -8,7 +8,7 @@
 
    `bash <(curl -Ls https://install.tuist.io)`
 
-2. Run Tuist dependencies 
+2. Run Tuist dependencies - (Optional, default installed SDK, path : ${Repository}/Libraries)
 
     ```
     $ tuist dependencies fetch
