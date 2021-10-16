@@ -1,10 +1,10 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let workspace = Workspace(name: "App",
+let workspace = Workspace(name: "Application",
                           projects: [
                             "Projects/DesignSystem/MODesignSystemKit",
                             "Projects/Features/MOFeatureKit",
                             "Projects/Modules/Core/MOCoreKit",
-                            "Projects/Modules/RxPackage"
+                            "Projects/Modules/Core/MORxPackageExtension",
                           ])

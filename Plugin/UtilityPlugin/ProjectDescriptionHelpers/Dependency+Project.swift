@@ -44,6 +44,7 @@ public extension Dep.Project.Module.Core {
 
     static let AppLogger            = project(name: "MOAppLogger")
     static let CoreKit              = project(name: "MOCoreKit")
+    static let RxPackageExtension   = project(name: "MORxPackageExtension")
     static let ThirdPartyLibManager = project(name: "MOThirdPartyLibManager")
 }
 

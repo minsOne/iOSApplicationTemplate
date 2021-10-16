@@ -18,8 +18,9 @@
     $ carthage build PinLayout --project-directory Tuist/Dependencies --platform iOS --use-xcframeworks --no-use-binaries --use-netrc --cache-builds --verbose
 
     # ReactorKit 프로젝트는 carthage를 지원이 잘 안되므로 다음과 같이 수행.
-    $ rm Tuist/Dependencies/Carthage/Build/.ReactorKit.version # 생성 기록 삭제
+    $ (cd Tuist/Dependencies/Carthage/Build && rm .ReactorKit.version .WeakMapTable.version) # 생성 기록 삭제
     $ (cd Tuist/Dependencies/Carthage/Checkouts/ReactorKit && swift package generate-xcodeproj) # ReactorKit 프로젝트 생성
+    $ (cd Tuist/Dependencies/Carthage/Checkouts/WeakMapTable && swift package generate-xcodeproj) # WeakMapTable 프로젝트 생성
     $ tuist dependencies fetch # Carthage 빌드
 
     # RIBs 프로젝트의 RxSwift, RxRelay 의존성이 framework로 되어 있으므로, xcframework로 교체함.

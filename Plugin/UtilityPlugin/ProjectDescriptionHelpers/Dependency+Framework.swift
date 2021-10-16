@@ -24,9 +24,12 @@ extension Dep {
 // MARK: - Common
 public extension Dep.Framework.Common {
     private static func framework(name: String) -> Dep { .xcframework(path: .relativeToRoot("Libraries/Common/\(name).xcframework")) }
-
-    static let ReactorKit        = framework(name: "ReactorKit")
-    static let ReactorKitRuntime = framework(name: "ReactorKitRuntime")
+    
+    static let ReactorKit: [Dep] = [
+        framework(name: "ReactorKit"),
+        framework(name: "ReactorKitRuntime"),
+        framework(name: "WeakMapTable")
+    ]
     static let RIBs              = framework(name: "RIBs")
     static let RxCocoa           = framework(name: "RxCocoa")
     static let RxRelay           = framework(name: "RxRelay")

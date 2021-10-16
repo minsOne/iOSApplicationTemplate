@@ -17,6 +17,8 @@ let dependencies = Dependencies(
                     requirement: .branch("master")),
             .github(path: "ReactorKit/ReactorKit",
                     requirement: .branch("master")),
+            .github(path: "ReactorKit/WeakMapTable",
+                    requirement: .branch("master")),
             .github(path: "layoutBox/FlexLayout",
                     requirement: .branch("master")),
             .github(path: "layoutBox/PinLayout",

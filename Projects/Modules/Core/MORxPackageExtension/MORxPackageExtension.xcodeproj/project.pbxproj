@@ -1,0 +1,1763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073BA3F40C1DE7BCB3AEAF4B /* ReactorKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E728F75BA806EAB4D26C099 /* Bundle+MORxPackageExtensionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B3F8F093C15E70AFAD0AB /* Bundle+MORxPackageExtensionExample.swift */; };
+		11F06B415405EB4B4015C04A /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; };
+		1490E9A6DFAC6AB765CF1034 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3723D0D1FBBA284FEA3B567 /* RxTest.xcframework */; };
+		1C3DE9B65CBB0042F6FE955D /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAAEC3C55816DE179FEB3 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CFB53740F564827C2AE9088 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26F375C20E9D009548C9674E /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F07C1CC28BB6911B229FF6B1 /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		292064E8B0378E3516E32374 /* MORxPackageExtensionTestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A79690B61A9BC51E094C7 /* MORxPackageExtensionTestSpec.swift */; };
+		370CC543E0F5ABAC30088BAC /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E979643F5947BA152F41C8F /* Quick.xcframework */; };
+		42FE900B4F66000BB83E8916 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5670AAA3CE8B1B9638F8BA0F /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49433684752DA1FEBFB46264 /* MORxPackageExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6439E3726904CAFF78D8F63C /* MORxPackageExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */; platformFilter = ios; };
+		7609D5672783C83AEB53DC11 /* RIBs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1942915D47B2F07057592C /* RIBs.xcframework */; };
+		781D032A2504A907A1A876C5 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */; };
+		78FA4FC730C7F1F3E22FBFE6 /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */; };
+		7A4F0F49518F091E4E2011B0 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAAEC3C55816DE179FEB3 /* RxBlocking.xcframework */; };
+		7FB91D49AC056120D0DDC696 /* MORxPackageExtensionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */; platformFilter = ios; };
+		84848EB90A368AB80BA1F6C2 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */; };
+		85B62BE5F10D3CC5567B0835 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392A8B5FD75078A101AC54A7 /* XCTest.framework */; };
+		891D6901003A1CB4247A1862 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */; };
+		8B30B31A062A0EE59BEB540B /* MORxPackageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055F167A7B019B0FA363BC /* MORxPackageExtensionTests.swift */; };
+		8E7D0F987540293D2E929856 /* RIBs.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1942915D47B2F07057592C /* RIBs.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F0342F1958A3C387D537852 /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93DE815681A9D0776847D355 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9822F613CEE8026BD0986249 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; };
+		9A097373ACC4A58BB1DDF687 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B31C75B5D08E15CC7202F /* RxRelay.xcframework */; };
+		9BEBBDD3E50BE9BA7948DB5B /* ReactorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */; };
+		9D3CB56AF8FCA0C16CEBA2AD /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADC09D0E0C680934C63114CB /* ReactorKitRuntime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507E42CC5D2BB2042025C9FC /* ReactorKitRuntime.xcframework */; };
+		AE4FED5E72BB10ADB697463C /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3723D0D1FBBA284FEA3B567 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF6AEC0F1ABED640E64F915A /* WeakMapTable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A159D3E024756CFF9EE36 /* WeakMapTable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B191C92E221E7439643FE19C /* MORxPackageExtensionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */; platformFilter = ios; };
+		B49F5BE4ED499A918CEFA5EF /* WeakMapTable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A159D3E024756CFF9EE36 /* WeakMapTable.xcframework */; };
+		B6AF2DF297B198D199E8BFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56083F55A95905844EA18A19 /* Assets.xcassets */; };
+		BC35E9E22DA7C29745F5288B /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */; };
+		BF1EE6F9691274EB6B4BDE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57161A689BA36CF76A421D75 /* LaunchScreen.storyboard */; };
+		C5711BD4B9649CAB63AE0A4C /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B31C75B5D08E15CC7202F /* RxRelay.xcframework */; };
+		C6EF16EE1D1E691B7746478B /* MORxPackageExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */; platformFilter = ios; };
+		C859A9CD3063B89113DABA3E /* MORxPackageExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */; platformFilter = ios; };
+		CACA2BF587BB4E344A46CBE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6B430C2D91D34D667D24F0 /* AppDelegate.swift */; };
+		CD921A6CC9B9C57913AB2596 /* MORxPackageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3E189156C091515910343 /* MORxPackageExtension.swift */; };
+		CF9E8F35A586A7F12446D650 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E979643F5947BA152F41C8F /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D709AD7D9652787283F194EC /* MORxPackageExtensionTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D940E7D7ABF218EFC8BD2DA8 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B31C75B5D08E15CC7202F /* RxRelay.xcframework */; };
+		DD332FB5D5C39BE7548F5BD0 /* MORxPackageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6BD11FDB3E906621F1EF0 /* MORxPackageExtension.swift */; };
+		E0C60E4023FD1F33FB8908C5 /* ReactorKitRuntime.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 507E42CC5D2BB2042025C9FC /* ReactorKitRuntime.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3C1D27FADC9E888EB588714 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07C1CC28BB6911B229FF6B1 /* RxNimbleRxBlocking.xcframework */; };
+		E895CB096C3E75C173C96EED /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 332B31C75B5D08E15CC7202F /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE58014CDBB67FB8DC916974 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5670AAA3CE8B1B9638F8BA0F /* Nimble.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		025C333BB69E1BADEAF4BB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CFD990E85B43AB4BB328B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6ED8FF48E5DECD9B2B3B124;
+			remoteInfo = MORxPackageExtensionTesting;
+		};
+		3F554B884994CE0E61A05322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CFD990E85B43AB4BB328B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228914BFC9C8940FC0714797;
+			remoteInfo = MORxPackageExtension;
+		};
+		8EEB72D279BDE5BA5F505172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CFD990E85B43AB4BB328B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6ED8FF48E5DECD9B2B3B124;
+			remoteInfo = MORxPackageExtensionTesting;
+		};
+		903911FE99B54AAC2B7179E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CFD990E85B43AB4BB328B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B888B9C2BEB03E9C82B7CE5;
+			remoteInfo = MORxPackageExtensionExample;
+		};
+		C887514B8B5FBACAD1E61029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CFD990E85B43AB4BB328B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228914BFC9C8940FC0714797;
+			remoteInfo = MORxPackageExtension;
+		};
+		D5556CDEDA27A091BC849FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CFD990E85B43AB4BB328B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228914BFC9C8940FC0714797;
+			remoteInfo = MORxPackageExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3715608A8CE62127B7EEFE3A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49433684752DA1FEBFB46264 /* MORxPackageExtension.framework in Embed Frameworks */,
+				D709AD7D9652787283F194EC /* MORxPackageExtensionTesting.framework in Embed Frameworks */,
+				8E7D0F987540293D2E929856 /* RIBs.xcframework in Embed Frameworks */,
+				073BA3F40C1DE7BCB3AEAF4B /* ReactorKit.xcframework in Embed Frameworks */,
+				E0C60E4023FD1F33FB8908C5 /* ReactorKitRuntime.xcframework in Embed Frameworks */,
+				9D3CB56AF8FCA0C16CEBA2AD /* RxCocoa.xcframework in Embed Frameworks */,
+				E895CB096C3E75C173C96EED /* RxRelay.xcframework in Embed Frameworks */,
+				1CFB53740F564827C2AE9088 /* RxSwift.xcframework in Embed Frameworks */,
+				AF6AEC0F1ABED640E64F915A /* WeakMapTable.xcframework in Embed Frameworks */,
+				93DE815681A9D0776847D355 /* FLEX.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592492857498C6E20BC50ACC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905AA842945538F9E2E28119 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42FE900B4F66000BB83E8916 /* Nimble.xcframework in Embed Frameworks */,
+				CF9E8F35A586A7F12446D650 /* Quick.xcframework in Embed Frameworks */,
+				1C3DE9B65CBB0042F6FE955D /* RxBlocking.xcframework in Embed Frameworks */,
+				26F375C20E9D009548C9674E /* RxNimbleRxBlocking.xcframework in Embed Frameworks */,
+				8F0342F1958A3C387D537852 /* RxNimbleRxTest.xcframework in Embed Frameworks */,
+				AE4FED5E72BB10ADB697463C /* RxTest.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B65D4C2621DEF6A926D232 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D8DAAEC3C55816DE179FEB3 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
+		2A0B3F8F093C15E70AFAD0AB /* Bundle+MORxPackageExtensionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MORxPackageExtensionExample.swift"; sourceTree = "<group>"; };
+		332B31C75B5D08E15CC7202F /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
+		392A8B5FD75078A101AC54A7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3E979643F5947BA152F41C8F /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
+		3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
+		4A714117348C10B8834BC69D /* MORxPackageExtension.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MORxPackageExtension.plist; sourceTree = "<group>"; };
+		4D1942915D47B2F07057592C /* RIBs.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RIBs.xcframework; sourceTree = "<group>"; };
+		507E42CC5D2BB2042025C9FC /* ReactorKitRuntime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ReactorKitRuntime.xcframework; sourceTree = "<group>"; };
+		52D849530AE49A4B20ED8283 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
+		56083F55A95905844EA18A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5670AAA3CE8B1B9638F8BA0F /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
+		57161A689BA36CF76A421D75 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AB035D770D42393BDD4AEC9 /* MORxPackageExtensionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MORxPackageExtensionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4232620DAE5D0F3C79C97A /* Project-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-QA.xcconfig"; sourceTree = "<group>"; };
+		5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		6376DFAFFE0A71C86B27028B /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
+		71E3E189156C091515910343 /* MORxPackageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MORxPackageExtension.swift; sourceTree = "<group>"; };
+		74055F167A7B019B0FA363BC /* MORxPackageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MORxPackageExtensionTests.swift; sourceTree = "<group>"; };
+		7E4A159D3E024756CFF9EE36 /* WeakMapTable.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WeakMapTable.xcframework; sourceTree = "<group>"; };
+		85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MORxPackageExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ReactorKit.xcframework; sourceTree = "<group>"; };
+		8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
+		900EE562C6E15550A78646E2 /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
+		91ADB30EE9447ED6A4CE1C3A /* MORxPackageExtensionExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MORxPackageExtensionExample.plist; sourceTree = "<group>"; };
+		91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		9593E8DD4789CB422F389A23 /* MORxPackageExtensionTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MORxPackageExtensionTests.plist; sourceTree = "<group>"; };
+		96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
+		A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
+		A7F6A328C73733A55A93039C /* MORxPackageExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MORxPackageExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1A79690B61A9BC51E094C7 /* MORxPackageExtensionTestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MORxPackageExtensionTestSpec.swift; sourceTree = "<group>"; };
+		BAA6BD11FDB3E906621F1EF0 /* MORxPackageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MORxPackageExtension.swift; sourceTree = "<group>"; };
+		BB6B430C2D91D34D667D24F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3723D0D1FBBA284FEA3B567 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
+		C84F63DA4DE01EB322EE2BAD /* MORxPackageExtensionTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MORxPackageExtensionTesting.plist; sourceTree = "<group>"; };
+		DE25FF167B28291E0C313E82 /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
+		E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MORxPackageExtensionTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07C1CC28BB6911B229FF6B1 /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6149515EB1F35D1EC16AFC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7609D5672783C83AEB53DC11 /* RIBs.xcframework in Frameworks */,
+				9BEBBDD3E50BE9BA7948DB5B /* ReactorKit.xcframework in Frameworks */,
+				ADC09D0E0C680934C63114CB /* ReactorKitRuntime.xcframework in Frameworks */,
+				11F06B415405EB4B4015C04A /* RxCocoa.xcframework in Frameworks */,
+				D940E7D7ABF218EFC8BD2DA8 /* RxRelay.xcframework in Frameworks */,
+				781D032A2504A907A1A876C5 /* RxSwift.xcframework in Frameworks */,
+				B49F5BE4ED499A918CEFA5EF /* WeakMapTable.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E2ABA94A1EF4A64C8E3D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EF16EE1D1E691B7746478B /* MORxPackageExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45A181450DC1A212220BD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6439E3726904CAFF78D8F63C /* MORxPackageExtension.framework in Frameworks */,
+				7FB91D49AC056120D0DDC696 /* MORxPackageExtensionTesting.framework in Frameworks */,
+				9822F613CEE8026BD0986249 /* RxCocoa.xcframework in Frameworks */,
+				9A097373ACC4A58BB1DDF687 /* RxRelay.xcframework in Frameworks */,
+				BC35E9E22DA7C29745F5288B /* RxSwift.xcframework in Frameworks */,
+				84848EB90A368AB80BA1F6C2 /* FLEX.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4771C60753F218E30441AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B62BE5F10D3CC5567B0835 /* XCTest.framework in Frameworks */,
+				C859A9CD3063B89113DABA3E /* MORxPackageExtension.framework in Frameworks */,
+				B191C92E221E7439643FE19C /* MORxPackageExtensionTesting.framework in Frameworks */,
+				C5711BD4B9649CAB63AE0A4C /* RxRelay.xcframework in Frameworks */,
+				891D6901003A1CB4247A1862 /* RxSwift.xcframework in Frameworks */,
+				EE58014CDBB67FB8DC916974 /* Nimble.xcframework in Frameworks */,
+				370CC543E0F5ABAC30088BAC /* Quick.xcframework in Frameworks */,
+				7A4F0F49518F091E4E2011B0 /* RxBlocking.xcframework in Frameworks */,
+				E3C1D27FADC9E888EB588714 /* RxNimbleRxBlocking.xcframework in Frameworks */,
+				78FA4FC730C7F1F3E22FBFE6 /* RxNimbleRxTest.xcframework in Frameworks */,
+				1490E9A6DFAC6AB765CF1034 /* RxTest.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F028FA7494427F2C0C04F53 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B3F8F093C15E70AFAD0AB /* Bundle+MORxPackageExtensionExample.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		36FDB2128A29179C3E4E4BFC /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				965ECCDFC0B0CBCFCD9742CC /* Resources */,
+				F5C94C59FAF2FCC38FD892C7 /* Sources */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		3E76A82AF37D020AD94573C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */,
+				5AB035D770D42393BDD4AEC9 /* MORxPackageExtensionExample.app */,
+				E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */,
+				A7F6A328C73733A55A93039C /* MORxPackageExtensionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F9FB846D43EF88A2EC05B9B /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				544EAAC035050E9534D10F31 /* Configurations */,
+				D15AB2A425DA2CE886181509 /* Derived */,
+				36FDB2128A29179C3E4E4BFC /* Example */,
+				D1FBA92B6A9015914D908249 /* Libraries */,
+				46794E6002C0F0B2C85FE4B9 /* Sources */,
+				A3C5C33623CF13654F3D6C16 /* Testing */,
+				A3DD5612787D2CE97ACB220B /* Tests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		46794E6002C0F0B2C85FE4B9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				71E3E189156C091515910343 /* MORxPackageExtension.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4D3FF8489E14EF603DA594A2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BAA6BD11FDB3E906621F1EF0 /* MORxPackageExtension.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		538A92B69186E68B7A760F93 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				DE25FF167B28291E0C313E82 /* Project-Beta.xcconfig */,
+				6376DFAFFE0A71C86B27028B /* Project-Development.xcconfig */,
+				52D849530AE49A4B20ED8283 /* Project-Production.xcconfig */,
+				5C4232620DAE5D0F3C79C97A /* Project-QA.xcconfig */,
+				900EE562C6E15550A78646E2 /* Project-Test.xcconfig */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		544EAAC035050E9534D10F31 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A1B77EBAC7EC2D7337EA3 /* Base */,
+				DA55C33235BEEA0BFEFEA901 /* iOS */,
+			);
+			name = Configurations;
+			path = ../../../../Configurations;
+			sourceTree = "<group>";
+		};
+		8DF5344905C6919EC38EF9C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392A8B5FD75078A101AC54A7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		965ECCDFC0B0CBCFCD9742CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56083F55A95905844EA18A19 /* Assets.xcassets */,
+				57161A689BA36CF76A421D75 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3C5C33623CF13654F3D6C16 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				4D3FF8489E14EF603DA594A2 /* Sources */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		A3DD5612787D2CE97ACB220B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D982DD6AEB1F81AAEEA5FAE2 /* Sources */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A71AAB56383A2C2F81BB62D4 = {
+			isa = PBXGroup;
+			children = (
+				3F9FB846D43EF88A2EC05B9B /* Project */,
+				8DF5344905C6919EC38EF9C8 /* Frameworks */,
+				3E76A82AF37D020AD94573C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA7A1B77EBAC7EC2D7337EA3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				538A92B69186E68B7A760F93 /* Projects */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D15AB2A425DA2CE886181509 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				FD530CA9BE8DED29CCAECE49 /* InfoPlists */,
+				1F028FA7494427F2C0C04F53 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		D1FBA92B6A9015914D908249 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA49316E53D13A1899431F6A /* Common */,
+				DF78BBF3BC6013A350DF27CC /* DevelopTool */,
+			);
+			name = Libraries;
+			path = ../../../../Libraries;
+			sourceTree = "<group>";
+		};
+		D982DD6AEB1F81AAEEA5FAE2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				74055F167A7B019B0FA363BC /* MORxPackageExtensionTests.swift */,
+				AB1A79690B61A9BC51E094C7 /* MORxPackageExtensionTestSpec.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DA55C33235BEEA0BFEFEA901 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */,
+				96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */,
+				91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		DF78BBF3BC6013A350DF27CC /* DevelopTool */ = {
+			isa = PBXGroup;
+			children = (
+				A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */,
+				5670AAA3CE8B1B9638F8BA0F /* Nimble.xcframework */,
+				3E979643F5947BA152F41C8F /* Quick.xcframework */,
+				0D8DAAEC3C55816DE179FEB3 /* RxBlocking.xcframework */,
+				F07C1CC28BB6911B229FF6B1 /* RxNimbleRxBlocking.xcframework */,
+				A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */,
+				C3723D0D1FBBA284FEA3B567 /* RxTest.xcframework */,
+			);
+			path = DevelopTool;
+			sourceTree = "<group>";
+		};
+		F5C94C59FAF2FCC38FD892C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB6B430C2D91D34D667D24F0 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FA49316E53D13A1899431F6A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */,
+				507E42CC5D2BB2042025C9FC /* ReactorKitRuntime.xcframework */,
+				4D1942915D47B2F07057592C /* RIBs.xcframework */,
+				3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */,
+				332B31C75B5D08E15CC7202F /* RxRelay.xcframework */,
+				8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */,
+				7E4A159D3E024756CFF9EE36 /* WeakMapTable.xcframework */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FD530CA9BE8DED29CCAECE49 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				4A714117348C10B8834BC69D /* MORxPackageExtension.plist */,
+				91ADB30EE9447ED6A4CE1C3A /* MORxPackageExtensionExample.plist */,
+				C84F63DA4DE01EB322EE2BAD /* MORxPackageExtensionTesting.plist */,
+				9593E8DD4789CB422F389A23 /* MORxPackageExtensionTests.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		228914BFC9C8940FC0714797 /* MORxPackageExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53074A0AED55F408F5D510B /* Build configuration list for PBXNativeTarget "MORxPackageExtension" */;
+			buildPhases = (
+				4949DF2ABB172ACB9E9F2EB6 /* Sources */,
+				37D5A5CFD5C9F13EC0FA6D2D /* Resources */,
+				D9E9969D7D77FF4CAC03708A /* Embed Precompiled Frameworks */,
+				B9B65D4C2621DEF6A926D232 /* Embed Frameworks */,
+				6149515EB1F35D1EC16AFC61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MORxPackageExtension;
+			productName = MORxPackageExtension;
+			productReference = 85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B888B9C2BEB03E9C82B7CE5 /* MORxPackageExtensionExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E45A175614B79354E014840 /* Build configuration list for PBXNativeTarget "MORxPackageExtensionExample" */;
+			buildPhases = (
+				0009FCC06A6A8DC205383449 /* Sources */,
+				D4323FE297D3505C47B6B115 /* Resources */,
+				4AAF8F65C4EA28F472F0CD83 /* Embed Precompiled Frameworks */,
+				3715608A8CE62127B7EEFE3A /* Embed Frameworks */,
+				E45A181450DC1A212220BD31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				016FBA5D874DF5008C5CF8AA /* PBXTargetDependency */,
+				75EDD211C1848AD9693D5F8F /* PBXTargetDependency */,
+			);
+			name = MORxPackageExtensionExample;
+			productName = MORxPackageExtensionExample;
+			productReference = 5AB035D770D42393BDD4AEC9 /* MORxPackageExtensionExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BD5ECFA66E29A3F85767DBE /* MORxPackageExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D37D527A279F919013840372 /* Build configuration list for PBXNativeTarget "MORxPackageExtensionTests" */;
+			buildPhases = (
+				57D6CDEC24EBB3AB32AD5B3B /* Sources */,
+				079FED5374D882CC024997C6 /* Resources */,
+				A64CAC866773D1C7D822B1AC /* Embed Precompiled Frameworks */,
+				905AA842945538F9E2E28119 /* Embed Frameworks */,
+				E4771C60753F218E30441AD7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67005F59E2D2D90C93DB3A3 /* PBXTargetDependency */,
+				C3E2AD82FED868114B42D219 /* PBXTargetDependency */,
+				0E19C4BA677D901CA6DF9BC2 /* PBXTargetDependency */,
+			);
+			name = MORxPackageExtensionTests;
+			productName = MORxPackageExtensionTests;
+			productReference = A7F6A328C73733A55A93039C /* MORxPackageExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6ED8FF48E5DECD9B2B3B124 /* MORxPackageExtensionTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0886732501510362660519EB /* Build configuration list for PBXNativeTarget "MORxPackageExtensionTesting" */;
+			buildPhases = (
+				BA0094CF1ADCB130E6808340 /* Sources */,
+				21E84216BD831BDAE768FF7B /* Resources */,
+				837139AACEA0823C50A3A4B5 /* Embed Precompiled Frameworks */,
+				592492857498C6E20BC50ACC /* Embed Frameworks */,
+				98E2ABA94A1EF4A64C8E3D5F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B29C37F2FD980F7A073C826 /* PBXTargetDependency */,
+			);
+			name = MORxPackageExtensionTesting;
+			productName = MORxPackageExtensionTesting;
+			productReference = E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		141CFD990E85B43AB4BB328B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = minsone;
+				TargetAttributes = {
+					4BD5ECFA66E29A3F85767DBE = {
+						TestTargetID = 2B888B9C2BEB03E9C82B7CE5;
+					};
+				};
+			};
+			buildConfigurationList = 32EDE08B7BF844E696421BB8 /* Build configuration list for PBXProject "MORxPackageExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A71AAB56383A2C2F81BB62D4;
+			productRefGroup = 3E76A82AF37D020AD94573C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				228914BFC9C8940FC0714797 /* MORxPackageExtension */,
+				E6ED8FF48E5DECD9B2B3B124 /* MORxPackageExtensionTesting */,
+				2B888B9C2BEB03E9C82B7CE5 /* MORxPackageExtensionExample */,
+				4BD5ECFA66E29A3F85767DBE /* MORxPackageExtensionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		079FED5374D882CC024997C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E84216BD831BDAE768FF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D5A5CFD5C9F13EC0FA6D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4323FE297D3505C47B6B115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AF2DF297B198D199E8BFBC /* Assets.xcassets in Resources */,
+				BF1EE6F9691274EB6B4BDE6C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AAF8F65C4EA28F472F0CD83 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		837139AACEA0823C50A3A4B5 /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		A64CAC866773D1C7D822B1AC /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+		D9E9969D7D77FF4CAC03708A /* Embed Precompiled Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Precompiled Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0009FCC06A6A8DC205383449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E728F75BA806EAB4D26C099 /* Bundle+MORxPackageExtensionExample.swift in Sources */,
+				CACA2BF587BB4E344A46CBE3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4949DF2ABB172ACB9E9F2EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD921A6CC9B9C57913AB2596 /* MORxPackageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D6CDEC24EBB3AB32AD5B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292064E8B0378E3516E32374 /* MORxPackageExtensionTestSpec.swift in Sources */,
+				8B30B31A062A0EE59BEB540B /* MORxPackageExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0094CF1ADCB130E6808340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD332FB5D5C39BE7548F5BD0 /* MORxPackageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		016FBA5D874DF5008C5CF8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORxPackageExtension;
+			target = 228914BFC9C8940FC0714797 /* MORxPackageExtension */;
+			targetProxy = D5556CDEDA27A091BC849FB4 /* PBXContainerItemProxy */;
+		};
+		0E19C4BA677D901CA6DF9BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORxPackageExtensionTesting;
+			target = E6ED8FF48E5DECD9B2B3B124 /* MORxPackageExtensionTesting */;
+			targetProxy = 8EEB72D279BDE5BA5F505172 /* PBXContainerItemProxy */;
+		};
+		5B29C37F2FD980F7A073C826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORxPackageExtension;
+			target = 228914BFC9C8940FC0714797 /* MORxPackageExtension */;
+			targetProxy = C887514B8B5FBACAD1E61029 /* PBXContainerItemProxy */;
+		};
+		75EDD211C1848AD9693D5F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORxPackageExtensionTesting;
+			target = E6ED8FF48E5DECD9B2B3B124 /* MORxPackageExtensionTesting */;
+			targetProxy = 025C333BB69E1BADEAF4BB36 /* PBXContainerItemProxy */;
+		};
+		C3E2AD82FED868114B42D219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORxPackageExtensionExample;
+			target = 2B888B9C2BEB03E9C82B7CE5 /* MORxPackageExtensionExample */;
+			targetProxy = 903911FE99B54AAC2B7179E3 /* PBXContainerItemProxy */;
+		};
+		D67005F59E2D2D90C93DB3A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORxPackageExtension;
+			target = 228914BFC9C8940FC0714797 /* MORxPackageExtension */;
+			targetProxy = 3F554B884994CE0E61A05322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03F62CAAC9D1850BB8C963F2 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTesting;
+				PRODUCT_NAME = MORxPackageExtensionTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Beta;
+		};
+		04C9AE59FDC1A86DE6D154D2 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtension.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
+				PRODUCT_NAME = MORxPackageExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		0FD62A271E5B43352088AAB9 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTests;
+				PRODUCT_NAME = MORxPackageExtensionTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MORxPackageExtensionExample.app/MORxPackageExtensionExample";
+				TEST_TARGET_NAME = MORxPackageExtensionExample;
+			};
+			name = Development;
+		};
+		3274DED65B636E09DA3216E6 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D849530AE49A4B20ED8283 /* Project-Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		33F7E9D8982185E1B3008136 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTests;
+				PRODUCT_NAME = MORxPackageExtensionTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MORxPackageExtensionExample.app/MORxPackageExtensionExample";
+				TEST_TARGET_NAME = MORxPackageExtensionExample;
+			};
+			name = Beta;
+		};
+		37F4EE318C2A9CC771B55DBD /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTesting;
+				PRODUCT_NAME = MORxPackageExtensionTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		3C48A35D38131029C31A5263 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtension.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
+				PRODUCT_NAME = MORxPackageExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		4C643E2D6265379A0440A29F /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MORxPackageExtensionExample;
+				PRODUCT_NAME = MORxPackageExtensionExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Development;
+		};
+		5B7452E331BB8800D742884D /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTests;
+				PRODUCT_NAME = MORxPackageExtensionTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MORxPackageExtensionExample.app/MORxPackageExtensionExample";
+				TEST_TARGET_NAME = MORxPackageExtensionExample;
+			};
+			name = Test;
+		};
+		5F95DEE18A0F76A6515AB906 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTesting;
+				PRODUCT_NAME = MORxPackageExtensionTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		611F1E9CD4AB23C469545DE0 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTests;
+				PRODUCT_NAME = MORxPackageExtensionTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MORxPackageExtensionExample.app/MORxPackageExtensionExample";
+				TEST_TARGET_NAME = MORxPackageExtensionExample;
+			};
+			name = Production;
+		};
+		6986B7157A6C0E792C15BA97 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6376DFAFFE0A71C86B27028B /* Project-Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Development;
+		};
+		7AD72FEAF96F133B80651D92 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96978F1295E39DF7B2B5447A /* iOS-Base.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTests;
+				PRODUCT_NAME = MORxPackageExtensionTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MORxPackageExtensionExample.app/MORxPackageExtensionExample";
+				TEST_TARGET_NAME = MORxPackageExtensionExample;
+			};
+			name = QA;
+		};
+		85198D2C0A4C26C54B2731B6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTesting;
+				PRODUCT_NAME = MORxPackageExtensionTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		9233CCAF7D7E933921ED27D1 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionTesting.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtensionTesting;
+				PRODUCT_NAME = MORxPackageExtensionTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		C3D89F9ABBC49F2F2EE324CC /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtension.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
+				PRODUCT_NAME = MORxPackageExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Beta;
+		};
+		C4F5F1EACC82E0CB81A8528A /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE25FF167B28291E0C313E82 /* Project-Beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		C7784184F34ACC01EB062B10 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4232620DAE5D0F3C79C97A /* Project-QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		CFF70325D3B715574D1816E0 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MORxPackageExtensionExample;
+				PRODUCT_NAME = MORxPackageExtensionExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = QA;
+		};
+		D5AA0831BE057CAC1F7F5CBB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MORxPackageExtensionExample;
+				PRODUCT_NAME = MORxPackageExtensionExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Beta;
+		};
+		E96C64C0EA7098A16DF21E51 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900EE562C6E15550A78646E2 /* Project-Test.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		F36A174E2EC627C381DF75F1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtension.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
+				PRODUCT_NAME = MORxPackageExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		F558B8D2F88B57A91E0E2F37 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MORxPackageExtensionExample;
+				PRODUCT_NAME = MORxPackageExtensionExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Production;
+		};
+		FDB844E452F925C64B57B796 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EDEE6A7C792B5D652AD418 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtension.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
+				PRODUCT_NAME = MORxPackageExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		FEA3C3E644E4C3B81040F05A /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E285D3151C4ED388388D74B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../Libraries/Common",
+					"$(SRCROOT)/../../../../Libraries/DevelopTool",
+				);
+				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.example.MORxPackageExtensionExample;
+				PRODUCT_NAME = MORxPackageExtensionExample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Test;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0886732501510362660519EB /* Build configuration list for PBXNativeTarget "MORxPackageExtensionTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F62CAAC9D1850BB8C963F2 /* Beta */,
+				85198D2C0A4C26C54B2731B6 /* Development */,
+				5F95DEE18A0F76A6515AB906 /* Production */,
+				9233CCAF7D7E933921ED27D1 /* QA */,
+				37F4EE318C2A9CC771B55DBD /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		1E45A175614B79354E014840 /* Build configuration list for PBXNativeTarget "MORxPackageExtensionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5AA0831BE057CAC1F7F5CBB /* Beta */,
+				4C643E2D6265379A0440A29F /* Development */,
+				F558B8D2F88B57A91E0E2F37 /* Production */,
+				CFF70325D3B715574D1816E0 /* QA */,
+				FEA3C3E644E4C3B81040F05A /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		32EDE08B7BF844E696421BB8 /* Build configuration list for PBXProject "MORxPackageExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F5F1EACC82E0CB81A8528A /* Beta */,
+				6986B7157A6C0E792C15BA97 /* Development */,
+				3274DED65B636E09DA3216E6 /* Production */,
+				C7784184F34ACC01EB062B10 /* QA */,
+				E96C64C0EA7098A16DF21E51 /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		B53074A0AED55F408F5D510B /* Build configuration list for PBXNativeTarget "MORxPackageExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D89F9ABBC49F2F2EE324CC /* Beta */,
+				F36A174E2EC627C381DF75F1 /* Development */,
+				FDB844E452F925C64B57B796 /* Production */,
+				3C48A35D38131029C31A5263 /* QA */,
+				04C9AE59FDC1A86DE6D154D2 /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		D37D527A279F919013840372 /* Build configuration list for PBXNativeTarget "MORxPackageExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F7E9D8982185E1B3008136 /* Beta */,
+				0FD62A271E5B43352088AAB9 /* Development */,
+				611F1E9CD4AB23C469545DE0 /* Production */,
+				7AD72FEAF96F133B80651D92 /* QA */,
+				5B7452E331BB8800D742884D /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 141CFD990E85B43AB4BB328B /* Project object */;
+}

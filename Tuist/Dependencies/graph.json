@@ -15,16 +15,16 @@
         "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/RxCocoa.xcframework"
       }
     ],
+    "Nimble" : [
+      {
+        "kind" : "xcframework",
+        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/Nimble.xcframework"
+      }
+    ],
     "RxRelay" : [
       {
         "kind" : "xcframework",
         "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/RxRelay.xcframework"
-      }
-    ],
-    "PinLayout" : [
-      {
-        "kind" : "xcframework",
-        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/PinLayout.xcframework"
       }
     ],
     "SnapKit" : [
@@ -33,22 +33,16 @@
         "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/SnapKit.xcframework"
       }
     ],
-    "ReactorKitRuntime" : [
+    "Quick" : [
       {
         "kind" : "xcframework",
-        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/ReactorKitRuntime.xcframework"
+        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/Quick.xcframework"
       }
     ],
-    "Nimble" : [
+    "PinLayout" : [
       {
         "kind" : "xcframework",
-        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/Nimble.xcframework"
-      }
-    ],
-    "RxTest" : [
-      {
-        "kind" : "xcframework",
-        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/RxTest.xcframework"
+        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/PinLayout.xcframework"
       }
     ],
     "ReactorKit" : [
@@ -57,16 +51,22 @@
         "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/ReactorKit.xcframework"
       }
     ],
+    "RxTest" : [
+      {
+        "kind" : "xcframework",
+        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/RxTest.xcframework"
+      }
+    ],
+    "ReactorKitRuntime" : [
+      {
+        "kind" : "xcframework",
+        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/ReactorKitRuntime.xcframework"
+      }
+    ],
     "RxNimbleRxBlocking" : [
       {
         "kind" : "xcframework",
         "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/RxNimbleRxBlocking.xcframework"
-      }
-    ],
-    "Quick" : [
-      {
-        "kind" : "xcframework",
-        "path" : "\/Users\/minsone\/Workspace\/AppTemplate\/Tuist\/Dependencies\/Carthage\/Build\/Quick.xcframework"
       }
     ],
     "FLEX" : [
