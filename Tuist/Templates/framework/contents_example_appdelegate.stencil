@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import TouchVisualizer
 import {{ name }}
 
 @UIApplicationMain
@@ -13,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = UINavigationController(rootViewController: vc)
         self.window?.makeKeyAndVisible()
+
+        Visualizer.start()
+
         return true
     }
 }

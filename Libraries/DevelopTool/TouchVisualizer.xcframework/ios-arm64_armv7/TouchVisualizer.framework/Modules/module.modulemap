@@ -1,0 +1,11 @@
+framework module TouchVisualizer {
+  umbrella header "TouchVisualizer.h"
+
+  export *
+  module * { export * }
+}
+
+module TouchVisualizer.Swift {
+    header "TouchVisualizer-Swift.h"
+    requires objc
+}

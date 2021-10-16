@@ -8,7 +8,7 @@ let template = Template(
     files: [
         [
             .file(path: "\(nameAttribute)/Example/Sources/AppDelegate.swift",
-                  templatePath: "contents_appdelegate.stencil"),
+                  templatePath: "contents_example_appdelegate.stencil"),
             .file(path: "\(nameAttribute)/Example/Resources/Assets.xcassets/contents.json",
                   templatePath: "contents_xcassets.stencil"),
             .file(path: "\(nameAttribute)/Example/Resources/Assets.xcassets/AppIcon.appiconset/contents.json",
@@ -18,7 +18,7 @@ let template = Template(
         ],
         [
             .file(path: "\(nameAttribute)/Sources/\(nameAttribute).swift",
-                  templatePath: "contents_example.stencil"),
+                  templatePath: "contents_framework_source.stencil"),
             .string(path: "\(nameAttribute)/Resources/dummy.txt",
                     contents: "_"),
         ],

@@ -84,6 +84,7 @@ public extension Project {
                         .Framework.Common.RxCocoa,
                         .Framework.Common.RxRelay,
                         .Framework.DevelopTool.FLEX,
+                        .Framework.DevelopTool.TouchVisualizer,
                     ],
                     deps
                 ].flatMap { $0 },

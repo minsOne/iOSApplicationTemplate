@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 import MOAppLogger
+import TouchVisualizer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Logger.Firebase.register(bundle: .main, plistName: "GoogleService-Info")
         Logger.Firebase.logEvent(event: .appStart)
+
+        Visualizer.start()
 
         return true
     }

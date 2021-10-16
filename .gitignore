@@ -60,7 +60,7 @@ DerivedData/
 /*.gcno
 
 ### Tuist derived files ###
-#graph.dot
+graph.dot
 Derived/
 
 ### Tuist managed dependencies ###

@@ -36,6 +36,7 @@
 		82A0AB29888D061183ECF333 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 129F575870F62E246132DDBC /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		834F32F78110E593C4244D8A /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129F575870F62E246132DDBC /* RxSwift.xcframework */; };
 		87598BA354D71582FA00819E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B052EEAFBD2E3B04FBFA9F /* AppDelegate.swift */; };
+		8DF9AC715C2D7DA6B53B509B /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECDC73AC27871CA8462A7F0 /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F2FE579DE8CBFF3DB855A25 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1F0BC86697B32B412C96063 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93A2B7719AC67B1604D30461 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F0BC86697B32B412C96063 /* Nimble.xcframework */; };
 		99E1B4C6BEEE37D5CF45BD15 /* MOCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 336B3EEA608DCFA1853396F0 /* MOCoreKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -48,6 +49,7 @@
 		E04B3FB75EA1C41E0BAAF921 /* Bundle+MOFeatureKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19BD7652D6CDA4B9E8CBBF /* Bundle+MOFeatureKitExample.swift */; };
 		E30746393D70D3FC709322DD /* MOFeatureKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD78DD7CEF697AD46B4C3793 /* MOFeatureKitTesting.framework */; platformFilter = ios; };
 		E58DAA48F50855BF8A849CC9 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFE736B1994779D97DA9111 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5F50772904AE97979A5448D /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDC73AC27871CA8462A7F0 /* TouchVisualizer.xcframework */; };
 		FB7A5895F224602C08B0062C /* MOFeatureKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F42771C91C3455E6F100BAF /* MOFeatureKitTests.swift */; };
 		FC7EA87659A668B798D3D9C9 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3536F71647F47F2317C8B57 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -114,6 +116,7 @@
 				3F6748BB03F93212A312E2C7 /* RxRelay.xcframework in Embed Frameworks */,
 				82A0AB29888D061183ECF333 /* RxSwift.xcframework in Embed Frameworks */,
 				4D0248CAED6AD519C300CA18 /* FLEX.xcframework in Embed Frameworks */,
+				8DF9AC715C2D7DA6B53B509B /* TouchVisualizer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +194,7 @@
 		C1F0BC86697B32B412C96063 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
 		CCB0629982055E81FC261168 /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1090B7D18B45D92E72801A /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
+		CECDC73AC27871CA8462A7F0 /* TouchVisualizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TouchVisualizer.xcframework; sourceTree = "<group>"; };
 		E0B9662D2FC49F9DEA0B03AA /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
 		E3536F71647F47F2317C8B57 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Quick.xcframework; sourceTree = "<group>"; };
 		EE61879CF649FB651C6A19F1 /* MOFeatureKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOFeatureKitExample.plist; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				26BDC8219DBEC3E7379D112D /* RxRelay.xcframework in Frameworks */,
 				834F32F78110E593C4244D8A /* RxSwift.xcframework in Frameworks */,
 				0AC565FA2C0B99D2D078934E /* FLEX.xcframework in Frameworks */,
+				E5F50772904AE97979A5448D /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +282,7 @@
 				21991D961294758B1C03B6FB /* RxNimbleRxBlocking.xcframework */,
 				BB10F18AF5E788051D5FF8D3 /* RxNimbleRxTest.xcframework */,
 				0FFE736B1994779D97DA9111 /* RxTest.xcframework */,
+				CECDC73AC27871CA8462A7F0 /* TouchVisualizer.xcframework */,
 			);
 			path = DevelopTool;
 			sourceTree = "<group>";

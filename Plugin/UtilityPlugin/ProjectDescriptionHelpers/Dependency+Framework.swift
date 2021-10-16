@@ -56,6 +56,7 @@ public extension Dep.Framework.DevelopTool {
     static let RxNimbleRxBlocking = framework(name: "RxNimbleRxBlocking")
     static let RxNimbleRxTest     = framework(name: "RxNimbleRxTest")
     static let RxTest             = framework(name: "RxTest")
+    static let TouchVisualizer    = framework(name: "TouchVisualizer")
 }
 
 // MARK: - Vendor

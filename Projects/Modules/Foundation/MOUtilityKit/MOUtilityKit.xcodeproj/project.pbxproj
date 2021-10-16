@@ -12,6 +12,7 @@
 		1A054F62FDDA4C9D3D309804 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A798B6BCCFF39765EF5C2F2 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B5C90A88CC453ABD3E99D4E /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F6AA27BC7BED5A25978305D /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */; };
 		363BEF3248D02262FA5C410A /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
 		40A404E6530931EEB1C38BA7 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		428DB60A738D350C2C550514 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */; };
@@ -30,6 +31,7 @@
 		90FCB4E3B678F473A825B228 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6466EC6702DEEBC26FE95EAE /* XCTest.framework */; };
 		921A2F8AD6C9A53ACA959D29 /* MOUtilityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A28231A6BBE7425695F7FD /* MOUtilityKit.swift */; };
 		96126EFAF4A883A3257E5A84 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA1EF0474A8B634BB527CF4 /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5554BAEEEAACB0A48246276 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */; };
 		A7EB062E584CBF151C4D2C82 /* MOUtilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D674BD13B93985BD67120 /* MOUtilityKit.framework */; platformFilter = ios; };
 		AC35327E7CE5EEE1A15640B5 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2943DBA1CCEAFD8D0F975107 /* Nimble.xcframework */; };
@@ -122,6 +124,7 @@
 				1A054F62FDDA4C9D3D309804 /* RxRelay.xcframework in Embed Frameworks */,
 				1A798B6BCCFF39765EF5C2F2 /* RxSwift.xcframework in Embed Frameworks */,
 				40A404E6530931EEB1C38BA7 /* FLEX.xcframework in Embed Frameworks */,
+				9DA1EF0474A8B634BB527CF4 /* TouchVisualizer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +152,7 @@
 		4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5866C24CC5EB9C112099CDFE /* MOUtilityKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTests.plist; sourceTree = "<group>"; };
 		5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TouchVisualizer.xcframework; sourceTree = "<group>"; };
 		6466EC6702DEEBC26FE95EAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6F3E06B906562FDDDEA79882 /* MOUtilityKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOUtilityKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F81F7D746F97E9A4115AD19 /* MOUtilityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOUtilityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +179,7 @@
 				605AF12347226CDC057A18C9 /* RxRelay.xcframework in Frameworks */,
 				BF31AC7C81527A9D83A6CF82 /* RxSwift.xcframework in Frameworks */,
 				428DB60A738D350C2C550514 /* FLEX.xcframework in Frameworks */,
+				2F6AA27BC7BED5A25978305D /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +256,7 @@
 				C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */,
 				3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */,
 				7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */,
+				62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */,
 			);
 			path = DevelopTool;
 			sourceTree = "<group>";

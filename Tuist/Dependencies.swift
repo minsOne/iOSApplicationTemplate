@@ -25,6 +25,8 @@ let dependencies = Dependencies(
                     requirement: .branch("master")),
             .github(path: "SnapKit/SnapKit",
                     requirement: .branch("main")),
+            .github(path: "morizotter/TouchVisualizer",
+                    requirement: .branch("master")),
         ]
     ),
     swiftPackageManager: .init(

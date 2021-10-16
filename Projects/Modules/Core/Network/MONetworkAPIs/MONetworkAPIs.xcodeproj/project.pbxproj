@@ -29,6 +29,7 @@
 		77DD7FAB4F1BA0696061012F /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1A37E3B0C0D4C4CC6B609D /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B74E8524712E99C298ED0FC /* MONetworkAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE1C33AF06B803F45C85B35 /* MONetworkAPIs.framework */; platformFilter = ios; };
 		81C2AFE6E7B361860068D1B1 /* MONetworkAPICommon.framework in Dependencies */ = {isa = PBXBuildFile; fileRef = 58F3248BEE29C1D50A13177F /* MONetworkAPICommon.framework */; platformFilter = ios; };
+		85D9F31C5C89ECBDB139B2F6 /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 090F1F3E996CA65874BA6041 /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89C7F2AA939BF80A722D9538 /* MONetworkAPILogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4838057F6CF9D57476117227 /* MONetworkAPILogin.framework */; platformFilter = ios; };
 		8FE231A06B389E93F81CEF56 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC28D2FD149C3755B9A287C /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90FE18587F3636C1F2367A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F248A625059630890F09707 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 		A0FB51A707A0703E57D3B180 /* MONetworkAPIsTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C864994F29B56FD5CC34897F /* MONetworkAPIsTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A681F7F41562C268AA9A328C /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3750FF2B34B18F908A325855 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD575DE8CE4F7040C34D3F8 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD7BCDE76821716BC9B7217 /* RxBlocking.xcframework */; };
+		B0E06C80B06CC4C37EB072C9 /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090F1F3E996CA65874BA6041 /* TouchVisualizer.xcframework */; };
 		B8A14AA26E8B2E244AC20A39 /* MONetworkAPIHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20A61A99929227555C212FD /* MONetworkAPIHome.framework */; platformFilter = ios; };
 		BF035CD904CAA6F21E47893E /* MONetworkAPIsTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C864994F29B56FD5CC34897F /* MONetworkAPIsTesting.framework */; platformFilter = ios; };
 		CDFA15C460EF5109344E1092 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B08D69FD4F0C2FB67FB510E /* RxCocoa.xcframework */; };
@@ -144,6 +146,7 @@
 				30D0D1E1503FAC8771DF3BBC /* RxRelay.xcframework in Embed Frameworks */,
 				F945A8064B13779D2E9D4393 /* RxSwift.xcframework in Embed Frameworks */,
 				9A54D87BA98FE5ADE27CB52D /* FLEX.xcframework in Embed Frameworks */,
+				85D9F31C5C89ECBDB139B2F6 /* TouchVisualizer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +155,7 @@
 
 /* Begin PBXFileReference section */
 		02BE6EC130DAD715E14C2F7C /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
+		090F1F3E996CA65874BA6041 /* TouchVisualizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TouchVisualizer.xcframework; sourceTree = "<group>"; };
 		1506CA55A09C86D9B7CEE39D /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
 		1B1A37E3B0C0D4C4CC6B609D /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF2ECA9510D1F5F757D9291 /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				DFC5BD9413677CD39C905695 /* RxRelay.xcframework in Frameworks */,
 				4AC888CE6C05CC6F2B963307 /* RxSwift.xcframework in Frameworks */,
 				9DA3A565E89FC3D06FDD344E /* FLEX.xcframework in Frameworks */,
+				B0E06C80B06CC4C37EB072C9 /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +331,7 @@
 				44EE4ED6D4E7E0DA25C4EAF5 /* RxNimbleRxBlocking.xcframework */,
 				1BF2ECA9510D1F5F757D9291 /* RxNimbleRxTest.xcframework */,
 				3750FF2B34B18F908A325855 /* RxTest.xcframework */,
+				090F1F3E996CA65874BA6041 /* TouchVisualizer.xcframework */,
 			);
 			path = DevelopTool;
 			sourceTree = "<group>";

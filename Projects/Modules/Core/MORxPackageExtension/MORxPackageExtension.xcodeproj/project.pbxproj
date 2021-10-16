@@ -33,8 +33,10 @@
 		93DE815681A9D0776847D355 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9822F613CEE8026BD0986249 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; };
 		9A097373ACC4A58BB1DDF687 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B31C75B5D08E15CC7202F /* RxRelay.xcframework */; };
+		9A6979ACA809E031F33C5DED /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76949653D814F7C3C3BB94E1 /* TouchVisualizer.xcframework */; };
 		9BEBBDD3E50BE9BA7948DB5B /* ReactorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */; };
 		9D3CB56AF8FCA0C16CEBA2AD /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACE05125A2096887AA3C478B /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76949653D814F7C3C3BB94E1 /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADC09D0E0C680934C63114CB /* ReactorKitRuntime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507E42CC5D2BB2042025C9FC /* ReactorKitRuntime.xcframework */; };
 		AE4FED5E72BB10ADB697463C /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3723D0D1FBBA284FEA3B567 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF6AEC0F1ABED640E64F915A /* WeakMapTable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A159D3E024756CFF9EE36 /* WeakMapTable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -120,6 +122,7 @@
 				1CFB53740F564827C2AE9088 /* RxSwift.xcframework in Embed Frameworks */,
 				AF6AEC0F1ABED640E64F915A /* WeakMapTable.xcframework in Embed Frameworks */,
 				93DE815681A9D0776847D355 /* FLEX.xcframework in Embed Frameworks */,
+				ACE05125A2096887AA3C478B /* TouchVisualizer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +185,7 @@
 		6376DFAFFE0A71C86B27028B /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		71E3E189156C091515910343 /* MORxPackageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MORxPackageExtension.swift; sourceTree = "<group>"; };
 		74055F167A7B019B0FA363BC /* MORxPackageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MORxPackageExtensionTests.swift; sourceTree = "<group>"; };
+		76949653D814F7C3C3BB94E1 /* TouchVisualizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TouchVisualizer.xcframework; sourceTree = "<group>"; };
 		7E4A159D3E024756CFF9EE36 /* WeakMapTable.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WeakMapTable.xcframework; sourceTree = "<group>"; };
 		85B974BEDAD73B0CF9CFCE2E /* MORxPackageExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MORxPackageExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ReactorKit.xcframework; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 				9A097373ACC4A58BB1DDF687 /* RxRelay.xcframework in Frameworks */,
 				BC35E9E22DA7C29745F5288B /* RxSwift.xcframework in Frameworks */,
 				84848EB90A368AB80BA1F6C2 /* FLEX.xcframework in Frameworks */,
+				9A6979ACA809E031F33C5DED /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +444,7 @@
 				F07C1CC28BB6911B229FF6B1 /* RxNimbleRxBlocking.xcframework */,
 				A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */,
 				C3723D0D1FBBA284FEA3B567 /* RxTest.xcframework */,
+				76949653D814F7C3C3BB94E1 /* TouchVisualizer.xcframework */,
 			);
 			path = DevelopTool;
 			sourceTree = "<group>";
