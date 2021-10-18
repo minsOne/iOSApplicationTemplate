@@ -90,7 +90,7 @@ public extension Project {
                         Dep.Project.DevelopTool.ExampleDevToolPackage
                     ],
                 ].flatMap { $0 },
-                settings: Settings(base: [:], configurations: XCConfig.application)
+                settings: Settings(base: [:], configurations: XCConfig.example)
             )
 
             projectTargets.append(target)
@@ -190,116 +190,4 @@ public extension Project {
                 : nil
             ].compactMap { $0 })
     }
-}
-
-private struct XCConfig {
-    static let framework: [CustomConfiguration] = [
-        .debug(
-            name: "Development",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
-        ),
-        .debug(
-            name: "Test",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
-        ),
-        .release(
-            name: "QA",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
-        ),
-        .release(
-            name: "Beta",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
-        ),
-        .release(
-            name: "Production",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")
-        ),
-    ]
-
-    static let tests: [CustomConfiguration] = [
-        .debug(
-            name: "Development",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
-        ),
-        .debug(
-            name: "Test",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
-        ),
-        .release(
-            name: "QA",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
-        ),
-        .release(
-            name: "Beta",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
-        ),
-        .release(
-            name: "Production",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")
-        ),
-    ]
-    static let application: [CustomConfiguration] = [
-        .debug(
-            name: "Development",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
-        ),
-        .debug(
-            name: "Test",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
-        ),
-        .release(
-            name: "QA",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
-        ),
-        .release(
-            name: "Beta",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
-        ),
-        .release(
-            name: "Production",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")
-        ),
-    ]
-    static let project: [CustomConfiguration] = [
-        .debug(
-            name: "Development",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Development.xcconfig")
-        ),
-        .debug(
-            name: "Test",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Test.xcconfig")
-        ),
-        .release(
-            name: "QA",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-QA.xcconfig")
-        ),
-        .release(
-            name: "Beta",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Beta.xcconfig")
-        ),
-        .release(
-            name: "Production",
-            settings: [String: SettingValue](),
-            xcconfig: .relativeToRoot("Configurations/Base/Projects/Project-Production.xcconfig")
-        ),
-    ]
 }

@@ -153,7 +153,6 @@
 		49C928ABB00BE02994A88320 /* MOUtilityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKit.swift; sourceTree = "<group>"; };
 		4FEC7DC4BFCAD8B191A40FD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5866C24CC5EB9C112099CDFE /* MOUtilityKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTests.plist; sourceTree = "<group>"; };
-		5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TouchVisualizer.xcframework; sourceTree = "<group>"; };
 		6466EC6702DEEBC26FE95EAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6F3E06B906562FDDDEA79882 /* MOUtilityKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOUtilityKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,10 +161,11 @@
 		7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
 		7F44ED9B3F911B575219305C /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
 		844D674BD13B93985BD67120 /* MOUtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Tests.xcconfig"; sourceTree = "<group>"; };
 		B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
 		CD892C4C53841062EA556FDB /* Project-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Test.xcconfig"; sourceTree = "<group>"; };
+		CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Example.xcconfig"; sourceTree = "<group>"; };
 		CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
 		EB2CC199B773DBAD08D4694C /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
 		FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtilityKitTests.swift; sourceTree = "<group>"; };
@@ -323,9 +323,9 @@
 		6774EE979CCF3AC741C6643F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */,
-				8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */,
+				CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */,
 				3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */,
+				A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -708,7 +708,7 @@
 /* Begin XCBuildConfiguration section */
 		04F464734CA3E1E02A72CE79 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			baseConfigurationReference = A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -741,7 +741,7 @@
 		};
 		0DC0DFA94FD8F30277C9800E /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			baseConfigurationReference = CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -770,7 +770,7 @@
 		};
 		16E8D9FC16C633E795CB01D6 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			baseConfigurationReference = A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -889,7 +889,7 @@
 		};
 		3A9368ADADE8F26A2A6A865E /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			baseConfigurationReference = CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1051,7 +1051,7 @@
 		};
 		7D45E39B07330EC59AAF2318 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			baseConfigurationReference = A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1083,7 +1083,7 @@
 		};
 		7D8DF8ED782DA89498EE4455 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			baseConfigurationReference = A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1208,7 +1208,7 @@
 		};
 		85B51287946F9213FAE73B06 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			baseConfigurationReference = CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1290,7 +1290,7 @@
 		};
 		8FEA17D8C7ADD4E508CB3256 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A5563014A581A8B28DED8E5 /* iOS-Base.xcconfig */;
+			baseConfigurationReference = A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1322,7 +1322,7 @@
 		};
 		9468BD38C6941A53CD0B8B71 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			baseConfigurationReference = CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1416,7 +1416,7 @@
 		};
 		C7C26C160E0F31D9B5F698B9 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08B34AA8B539B7E1E8E56B /* iOS-Application.xcconfig */;
+			baseConfigurationReference = CEA542FA53E37ED3F199E430 /* iOS-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
