@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "423DA8B26DDE49384F2BE70B"
-               BuildableName = "MOAppLogger.framework"
+               BuildableName = "libMOAppLogger.a"
                BlueprintName = "MOAppLogger"
                ReferencedContainer = "container:MOAppLogger.xcodeproj">
             </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "423DA8B26DDE49384F2BE70B"
-            BuildableName = "MOAppLogger.framework"
+            BuildableName = "libMOAppLogger.a"
             BlueprintName = "MOAppLogger"
             ReferencedContainer = "container:MOAppLogger.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "423DA8B26DDE49384F2BE70B"
-            BuildableName = "MOAppLogger.framework"
+            BuildableName = "libMOAppLogger.a"
             BlueprintName = "MOAppLogger"
             ReferencedContainer = "container:MOAppLogger.xcodeproj">
          </BuildableReference>

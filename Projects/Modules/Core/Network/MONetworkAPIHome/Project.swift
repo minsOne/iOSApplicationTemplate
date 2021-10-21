@@ -5,7 +5,7 @@ import UtilityPlugin
 let project = Project.framework(
     name: "MONetworkAPIHome",
     targets: Set([
-       .staticframework,
+       .staticLibrary,
        .tests,
        .example,
        .testing

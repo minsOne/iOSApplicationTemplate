@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006978B3607F1F7CE40A9075 /* MOExampleDevToolPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34B411D0B8E9984B1B0B7F29 /* MOExampleDevToolPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DF6BD96C49E79D6565511D4 /* MOUtilityKitTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E23C67FA9CA870B8AC17F2C /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */; };
+		1323DA76B5D3E0400149A194 /* libMOUtilityKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9055DC89252D862381B21D8E /* libMOUtilityKit.a */; platformFilter = ios; };
 		1A054F62FDDA4C9D3D309804 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A798B6BCCFF39765EF5C2F2 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B5C90A88CC453ABD3E99D4E /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B194DA5F55891E30AEB6B33 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2F6AA27BC7BED5A25978305D /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */; };
 		363BEF3248D02262FA5C410A /* MOUtilityKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */; platformFilter = ios; };
 		40A404E6530931EEB1C38BA7 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		428DB60A738D350C2C550514 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */; };
 		4DF16FF4E74F40D6A4B7B7C1 /* MOUtilityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C928ABB00BE02994A88320 /* MOUtilityKit.swift */; };
 		50398F3E62F4162604CF9355 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; };
 		5D69B88B6B9807D03A81FFD9 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F44ED9B3F911B575219305C /* RxBlocking.xcframework */; };
@@ -34,7 +34,6 @@
 		96126EFAF4A883A3257E5A84 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DA1EF0474A8B634BB527CF4 /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62442F2E2A9B8479A5F5AA1F /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5554BAEEEAACB0A48246276 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */; };
-		A7EB062E584CBF151C4D2C82 /* MOUtilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844D674BD13B93985BD67120 /* MOUtilityKit.framework */; platformFilter = ios; };
 		AC35327E7CE5EEE1A15640B5 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2943DBA1CCEAFD8D0F975107 /* Nimble.xcframework */; };
 		B0C2401590BB6AE3FAB5F401 /* MOUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB505BC001EB68BC8C8E7A1 /* MOUtilityKitTests.swift */; };
 		BF31AC7C81527A9D83A6CF82 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDD84D2F18A75705EA0C84 /* RxSwift.xcframework */; };
@@ -120,6 +119,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				006978B3607F1F7CE40A9075 /* MOExampleDevToolPackage.framework in Embed Frameworks */,
 				0DF6BD96C49E79D6565511D4 /* MOUtilityKitTesting.framework in Embed Frameworks */,
 				6CB23AD5BDD51C875F264AA4 /* RxCocoa.xcframework in Embed Frameworks */,
 				1A054F62FDDA4C9D3D309804 /* RxRelay.xcframework in Embed Frameworks */,
@@ -138,7 +138,6 @@
 		0ADC148236D07A265D1BE135 /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
 		13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D8045999F2F4B2E38DB13A /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
-		14D1EDB824C88D5CE5F423F2 /* MOUtilityKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKit.plist; sourceTree = "<group>"; };
 		1C51DACDA51B3C4C1E8F7E92 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FLEX.xcframework; sourceTree = "<group>"; };
 		1E06291FC12344B0F823ED31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		215C065AF2160B6B14475B00 /* MOUtilityKitTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOUtilityKitTesting.plist; sourceTree = "<group>"; };
@@ -160,7 +159,7 @@
 		77CD42F94BE12E3337872D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D43FF4F1B6BFBB9F9CF0F59 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxTest.xcframework; sourceTree = "<group>"; };
 		7F44ED9B3F911B575219305C /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
-		844D674BD13B93985BD67120 /* MOUtilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9055DC89252D862381B21D8E /* libMOUtilityKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMOUtilityKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61C9B560460DA4307E6AE1A /* iOS-Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Tests.xcconfig"; sourceTree = "<group>"; };
 		B0DFD178399BBD8516E2465C /* Project-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Development.xcconfig"; sourceTree = "<group>"; };
 		C7CAD646BD16CE43D9C5EA4C /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
@@ -181,8 +180,6 @@
 				82C8E7E9679AEAF0B688234C /* RxCocoa.xcframework in Frameworks */,
 				605AF12347226CDC057A18C9 /* RxRelay.xcframework in Frameworks */,
 				BF31AC7C81527A9D83A6CF82 /* RxSwift.xcframework in Frameworks */,
-				428DB60A738D350C2C550514 /* FLEX.xcframework in Frameworks */,
-				2F6AA27BC7BED5A25978305D /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7EB062E584CBF151C4D2C82 /* MOUtilityKit.framework in Frameworks */,
+				1323DA76B5D3E0400149A194 /* libMOUtilityKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +289,6 @@
 		4C0779B4C82A2B7BC0044275 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				14D1EDB824C88D5CE5F423F2 /* MOUtilityKit.plist */,
 				07C0EE45165AB0DAAF74FBE4 /* MOUtilityKitExample.plist */,
 				215C065AF2160B6B14475B00 /* MOUtilityKitTesting.plist */,
 				5866C24CC5EB9C112099CDFE /* MOUtilityKitTests.plist */,
@@ -303,8 +299,8 @@
 		545A90D2E8A296A7573E5731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				9055DC89252D862381B21D8E /* libMOUtilityKit.a */,
 				34B411D0B8E9984B1B0B7F29 /* MOExampleDevToolPackage.framework */,
-				844D674BD13B93985BD67120 /* MOUtilityKit.framework */,
 				6F3E06B906562FDDDEA79882 /* MOUtilityKitExample.app */,
 				13050B892E09362A35D7E2CF /* MOUtilityKitTesting.framework */,
 				6F81F7D746F97E9A4115AD19 /* MOUtilityKitTests.xctest */,
@@ -452,8 +448,8 @@
 			);
 			name = MOUtilityKit;
 			productName = MOUtilityKit;
-			productReference = 844D674BD13B93985BD67120 /* MOUtilityKit.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 9055DC89252D862381B21D8E /* libMOUtilityKit.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		77A44C7EFED381B92EA78122 /* MOUtilityKitTests */ = {
 			isa = PBXNativeTarget;
@@ -749,7 +745,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -805,21 +800,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
 				PRODUCT_NAME = MOUtilityKit;
 				SDKROOT = iphoneos;
@@ -829,8 +812,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = QA;
 		};
@@ -897,7 +878,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -987,21 +967,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
 				PRODUCT_NAME = MOUtilityKit;
 				SDKROOT = iphoneos;
@@ -1012,8 +980,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Development;
 		};
@@ -1176,21 +1142,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
 				PRODUCT_NAME = MOUtilityKit;
 				SDKROOT = iphoneos;
@@ -1201,8 +1155,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Test;
 		};
@@ -1216,7 +1168,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1330,7 +1281,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1424,7 +1374,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1559,21 +1508,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
 				PRODUCT_NAME = MOUtilityKit;
 				SDKROOT = iphoneos;
@@ -1583,8 +1520,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Beta;
 		};
@@ -1592,21 +1527,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D7F2A31582880CFEC491D2F /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOUtilityKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOUtilityKit;
 				PRODUCT_NAME = MOUtilityKit;
 				SDKROOT = iphoneos;
@@ -1616,8 +1539,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Production;
 		};

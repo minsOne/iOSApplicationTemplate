@@ -5,7 +5,7 @@ import UtilityPlugin
 let project = Project.framework(
     name: "MOFeatureKit",
     targets: Set([
-       .dynamicframework,
+       .dynamicFramework,
        .tests,
        .example,
        .testing

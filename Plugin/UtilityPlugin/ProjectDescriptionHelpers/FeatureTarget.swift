@@ -8,17 +8,17 @@
 import Foundation
 
 public enum FeatureTarget: Hashable {
-    case staticframework
-    case dynamicframework
+    case staticLibrary
+    case dynamicFramework
     case tests
     case testing
     case example
 
     public var hasFramework: Bool {
         switch self {
-        case .dynamicframework, .staticframework: return true
+        case .dynamicFramework, .staticLibrary: return true
         default: return false
         }
     }
-    public var hasDynamicFramework: Bool { return self == .dynamicframework }
+    public var hasDynamicFramework: Bool { return self == .dynamicFramework }
 }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70F8BBF3D65B6A73F2D8B9A3"
-               BuildableName = "MONetworkAPIHome.framework"
+               BuildableName = "libMONetworkAPIHome.a"
                BlueprintName = "MONetworkAPIHome"
                ReferencedContainer = "container:MONetworkAPIHome.xcodeproj">
             </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70F8BBF3D65B6A73F2D8B9A3"
-            BuildableName = "MONetworkAPIHome.framework"
+            BuildableName = "libMONetworkAPIHome.a"
             BlueprintName = "MONetworkAPIHome"
             ReferencedContainer = "container:MONetworkAPIHome.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70F8BBF3D65B6A73F2D8B9A3"
-            BuildableName = "MONetworkAPIHome.framework"
+            BuildableName = "libMONetworkAPIHome.a"
             BlueprintName = "MONetworkAPIHome"
             ReferencedContainer = "container:MONetworkAPIHome.xcodeproj">
          </BuildableReference>

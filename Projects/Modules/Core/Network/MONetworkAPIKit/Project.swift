@@ -5,12 +5,13 @@ import UtilityPlugin
 let project = Project.framework(
     name: "MONetworkAPIKit",
     targets: Set([
-       .staticframework,
+       .staticLibrary,
        .tests,
        .example,
        .testing
     ]),
     dependencies: [
         Dep.Project.Module.Core.ThirdPartyLibManager,
+        Dep.Project.Module.Foundation.FoundationKit,
     ]
 )

@@ -40,3 +40,12 @@ struct XCConfig {
         .release(name: "Production", xcconfig: Path.project("Production")),
     ]
 }
+
+
+public struct ExampleTargetOption {
+    let bundleId: String?
+
+    public init(bundleId: String? = nil) {
+        self.bundleId = bundleId
+    }
+}

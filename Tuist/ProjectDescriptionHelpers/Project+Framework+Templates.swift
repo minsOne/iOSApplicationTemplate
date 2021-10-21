@@ -6,20 +6,25 @@ public extension Project {
     static func framework(name: String,
                           organizationName: String = "minsone",
                           deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "13.0", devices: .iphone),
-                          targets: Set<FeatureTarget> = Set([.staticframework, .tests, .example, .testing]),
+                          targets: Set<FeatureTarget> = Set([.staticLibrary, .tests, .example, .testing]),
                           packages: [Package] = [],
                           dependencies: [TargetDependency] = [],
-                          testingDependencies: [TargetDependency] = []) -> Project {
+                          testingDependencies: [TargetDependency] = [],
+                          exampleTargetOption: ExampleTargetOption? = nil) -> Project {
 
-        let hasDynamicFramework = targets.contains(.dynamicframework)
+        let hasDynamicFramework = targets.contains(.dynamicFramework)
         let configurationName: String = "Test"
 
         var projectTargets: [Target] = []
         if targets.contains(where: { $0.hasFramework }) {
+            let settings: SettingsDictionary = hasDynamicFramework
+            ? ["OTHER_LDFLAGS" : "$(inherited) -all_load"]
+            : [:]
+
             let target = Target(
                 name: name,
                 platform: .iOS,
-                product: hasDynamicFramework ? .framework : .staticFramework,
+                product: hasDynamicFramework ? .framework : .staticLibrary,
                 bundleId: "kr.minsone.\(name)",
                 deploymentTarget: deploymentTarget,
                 infoPlist: .default,
@@ -27,7 +32,7 @@ public extension Project {
                 resources:  hasDynamicFramework ? [.glob(pattern: "Resources/**", excluding: ["Resources/dummy.txt"])] : [],
                 actions: [],
                 dependencies: dependencies,
-                settings: Settings(base: [:], configurations: XCConfig.framework)
+                settings: Settings(base: settings, configurations: XCConfig.framework)
             )
 
             projectTargets.append(target)
@@ -65,11 +70,12 @@ public extension Project {
             case (_, false): deps = [.target(name: name)]
             }
 
+            let bundleId = exampleTargetOption?.bundleId ?? "kr.minsone.example.\(name)Example"
             let target = Target(
                 name: "\(name)Example",
                 platform: .iOS,
                 product: .app,
-                bundleId: "kr.minsone.example.\(name)Example",
+                bundleId: bundleId,
                 deploymentTarget: deploymentTarget,
                 infoPlist: .extendingDefault(with: [
                     "UIMainStoryboardFile": "",

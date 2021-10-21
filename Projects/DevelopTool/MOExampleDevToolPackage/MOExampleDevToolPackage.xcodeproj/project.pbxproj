@@ -14,18 +14,17 @@
 		16B68FD8424D4FF65EEC145D /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C68E647E6467CCD33C0C76 /* FLEX.xcframework */; };
 		179FCF9126877B2D0B70270D /* MOExampleDevToolPackageTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B247DB2B0FA12EFD3FCDB71 /* MOExampleDevToolPackageTesting.framework */; platformFilter = ios; };
 		1D13660DD5A4FA2C5E401367 /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AAD4DDE9BC381758F2F00FF7 /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1F2BCD89A78FDBACFBDF70F4 /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52932166DCF32B296266B504 /* TouchVisualizer.xcframework */; };
 		24F7E007F037A4F37774D756 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8C68E647E6467CCD33C0C76 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		302EBA3A19CC949CCEBC34F2 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C68E647E6467CCD33C0C76 /* FLEX.xcframework */; };
 		31585B5F7AE145A6D769F950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEE9DA4908FF8FE53AED943 /* LaunchScreen.storyboard */; };
 		367483EBC2FF9B8163009B17 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4A711792AD8AE2BFD37045 /* RxRelay.xcframework */; };
 		370AF28B87CC303262894113 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9661BD7A5A04AD40BDD99DD2 /* RxCocoa.xcframework */; };
-		4E7AE8B690F0AC71708D6124 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C68E647E6467CCD33C0C76 /* FLEX.xcframework */; };
 		4EDC6E66AE18C85BF409D220 /* MOExampleDevelopToolPackageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE66CA4F69EC3D04BEA6DD /* MOExampleDevelopToolPackageTests.swift */; };
 		507A8A7852649E8BA6DC349A /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A97783AF8D21C30D4187B72A /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50C48CC6227C656A375F0C83 /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDB0FF73FABF329955D0E3F /* RxNimbleRxTest.xcframework */; };
+		521C1B4FA94FAD7AC73C42BD /* MOExampleDevToolPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6125D0E523F5389208A0A909 /* MOExampleDevToolPackage.framework */; platformFilter = ios; };
 		68221C277A24F7D9FACF1C1D /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127E098A9935D5BDCCB40C3B /* Nimble.xcframework */; };
 		74EE4A7E718C3DD4E18B0132 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9661BD7A5A04AD40BDD99DD2 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D5751D694F087CF7EC5529A /* MOExampleDevToolPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6125D0E523F5389208A0A909 /* MOExampleDevToolPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E3765132130481A9F2D0ABF /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86F1FE8087A35B9A6F1BEC46 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C31E4F75B6AEEC71E43DA7A /* MOExampleDevToolPackageTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B247DB2B0FA12EFD3FCDB71 /* MOExampleDevToolPackageTesting.framework */; platformFilter = ios; };
 		8D5614BE9EBBFCCA45BE0570 /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52932166DCF32B296266B504 /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -34,7 +33,6 @@
 		94893A51C38F5636D3C65184 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4A711792AD8AE2BFD37045 /* RxRelay.xcframework */; };
 		94F781F9C264FDF594AFEEDC /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38038DCBED40388855691B3A /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7973BAF16962878466C5B95 /* MOExampleDevelopToolPackageTestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5B74BF668E4105FE8D6DA /* MOExampleDevelopToolPackageTestSpec.swift */; };
-		ACA86E35AA658CBF59636CF9 /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52932166DCF32B296266B504 /* TouchVisualizer.xcframework */; };
 		B0D2FE137DD07E1B7FB6EE1A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A51B7E2BEDEDC7257D2216 /* XCTest.framework */; };
 		B22EE35203C6C23CF14851C0 /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52932166DCF32B296266B504 /* TouchVisualizer.xcframework */; };
 		B339B4A0DEA6C835DB9562FC /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F1FE8087A35B9A6F1BEC46 /* RxSwift.xcframework */; };
@@ -87,6 +85,13 @@
 			remoteGlobalIDString = 3A629B205AF31862AF8294A9;
 			remoteInfo = MOExampleDevToolPackageTesting;
 		};
+		FB222FB95FE33E5E0527C40F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F164F50715CA63C840E3CA23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29810AE8D0E4358A47B0BFFE;
+			remoteInfo = MOExampleDevToolPackage;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +121,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7D5751D694F087CF7EC5529A /* MOExampleDevToolPackage.framework in Embed Frameworks */,
 				C003A16502D6F1E814AD898F /* MOExampleDevToolPackageTesting.framework in Embed Frameworks */,
 				74EE4A7E718C3DD4E18B0132 /* RxCocoa.xcframework in Embed Frameworks */,
 				D4B54D6FF21B84E38F3FC6EA /* RxRelay.xcframework in Embed Frameworks */,
@@ -198,8 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0820AC57283C2B81DBC7E45F /* MOExampleDevToolPackage.framework in Frameworks */,
-				4E7AE8B690F0AC71708D6124 /* FLEX.xcframework in Frameworks */,
-				1F2BCD89A78FDBACFBDF70F4 /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D2FE137DD07E1B7FB6EE1A /* XCTest.framework in Frameworks */,
+				521C1B4FA94FAD7AC73C42BD /* MOExampleDevToolPackage.framework in Frameworks */,
 				179FCF9126877B2D0B70270D /* MOExampleDevToolPackageTesting.framework in Frameworks */,
 				94893A51C38F5636D3C65184 /* RxRelay.xcframework in Frameworks */,
 				B339B4A0DEA6C835DB9562FC /* RxSwift.xcframework in Frameworks */,
@@ -229,8 +234,6 @@
 				370AF28B87CC303262894113 /* RxCocoa.xcframework in Frameworks */,
 				367483EBC2FF9B8163009B17 /* RxRelay.xcframework in Frameworks */,
 				F73B49CED90C005085E0266F /* RxSwift.xcframework in Frameworks */,
-				302EBA3A19CC949CCEBC34F2 /* FLEX.xcframework in Frameworks */,
-				ACA86E35AA658CBF59636CF9 /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +468,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E1FE6764BE13FF88B40AC31D /* PBXTargetDependency */,
 				D96B34E8B1D4857AFD87B3CD /* PBXTargetDependency */,
 				99BC374F88D7F1A5E8DD9EE3 /* PBXTargetDependency */,
 			);
@@ -727,6 +731,12 @@
 			target = 966B5CE764C55DC080251EF0 /* MOExampleDevToolPackageExample */;
 			targetProxy = 360CC3BC4E10DC08037FFE76 /* PBXContainerItemProxy */;
 		};
+		E1FE6764BE13FF88B40AC31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MOExampleDevToolPackage;
+			target = 29810AE8D0E4358A47B0BFFE /* MOExampleDevToolPackage */;
+			targetProxy = FB222FB95FE33E5E0527C40F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -772,10 +782,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
-				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageTesting.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -808,7 +814,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Libraries/Common",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -837,7 +842,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Libraries/Common",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -866,10 +870,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
-				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageTesting.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -914,7 +914,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOExampleDevToolPackage;
 				PRODUCT_NAME = MOExampleDevToolPackage;
 				SDKROOT = iphoneos;
@@ -940,7 +940,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Libraries/Common",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1035,7 +1034,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOExampleDevToolPackage;
 				PRODUCT_NAME = MOExampleDevToolPackage;
 				SDKROOT = iphoneos;
@@ -1136,7 +1135,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOExampleDevToolPackage;
 				PRODUCT_NAME = MOExampleDevToolPackage;
 				SDKROOT = iphoneos;
@@ -1162,7 +1161,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Libraries/Common",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1460,7 +1458,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOExampleDevToolPackage;
 				PRODUCT_NAME = MOExampleDevToolPackage;
 				SDKROOT = iphoneos;
@@ -1485,10 +1483,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
-				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageTesting.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1521,10 +1515,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
-				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageTesting.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1558,10 +1548,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
-				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageTesting.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1628,7 +1614,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../Libraries/Common",
-					"$(SRCROOT)/../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOExampleDevToolPackageExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1670,7 +1655,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOExampleDevToolPackage;
 				PRODUCT_NAME = MOExampleDevToolPackage;
 				SDKROOT = iphoneos;

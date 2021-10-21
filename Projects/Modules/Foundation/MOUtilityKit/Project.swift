@@ -5,7 +5,7 @@ import UtilityPlugin
 let project = Project.framework(
     name: "MOUtilityKit",
     targets: Set([
-       .staticframework,
+       .staticLibrary,
        .tests,
        .example,
        .testing

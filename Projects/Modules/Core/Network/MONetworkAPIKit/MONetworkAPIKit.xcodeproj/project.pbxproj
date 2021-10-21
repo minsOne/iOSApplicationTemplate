@@ -16,12 +16,13 @@
 		2E874C65C2B97D596421707A /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEBE081F36369E7DABF035E /* RxNimbleRxBlocking.xcframework */; };
 		30E1E916B03D5744DA0FE6A6 /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BACB2B5FE1FBAF052930A73C /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5023B251B41C57C98EAA6319 /* MONetworkAPIKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79127E20C78FE65DDFDF380E /* MONetworkAPIKitTesting.framework */; platformFilter = ios; };
-		611A6EEF508B8E5E9499450F /* MONetworkAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA93FA46A47EFC88135AC47 /* MONetworkAPIKit.framework */; platformFilter = ios; };
 		6819B98AED436F999DF51873 /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9130DDEB9EDD269AFD72D3BC /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
 		6C14740EC9824E6FC6EBCBF6 /* MONetworkAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC10A17D2451762868A533 /* MONetworkAPIKit.swift */; };
-		72409CBBB703B426348EF695 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB1106FFA3003C2E39129DD /* FLEX.xcframework */; };
 		7265BFF6F746FAE4B43E8FEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E5A6F0B5493E80D4373EF2 /* XCTest.framework */; };
 		7D6DC12F960E0F441A441FA9 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D345A3C8136A482F35B75D6 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		851F2F09F0EF9BC8F3238597 /* MOFoundationKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5F707150E29569EDF39CCA /* MOFoundationKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		879D213A09A59A9CBBD52222 /* MOExampleDevToolPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 775F48A37A9824003DFB2A9C /* MOExampleDevToolPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90EA4DA4896B7E24E862A580 /* MOFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5F707150E29569EDF39CCA /* MOFoundationKit.framework */; platformFilter = ios; };
 		94776CE3081E52619FFD686A /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57061AA0ABF10E12417DDDC5 /* Quick.xcframework */; };
 		958A174E820169E40791B802 /* RxNimbleRxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEBE081F36369E7DABF035E /* RxNimbleRxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A6D11FF6520ADA12A8965D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39D9F65B29D348DB780CCC0 /* Assets.xcassets */; };
@@ -29,10 +30,10 @@
 		AB8BFE1C3188DAB4A53577C0 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D345A3C8136A482F35B75D6 /* Nimble.xcframework */; };
 		B36CEF7EEEBAAF40C96A5E38 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4B8C73ED89C6ED50F7D84B /* RxBlocking.xcframework */; };
 		B56916ADDE29F74481234735 /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9130DDEB9EDD269AFD72D3BC /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B960C90BACA833CA7B54D1AE /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174E392DD1D192B207656BEC /* TouchVisualizer.xcframework */; };
 		C4E3596EF6D01D84A2720350 /* MONetworkAPIKitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79127E20C78FE65DDFDF380E /* MONetworkAPIKitTesting.framework */; platformFilter = ios; };
 		C67C8B59E7B9C3F2D41FE0D7 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2470674CFCF476F1B9B5A /* RxSwift.xcframework */; };
 		CACB2F8BC3C4A9F3785F1679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EBFA10103635978D3CBEE9 /* AppDelegate.swift */; };
+		CFDC5952E68D3B851F9806EA /* MOFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5F707150E29569EDF39CCA /* MOFoundationKit.framework */; platformFilter = ios; };
 		D0FD7BA718213B3382A7E0B7 /* MONetworkAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754E9688CD9924FAA0DC8AA /* MONetworkAPIKit.swift */; };
 		D20ED68B048C0007D2EB3CD3 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2470674CFCF476F1B9B5A /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D286BE6786C350F99EBF79D8 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1628E40404B662AFE7875A9A /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,6 +47,7 @@
 		F129663EC20857EB37B3BAED /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACB2B5FE1FBAF052930A73C /* RxNimbleRxTest.xcframework */; };
 		F852A53A0145D1C2143FD38B /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1628E40404B662AFE7875A9A /* RxTest.xcframework */; };
 		F9B256D8A8365E633876D394 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2470674CFCF476F1B9B5A /* RxSwift.xcframework */; };
+		FC842C9CF6ED0D89E805E005 /* libMONetworkAPIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B58D71836DD5B112B060B6 /* libMONetworkAPIKit.a */; platformFilter = ios; };
 		FCEBEC8EF1095F990FE05DD1 /* MONetworkAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E741B8753C4372EC288A8BD /* MONetworkAPIKitTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +125,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				879D213A09A59A9CBBD52222 /* MOExampleDevToolPackage.framework in Embed Frameworks */,
+				851F2F09F0EF9BC8F3238597 /* MOFoundationKit.framework in Embed Frameworks */,
 				D78739BF0446532028BFCD91 /* MONetworkAPIKitTesting.framework in Embed Frameworks */,
 				B56916ADDE29F74481234735 /* MOThirdPartyLibManager.framework in Embed Frameworks */,
 				07C9D9992806011CE87D6F76 /* RxCocoa.xcframework in Embed Frameworks */,
@@ -160,11 +164,12 @@
 		79EBFA10103635978D3CBEE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D345A3C8136A482F35B75D6 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Nimble.xcframework; sourceTree = "<group>"; };
 		8667047025623F697CAC7B5E /* Project-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Production.xcconfig"; sourceTree = "<group>"; };
+		90B58D71836DD5B112B060B6 /* libMONetworkAPIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMONetworkAPIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9130DDEB9EDD269AFD72D3BC /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CA4561CDAEBDE82DB16926 /* MONetworkAPIKitTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MONetworkAPIKitTests.plist; sourceTree = "<group>"; };
 		9742E73D45E39A58B6E5C781 /* MONetworkAPIKitExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MONetworkAPIKitExample.plist; sourceTree = "<group>"; };
 		9E7DA8DD75FFA98A6E277C11 /* Bundle+MONetworkAPIKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MONetworkAPIKitExample.swift"; sourceTree = "<group>"; };
-		9FA93FA46A47EFC88135AC47 /* MONetworkAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MONetworkAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5F707150E29569EDF39CCA /* MOFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FC10A17D2451762868A533 /* MONetworkAPIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONetworkAPIKit.swift; sourceTree = "<group>"; };
 		A39D9F65B29D348DB780CCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A754E9688CD9924FAA0DC8AA /* MONetworkAPIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONetworkAPIKit.swift; sourceTree = "<group>"; };
@@ -172,7 +177,6 @@
 		B6E5A6F0B5493E80D4373EF2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BACB2B5FE1FBAF052930A73C /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
 		C5EBC4BA32E245C084F3B5EF /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		D0BBD5D0A4D3B6C4D2010F0F /* MONetworkAPIKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MONetworkAPIKit.plist; sourceTree = "<group>"; };
 		E17FE1FA39A73F590E14E2E1 /* iOS-Example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Example.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,7 +202,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				611A6EEF508B8E5E9499450F /* MONetworkAPIKit.framework in Frameworks */,
+				CFDC5952E68D3B851F9806EA /* MOFoundationKit.framework in Frameworks */,
+				FC842C9CF6ED0D89E805E005 /* libMONetworkAPIKit.a in Frameworks */,
 				DE8937E12BA1EEC01D8EADC8 /* MOThirdPartyLibManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +217,6 @@
 				E2E573DCAA0E9A1D9EE18F3F /* RxCocoa.xcframework in Frameworks */,
 				144F2B420C970764A18B5239 /* RxRelay.xcframework in Frameworks */,
 				C67C8B59E7B9C3F2D41FE0D7 /* RxSwift.xcframework in Frameworks */,
-				72409CBBB703B426348EF695 /* FLEX.xcframework in Frameworks */,
-				B960C90BACA833CA7B54D1AE /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EA4DA4896B7E24E862A580 /* MOFoundationKit.framework in Frameworks */,
 				6819B98AED436F999DF51873 /* MOThirdPartyLibManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +336,6 @@
 		93358E91210E1760B4946F61 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				D0BBD5D0A4D3B6C4D2010F0F /* MONetworkAPIKit.plist */,
 				9742E73D45E39A58B6E5C781 /* MONetworkAPIKitExample.plist */,
 				0F65C5FEDA4501581B8929C5 /* MONetworkAPIKitTesting.plist */,
 				93CA4561CDAEBDE82DB16926 /* MONetworkAPIKitTests.plist */,
@@ -351,8 +354,9 @@
 		9EEFA926A59A01BDC1829952 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				90B58D71836DD5B112B060B6 /* libMONetworkAPIKit.a */,
 				775F48A37A9824003DFB2A9C /* MOExampleDevToolPackage.framework */,
-				9FA93FA46A47EFC88135AC47 /* MONetworkAPIKit.framework */,
+				9F5F707150E29569EDF39CCA /* MOFoundationKit.framework */,
 				1677E75B93824C51721E4FC6 /* MONetworkAPIKitExample.app */,
 				79127E20C78FE65DDFDF380E /* MONetworkAPIKitTesting.framework */,
 				1EC886ACB8F75D98ED74699A /* MONetworkAPIKitTests.xctest */,
@@ -460,8 +464,8 @@
 			);
 			name = MONetworkAPIKit;
 			productName = MONetworkAPIKit;
-			productReference = 9FA93FA46A47EFC88135AC47 /* MONetworkAPIKit.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 90B58D71836DD5B112B060B6 /* libMONetworkAPIKit.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		43B6CACBABA50DC6B3FAEF9D /* MONetworkAPIKitTesting */ = {
 			isa = PBXNativeTarget;
@@ -803,21 +807,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5EBC4BA32E245C084F3B5EF /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MONetworkAPIKit;
 				PRODUCT_NAME = MONetworkAPIKit;
 				SDKROOT = iphoneos;
@@ -827,8 +819,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Beta;
 		};
@@ -842,7 +832,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -995,7 +984,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1019,21 +1007,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5EBC4BA32E245C084F3B5EF /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MONetworkAPIKit;
 				PRODUCT_NAME = MONetworkAPIKit;
 				SDKROOT = iphoneos;
@@ -1043,8 +1019,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = QA;
 		};
@@ -1090,7 +1064,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1114,21 +1087,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5EBC4BA32E245C084F3B5EF /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MONetworkAPIKit;
 				PRODUCT_NAME = MONetworkAPIKit;
 				SDKROOT = iphoneos;
@@ -1139,8 +1100,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Development;
 		};
@@ -1298,21 +1257,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5EBC4BA32E245C084F3B5EF /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MONetworkAPIKit;
 				PRODUCT_NAME = MONetworkAPIKit;
 				SDKROOT = iphoneos;
@@ -1322,8 +1269,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Production;
 		};
@@ -1370,7 +1315,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1505,21 +1449,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5EBC4BA32E245C084F3B5EF /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKit.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MONetworkAPIKit;
 				PRODUCT_NAME = MONetworkAPIKit;
 				SDKROOT = iphoneos;
@@ -1530,8 +1462,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Test;
 		};
@@ -1578,7 +1508,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MONetworkAPIKitExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

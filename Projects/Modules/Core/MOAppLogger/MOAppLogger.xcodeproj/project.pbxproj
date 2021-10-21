@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E21DD9613930307102C7237 /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9CAB5ACA0D35DF3BCA83C7 /* TouchVisualizer.xcframework */; };
+		00330438C6E9FBC0F7BD1EAC /* libMOAppLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424D4669F0F7E8E3850508B8 /* libMOAppLogger.a */; platformFilter = ios; };
 		118383E570CAB9F49169EF8B /* MOThirdPartyLibManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		214F68F7F122E49F4816A65C /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5E066746B59BB5246C778F /* FLEX.xcframework */; };
+		11D95CE25234BAADB3A28107 /* MOExampleDevToolPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49CBC4212CC3841A5A2A35C /* MOExampleDevToolPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3480D4A118A6101507A58C2A /* AppLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE7AE086E63EFC46074155 /* AppLogEvent.swift */; };
 		4454A73C3DF7411281CB67BE /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6287AB1A1CE5F3A17BF4B81B /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48DF90D222EE34585A723184 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0FE430EE64284087B670C7 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -36,7 +36,6 @@
 		A9C31AA5EF9EAD41705431A0 /* Bundle+MOAppLoggerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605B9FB65A0BA17104BB4BF /* Bundle+MOAppLoggerExample.swift */; };
 		AB866EDA56F7150ED9F7D5C5 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 597DEB18122C8D28A059AA69 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACBBEB6FD89397CF664E8242 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C98A7E2B7A70B2A13CB97DF /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B776321CA34916ABCD63835B /* MOAppLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */; platformFilter = ios; };
 		BA1C82D8A41F96D7EC1E5EFE /* MOAppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0703AB3F5B5E7347E4BFC6 /* MOAppLogger.swift */; };
 		BDB0DF42F9A65F9F858D6AA6 /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 420CEFE446D9310D322A1BF9 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5B6EF7F152D827372627073 /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */; };
@@ -105,6 +104,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DC3F4D5A31C7EE03609774B2 /* MOAppLoggerTesting.framework in Embed Frameworks */,
+				11D95CE25234BAADB3A28107 /* MOExampleDevToolPackage.framework in Embed Frameworks */,
 				118383E570CAB9F49169EF8B /* MOThirdPartyLibManager.framework in Embed Frameworks */,
 				DE6FB2CEEF5546B129A50293 /* RxCocoa.xcframework in Embed Frameworks */,
 				C91D34E22BC40C7885605BC8 /* RxRelay.xcframework in Embed Frameworks */,
@@ -152,9 +152,9 @@
 		21638A9836646F817BDC7764 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		240B5EC2571242638318CD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25208A29DDA3ADD1ED1FD04A /* CrashlyticsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsKit.swift; sourceTree = "<group>"; };
-		2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOAppLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9CAB5ACA0D35DF3BCA83C7 /* TouchVisualizer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TouchVisualizer.xcframework; sourceTree = "<group>"; };
 		420CEFE446D9310D322A1BF9 /* RxNimbleRxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxTest.xcframework; sourceTree = "<group>"; };
+		424D4669F0F7E8E3850508B8 /* libMOAppLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMOAppLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6E561A12C10303D1137684 /* MOAppLoggerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOAppLoggerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4BF356C879BCFFFBCAFB5B /* RxNimbleRxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxNimbleRxBlocking.xcframework; sourceTree = "<group>"; };
 		525EB734911488FF88D4084E /* Project-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Beta.xcconfig"; sourceTree = "<group>"; };
@@ -183,7 +183,6 @@
 		D86B12EC7260BBFD4B7F90E2 /* iOS-Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Tests.xcconfig"; sourceTree = "<group>"; };
 		DAEC0BEC61ED9F8E3BC3AE54 /* FirebaseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseKit.swift; sourceTree = "<group>"; };
 		EEC2A385F9AAD148B398E4F6 /* MOAppLoggerTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTests.plist; sourceTree = "<group>"; };
-		F2C27BD73C16688254AFF986 /* MOAppLogger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLogger.plist; sourceTree = "<group>"; };
 		F49CBC4212CC3841A5A2A35C /* MOExampleDevToolPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOExampleDevToolPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ABC7F7E73ADC5A7E19A82C /* MOThirdPartyLibManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOThirdPartyLibManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2806E9044F47CB43E302FC /* MOAppLoggerTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = MOAppLoggerTesting.plist; sourceTree = "<group>"; };
@@ -217,8 +216,6 @@
 				7871C820B6BD011936854833 /* RxCocoa.xcframework in Frameworks */,
 				6182C904791DABE8A9317B99 /* RxRelay.xcframework in Frameworks */,
 				9717A9E4CC8C247CF4FD5BF5 /* RxSwift.xcframework in Frameworks */,
-				214F68F7F122E49F4816A65C /* FLEX.xcframework in Frameworks */,
-				0E21DD9613930307102C7237 /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B776321CA34916ABCD63835B /* MOAppLogger.framework in Frameworks */,
+				00330438C6E9FBC0F7BD1EAC /* libMOAppLogger.a in Frameworks */,
 				69087F0C3F0115C1C628E60C /* MOThirdPartyLibManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +281,7 @@
 		28A21DFFFF2D89E99653D197 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */,
+				424D4669F0F7E8E3850508B8 /* libMOAppLogger.a */,
 				4A6E561A12C10303D1137684 /* MOAppLoggerExample.app */,
 				05E4AF6CDC96C9532F6AFFC7 /* MOAppLoggerTesting.framework */,
 				1D5179E61579AC1CFFD0EA18 /* MOAppLoggerTests.xctest */,
@@ -318,7 +315,6 @@
 		46C02EDBADA2956E2BE97F51 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				F2C27BD73C16688254AFF986 /* MOAppLogger.plist */,
 				0913F1EB05367E9347AF19B3 /* MOAppLoggerExample.plist */,
 				FB2806E9044F47CB43E302FC /* MOAppLoggerTesting.plist */,
 				EEC2A385F9AAD148B398E4F6 /* MOAppLoggerTests.plist */,
@@ -517,8 +513,8 @@
 			);
 			name = MOAppLogger;
 			productName = MOAppLogger;
-			productReference = 2EB3D0E4CB651DA461284C96 /* MOAppLogger.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 424D4669F0F7E8E3850508B8 /* libMOAppLogger.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		E3AA2D0DB183699C6DDA1846 /* MOAppLoggerExample */ = {
 			isa = PBXNativeTarget;
@@ -821,7 +817,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -878,21 +873,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOAppLogger.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOAppLogger;
 				PRODUCT_NAME = MOAppLogger;
 				SDKROOT = iphoneos;
@@ -902,8 +885,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Production;
 		};
@@ -1099,21 +1080,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOAppLogger.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOAppLogger;
 				PRODUCT_NAME = MOAppLogger;
 				SDKROOT = iphoneos;
@@ -1123,8 +1092,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = QA;
 		};
@@ -1138,7 +1105,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1225,21 +1191,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOAppLogger.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOAppLogger;
 				PRODUCT_NAME = MOAppLogger;
 				SDKROOT = iphoneos;
@@ -1250,8 +1204,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Test;
 		};
@@ -1318,21 +1270,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOAppLogger.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOAppLogger;
 				PRODUCT_NAME = MOAppLogger;
 				SDKROOT = iphoneos;
@@ -1343,8 +1283,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Development;
 		};
@@ -1411,7 +1349,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1441,7 +1378,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1555,7 +1491,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOAppLoggerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1644,21 +1579,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53FD40EB68FF97DC171D468D /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Derived/InfoPlists/MOAppLogger.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOAppLogger;
 				PRODUCT_NAME = MOAppLogger;
 				SDKROOT = iphoneos;
@@ -1668,8 +1591,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = 1;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Beta;
 		};

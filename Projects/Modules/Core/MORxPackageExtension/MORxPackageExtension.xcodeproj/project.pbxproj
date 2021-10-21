@@ -25,16 +25,15 @@
 		78FA4FC730C7F1F3E22FBFE6 /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */; };
 		7A4F0F49518F091E4E2011B0 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8DAAEC3C55816DE179FEB3 /* RxBlocking.xcframework */; };
 		7FB91D49AC056120D0DDC696 /* MORxPackageExtensionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AAB884F8D0524536286037 /* MORxPackageExtensionTesting.framework */; platformFilter = ios; };
-		84848EB90A368AB80BA1F6C2 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */; };
 		85B62BE5F10D3CC5567B0835 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392A8B5FD75078A101AC54A7 /* XCTest.framework */; };
 		891D6901003A1CB4247A1862 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB96D2F8A6A39701D728B5C /* RxSwift.xcframework */; };
 		8B30B31A062A0EE59BEB540B /* MORxPackageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055F167A7B019B0FA363BC /* MORxPackageExtensionTests.swift */; };
+		8D40FDB1A155795E60D0395E /* MOExampleDevToolPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8B9DA6708B2FB0B2CA8FD0D /* MOExampleDevToolPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E7D0F987540293D2E929856 /* RIBs.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1942915D47B2F07057592C /* RIBs.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F0342F1958A3C387D537852 /* RxNimbleRxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3FEC15BC355CD6B813145E4 /* RxNimbleRxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93DE815681A9D0776847D355 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7B84E9A312F90F66D8433B6 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9822F613CEE8026BD0986249 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; };
 		9A097373ACC4A58BB1DDF687 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B31C75B5D08E15CC7202F /* RxRelay.xcframework */; };
-		9A6979ACA809E031F33C5DED /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76949653D814F7C3C3BB94E1 /* TouchVisualizer.xcframework */; };
 		9BEBBDD3E50BE9BA7948DB5B /* ReactorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885A3F56E3BC1E1D948D77FA /* ReactorKit.xcframework */; };
 		9D3CB56AF8FCA0C16CEBA2AD /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F34F18D7FC79AB993501797 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACE05125A2096887AA3C478B /* TouchVisualizer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76949653D814F7C3C3BB94E1 /* TouchVisualizer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,6 +112,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8D40FDB1A155795E60D0395E /* MOExampleDevToolPackage.framework in Embed Frameworks */,
 				49433684752DA1FEBFB46264 /* MORxPackageExtension.framework in Embed Frameworks */,
 				D709AD7D9652787283F194EC /* MORxPackageExtensionTesting.framework in Embed Frameworks */,
 				8E7D0F987540293D2E929856 /* RIBs.xcframework in Embed Frameworks */,
@@ -243,8 +243,6 @@
 				9822F613CEE8026BD0986249 /* RxCocoa.xcframework in Frameworks */,
 				9A097373ACC4A58BB1DDF687 /* RxRelay.xcframework in Frameworks */,
 				BC35E9E22DA7C29745F5288B /* RxSwift.xcframework in Frameworks */,
-				84848EB90A368AB80BA1F6C2 /* FLEX.xcframework in Frameworks */,
-				9A6979ACA809E031F33C5DED /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +826,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
 				PRODUCT_NAME = MORxPackageExtension;
 				SDKROOT = iphoneos;
@@ -1016,6 +1015,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
 				PRODUCT_NAME = MORxPackageExtension;
 				SDKROOT = iphoneos;
@@ -1040,7 +1040,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1335,6 +1334,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
 				PRODUCT_NAME = MORxPackageExtension;
 				SDKROOT = iphoneos;
@@ -1465,7 +1465,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1494,7 +1493,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1594,6 +1592,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
 				PRODUCT_NAME = MORxPackageExtension;
 				SDKROOT = iphoneos;
@@ -1619,7 +1618,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1660,6 +1658,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MORxPackageExtension;
 				PRODUCT_NAME = MORxPackageExtension;
 				SDKROOT = iphoneos;
@@ -1684,7 +1683,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MORxPackageExtensionExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

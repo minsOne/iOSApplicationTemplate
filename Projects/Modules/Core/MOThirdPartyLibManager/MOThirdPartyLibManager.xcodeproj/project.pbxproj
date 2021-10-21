@@ -15,6 +15,7 @@
 		14E6A0AE1CB860DF3308A1D4 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70D5DCF99F7F7A75270F494 /* GoogleDataTransport.xcframework */; };
 		19DB8DAD9BD65499DE412EFB /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224AF363605855FFC0114392 /* FirebaseAnalytics.xcframework */; };
 		1EBD4D67FDB1208EE57A82C2 /* MOThirdPartyLibManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C53ABA87C843D675FD6115A /* MOThirdPartyLibManager.framework */; platformFilter = ios; };
+		351BE25E2E2760F14A9F8E0C /* MOExampleDevToolPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA75C822D54BF93EAFAD0D /* MOExampleDevToolPackage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		367CE83BFF00BC591337A483 /* MOThirdPartyLibManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F636AFB4FFD95AB9FEB70C9 /* MOThirdPartyLibManagerTests.swift */; };
 		37A8DEF3190AC179163CBD55 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41FEFB0173CDFEF7DFADA12 /* RxBlocking.xcframework */; };
 		3B356D9E7EEB45834EBC5ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD05A0BE3D9EDEB93AA931 /* LaunchScreen.storyboard */; };
@@ -37,7 +38,6 @@
 		72F6E27EA4BD6AA62A6C5969 /* FirebaseCrashlytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CFE49744601CAAE7EDF485 /* FirebaseCrashlytics.xcframework */; };
 		733FBC7859AE12B1D99C9F66 /* MOThirdPartyLibManagerTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300DBC512106B6A9CCBE897 /* MOThirdPartyLibManagerTesting.framework */; platformFilter = ios; };
 		73EEFCD1CEDE4C042B31BD30 /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBB8C1573C2571F2ED1B1F5 /* FirebaseCoreDiagnostics.xcframework */; };
-		7A093C53F2F667EE2FBD96DE /* TouchVisualizer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC951158A778AFA7F15C7AE /* TouchVisualizer.xcframework */; };
 		857D13B3CDE0AC563486060F /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D667DB912C66528416047BA /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A5FF9218FFEA4A449D63B0B /* InjectPropertyWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = FD4D5D47CF34836C2425B3FE /* InjectPropertyWrapper */; };
 		8BEFC6BB5DD1D57ADE43AE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB48822E1752F578AC8996D1 /* Assets.xcassets */; };
@@ -53,7 +53,6 @@
 		BE26E81C64161B720A4C82F0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9919FDB409EB60505F3A6A /* Swinject */; };
 		BE47545AC1813A7EBEFCB597 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D667DB912C66528416047BA /* RxSwift.xcframework */; };
 		BF6398179CA41C888D687EBF /* RxNimbleRxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FE3F7AF9A3FCF8BBFC9642 /* RxNimbleRxTest.xcframework */; };
-		CA2FD0471074C3A0A28EC4DB /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E8669A242CAF38455D5803 /* FLEX.xcframework */; };
 		CBDF2E74E3AAAE4563FCEE3F /* RxNimbleRxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A0554F61867CCCF3D63FCF /* RxNimbleRxBlocking.xcframework */; };
 		CC9B7EBF8E17D7CD5CB8CF30 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49EA2DDB50B6E0900C1B04E /* RxCocoa.xcframework */; };
 		CD765D13E000EB3768E809AA /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEAF50363BFA2BA03BE9B9A /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -117,6 +116,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				351BE25E2E2760F14A9F8E0C /* MOExampleDevToolPackage.framework in Embed Frameworks */,
 				44EB92BEEF985A1C0B7B2DBC /* MOThirdPartyLibManager.framework in Embed Frameworks */,
 				93D58F17DDC35F7F9FF27DC1 /* MOThirdPartyLibManagerTesting.framework in Embed Frameworks */,
 				6F6E55F20B574C57688FBDA5 /* RxCocoa.xcframework in Embed Frameworks */,
@@ -278,8 +278,6 @@
 				CC9B7EBF8E17D7CD5CB8CF30 /* RxCocoa.xcframework in Frameworks */,
 				0F34A23774A4B9385BD02F08 /* RxRelay.xcframework in Frameworks */,
 				BE47545AC1813A7EBEFCB597 /* RxSwift.xcframework in Frameworks */,
-				CA2FD0471074C3A0A28EC4DB /* FLEX.xcframework in Frameworks */,
-				7A093C53F2F667EE2FBD96DE /* TouchVisualizer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,7 +1016,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1118,6 +1115,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
 				PRODUCT_NAME = MOThirdPartyLibManager;
 				SDKROOT = iphoneos;
@@ -1319,7 +1317,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1360,6 +1357,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
 				PRODUCT_NAME = MOThirdPartyLibManager;
 				SDKROOT = iphoneos;
@@ -1437,7 +1435,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1543,6 +1540,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
 				PRODUCT_NAME = MOThirdPartyLibManager;
 				SDKROOT = iphoneos;
@@ -1567,7 +1565,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1641,6 +1638,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
 				PRODUCT_NAME = MOThirdPartyLibManager;
 				SDKROOT = iphoneos;
@@ -1665,7 +1663,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../../Libraries/Common",
-					"$(SRCROOT)/../../../../Libraries/DevelopTool",
 				);
 				INFOPLIST_FILE = Derived/InfoPlists/MOThirdPartyLibManagerExample.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1739,6 +1736,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.MOThirdPartyLibManager;
 				PRODUCT_NAME = MOThirdPartyLibManager;
 				SDKROOT = iphoneos;
