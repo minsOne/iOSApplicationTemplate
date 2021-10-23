@@ -55,7 +55,7 @@ $ tuist graph -d # 외부 라이브러리 제외
 $ tuist graph -t -f dot # dot 파일로 출력
 
 # Tests, Testing, Example 타겟을 제외한 그래프 생성
-$ ./script/tuist_graph_without_testing_example_tests.sh
+$ ./script/generate_tuist_graph.sh.sh
 ```
 
 ![graph](./Asset/graph.png)
