@@ -80,6 +80,8 @@ public extension Project {
                 infoPlist: .extendingDefault(with: [
                     "UIMainStoryboardFile": "",
                     "UILaunchStoryboardName": "LaunchScreen",
+                    "LSSupportsOpeningDocumentsInPlace": true,
+                    "UIFileSharingEnabled": true,
                 ]),
                 sources: ["Example/Sources/**/*.swift"],
                 resources: [.glob(pattern: "Example/Resources/**", excluding: ["Example/Resources/dummy.txt"])],
