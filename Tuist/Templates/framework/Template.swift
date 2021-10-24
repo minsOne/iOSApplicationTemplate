@@ -39,6 +39,8 @@ let template = Template(
         [
             .file(path: "\(nameAttribute)/Project.swift",
                   templatePath: "contents_project.stencil"),
+            .file(path: "\(nameAttribute)/README.md",
+                  templatePath: "readme.stencil"),
         ]
     ].flatMap { $0 }
 )

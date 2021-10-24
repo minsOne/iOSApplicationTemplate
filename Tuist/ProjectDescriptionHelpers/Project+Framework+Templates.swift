@@ -194,6 +194,7 @@ public extension Project {
                     profileAction: .init(configurationName: configurationName),
                     analyzeAction: .init(configurationName: configurationName))
                 : nil
-            ].compactMap { $0 })
+            ].compactMap { $0 },
+            additionalFiles: ["README.md"])
     }
 }
