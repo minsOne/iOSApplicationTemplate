@@ -71,6 +71,7 @@ $ ./script/generate_tuist_graph.sh.sh
 * [BendingSpoons/tempura-swift](https://github.com/BendingSpoons/tempura-swift)
 * [fortmarek/ComposableTuistArchitecture](https://github.com/fortmarek/ComposableTuistArchitecture)
 * [ronanociosoig/tuist-pokedex](https://github.com/ronanociosoig/tuist-pokedex)
+* [nimblehq/ios-templates](https://github.com/nimblehq/ios-templates)
 
 ## Clean Architecture With Swinject, RIBs
 
