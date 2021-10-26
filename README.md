@@ -105,7 +105,7 @@ $ ./script/generate_tuist_graph.sh.sh
 
 ## Navigation
 
-- [justeat/NavigationEngineDemo](https://github.com/justeat/NavigationEngineDemo), https://tech.justeattakeaway.com/2019/04/16/deep-linking-at-scale-on-ios/
+- Github : [justeat/NavigationEngineDemo](https://github.com/justeat/NavigationEngineDemo), Article https://tech.justeattakeaway.com/2019/04/16/deep-linking-at-scale-on-ios/
 
 ## 사용한, 사용할 기타 오픈소스
 * [RxViewBinder](https://github.com/magi82/RxViewBinder)
