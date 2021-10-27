@@ -72,6 +72,7 @@ $ ./script/generate_tuist_graph.sh.sh
 * [ronanociosoig/tuist-pokedex](https://github.com/ronanociosoig/tuist-pokedex)
 * [nimblehq/ios-templates](https://github.com/nimblehq/ios-templates)
 * [vsanthanam/Statio](https://github.com/vsanthanam/Statio)
+* [vsanthanam/ScoreFive-2](https://github.com/vsanthanam/ScoreFive-2)
 * https://sarunw.com/tags/tuist/
 
 ## Clean Architecture With Swinject, RIBs
