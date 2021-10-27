@@ -67,12 +67,12 @@ $ ./script/generate_tuist_graph.sh.sh
 * **[tuist/awesome-tuist](https://github.com/tuist/awesome-tuist)**
 * **[HedvigInsurance/ugglan](https://github.com/HedvigInsurance/ugglan)**
 * [JulianAlonso/MarvelApp](https://github.com/JulianAlonso/MarvelApp)
-* https://sarunw.com/tags/tuist/
 * [BendingSpoons/tempura-swift](https://github.com/BendingSpoons/tempura-swift)
 * [fortmarek/ComposableTuistArchitecture](https://github.com/fortmarek/ComposableTuistArchitecture)
 * [ronanociosoig/tuist-pokedex](https://github.com/ronanociosoig/tuist-pokedex)
 * [nimblehq/ios-templates](https://github.com/nimblehq/ios-templates)
 * [vsanthanam/Statio](https://github.com/vsanthanam/Statio)
+* https://sarunw.com/tags/tuist/
 
 ## Clean Architecture With Swinject, RIBs
 
