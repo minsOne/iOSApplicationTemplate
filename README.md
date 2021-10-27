@@ -72,6 +72,7 @@ $ ./script/generate_tuist_graph.sh.sh
 * [fortmarek/ComposableTuistArchitecture](https://github.com/fortmarek/ComposableTuistArchitecture)
 * [ronanociosoig/tuist-pokedex](https://github.com/ronanociosoig/tuist-pokedex)
 * [nimblehq/ios-templates](https://github.com/nimblehq/ios-templates)
+* [vsanthanam/Statio](https://github.com/vsanthanam/Statio)
 
 ## Clean Architecture With Swinject, RIBs
 
