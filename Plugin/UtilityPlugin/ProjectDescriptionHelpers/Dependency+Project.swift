@@ -11,7 +11,12 @@ import ProjectDescription
 // MARK: Project
 extension Dep {
     public struct Project {
-        public struct Feature {}
+        public struct Feature {
+            public struct Main {}
+            public struct Setting {}
+            public struct Loan {}
+            public struct BaseDependency {}
+        }
         public struct Module {
             public struct Core {
                 public struct Network {}
@@ -27,9 +32,45 @@ extension Dep {
 
 // MAKR : Feature
 public extension Dep.Project.Feature {
-    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Feature/\(name)")) }
+    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Features/\(name)")) }
 
     static let FeatureKit = project(name: "MOFeatureKit")
+}
+
+public extension Dep.Project.Feature.Main {
+    static let group = "MOFeatureMain"
+    static func project(name: String) -> Dep { .project(target: "\(group)\(name)", path: .relativeToRoot("Projects/Features/\(group)/\(name)")) }
+
+    static let Domain        = project(name: "Domain")
+    static let Repository    = project(name: "Repository")
+    static let UserInterface = project(name: "UserInterface")
+}
+
+public extension Dep.Project.Feature.Setting {
+    static let group = "MOFeatureSetting"
+    static func project(name: String) -> Dep { .project(target: "\(group)\(name)", path: .relativeToRoot("Projects/Features/\(group)/\(name)")) }
+
+    static let Domain        = project(name: "Domain")
+    static let Repository    = project(name: "Repository")
+    static let UserInterface = project(name: "UserInterface")
+}
+
+public extension Dep.Project.Feature.Loan {
+    static let group = "MOFeatureLoan"
+    static func project(name: String) -> Dep { .project(target: "\(group)\(name)", path: .relativeToRoot("Projects/Features/\(group)/\(name)")) }
+
+    static let Domain        = project(name: "Domain")
+    static let Repository    = project(name: "Repository")
+    static let UserInterface = project(name: "UserInterface")
+}
+
+public extension Dep.Project.Feature.BaseDependency {
+    static let group = "MOFeatureBaseDependency"
+    static func project(name: String) -> Dep { .project(target: "\(group)\(name)", path: .relativeToRoot("Projects/Features/\(group)/\(name)")) }
+
+    static let Domain        = project(name: "Domain")
+    static let Repository    = project(name: "Repository")
+    static let UserInterface = project(name: "UserInterface")
 }
 
 // MARK: - Module

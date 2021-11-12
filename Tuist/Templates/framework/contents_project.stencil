@@ -5,10 +5,10 @@ import UtilityPlugin
 let project = Project.framework(
     name: "{{ name }}",
     targets: Set([
-       .staticLibrary,
-       .tests,
-       .example,
-       .testing
+        .staticLibrary,
+        .tests,
+        .example,
+        .testing
     ]),
     dependencies: []
 )
