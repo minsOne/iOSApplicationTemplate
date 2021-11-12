@@ -5,13 +5,19 @@ import UtilityPlugin
 let project = Project.framework(
     name: "MOFeatureKit",
     targets: Set([
-       .dynamicFramework,
-       .tests,
-       .example,
-       .testing
+        .dynamicFramework,
+        .tests,
+        .example,
+        .testing
     ]),
     dependencies: [
-        Dep.Project.Module.Core.CoreKit,
-        Dep.Project.UserInterface.DesignSystem.DesignSystemKit,
-    ]
+        [
+            .Project.Module.Core.CoreKit,
+        ],
+        [
+            .Project.Feature.Main.Repository,
+            .Project.Feature.Setting.Repository,
+            .Project.Feature.Loan.Repository,
+        ]
+    ].flatMap { $0 }
 )
