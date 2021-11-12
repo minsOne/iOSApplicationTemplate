@@ -10,5 +10,7 @@ let project = Project.framework(
        .example,
        .testing
     ]),
-    dependencies: []
+    dependencies: [
+        .Project.Module.Core.CoreKit,
+    ]
 )

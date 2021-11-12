@@ -11,13 +11,8 @@ let project = Project.framework(
         .testing
     ]),
     dependencies: [
-        [
-            .Project.Module.Core.CoreKit,
-        ],
-        [
-            .Project.Feature.Main.Repository,
-            .Project.Feature.Setting.Repository,
-            .Project.Feature.Loan.Repository,
-        ]
-    ].flatMap { $0 }
+        .Project.Feature.Main.Repository,
+        .Project.Feature.Setting.Repository,
+        .Project.Feature.Loan.Repository,
+    ]
 )

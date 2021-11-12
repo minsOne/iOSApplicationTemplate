@@ -12,8 +12,6 @@ let project = Project.framework(
     ]),
     dependencies: [
         Dep.Project.Module.Core.AppLogger,
-        Dep.Project.Module.Core.ThirdPartyLibManager,
         Dep.Project.Module.Core.Network.NetworkAPIs,
-        Dep.Project.Module.Foundation.FoundationKit,
     ]
 )
