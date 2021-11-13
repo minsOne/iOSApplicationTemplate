@@ -13,7 +13,7 @@ public extension Project {
                           exampleTargetOption: ExampleTargetOption? = nil) -> Project {
 
         let hasDynamicFramework = targets.contains(.dynamicFramework)
-        let configurationName: String = "Test"
+        let configurationName: ConfigurationName = "Test"
 
         var projectTargets: [Target] = []
         if targets.contains(where: { $0.hasFramework }) {
@@ -30,9 +30,8 @@ public extension Project {
                 infoPlist: .default,
                 sources: ["Sources/**/*.swift"],
                 resources:  hasDynamicFramework ? [.glob(pattern: "Resources/**", excluding: ["Resources/dummy.txt"])] : [],
-                actions: [],
                 dependencies: dependencies,
-                settings: Settings(base: settings, configurations: XCConfig.framework)
+                settings: .settings(base: settings, configurations: XCConfig.framework)
             )
 
             projectTargets.append(target)
@@ -48,14 +47,13 @@ public extension Project {
                 infoPlist: .default,
                 sources: ["Testing/Sources/**/*.swift"],
                 resources: [.glob(pattern: "Testing/Resources/**", excluding: ["Testing/Resources/dummy.txt"])],
-                actions: [],
                 dependencies: [
                     testingDependencies,
                     [
                         .target(name: "\(name)"),
                     ]
                 ].flatMap { $0 },
-                settings: Settings(base: [:], configurations: XCConfig.framework)
+                settings: .settings(base: [:], configurations: XCConfig.framework)
             )
 
             projectTargets.append(target)
@@ -85,7 +83,6 @@ public extension Project {
                 ]),
                 sources: ["Example/Sources/**/*.swift"],
                 resources: [.glob(pattern: "Example/Resources/**", excluding: ["Example/Resources/dummy.txt"])],
-                actions: [],
                 dependencies: [
                     [
                         Dep.Framework.Common.RxSwift,
@@ -98,7 +95,7 @@ public extension Project {
                         Dep.Project.DevelopTool.ExampleDevToolPackage
                     ],
                 ].flatMap { $0 },
-                settings: Settings(base: [:], configurations: XCConfig.example)
+                settings: .settings(base: [:], configurations: XCConfig.example)
             )
 
             projectTargets.append(target)
@@ -133,7 +130,6 @@ public extension Project {
                 infoPlist: .default,
                 sources: ["Tests/Sources/**/*.swift"],
                 resources: [.glob(pattern: "Tests/Resources/**", excluding: ["Tests/Resources/dummy.txt"])],
-                actions: [],
                 dependencies: [
                     [
                         .xctest,
@@ -148,7 +144,7 @@ public extension Project {
                     ],
                     deps
                 ].flatMap { $0 },
-                settings: Settings(base: [:], configurations: XCConfig.tests)
+                settings: .settings(base: [:], configurations: XCConfig.tests)
             )
 
             projectTargets.append(target)
@@ -158,43 +154,43 @@ public extension Project {
             name: name,
             organizationName: organizationName,
             packages: packages,
-            settings: Settings(base: [:], configurations: XCConfig.project),
+            settings: .settings(configurations: XCConfig.project),
             targets: projectTargets,
             schemes: [
-                Scheme(
-                    name: name,
-                    shared: true,
-                    buildAction: BuildAction(targets: ["\(name)"]),
-                    testAction: TestAction(
-                        targets: [
+                Scheme(name: name,
+                       shared: true,
+                       buildAction: .buildAction(targets: ["\(name)"]),
+                       testAction: .targets(
+                        [
                             TestableTarget(
                                 target: TargetReference(stringLiteral: "\(name)Tests"),
                                 parallelizable: true)
                         ],
-                        configurationName: configurationName,
-                        coverage: true),
-                    runAction: .init(configurationName: configurationName),
-                    archiveAction: .init(configurationName: configurationName),
-                    profileAction: .init(configurationName: configurationName),
-                    analyzeAction: .init(configurationName: configurationName)
-                ),
+                        configuration: configurationName,
+                        options: .options(coverage: true, codeCoverageTargets: ["\(name)"])
+                       ),
+                       runAction: .runAction(configuration: configurationName),
+                       archiveAction: .archiveAction(configuration: configurationName),
+                       profileAction: .profileAction(configuration: configurationName),
+                       analyzeAction: .analyzeAction(configuration: configurationName)),
                 targets.contains(.example)
                 ? Scheme(
                     name: "\(name)Example",
                     shared: true,
                     buildAction: BuildAction(targets: ["\(name)Example"]),
-                    testAction: TestAction(
-                        targets: [
-                            TestableTarget(
-                                target: TargetReference(stringLiteral: "\(name)Tests"),
-                                parallelizable: true)
-                        ],
-                        configurationName: configurationName,
-                        coverage: true),
-                    runAction: .init(configurationName: configurationName),
-                    archiveAction: .init(configurationName: configurationName),
-                    profileAction: .init(configurationName: configurationName),
-                    analyzeAction: .init(configurationName: configurationName))
+                    testAction: .targets(
+                     [
+                         TestableTarget(
+                             target: TargetReference(stringLiteral: "\(name)Tests"),
+                             parallelizable: true)
+                     ],
+                     configuration: configurationName,
+                     options: .options(coverage: true, codeCoverageTargets: ["\(name)"])
+                    ),
+                    runAction: .runAction(configuration: configurationName),
+                    archiveAction: .archiveAction(configuration: configurationName),
+                    profileAction: .profileAction(configuration: configurationName),
+                    analyzeAction: .analyzeAction(configuration: configurationName))
                 : nil
             ].compactMap { $0 },
             additionalFiles: ["README.md"])

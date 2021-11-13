@@ -5,7 +5,7 @@ let nameAttribute: Template.Attribute = .required("name")
 let template = Template(
     description: "Framework template",
     attributes: [nameAttribute, .optional("platform", default: "iOS")],
-    files: [
+    items: [
         [
             .file(path: "\(nameAttribute)/Example/Sources/AppDelegate.swift",
                   templatePath: "contents_example_appdelegate.stencil"),
