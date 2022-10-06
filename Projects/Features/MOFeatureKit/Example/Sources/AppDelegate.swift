@@ -5,6 +5,10 @@ import MOThirdPartyLibManager
 import MOFeatureBaseDependencyDomain
 import MOFeatureLoanDomain
 import MOFeatureLoanRepository
+import MOAppLogger
+import MONetworkAPIs
+import MOCoreKit
+import MONetworkAPIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +21,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = UINavigationController(rootViewController: vc)
         self.window?.makeKeyAndVisible()
+       
+        _ = MOFeatureKit.init()
         
         _ = MOFeatureLoanRepository.Repository.self
         _ = MOFeatureBaseDependencyDomain.Domain.init()
         
+        _ = Logger.Crashlytics.self
+        _ = MOCoreKit()
+        _ = MONetworkAPIKit.init()
+        
         return true
+        
+        
     }
 }

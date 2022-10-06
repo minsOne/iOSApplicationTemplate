@@ -24,7 +24,7 @@ public extension Project {
             let target = Target(
                 name: name,
                 platform: .iOS,
-                product: hasDynamicFramework ? .framework : .staticLibrary,
+                product: hasDynamicFramework ? .framework : .staticFramework,
                 bundleId: "kr.minsone.\(name)",
                 deploymentTarget: deploymentTarget,
                 infoPlist: .default,
