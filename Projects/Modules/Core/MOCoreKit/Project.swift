@@ -5,7 +5,7 @@ import UtilityPlugin
 let project = Project.framework(
     name: "MOCoreKit",
     targets: Set([
-       .dynamicFramework,
+       .staticLibrary,
        .tests,
        .example,
        .testing

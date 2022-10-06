@@ -18,7 +18,7 @@ public extension Project {
         var projectTargets: [Target] = []
         if targets.contains(where: { $0.hasFramework }) {
             let settings: SettingsDictionary = hasDynamicFramework
-            ? ["OTHER_LDFLAGS" : "$(inherited) -all_load"]
+            ? ["OTHER_LDFLAGS" : "$(inherited)"]
             : ["OTHER_LDFLAGS" : "$(inherited)"]
 
             let target = Target(

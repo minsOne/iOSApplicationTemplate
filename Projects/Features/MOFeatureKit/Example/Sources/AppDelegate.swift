@@ -9,6 +9,11 @@ import MOAppLogger
 import MONetworkAPIs
 import MOCoreKit
 import MONetworkAPIKit
+import Swinject
+import Alamofire
+import MOFoundationKit
+import MONetworkAPIHome
+import MONetworkAPICommon
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = Logger.Crashlytics.self
         _ = MOCoreKit()
         _ = MONetworkAPIKit.init()
+        
+        _  = MONetworkAPIHome.init()
+        
+        _ = MOFeatureLoanDomain.Mock10.init()
+        _ = MOFeatureLoanDomain.Domain.init()
+        _ = MONetworkAPICommon.Mock8.init()
+        let a = 10
+        print(a.addWon)
         
         return true
         
