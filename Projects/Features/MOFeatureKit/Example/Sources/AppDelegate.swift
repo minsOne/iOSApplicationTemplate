@@ -1,6 +1,10 @@
 import Foundation
 import UIKit
 import MOFeatureKit
+import MOThirdPartyLibManager
+import MOFeatureBaseDependencyDomain
+import MOFeatureLoanDomain
+import MOFeatureLoanRepository
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = UINavigationController(rootViewController: vc)
         self.window?.makeKeyAndVisible()
+        
+        _ = MOFeatureLoanRepository.Repository.self
+        _ = MOFeatureBaseDependencyDomain.Domain.init()
+        
         return true
     }
 }
