@@ -6,21 +6,21 @@ let organizationName = "minsone"
 let deploymentTarget: DeploymentTarget = .iOS(targetVersion: "13.0", devices: .iphone)
 
 let settings: Settings =
-    .init(base: ["CODE_SIGN_IDENTITY": "",
-                 "CODE_SIGNING_REQUIRED": "NO"],
-          configurations: [
-            .debug(name: .dev,    xcconfig: .relativeToRoot("XCConfig/App/DevApp-DEV.xcconfig")),
-            .debug(name: .test,   xcconfig: .relativeToRoot("XCConfig/App/DevApp-TEST.xcconfig")),
-            .debug(name: .stage,  xcconfig: .relativeToRoot("XCConfig/App/DevApp-STAGE.xcconfig")),
-            .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/DevApp-PROD.xcconfig")),
-            .debug(name: .dev,    xcconfig: .relativeToRoot("XCConfig/App/App-DEV.xcconfig")),
-            .debug(name: .test,   xcconfig: .relativeToRoot("XCConfig/App/App-TEST.xcconfig")),
-            .debug(name: .stage,  xcconfig: .relativeToRoot("XCConfig/App/App-STAGE.xcconfig")),
-            .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/App-PROD.xcconfig")),
-          ])
+    .settings(base: ["CODE_SIGN_IDENTITY": "",
+                     "CODE_SIGNING_REQUIRED": "NO"],
+              configurations: [
+                  .debug(name: .dev, xcconfig: .relativeToRoot("XCConfig/App/DevApp-DEV.xcconfig")),
+                  .debug(name: .test, xcconfig: .relativeToRoot("XCConfig/App/DevApp-TEST.xcconfig")),
+                  .debug(name: .stage, xcconfig: .relativeToRoot("XCConfig/App/DevApp-STAGE.xcconfig")),
+                  .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/DevApp-PROD.xcconfig")),
+                  .debug(name: .dev, xcconfig: .relativeToRoot("XCConfig/App/App-DEV.xcconfig")),
+                  .debug(name: .test, xcconfig: .relativeToRoot("XCConfig/App/App-TEST.xcconfig")),
+                  .debug(name: .stage, xcconfig: .relativeToRoot("XCConfig/App/App-STAGE.xcconfig")),
+                  .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/App-PROD.xcconfig")),
+              ])
 
-let actions: [TargetAction] = [
-    .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script")
+let scripts: [TargetScript] = [
+    .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script"),
 ]
 
 let targets: [Target] = [
@@ -31,16 +31,16 @@ let targets: [Target] = [
           bundleId: "kr.minsone.app",
           deploymentTarget: deploymentTarget,
           infoPlist: .extendingDefault(with: [
-            "UIMainStoryboardFile": "",
-            "UILaunchStoryboardName": "LaunchScreen"
+              "UIMainStoryboardFile": "",
+              "UILaunchStoryboardName": "LaunchScreen",
           ]),
           sources: ["Sources/**"],
           resources: ["Resources/**"],
-          actions: actions,
+          scripts: scripts,
           dependencies: [
-            .Project.Feature.Features,
-            .Project.Module.RepositoryInjectManager,
-            .Project.Module.ThirdPartyDynamicLibraryPluginManager,
+              .Project.Feature.Features,
+              .Project.Module.RepositoryInjectManager,
+              .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevApp",
           platform: .iOS,
@@ -49,17 +49,17 @@ let targets: [Target] = [
           bundleId: "kr.minsone.dev-app",
           deploymentTarget: deploymentTarget,
           infoPlist: .extendingDefault(with: [
-            "UIMainStoryboardFile": "",
-            "UILaunchStoryboardName": "LaunchScreen"
+              "UIMainStoryboardFile": "",
+              "UILaunchStoryboardName": "LaunchScreen",
           ]),
           sources: ["Sources/**", "DevSources/**"],
           resources: ["Resources/**"],
-          actions: actions,
+          scripts: scripts,
           dependencies: [
-            .Project.Feature.Features,
-            .Project.Module.RepositoryInjectManager,
-            .Project.Module.DevelopTool,
-            .Project.Module.ThirdPartyDynamicLibraryPluginManager,
+              .Project.Feature.Features,
+              .Project.Module.RepositoryInjectManager,
+              .Project.Module.DevelopTool,
+              .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
     .init(name: "DevAppTests",
           platform: .iOS,
@@ -69,31 +69,31 @@ let targets: [Target] = [
           infoPlist: .default,
           sources: "Tests/**",
           dependencies: [
-            .target(name: "DevApp"),
-            .Carthage.Quick,
-            .Carthage.Nimble,
+              .target(name: "DevApp"),
+              .Carthage.Quick,
+              .Carthage.Nimble,
           ]),
 ]
 
 let schemes: [Scheme] = [
     .init(name: "DevApp-Develop",
           shared: true,
-          buildAction: BuildAction(targets: ["DevApp"]),
-          testAction: TestAction(targets: ["DevAppTests"],
-                                 configurationName: .dev,
-                                 coverage: true),
-          runAction: RunAction(configurationName: .dev),
-          archiveAction: ArchiveAction(configurationName: .dev),
-          profileAction: ProfileAction(configurationName: .dev),
-          analyzeAction: AnalyzeAction(configurationName: .dev)),
+          buildAction: .buildAction(targets: ["DevApp"]),
+          testAction: .targets(["DevAppTests"],
+                               configuration: .dev,
+                               options: .options(coverage: true)),
+          runAction: .runAction(configuration: .dev),
+          archiveAction: .archiveAction(configuration: .dev),
+          profileAction: .profileAction(configuration: .dev),
+          analyzeAction: .analyzeAction(configuration: .dev)),
     .init(name: "App-PROD",
           shared: true,
-          buildAction: BuildAction(targets: ["App"]),
+          buildAction: .buildAction(targets: ["App"]),
           testAction: nil,
-          runAction: RunAction(configurationName: .prod),
-          archiveAction: ArchiveAction(configurationName: .prod),
-          profileAction: ProfileAction(configurationName: .prod),
-          analyzeAction: AnalyzeAction(configurationName: .prod)),
+          runAction: .runAction(configuration: .prod),
+          archiveAction: .archiveAction(configuration: .prod),
+          profileAction: .profileAction(configuration: .prod),
+          analyzeAction: .analyzeAction(configuration: .prod)),
 ]
 
 // MARK: - Project

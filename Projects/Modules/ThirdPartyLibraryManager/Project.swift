@@ -14,6 +14,6 @@ let project = Project
                 [.SwiftPM.Alamofire, 
                  .SwiftPM.Swinject,
                  .SwiftPM.InjectPropertyWrapper],
-                [.sdk(name: "libsqlite3.tbd"),
-                 .sdk(name: "StoreKit.framework")],
+                [.sdk(name: "libsqlite3.tbd", type: .framework),
+                 .sdk(name: "StoreKit.framework", type: .framework)],
                ].flatMap { $0 })
