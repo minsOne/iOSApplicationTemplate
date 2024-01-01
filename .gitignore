@@ -54,6 +54,7 @@ DerivedData/
 ### Xcode Patch ###
 *.xcworkspace
 **/*.xcodeproj
+**/*.xcodeproj/*
 **/xcshareddata/WorkspaceSettings.xcsettings
 /*.gcno
 
