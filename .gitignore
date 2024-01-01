@@ -55,8 +55,9 @@ DerivedData/
 *.xcworkspace
 **/*.xcodeproj
 **/*.xcodeproj/*
-**/xcshareddata/WorkspaceSettings.xcsettings
+**/xcshareddata
 /*.gcno
+*.pbxproj
 
 ### Tuist derived files ###
 #graph.dot
