@@ -8,24 +8,9 @@
 
 **2.**  [Carthage 설치](https://github.com/Carthage/Carthage) - 버전 0.38.0 이상  
 
-**3.**  `tuist dependencies`를 실행하여 XCFramework 생성
+**3.**  `./carthage.sh update --platform iOS --use-xcframeworks`를 실행하여 XCFramework 생성
 
-```
-$ tuist dependencies fetch
-Resolving and fetching dependencies.
-Resolving and fetching Carthage dependencies.
-...
-Carthage dependencies resolved and fetched successfully.
-Dependencies resolved and fetched successfully.
-```
-
-**4.**  RxBlocking, RxTest를 Test 타겟에서 사용하기 위해 `install_name_tool`을 이용하여 `@rpath/RxSwift.framework/RxSwift`를 `@rpath/ThirdPartyLibraryManager.framework/ThirdPartyLibraryManager`로 교체함.
-
-```
-$ sh script/change-rpath-library.sh
-```
-
-**5.**  `tuist generate`를 실행하여 프로젝트 파일 생성
+**4.**  `tuist generate`를 실행하여 프로젝트 파일 생성
 ```
 $ tuist generate
 ```

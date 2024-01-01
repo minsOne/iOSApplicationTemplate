@@ -59,6 +59,8 @@ DerivedData/
 /*.gcno
 *.pbxproj
 
+Carthage/
+
 ### Tuist derived files ###
 #graph.dot
 Derived/
