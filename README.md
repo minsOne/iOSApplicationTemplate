@@ -10,9 +10,9 @@
 
 **3.** Carthage를 이용하여 오픈소스의 XCFramework 생성
 ```shell
-$ carthage update --platform iOS --use-xcframeworks --no-use-binaries
-// or
 $ make carthage
+// or
+$ ./carthage update --platform iOS --use-xcframeworks --no-use-binaries
 ```
 
 **4.**  `tuist generate`를 실행하여 프로젝트 파일 생성

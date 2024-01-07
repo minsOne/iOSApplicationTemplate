@@ -1,4 +1,6 @@
 .PHONY: carthage
 
 carthage:
-	./carthage.sh update --platform iOS --use-xcframeworks --no-use-binaries
+	./carthage.sh checkout
+	rm -rf Carthage/Checkouts/PinLayout/TestProjects
+	./carthage.sh build --platform iOS --use-xcframeworks
