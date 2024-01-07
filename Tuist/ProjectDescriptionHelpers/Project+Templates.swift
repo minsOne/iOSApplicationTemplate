@@ -121,32 +121,32 @@ public extension Project {
 }
 
 extension Scheme {
-    static func makeScheme(target: ProjectDeployTarget, name: String) -> Self {
+    static func makeScheme(target: AppConfiguration, name: String) -> Self {
         return Scheme(name: "\(name)",
                       shared: true,
                       buildAction: .buildAction(targets: ["\(name)"]),
                       testAction: .targets(["\(name)Tests"],
                                            arguments: nil,
-                                           configuration: target.configuration, 
+                                           configuration: target.configurationName,
                                            options: .options(coverage: true)),
-                      runAction: .runAction(configuration: target.configuration),
-                      archiveAction: .archiveAction(configuration: target.configuration),
-                      profileAction: .profileAction(configuration: target.configuration),
-                      analyzeAction: .analyzeAction(configuration: target.configuration))
+                      runAction: .runAction(configuration: target.configurationName),
+                      archiveAction: .archiveAction(configuration: target.configurationName),
+                      profileAction: .profileAction(configuration: target.configurationName),
+                      analyzeAction: .analyzeAction(configuration: target.configurationName))
     }
 
-    static func makeDemoScheme(target: ProjectDeployTarget, name: String) -> Self {
+    static func makeDemoScheme(target: AppConfiguration, name: String) -> Self {
         return Scheme(name: "\(name)DemoApp",
                       shared: true,
                       buildAction: .buildAction(targets: ["\(name)DemoApp"]),
                       testAction: .targets(["\(name)Tests"],
                                            arguments: nil,
-                                           configuration: target.configuration,
+                                           configuration: target.configurationName,
                                            options: .options(coverage: true)),
-                      runAction: .runAction(configuration: target.configuration),
-                      archiveAction: .archiveAction(configuration: target.configuration),
-                      profileAction: .profileAction(configuration: target.configuration),
-                      analyzeAction: .analyzeAction(configuration: target.configuration))
+                      runAction: .runAction(configuration: target.configurationName),
+                      archiveAction: .archiveAction(configuration: target.configurationName),
+                      profileAction: .profileAction(configuration: target.configurationName),
+                      analyzeAction: .analyzeAction(configuration: target.configurationName))
         
     }
 }

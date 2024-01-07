@@ -9,14 +9,14 @@ let settings: Settings =
     .settings(base: ["CODE_SIGN_IDENTITY": "",
                      "CODE_SIGNING_REQUIRED": "NO"],
               configurations: [
-                  .debug(name: .dev, xcconfig: .relativeToRoot("XCConfig/App/DevApp-DEV.xcconfig")),
-                  .debug(name: .test, xcconfig: .relativeToRoot("XCConfig/App/DevApp-TEST.xcconfig")),
-                  .debug(name: .stage, xcconfig: .relativeToRoot("XCConfig/App/DevApp-STAGE.xcconfig")),
-                  .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/DevApp-PROD.xcconfig")),
-                  .debug(name: .dev, xcconfig: .relativeToRoot("XCConfig/App/App-DEV.xcconfig")),
-                  .debug(name: .test, xcconfig: .relativeToRoot("XCConfig/App/App-TEST.xcconfig")),
-                  .debug(name: .stage, xcconfig: .relativeToRoot("XCConfig/App/App-STAGE.xcconfig")),
-                  .release(name: .prod, xcconfig: .relativeToRoot("XCConfig/App/App-PROD.xcconfig")),
+                  .debug(name: .dev, xcconfig: XCConfig.Application.devApp(.dev)),
+                  .debug(name: .test, xcconfig: XCConfig.Application.devApp(.test)),
+                  .debug(name: .stage, xcconfig: XCConfig.Application.devApp(.stage)),
+                  .release(name: .prod, xcconfig: XCConfig.Application.devApp(.prod)),
+                  .debug(name: .dev, xcconfig: XCConfig.Application.app(.dev)),
+                  .debug(name: .test, xcconfig: XCConfig.Application.app(.test)),
+                  .debug(name: .stage, xcconfig: XCConfig.Application.app(.stage)),
+                  .release(name: .prod, xcconfig: XCConfig.Application.app(.prod)),
               ])
 
 let scripts: [TargetScript] = [
