@@ -20,14 +20,15 @@ let settings: Settings =
               ])
 
 let scripts: [TargetScript] = [
-    .pre(path: "Script/matching_google_service_info_plist.sh", name: "Matching GoogleService-Info.plist Script"),
+    .pre(path: "Script/matching_google_service_info_plist.sh",
+         name: "Matching GoogleService-Info.plist Script"),
 ]
 
 let targets: [Target] = [
-    .init(name: "App",
+    .init(name: "iOS_App",
           platform: .iOS,
           product: .app,
-          productName: "App",
+          productName: "iOS_App",
           bundleId: "kr.minsone.app",
           deploymentTarget: deploymentTarget,
           infoPlist: .extendingDefault(with: [
@@ -42,10 +43,10 @@ let targets: [Target] = [
               .Project.Module.RepositoryInjectManager,
               .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
-    .init(name: "DevApp",
+    .init(name: "iOS_DevApp",
           platform: .iOS,
           product: .app,
-          productName: "dev_app",
+          productName: "iOS_DevApp",
           bundleId: "kr.minsone.dev-app",
           deploymentTarget: deploymentTarget,
           infoPlist: .extendingDefault(with: [
@@ -61,7 +62,7 @@ let targets: [Target] = [
               .Project.Module.DevelopTool,
               .Project.Module.ThirdPartyDynamicLibraryPluginManager,
           ]),
-    .init(name: "DevAppTests",
+    .init(name: "iOS_DevAppTests",
           platform: .iOS,
           product: .unitTests,
           bundleId: "kr.minsone.dev-appTests",
@@ -69,26 +70,26 @@ let targets: [Target] = [
           infoPlist: .default,
           sources: "Tests/**",
           dependencies: [
-              .target(name: "DevApp"),
+              .target(name: "iOS_DevApp"),
               .Carthage.Quick,
               .Carthage.Nimble,
           ]),
 ]
 
 let schemes: [Scheme] = [
-    .init(name: "DevApp-Develop",
+    .init(name: "iOS_DevApp-Develop",
           shared: true,
-          buildAction: .buildAction(targets: ["DevApp"]),
-          testAction: .targets(["DevAppTests"],
+          buildAction: .buildAction(targets: ["iOS_DevApp"]),
+          testAction: .targets(["iOS_DevAppTests"],
                                configuration: .dev,
                                options: .options(coverage: true)),
           runAction: .runAction(configuration: .dev),
           archiveAction: .archiveAction(configuration: .dev),
           profileAction: .profileAction(configuration: .dev),
           analyzeAction: .analyzeAction(configuration: .dev)),
-    .init(name: "App-PROD",
+    .init(name: "iOS_DevApp-Production",
           shared: true,
-          buildAction: .buildAction(targets: ["App"]),
+          buildAction: .buildAction(targets: ["iOS_App"]),
           testAction: nil,
           runAction: .runAction(configuration: .prod),
           archiveAction: .archiveAction(configuration: .prod),
@@ -99,7 +100,7 @@ let schemes: [Scheme] = [
 // MARK: - Project
 
 let project: Project =
-    .init(name: "App",
+    .init(name: "Application",
           organizationName: organizationName,
           settings: settings,
           targets: targets,
