@@ -8,7 +8,12 @@
 
 **2.**  [Carthage 설치](https://github.com/Carthage/Carthage) - 버전 0.38.0 이상  
 
-**3.**  `./carthage.sh update --platform iOS --use-xcframeworks --no-use-binaries`를 실행하여 XCFramework 생성
+**3.** Carthage를 이용하여 오픈소스의 XCFramework 생성
+```shell
+$ carthage update --platform iOS --use-xcframeworks --no-use-binaries
+// or
+$ make carthage
+```
 
 **4.**  `tuist generate`를 실행하여 프로젝트 파일 생성
 ```
