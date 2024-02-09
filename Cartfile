@@ -1,8 +1,16 @@
-github "minsone-opensource-fork/FLEX" "2ad3092f4b9e31fc7294e45f3ee241324e17f0b3"
-github "ReactiveX/RxSwift" "main"
+# Tool
+github "FLEXTool/FLEX" "56935533beffd6eb28768a4ea729d25c348a97d2"
+
+# Test
 github "Quick/Quick" "main"
 github "Quick/Nimble" "main"
 github "RxSwiftCommunity/RxNimble" "master"
+
+# UI
 github "layoutBox/FlexLayout" "master"
 github "layoutBox/PinLayout" "master"
 github "SnapKit/SnapKit" "main"
+
+# Framework
+github "minsone/RIBs" "main"
+github "ReactiveX/RxSwift" "6.6.0"

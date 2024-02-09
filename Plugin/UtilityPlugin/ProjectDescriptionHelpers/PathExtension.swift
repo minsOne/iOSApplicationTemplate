@@ -31,7 +31,7 @@ public extension ProjectDescription.Path {
         return .relativeToRoot("Projects/Network/\(pathString)")
     }
     static func relativeToCarthage(_ pathString: String) -> Self {
-        return .relativeToRoot("Tuist/Dependencies/Carthage/\(pathString)")
+        return .relativeToRoot("Carthage/Build/\(pathString)")
     }
     static var app: Self {
         return .relativeToRoot("Projects/App")

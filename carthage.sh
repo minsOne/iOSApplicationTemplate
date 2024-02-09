@@ -19,5 +19,7 @@ echo 'EXCLUDED_ARCHS = $(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_
 
 echo 'IPHONEOS_DEPLOYMENT_TARGET = 13.0' >> $xcconfig
 
+echo 'SWIFT_SERIALIZE_DEBUGGING_OPTIONS = NO' >> $xcconfig
+
 export XCODE_XCCONFIG_FILE="$xcconfig"
 carthage "$@"
