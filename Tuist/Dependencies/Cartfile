@@ -1,8 +1,0 @@
-github "minsone-opensource-fork/FLEX" "2ad3092f4b9e31fc7294e45f3ee241324e17f0b3"
-github "ReactiveX/RxSwift" "main"
-github "Quick/Quick" "main"
-github "Quick/Nimble" "main"
-github "RxSwiftCommunity/RxNimble" "master"
-github "layoutBox/FlexLayout" "master"
-github "layoutBox/PinLayout" "master"
-github "SnapKit/SnapKit" "main"

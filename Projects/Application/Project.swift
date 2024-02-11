@@ -1,6 +1,5 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
-import UtilityPlugin
 
 let organizationName = "minsone"
 let deploymentTargets = DeploymentTargets.iOS("13.0")
@@ -41,7 +40,6 @@ let targets: [Target] = [
             scripts: scripts,
             dependencies: [
                 .Project.Feature.Features,
-                .Project.Module.RepositoryInjectManager,
                 .Project.Module.ThirdPartyDynamicLibraryPluginManager,
             ]),
     .target(name: "iOS_DevApp",
@@ -59,7 +57,6 @@ let targets: [Target] = [
             scripts: scripts,
             dependencies: [
                 .Project.Feature.Features,
-                .Project.Module.RepositoryInjectManager,
                 .Project.Module.DevelopTool,
                 .Project.Module.ThirdPartyDynamicLibraryPluginManager,
             ]),
