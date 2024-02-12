@@ -49,16 +49,12 @@ public extension ProjectDescription.Path {
 // MARK: Extension
 
 extension Dep {
-    static func module(name: String) -> Self {
-        return .project(target: name, path: .relativeToModule(name))
+    static func module(name: String, path: String? = nil) -> Self {
+        return .project(target: name, path: .relativeToModule(path ?? name))
     }
 
-    static func feature(name: String) -> Self {
-        return .project(target: name, path: .relativeToFeature(name))
-    }
-
-    static func feature(name: String, path: String) -> Self {
-        return .project(target: name, path: .relativeToFeature(path))
+    static func feature(name: String, path: String? = nil) -> Self {
+        return .project(target: name, path: .relativeToFeature(path ?? name))
     }
 
     static func userInterface(name: String) -> Self {
