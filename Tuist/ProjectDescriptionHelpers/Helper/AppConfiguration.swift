@@ -25,3 +25,8 @@ public extension ConfigurationName {
     static var stage: Self { AppConfiguration.stage.configurationName }
     static var prod: Self { AppConfiguration.prod.configurationName }
 }
+
+public enum AppInfo {
+    public static let organizationName = "minsone"
+    public static let deploymentTargets = DeploymentTargets.iOS("13.0")
+}

@@ -1,9 +1,11 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let organizationName = "minsone"
-let deploymentTargets = DeploymentTargets.iOS("13.0")
-let productName = "iOS_App"
+struct ProductName {
+    static let releaseApp = "iOS_App"
+    static let devApp = "iOS_DevApp"
+    static let unitTest = "iOS_UnitTests"
+}
 
 let settings: Settings =
     .settings(base: ["CODE_SIGN_IDENTITY": "",
@@ -25,12 +27,12 @@ let scripts: [TargetScript] = [
 ]
 
 let targets: [Target] = [
-    .target(name: productName,
+    .target(name: ProductName.releaseApp,
             destinations: .iOS,
             product: .app,
-            productName: productName,
+            productName: ProductName.releaseApp,
             bundleId: "kr.minsone.app",
-            deploymentTargets: deploymentTargets,
+            deploymentTargets: AppInfo.deploymentTargets,
             infoPlist: .extendingDefault(with: [
                 "UIMainStoryboardFile": "",
                 "UILaunchStoryboardName": "LaunchScreen",
@@ -42,12 +44,12 @@ let targets: [Target] = [
                 .Project.Feature.Features,
                 .Project.Module.ThirdPartyDynamicLibraryPluginManager,
             ]),
-    .target(name: "iOS_DevApp",
+    .target(name: ProductName.devApp,
             destinations: .iOS,
             product: .app,
-            productName: productName,
+            productName: ProductName.releaseApp,
             bundleId: "kr.minsone.devApp",
-            deploymentTargets: deploymentTargets,
+            deploymentTargets: AppInfo.deploymentTargets,
             infoPlist: .extendingDefault(with: [
                 "UIMainStoryboardFile": "",
                 "UILaunchStoryboardName": "LaunchScreen",
@@ -60,34 +62,34 @@ let targets: [Target] = [
                 .Project.Module.DevelopTool,
                 .Project.Module.ThirdPartyDynamicLibraryPluginManager,
             ]),
-    .target(name: "iOS_UnitTests",
+    .target(name: ProductName.unitTest,
             destinations: .iOS,
             product: .unitTests,
             bundleId: "kr.minsone.devAppUnitTests",
-            deploymentTargets: deploymentTargets,
+            deploymentTargets: AppInfo.deploymentTargets,
             infoPlist: .default,
             sources: "Tests/**",
             dependencies: [
-                .target(name: "iOS_DevApp"),
+                .target(name: ProductName.devApp),
                 .Carthage.Quick,
                 .Carthage.Nimble,
             ]),
 ]
 
 let schemes: [Scheme] = [
-    .scheme(name: "iOS_DevApp",
+    .scheme(name: ProductName.devApp,
             shared: true,
-            buildAction: .buildAction(targets: ["iOS_DevApp"]),
-            testAction: .targets(["iOS_DevAppTests"],
+            buildAction: .buildAction(targets: ["\(ProductName.devApp)"]),
+            testAction: .targets(["\(ProductName.unitTest)"],
                                  configuration: .dev,
                                  options: .options(coverage: true)),
             runAction: .runAction(configuration: .dev),
             archiveAction: .archiveAction(configuration: .dev),
             profileAction: .profileAction(configuration: .dev),
             analyzeAction: .analyzeAction(configuration: .dev)),
-    .scheme(name: "iOS_App",
+    .scheme(name: ProductName.releaseApp,
             shared: true,
-            buildAction: .buildAction(targets: ["iOS_App"]),
+            buildAction: .buildAction(targets: ["\(ProductName.releaseApp)"]),
             testAction: nil,
             runAction: .runAction(configuration: .prod),
             archiveAction: .archiveAction(configuration: .prod),
@@ -99,7 +101,7 @@ let schemes: [Scheme] = [
 
 let project: Project =
     .init(name: "Application",
-          organizationName: organizationName,
+          organizationName: AppInfo.organizationName,
           settings: settings,
           targets: targets,
           schemes: schemes)
