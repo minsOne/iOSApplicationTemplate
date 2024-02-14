@@ -30,3 +30,12 @@ public enum AppInfo {
     public static let organizationName = "minsone"
     public static let deploymentTargets = DeploymentTargets.iOS("13.0")
 }
+
+public struct BundleIdGenerator {
+    public func generate(name: String) -> String {
+        "kr.minsone.\(name)"
+    }
+    public var defaultDemoAppBundleId: String {
+        "kr.minsone.example.demoApp"
+    }
+}
