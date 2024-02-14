@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .staticFramework(name: "NetworkAPICommon",
+    .deprecatedStaticFramework(name: "NetworkAPICommon",
                      dependencies: [
                         .Project.Network.APIKit
                      ])

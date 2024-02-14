@@ -1,59 +1,59 @@
 import ProjectDescription
 
 public extension Project {
-    static func staticLibrary(name: String,
-                              platform: Platform = .iOS,
-                              packages: [Package] = [],
-                              dependencies: [TargetDependency] = [],
-                              hasDemoApp: Bool = false) -> Self
+    static func deprecatedStaticLibrary(name: String,
+                                        platform: Platform = .iOS,
+                                        packages: [Package] = [],
+                                        dependencies: [TargetDependency] = [],
+                                        hasDemoApp: Bool = false) -> Self
     {
-        project(name: name,
-                packages: packages,
-                product: .staticLibrary,
-                platform: platform,
-                dependencies: dependencies,
-                hasDemoApp: hasDemoApp)
+        deprecatedProject(name: name,
+                          packages: packages,
+                          product: .staticLibrary,
+                          platform: platform,
+                          dependencies: dependencies,
+                          hasDemoApp: hasDemoApp)
     }
 
-    static func staticFramework(name: String,
-                                platform: Platform = .iOS,
-                                packages: [Package] = [],
-                                dependencies: [TargetDependency] = [],
-                                hasDemoApp: Bool = false) -> Self
+    static func deprecatedStaticFramework(name: String,
+                                          platform: Platform = .iOS,
+                                          packages: [Package] = [],
+                                          dependencies: [TargetDependency] = [],
+                                          hasDemoApp: Bool = false) -> Self
     {
-        project(name: name,
-                packages: packages,
-                product: .staticFramework,
-                platform: platform,
-                dependencies: dependencies,
-                hasDemoApp: hasDemoApp)
+        deprecatedProject(name: name,
+                          packages: packages,
+                          product: .staticFramework,
+                          platform: platform,
+                          dependencies: dependencies,
+                          hasDemoApp: hasDemoApp)
     }
 
-    static func framework(name: String,
-                          platform: Platform = .iOS,
-                          packages: [Package] = [],
-                          dependencies: [TargetDependency] = [],
-                          hasDemoApp: Bool = false) -> Self
+    static func deprecatedFramework(name: String,
+                                    platform: Platform = .iOS,
+                                    packages: [Package] = [],
+                                    dependencies: [TargetDependency] = [],
+                                    hasDemoApp: Bool = false) -> Self
     {
-        project(name: name,
-                packages: packages,
-                product: .framework,
-                platform: platform,
-                dependencies: dependencies,
-                hasDemoApp: hasDemoApp)
+        deprecatedProject(name: name,
+                          packages: packages,
+                          product: .framework,
+                          platform: platform,
+                          dependencies: dependencies,
+                          hasDemoApp: hasDemoApp)
     }
 }
 
 public extension Project {
-    static func project(name: String,
-                        organizationName _: String = "minsone",
-                        packages: [Package] = [],
-                        product: Product,
-                        platform _: Platform = .iOS,
-                        deploymentTarget: DeploymentTargets? = .iOS("13.0"),
-                        dependencies: [TargetDependency] = [],
-                        infoPlist: [String: Plist.Value] = [:],
-                        hasDemoApp: Bool = false) -> Project
+    static func deprecatedProject(name: String,
+                                  organizationName _: String = "minsone",
+                                  packages: [Package] = [],
+                                  product: Product,
+                                  platform _: Platform = .iOS,
+                                  deploymentTarget: DeploymentTargets? = .iOS("13.0"),
+                                  dependencies: [TargetDependency] = [],
+                                  infoPlist: [String: Plist.Value] = [:],
+                                  hasDemoApp: Bool = false) -> Project
     {
         let organizationName = "minsone"
         let settings: Settings = .settings(base: ["CODE_SIGN_IDENTITY": "",
@@ -120,7 +120,7 @@ public extension Project {
     }
 }
 
-extension Scheme {
+private extension Scheme {
     static func makeScheme(target: AppConfiguration, name: String) -> Self {
         scheme(name: "\(name)",
                shared: true,

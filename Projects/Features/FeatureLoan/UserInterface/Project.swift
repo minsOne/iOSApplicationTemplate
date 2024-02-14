@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .staticFramework(name: "FeatureLoanUserInterface",
+    .deprecatedStaticFramework(name: "FeatureLoanUserInterface",
                      dependencies: [
                         .Project.Feature.BaseDependency.UserInterface,
                      ])

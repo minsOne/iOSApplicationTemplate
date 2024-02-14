@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .framework(name: "DesignSystem",
+    .deprecatedFramework(name: "DesignSystem",
                packages: [
                 .UserInterface.ResourcePackage,
                ],

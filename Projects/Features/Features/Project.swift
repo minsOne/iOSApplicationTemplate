@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .framework(name: "Features",
+    .deprecatedFramework(name: "Features",
                dependencies: [
                 Dep.Project.Feature.Loan.Pacakge,
                 Dep.Project.Feature.Main.Pacakge,

@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .staticFramework(name: "FeatureMainDataRepository",
+    .deprecatedStaticFramework(name: "FeatureMainDataRepository",
                      dependencies: [
                         .Project.Feature.BaseDependency.DataRepository,
                         .Project.Feature.Main.Domain,

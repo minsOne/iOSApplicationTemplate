@@ -2,6 +2,6 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .framework(name: "SharedThirdPartyLibraryManager",
+    .deprecatedFramework(name: "SharedThirdPartyLibraryManager",
                packages: [],
                dependencies: [])

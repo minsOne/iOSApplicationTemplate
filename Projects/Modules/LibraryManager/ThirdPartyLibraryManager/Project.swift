@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .framework(name: "ThirdPartyLibraryManager",
+    .deprecatedFramework(name: "ThirdPartyLibraryManager",
                packages: [
                 .Alamofire,
                ],

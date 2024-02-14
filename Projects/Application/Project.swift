@@ -42,7 +42,6 @@ let targets: [Target] = [
             scripts: scripts,
             dependencies: [
                 .Project.Feature.Features,
-                .Project.Module.ThirdPartyDynamicLibraryPluginManager,
             ]),
     .target(name: ProductName.devApp,
             destinations: .iOS,
@@ -60,7 +59,6 @@ let targets: [Target] = [
             dependencies: [
                 .Project.Feature.Features,
                 .Project.Module.DevelopTool,
-                .Project.Module.ThirdPartyDynamicLibraryPluginManager,
             ]),
     .target(name: ProductName.unitTest,
             destinations: .iOS,

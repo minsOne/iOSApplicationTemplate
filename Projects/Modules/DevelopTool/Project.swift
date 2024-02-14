@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .framework(name: "DevelopTool",
+    .deprecatedFramework(name: "DevelopTool",
                packages: [
                 .DevelopTool.OHHTTPStubs,
                 .DevelopTool.ProxyNetworkStubPackage,
