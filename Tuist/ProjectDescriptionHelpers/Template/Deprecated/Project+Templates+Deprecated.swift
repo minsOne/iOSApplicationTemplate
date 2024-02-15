@@ -42,7 +42,7 @@ public extension Project {
                           dependencies: dependencies,
                           hasDemoApp: hasDemoApp)
     }
-}
+}       
 
 public extension Project {
     static func deprecatedProject(name: String,
