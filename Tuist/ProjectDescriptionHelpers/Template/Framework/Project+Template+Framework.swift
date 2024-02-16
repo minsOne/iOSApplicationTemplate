@@ -9,7 +9,7 @@ public extension Project {
                           packages: [Package] = [],
                           dependencies: [TargetDependency] = [],
                           uiDependencies: [TargetDependency] = [],
-                          configure: FrameworkTemplate.TargetConfigure) -> Self {
+                          configure: FrameworkTemplate.TargetConfigure = .init()) -> Self {
         var targets: [Target] = []
         var schemes: [Scheme] = []
 
@@ -216,7 +216,7 @@ private extension Project.Generator {
                                    bundleId: bundleId,
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/Framework/Module/**"],
+                                   sources: ["Sources/Framework/**"],
                                    resources: resources,
                                    dependencies: dependencies,
                                    settings: nil)
@@ -247,7 +247,7 @@ private extension Project.Generator {
                                    bundleId: bundleId,
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/Framework/Testing/**"],
+                                   sources: ["Testing/**"],
                                    dependencies: dependencies,
                                    settings: nil)
 
@@ -345,7 +345,7 @@ private extension Project.Generator {
                                    bundleId: bundleId,
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/UI/Module/**"],
+                                   sources: ["Sources/UI/**"],
                                    dependencies: dependencies,
                                    settings: nil)
         let scheme = Scheme.scheme(name: name,
@@ -375,7 +375,7 @@ private extension Project.Generator {
                                    bundleId: bundleId,
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/UI/UIPreview/**"],
+                                   sources: ["UIPreview/**"],
                                    dependencies: dependencies,
                                    settings: nil)
         let scheme = Scheme.scheme(name: name,
