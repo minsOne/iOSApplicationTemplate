@@ -345,7 +345,7 @@ private extension Project.Generator {
                                    bundleId: bundleId,
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/UI/**"],
+                                   sources: ["Sources/UI/Module/**"],
                                    dependencies: dependencies,
                                    settings: nil)
         let scheme = Scheme.scheme(name: name,
@@ -375,7 +375,7 @@ private extension Project.Generator {
                                    bundleId: bundleId,
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/UIPreview/**"],
+                                   sources: ["Sources/UI/UIPreview/**"],
                                    dependencies: dependencies,
                                    settings: nil)
         let scheme = Scheme.scheme(name: name,
