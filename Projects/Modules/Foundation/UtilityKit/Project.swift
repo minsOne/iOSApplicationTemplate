@@ -2,6 +2,4 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .deprecatedStaticFramework(name: "UtilityKit",
-                     dependencies: [
-                     ])
+    .deprecatedStaticFramework(name: "UtilityKit")

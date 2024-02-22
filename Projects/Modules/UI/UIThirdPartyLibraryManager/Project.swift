@@ -2,6 +2,4 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project
-    .deprecatedFramework(name: "UIThirdPartyLibraryManager",
-               packages: [],
-               dependencies: [])
+    .deprecatedFramework(name: "UIThirdPartyLibraryManager")
