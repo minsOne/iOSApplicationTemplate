@@ -5,6 +5,6 @@ let project = Project
     .deprecatedStaticFramework(
         name: "FeatureBaseDependencyDataRepository",
         dependencies: [
-            .Project.Module.CoreKit,
+            
         ]
     )

@@ -12,6 +12,9 @@ public extension ProjectDescription.Path {
     static func relativeToXCConfig(type: AppConfiguration, name: String) -> Self {
         return .relativeToRoot("XCConfig/\(name)/\(type.rawValue).xcconfig")
     }
+    static func moduleXCConfig(type: AppConfiguration) -> Self {
+        return .relativeToRoot("XCConfig/Module/\(type.rawValue).xcconfig")
+    }
 
     static func relativeToModule(_ pathString: String) -> Self {
         return .relativeToRoot("Projects/Modules/\(pathString)")

@@ -59,10 +59,10 @@ public extension Project {
         let settings: Settings = .settings(base: ["CODE_SIGN_IDENTITY": "",
                                                   "CODE_SIGNING_REQUIRED": "NO"],
                                            configurations: [
-                                               .debug(name: .dev, xcconfig: .relativeToXCConfig(type: .dev, name: name)),
-                                               .debug(name: .test, xcconfig: .relativeToXCConfig(type: .test, name: name)),
-                                               .release(name: .stage, xcconfig: .relativeToXCConfig(type: .stage, name: name)),
-                                               .release(name: .prod, xcconfig: .relativeToXCConfig(type: .prod, name: name))
+                                               .debug(name: .dev, xcconfig: .moduleXCConfig(type: .dev)),
+                                               .debug(name: .test, xcconfig: .moduleXCConfig(type: .test)),
+                                               .release(name: .stage, xcconfig: .moduleXCConfig(type: .stage)),
+                                               .release(name: .prod, xcconfig: .moduleXCConfig(type: .prod))
                                            ])
 
         let target1 = Target.target(name: name,
@@ -72,7 +72,7 @@ public extension Project {
                                     deploymentTargets: deploymentTarget,
                                     infoPlist: .extendingDefault(with: infoPlist),
                                     sources: ["Sources/**"],
-                                    resources: ["Resources/**"],
+//                                    resources: ["Resources/**"],
                                     dependencies: dependencies)
 
         let demoAppTarget = Target.target(name: "\(name)DemoApp",

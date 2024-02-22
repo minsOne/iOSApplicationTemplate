@@ -5,9 +5,12 @@ import ProjectDescription
 
 public extension Dep {
     enum Project {
-        public struct Module {}
-        public struct Network {}
-        public struct UserInterface {}
+        public enum Module {
+            public enum Foundation {}
+        }
+
+        public enum Network {}
+        public enum UserInterface {}
     }
 }
 
@@ -17,9 +20,12 @@ public extension Dep.Project.UserInterface {
 
 public extension Dep.Project.Module {
     static let AnalyticsKit = Dep.module(name: "AnalyticsKit")
-    static let CoreKit = Dep.module(name: "CoreKit")
     static let DevelopTool = Dep.module(name: "DevelopTool")
-    static let UtilityKit = Dep.module(name: "UtilityKit")
+}
+
+public extension Dep.Project.Module.Foundation {
+    static let FoundationKit = Dep.module(name: "MOFoundationKit", path: "Foundation/MOFoundationKit")
+    static let Container = Dep.module(name: "MOContainer", path: "Foundation/MOContainer")
 }
 
 public extension Dep.Project.Module {
