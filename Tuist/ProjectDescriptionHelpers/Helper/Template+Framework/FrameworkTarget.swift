@@ -34,9 +34,12 @@ public extension Template {
         public struct Framework {
             public struct Module {
                 public let isHiddenScheme: Bool
+                public let packageName: String?
 
-                public init(isHiddenScheme: Bool = false) {
+                public init(isHiddenScheme: Bool = false,
+                            packageName: String? = nil) {
                     self.isHiddenScheme = isHiddenScheme
+                    self.packageName = packageName
                 }
             }
 

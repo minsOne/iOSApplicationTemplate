@@ -19,6 +19,7 @@ public extension Project {
         let hasModule = module_macho != nil
         let hasUI = target.hasUI
         let hasInternalDTO = target.hasInternalDTO
+        let packageName = configure.framework.module.packageName
 
         func makeFrameworkTargets() {
             // Framework
@@ -52,7 +53,8 @@ public extension Project {
                                               deploymentTargets: deploymentTargets,
                                               dependencies: dependencies,
                                               hiddenScheme: isHiddenScheme,
-                                              unitTestsName: unitTestsName)
+                                              unitTestsName: unitTestsName,
+                                              packageName: packageName)
                 targets.append(target)
                 schemes.append(scheme)
             }
@@ -65,7 +67,8 @@ public extension Project {
                     Generator.frameworkTesting(name: name.framework.testing,
                                                destinations: destinations,
                                                deploymentTargets: deploymentTargets,
-                                               dependencies: dependencies)
+                                               dependencies: dependencies,
+                                               packageName: packageName)
                 targets.append(target)
                 schemes.append(scheme)
             }
@@ -90,7 +93,8 @@ public extension Project {
                                                infoPlist: infoPlist,
                                                dependencies: dependencies,
                                                bundleId: bundleId,
-                                               unitTestName: unitTestsName)
+                                               unitTestName: unitTestsName,
+                                               packageName: packageName)
 
                 targets.append(target)
                 schemes.append(scheme)
@@ -106,7 +110,8 @@ public extension Project {
                     Generator.frameworkUnitTests(name: name.framework.unitTests,
                                                  destinations: destinations,
                                                  deploymentTargets: deploymentTargets,
-                                                 dependencies: dependencies)
+                                                 dependencies: dependencies,
+                                                 packageName: packageName)
                 targets.append(target)
             }
         }
@@ -128,7 +133,8 @@ public extension Project {
                     Generator.uiModule(name: name.ui.module,
                                        destinations: destinations,
                                        deploymentTargets: deploymentTargets,
-                                       dependencies: dependencies)
+                                       dependencies: dependencies,
+                                       packageName: packageName)
                 targets.append(target)
                 schemes.append(scheme)
             }
@@ -140,7 +146,8 @@ public extension Project {
                     Generator.uiPreview(name: name.ui.preview,
                                         destinations: destinations,
                                         deploymentTargets: deploymentTargets,
-                                        dependencies: dependencies)
+                                        dependencies: dependencies,
+                                        packageName: packageName)
                 targets.append(target)
                 schemes.append(scheme)
             }
@@ -155,7 +162,7 @@ public extension Project {
                 Generator.internalDTOTarget(name: name.internalDTO,
                                             destinations: destinations,
                                             deploymentTargets: deploymentTargets,
-                                            dependencies: [])
+                                            packageName: packageName)
             targets.append(target)
             schemes.append(scheme)
         }
@@ -189,7 +196,8 @@ private extension Project.Generator {
                                 infoPlist: [String: Plist.Value] = [:],
                                 dependencies: [TargetDependency] = [],
                                 hiddenScheme: Bool = false,
-                                unitTestsName: String? = nil) -> (Target, Scheme) {
+                                unitTestsName: String? = nil,
+                                packageName: String? = nil) -> (Target, Scheme) {
         let product: Product
         let resources: ResourceFileElements?
         var testAction: TestAction?
@@ -208,6 +216,13 @@ private extension Project.Generator {
                                   options: .options(coverage: true))
         }
 
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
+        }
+
         let bundleId = BundleIdGenerator().generate(name: name)
         let target = Target.target(name: name,
                                    destinations: destinations,
@@ -219,7 +234,7 @@ private extension Project.Generator {
                                    sources: ["Sources/Framework/**"],
                                    resources: resources,
                                    dependencies: dependencies,
-                                   settings: nil)
+                                   settings: .settings(base: baseSettings))
 
         let scheme = Scheme.scheme(name: name,
                                    shared: true,
@@ -238,8 +253,17 @@ private extension Project.Generator {
                                  destinations: Destinations = .iOS,
                                  deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
                                  infoPlist: [String: Plist.Value] = [:],
-                                 dependencies: [TargetDependency] = []) -> (Target, Scheme) {
+                                 dependencies: [TargetDependency] = [],
+                                 packageName: String? = nil) -> (Target, Scheme) {
         let bundleId = BundleIdGenerator().generate(name: name)
+
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
+        }
+
         let target = Target.target(name: name,
                                    destinations: destinations,
                                    product: .staticLibrary,
@@ -249,7 +273,7 @@ private extension Project.Generator {
                                    infoPlist: .extendingDefault(with: infoPlist),
                                    sources: ["Testing/**"],
                                    dependencies: dependencies,
-                                   settings: nil)
+                                   settings: .settings(base: baseSettings))
 
         let scheme = Scheme.scheme(name: name,
                                    shared: true,
@@ -271,13 +295,21 @@ private extension Project.Generator {
                                  bundleId: String? = nil,
                                  environmentVariables: [String: EnvironmentVariable] = [:],
                                  launchArguments: [LaunchArgument] = [],
-                                 unitTestName: String? = nil) -> (Target, Scheme) {
+                                 unitTestName: String? = nil,
+                                 packageName: String? = nil) -> (Target, Scheme) {
         let bundleId = bundleId ?? BundleIdGenerator().defaultDemoAppBundleId
         var testAction: TestAction?
         if let unitTestName {
             testAction = .targets(["\(unitTestName)"],
                                   configuration: .dev,
                                   options: .options(coverage: true))
+        }
+
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
         }
 
         let target = Target.target(name: name,
@@ -290,7 +322,7 @@ private extension Project.Generator {
                                    sources: ["App/DemoApp/Sources/**"],
                                    resources: ["App/DemoApp/Resources/**"],
                                    dependencies: dependencies,
-                                   settings: nil,
+                                   settings: .settings(base: baseSettings),
                                    environmentVariables: environmentVariables,
                                    launchArguments: launchArguments)
 
@@ -311,8 +343,16 @@ private extension Project.Generator {
                                    destinations: Destinations = .iOS,
                                    deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
                                    infoPlist: [String: Plist.Value] = [:],
-                                   dependencies: [TargetDependency] = []) -> Target {
+                                   dependencies: [TargetDependency] = [],
+                                   packageName: String? = nil) -> Target {
         let bundleId = BundleIdGenerator().generate(name: name)
+
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
+        }
 
         let target = Target.target(name: name,
                                    destinations: destinations,
@@ -322,7 +362,8 @@ private extension Project.Generator {
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .default,
                                    sources: ["Tests/UnitTests/**"],
-                                   dependencies: dependencies)
+                                   dependencies: dependencies,
+                                   settings: .settings(base: baseSettings))
 
         return target
     }
@@ -335,8 +376,16 @@ private extension Project.Generator {
                          destinations: Destinations = .iOS,
                          deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
                          infoPlist: [String: Plist.Value] = [:],
-                         dependencies: [TargetDependency] = []) -> (Target, Scheme) {
+                         dependencies: [TargetDependency] = [],
+                         packageName: String? = nil) -> (Target, Scheme) {
         let bundleId = BundleIdGenerator().generate(name: name)
+
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
+        }
 
         let target = Target.target(name: name,
                                    destinations: destinations,
@@ -347,7 +396,7 @@ private extension Project.Generator {
                                    infoPlist: .extendingDefault(with: infoPlist),
                                    sources: ["Sources/UI/**"],
                                    dependencies: dependencies,
-                                   settings: nil)
+                                   settings: .settings(base: baseSettings))
         let scheme = Scheme.scheme(name: name,
                                    shared: true,
                                    hidden: true,
@@ -365,8 +414,16 @@ private extension Project.Generator {
                           destinations: Destinations = .iOS,
                           deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
                           infoPlist: [String: Plist.Value] = [:],
-                          dependencies: [TargetDependency] = []) -> (Target, Scheme) {
+                          dependencies: [TargetDependency] = [],
+                          packageName: String? = nil) -> (Target, Scheme) {
         let bundleId = BundleIdGenerator().generate(name: name)
+
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
+        }
 
         let target = Target.target(name: name,
                                    destinations: destinations,
@@ -377,7 +434,7 @@ private extension Project.Generator {
                                    infoPlist: .extendingDefault(with: infoPlist),
                                    sources: ["UIPreview/**"],
                                    dependencies: dependencies,
-                                   settings: nil)
+                                   settings: .settings(base: baseSettings))
         let scheme = Scheme.scheme(name: name,
                                    shared: true,
                                    hidden: true,
@@ -398,8 +455,16 @@ private extension Project.Generator {
     static func internalDTOTarget(name: String,
                                   destinations: Destinations = .iOS,
                                   deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                                  dependencies: [TargetDependency] = []) -> (Target, Scheme) {
+                                  dependencies: [TargetDependency] = [],
+                                  packageName: String? = nil) -> (Target, Scheme) {
         let bundleId = BundleIdGenerator().generate(name: name)
+
+        var baseSettings = SettingsDictionary()
+        do {
+            var otherSwiftFlags = ["$(inherited)"]
+            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
+            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
+        }
 
         let target = Target.target(name: name,
                                    destinations: destinations,
@@ -409,7 +474,7 @@ private extension Project.Generator {
                                    deploymentTargets: deploymentTargets,
                                    infoPlist: .default,
                                    sources: ["Sources/InternalDTO/**"],
-                                   settings: nil)
+                                   settings: .settings(base: baseSettings))
         let scheme = Scheme.scheme(name: name,
                                    shared: true,
                                    hidden: true,
