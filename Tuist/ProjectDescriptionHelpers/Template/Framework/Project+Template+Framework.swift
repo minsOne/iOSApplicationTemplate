@@ -10,8 +10,8 @@ public extension Project {
                           dependencies: [TargetDependency] = [],
                           uiDependencies: [TargetDependency] = [],
                           configure: FrameworkTemplate.TargetConfigure = .init()) -> Self {
-        var targets: [Target] = []
-        var schemes: [Scheme] = []
+        var targetList: [Target] = []
+        var schemeList: [Scheme] = []
 
         let name = Name(name)
 
@@ -21,541 +21,243 @@ public extension Project {
         let hasInternalDTO = target.hasInternalDTO
         let packageName = configure.framework.module.packageName
 
-        func makeFrameworkTargets() {
-            // Framework
-            guard hasModule else {
-                return
-            }
-
-            let hasTesting = target.hasTesting
-            let hasDemoApp = target.hasDemoApp
-            let hasUnitTests = target.hasUnitTests
-
-            if let module_macho {
-                let macho: Generator.MachO = switch module_macho {
-                case .dynamic: .dynamic
-                case .static: .static
-                }
-                let isHiddenScheme = configure.framework.module.isHiddenScheme
-                let unitTestsName = hasUnitTests ? name.framework.unitTests : nil
-                var dependencies = dependencies
-                if hasUI {
-                    dependencies.append(.target(name: name.ui.module))
-                }
-                if hasInternalDTO {
-                    dependencies.append(.target(name: name.internalDTO))
-                }
-
-                let (target, scheme) =
-                    Generator.frameworkModule(name: name.framework.module,
-                                              macho: macho,
-                                              destinations: destinations,
-                                              deploymentTargets: deploymentTargets,
-                                              dependencies: dependencies,
-                                              hiddenScheme: isHiddenScheme,
-                                              unitTestsName: unitTestsName,
-                                              packageName: packageName)
-                targets.append(target)
-                schemes.append(scheme)
-            }
-
-            if hasTesting {
-                var dependencies = configure.framework.testing.dependency
-                dependencies.append(.target(name: name.framework.module))
-
-                let (target, scheme) =
-                    Generator.frameworkTesting(name: name.framework.testing,
-                                               destinations: destinations,
-                                               deploymentTargets: deploymentTargets,
-                                               dependencies: dependencies,
-                                               packageName: packageName)
-                targets.append(target)
-                schemes.append(scheme)
-            }
-
-            if hasDemoApp {
-                let demoAppConfigure = configure.framework.demoApp
-                var dependencies = demoAppConfigure.dependency
-                dependencies += hasTesting
-                    ? [.target(name: name.framework.testing)]
-                    : [.target(name: name.framework.module)]
-                let bundleId = demoAppConfigure.bundleId
-                let unitTestsName = hasUnitTests ? name.framework.unitTests : nil
-                let infoPlist: [String: Plist.Value] = [
-                    "UIMainStoryboardFile": "",
-                    "UILaunchStoryboardName": "LaunchScreen",
-                ]
-
-                let (target, scheme) =
-                    Generator.frameworkDemoApp(name: name.framework.demoApp,
-                                               destinations: destinations,
-                                               deploymentTargets: deploymentTargets,
-                                               infoPlist: infoPlist,
-                                               dependencies: dependencies,
-                                               bundleId: bundleId,
-                                               unitTestName: unitTestsName,
-                                               packageName: packageName)
-
-                targets.append(target)
-                schemes.append(scheme)
-            }
-
-            if hasUnitTests {
-                var dependencies = configure.framework.testing.dependency
-                dependencies += hasTesting
-                    ? [.target(name: name.framework.testing)]
-                    : [.target(name: name.framework.module)]
-
-                let target =
-                    Generator.frameworkUnitTests(name: name.framework.unitTests,
-                                                 destinations: destinations,
-                                                 deploymentTargets: deploymentTargets,
-                                                 dependencies: dependencies,
-                                                 packageName: packageName)
-                targets.append(target)
-            }
+        if hasModule, let module_macho {
+            let (targets, schemes) = makeFrameworkTargets(
+                name: name,
+                hasInternalDTO: hasInternalDTO,
+                hasUI: hasUI,
+                macho: module_macho,
+                target: target,
+                destinations: destinations,
+                deploymentTargets: deploymentTargets,
+                packageName: packageName,
+                configure: configure,
+                dependencies: dependencies
+            )
+            targetList.append(contentsOf: targets)
+            schemeList.append(contentsOf: schemes)
         }
 
-        func makeUITargets() {
-            guard hasUI else {
-                return
-            }
-
-            let hasUIPreview = target.hasUIPreview
-
-            do {
-                var dependencies = uiDependencies
-                if hasInternalDTO {
-                    dependencies.append(.target(name: name.internalDTO))
-                }
-
-                let (target, scheme) =
-                    Generator.uiModule(name: name.ui.module,
-                                       destinations: destinations,
-                                       deploymentTargets: deploymentTargets,
-                                       dependencies: dependencies,
-                                       packageName: packageName)
-                targets.append(target)
-                schemes.append(scheme)
-            }
-
-            if hasUIPreview {
-                let dependencies = configure.ui.preview.dependency + [.target(name: name.ui.module)]
-
-                let (target, scheme) =
-                    Generator.uiPreview(name: name.ui.preview,
-                                        destinations: destinations,
-                                        deploymentTargets: deploymentTargets,
-                                        dependencies: dependencies,
-                                        packageName: packageName)
-                targets.append(target)
-                schemes.append(scheme)
-            }
+        if hasUI {
+            let (targets, schemes) = makeUITargets(
+                name: name,
+                hasInternalDTO: hasInternalDTO,
+                hasUIPreview: target.hasUIPreview,
+                destinations: destinations,
+                deploymentTargets: deploymentTargets,
+                packageName: packageName,
+                uiDependencies: uiDependencies,
+                previewDependencies: configure.ui.preview.dependency
+            )
+            targetList.append(contentsOf: targets)
+            schemeList.append(contentsOf: schemes)
         }
 
-        func makeInternalDTOTarget() {
-            guard hasInternalDTO else {
-                return
+        if hasInternalDTO {
+            let (target, scheme) = makeInternalDTOTarget(
+                name: name,
+                destinations: destinations,
+                deploymentTargets: deploymentTargets,
+                packageName: packageName
+            )
+            targetList.append(target)
+            schemeList.append(scheme)
+        }
+
+        return Generator.project(name: name.project,
+                                 packages: packages,
+                                 targets: targetList,
+                                 schemes: schemeList)
+    }
+}
+
+// MARK: Framework
+
+private extension Project {
+    static func makeFrameworkTargets(name: Name,
+                                     hasInternalDTO: Bool,
+                                     hasUI: Bool,
+                                     macho: FrameworkTemplate.Target.Framework.MachO,
+                                     target: [FrameworkTemplate.Target],
+                                     destinations: Destinations,
+                                     deploymentTargets: DeploymentTargets,
+                                     packageName: String?,
+                                     configure: FrameworkTemplate.TargetConfigure,
+                                     dependencies: [TargetDependency]) -> ([Target], [Scheme]) {
+        var targets: [Target] = []
+        var schemes: [Scheme] = []
+
+        let hasTesting = target.hasTesting
+        let hasDemoApp = target.hasDemoApp
+        let hasUnitTests = target.hasUnitTests
+
+        func makeModule(macho: FrameworkTemplate.Target.Framework.MachO) {
+            let macho: Generator.MachO = switch macho {
+            case .dynamic: .dynamic
+            case .static: .static
+            }
+            let isHiddenScheme = configure.framework.module.isHiddenScheme
+            let unitTestsName = hasUnitTests ? name.framework.unitTests : nil
+            var dependencies = dependencies
+            if hasUI {
+                dependencies.append(.target(name: name.ui.module))
+            }
+            if hasInternalDTO {
+                dependencies.append(.target(name: name.internalDTO))
             }
 
             let (target, scheme) =
-                Generator.internalDTOTarget(name: name.internalDTO,
-                                            destinations: destinations,
-                                            deploymentTargets: deploymentTargets,
-                                            packageName: packageName)
+                Generator.frameworkModule(name: name.framework.module,
+                                          macho: macho,
+                                          destinations: destinations,
+                                          deploymentTargets: deploymentTargets,
+                                          dependencies: dependencies,
+                                          hiddenScheme: isHiddenScheme,
+                                          unitTestsName: unitTestsName,
+                                          packageName: packageName)
             targets.append(target)
             schemes.append(scheme)
         }
 
-        makeFrameworkTargets()
-        makeUITargets()
-        makeInternalDTOTarget()
+        func makeTesting() {
+            var dependencies = configure.framework.testing.dependency
+            dependencies.append(.target(name: name.framework.module))
 
-        return Generator.project(name: name.project,
-                                 packages: packages,
-                                 targets: targets,
-                                 schemes: schemes)
+            let (target, scheme) =
+                Generator.frameworkTesting(name: name.framework.testing,
+                                           destinations: destinations,
+                                           deploymentTargets: deploymentTargets,
+                                           dependencies: dependencies,
+                                           packageName: packageName)
+            targets.append(target)
+            schemes.append(scheme)
+        }
+
+        func makeDemoApp() {
+            let demoAppConfigure = configure.framework.demoApp
+            var dependencies = demoAppConfigure.dependency
+            dependencies += hasTesting
+                ? [.target(name: name.framework.testing)]
+                : [.target(name: name.framework.module)]
+            let bundleId = demoAppConfigure.bundleId
+            let unitTestsName = hasUnitTests ? name.framework.unitTests : nil
+            let infoPlist: [String: Plist.Value] = [
+                "UIMainStoryboardFile": "",
+                "UILaunchStoryboardName": "LaunchScreen",
+            ]
+
+            let (target, scheme) =
+                Generator.frameworkDemoApp(name: name.framework.demoApp,
+                                           destinations: destinations,
+                                           deploymentTargets: deploymentTargets,
+                                           infoPlist: infoPlist,
+                                           dependencies: dependencies,
+                                           bundleId: bundleId,
+                                           unitTestName: unitTestsName,
+                                           packageName: packageName)
+
+            targets.append(target)
+            schemes.append(scheme)
+        }
+
+        func makeUnitTests() {
+            var dependencies = configure.framework.testing.dependency
+            dependencies += hasTesting
+                ? [.target(name: name.framework.testing)]
+                : [.target(name: name.framework.module)]
+
+            let target =
+                Generator.frameworkUnitTests(name: name.framework.unitTests,
+                                             destinations: destinations,
+                                             deploymentTargets: deploymentTargets,
+                                             dependencies: dependencies,
+                                             packageName: packageName)
+            targets.append(target)
+        }
+
+        makeModule(macho: macho)
+
+        if hasTesting {
+            makeTesting()
+        }
+
+        if hasDemoApp {
+            makeDemoApp()
+        }
+
+        if hasUnitTests {
+            makeUnitTests()
+        }
+
+        return (targets, schemes)
     }
 }
 
-// MARK: generate Framework Target
+// MARK: UI
 
 private extension Project {
-    enum Generator {
-        enum MachO {
-            case `static`, dynamic
+    static func makeUITargets(name: Name,
+                              hasInternalDTO: Bool,
+                              hasUIPreview: Bool,
+                              destinations: Destinations,
+                              deploymentTargets: DeploymentTargets,
+                              packageName: String?,
+                              uiDependencies: [TargetDependency],
+                              previewDependencies: [TargetDependency]) -> ([Target], [Scheme]) {
+        var targets: [Target] = []
+        var schemes: [Scheme] = []
+
+        func makeUIModule() {
+            var dependencies = uiDependencies
+            if hasInternalDTO {
+                dependencies.append(.target(name: name.internalDTO))
+            }
+
+            let (target, scheme) =
+                Generator.uiModule(name: name.ui.module,
+                                   destinations: destinations,
+                                   deploymentTargets: deploymentTargets,
+                                   dependencies: dependencies,
+                                   packageName: packageName)
+            targets.append(target)
+            schemes.append(scheme)
         }
+
+        func makeUIPreview() {
+            let dependencies = previewDependencies + [.target(name: name.ui.module)]
+
+            let (target, scheme) =
+                Generator.uiPreview(name: name.ui.preview,
+                                    destinations: destinations,
+                                    deploymentTargets: deploymentTargets,
+                                    dependencies: dependencies,
+                                    packageName: packageName)
+            targets.append(target)
+            schemes.append(scheme)
+        }
+
+        makeUIModule()
+
+        if hasUIPreview {
+            makeUIPreview()
+        }
+
+        return (targets, schemes)
     }
 }
 
-private extension Project.Generator {
-    static func frameworkModule(name: String,
-                                macho: MachO,
-                                destinations: Destinations = .iOS,
-                                deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                                infoPlist: [String: Plist.Value] = [:],
-                                dependencies: [TargetDependency] = [],
-                                hiddenScheme: Bool = false,
-                                unitTestsName: String? = nil,
-                                packageName: String? = nil) -> (Target, Scheme) {
-        let product: Product
-        let resources: ResourceFileElements?
-        var testAction: TestAction?
+// MARK: InternalDTO
 
-        switch macho {
-        case .static:
-            product = .staticLibrary
-            resources = nil
-        case .dynamic:
-            product = .framework
-            resources = nil
-        }
-        if let unitTestsName {
-            testAction = .targets(["\(unitTestsName)"],
-                                  configuration: .dev,
-                                  options: .options(coverage: true))
-        }
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let bundleId = BundleIdGenerator().generate(name: name)
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: product,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/Framework/**"],
-                                   resources: resources,
-                                   dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
-
-        let scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: hiddenScheme,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: testAction,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
-
+private extension Project {
+    static func makeInternalDTOTarget(name: Name,
+                                      destinations: Destinations,
+                                      deploymentTargets: DeploymentTargets,
+                                      packageName: String?) -> (Target, Scheme) {
+        let (target, scheme) =
+            Generator.internalDTOTarget(name: name.internalDTO,
+                                        destinations: destinations,
+                                        deploymentTargets: deploymentTargets,
+                                        packageName: packageName)
         return (target, scheme)
-    }
-
-    static func frameworkTesting(name: String,
-                                 destinations: Destinations = .iOS,
-                                 deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                                 infoPlist: [String: Plist.Value] = [:],
-                                 dependencies: [TargetDependency] = [],
-                                 packageName: String? = nil) -> (Target, Scheme) {
-        let bundleId = BundleIdGenerator().generate(name: name)
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .staticLibrary,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Testing/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
-
-        let scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
-
-        return (target, scheme)
-    }
-
-    static func frameworkDemoApp(name: String,
-                                 destinations: Destinations = .iOS,
-                                 deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                                 infoPlist: [String: Plist.Value] = [:],
-                                 dependencies: [TargetDependency] = [],
-                                 bundleId: String? = nil,
-                                 environmentVariables: [String: EnvironmentVariable] = [:],
-                                 launchArguments: [LaunchArgument] = [],
-                                 unitTestName: String? = nil,
-                                 packageName: String? = nil) -> (Target, Scheme) {
-        let bundleId = bundleId ?? BundleIdGenerator().defaultDemoAppBundleId
-        var testAction: TestAction?
-        if let unitTestName {
-            testAction = .targets(["\(unitTestName)"],
-                                  configuration: .dev,
-                                  options: .options(coverage: true))
-        }
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .app,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["App/DemoApp/Sources/**"],
-                                   resources: ["App/DemoApp/Resources/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings(base: baseSettings),
-                                   environmentVariables: environmentVariables,
-                                   launchArguments: launchArguments)
-
-        let scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: testAction,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
-
-        return (target, scheme)
-    }
-
-    static func frameworkUnitTests(name: String,
-                                   destinations: Destinations = .iOS,
-                                   deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                                   infoPlist: [String: Plist.Value] = [:],
-                                   dependencies: [TargetDependency] = [],
-                                   packageName: String? = nil) -> Target {
-        let bundleId = BundleIdGenerator().generate(name: name)
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .unitTests,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .default,
-                                   sources: ["Tests/UnitTests/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
-
-        return target
-    }
-}
-
-// MARK: Generator UI Target
-
-private extension Project.Generator {
-    static func uiModule(name: String,
-                         destinations: Destinations = .iOS,
-                         deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                         infoPlist: [String: Plist.Value] = [:],
-                         dependencies: [TargetDependency] = [],
-                         packageName: String? = nil) -> (Target, Scheme) {
-        let bundleId = BundleIdGenerator().generate(name: name)
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .staticLibrary,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/UI/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
-        let scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: nil,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
-
-        return (target, scheme)
-    }
-
-    static func uiPreview(name: String,
-                          destinations: Destinations = .iOS,
-                          deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                          infoPlist: [String: Plist.Value] = [:],
-                          dependencies: [TargetDependency] = [],
-                          packageName: String? = nil) -> (Target, Scheme) {
-        let bundleId = BundleIdGenerator().generate(name: name)
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .framework,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["UIPreview/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
-        let scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: nil,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
-
-        return (target, scheme)
-    }
-}
-
-// MARK: Generator InternalDTO Target
-
-private extension Project.Generator {
-    static func internalDTOTarget(name: String,
-                                  destinations: Destinations = .iOS,
-                                  deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
-                                  dependencies: [TargetDependency] = [],
-                                  packageName: String? = nil) -> (Target, Scheme) {
-        let bundleId = BundleIdGenerator().generate(name: name)
-
-        var baseSettings = SettingsDictionary()
-        do {
-            var otherSwiftFlags = ["$(inherited)"]
-            packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-            baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-        }
-
-        let target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .staticLibrary,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .default,
-                                   sources: ["Sources/InternalDTO/**"],
-                                   settings: .settings(base: baseSettings))
-        let scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: nil,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
-
-        return (target, scheme)
-    }
-}
-
-private extension Project.Generator {
-    static func project(name: String,
-                        packages: [Package] = [],
-                        targets: [Target],
-                        schemes: [Scheme]) -> Project {
-        let project = Project(
-            name: name,
-            organizationName: AppInfo.organizationName,
-            options: .options(
-                automaticSchemesOptions: .disabled,
-                disableBundleAccessors: true,
-                disableShowEnvironmentVarsInScriptPhases: true,
-                disableSynthesizedResourceAccessors: true
-            ),
-            packages: packages,
-            settings: .settings(
-                base: [
-                    "CODE_SIGN_IDENTITY": "",
-                    "CODE_SIGNING_REQUIRED": "NO",
-                ],
-                configurations: [
-                    .debug(name: .dev, xcconfig: .moduleXCConfig(type: .dev)),
-                    .debug(name: .test, xcconfig: .moduleXCConfig(type: .test)),
-                    .release(name: .stage, xcconfig: .moduleXCConfig(type: .stage)),
-                    .release(name: .prod, xcconfig: .moduleXCConfig(type: .prod)),
-                ]
-            ),
-            targets: targets,
-            schemes: schemes,
-            fileHeaderTemplate: nil,
-            additionalFiles: []
-        )
-
-        return project
-    }
-}
-
-private struct Name {
-    struct Framework {
-        let module: String
-        let testing: String
-        let demoApp: String
-        let unitTests: String
-    }
-
-    struct UI {
-        let module: String
-        let preview: String
-    }
-
-    let framework: Framework
-    let ui: UI
-    let internalDTO: String
-    let project: String
-
-    init(_ name: String) {
-        framework = .init(
-            module: name,
-            testing: "\(name)Testing",
-            demoApp: "\(name)DemoApp",
-            unitTests: "\(name)UnitTests"
-        )
-        ui = .init(
-            module: "\(name)UI",
-            preview: "\(name)UIPreview"
-        )
-        internalDTO = "\(name)InternalDTO"
-        project = name
     }
 }
