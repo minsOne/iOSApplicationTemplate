@@ -79,34 +79,35 @@ extension FrameworkTemplate.Target.UI {
 }
 
 public extension [FrameworkTemplate.Target] {
-    var module: FrameworkTemplate.Target.Framework.MachO? {
-        lazy.compactMap(\.frameworkList)
+    var frameworks: [FrameworkTemplate.Target.Framework] {
+        compactMap(\.frameworkList)
             .flatMap { $0 }
-            .compactMap(\.module)
+    }
+}
+
+public extension [FrameworkTemplate.Target.Framework] {
+    var module: FrameworkTemplate.Target.Framework.MachO? {
+        lazy.compactMap(\.module)
             .first
     }
-
+    
     var hasTesting: Bool {
-        lazy.compactMap(\.frameworkList)
-            .flatMap { $0 }
-            .compactMap { $0.hasTesting }
+        lazy.compactMap { $0.hasTesting }
             .first ?? false
     }
-
+    
     var hasDemoApp: Bool {
-        lazy.compactMap(\.frameworkList)
-            .flatMap { $0 }
-            .compactMap { $0.hasDemoApp }
+        lazy.compactMap { $0.hasDemoApp }
             .first ?? false
     }
-
+    
     var hasUnitTests: Bool {
-        lazy.compactMap(\.frameworkList)
-            .flatMap { $0 }
-            .compactMap { $0.hasUnitTests }
+        lazy.compactMap { $0.hasUnitTests }
             .first ?? false
     }
+}
 
+public extension [FrameworkTemplate.Target] {
     var hasUI: Bool {
         lazy.compactMap(\.uiList)
             .flatMap { $0 }

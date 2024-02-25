@@ -23,7 +23,7 @@ public extension Project {
                 name: name,
                 hasInternalDTO: hasInternalDTO,
                 hasUI: hasUI,
-                target: target,
+                target: target.frameworks,
                 destinations: destinations,
                 deploymentTargets: deploymentTargets,
                 packageName: packageName,
@@ -82,7 +82,7 @@ private extension FrameworkTemplateProjectGenerator {
             let name: FrameworkTemplateTargetName
             let hasInternalDTO: Bool
             let hasUI: Bool
-            let target: [FrameworkTemplate.Target]
+            let target: [FrameworkTemplate.Target.Framework]
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
             let packageName: String?
