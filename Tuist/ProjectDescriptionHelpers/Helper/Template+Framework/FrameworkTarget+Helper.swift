@@ -10,14 +10,14 @@ import Foundation
 // MARK: Helper
 
 extension FrameworkTemplate.Target {
-    var frameworkList: [Framework]? {
+    var frameworkValue: [Framework]? {
         switch self {
         case let .framework(value): value
         default: nil
         }
     }
 
-    var uiList: [UI]? {
+    var uiValue: [UI]? {
         switch self {
         case let .ui(value): value
         default: nil
@@ -80,8 +80,17 @@ extension FrameworkTemplate.Target.UI {
 
 public extension [FrameworkTemplate.Target] {
     var frameworks: [FrameworkTemplate.Target.Framework] {
-        compactMap(\.frameworkList)
+        compactMap(\.frameworkValue)
             .flatMap { $0 }
+    }
+
+    var uiList: [FrameworkTemplate.Target.UI] {
+        compactMap(\.uiValue)
+            .flatMap { $0 }
+    }
+
+    var hasInternalDTO: Bool {
+        contains(where: \.hasInternalDTO)
     }
 }
 
@@ -90,40 +99,29 @@ public extension [FrameworkTemplate.Target.Framework] {
         lazy.compactMap(\.module)
             .first
     }
-    
+
     var hasTesting: Bool {
         lazy.compactMap { $0.hasTesting }
             .first ?? false
     }
-    
+
     var hasDemoApp: Bool {
         lazy.compactMap { $0.hasDemoApp }
             .first ?? false
     }
-    
+
     var hasUnitTests: Bool {
         lazy.compactMap { $0.hasUnitTests }
             .first ?? false
     }
 }
 
-public extension [FrameworkTemplate.Target] {
+public extension [FrameworkTemplate.Target.UI] {
     var hasUI: Bool {
-        lazy.compactMap(\.uiList)
-            .flatMap { $0 }
-            .compactMap { $0.hasUI }
-            .first ?? false
+        contains(where: \.hasUI)
     }
 
     var hasUIPreview: Bool {
-        lazy.compactMap(\.uiList)
-            .flatMap { $0 }
-            .compactMap { $0.hasPreview }
-            .first ?? false
-    }
-
-    var hasInternalDTO: Bool {
-        lazy.compactMap { $0.hasInternalDTO }
-            .first ?? false
+        contains(where: \.hasPreview)
     }
 }
