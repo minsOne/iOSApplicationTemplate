@@ -19,7 +19,7 @@ public extension Project {
         let name = Name(name)
         let hasUI = target.uiList.hasUI
         let hasInternalDTO = target.hasInternalDTO
-        let packageName = configure.framework.module.packageName
+        let packageName = configure.packageName
 
         let framework = Generator.Framework(
             info: .init(
@@ -29,7 +29,6 @@ public extension Project {
                 targets: target.frameworks,
                 destinations: destinations,
                 deploymentTargets: deploymentTargets,
-                packageName: packageName,
                 configure: configure,
                 dependencies: dependencies
             )
@@ -77,7 +76,8 @@ public extension Project {
                 name: name.project,
                 packages: packages,
                 targets: targetList,
-                schemes: schemeList
+                schemes: schemeList,
+                packageName: packageName
             )
         ).rawValue
     }

@@ -34,12 +34,9 @@ public extension Template {
         public struct Framework {
             public struct Module {
                 public let isHiddenScheme: Bool
-                public let packageName: String?
 
-                public init(isHiddenScheme: Bool = false,
-                            packageName: String? = nil) {
+                public init(isHiddenScheme: Bool = false) {
                     self.isHiddenScheme = isHiddenScheme
-                    self.packageName = packageName
                 }
             }
 
@@ -119,13 +116,16 @@ public extension Template {
         public let framework: Framework
         public let ui: UI
         public let internalDTO: InternalDTO
+        public let packageName: String?
 
         public init(framework: Framework = .init(),
                     ui: UI = .init(),
-                    internalDTO: InternalDTO = .init()) {
+                    internalDTO: InternalDTO = .init(),
+                    packageName: PackageName? = nil) {
             self.framework = framework
             self.ui = ui
             self.internalDTO = internalDTO
+            self.packageName = packageName?.name
         }
     }
 }

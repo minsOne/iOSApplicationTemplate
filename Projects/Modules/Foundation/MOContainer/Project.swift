@@ -7,8 +7,6 @@ let project = Project.framework(
         .framework([.module(.static)]),
     ],
     configure: .init(
-        framework: .init(
-            module: .init(packageName: "Container")
-        )
+        packageName: .Container
     )
 )

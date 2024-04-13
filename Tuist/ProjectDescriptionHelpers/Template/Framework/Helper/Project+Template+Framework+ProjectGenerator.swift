@@ -16,7 +16,6 @@ extension FrameworkTemplateProjectGenerator {
             let targets: [FrameworkTemplate.Target.Framework]
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let configure: FrameworkTemplate.TargetConfigure
             let dependencies: [TargetDependency]
         }
@@ -46,7 +45,6 @@ extension FrameworkTemplateProjectGenerator {
                         hasUI: info.hasUI,
                         destinations: info.destinations,
                         deploymentTargets: info.deploymentTargets,
-                        packageName: info.packageName,
                         configure: info.configure,
                         dependencies: info.dependencies
                     )
@@ -61,7 +59,6 @@ extension FrameworkTemplateProjectGenerator {
                         name: info.name,
                         destinations: info.destinations,
                         deploymentTargets: info.deploymentTargets,
-                        packageName: info.packageName,
                         configure: info.configure
                     )
                 )
@@ -77,7 +74,6 @@ extension FrameworkTemplateProjectGenerator {
                         hasUnitTests: hasUnitTests,
                         destinations: info.destinations,
                         deploymentTargets: info.deploymentTargets,
-                        packageName: info.packageName,
                         configure: info.configure
                     )
                 )
@@ -92,7 +88,6 @@ extension FrameworkTemplateProjectGenerator {
                         hasTesting: hasTesting,
                         destinations: info.destinations,
                         deploymentTargets: info.deploymentTargets,
-                        packageName: info.packageName,
                         configure: info.configure
                     )
                 )
@@ -115,7 +110,6 @@ private extension FrameworkTemplateProjectGenerator.Framework {
             let hasUI: Bool
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let configure: FrameworkTemplate.TargetConfigure
             let dependencies: [TargetDependency]
         }
@@ -145,8 +139,7 @@ private extension FrameworkTemplateProjectGenerator.Framework {
                 deploymentTargets: info.deploymentTargets,
                 dependencies: dependencies,
                 hiddenScheme: isHiddenScheme,
-                unitTestsName: unitTestsName,
-                packageName: info.packageName
+                unitTestsName: unitTestsName
             )
             scheme = module.scheme
             target = module.target
@@ -158,7 +151,6 @@ private extension FrameworkTemplateProjectGenerator.Framework {
             let name: FrameworkTemplateTargetName
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let configure: FrameworkTemplate.TargetConfigure
         }
 
@@ -173,8 +165,7 @@ private extension FrameworkTemplateProjectGenerator.Framework {
                 name: info.name.framework.testing,
                 destinations: info.destinations,
                 deploymentTargets: info.deploymentTargets,
-                dependencies: dependencies,
-                packageName: info.packageName
+                dependencies: dependencies
             )
             target = testing.target
             scheme = testing.scheme
@@ -188,7 +179,6 @@ private extension FrameworkTemplateProjectGenerator.Framework {
             let hasUnitTests: Bool
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let configure: FrameworkTemplate.TargetConfigure
         }
 
@@ -215,8 +205,7 @@ private extension FrameworkTemplateProjectGenerator.Framework {
                 infoPlist: infoPlist,
                 dependencies: dependencies,
                 bundleId: bundleId,
-                unitTestName: unitTestsName,
-                packageName: info.packageName
+                unitTestName: unitTestsName
             )
             target = demoApp.target
             scheme = demoApp.scheme
@@ -229,7 +218,6 @@ private extension FrameworkTemplateProjectGenerator.Framework {
             let hasTesting: Bool
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let configure: FrameworkTemplate.TargetConfigure
         }
 
@@ -244,8 +232,7 @@ private extension FrameworkTemplateProjectGenerator.Framework {
                 name: info.name.framework.unitTests,
                 destinations: info.destinations,
                 deploymentTargets: info.deploymentTargets,
-                dependencies: dependencies,
-                packageName: info.packageName
+                dependencies: dependencies
             )
             target = unitTests.target
         }
@@ -403,6 +390,7 @@ extension FrameworkTemplateProjectGenerator {
             let packages: [Package]
             let targets: [Target]
             let schemes: [Scheme]
+            let packageName: String?
         }
 
         let rawValue: ProjectDescription.Project
@@ -412,7 +400,8 @@ extension FrameworkTemplateProjectGenerator {
                 .Project(name: info.name,
                          packages: info.packages,
                          targets: info.targets,
-                         schemes: info.schemes)
+                         schemes: info.schemes,
+                         packageName: info.packageName)
                 .project
         }
     }

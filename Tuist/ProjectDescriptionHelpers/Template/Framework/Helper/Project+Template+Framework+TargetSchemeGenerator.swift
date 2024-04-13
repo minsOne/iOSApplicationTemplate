@@ -25,8 +25,7 @@ extension FrameworkTemplateTargetSchemeGenerator.Framework {
              infoPlist: [String: Plist.Value] = [:],
              dependencies: [TargetDependency] = [],
              hiddenScheme: Bool = false,
-             unitTestsName: String? = nil,
-             packageName: String? = nil) {
+             unitTestsName: String? = nil) {
             let product: Product
             let resources: ResourceFileElements?
             var testAction: TestAction?
@@ -45,13 +44,6 @@ extension FrameworkTemplateTargetSchemeGenerator.Framework {
                                       options: .options(coverage: true))
             }
 
-            var baseSettings = SettingsDictionary()
-            do {
-                var otherSwiftFlags = ["$(inherited)"]
-                packageName.map { otherSwiftFlags.append("-package-name \($0)") }
-                baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-            }
-
             let bundleId = BundleIdGenerator().generate(name: name)
             target = Target.target(name: name,
                                    destinations: destinations,
@@ -63,7 +55,7 @@ extension FrameworkTemplateTargetSchemeGenerator.Framework {
                                    sources: ["Sources/Framework/**"],
                                    resources: resources,
                                    dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
+                                   settings: .settings())
 
             scheme = Scheme.scheme(name: name,
                                    shared: true,
@@ -178,15 +170,8 @@ extension FrameworkTemplateTargetSchemeGenerator.Framework {
              destinations: Destinations = .iOS,
              deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
-             dependencies: [TargetDependency] = [],
-             packageName: String? = nil) {
+             dependencies: [TargetDependency] = []) {
             let bundleId = BundleIdGenerator().generate(name: name)
-
-            var baseSettings = SettingsDictionary()
-            do {
-                let otherSwiftFlags = ["$(inherited)"]
-                baseSettings["OTHER_SWIFT_FLAGS"] = .array(otherSwiftFlags)
-            }
 
             target = Target.target(name: name,
                                    destinations: destinations,
@@ -197,7 +182,7 @@ extension FrameworkTemplateTargetSchemeGenerator.Framework {
                                    infoPlist: .default,
                                    sources: ["Tests/UnitTests/**"],
                                    dependencies: dependencies,
-                                   settings: .settings(base: baseSettings))
+                                   settings: .settings())
         }
     }
 }
@@ -340,7 +325,17 @@ extension FrameworkTemplateTargetSchemeGenerator {
         init(name: String,
              packages: [Package] = [],
              targets: [Target],
-             schemes: [Scheme]) {
+             schemes: [Scheme],
+             packageName: String?) {
+            var baseSettings: SettingsDictionary = [
+                "CODE_SIGN_IDENTITY": "",
+                "CODE_SIGNING_REQUIRED": "NO",
+            ]
+            if let packageName {
+                baseSettings.updateValue("\(packageName)",
+                                         forKey: "SWIFT_PACKAGE_NAME")
+            }
+            
             project = ProjectDescription.Project(
                 name: name,
                 organizationName: AppInfo.organizationName,
@@ -352,10 +347,7 @@ extension FrameworkTemplateTargetSchemeGenerator {
                 ),
                 packages: packages,
                 settings: .settings(
-                    base: [
-                        "CODE_SIGN_IDENTITY": "",
-                        "CODE_SIGNING_REQUIRED": "NO",
-                    ],
+                    base: baseSettings,
                     configurations: [
                         .debug(name: .dev, xcconfig: .moduleXCConfig(type: .dev)),
                         .debug(name: .test, xcconfig: .moduleXCConfig(type: .test)),
