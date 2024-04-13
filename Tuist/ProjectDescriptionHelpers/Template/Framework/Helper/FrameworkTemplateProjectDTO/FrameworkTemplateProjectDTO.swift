@@ -1,3 +1,3 @@
 import Foundation
 
-struct FrameworkTemplateProjectDTO {}
+enum FrameworkTemplateProjectDTO {}

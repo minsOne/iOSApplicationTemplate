@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project.framework(
+let project = FrameworkTemplate(
     name: "MOFoundationKit",
     target: [
         .framework([.module(.static)]),
@@ -9,4 +9,4 @@ let project = Project.framework(
     dependencies: [
         .Project.Module.Foundation.Container,
     ]
-)
+).project

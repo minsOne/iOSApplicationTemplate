@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project.framework(
+let project = FrameworkTemplate(
     name: "MOContainer",
     target: [
         .framework([.module(.static)]),
@@ -9,4 +9,4 @@ let project = Project.framework(
     configure: .init(
         packageName: .Container
     )
-)
+).project

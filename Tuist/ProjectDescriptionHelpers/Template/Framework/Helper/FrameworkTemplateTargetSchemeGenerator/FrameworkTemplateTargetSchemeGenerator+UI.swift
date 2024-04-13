@@ -3,6 +3,10 @@ import ProjectDescription
 
 private typealias Generator = FrameworkTemplateTargetSchemeGenerator
 
+extension FrameworkTemplateTargetSchemeGenerator {
+    enum UI {}
+}
+
 extension Generator.UI {
     struct UIModule {
         let target: Target

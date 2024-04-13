@@ -1,8 +1,6 @@
 import Foundation
 import ProjectDescription
 
-public enum FrameworkTemplate {}
-
 private typealias Template = FrameworkTemplate
 
 // MARK: Target
