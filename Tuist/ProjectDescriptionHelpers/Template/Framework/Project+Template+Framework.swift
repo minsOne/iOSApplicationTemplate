@@ -10,7 +10,7 @@ public extension Project {
                           dependencies: [TargetDependency] = [],
                           uiDependencies: [TargetDependency] = [],
                           configure: FrameworkTemplate.TargetConfigure = .init()) -> Self {
-        typealias Generator = FrameworkTemplateProjectGenerator
+        typealias Generator = FrameworkTemplateProjectDTO
         typealias Name = FrameworkTemplateTargetName
 
         var targetList: [Target] = []
