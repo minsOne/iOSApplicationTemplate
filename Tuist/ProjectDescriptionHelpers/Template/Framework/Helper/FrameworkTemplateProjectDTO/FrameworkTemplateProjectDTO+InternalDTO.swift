@@ -11,7 +11,6 @@ extension TemplateDTO {
             let name: FrameworkTemplateTargetName
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
         }
 
         let target: Target
@@ -21,8 +20,7 @@ extension TemplateDTO {
             let internalDTO = Generator.InternalDTO(
                 name: info.name.internalDTO,
                 destinations: info.destinations,
-                deploymentTargets: info.deploymentTargets,
-                packageName: info.packageName
+                deploymentTargets: info.deploymentTargets
             )
 
             target = internalDTO.target

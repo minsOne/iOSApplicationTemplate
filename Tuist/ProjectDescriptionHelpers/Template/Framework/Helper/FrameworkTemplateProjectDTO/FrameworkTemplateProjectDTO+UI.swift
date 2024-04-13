@@ -13,7 +13,6 @@ extension TemplateDTO {
             let targets: [FrameworkTemplate.Target.UI]
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let uiDependencies: [TargetDependency]
             let previewDependencies: [TargetDependency]
         }
@@ -36,7 +35,6 @@ extension TemplateDTO {
                     hasInternalDTO: info.hasInternalDTO,
                     destinations: info.destinations,
                     deploymentTargets: info.deploymentTargets,
-                    packageName: info.packageName,
                     uiDependencies: info.uiDependencies
                 ))
                 |> { update(target: $0.target, scheme: $0.scheme) }
@@ -47,7 +45,6 @@ extension TemplateDTO {
                         name: info.name,
                         destinations: info.destinations,
                         deploymentTargets: info.deploymentTargets,
-                        packageName: info.packageName,
                         previewDependencies: info.previewDependencies
                     )
                 ))
@@ -68,7 +65,6 @@ private extension FrameworkTemplateProjectDTO.UI {
             let hasInternalDTO: Bool
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let uiDependencies: [TargetDependency]
         }
 
@@ -85,8 +81,7 @@ private extension FrameworkTemplateProjectDTO.UI {
                 name: info.name.ui.module,
                 destinations: info.destinations,
                 deploymentTargets: info.deploymentTargets,
-                dependencies: dependencies,
-                packageName: info.packageName
+                dependencies: dependencies
             )
             target = ui.target
             scheme = ui.scheme
@@ -98,7 +93,6 @@ private extension FrameworkTemplateProjectDTO.UI {
             let name: FrameworkTemplateTargetName
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
-            let packageName: String?
             let previewDependencies: [TargetDependency]
         }
 
@@ -112,8 +106,7 @@ private extension FrameworkTemplateProjectDTO.UI {
                 name: info.name.ui.preview,
                 destinations: info.destinations,
                 deploymentTargets: info.deploymentTargets,
-                dependencies: dependencies,
-                packageName: info.packageName
+                dependencies: dependencies
             )
             target = preview.target
             scheme = preview.scheme

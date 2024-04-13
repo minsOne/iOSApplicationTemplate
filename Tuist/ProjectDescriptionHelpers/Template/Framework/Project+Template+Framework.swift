@@ -46,7 +46,6 @@ public extension Project {
                 targets: target.uiList,
                 destinations: destinations,
                 deploymentTargets: deploymentTargets,
-                packageName: packageName,
                 uiDependencies: uiDependencies,
                 previewDependencies: configure.ui.preview.dependency
             )
@@ -62,8 +61,7 @@ public extension Project {
                 info: .init(
                     name: name,
                     destinations: destinations,
-                    deploymentTargets: deploymentTargets,
-                    packageName: packageName
+                    deploymentTargets: deploymentTargets
                 )
             )
 
