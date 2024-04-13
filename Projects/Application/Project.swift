@@ -15,10 +15,6 @@ let settings: Settings =
                   .debug(name: .test, xcconfig: XCConfig.Application.devApp(.test)),
                   .release(name: .stage, xcconfig: XCConfig.Application.devApp(.stage)),
                   .release(name: .prod, xcconfig: XCConfig.Application.devApp(.prod)),
-                  .debug(name: .dev, xcconfig: XCConfig.Application.app(.dev)),
-                  .debug(name: .test, xcconfig: XCConfig.Application.app(.test)),
-                  .release(name: .stage, xcconfig: XCConfig.Application.app(.stage)),
-                  .release(name: .prod, xcconfig: XCConfig.Application.app(.prod)),
               ])
 
 let scripts: [TargetScript] = [
