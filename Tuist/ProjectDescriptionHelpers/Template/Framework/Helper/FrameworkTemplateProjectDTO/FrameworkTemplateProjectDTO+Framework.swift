@@ -16,6 +16,7 @@ extension TemplateDTO {
             let deploymentTargets: DeploymentTargets
             let configure: FrameworkTemplate.TargetConfigure
             let dependencies: [TargetDependency]
+            let needResources: Bool
         }
 
         private(set) var targets: [Target] = []
@@ -40,7 +41,8 @@ extension TemplateDTO {
                     destinations: info.destinations,
                     deploymentTargets: info.deploymentTargets,
                     configure: info.configure,
-                    dependencies: info.dependencies
+                    dependencies: info.dependencies, 
+                    needResources: info.needResources
                 ))
                 |> { update(target: $0.target, scheme: $0.scheme) }
 

@@ -16,7 +16,7 @@ extension Generator.Framework {
              dependencies: [TargetDependency] = [],
              hiddenScheme: Bool = false,
              unitTestsName: String? = nil,
-             needResources: Bool = false) {
+             needResources: Bool) {
             let product: Product
             let resources: ResourceFileElements?
             var testAction: TestAction?

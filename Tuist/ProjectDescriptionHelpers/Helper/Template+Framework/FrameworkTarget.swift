@@ -32,9 +32,12 @@ public extension Template {
         public struct Framework {
             public struct Module {
                 public let isHiddenScheme: Bool
+                public let needResources: Bool
 
-                public init(isHiddenScheme: Bool = false) {
+                public init(isHiddenScheme: Bool = false,
+                            needResources: Bool = false) {
                     self.isHiddenScheme = isHiddenScheme
+                    self.needResources = needResources
                 }
             }
 

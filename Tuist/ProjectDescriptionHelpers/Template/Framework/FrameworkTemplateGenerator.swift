@@ -29,6 +29,7 @@ public struct FrameworkTemplate {
         let hasUI = target.uiList.hasUI
         let hasInternalDTO = target.hasInternalDTO
         let packageName = configure.packageName
+        let needResources = configure.framework.module.needResources
 
         Generator.Framework(
             info: .init(
@@ -39,7 +40,8 @@ public struct FrameworkTemplate {
                 destinations: destinations,
                 deploymentTargets: deploymentTargets,
                 configure: configure,
-                dependencies: dependencies
+                dependencies: dependencies,
+                needResources: needResources
             ))
             ||> {
                 targetList.append(contentsOf: $0.targets)

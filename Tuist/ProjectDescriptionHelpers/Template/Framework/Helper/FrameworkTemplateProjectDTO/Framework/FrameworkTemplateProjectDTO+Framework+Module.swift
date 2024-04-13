@@ -16,6 +16,7 @@ extension TemplateDTO.Framework {
             let deploymentTargets: DeploymentTargets
             let configure: FrameworkTemplate.TargetConfigure
             let dependencies: [TargetDependency]
+            let needResources: Bool
         }
 
         let target: Target
@@ -28,6 +29,8 @@ extension TemplateDTO.Framework {
             }
             let isHiddenScheme = info.configure.framework.module.isHiddenScheme
             let unitTestsName = info.hasUnitTests ? info.name.framework.unitTests : nil
+            let needResources = info.needResources
+
             var dependencies = info.dependencies
             if info.hasUI {
                 dependencies.append(.target(name: info.name.ui.module))
@@ -43,7 +46,8 @@ extension TemplateDTO.Framework {
                 deploymentTargets: info.deploymentTargets,
                 dependencies: dependencies,
                 hiddenScheme: isHiddenScheme,
-                unitTestsName: unitTestsName
+                unitTestsName: unitTestsName, 
+                needResources: needResources
             )
             scheme = module.scheme
             target = module.target
