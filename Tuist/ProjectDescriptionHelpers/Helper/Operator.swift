@@ -20,8 +20,7 @@ public func |> <T, U>(value: T, function: (T) -> U) -> U {
 infix operator ||>: ForwardPipe
 
 public func ||> <T, U>(value: T?, function: (T) -> U) -> U? {
-    guard let value else { return nil }
-    return function(value)
+    value.map { function($0) }
 }
 
 precedencegroup NilCoalescingPrecedence {
