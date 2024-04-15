@@ -30,44 +30,37 @@ extension TemplateDTO {
             let hasTesting = info.targets.hasTesting
             let hasDemoApp = info.targets.hasDemoApp
             let hasUnitTests = info.targets.hasUnitTests
+            let hasWidgetExtension = info.targets.hasWidgetExtension
 
             Module(
-                info: .init(
-                    name: info.name,
-                    macho: macho,
-                    hasUnitTests: hasUnitTests,
-                    hasInternalDTO: info.hasInternalDTO,
-                    hasUI: info.hasUI,
-                    destinations: info.destinations,
-                    deploymentTargets: info.deploymentTargets,
-                    configure: info.configure,
-                    dependencies: info.dependencies, 
-                    needResources: info.needResources
-                ))
+                info: .init(name: info.name,
+                            macho: macho,
+                            hasUnitTests: hasUnitTests,
+                            hasInternalDTO: info.hasInternalDTO,
+                            hasUI: info.hasUI,
+                            destinations: info.destinations,
+                            deploymentTargets: info.deploymentTargets,
+                            configure: info.configure,
+                            dependencies: info.dependencies,
+                            needResources: info.needResources))
                 |> { update(target: $0.target, scheme: $0.scheme) }
 
             (hasTesting
                 ?> Testing(
-                    info: .init(
-                        name: info.name,
-                        destinations: info.destinations,
-                        deploymentTargets: info.deploymentTargets,
-                        configure: info.configure
-                    )
-                ))
+                    info: .init(name: info.name,
+                                destinations: info.destinations,
+                                deploymentTargets: info.deploymentTargets,
+                                configure: info.configure)))
                 ||> { update(target: $0.target, scheme: $0.scheme) }
 
             (hasDemoApp
                 ?> DemoApp(
-                    info: .init(
-                        name: info.name,
-                        hasTesting: hasTesting,
-                        hasUnitTests: hasUnitTests,
-                        destinations: info.destinations,
-                        deploymentTargets: info.deploymentTargets,
-                        configure: info.configure
-                    )
-                ))
+                    info: .init(name: info.name,
+                                hasTesting: hasTesting,
+                                hasUnitTests: hasUnitTests,
+                                destinations: info.destinations,
+                                deploymentTargets: info.deploymentTargets,
+                                configure: info.configure)))
                 ||> { update(target: $0.target, scheme: $0.scheme) }
 
             (hasUnitTests
@@ -78,9 +71,16 @@ extension TemplateDTO {
                         destinations: info.destinations,
                         deploymentTargets: info.deploymentTargets,
                         configure: info.configure
-                    )
-                ).target)
-                ||> { update(target: $0) }
+                    )))
+                ||> { update(target: $0.target) }
+
+            (hasWidgetExtension
+                ?> WidgetExtension(
+                    info: .init(name: info.name,
+                                hasDemoApp: true,
+                                destinations: info.destinations,
+                                deploymentTargets: .iOS("14.0"))))
+                ||> { update(target: $0.target, scheme: $0.scheme) }
         }
 
         private mutating func update(target: Target? = nil, scheme: Scheme? = nil) {

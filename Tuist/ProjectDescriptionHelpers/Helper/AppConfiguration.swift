@@ -38,4 +38,7 @@ public struct BundleIdGenerator {
     public var defaultDemoAppBundleId: String {
         "kr.minsone.example.demoApp"
     }
+    public var defaultWidgetExtensionBundleId: String {
+        "kr.minsone.example.widgetExtension"
+    }
 }

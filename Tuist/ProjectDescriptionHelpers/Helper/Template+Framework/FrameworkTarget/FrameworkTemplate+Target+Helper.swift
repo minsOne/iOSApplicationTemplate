@@ -1,36 +1,13 @@
 //
-//  FrameworkTarget+Helper.swift
+//  FrameworkTemplate+Target+Helper.swift
 //  ProjectDescriptionHelpers
 //
-//  Created by minsOne on 2/15/24.
+//  Created by minsOne on 4/15/24.
 //
 
 import Foundation
 
 // MARK: Helper
-
-extension FrameworkTemplate.Target {
-    var frameworkValue: [Framework]? {
-        switch self {
-        case let .framework(value): value
-        default: nil
-        }
-    }
-
-    var uiValue: [UI]? {
-        switch self {
-        case let .ui(value): value
-        default: nil
-        }
-    }
-
-    var hasInternalDTO: Bool {
-        switch self {
-        case .internalDTO: true
-        default: false
-        }
-    }
-}
 
 extension FrameworkTemplate.Target.Framework {
     var module: MachO? {
@@ -41,40 +18,29 @@ extension FrameworkTemplate.Target.Framework {
     }
 
     var hasTesting: Bool {
-        switch self {
-        case .testing: true
-        default: false
-        }
+        self == .testing
     }
 
     var hasDemoApp: Bool {
-        switch self {
-        case .demoApp: true
-        default: false
-        }
+        self == .demoApp
     }
 
     var hasUnitTests: Bool {
-        switch self {
-        case .unitTests: true
-        default: false
-        }
+        self == .unitTests
+    }
+
+    var hasWidgetExtension: Bool {
+        self == .widgetExtension
     }
 }
 
 extension FrameworkTemplate.Target.UI {
     var hasUI: Bool {
-        switch self {
-        case .ui: true
-        default: false
-        }
+        self == .ui
     }
 
     var hasPreview: Bool {
-        switch self {
-        case .preview: true
-        default: false
-        }
+        self == .preview
     }
 }
 
@@ -101,18 +67,19 @@ public extension [FrameworkTemplate.Target.Framework] {
     }
 
     var hasTesting: Bool {
-        lazy.compactMap { $0.hasTesting }
-            .first ?? false
+        contains(where: \.hasTesting)
     }
 
     var hasDemoApp: Bool {
-        lazy.compactMap { $0.hasDemoApp }
-            .first ?? false
+        contains(where: \.hasDemoApp)
     }
 
     var hasUnitTests: Bool {
-        lazy.compactMap { $0.hasUnitTests }
-            .first ?? false
+        contains(where: \.hasUnitTests)
+    }
+
+    var hasWidgetExtension: Bool {
+        contains(where: \.hasWidgetExtension)
     }
 }
 

@@ -4,6 +4,7 @@ struct FrameworkTemplateTargetName {
         let testing: String
         let demoApp: String
         let unitTests: String
+        let widgetExtension: String
     }
 
     struct UI {
@@ -21,7 +22,8 @@ struct FrameworkTemplateTargetName {
             module: name,
             testing: "\(name)Testing",
             demoApp: "\(name)DemoApp",
-            unitTests: "\(name)UnitTests"
+            unitTests: "\(name)UnitTests",
+            widgetExtension: "\(name)WidgetExtension"
         )
         ui = .init(
             module: "\(name)UI",
