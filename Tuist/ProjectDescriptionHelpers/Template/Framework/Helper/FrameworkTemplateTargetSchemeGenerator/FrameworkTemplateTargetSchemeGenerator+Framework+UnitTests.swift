@@ -11,19 +11,20 @@ extension Generator.Framework {
              destinations: Destinations = .iOS,
              deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
-             dependencies: [TargetDependency] = []) {
+             dependencies: [TargetDependency] = [])
+        {
             let bundleId = BundleIdGenerator().generate(name: name)
 
-            target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .unitTests,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .default,
-                                   sources: ["Tests/UnitTests/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings())
+            target = .target(name: name,
+                             destinations: destinations,
+                             product: .unitTests,
+                             productName: name,
+                             bundleId: bundleId,
+                             deploymentTargets: deploymentTargets,
+                             infoPlist: .default,
+                             sources: ["Tests/UnitTests/**"],
+                             dependencies: dependencies,
+                             settings: .settings())
         }
     }
 }

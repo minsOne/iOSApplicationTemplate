@@ -16,7 +16,8 @@ extension Generator.Framework {
              bundleId: String? = nil,
              environmentVariables: [String: EnvironmentVariable] = [:],
              launchArguments: [LaunchArgument] = [],
-             unitTestName: String? = nil) {
+             unitTestName: String? = nil)
+        {
             let bundleId = bundleId ?? BundleIdGenerator().defaultDemoAppBundleId
             var testAction: TestAction?
             if let unitTestName {
@@ -25,29 +26,29 @@ extension Generator.Framework {
                                       options: .options(coverage: true))
             }
 
-            target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .app,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["App/DemoApp/Sources/**"],
-                                   resources: ["App/DemoApp/Resources/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings(),
-                                   environmentVariables: environmentVariables,
-                                   launchArguments: launchArguments)
+            target = .target(name: name,
+                             destinations: destinations,
+                             product: .app,
+                             productName: name,
+                             bundleId: bundleId,
+                             deploymentTargets: deploymentTargets,
+                             infoPlist: .extendingDefault(with: infoPlist),
+                             sources: ["App/DemoApp/Sources/**"],
+                             resources: ["App/DemoApp/Resources/**"],
+                             dependencies: dependencies,
+                             settings: .settings(),
+                             environmentVariables: environmentVariables,
+                             launchArguments: launchArguments)
 
-            scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: testAction,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
+            scheme = .scheme(name: name,
+                             shared: true,
+                             hidden: true,
+                             buildAction: .buildAction(targets: ["\(name)"]),
+                             testAction: testAction,
+                             runAction: .runAction(configuration: .dev),
+                             archiveAction: .archiveAction(configuration: .dev),
+                             profileAction: .profileAction(configuration: .dev),
+                             analyzeAction: .analyzeAction(configuration: .dev))
         }
     }
 }

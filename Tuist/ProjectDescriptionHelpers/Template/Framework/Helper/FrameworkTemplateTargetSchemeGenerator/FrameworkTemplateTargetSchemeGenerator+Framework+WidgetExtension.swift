@@ -19,27 +19,28 @@ extension Generator.Framework {
         {
             let bundleId = bundleId ?? BundleIdGenerator().defaultWidgetExtensionBundleId
 
-            target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .appExtension,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["App/WidgetExtension/Sources/**"],
-                                   resources: ["App/WidgetExtension/Resources/**"], dependencies: dependencies,
-                                   settings: .settings(),
-                                   environmentVariables: environmentVariables,
-                                   launchArguments: launchArguments)
-            
-            scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
+            target = .target(name: name,
+                             destinations: destinations,
+                             product: .appExtension,
+                             productName: name,
+                             bundleId: bundleId,
+                             deploymentTargets: deploymentTargets,
+                             infoPlist: .extendingDefault(with: infoPlist),
+                             sources: ["App/WidgetExtension/Sources/**"],
+                             resources: ["App/WidgetExtension/Resources/**"],
+                             dependencies: dependencies,
+                             settings: .settings(),
+                             environmentVariables: environmentVariables,
+                             launchArguments: launchArguments)
+
+            scheme = .scheme(name: name,
+                             shared: true,
+                             hidden: true,
+                             buildAction: .buildAction(targets: ["\(name)"]),
+                             runAction: .runAction(configuration: .dev),
+                             archiveAction: .archiveAction(configuration: .dev),
+                             profileAction: .profileAction(configuration: .dev),
+                             analyzeAction: .analyzeAction(configuration: .dev))
         }
     }
 }

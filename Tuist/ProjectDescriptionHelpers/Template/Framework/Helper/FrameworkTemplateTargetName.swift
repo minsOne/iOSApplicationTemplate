@@ -1,17 +1,6 @@
+import Foundation
+
 struct FrameworkTemplateTargetName {
-    struct Framework {
-        let module: String
-        let testing: String
-        let demoApp: String
-        let unitTests: String
-        let widgetExtension: String
-    }
-
-    struct UI {
-        let module: String
-        let preview: String
-    }
-
     let framework: Framework
     let ui: UI
     let internalDTO: String
@@ -31,5 +20,20 @@ struct FrameworkTemplateTargetName {
         )
         internalDTO = "\(name)InternalDTO"
         project = name
+    }
+}
+
+extension FrameworkTemplateTargetName {
+    struct Framework {
+        let module: String
+        let testing: String
+        let demoApp: String
+        let unitTests: String
+        let widgetExtension: String
+    }
+
+    struct UI {
+        let module: String
+        let preview: String
     }
 }

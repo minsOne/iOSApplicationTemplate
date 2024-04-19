@@ -16,29 +16,30 @@ extension Generator.UI {
              destinations: Destinations = .iOS,
              deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
-             dependencies: [TargetDependency] = []) {
+             dependencies: [TargetDependency] = [])
+        {
             let bundleId = BundleIdGenerator().generate(name: name)
 
-            target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .staticLibrary,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["Sources/UI/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings())
+            target = .target(name: name,
+                             destinations: destinations,
+                             product: .staticLibrary,
+                             productName: name,
+                             bundleId: bundleId,
+                             deploymentTargets: deploymentTargets,
+                             infoPlist: .extendingDefault(with: infoPlist),
+                             sources: ["Sources/UI/**"],
+                             dependencies: dependencies,
+                             settings: .settings())
 
-            scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: nil,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
+            scheme = .scheme(name: name,
+                             shared: true,
+                             hidden: true,
+                             buildAction: .buildAction(targets: ["\(name)"]),
+                             testAction: nil,
+                             runAction: .runAction(configuration: .dev),
+                             archiveAction: .archiveAction(configuration: .dev),
+                             profileAction: .profileAction(configuration: .dev),
+                             analyzeAction: .analyzeAction(configuration: .dev))
         }
     }
 
@@ -50,28 +51,29 @@ extension Generator.UI {
              destinations: Destinations = .iOS,
              deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
-             dependencies: [TargetDependency] = []) {
+             dependencies: [TargetDependency] = [])
+        {
             let bundleId = BundleIdGenerator().generate(name: name)
 
-            target = Target.target(name: name,
-                                   destinations: destinations,
-                                   product: .framework,
-                                   productName: name,
-                                   bundleId: bundleId,
-                                   deploymentTargets: deploymentTargets,
-                                   infoPlist: .extendingDefault(with: infoPlist),
-                                   sources: ["UIPreview/**"],
-                                   dependencies: dependencies,
-                                   settings: .settings())
-            scheme = Scheme.scheme(name: name,
-                                   shared: true,
-                                   hidden: true,
-                                   buildAction: .buildAction(targets: ["\(name)"]),
-                                   testAction: nil,
-                                   runAction: .runAction(configuration: .dev),
-                                   archiveAction: .archiveAction(configuration: .dev),
-                                   profileAction: .profileAction(configuration: .dev),
-                                   analyzeAction: .analyzeAction(configuration: .dev))
+            target = .target(name: name,
+                             destinations: destinations,
+                             product: .framework,
+                             productName: name,
+                             bundleId: bundleId,
+                             deploymentTargets: deploymentTargets,
+                             infoPlist: .extendingDefault(with: infoPlist),
+                             sources: ["UIPreview/**"],
+                             dependencies: dependencies,
+                             settings: .settings())
+            scheme = .scheme(name: name,
+                             shared: true,
+                             hidden: true,
+                             buildAction: .buildAction(targets: ["\(name)"]),
+                             testAction: nil,
+                             runAction: .runAction(configuration: .dev),
+                             archiveAction: .archiveAction(configuration: .dev),
+                             profileAction: .profileAction(configuration: .dev),
+                             analyzeAction: .analyzeAction(configuration: .dev))
         }
     }
 }

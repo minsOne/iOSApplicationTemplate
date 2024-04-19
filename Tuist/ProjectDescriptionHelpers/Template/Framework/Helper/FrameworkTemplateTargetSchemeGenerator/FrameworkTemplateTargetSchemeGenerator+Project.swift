@@ -11,7 +11,8 @@ extension Generator {
              packages: [Package] = [],
              targets: [Target],
              schemes: [Scheme],
-             packageName: String?) {
+             packageName: String?)
+        {
             var baseSettings: SettingsDictionary = [
                 "CODE_SIGN_IDENTITY": "",
                 "CODE_SIGNING_REQUIRED": "NO",
@@ -21,7 +22,7 @@ extension Generator {
                                          forKey: "SWIFT_PACKAGE_NAME")
             }
 
-            project = ProjectDescription.Project(
+            project = .init(
                 name: name,
                 organizationName: AppInfo.organizationName,
                 options: .options(
