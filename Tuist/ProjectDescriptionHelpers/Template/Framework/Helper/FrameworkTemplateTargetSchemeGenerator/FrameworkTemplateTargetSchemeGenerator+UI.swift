@@ -14,7 +14,7 @@ extension Generator.UI {
 
         init(name: String,
              destinations: Destinations = .iOS,
-             deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
+             deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
              dependencies: [TargetDependency] = [])
         {
@@ -49,7 +49,7 @@ extension Generator.UI {
 
         init(name: String,
              destinations: Destinations = .iOS,
-             deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
+             deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
              dependencies: [TargetDependency] = [])
         {

@@ -10,7 +10,7 @@ extension Generator.Framework {
 
         init(name: String,
              destinations: Destinations = .iOS,
-             deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
+             deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
              infoPlist: [String: Plist.Value] = [:],
              dependencies: [TargetDependency] = [],
              bundleId: String? = nil,
@@ -18,7 +18,7 @@ extension Generator.Framework {
              launchArguments: [LaunchArgument] = [],
              unitTestName: String? = nil)
         {
-            let bundleId = bundleId ?? BundleIdGenerator().defaultDemoAppBundleId
+            let bundleId = bundleId ?? FrameworkTemplate.DefaultValue.BundleID.demoApp
             var testAction: TestAction?
             if let unitTestName {
                 testAction = .targets(["\(unitTestName)"],

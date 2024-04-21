@@ -16,6 +16,10 @@ public extension Template {
     enum DefaultValue {
         public enum Settings {}
         public enum Plist {}
+        public enum BundleID {}
+
+        public static let organizationName = "minsone"
+        public static let deploymentTargets = DeploymentTargets.iOS("14.0")
     }
 }
 
@@ -27,8 +31,13 @@ public extension Template.DefaultValue.Settings {
 }
 
 public extension Template.DefaultValue.Plist {
-    static let demoApp: [String: Plist.Value] = [
+    static let app: [String: Plist.Value] = [
         "UIMainStoryboardFile": "",
         "UILaunchStoryboardName": "LaunchScreen",
     ]
+}
+
+public extension Template.DefaultValue.BundleID {
+    static let demoApp = "kr.minsone.example.demoApp"
+    static let widgetExtension = "kr.minsone.example.demoApp.widgetExtension"
 }

@@ -26,16 +26,12 @@ extension TemplateDTO.Framework {
                 : [.target(name: info.name.framework.module)]
             let bundleId = demoAppConfigure.bundleId
             let unitTestsName = info.hasUnitTests ? info.name.framework.unitTests : nil
-            let infoPlist: [String: Plist.Value] = [
-                "UIMainStoryboardFile": "",
-                "UILaunchStoryboardName": "LaunchScreen",
-            ]
 
             let demoApp = Generator.Framework.DemoApp(
                 name: info.name.framework.demoApp,
                 destinations: info.destinations,
                 deploymentTargets: info.deploymentTargets,
-                infoPlist: infoPlist,
+                infoPlist: FrameworkTemplate.DefaultValue.Plist.app,
                 dependencies: dependencies,
                 bundleId: bundleId,
                 unitTestName: unitTestsName

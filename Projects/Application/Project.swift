@@ -1,20 +1,20 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-struct ProductName {
+enum ProductName {
     static let releaseApp = "iOS_App"
     static let devApp = "iOS_DevApp"
     static let unitTest = "iOS_UnitTests"
 }
 
 let settings: Settings =
-    .settings(base: ["CODE_SIGN_IDENTITY": "",
-                     "CODE_SIGNING_REQUIRED": "NO"],
+    .settings(base: FrameworkTemplate.DefaultValue.Settings.project,
               configurations: [
                   .debug(name: .dev, xcconfig: XCConfig.Application.devApp(.dev)),
                   .debug(name: .test, xcconfig: XCConfig.Application.devApp(.test)),
-                  .release(name: .stage, xcconfig: XCConfig.Application.devApp(.stage)),
-                  .release(name: .prod, xcconfig: XCConfig.Application.devApp(.prod)),
+                  .release(name: .qa, xcconfig: XCConfig.Application.devApp(.qa)),
+                  .release(name: .stage, xcconfig: XCConfig.Application.app(.stage)),
+                  .release(name: .prod, xcconfig: XCConfig.Application.app(.prod)),
               ])
 
 let scripts: [TargetScript] = [
@@ -28,13 +28,12 @@ let targets: [Target] = [
             product: .app,
             productName: ProductName.releaseApp,
             bundleId: "kr.minsone.app",
-            deploymentTargets: AppInfo.deploymentTargets,
-            infoPlist: .extendingDefault(with: [
-                "UIMainStoryboardFile": "",
-                "UILaunchStoryboardName": "LaunchScreen",
-            ]),
-            sources: [.glob("Sources/**/*.swift", excluding: "Sources/Dev/**")],
-            resources: [.glob(pattern: "Resources/**", excluding: ["Resources/Dev/**"])],
+            deploymentTargets: FrameworkTemplate.DefaultValue.deploymentTargets,
+            infoPlist: .extendingDefault(with: FrameworkTemplate.DefaultValue.Plist.app),
+            sources: [.glob("Sources/**/*.swift",
+                            excluding: "Sources/Dev/**")],
+            resources: [.glob(pattern: "Resources/**",
+                              excluding: ["Resources/Dev/**"])],
             scripts: scripts,
             dependencies: [
                 .Project.Feature.Features,
@@ -44,11 +43,8 @@ let targets: [Target] = [
             product: .app,
             productName: ProductName.releaseApp,
             bundleId: "kr.minsone.devApp",
-            deploymentTargets: AppInfo.deploymentTargets,
-            infoPlist: .extendingDefault(with: [
-                "UIMainStoryboardFile": "",
-                "UILaunchStoryboardName": "LaunchScreen",
-            ]),
+            deploymentTargets: FrameworkTemplate.DefaultValue.deploymentTargets,
+            infoPlist: .extendingDefault(with: FrameworkTemplate.DefaultValue.Plist.app),
             sources: ["Sources/**"],
             resources: ["Resources/**"],
             scripts: scripts,
@@ -60,7 +56,7 @@ let targets: [Target] = [
             destinations: .iOS,
             product: .unitTests,
             bundleId: "kr.minsone.devAppUnitTests",
-            deploymentTargets: AppInfo.deploymentTargets,
+            deploymentTargets: FrameworkTemplate.DefaultValue.deploymentTargets,
             infoPlist: .default,
             sources: "Tests/**",
             dependencies: [
@@ -95,7 +91,7 @@ let schemes: [Scheme] = [
 
 let project: Project =
     .init(name: "Application",
-          organizationName: AppInfo.organizationName,
+          organizationName: FrameworkTemplate.DefaultValue.organizationName,
           settings: settings,
           targets: targets,
           schemes: schemes)

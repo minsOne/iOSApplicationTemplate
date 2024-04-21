@@ -17,7 +17,7 @@ extension Generator.Framework {
              environmentVariables: [String: EnvironmentVariable] = [:],
              launchArguments: [LaunchArgument] = [])
         {
-            let bundleId = bundleId ?? BundleIdGenerator().defaultWidgetExtensionBundleId
+            let bundleId = bundleId ?? FrameworkTemplate.DefaultValue.BundleID.widgetExtension
 
             target = .target(name: name,
                              destinations: destinations,

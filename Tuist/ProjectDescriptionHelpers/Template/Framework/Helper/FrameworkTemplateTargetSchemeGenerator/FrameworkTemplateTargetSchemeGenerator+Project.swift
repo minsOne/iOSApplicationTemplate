@@ -24,7 +24,7 @@ extension Generator {
 
             project = .init(
                 name: name,
-                organizationName: AppInfo.organizationName,
+                organizationName: FrameworkTemplate.DefaultValue.organizationName,
                 options: .options(
                     automaticSchemesOptions: .disabled,
                     disableBundleAccessors: true,

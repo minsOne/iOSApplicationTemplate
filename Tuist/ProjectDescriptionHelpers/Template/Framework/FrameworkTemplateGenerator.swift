@@ -13,7 +13,7 @@ public struct FrameworkTemplate {
 
     public init(name: String,
                 destinations: Destinations = .iOS,
-                deploymentTargets: DeploymentTargets = AppInfo.deploymentTargets,
+                deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
                 target: [Target] = [],
                 packages: [Package] = [],
                 dependencies: [TargetDependency] = [],
