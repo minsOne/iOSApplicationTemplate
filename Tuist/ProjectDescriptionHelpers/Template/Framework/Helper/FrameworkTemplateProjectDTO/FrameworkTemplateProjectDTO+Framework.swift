@@ -31,6 +31,7 @@ extension TemplateDTO {
             let hasDemoApp = info.targets.hasDemoApp
             let hasUnitTests = info.targets.hasUnitTests
             let hasWidgetExtension = info.targets.hasWidgetExtension
+            let widgetDeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets
 
             Module(
                 info: .init(name: info.name,
@@ -79,7 +80,7 @@ extension TemplateDTO {
                     info: .init(name: info.name,
                                 hasDemoApp: true,
                                 destinations: info.destinations,
-                                deploymentTargets: .iOS("14.0"))))
+                                deploymentTargets: widgetDeploymentTargets)))
                 ||> { update(target: $0.target, scheme: $0.scheme) }
         }
 

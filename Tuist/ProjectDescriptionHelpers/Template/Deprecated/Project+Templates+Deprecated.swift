@@ -50,7 +50,7 @@ public extension Project {
                                   packages: [Package] = [],
                                   product: Product,
                                   platform _: Platform = .iOS,
-                                  deploymentTarget: DeploymentTargets? = .iOS("13.0"),
+                                  deploymentTarget: DeploymentTargets? = FrameworkTemplate.DefaultValue.deploymentTargets,
                                   dependencies: [TargetDependency] = [],
                                   infoPlist: [String: Plist.Value] = [:],
                                   hasDemoApp: Bool = false) -> Project

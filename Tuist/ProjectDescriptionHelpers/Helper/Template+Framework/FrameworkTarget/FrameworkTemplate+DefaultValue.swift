@@ -19,7 +19,7 @@ public extension Template {
         public enum BundleID {}
 
         public static let organizationName = "minsone"
-        public static let deploymentTargets = DeploymentTargets.iOS("14.0")
+        public static let deploymentTargets = DeploymentTargets.iOS("15.0")
     }
 }
 
