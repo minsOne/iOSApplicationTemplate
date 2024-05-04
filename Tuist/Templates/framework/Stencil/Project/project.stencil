@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project.framework(
+let project = FrameworkTemplate(
     name: "{{ name }}",
     target: [
         .framework([.module(.static), .testing, .demoApp, .unitTests]),
@@ -10,4 +10,4 @@ let project = Project.framework(
     ],
     dependencies: [],
     uiDependencies: []
-)
+).project
