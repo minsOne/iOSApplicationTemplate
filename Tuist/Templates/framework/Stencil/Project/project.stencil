@@ -5,7 +5,7 @@ let project = Project.framework(
     name: "{{ name }}",
     target: [
         .framework([.module(.static), .testing, .demoApp, .unitTests]),
-        .ui([.ui, .preview]),
+        .ui([.ui, .previewApp]),
         .internalDTO,
     ],
     dependencies: [],

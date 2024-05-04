@@ -42,6 +42,10 @@ extension FrameworkTemplate.Target.UI {
     var hasPreview: Bool {
         self == .preview
     }
+    
+    var hasPreviewApp: Bool {
+        self == .previewApp
+    }
 }
 
 public extension [FrameworkTemplate.Target] {
@@ -90,5 +94,9 @@ public extension [FrameworkTemplate.Target.UI] {
 
     var hasUIPreview: Bool {
         contains(where: \.hasPreview)
+    }
+    
+    var hasUIPreviewApp: Bool {
+        contains(where: \.hasPreviewApp)
     }
 }

@@ -23,7 +23,7 @@ public extension Template.Target {
     }
 
     enum UI: Hashable {
-        case ui, preview
+        case ui, preview, previewApp
     }
 }
 

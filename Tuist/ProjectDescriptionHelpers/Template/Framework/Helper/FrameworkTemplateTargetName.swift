@@ -16,7 +16,8 @@ struct FrameworkTemplateTargetName {
         )
         ui = .init(
             module: "\(name)UI",
-            preview: "\(name)UIPreview"
+            uiPreview: "\(name)UIPreview",
+            uiPreviewApp: "\(name)UIPreviewApp"
         )
         internalDTO = "\(name)InternalDTO"
         project = name
@@ -34,6 +35,7 @@ extension FrameworkTemplateTargetName {
 
     struct UI {
         let module: String
-        let preview: String
+        let uiPreview: String
+        let uiPreviewApp: String
     }
 }

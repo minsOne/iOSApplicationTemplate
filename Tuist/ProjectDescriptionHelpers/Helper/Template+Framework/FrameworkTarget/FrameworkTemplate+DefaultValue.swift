@@ -39,5 +39,6 @@ public extension Template.DefaultValue.Plist {
 
 public extension Template.DefaultValue.BundleID {
     static let demoApp = "kr.minsone.example.demoApp"
+    static let uiPreviewApp = "kr.minsone.example.uiPreviewApp"
     static let widgetExtension = "kr.minsone.example.demoApp.widgetExtension"
 }

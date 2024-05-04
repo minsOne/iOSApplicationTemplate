@@ -27,7 +27,8 @@ extension TemplateDTO {
                 return nil
             }
 
-            let hasUIPreview = info.targets.contains(where: \.hasPreview)
+            let hasUIPreview = info.targets.hasUIPreview
+            let hasUIPreviewApp = info.targets.hasUIPreviewApp
 
             Module(
                 info: .init(
@@ -40,7 +41,18 @@ extension TemplateDTO {
                 |> { update(target: $0.target, scheme: $0.scheme) }
 
             (hasUIPreview
-                ?> Preview(
+                ?> UIPreview(
+                    info: .init(
+                        name: info.name,
+                        destinations: info.destinations,
+                        deploymentTargets: info.deploymentTargets,
+                        previewDependencies: info.previewDependencies
+                    )
+                ))
+                ||> { update(target: $0.target, scheme: $0.scheme) }
+
+            (hasUIPreviewApp
+                ?> UIPreviewApp(
                     info: .init(
                         name: info.name,
                         destinations: info.destinations,
@@ -88,7 +100,7 @@ private extension FrameworkTemplateProjectDTO.UI {
         }
     }
 
-    struct Preview {
+    struct UIPreview {
         struct Info {
             let name: FrameworkTemplateTargetName
             let destinations: Destinations
@@ -103,7 +115,32 @@ private extension FrameworkTemplateProjectDTO.UI {
             let dependencies = info.previewDependencies + [.target(name: info.name.ui.module)]
 
             let preview = Generator.UI.UIPreview(
-                name: info.name.ui.preview,
+                name: info.name.ui.uiPreview,
+                destinations: info.destinations,
+                deploymentTargets: info.deploymentTargets,
+                dependencies: dependencies
+            )
+            target = preview.target
+            scheme = preview.scheme
+        }
+    }
+
+    struct UIPreviewApp {
+        struct Info {
+            let name: FrameworkTemplateTargetName
+            let destinations: Destinations
+            let deploymentTargets: DeploymentTargets
+            let previewDependencies: [TargetDependency]
+        }
+
+        let target: Target
+        let scheme: Scheme
+
+        init(info: Info) {
+            let dependencies = info.previewDependencies + [.target(name: info.name.ui.module)]
+
+            let preview = Generator.UI.UIPreviewApp(
+                name: info.name.ui.uiPreview,
                 destinations: info.destinations,
                 deploymentTargets: info.deploymentTargets,
                 dependencies: dependencies

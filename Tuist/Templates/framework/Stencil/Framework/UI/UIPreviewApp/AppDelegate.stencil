@@ -1,0 +1,19 @@
+import Foundation
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+
+    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        guard ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] != 1 else { return true }
+    
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = .white
+        viewController.title = "{{ name }}"
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
+        return true
+    }
+}

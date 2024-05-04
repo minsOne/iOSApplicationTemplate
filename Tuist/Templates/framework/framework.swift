@@ -51,6 +51,20 @@ let template = Template(
             path: "\(nameAttribute)/UIPreview/File.swift",
             contents: ""
         ),
+        
+        // MARK: - UIPreviewApp
+        .file(
+            path: "\(nameAttribute)/App/UIPreviewApp/Sources/AppDelegate.swift",
+            templatePath: "Stencil/Framework/UI/UIPreviewApp/AppDelegate.stencil"
+        ),
+        .file(
+            path: "\(nameAttribute)/App/UIPreviewApp/Resources/LaunchScreen.storyboard",
+            templatePath: "Stencil/Framework/UI/UIPreviewApp/LaunchScreen.stencil"
+        ),
+        .directory(
+            path: "\(nameAttribute)/App/UIPreviewApp/Resources/Assets.xcassets",
+            sourcePath: "Stencil/Framework/UI/UIPreviewApp/Assets.xcassets"
+        ),
 
         // MARK: - InternalDTO
         .string(
