@@ -6,8 +6,8 @@ public extension Dep.Project.Feature {
 }
 
 public extension Dep.Project.Feature.Settings {
-    static let UserInterface = Dep.feature(name: "FeatureSettingsUserInterface", path: "FeatureSettings/UserInterface")
-    static let Domain = Dep.feature(name: "FeatureSettingsDomain", path: "FeatureSettings/Domain")
-    static let DataRepository = Dep.feature(name: "FeatureSettingsDataRepository", path: "FeatureSettings/DataRepository")
+    static let UserInterface = Dep.feature(name: "FeatureSettingsUserInterface", path: "Settings/FeatureSettings/UserInterface")
+    static let Domain = Dep.feature(name: "FeatureSettingsDomain", path: "Settings/FeatureSettings/Domain")
+    static let DataRepository = Dep.feature(name: "FeatureSettingsDataRepository", path: "Settings/FeatureSettings/DataRepository")
     static let Pacakge: [Dep] = [UserInterface, Domain, DataRepository]
 }
