@@ -76,6 +76,11 @@ public struct FrameworkTemplate {
                 schemeList.append($0.scheme)
             }
 
+        let packages = [
+            packages,
+            [.Test.MockingKit]
+        ].flatMap { $0 }
+
         project = Generator.Project(
             info: .init(
                 name: name.project,
