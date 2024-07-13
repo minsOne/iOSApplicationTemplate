@@ -37,6 +37,7 @@ extension Generator {
                     configurations: [
                         .debug(name: .dev, xcconfig: .moduleXCConfig(type: .dev)),
                         .debug(name: .test, xcconfig: .moduleXCConfig(type: .test)),
+                        .release(name: .qa, xcconfig: .moduleXCConfig(type: .qa)),
                         .release(name: .stage, xcconfig: .moduleXCConfig(type: .stage)),
                         .release(name: .prod, xcconfig: .moduleXCConfig(type: .prod)),
                     ]
