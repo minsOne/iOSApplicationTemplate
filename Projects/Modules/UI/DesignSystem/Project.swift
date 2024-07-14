@@ -6,12 +6,15 @@ let project = Project
         name: "DesignSystem",
         packages: [
             .UserInterface.ResourcePackage,
+            .FlexLayout,
+            .PinLayout,
+            .SnapKit,
         ],
         dependencies: [
             .SwiftPM.UserInterface.ResourcePackage,
-            .Framework.FlexLayout,
-            .Framework.PinLayout,
-            .Framework.SnapKit,
+            .SwiftPM.FlexLayout,
+            .SwiftPM.PinLayout,
+            .SwiftPM.SnapKit,
         ],
         hasDemoApp: true
     )

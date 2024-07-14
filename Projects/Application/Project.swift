@@ -61,8 +61,6 @@ let targets: [Target] = [
             sources: "Tests/**",
             dependencies: [
                 .target(name: ProductName.devApp),
-                .Carthage.Quick,
-                .Carthage.Nimble,
             ]),
 ]
 

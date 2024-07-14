@@ -23,7 +23,7 @@ public extension Project {
     {
         deprecatedProject(name: name,
                           packages: packages,
-                          product: .staticFramework,
+                          product: .staticLibrary,
                           platform: platform,
                           dependencies: dependencies,
                           hasDemoApp: hasDemoApp)

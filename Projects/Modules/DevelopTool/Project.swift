@@ -7,11 +7,12 @@ let project = Project
         packages: [
             .DevelopTool.OHHTTPStubs,
             .DevelopTool.ProxyNetworkStubPackage,
+            .DevelopTool.FLEX,
         ],
         dependencies: [
             .SwiftPM.DevelopTool.OHHTTPStubs,
             .SwiftPM.DevelopTool.OHHTTPStubsSwift,
             .SwiftPM.DevelopTool.ProxyNetworkStubPackage,
-            .Carthage.FLEX,
+            .SwiftPM.DevelopTool.FLEX,
         ]
     )
