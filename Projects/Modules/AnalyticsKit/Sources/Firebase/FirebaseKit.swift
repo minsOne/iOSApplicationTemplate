@@ -6,9 +6,10 @@
 //  Copyright © 2021 minsone. All rights reserved.
 //
 
+import FirebaseAnalytics
+import FirebaseCore
 import Foundation
 import ThirdPartyLibraryManager
-import Firebase
 import UIKit
 
 public extension Logger {

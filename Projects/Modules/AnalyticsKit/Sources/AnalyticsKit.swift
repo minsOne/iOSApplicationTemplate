@@ -1,5 +1,5 @@
 import Foundation
 import ThirdPartyLibraryManager
-import Firebase
+import FirebaseAnalytics
 
 public class Logger {}

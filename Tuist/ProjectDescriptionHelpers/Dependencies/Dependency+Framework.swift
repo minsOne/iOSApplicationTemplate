@@ -17,15 +17,13 @@ public extension Dep.Framework {
     static let Firebase: [Dep] = [
         .firebase(name: "nanopb"),
         .firebase(name: "GoogleUtilities"),
-        .firebase(name: "GoogleDataTransportCCTSupport"),
-        .firebase(name: "GoogleDataTransport"),
+        .firebase(name: "GoogleAppMeasurementIdentitySupport"),
         .firebase(name: "GoogleAppMeasurement"),
-        .firebase(name: "FirebaseCoreDiagnostics"),
-        .firebase(name: "FirebaseInstanceID"),
+        .firebase(name: "FirebaseInstallations"),
+        .firebase(name: "FirebaseCoreInternal"),
         .firebase(name: "FirebaseCore"),
         .firebase(name: "FirebaseAnalytics"),
-        .firebase(name: "Firebase"),
-        .firebase(name: "FIRAnalyticsConnector"),
+        .firebase(name: "FBLPromises"),
     ]
     static let Facebook: [Dep] = [
         .facebook(name: "FBSDKShareKit"),
@@ -41,7 +39,7 @@ public extension Dep.Framework {
 
 public extension Dep {
     static func firebase(name: String) -> Self {
-        return .framework(path: .relativeToRoot("Vendor/Firebase/\(name).framework"))
+        return .xcframework(path: .relativeToRoot("Vendor/Firebase/\(name).xcframework"))
     }
     static func facebook(name: String) -> Self {
         return .xcframework(path: .relativeToRoot("Vendor/Facebook/\(name).xcframework"))
