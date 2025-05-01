@@ -117,7 +117,11 @@ public extension Project {
                        packages: packages,
                        settings: settings,
                        targets: targets,
-                       schemes: schemes)
+                       schemes: schemes,
+                       additionalFiles: [
+                           .glob(pattern: "README.md"),
+                           .glob(pattern: "Project.swift")
+                       ])
     }
 }
 

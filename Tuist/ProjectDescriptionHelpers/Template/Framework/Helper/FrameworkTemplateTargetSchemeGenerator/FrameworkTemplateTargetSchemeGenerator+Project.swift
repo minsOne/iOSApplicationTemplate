@@ -47,6 +47,7 @@ extension Generator {
                 fileHeaderTemplate: nil,
                 additionalFiles: [
                     .glob(pattern: "README.md"),
+                    .glob(pattern: "Project.swift"),
                 ]
             )
         }
