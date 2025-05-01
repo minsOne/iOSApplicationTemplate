@@ -1,20 +1,23 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedFramework(
-        name: "DesignSystem",
-        packages: [
-            .UserInterface.ResourcePackage,
-            .FlexLayout,
-            .PinLayout,
-            .SnapKit,
-        ],
-        dependencies: [
+let project = FrameworkTemplate(
+    name: "DesignSystem",
+    target: [
+        .framework([.module(.static)]),
+    ],
+    packages: [
+        .UserInterface.ResourcePackage,
+        .FlexLayout,
+        .PinLayout,
+        .SnapKit,
+    ],
+    configure: .init(
+        framework: .init(dependency: [
             .SwiftPM.UserInterface.ResourcePackage,
             .SwiftPM.FlexLayout,
             .SwiftPM.PinLayout,
             .SwiftPM.SnapKit,
-        ],
-        hasDemoApp: true
+        ])
     )
+).project

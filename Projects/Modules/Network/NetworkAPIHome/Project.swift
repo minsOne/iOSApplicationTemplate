@@ -1,10 +1,14 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedStaticFramework(
-        name: "NetworkAPIHome",
-        dependencies: [
+let project = FrameworkTemplate(
+    name: "NetworkAPIHome",
+    target: [
+        .framework([.module(.static)]),
+    ],
+    configure: .init(
+        framework: .init(dependency: [
             .Project.Network.APIKit,
-        ]
+        ])
     )
+).project

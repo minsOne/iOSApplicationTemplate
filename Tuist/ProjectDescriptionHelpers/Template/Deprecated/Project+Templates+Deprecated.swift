@@ -1,50 +1,6 @@
 import ProjectDescription
 
-public extension Project {
-    static func deprecatedStaticLibrary(name: String,
-                                        platform: Platform = .iOS,
-                                        packages: [Package] = [],
-                                        dependencies: [TargetDependency] = [],
-                                        hasDemoApp: Bool = false) -> Self
-    {
-        deprecatedProject(name: name,
-                          packages: packages,
-                          product: .staticLibrary,
-                          platform: platform,
-                          dependencies: dependencies,
-                          hasDemoApp: hasDemoApp)
-    }
-
-    static func deprecatedStaticFramework(name: String,
-                                          platform: Platform = .iOS,
-                                          packages: [Package] = [],
-                                          dependencies: [TargetDependency] = [],
-                                          hasDemoApp: Bool = false) -> Self
-    {
-        deprecatedProject(name: name,
-                          packages: packages,
-                          product: .staticLibrary,
-                          platform: platform,
-                          dependencies: dependencies,
-                          hasDemoApp: hasDemoApp)
-    }
-
-    static func deprecatedFramework(name: String,
-                                    platform: Platform = .iOS,
-                                    packages: [Package] = [],
-                                    dependencies: [TargetDependency] = [],
-                                    hasDemoApp: Bool = false) -> Self
-    {
-        deprecatedProject(name: name,
-                          packages: packages,
-                          product: .framework,
-                          platform: platform,
-                          dependencies: dependencies,
-                          hasDemoApp: hasDemoApp)
-    }
-}       
-
-public extension Project {
+private extension Project {
     static func deprecatedProject(name: String,
                                   organizationName _: String = "minsone",
                                   packages: [Package] = [],

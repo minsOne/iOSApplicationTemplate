@@ -1,0 +1,33 @@
+{
+  "originHash" : "7d6a036eccfbe59fcfc2bb461298bbe58cf6f2d8dc8144730d06487b3fd3787b",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9b5bd5be3c2d451006ca16b286cf1ed30f434b9c"
+      }
+    },
+    {
+      "identity" : "ribs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uber/RIBs.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d2711d8e690cd6ede2f92a465cbc9d4135a30c96"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "b06a8c8596e4c3e8e7788e08e720e3248563ce6a",
+        "version" : "6.7.1"
+      }
+    }
+  ],
+  "version" : 3
+}

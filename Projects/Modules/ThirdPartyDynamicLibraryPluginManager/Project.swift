@@ -1,11 +1,15 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedStaticFramework(
-        name: "ThirdPartyDynamicLibraryPluginManager",
-        dependencies: [
-            [.Project.Module.ThirdPartyLibraryManager],
-            TargetDependency.Framework.Facebook,
-        ].flatMap { $0 }
+let project = FrameworkTemplate(
+    name: "ThirdPartyDynamicLibraryPluginManager",
+    target: [
+        .framework([.module(.static)]),
+    ],
+    configure: .init(
+        framework: .init(dependency: [
+            .Project.Module.ThirdPartyLibraryManager
+        ] + TargetDependency.Framework.Facebook
+        )
     )
+).project

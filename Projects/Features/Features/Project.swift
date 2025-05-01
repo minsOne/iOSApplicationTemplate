@@ -1,10 +1,9 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedFramework(
-        name: "Features",
-        dependencies: [
-            
-        ]
-    )
+let project = FrameworkTemplate(
+    name: "Features",
+    target: [
+        .framework([.module(.dynamic)]),
+    ]
+).project

@@ -1,5 +1,9 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedFramework(name: "UIThirdPartyLibraryManager")
+let project = FrameworkTemplate(
+    name: "UIThirdPartyLibraryManager",
+    target: [
+        .framework([.module(.static)]),
+    ]
+).project

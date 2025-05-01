@@ -1,11 +1,14 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedStaticFramework(
-        name: "FeatureBaseDependencyUserInterface",
-        dependencies: [
+let project = FrameworkTemplate(
+    name: "FeatureBaseDependencyUserInterface",
+    target: [
+        .framework([.module(.static)]),
+    ],
+    configure: .init(
+        framework: .init(dependency: [
             .Project.UserInterface.DesignSystem,
-        ],
-        hasDemoApp: true
+        ])
     )
+).project

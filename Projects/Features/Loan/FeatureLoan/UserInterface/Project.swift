@@ -1,10 +1,14 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedStaticFramework(
-        name: "FeatureLoanUserInterface",
-        dependencies: [
+let project = FrameworkTemplate(
+    name: "FeatureLoanUserInterface",
+    target: [
+        .framework([.module(.static)]),
+    ],
+    configure: .init(
+        framework: .init(dependency: [
             .Project.Feature.BaseDependency.UserInterface,
-        ]
+        ])
     )
+).project

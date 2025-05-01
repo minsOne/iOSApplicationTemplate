@@ -1,11 +1,15 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let project = Project
-    .deprecatedStaticFramework(
-        name: "FeatureMainDataRepository",
-        dependencies: [
+let project = FrameworkTemplate(
+    name: "FeatureMainDataRepository",
+    target: [
+        .framework([.module(.static)]),
+    ],
+    configure: .init(
+        framework: .init(dependency: [
             .Project.Feature.BaseDependency.DataRepository,
             .Project.Feature.Main.Domain,
-        ]
+        ])
     )
+).project
