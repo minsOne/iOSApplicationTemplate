@@ -17,7 +17,7 @@ extension TemplateDTO.Framework {
         let scheme: Scheme
 
         init(info: Info) {
-            var dependencies = info.configure.framework.testing.dependency
+            var dependencies = info.configure.testing.dependency
             dependencies.append(.target(name: info.name.framework.module))
 
             let testing = Generator.Framework.Testing(

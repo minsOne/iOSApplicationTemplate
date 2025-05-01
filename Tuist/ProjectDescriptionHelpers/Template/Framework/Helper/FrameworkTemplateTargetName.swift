@@ -5,6 +5,8 @@ struct FrameworkTemplateTargetName {
     let ui: UI
     let internalDTO: String
     let project: String
+    let interface: String
+    let mock: String
 
     init(_ name: String) {
         framework = .init(
@@ -20,6 +22,8 @@ struct FrameworkTemplateTargetName {
             uiPreviewApp: "\(name)UIPreviewApp"
         )
         internalDTO = "\(name)InternalDTO"
+        interface = "\(name)Interface"
+        mock = "\(name)Mock"
         project = name
     }
 }

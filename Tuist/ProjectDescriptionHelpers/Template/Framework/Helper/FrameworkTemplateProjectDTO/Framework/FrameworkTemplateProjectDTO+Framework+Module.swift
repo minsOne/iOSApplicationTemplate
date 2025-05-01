@@ -9,6 +9,7 @@ extension TemplateDTO.Framework {
         struct Info {
             let name: FrameworkTemplateTargetName
             let macho: FrameworkTemplate.Target.Framework.MachO
+            let hasInterface: Bool
             let hasUnitTests: Bool
             let hasInternalDTO: Bool
             let hasUI: Bool
@@ -27,11 +28,14 @@ extension TemplateDTO.Framework {
             case .dynamic: .dynamic
             case .static: .static
             }
-            let isHiddenScheme = info.configure.framework.module.isHiddenScheme
+            let isHiddenScheme = info.configure.framework.isHiddenScheme
             let unitTestsName = info.hasUnitTests ? info.name.framework.unitTests : nil
             let needResources = info.needResources
 
             var dependencies = info.dependencies
+            if info.hasInterface {
+                dependencies.append(.target(name: info.name.interface))
+            }
             if info.hasUI {
                 dependencies.append(.target(name: info.name.ui.module))
             }

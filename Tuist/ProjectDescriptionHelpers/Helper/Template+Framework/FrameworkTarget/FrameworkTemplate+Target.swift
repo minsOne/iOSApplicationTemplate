@@ -7,9 +7,11 @@ private typealias Template = FrameworkTemplate
 
 public extension Template {
     enum Target: Hashable {
+        case interface
         case framework([Framework])
         case ui([UI])
         case internalDTO
+        case mock
     }
 }
 
@@ -44,5 +46,13 @@ extension FrameworkTemplate.Target {
 
     var hasInternalDTO: Bool {
         self == .internalDTO
+    }
+
+    var hasInterface: Bool {
+        self == .interface
+    }
+
+    var hasMock: Bool {
+        self == .mock
     }
 }

@@ -6,7 +6,8 @@ let project = FrameworkTemplate(
     target: [
         .framework([.module(.static)]),
     ],
-    dependencies: [
-        .Project.Module.Foundation.Container,
-    ]
+    configure: .init(
+        framework: .init(dependency: [
+            .Project.Module.Foundation.Container,
+        ]))
 ).project

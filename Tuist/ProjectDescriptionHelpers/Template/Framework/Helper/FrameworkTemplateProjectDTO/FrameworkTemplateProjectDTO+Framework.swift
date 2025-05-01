@@ -9,14 +9,13 @@ extension TemplateDTO {
     struct Framework {
         struct Info {
             let name: FrameworkTemplateTargetName
+            let hasInterface: Bool
             let hasInternalDTO: Bool
             let hasUI: Bool
             let targets: [FrameworkTemplate.Target.Framework]
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
             let configure: FrameworkTemplate.TargetConfigure
-            let dependencies: [TargetDependency]
-            let needResources: Bool
         }
 
         private(set) var targets: [Target] = []
@@ -36,14 +35,15 @@ extension TemplateDTO {
             Module(
                 info: .init(name: info.name,
                             macho: macho,
+                            hasInterface: info.hasInterface,
                             hasUnitTests: hasUnitTests,
                             hasInternalDTO: info.hasInternalDTO,
                             hasUI: info.hasUI,
                             destinations: info.destinations,
                             deploymentTargets: info.deploymentTargets,
                             configure: info.configure,
-                            dependencies: info.dependencies,
-                            needResources: info.needResources))
+                            dependencies: info.configure.framework.dependency,
+                            needResources: info.configure.framework.needResources))
                 |> { update(target: $0.target, scheme: $0.scheme) }
 
             (hasTesting

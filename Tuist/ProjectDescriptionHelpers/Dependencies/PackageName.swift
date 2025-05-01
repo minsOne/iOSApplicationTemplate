@@ -1,6 +1,6 @@
 import Foundation
 
-public struct PackageName: ExpressibleByStringLiteral {
+public struct PackageName: Sendable, ExpressibleByStringLiteral {
     public let name: String
     
     public init(stringLiteral value: StringLiteralType) {

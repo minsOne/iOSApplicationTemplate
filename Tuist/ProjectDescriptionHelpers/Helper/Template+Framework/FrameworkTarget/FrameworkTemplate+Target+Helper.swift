@@ -62,6 +62,14 @@ public extension [FrameworkTemplate.Target] {
     var hasInternalDTO: Bool {
         contains(where: \.hasInternalDTO)
     }
+    
+    var hasInterface: Bool {
+        contains(where: \.hasInterface)
+    }
+    
+    var hasMock: Bool {
+        contains(where: \.hasMock)
+    }
 }
 
 public extension [FrameworkTemplate.Target.Framework] {

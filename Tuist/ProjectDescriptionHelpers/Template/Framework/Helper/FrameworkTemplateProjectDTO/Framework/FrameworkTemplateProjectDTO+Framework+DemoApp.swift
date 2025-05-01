@@ -19,7 +19,7 @@ extension TemplateDTO.Framework {
         let scheme: Scheme
 
         init(info: Info) {
-            let demoAppConfigure = info.configure.framework.demoApp
+            let demoAppConfigure = info.configure.demoApp
             var dependencies = demoAppConfigure.dependency
             dependencies += info.hasTesting
                 ? [.target(name: info.name.framework.testing)]

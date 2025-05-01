@@ -16,7 +16,7 @@ extension TemplateDTO.Framework {
 
         let target: Target
         init(info: Info) {
-            var dependencies = info.configure.framework.testing.dependency
+            var dependencies = info.configure.testing.dependency
             dependencies += [.SwiftPM.Test.Stub]
             dependencies += info.hasTesting
                 ? [.target(name: info.name.framework.testing)]
