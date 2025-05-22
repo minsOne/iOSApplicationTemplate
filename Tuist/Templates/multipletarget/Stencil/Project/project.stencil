@@ -1,0 +1,15 @@
+import ProjectDescription
+import ProjectDescriptionHelpers
+
+let project = MultipleTargetTemplate(
+    name: "{{ name }}",
+    target: [
+        .init(
+            name: "{{ name }}Target1",
+            folderName: "Target1"
+        ),
+        .init(
+            name: "{{ name }}Target2",
+        ),
+    ]
+).project
