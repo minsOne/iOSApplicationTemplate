@@ -12,14 +12,15 @@ public struct FrameworkTemplate {
     public let project: Project
 
     public init(name: String,
-                destinations: Destinations = .iOS,
-                deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
-                target: [Target] = [],
+                organizationName: String = "minsone",
                 packages: [Package] = [],
+                destinations: Destinations = .iOS,
+                deploymentTargets: DeploymentTargets = .default,
+                target: [Target] = [],
                 configure: TargetConfigure = .init())
     {
         typealias Generator = FrameworkTemplateProjectDTO
-        typealias Name = FrameworkTemplateTargetName
+        typealias Name = FrameworkTemplateTargetNameSet
 
         var targetList: [ProjectDescription.Target] = []
         var schemeList: [ProjectDescription.Scheme] = []

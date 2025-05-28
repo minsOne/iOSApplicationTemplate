@@ -6,7 +6,7 @@ private extension Project {
                                   packages: [Package] = [],
                                   product: Product,
                                   platform _: Platform = .iOS,
-                                  deploymentTarget: DeploymentTargets? = FrameworkTemplate.DefaultValue.deploymentTargets,
+                                  deploymentTarget: DeploymentTargets? = .default,
                                   dependencies: [TargetDependency] = [],
                                   infoPlist: [String: Plist.Value] = [:],
                                   hasDemoApp: Bool = false) -> Project

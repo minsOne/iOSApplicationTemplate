@@ -10,7 +10,7 @@ extension Generator {
 
         init(name: String,
              destinations: Destinations = .iOS,
-             deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
+             deploymentTargets: DeploymentTargets = .default,
              dependencies: [TargetDependency] = [])
         {
             let bundleId = BundleIdGenerator().generate(name: name)

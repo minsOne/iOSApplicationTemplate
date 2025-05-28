@@ -15,7 +15,7 @@ extension Generator.Mock {
         init(
             name: String,
             destinations: Destinations = .iOS,
-            deploymentTargets: DeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets,
+            deploymentTargets: DeploymentTargets = .default,
             infoPlist: [String: Plist.Value] = [:],
             dependencies: [TargetDependency] = []
         ) {

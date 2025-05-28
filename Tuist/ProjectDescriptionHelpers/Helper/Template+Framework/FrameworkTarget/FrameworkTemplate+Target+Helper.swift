@@ -10,7 +10,7 @@ import Foundation
 // MARK: Helper
 
 extension FrameworkTemplate.Target.Framework {
-    var module: MachO? {
+    var module: MachOType? {
         switch self {
         case let .module(machO): machO
         default: nil
@@ -73,7 +73,7 @@ public extension [FrameworkTemplate.Target] {
 }
 
 public extension [FrameworkTemplate.Target.Framework] {
-    var module: FrameworkTemplate.Target.Framework.MachO? {
+    var module: FrameworkTemplate.Target.Framework.MachOType? {
         lazy.compactMap(\.module)
             .first
     }

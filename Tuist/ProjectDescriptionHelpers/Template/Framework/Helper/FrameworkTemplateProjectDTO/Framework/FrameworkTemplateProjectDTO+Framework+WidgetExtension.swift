@@ -7,7 +7,7 @@ private typealias TemplateDTO = FrameworkTemplateProjectDTO
 extension TemplateDTO.Framework {
     struct WidgetExtension {
         struct Info {
-            let name: FrameworkTemplateTargetName
+            let name: FrameworkTemplateTargetNameSet
             let hasDemoApp: Bool
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets

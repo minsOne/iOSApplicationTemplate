@@ -3,11 +3,11 @@ import ProjectDescriptionHelpers
 
 let project = FrameworkTemplate(
     name: "ThirdPartyLibraryManager",
-    target: [
-        .framework([.module(.dynamic)]),
-    ],
     packages: [
         .Alamofire,
+    ],
+    target: [
+        .framework([.module(.dynamic)]),
     ],
     configure: .init(
         framework: .init(dependency: [

@@ -17,11 +17,11 @@ public extension Template {
 
 public extension Template.Target {
     enum Framework: Hashable {
-        public enum MachO: Hashable {
+        public enum MachOType: Hashable {
             case `static`, dynamic
         }
 
-        case module(MachO), testing, demoApp, unitTests, widgetExtension
+        case module(MachOType), testing, demoApp, unitTests, widgetExtension
     }
 
     enum UI: Hashable {

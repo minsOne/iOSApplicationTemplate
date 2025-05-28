@@ -8,7 +8,7 @@ private typealias TemplateDTO = FrameworkTemplateProjectDTO
 extension TemplateDTO {
     struct Framework {
         struct Info {
-            let name: FrameworkTemplateTargetName
+            let name: FrameworkTemplateTargetNameSet
             let hasInterface: Bool
             let hasInternalDTO: Bool
             let hasUI: Bool
@@ -30,7 +30,6 @@ extension TemplateDTO {
             let hasDemoApp = info.targets.hasDemoApp
             let hasUnitTests = info.targets.hasUnitTests
             let hasWidgetExtension = info.targets.hasWidgetExtension
-            let widgetDeploymentTargets = FrameworkTemplate.DefaultValue.deploymentTargets
 
             Module(
                 info: .init(name: info.name,
@@ -80,7 +79,7 @@ extension TemplateDTO {
                     info: .init(name: info.name,
                                 hasDemoApp: true,
                                 destinations: info.destinations,
-                                deploymentTargets: widgetDeploymentTargets)))
+                                deploymentTargets: .default)))
                 ||> { update(target: $0.target, scheme: $0.scheme) }
         }
 

@@ -7,8 +7,8 @@ private typealias TemplateDTO = FrameworkTemplateProjectDTO
 extension TemplateDTO.Framework {
     struct Module {
         struct Info {
-            let name: FrameworkTemplateTargetName
-            let macho: FrameworkTemplate.Target.Framework.MachO
+            let name: FrameworkTemplateTargetNameSet
+            let macho: FrameworkTemplate.Target.Framework.MachOType
             let hasInterface: Bool
             let hasUnitTests: Bool
             let hasInternalDTO: Bool

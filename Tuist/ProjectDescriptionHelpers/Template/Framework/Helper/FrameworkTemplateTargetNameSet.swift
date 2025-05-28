@@ -1,6 +1,6 @@
 import Foundation
 
-struct FrameworkTemplateTargetName {
+struct FrameworkTemplateTargetNameSet {
     let framework: Framework
     let ui: UI
     let internalDTO: String
@@ -28,7 +28,7 @@ struct FrameworkTemplateTargetName {
     }
 }
 
-extension FrameworkTemplateTargetName {
+extension FrameworkTemplateTargetNameSet {
     struct Framework {
         let module: String
         let testing: String

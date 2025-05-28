@@ -12,7 +12,7 @@ public struct MultipleTargetTemplate {
 }
 
 public extension MultipleTargetTemplate {
-    struct TargetInfo {
+    struct TargetConfigurationInfo {
         let name: String
         let folderName: String
         let dependencies: [TargetDependency]
@@ -29,10 +29,10 @@ public extension MultipleTargetTemplate {
     }
 
     struct ProjectOption {
-        let isEnableTest: Bool
+        let packageName: String?
 
-        public init(isEnableTest: Bool) {
-            self.isEnableTest = isEnableTest
+        public init(packageName: PackageName? = nil) {
+            self.packageName = packageName?.name
         }
     }
 }
@@ -41,18 +41,27 @@ public extension MultipleTargetTemplate {
     init(name: String,
          organizationName: String = "minsone",
          packages: [Package] = [],
-         product: Product,
          platform: Platform = .iOS,
-         deploymentTarget: DeploymentTargets? = FrameworkTemplate.DefaultValue.deploymentTargets,
-         targetInfos: [TargetInfo],
+         deploymentTarget: DeploymentTargets? = .default,
+         target: [Target] = [],
+         targetConfigurations: [TargetConfigurationInfo],
          projectOption: ProjectOption? = nil)
     {
-        var targets: [Target] = []
+        var targets: [ProjectDescription.Target] = []
         var schemes: [Scheme] = []
 
+        var baseSettings: SettingsDictionary = [
+            "CODE_SIGN_IDENTITY": "",
+            "CODE_SIGNING_REQUIRED": "NO"
+        ]
+
+        if let packageName = projectOption?.packageName {
+            baseSettings.updateValue("\(packageName)",
+                                     forKey: "SWIFT_PACKAGE_NAME")
+        }
+
         let settings = Settings.settings(
-            base: ["CODE_SIGN_IDENTITY": "",
-                   "CODE_SIGNING_REQUIRED": "NO"],
+            base: baseSettings,
             configurations: [
                 .debug(name: .dev, xcconfig: .moduleXCConfig(type: .dev)),
                 .debug(name: .test, xcconfig: .moduleXCConfig(type: .test)),
@@ -63,18 +72,21 @@ public extension MultipleTargetTemplate {
         )
 
         let unitTestTargetName = "\(name)Tests"
+        let demoAppTargetName = "\(name)DemoApp"
+        let unitTestBundleId = "kr.minsone.\(unitTestTargetName)"
 
-        for targetInfo in targetInfos {
-            let target = Target.target(name: targetInfo.name,
-                                       destinations: .iOS,
-                                       product: .staticLibrary,
-                                       bundleId: "kr.minsone.\(targetInfo.name)",
-                                       sources: ["Sources/\(targetInfo.folderName)/**"],
-                                       dependencies: targetInfo.dependencies)
+        for targetConfig in targetConfigurations {
+            let target = ProjectDescription
+                .Target.target(name: targetConfig.name,
+                               destinations: .iOS,
+                               product: .staticLibrary,
+                               bundleId: "kr.minsone.\(targetConfig.name)",
+                               sources: ["Sources/\(targetConfig.folderName)/**"],
+                               dependencies: targetConfig.dependencies)
             targets.append(target)
 
             let scheme = Scheme.makeScheme(
-                name: targetInfo.name,
+                name: targetConfig.name,
                 unitTestTargetName: unitTestTargetName,
                 configuration: .dev,
                 hidden: true
@@ -82,17 +94,38 @@ public extension MultipleTargetTemplate {
             schemes.append(scheme)
         }
 
-        if projectOption?.isEnableTest != false {
-            let unitTestDependencies: [TargetDependency] = targets.map { .target(name: $0.name) }
-            let unitTestTarget = Target.target(name: unitTestTargetName,
-                                               destinations: .iOS,
-                                               product: .unitTests,
-                                               bundleId: "kr.minsone.\(name)Tests",
-                                               deploymentTargets: deploymentTarget,
-                                               infoPlist: .default,
-                                               sources: "Tests/**",
-                                               dependencies: unitTestDependencies)
+        let allTargetDependencies: [TargetDependency] = targetConfigurations.map {
+            .target(name: $0.name)
+        }
+
+        if target.hasUnitTest {
+            let unitTestTarget = ProjectDescription.Target
+                .target(name: unitTestTargetName,
+                        destinations: .iOS,
+                        product: .unitTests,
+                        bundleId: unitTestBundleId,
+                        deploymentTargets: deploymentTarget,
+                        infoPlist: .default,
+                        sources: "Tests/**",
+                        dependencies: allTargetDependencies)
             targets.append(unitTestTarget)
+        }
+
+        if target.hasDemoApp {
+            let demoAppTarget = ProjectDescription.Target
+                .target(
+                    name: demoAppTargetName,
+                    destinations: .iOS,
+                    product: .app,
+                    bundleId: Misc.defaultDemoAppBundleId,
+                    deploymentTargets: deploymentTarget,
+                    infoPlist: .default,
+                    sources: "App/DemoApp/Sources/**",
+                    resources: "App/DemoApp/Resources/**",
+                    dependencies: allTargetDependencies,
+                    settings: settings
+                )
+            targets.append(demoAppTarget)
         }
 
         project = Project(

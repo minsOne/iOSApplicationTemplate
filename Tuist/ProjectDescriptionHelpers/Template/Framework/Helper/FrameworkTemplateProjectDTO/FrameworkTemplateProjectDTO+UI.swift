@@ -8,7 +8,7 @@ private typealias TemplateDTO = FrameworkTemplateProjectDTO
 extension TemplateDTO {
     struct UI {
         struct Info {
-            let name: FrameworkTemplateTargetName
+            let name: FrameworkTemplateTargetNameSet
             let hasInternalDTO: Bool
             let targets: [FrameworkTemplate.Target.UI]
             let destinations: Destinations
@@ -75,7 +75,7 @@ extension TemplateDTO {
 private extension FrameworkTemplateProjectDTO.UI {
     struct Module {
         struct Info {
-            let name: FrameworkTemplateTargetName
+            let name: FrameworkTemplateTargetNameSet
             let hasInternalDTO: Bool
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
@@ -104,7 +104,7 @@ private extension FrameworkTemplateProjectDTO.UI {
 
     struct UIPreview {
         struct Info {
-            let name: FrameworkTemplateTargetName
+            let name: FrameworkTemplateTargetNameSet
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
             let dependencies: [TargetDependency]
@@ -127,7 +127,7 @@ private extension FrameworkTemplateProjectDTO.UI {
 
     struct UIPreviewApp {
         struct Info {
-            let name: FrameworkTemplateTargetName
+            let name: FrameworkTemplateTargetNameSet
             let destinations: Destinations
             let deploymentTargets: DeploymentTargets
             let dependencies: [TargetDependency]

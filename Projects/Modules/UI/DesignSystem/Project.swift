@@ -3,14 +3,14 @@ import ProjectDescriptionHelpers
 
 let project = FrameworkTemplate(
     name: "DesignSystem",
-    target: [
-        .framework([.module(.static)]),
-    ],
     packages: [
         .UserInterface.ResourcePackage,
         .FlexLayout,
         .PinLayout,
         .SnapKit,
+    ],
+    target: [
+        .framework([.module(.static)]),
     ],
     configure: .init(
         framework: .init(dependency: [

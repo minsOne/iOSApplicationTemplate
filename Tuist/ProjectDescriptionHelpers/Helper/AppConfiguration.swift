@@ -36,3 +36,15 @@ public struct BundleIdGenerator {
         "kr.minsone.\(name)"
     }
 }
+
+public struct Misc {
+    public static let organizationName = "minsone"
+}
+
+public extension Misc {
+    static let defaultDemoAppBundleId = "kr.minsone.example.demoapp"
+}
+
+public extension DeploymentTargets {
+    static let `default`: DeploymentTargets = .iOS("15.0")
+}
