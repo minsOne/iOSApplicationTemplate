@@ -28,7 +28,7 @@ let targets: [Target] = [
             product: .app,
             productName: ProductName.releaseApp,
             bundleId: "kr.minsone.app",
-            deploymentTargets: FrameworkTemplate.DefaultValue.deploymentTargets,
+            deploymentTargets: .default,
             infoPlist: .extendingDefault(with: FrameworkTemplate.DefaultValue.Plist.app),
             sources: [.glob("Sources/**/*.swift",
                             excluding: "Sources/Dev/**")],
@@ -43,7 +43,7 @@ let targets: [Target] = [
             product: .app,
             productName: ProductName.releaseApp,
             bundleId: "kr.minsone.devApp",
-            deploymentTargets: FrameworkTemplate.DefaultValue.deploymentTargets,
+            deploymentTargets: .default,
             infoPlist: .extendingDefault(with: FrameworkTemplate.DefaultValue.Plist.app),
             sources: ["Sources/**"],
             resources: ["Resources/**"],
@@ -56,7 +56,7 @@ let targets: [Target] = [
             destinations: .iOS,
             product: .unitTests,
             bundleId: "kr.minsone.devAppUnitTests",
-            deploymentTargets: FrameworkTemplate.DefaultValue.deploymentTargets,
+            deploymentTargets: .default,
             infoPlist: .default,
             sources: "Tests/**",
             dependencies: [
@@ -89,7 +89,7 @@ let schemes: [Scheme] = [
 
 let project: Project =
     .init(name: "Application",
-          organizationName: FrameworkTemplate.DefaultValue.organizationName,
+          organizationName: Misc.organizationName,
           settings: settings,
           targets: targets,
           schemes: schemes)

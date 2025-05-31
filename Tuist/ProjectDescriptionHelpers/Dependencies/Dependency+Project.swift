@@ -19,18 +19,26 @@ public extension Dep.Project.UserInterface {
 }
 
 public extension Dep.Project.Module {
-    static let AnalyticsKit = Dep.module(name: "AnalyticsKit")
-    static let DevelopTool = Dep.module(name: "DevelopTool")
+    private static func project(name: String) -> Dep {
+        .project(target: name, path: "//Projects/Modules/\(name)")
+    }
+
+    static let AnalyticsKit = project(name: "AnalyticsKit")
+    static let DevelopTool = project(name: "DevelopTool")
 }
 
 public extension Dep.Project.Module.Foundation {
-    static let FoundationKit = Dep.module(name: "MOFoundationKit", path: "Foundation/MOFoundationKit")
-    static let Container = Dep.module(name: "MOContainer", path: "Foundation/MOContainer")
+    private static func project(name: String) -> Dep {
+        .project(target: name, path: "//Projects/Modules/Foundation/\(name)")
+    }
+
+    static let FoundationKit = project(name: "MOFoundationKit")
+    static let Container = project(name: "MOContainer")
 }
 
 public extension Dep.Project.Module {
-    private static func project(name: String) -> Dep {
-        .module(name: name, path: "LibraryManager/\(name)")
+    private static func libraryProject(name: String) -> Dep {
+        .project(target: name, path: "//Projects/Modules/LibraryManager/\(name)")
     }
 
     static let ThirdPartyLibraryManager = project(name: "ThirdPartyLibraryManager")

@@ -3,13 +3,13 @@ import ProjectDescriptionHelpers
 
 let project = FrameworkTemplate(
     name: "DevelopTool",
-    target: [
-        .framework([.module(.static)]),
-    ],
     packages: [
         .DevelopTool.OHHTTPStubs,
         .DevelopTool.ProxyNetworkStubPackage,
         .DevelopTool.FLEX,
+    ],
+    target: [
+        .framework([.module(.static)]),
     ],
     configure: .init(
         framework: .init(dependency: [
